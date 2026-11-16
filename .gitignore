@@ -1,0 +1,5 @@
+.DS_Store
+
+# SolidCraft's active-document locks and local backups.
+.~*.sc.lock
+*.sc.bak
