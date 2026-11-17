@@ -49,7 +49,7 @@ Determine the usable carving envelope from the actual arm geometry, joint limits
 
 ## Current CAD model
 
-The SolidCraft model contains a first base layout with three main assembly components and reference geometry for the selected M8 workpiece fixings. Dimensions are parameterized; the model is still a layout for review, rather than a fabrication release.
+The SolidCraft model contains a first base layout with three main assembly components. The default loading view shows a clear worktop with two fixing holes; the separate M8 bolt and washer reference models are hidden. Dimensions are parameterized; the model is still a layout for review, rather than a fabrication release.
 
 | Part or space | Current model |
 | --- | --- |
@@ -90,38 +90,37 @@ The model accommodates this common hardware as follows:
 - The worktop screw tips clear the inner support shelf by 1.75 mm. The inner-cover screw tips extend about 11 mm beneath that shelf; reserve at least 12 mm below it at those four locations when placing electronics.
 - Nut engagement, retention, and tightening torque need physical validation with the chosen fabrication process.
 
-### Selected rock-fixing hardware
+### Workpiece fixing interface
 
-Use **two M8 × 22 mm fully threaded socket cap-head screws, DIN 912 / ISO 4762, A4 stainless steel, 1.25 mm thread pitch**, each fitted upward through the lid into a threaded stone anchor. They use a **6 mm Allen key**. The pair is spaced 90 mm apart to resist workpiece rotation. The unused centre hole has been suppressed in the model.
+The base interface uses **two M8 × 22 mm fully threaded socket cap-head screws, DIN 912 / ISO 4762, A4 stainless steel, 1.25 mm thread pitch**, fitted upward through the lid into threaded receivers in the workpiece fixture. They use a **6 mm Allen key**. The pair is spaced 90 mm apart to resist workpiece rotation. The unused centre hole has been suppressed in the model.
 
 | Part | Quantity | Selected specification / reference |
 | --- | --- | --- |
 | Rock bolt | 2 | M8 × 22 mm fully threaded socket cap-head, A4; [Accu SSCF-M8-22-A4](https://www.accu.co.uk/metric-cap-head-screws/4038-SSCF-M8-22-A4) |
 | Washer between each bolt head and lid | 2 | M8 DIN 125 A4, 8.4 mm bore × 16 mm outside diameter × 1.8 mm maximum thickness; [Accu HPW-M8-A4](https://www.accu.co.uk/metric-flat-washers/72523-HPW-M8-A4) |
-| Internally threaded stone anchor | 2 | **fischer EA II M8 × 40 R, article 48412**, stainless; [manufacturer specification](https://www.fischer-international.com/en/products/steel-fixings/hammerset-anchor/hammerset-anchor-ea-ii/hammerset-anchor-ea-ii/48412-ea-ii-m-8-x-40-r) |
-| Anchor installation tool | 1 reusable tool | fischer **EHS M8 × 40 Plus, article 044632**, as listed with the selected anchor |
 
-For this fixture, the anchors sit flush with the workpiece underside, against the 10 mm worktop. The selected washer is 1.4–1.8 mm thick within its stated tolerance, leaving **10.2–10.6 mm bolt penetration**: `22 − 10 − washer thickness`. The anchor specifies **8–14 mm** penetration. The bolt's maximum 13 mm diameter × 8 mm high head, plus the washer, occupies 9.8 mm of the 12 mm access gap, leaving **2.2 mm minimum clearance** above the electronics cover. The 9 mm plate holes give 0.5 mm radial clearance around the M8 shanks.
+The selected washer is 1.4–1.8 mm thick within its stated tolerance. **When fitted**, the bolt threads project **10.2–10.6 mm above the plate into the workpiece fixture**: `22 − 10 − washer thickness`. Remove these bolts while positioning the workpiece, then insert them from underneath. The bolt's maximum 13 mm diameter × 8 mm high head, plus the washer, occupies 9.8 mm of the 12 mm access gap, leaving **2.2 mm minimum clearance** above the electronics cover. The 9 mm plate holes give 0.5 mm radial clearance around the M8 shanks.
 
-The selected anchor uses a **10 mm drill diameter**. Follow its installation instructions for drilling, cleaning, setting and permissible substrate geometry. Fischer lists dense natural stone as a suitable material; its concrete approvals do not establish a load rating in an arbitrary stone. This is the selected hardware for dense-stone trials, with suitability and holding strength to be validated on the actual stone. **Do not install these expansion anchors in polystyrene foam**; the foam prototype requires a separate carrier fixture.
+The workpiece fixture must provide two **M8 × 1.25 threaded receivers, 90 mm apart**, and accommodate the full projecting bolt length without bottoming out. How that fixture grips or attaches to the carving material is a separate design task: the foam prototype needs a suitable carrier or clamp, and a later stone fixture must suit the actual stone. The fixing strength and resistance to carving forces require validation before use.
 
-The model shows both bolts, washers and anchor envelopes under **M8 workpiece fixings - clearance references**, attached to the worktop assembly. These are simplified fit references: threads, anchor expansion and manufacturer detail are not modeled. The anchor outlines extend into the space where the workpiece will sit; the workpiece itself is not modeled.
+Both bolts and washers are separate removable hardware, hidden by default under **Worktop lid → Removable M8 bolts and washers**. Turn on that component's eye icon to inspect the fitted hardware. They are simplified fit references; helical threads are not modeled. The worktop itself has two clearance holes and no permanent locating posts. The workpiece and its receiving fixture are outside the current base model.
 
-![Exploded base: removable worktop, blue electronics cover, and hollow housing](docs/base-exploded.png)
+![Exploded base in its loading state: clear removable worktop, blue electronics cover, and hollow housing; M8 fixing hardware hidden](docs/base-exploded.png)
 
-![Base cross-section showing the shallow fixing gap above the electronics compartment](docs/base-section.png)
+![Base cross-section in its loading state, with removable M8 fixing hardware omitted](docs/base-section.png)
 
-![Rock-fixing section: gold anchor envelopes above the lid, M8 bolts and washers beneath, and the blue electronics cover below the bolt heads; housing hidden for clarity](docs/base-fixing-section.png)
+![Installed-hardware reference: M8 bolts fitted from below, with their ends entering the future workpiece fixture; housing and workpiece fixture omitted for clarity](docs/base-fixing-section.png)
 
 ### Workpiece fixing and access
 
-1. Remove the worktop and access its underside. For dense-stone trials, install the two selected anchors in the workpiece using the manufacturer's procedure, align them with the two plate holes, and fit the M8 × 22 bolts with their washers from underneath. Validate the anchorage and workpiece stability before carving.
-2. Lower the worktop/workpiece assembly onto the housing rim and fasten its four M5 retaining screws. The electronics cover remains in place underneath, separating the fixing-access gap from the component compartment.
-3. For electronics access, remove the worktop, undo the four M5 cover screws, and lift the inner cover through the 410 mm opening.
+1. Remove the worktop from the housing and set the two M8 bolts and washers aside. Position the workpiece and its suitable carrier/fixture on the clear plate, aligning the fixture's threaded receivers with the two fixing holes.
+2. Keep the lid's underside accessible and insert the M8 × 22 bolts and washers from underneath, then tighten them with a 6 mm Allen key. Do this before mounting the lid on the housing; the 12 mm gap is for fitted-hardware clearance, rather than hand/tool access. Validate the fixture's grip on the material and the complete connection before carving.
+3. Lower the secured worktop/workpiece assembly onto the housing rim and fasten its four M5 retaining screws. The electronics cover remains in place underneath, separating the shallow fixing gap from the component compartment.
+4. For electronics access, remove the worktop, undo the four M5 cover screws, and lift the inner cover through the 410 mm opening.
 
 The 5 kg workpiece target has not been load-tested or structurally validated. Plate material, printed-part construction, nut retention and the foam carrier fixture remain open. The housing also needs segmentation and joining details for A1 Mini fabrication; the two larger lids can be considered for outsourced manufacture. PCB mounts, motor mounts, wiring exits, and actuator clearances will follow the selected hardware.
 
-Geometry checks completed: nine closed solids (three base parts and six M8 hardware references), no assembled solid overlaps, and all three sketches fully constrained. A trial change to a 470 mm base diameter, 120 mm housing height, 14 mm fixing gap and 100 mm workpiece-fixing spacing rebuilt without errors before restoring the current dimensions. These checks establish geometric fit; they do not validate fastening strength or cutting loads. The saved exploded view is named **Base service access**.
+Geometry checks completed: seven closed solids (three visible base parts and four hidden M8 bolt/washer references), no assembled solid overlaps, and all three sketches fully constrained. A trial change to a 470 mm base diameter, 120 mm housing height, 14 mm fixing gap and 100 mm workpiece-fixing spacing rebuilt without errors before restoring the current dimensions. These checks establish geometric fit; they do not validate fastening strength or cutting loads. The saved exploded view is named **Base service access**.
 
 ## Proposed arm rotation
 
@@ -146,7 +145,7 @@ This is the proposed motion arrangement, not a modeled drive assembly. [Igus doc
 - Filament choice and construction of custom parts within the A1 Mini print envelope, including which larger parts to outsource.
 - Initial test sculpture and the tool positions and orientations needed to carve it.
 - Bearing arrangement, actuator, and transmission for the orbital motion beneath the base.
-- Worktop material and stiffness, validation of the selected stone fixings, the foam carrier fixture, housing segmentation and joints, and validation of the 5 kg workpiece target.
+- Worktop material and stiffness, a workpiece fixture suited to foam first and stone later, housing segmentation and joints, and validation of the 5 kg workpiece target.
 - Arm mounting position, clearances, required modifications, and stiffness during carving.
 - Tool drive, head dimensions and mass, mounting interface, and supported cutting bits.
 - Camera and sensor selection, placement, and provision for calibration.
@@ -158,7 +157,7 @@ Scan processing, carving plans, toolpaths, and machine-control software will be 
 
 - `michelaingelo.sc` — native SolidCraft model.
 - `README.md` — project concept, current geometry, and open design questions.
-- `docs/base-exploded.png`, `docs/base-section.png` and `docs/base-fixing-section.png` — SolidCraft renders of the current base and selected rock-fixing arrangement.
+- `docs/base-exploded.png`, `docs/base-section.png` and `docs/base-fixing-section.png` — SolidCraft renders of the current base and M8 workpiece-fixing interface.
 - `.gitignore` — excludes local system files, SolidCraft locks, and backup files.
 - `.gitattributes` — treats SolidCraft containers as binary files in Git.
 
