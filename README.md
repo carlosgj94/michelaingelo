@@ -21,7 +21,8 @@ This is **prototype geometry for review, not a fabrication release or tested pre
 - [Mechanical specification](docs/specs/rotary-table.md) — geometry, machining fits, load targets, sensor, sealing and acceptance requirements.
 - [Validation report](docs/rotary-table-validation.md) — current checked results and explicit limits.
 - [Fastener register](docs/rotary-table-fasteners.md) and [CSV](cad/fastener-shopping-list.csv) — 23 active groups, 101 fixed-length screws and 18 thickness-dependent bench bolts; includes four arm-base bolts, excludes arm internals.
-- [BOM](docs/rotary-table-bom.md) and [printing/assembly guide](docs/rotary-table-printing.md) — current parts, coupon map, first articles and service sequence.
+- [Bill of materials](docs/rotary-table-bom.md) — quantities grouped into prints, fabricated metal, bearings/transmission, controls, seals and fasteners; excludes the arm but includes its mounting bolts, washers and nuts. Unselected items and bench-dependent lengths are marked.
+- [Printing/assembly guide](docs/rotary-table-printing.md) — coupon map, first articles, print orientation and assembly/service sequence.
 - [Print package](exports/rotary-table/rt01-print-package.zip) — 25 oriented STLs, coupon, manifests, guides and metal references.
 - [Assembly STEP](exports/rotary-table/rt01-assembly.step), [metal parts](exports/rotary-table/metal/), [seal profiles](exports/rotary-table/seal-profiles.step) — bought devices are labelled simplified envelopes; STEP files are not tolerance drawings.
 - [Arm source](references/so-arm100/README.md), [mount coordinates](cad/arm-mount-reference.json), [historical designs](docs/archive/) — preserved reference/context.
