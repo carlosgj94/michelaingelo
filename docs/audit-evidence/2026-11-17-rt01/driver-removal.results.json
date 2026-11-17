@@ -1,0 +1,122 @@
+{
+  "note": "Inspection/measurement results extracted from CLI --results output; verbose state echoes omitted. Probe inputs are unchanged.",
+  "results": [
+    {
+      "bodies": 1,
+      "ms": 149.96658299999999,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 0.9999999999999929
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 65.0
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 1,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    {
+      "bodies": 1,
+      "ms": 87.56520800000001,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 4.0
+          }
+        ]
+      },
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "area_mm2": 19142.41150080097,
+          "b": "M50 SO100 arm mounting plate",
+          "bbox": {
+            "max": [
+              59.0,
+              -186.0,
+              139.0
+            ],
+            "min": [
+              -59.0,
+              -262.0,
+              136.0
+            ]
+          },
+          "center": [
+            -7.2321118928437364e-12,
+            -223.9991962122152,
+            137.49999999999832
+          ],
+          "volume_mm3": 26713.148246251498
+        }
+      ],
+      "pairs_checked": 2,
+      "pairs_pruned": 0,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    {
+      "bodies": 1,
+      "ms": 72.997,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 4.1231056256176615
+          }
+        ]
+      },
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "area_mm2": 19586.96016853278,
+          "b": "M50 SO100 arm mounting plate",
+          "bbox": {
+            "max": [
+              59.0,
+              -186.0,
+              140.0
+            ],
+            "min": [
+              -59.0,
+              -262.0,
+              136.0
+            ]
+          },
+          "center": [
+            -7.2004027061037325e-12,
+            -223.99919621221522,
+            137.99999999999775
+          ],
+          "volume_mm3": 35617.5309950019
+        }
+      ],
+      "pairs_checked": 1,
+      "pairs_pruned": 1,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "AUDIT F16 housing mounting",
+        "grounded": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          105,
+          105,
+          0
+        ],
+        "body_name": "AUDIT F16 screw 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          105,
+          105,
+          2.5
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          105,
+          105,
+          3.7
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "AUDIT F16 screw 0"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "0 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          105,
+          105,
+          0
+        ],
+        "body_name": "AUDIT F16 screw 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          105,
+          105,
+          2.5
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          105,
+          105,
+          3.7
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "AUDIT F16 screw 1"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "90 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          105,
+          105,
+          0
+        ],
+        "body_name": "AUDIT F16 screw 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          105,
+          105,
+          2.5
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          105,
+          105,
+          3.7
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "AUDIT F16 screw 2"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          105,
+          105,
+          0
+        ],
+        "body_name": "AUDIT F16 screw 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          105,
+          105,
+          2.5
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          105,
+          105,
+          3.7
+        ],
+        "operation": "join",
+        "targets": [
+          "AUDIT F16 screw 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "AUDIT F16 screw 3"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "270 deg"
+      }
+    },
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "AUDIT F16 screw 0",
+          "AUDIT F16 screw 1",
+          "AUDIT F16 screw 2",
+          "AUDIT F16 screw 3",
+          "P41 fixed housing quadrant",
+          "P42 fixed housing quadrant",
+          "P43 fixed housing quadrant",
+          "P44 fixed housing quadrant"
+        ],
+        "budget_s": 45
+      }
+    }
+  ]
+}

@@ -25,8 +25,18 @@
           0
         ],
         "operation": "new",
-        "name": "621 M40 motor support sole",
-        "body_name": "M40 motor support sole"
+        "name": "613 M40 stepped motor support",
+        "body_name": "M40 stepped motor support"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "M40 stepped motor support",
+        "tools": [
+          "tool motor support riser"
+        ],
+        "operation": "join"
       }
     },
     {
@@ -41,9 +51,9 @@
           2.5
         ],
         "operation": "cut",
-        "name": "622 sole core gasket clearance X",
+        "name": "614 sole core gasket clearance X",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
@@ -59,9 +69,9 @@
           2.5
         ],
         "operation": "cut",
-        "name": "623 sole core gasket clearance Y",
+        "name": "615 sole core gasket clearance Y",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
@@ -77,9 +87,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "624 M40 motor support sole sole bench spacer relief",
+        "name": "616 M40 stepped motor support sole bench spacer relief",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
@@ -95,9 +105,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "625 M40 motor support sole M5 core coupling clearance",
+        "name": "617 M40 stepped motor support M5 core coupling clearance",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
@@ -115,9 +125,9 @@
         "axis": "Z",
         "operation": "cut",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ],
-        "name": "626 underside M5 flush countersink"
+        "name": "618 underside M5 flush countersink"
       }
     },
     {
@@ -132,9 +142,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "627 M40 motor support sole M5 core coupling clearance",
+        "name": "619 M40 stepped motor support M5 core coupling clearance",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
@@ -152,9 +162,9 @@
         "axis": "Z",
         "operation": "cut",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ],
-        "name": "628 underside M5 flush countersink"
+        "name": "620 underside M5 flush countersink"
       }
     },
     {
@@ -169,9 +179,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "629 M40 motor support sole M6 bench anchor",
+        "name": "621 M40 stepped motor support M6 bench anchor",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
@@ -187,16 +197,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "630 M40 motor support sole M6 bench anchor",
+        "name": "622 M40 stepped motor support M6 bench anchor",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 6.6,
+        "diameter": 4.2,
         "height": 6,
         "base": [
           116,
@@ -205,16 +215,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "631 M40 motor support sole motor bracket bolt tip clearance",
+        "name": "623 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 6.6,
+        "diameter": 4.2,
         "height": 6,
         "base": [
           116,
@@ -223,16 +233,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "632 M40 motor support sole motor bracket bolt tip clearance",
+        "name": "624 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 6.6,
+        "diameter": 4.2,
         "height": 6,
         "base": [
           138,
@@ -241,16 +251,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "633 M40 motor support sole motor bracket bolt tip clearance",
+        "name": "625 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 6.6,
+        "diameter": 4.2,
         "height": 6,
         "base": [
           138,
@@ -259,16 +269,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "634 M40 motor support sole motor bracket bolt tip clearance",
+        "name": "626 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 5,
+        "diameter": 3.3,
         "height": 6,
         "base": [
           171,
@@ -277,16 +287,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "635 M40 motor support sole hood bolt tip clearance",
+        "name": "627 M40 stepped motor support M4 hood through thread",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 5,
+        "diameter": 3.3,
         "height": 6,
         "base": [
           171,
@@ -295,16 +305,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "636 M40 motor support sole hood bolt tip clearance",
+        "name": "628 M40 stepped motor support M4 hood through thread",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 5,
+        "diameter": 3.3,
         "height": 6,
         "base": [
           225,
@@ -313,16 +323,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "637 M40 motor support sole hood bolt tip clearance",
+        "name": "629 M40 stepped motor support M4 hood through thread",
         "targets": [
-          "M40 motor support sole"
+          "M40 stepped motor support"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 5,
+        "diameter": 3.3,
         "height": 6,
         "base": [
           225,
@@ -331,43 +341,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "638 M40 motor support sole hood bolt tip clearance",
+        "name": "630 M40 stepped motor support M4 hood through thread",
         "targets": [
-          "M40 motor support sole"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 12,
-        "height": 8,
-        "base": [
-          220,
-          35,
-          4
-        ],
-        "axis": "Z",
-        "operation": "new",
-        "name": "639 M41 motor anchor compression sleeve",
-        "body_name": "M41 motor anchor compression sleeve"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 6.6,
-        "height": "(8)+2 mm",
-        "base": [
-          220,
-          35,
-          "(4)-1 mm"
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "640 M41 motor anchor compression sleeve bore",
-        "targets": [
-          "M41 motor anchor compression sleeve"
+          "M40 stepped motor support"
         ]
       }
     },
@@ -383,7 +359,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "641 B41 motor anchor washer",
+        "name": "631 B41 motor anchor washer",
         "body_name": "B41 motor anchor washer"
       }
     },
@@ -399,43 +375,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "642 B41 motor anchor washer bore",
+        "name": "632 B41 motor anchor washer bore",
         "targets": [
           "B41 motor anchor washer"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 12,
-        "height": 8,
-        "base": [
-          220,
-          77,
-          4
-        ],
-        "axis": "Z",
-        "operation": "new",
-        "name": "643 M42 motor anchor compression sleeve",
-        "body_name": "M42 motor anchor compression sleeve"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 6.6,
-        "height": "(8)+2 mm",
-        "base": [
-          220,
-          77,
-          "(4)-1 mm"
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "644 M42 motor anchor compression sleeve bore",
-        "targets": [
-          "M42 motor anchor compression sleeve"
         ]
       }
     },
@@ -451,7 +393,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "645 B42 motor anchor washer",
+        "name": "633 B42 motor anchor washer",
         "body_name": "B42 motor anchor washer"
       }
     },
@@ -467,7 +409,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "646 B42 motor anchor washer bore",
+        "name": "634 B42 motor anchor washer bore",
         "targets": [
           "B42 motor anchor washer"
         ]
@@ -495,10 +437,10 @@
         "corner": [
           -114,
           -282,
-          136
+          144
         ],
         "operation": "new",
-        "name": "647 M50 SO100 arm mounting plate",
+        "name": "635 M50 SO100 arm mounting plate",
         "body_name": "M50 SO100 arm mounting plate"
       }
     },
@@ -510,11 +452,11 @@
         "base": [
           27.776497308103686,
           -189.2250092524069,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "648 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "636 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -528,11 +470,11 @@
         "base": [
           31.75,
           -259.0,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "649 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "637 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -546,11 +488,11 @@
         "base": [
           -27.77649730810371,
           -189.2250092524069,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "650 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "638 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -564,11 +506,11 @@
         "base": [
           -31.75,
           -259.0,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "651 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "639 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -582,11 +524,11 @@
         "base": [
           -98,
           -272,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "652 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "640 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -600,11 +542,11 @@
         "base": [
           -98,
           -176,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "653 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "641 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -618,11 +560,11 @@
         "base": [
           98,
           -272,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "654 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "642 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -636,11 +578,11 @@
         "base": [
           98,
           -176,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "655 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "643 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -654,11 +596,11 @@
         "base": [
           -78,
           -274,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "656 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "644 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -672,11 +614,11 @@
         "base": [
           78,
           -274,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "657 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "645 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -690,11 +632,11 @@
         "base": [
           -78,
           -174,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "658 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "646 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -708,11 +650,11 @@
         "base": [
           78,
           -174,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "659 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "647 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -726,11 +668,11 @@
         "base": [
           -42,
           -275,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "660 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "648 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -744,11 +686,11 @@
         "base": [
           42,
           -275,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "661 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "649 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -762,11 +704,11 @@
         "base": [
           -42,
           -173,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "662 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "650 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -780,11 +722,11 @@
         "base": [
           42,
           -173,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "663 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "651 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -798,11 +740,11 @@
         "base": [
           -79,
           -224,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "664 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "652 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -816,11 +758,11 @@
         "base": [
           79,
           -224,
-          135
+          143
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "665 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "653 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -831,14 +773,14 @@
       "params": {
         "length": 4,
         "width": 116,
-        "height": 136,
+        "height": 144,
         "corner": [
           -114,
           -282,
           0
         ],
         "operation": "new",
-        "name": "666 M51 steel side channel left",
+        "name": "654 M51 steel side channel left",
         "body_name": "M51 steel side channel left"
       }
     },
@@ -854,7 +796,7 @@
           0
         ],
         "operation": "join",
-        "name": "667 stand bottom flange",
+        "name": "655 stand bottom flange",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -869,10 +811,10 @@
         "corner": [
           -114,
           -282,
-          132
+          140
         ],
         "operation": "join",
-        "name": "668 stand top flange",
+        "name": "656 stand top flange",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -890,7 +832,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "669 M51 steel side channel left bench through bolt",
+        "name": "657 M51 steel side channel left bench through bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -904,11 +846,11 @@
         "base": [
           -98,
           -272,
-          131
+          139
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "670 M51 steel side channel left top plate bolt",
+        "name": "658 M51 steel side channel left top plate bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -926,7 +868,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "671 M51 steel side channel left bench through bolt",
+        "name": "659 M51 steel side channel left bench through bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -940,11 +882,11 @@
         "base": [
           -98,
           -176,
-          131
+          139
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "672 M51 steel side channel left top plate bolt",
+        "name": "660 M51 steel side channel left top plate bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -955,14 +897,14 @@
       "params": {
         "length": 4,
         "width": 116,
-        "height": 136,
+        "height": 144,
         "corner": [
           110,
           -282,
           0
         ],
         "operation": "new",
-        "name": "673 M51 steel side channel right",
+        "name": "661 M51 steel side channel right",
         "body_name": "M51 steel side channel right"
       }
     },
@@ -978,7 +920,7 @@
           0
         ],
         "operation": "join",
-        "name": "674 stand bottom flange",
+        "name": "662 stand bottom flange",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -993,10 +935,10 @@
         "corner": [
           86,
           -282,
-          132
+          140
         ],
         "operation": "join",
-        "name": "675 stand top flange",
+        "name": "663 stand top flange",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -1014,7 +956,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "676 M51 steel side channel right bench through bolt",
+        "name": "664 M51 steel side channel right bench through bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -1028,11 +970,11 @@
         "base": [
           98,
           -272,
-          131
+          139
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "677 M51 steel side channel right top plate bolt",
+        "name": "665 M51 steel side channel right top plate bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -1050,7 +992,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "678 M51 steel side channel right bench through bolt",
+        "name": "666 M51 steel side channel right bench through bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -1064,11 +1006,11 @@
         "base": [
           98,
           -176,
-          131
+          139
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "679 M51 steel side channel right top plate bolt",
+        "name": "667 M51 steel side channel right top plate bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -1079,14 +1021,14 @@
       "params": {
         "length": 228,
         "width": 4,
-        "height": 128,
+        "height": 136,
         "corner": [
           -114,
           -166,
           4
         ],
         "operation": "new",
-        "name": "680 M52 steel front X brace",
+        "name": "668 M52 steel front X brace",
         "body_name": "M52 steel front X brace"
       }
     },
@@ -1110,7 +1052,7 @@
             1
           ]
         },
-        "name": "681 stand brace lightening window"
+        "name": "669 stand brace lightening window"
       }
     },
     {
@@ -1152,13 +1094,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "681 stand brace lightening window",
+        "sketch": "669 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "682 brace window cut"
+        "name": "670 brace window cut"
       }
     },
     {
@@ -1181,7 +1123,7 @@
             1
           ]
         },
-        "name": "683 stand brace lightening window"
+        "name": "671 stand brace lightening window"
       }
     },
     {
@@ -1223,13 +1165,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "683 stand brace lightening window",
+        "sketch": "671 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "684 brace window cut"
+        "name": "672 brace window cut"
       }
     },
     {
@@ -1252,7 +1194,7 @@
             1
           ]
         },
-        "name": "685 stand brace lightening window"
+        "name": "673 stand brace lightening window"
       }
     },
     {
@@ -1294,13 +1236,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "685 stand brace lightening window",
+        "sketch": "673 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "686 brace window cut"
+        "name": "674 brace window cut"
       }
     },
     {
@@ -1323,7 +1265,7 @@
             1
           ]
         },
-        "name": "687 stand brace lightening window"
+        "name": "675 stand brace lightening window"
       }
     },
     {
@@ -1365,13 +1307,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "687 stand brace lightening window",
+        "sketch": "675 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "688 brace window cut"
+        "name": "676 brace window cut"
       }
     },
     {
@@ -1382,11 +1324,11 @@
         "base": [
           -98,
           -272,
-          144
+          152
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "689 B51 bridge anchor washer",
+        "name": "677 B51 bridge anchor washer",
         "body_name": "B51 bridge anchor washer"
       }
     },
@@ -1398,11 +1340,11 @@
         "base": [
           -98,
           -272,
-          "(144)-1 mm"
+          "(152)-1 mm"
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "690 B51 bridge anchor washer bore",
+        "name": "678 B51 bridge anchor washer bore",
         "targets": [
           "B51 bridge anchor washer"
         ]
@@ -1416,11 +1358,11 @@
         "base": [
           -98,
           -176,
-          144
+          152
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "691 B52 bridge anchor washer",
+        "name": "679 B52 bridge anchor washer",
         "body_name": "B52 bridge anchor washer"
       }
     },
@@ -1432,11 +1374,11 @@
         "base": [
           -98,
           -176,
-          "(144)-1 mm"
+          "(152)-1 mm"
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "692 B52 bridge anchor washer bore",
+        "name": "680 B52 bridge anchor washer bore",
         "targets": [
           "B52 bridge anchor washer"
         ]
@@ -1450,11 +1392,11 @@
         "base": [
           98,
           -272,
-          144
+          152
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "693 B53 bridge anchor washer",
+        "name": "681 B53 bridge anchor washer",
         "body_name": "B53 bridge anchor washer"
       }
     },
@@ -1466,11 +1408,11 @@
         "base": [
           98,
           -272,
-          "(144)-1 mm"
+          "(152)-1 mm"
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "694 B53 bridge anchor washer bore",
+        "name": "682 B53 bridge anchor washer bore",
         "targets": [
           "B53 bridge anchor washer"
         ]
@@ -1484,11 +1426,11 @@
         "base": [
           98,
           -176,
-          144
+          152
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "695 B54 bridge anchor washer",
+        "name": "683 B54 bridge anchor washer",
         "body_name": "B54 bridge anchor washer"
       }
     },
@@ -1500,11 +1442,11 @@
         "base": [
           98,
           -176,
-          "(144)-1 mm"
+          "(152)-1 mm"
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "696 B54 bridge anchor washer bore",
+        "name": "684 B54 bridge anchor washer bore",
         "targets": [
           "B54 bridge anchor washer"
         ]

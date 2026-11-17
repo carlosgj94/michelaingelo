@@ -1,39 +1,24 @@
 {
   "commands": [
     {
-      "command": "component.activate",
-      "params": {
-        "component": "root"
-      }
-    },
-    {
       "command": "component.create",
       "params": {
-        "name": "RT01 fit coupon",
+        "name": "RT01 revision 4 fit coupon",
         "grounded": true
-      }
-    },
-    {
-      "command": "parameters.add",
-      "params": {
-        "name": "coupon_zero",
-        "expression": "0 mm",
-        "comment": "Keeps nut-pocket coordinates fixed; leave at zero."
       }
     },
     {
       "command": "solid.box",
       "params": {
-        "length": 140,
-        "width": 70,
-        "height": 8,
+        "length": 150,
+        "width": 100,
+        "height": 4,
         "corner": [
           0,
           0,
           0
         ],
         "operation": "new",
-        "name": "001 RT01 PETG fit coupon",
         "body_name": "RT01 PETG fit coupon"
       }
     },
@@ -42,230 +27,13 @@
       "params": {
         "length": 4,
         "width": 4,
-        "height": 10,
+        "height": 6,
         "corner": [
           -1,
           -1,
           -1
         ],
         "operation": "cut",
-        "name": "002 orientation notch",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 35.2,
-        "height": 5,
-        "base": [
-          25,
-          25,
-          4
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "003 RT01 PETG fit coupon bearing seat plus 0.2",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 15.4,
-        "height": 6,
-        "base": [
-          25,
-          25,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "004 RT01 PETG fit coupon seat bottom access",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 1.8,
-        "height": 10,
-        "base": [
-          25.0,
-          4,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "005 RT01 PETG fit coupon seat identity dot",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 35.3,
-        "height": 5,
-        "base": [
-          70,
-          25,
-          4
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "006 RT01 PETG fit coupon bearing seat plus 0.3",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 15.4,
-        "height": 6,
-        "base": [
-          70,
-          25,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "007 RT01 PETG fit coupon seat bottom access",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 1.8,
-        "height": 10,
-        "base": [
-          68.5,
-          4,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "008 RT01 PETG fit coupon seat identity dot",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 1.8,
-        "height": 10,
-        "base": [
-          71.5,
-          4,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "009 RT01 PETG fit coupon seat identity dot",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 35.4,
-        "height": 5,
-        "base": [
-          115,
-          25,
-          4
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "010 RT01 PETG fit coupon bearing seat plus 0.4",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 15.4,
-        "height": 6,
-        "base": [
-          115,
-          25,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "011 RT01 PETG fit coupon seat bottom access",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 1.8,
-        "height": 10,
-        "base": [
-          112.0,
-          4,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "012 RT01 PETG fit coupon seat identity dot",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 1.8,
-        "height": 10,
-        "base": [
-          115.0,
-          4,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "013 RT01 PETG fit coupon seat identity dot",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 1.8,
-        "height": 10,
-        "base": [
-          118.0,
-          4,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "014 RT01 PETG fit coupon seat identity dot",
         "targets": [
           "RT01 PETG fit coupon"
         ]
@@ -275,15 +43,14 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 3.4,
-        "height": 10,
+        "height": 6,
         "base": [
-          35,
-          48,
+          15,
+          15,
           -1
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "015 RT01 PETG fit coupon Metric clearance 3.4",
         "targets": [
           "RT01 PETG fit coupon"
         ]
@@ -293,15 +60,14 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4.5,
-        "height": 10,
+        "height": 6,
         "base": [
-          60,
-          48,
+          35,
+          15,
           -1
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "016 RT01 PETG fit coupon Metric clearance 4.5",
         "targets": [
           "RT01 PETG fit coupon"
         ]
@@ -311,15 +77,14 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 5.5,
-        "height": 10,
+        "height": 6,
         "base": [
-          85,
-          48,
+          55,
+          15,
           -1
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "017 RT01 PETG fit coupon Metric clearance 5.5",
         "targets": [
           "RT01 PETG fit coupon"
         ]
@@ -329,285 +94,31 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 6.6,
-        "height": 10,
-        "base": [
-          110,
-          48,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "018 RT01 PETG fit coupon Metric clearance 6.6",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            15,
-            58,
-            3.6
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "019 RT01 PETG fit coupon nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(8.2 mm+coupon_zero)/sqrt(3)*0.866025403784",
-            "(8.2 mm+coupon_zero)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(8.2 mm+coupon_zero)/sqrt(3)*0.000000000000",
-            "(8.2 mm+coupon_zero)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(8.2 mm+coupon_zero)/sqrt(3)*-0.866025403784",
-            "(8.2 mm+coupon_zero)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(8.2 mm+coupon_zero)/sqrt(3)*-0.866025403784",
-            "(8.2 mm+coupon_zero)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(8.2 mm+coupon_zero)/sqrt(3)*-0.000000000000",
-            "(8.2 mm+coupon_zero)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(8.2 mm+coupon_zero)/sqrt(3)*0.866025403784",
-            "(8.2 mm+coupon_zero)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "019 RT01 PETG fit coupon nut pocket profile",
-        "distance": 4.5,
-        "operation": "cut",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ],
-        "name": "020 RT01 PETG fit coupon captive nut"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 5.5,
         "height": 6,
         "base": [
+          75,
           15,
-          58,
           -1
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "021 RT01 PETG fit coupon clearance hole",
         "targets": [
           "RT01 PETG fit coupon"
         ]
       }
     },
     {
-      "command": "sketch.create",
+      "command": "solid.box",
       "params": {
-        "plane": {
-          "origin": [
-            40,
-            58,
-            3.6
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "022 RT01 PETG fit coupon nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(8.4 mm+coupon_zero)/sqrt(3)*0.866025403784",
-            "(8.4 mm+coupon_zero)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(8.4 mm+coupon_zero)/sqrt(3)*0.000000000000",
-            "(8.4 mm+coupon_zero)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(8.4 mm+coupon_zero)/sqrt(3)*-0.866025403784",
-            "(8.4 mm+coupon_zero)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(8.4 mm+coupon_zero)/sqrt(3)*-0.866025403784",
-            "(8.4 mm+coupon_zero)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(8.4 mm+coupon_zero)/sqrt(3)*-0.000000000000",
-            "(8.4 mm+coupon_zero)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(8.4 mm+coupon_zero)/sqrt(3)*0.866025403784",
-            "(8.4 mm+coupon_zero)/sqrt(3)*-0.500000000000"
-          ]
+        "length": 16,
+        "width": 16,
+        "height": 4.2,
+        "corner": [
+          92,
+          7,
+          3.8
         ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "022 RT01 PETG fit coupon nut pocket profile",
-        "distance": 4.5,
-        "operation": "cut",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ],
-        "name": "023 RT01 PETG fit coupon captive nut"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 5.5,
-        "height": 6,
-        "base": [
-          40,
-          58,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "024 RT01 PETG fit coupon clearance hole",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            65,
-            58,
-            3.6
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "025 RT01 PETG fit coupon nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(8.6 mm+coupon_zero)/sqrt(3)*0.866025403784",
-            "(8.6 mm+coupon_zero)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(8.6 mm+coupon_zero)/sqrt(3)*0.000000000000",
-            "(8.6 mm+coupon_zero)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(8.6 mm+coupon_zero)/sqrt(3)*-0.866025403784",
-            "(8.6 mm+coupon_zero)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(8.6 mm+coupon_zero)/sqrt(3)*-0.866025403784",
-            "(8.6 mm+coupon_zero)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(8.6 mm+coupon_zero)/sqrt(3)*-0.000000000000",
-            "(8.6 mm+coupon_zero)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(8.6 mm+coupon_zero)/sqrt(3)*0.866025403784",
-            "(8.6 mm+coupon_zero)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "025 RT01 PETG fit coupon nut pocket profile",
-        "distance": 4.5,
-        "operation": "cut",
-        "targets": [
-          "RT01 PETG fit coupon"
-        ],
-        "name": "026 RT01 PETG fit coupon captive nut"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 5.5,
-        "height": 6,
-        "base": [
-          65,
-          58,
-          -1
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "027 RT01 PETG fit coupon clearance hole",
+        "operation": "join",
         "targets": [
           "RT01 PETG fit coupon"
         ]
@@ -617,15 +128,31 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4.0,
-        "height": 7,
+        "height": 8,
         "base": [
-          90,
-          58,
-          2
+          100,
+          15,
+          1
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "028 RT01 PETG fit coupon insert trial 4.0",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 16,
+        "width": 16,
+        "height": 4.2,
+        "corner": [
+          112,
+          7,
+          3.8
+        ],
+        "operation": "join",
         "targets": [
           "RT01 PETG fit coupon"
         ]
@@ -635,15 +162,31 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4.2,
-        "height": 7,
+        "height": 8,
         "base": [
-          110,
-          58,
-          2
+          120,
+          15,
+          1
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "029 RT01 PETG fit coupon insert trial 4.2",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 16,
+        "width": 16,
+        "height": 4.2,
+        "corner": [
+          132,
+          7,
+          3.8
+        ],
+        "operation": "join",
         "targets": [
           "RT01 PETG fit coupon"
         ]
@@ -653,15 +196,388 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4.4,
-        "height": 7,
+        "height": 8,
         "base": [
-          130,
-          58,
-          2
+          140,
+          15,
+          1
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "030 RT01 PETG fit coupon insert trial 4.4",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16,
+        "height": 4.2,
+        "base": [
+          15,
+          42,
+          3.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.2,
+        "height": 10,
+        "base": [
+          15,
+          42,
+          -1
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16,
+        "height": 4.2,
+        "base": [
+          35,
+          42,
+          3.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.3,
+        "height": 10,
+        "base": [
+          35,
+          42,
+          -1
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16,
+        "height": 4.2,
+        "base": [
+          55,
+          42,
+          3.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.4,
+        "height": 10,
+        "base": [
+          55,
+          42,
+          -1
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 20,
+        "width": 20,
+        "height": 4.2,
+        "corner": [
+          75,
+          32,
+          3.8
+        ],
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16.1,
+        "height": 6.2,
+        "base": [
+          85,
+          42,
+          2.8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 20,
+        "width": 20,
+        "height": 4.2,
+        "corner": [
+          100,
+          32,
+          3.8
+        ],
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16.3,
+        "height": 6.2,
+        "base": [
+          110,
+          42,
+          2.8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 20,
+        "width": 20,
+        "height": 4.2,
+        "corner": [
+          125,
+          32,
+          3.8
+        ],
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16.5,
+        "height": 6.2,
+        "base": [
+          135,
+          42,
+          2.8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 150,
+        "width": 20,
+        "height": 24,
+        "corner": [
+          0,
+          75,
+          0
+        ],
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.4,
+        "height": 24,
+        "base": [
+          15,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.5,
+        "height": 24,
+        "base": [
+          30,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.6,
+        "height": 24,
+        "base": [
+          45,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 24,
+        "base": [
+          60,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.6,
+        "height": 24,
+        "base": [
+          75,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.7,
+        "height": 24,
+        "base": [
+          90,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 24,
+        "base": [
+          105,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.6,
+        "height": 24,
+        "base": [
+          120,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 24,
+        "base": [
+          135,
+          73,
+          15
+        ],
+        "axis": "Y",
+        "operation": "cut",
         "targets": [
           "RT01 PETG fit coupon"
         ]

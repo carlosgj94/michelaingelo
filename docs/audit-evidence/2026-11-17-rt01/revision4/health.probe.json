@@ -1,0 +1,1 @@
+{"commands": [{"command": "document.inspect", "params": {"measure": false, "sketch_counts": true}}, {"command": "joint.list", "params": {}}, {"command": "parameters.list", "params": {"filter": "user"}}]}

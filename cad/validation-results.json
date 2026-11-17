@@ -1,258 +1,249 @@
 {
   "design": "RT-01",
-  "revision": 3,
+  "revision": 4,
   "date": "2026-11-17",
-  "status": "Prototype geometry checked; not fabrication released",
-  "source_sha256": {
-    "michelaingelo.sc": "fc5b4c1079a4e5d9955af6266879d54597708b663fdfc605825a25b65dd6eb23",
-    "scripts/build_rotary_table.py": "920f6b55948512c93dbc882f479408121d45e9637ca865f55bbd3485ac6a94ed",
-    "scripts/build_fastener_register.py": "66336e1e0bb9b54750561ef11d6276bfbb843e5707c25bdfa5a21de3423f6ed5",
-    "scripts/build_assembly_checks.py": "cdb4a47d881de388209c79734397556c23d4f501d35277564806201dbe1c092f",
-    "cad/rotary-table-build.json": "83e8cebc5de154507296f18f241b31957f02c9ad47dc5577cd401f7a5dd377df",
-    "cad/parts.json": "7f3c665262d85188c8ce541f49970e418b8f0e5601652f3b6bb012634a7d3c46",
-    "cad/fasteners.json": "847ebf9577441dfa31bd34d309d4c483fa978d69f7dac3b99720ab8b901ac115",
-    "cad/fastener-clearance-checks.json": "2f9a02d6fa2d76e731548a6cd98a37f4410180feff8a9c2f8c088995f70a84a0",
-    "cad/support-access-checks.json": "767b3aced4b7497f183e2de8afdb205e8e2c1b58a19bec6d262c446994cb814b",
-    "exports/rotary-table/rt01-assembly.step": "e86a0470212bbd2147f3128c144c37540ff4ec2cb0985ed928f31a607aadb432",
-    "exports/rotary-table/print-manifest.json": "7c5330e4df4a4f5dad8b398870eb061d7a573e838be9c10ecf160b0e80940d7c"
+  "status": "CAD corrections verified; prototype, not fabrication released",
+  "native_sha256": "8c4ef60770b809b8318d6c5cebfa58cd35666d305c30c47a5adcab0679e5b103",
+  "baseline_sha256": "fc5b4c1079a4e5d9955af6266879d54597708b663fdfc605825a25b65dd6eb23",
+  "health": {
+    "new_closed_bodies": 81,
+    "total_world_bodies": 100,
+    "sketches_zero_dof": 7,
+    "failed_features": 0,
+    "unchanged_arm_warnings": [
+      "solid 'Body1': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 1.529e-2 mm); solid 'Body1': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 5.038e-2 mm); solid 'Body1': 2 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 1.053e-2 mm) (+4 more)"
+    ]
   },
-  "bodies": {
-    "table_closed": 84,
-    "arm_total": 19,
-    "arm_closed": 18,
-    "arm_preexisting_open": 1,
-    "arm_volumes_and_bounds_unchanged": true
+  "source_comparison": {
+    "bodies": 81,
+    "max_volume_delta_mm3": 0.0,
+    "max_bound_error_mm": 0.0,
+    "expected_z_translation_mm": 0
   },
-  "sketches": {
-    "total": 37,
-    "fully_constrained": 37,
-    "new_feature_errors": 0,
-    "new_feature_warnings": 0,
-    "reference_note": "Original arm import warnings retained. Existing Sketch1 preserved as fixed review geometry at its original world plane after breaking obsolete face-projection link."
+  "step_round_trip": {
+    "bodies": 81,
+    "max_volume_delta_mm3": 3.393540100660175e-05,
+    "max_bound_error_mm": 1.8474111129762605e-13,
+    "expected_z_translation_mm": 0
   },
-  "fasteners": {
-    "joint_rows": 24,
-    "defined_length_screws": 106,
+  "arm_preservation": {
+    "bodies": 19,
+    "max_volume_delta_mm3": 3.0850060284137726e-09,
+    "max_bound_error_mm": 3.410605131648481e-13,
+    "expected_z_translation_mm": 8
+  },
+  "hardware": {
+    "groups": 23,
+    "screws": 119,
+    "fixed_screws": 101,
     "bench_bolts": 18,
-    "scope": "Selected critical envelopes plus documented nominal stack calculations; not every hardware item is a retained CAD solid."
-  },
-  "interference": {
-    "probe_assemblies": 64,
-    "rotation_degrees": [
-      0,
-      30,
-      60,
-      90,
-      120,
-      150,
-      180,
-      210,
-      240,
-      270,
-      300,
-      330,
-      360
+    "fixture_tip_probes": 4,
+    "rotation_angles_deg": [
+      0.0,
+      21.176470588235293,
+      42.35294117647059,
+      63.529411764705884,
+      84.70588235294117,
+      105.88235294117646,
+      127.05882352941177,
+      148.23529411764707,
+      169.41176470588235,
+      190.58823529411765,
+      211.76470588235293,
+      232.94117647058823,
+      254.11764705882354,
+      275.29411764705884,
+      296.47058823529414,
+      317.6470588235294,
+      338.8235294117647,
+      28.17255342332686,
+      45.0,
+      91.82744657667308,
+      135.0,
+      150.0,
+      225.0,
+      315.0,
+      330.0,
+      360.0
     ],
-    "cartridge_axial_offsets_mm": [
+    "cartridge_offsets_mm": [
       3,
       -3
     ],
-    "exclusions": [
-      "Bought worm/wheel tooth envelopes",
-      "Imported arm internal body pairs",
-      "Screw thread volumes in designated tapped recipients",
-      "F22 shank against existing top washer pair"
+    "unexpected_intersections": 0,
+    "unchecked_pairs": 0,
+    "budget_failures": 0,
+    "exclusions": "cad/hardware-check-coverage.json"
+  },
+  "service": {
+    "poses": 13,
+    "unexpected_intersections": 0,
+    "unchecked_pairs": 0,
+    "driver_rim_clearance_mm": 2,
+    "driver_plate_clearance_mm": 3
+  },
+  "measured_interfaces": [
+    {
+      "a": "B08 axial home sensor reference",
+      "b": "B12 retained steel home target",
+      "gap_mm": 1.1999999999999744
+    },
+    {
+      "a": "B08 axial home sensor reference",
+      "b": "B01 bearing outer ring reference",
+      "gap_mm": 8.999999999999996
+    },
+    {
+      "a": "M20 registered output hub",
+      "b": "B01 bearing outer ring reference",
+      "gap_mm": 0.9999999999999717
+    },
+    {
+      "a": "M21 wheel drive pin",
+      "b": "B11 duplex wheel envelope",
+      "gap_mm": 0.005015187731178946
+    },
+    {
+      "a": "B13 sensor upper jam nut",
+      "b": "M20 registered output hub",
+      "gap_mm": 8.699999999999989
+    }
+  ],
+  "fit_parameter_trial": {
+    "changes": {
+      "rt_column_bore": 10.4,
+      "rt_fixture_boss_bore": 16.5,
+      "rt_insert": 4.2,
+      "rt_m3": 3.5,
+      "rt_m3_h": 3.6,
+      "rt_m4": 4.6,
+      "rt_m4_h": 4.7,
+      "rt_m5": 5.6,
+      "rt_m5_h": 5.7,
+      "rt_m6": 6.7,
+      "rt_motor_pilot_h": 22.8
+    },
+    "features_recomputed": 214,
+    "changed_print_bodies": [
+      "P11 column sleeve",
+      "P12 column sleeve",
+      "P13 column sleeve",
+      "P14 column sleeve",
+      "P24 NEMA17 motor bracket",
+      "P31 platter quadrant",
+      "P32 platter quadrant",
+      "P33 platter quadrant",
+      "P34 platter quadrant",
+      "P41 fixed housing quadrant",
+      "P42 fixed housing quadrant",
+      "P43 fixed housing quadrant",
+      "P44 fixed housing quadrant",
+      "P45 seam backing strip 1",
+      "P45 seam backing strip 2",
+      "P45 seam backing strip 3",
+      "P45 seam backing strip 4",
+      "P46 motor service hood",
+      "P50 electronics service box",
+      "P51 removable controller tray",
+      "P52 electronics lid",
+      "P53 electronics foot 1",
+      "P53 electronics foot 2",
+      "P53 electronics foot 3",
+      "P53 electronics foot 4"
     ],
-    "results": [
+    "failed_features": 0,
+    "scope": "One simultaneous enlargement trial, not a range/scaling or physical-fit qualification"
+  },
+  "prints": {
+    "assembly_stls": 25,
+    "coupons": 1,
+    "largest_dimension_mm": 168.0,
+    "largest_brim_footprint_mm": 178.0,
+    "max_mesh_volume_error_percent": 0.040419,
+    "seam_strips": [
       {
-        "pose": {
-          "rotor_deg": 0
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 553,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
+        "name": "P45 seam backing strip 1",
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "bed_contact_area_mm2": 1952.4855
       },
       {
-        "pose": {
-          "rotor_deg": 30
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
+        "name": "P45 seam backing strip 2",
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "bed_contact_area_mm2": 1952.4855
       },
       {
-        "pose": {
-          "rotor_deg": 60
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
+        "name": "P45 seam backing strip 3",
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "bed_contact_area_mm2": 1952.4855
       },
       {
-        "pose": {
-          "rotor_deg": 90
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 552,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 120
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 150
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 180
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 552,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 210
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 240
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 270
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 552,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 300
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 330
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 569,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "rotor_deg": 360
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 553,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "cartridge_x_mm": 3
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 553,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
-      },
-      {
-        "pose": {
-          "cartridge_x_mm": -3
-        },
-        "overlaps": 0,
-        "unchecked": 0,
-        "pairs_candidate": 553,
-        "pairs_intersected": 172,
-        "pairs_excluded": 73
+        "name": "P45 seam backing strip 4",
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "bed_contact_area_mm2": 1952.4855
       }
     ]
   },
-  "access": {
-    "checks": 7,
-    "overlaps": 0,
-    "unchecked": 0,
-    "lid_tool_shafts": 10,
-    "lid_lift_mm": 8,
-    "lid_rearward_offsets_mm": [
-      40,
-      80,
-      140
-    ],
-    "plate_lid_gap_mm": 28
+  "analytic_nominal_bounds_mm": {
+    "anchor_washer_to_wall": 3.187401861856017,
+    "anchor_washer_to_motor_opening": 3.0,
+    "carrier_end_gap_at_limit": 1,
+    "blind_fixture_bottom_metal": 2.5,
+    "target_to_column_heads": 2.1,
+    "rib_to_wall": 3.8,
+    "skirt_radial_gap": 2,
+    "deck_upstand_gap": 2
   },
-  "fresh_build": {
-    "bodies": 84,
-    "max_volume_delta_mm3": 0.002678277887753211,
-    "max_bbox_coordinate_delta_mm": 1.580957587066223e-13
-  },
-  "step_roundtrip": {
-    "bodies": 84,
-    "max_volume_delta_mm3": 0.0026778175379149616,
-    "max_bbox_coordinate_delta_mm": 1.1746159600534156e-13
-  },
-  "print_meshes": {
-    "assembly_parts": 33,
-    "coupon": 1,
-    "all_closed_and_consistent": true,
-    "max_dimension_mm": 168.0,
-    "max_5mm_brim_footprint_mm": 178.0,
-    "max_volume_error_percent": 0.040419
-  },
-  "unrun": [
-    "Slicing and physical print/coupon",
-    "Bench selection and final anchor length",
-    "Weld sizing, structural analysis and dynamic stand tests",
-    "Final purchased-device interfaces and worm-shaft fabrication drawing",
-    "Loaded accuracy, control, thermal and ingress tests",
-    "Full moving-arm workspace/collision study"
-  ]
+  "not_run": [
+    "Slicing, physical printing, fit/insert/seal tests",
+    "Loaded motion, reversal, runout, stiffness, fatigue, FEA or payload qualification",
+    "Actual home signal, complete cordset/cable routing and electronics thermal tests",
+    "Full articulated arm/tool/workpiece study",
+    "Final purchased-bearing/shaft/coupling/board/fixture/bench and weld qualification"
+  ],
+  "limits": [
+    "Nominal geometry; material density defaults are not a mass or structural model.",
+    "All currently registered screw groups are checked. Heat-set insert retention/press fits, unknown below-bench geometry and unselected component hardware require separate validation.",
+    "No certified IP rating or stone-carving capability."
+  ],
+  "evidence_sha256": {
+    "cad/rotary-table-build.json": "e11f408cecaa7397a912344372afd19ad5838fc30340fea27f5617100fb1d28b",
+    "cad/parts.json": "0dfc65b1aa9ab771c90ac63eb5eeeb97d36f4fb34f161ac9679680130739ef10",
+    "cad/fasteners.json": "473d7e5db07dd1f0fa337e56a17861cb0673044737ad74a655826bf45baddda1",
+    "cad/fastener-clearance-checks.json": "91f90f26c579b050b1b6b8e9f1c39a694d3db6647622c73ed61ab18dc5f5719e",
+    "cad/support-access-checks.json": "7f7234202c7abcac7c74ff779bbfd44911128db3c6f04ee2d6a397af942230b4",
+    "cad/fit-coupon-build.json": "f6a74390a750be8b05f94534e952afd71d119bebb3d94358a813ca4a686006f4",
+    "cad/hardware-check-coverage.json": "c9438b97f21882c5d61ed5a5b87f9b328d69170e8a9bc75d51f2c9e75d257415",
+    "exports/rotary-table/print-manifest.json": "84a9f317122f3b16b2a8b07826aeda80e3cc6d556bbc614d7f52811119bf442b",
+    "exports/rotary-table/rt01-assembly.step": "ed67056616a46c624a638d4460ad6fc6d1b7823b5a8cb3c7c884d3bc80045301",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/arm-baseline.measure.json": "c62da18ebebdcd1dc9be0b9aa2e4e6d12a60ec53d5506747f8a4302c06a3d3ce",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/fit-parameters.probe.json": "1616591314cea2f93de92253da853b4f6901e36327943674f4ffbc285537209b",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/fit-parameters.results.json": "10aad0ac1dc230025b9310c876c7d9b4d307ff340e2bf3be1fea9ea7bdb49b6f",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/fresh.measure.json": "3d1f86c16ac636febba92a95d96bb1cd42a4454a9e39571c5abb4f38bf7310dd",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/health.probe.json": "de006e46ead5d9654037ac47289eaa634e1c9a137c1481ff0994e57eb2c84689",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/health.results.json": "ff61f60736b3154c6e7ef89468e29e9d77fd36335968caeb84aee81075ad9f23",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/input-provenance.json": "90eb4149fe59b0d72171b7ee1aa5e140cc39a238d64bc98bc039f30da653c163",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/interfaces.probe.json": "e1b1e37315afda92d736bc8f94c73cbf27c637cba0d3833bf094077063e87a2b",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/interfaces.results.json": "94538818cea1a9676b5421ea88fd12a79d6fff7ffa1bc1a46cea1f36ec62116c",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/native.measure.json": "9028ecaad6d3352ab60dc2e8aec9e03c29ef4399e279a897c5dc868c43f3c13e",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/presentation.measure.json": "9028ecaad6d3352ab60dc2e8aec9e03c29ef4399e279a897c5dc868c43f3c13e",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/rotation-hardware.results.json": "702f36b66a45bf32a87b7d7e2ffe71f1870603870c1a889db492a7e2003ee490",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/service.results.json": "5b33c61fd63d534379a2e8b3f5460873dd10822272e4b25ab560ab1dcde23eb0",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/step.measure.json": "8048a8280657ac9ba7081a6d428041b79aded10723fd002fa18222ca62059bb1"
+  }
 }

@@ -1,0 +1,131 @@
+{
+  "revision": 4,
+  "notch": "lower-left, X0/Y0",
+  "vertical_holes": {
+    "y": 15,
+    "xd": [
+      [
+        15,
+        3.4
+      ],
+      [
+        35,
+        4.5
+      ],
+      [
+        55,
+        5.5
+      ],
+      [
+        75,
+        6.6
+      ]
+    ]
+  },
+  "insert_trials": {
+    "y": 15,
+    "xd": [
+      [
+        100,
+        4
+      ],
+      [
+        120,
+        4.2
+      ],
+      [
+        140,
+        4.4
+      ]
+    ],
+    "depth": 7
+  },
+  "column_trials": {
+    "y": 42,
+    "xd": [
+      [
+        15,
+        10.2
+      ],
+      [
+        35,
+        10.3
+      ],
+      [
+        55,
+        10.4
+      ]
+    ],
+    "depth": 8
+  },
+  "fixture_boss_trials": {
+    "y": 42,
+    "xd": [
+      [
+        85,
+        16.1
+      ],
+      [
+        110,
+        16.3
+      ],
+      [
+        135,
+        16.5
+      ]
+    ],
+    "depth": 5.2
+  },
+  "horizontal_holes": {
+    "y_range": [
+      75,
+      95
+    ],
+    "z": 15,
+    "xd": [
+      [
+        15,
+        3.4
+      ],
+      [
+        30,
+        3.5
+      ],
+      [
+        45,
+        3.6
+      ],
+      [
+        60,
+        4.5
+      ],
+      [
+        75,
+        4.6
+      ],
+      [
+        90,
+        4.7
+      ],
+      [
+        105,
+        5.5
+      ],
+      [
+        120,
+        5.6
+      ],
+      [
+        135,
+        5.7
+      ]
+    ]
+  },
+  "required_first_articles": [
+    "One complete P11 column sleeve for the69.5 mm bore",
+    "P24 motor bracket for horizontal pilot/holes and clamp retention",
+    "P50/P52 enclosure land, insert and gasket compression",
+    "One platter quadrant on M20 raised fixture boss"
+  ],
+  "removed_interfaces": "Printed bearing seats, wheel pilot, hub sleeve fit and captive nut pockets are removed from revision4. Metal fits use machining inspection, not this coupon."
+}

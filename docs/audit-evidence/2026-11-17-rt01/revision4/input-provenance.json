@@ -1,0 +1,10 @@
+{
+  "baseline_sha256": "fc5b4c1079a4e5d9955af6266879d54597708b663fdfc605825a25b65dd6eb23",
+  "geometry_probe_input_sha256": "401dcc2225004619746abb976675e535d9d300bfa7d6d4d41cf1d5113b314816",
+  "delivered_native_sha256": "8c4ef60770b809b8318d6c5cebfa58cd35666d305c30c47a5adcab0679e5b103",
+  "final_save_change": "Visibility cleanup, cleared section/selection and applied arm-reference named view only",
+  "presentation_comparison": {
+    "bodies": 100,
+    "exact_volume_and_bounds_match": true
+  }
+}

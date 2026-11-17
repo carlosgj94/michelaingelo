@@ -1,0 +1,7890 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "Disposable revision 4 hardware",
+        "grounded": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 90.0,
+        "base": [
+          66,
+          0,
+          1.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F01 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          66,
+          0,
+          91.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11,
+        "height": 1.6,
+        "base": [
+          66,
+          0,
+          90.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 90.0,
+        "base": [
+          -66,
+          0,
+          1.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F01 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -66,
+          0,
+          91.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11,
+        "height": 1.6,
+        "base": [
+          -66,
+          0,
+          90.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 90.0,
+        "base": [
+          36,
+          -58,
+          1.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F01 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          36,
+          -58,
+          91.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11,
+        "height": 1.6,
+        "base": [
+          36,
+          -58,
+          90.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 90.0,
+        "base": [
+          -36,
+          -58,
+          1.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F01 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -36,
+          -58,
+          91.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11,
+        "height": 1.6,
+        "base": [
+          -36,
+          -58,
+          90.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F01 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 13.6,
+        "base": [
+          -64,
+          -64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F02 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -64,
+          -64,
+          13.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -64,
+          -64,
+          12.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 13.6,
+        "base": [
+          -64,
+          64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F02 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -64,
+          64,
+          13.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -64,
+          64,
+          12.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 13.6,
+        "base": [
+          64,
+          -64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F02 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          64,
+          -64,
+          13.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          64,
+          -64,
+          12.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 13.6,
+        "base": [
+          64,
+          64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F02 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          64,
+          64,
+          13.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          64,
+          64,
+          12.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F02 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          48.50367545684255,
+          20.090880199167213,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          48.50367545684255,
+          20.090880199167213,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          48.50367545684255,
+          20.090880199167213,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          48.50367545684255,
+          20.090880199167213,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          20.090880199167216,
+          48.50367545684255,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          20.090880199167216,
+          48.50367545684255,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          20.090880199167216,
+          48.50367545684255,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          20.090880199167216,
+          48.50367545684255,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          -20.09088019916721,
+          48.50367545684255,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -20.09088019916721,
+          48.50367545684255,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          -20.09088019916721,
+          48.50367545684255,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          -20.09088019916721,
+          48.50367545684255,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          -48.50367545684255,
+          20.09088019916722,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -48.50367545684255,
+          20.09088019916722,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          -48.50367545684255,
+          20.09088019916722,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          -48.50367545684255,
+          20.09088019916722,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          -48.50367545684256,
+          -20.09088019916721,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 4"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -48.50367545684256,
+          -20.09088019916721,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 4"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          -48.50367545684256,
+          -20.09088019916721,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 4"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          -48.50367545684256,
+          -20.09088019916721,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 4"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          -20.0908801991672,
+          -48.50367545684256,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -20.0908801991672,
+          -48.50367545684256,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          -20.0908801991672,
+          -48.50367545684256,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          -20.0908801991672,
+          -48.50367545684256,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          20.090880199167223,
+          -48.50367545684255,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 6"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          20.090880199167223,
+          -48.50367545684255,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 6"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          20.090880199167223,
+          -48.50367545684255,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 6"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          20.090880199167223,
+          -48.50367545684255,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 6"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 25.0,
+        "base": [
+          48.50367545684256,
+          -20.090880199167202,
+          74.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F03 7"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          48.50367545684256,
+          -20.090880199167202,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 7"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          48.50367545684256,
+          -20.090880199167202,
+          81
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 7"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.237604307034012,
+        "height": 4,
+        "base": [
+          48.50367545684256,
+          -20.090880199167202,
+          77
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F03 7"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          -52,
+          18,
+          5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F07 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -52,
+          18,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          -52,
+          18,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          52,
+          18,
+          5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F07 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          52,
+          18,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          52,
+          18,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          -70,
+          92,
+          5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F07 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -70,
+          92,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          -70,
+          92,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          70,
+          92,
+          5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F07 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          70,
+          92,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          70,
+          92,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F07 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          -70.85,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 -1 32.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -74.85,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 32.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -70.85,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 32.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          -70.85,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 -1 32.5 73"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -74.85,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 32.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -70.85,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 32.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          -70.85,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 -1 78.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -74.85,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 78.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -70.85,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 78.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          -70.85,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 -1 78.5 73"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -74.85,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 78.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -70.85,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 -1 78.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          58.85,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 1 32.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          70.85,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 32.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          70.05,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 32.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          58.85,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 1 32.5 73"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          70.85,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 32.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          70.05,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 32.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          58.85,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 1 78.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          70.85,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 78.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          70.05,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 78.5 27"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 12,
+        "base": [
+          58.85,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F09 1 78.5 73"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          70.85,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 78.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          70.05,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F09 1 78.5 73"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          116,
+          32,
+          1
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F10 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          116,
+          32,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          116,
+          32,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          116,
+          79,
+          1
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F10 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          116,
+          79,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          116,
+          79,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          138,
+          32,
+          1
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F10 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          138,
+          32,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          138,
+          32,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          138,
+          79,
+          1
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F10 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          138,
+          79,
+          21
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 1,
+        "base": [
+          138,
+          79,
+          20
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F10 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10,
+        "base": [
+          123.5,
+          40,
+          34.5
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F11 40 34.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 3,
+        "base": [
+          120.5,
+          40,
+          34.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 40 34.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          123.5,
+          40,
+          34.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 40 34.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10,
+        "base": [
+          123.5,
+          40,
+          65.5
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F11 40 65.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 3,
+        "base": [
+          120.5,
+          40,
+          65.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 40 65.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          123.5,
+          40,
+          65.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 40 65.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10,
+        "base": [
+          123.5,
+          71,
+          34.5
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F11 71 34.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 3,
+        "base": [
+          120.5,
+          71,
+          34.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 71 34.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          123.5,
+          71,
+          34.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 71 34.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10,
+        "base": [
+          123.5,
+          71,
+          65.5
+        ],
+        "axis": "X",
+        "operation": "new",
+        "body_name": "TEST F11 71 65.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 3,
+        "base": [
+          120.5,
+          71,
+          65.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 71 65.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          123.5,
+          71,
+          65.5
+        ],
+        "axis": "X",
+        "operation": "join",
+        "targets": [
+          "TEST F11 71 65.5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 10,
+        "top_diameter": 5,
+        "height": 2.5,
+        "base": [
+          72,
+          20,
+          0.2
+        ],
+        "operation": "new",
+        "body_name": "TEST F13 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 9.5,
+        "base": [
+          72,
+          20,
+          2.7
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F13 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 10,
+        "top_diameter": 5,
+        "height": 2.5,
+        "base": [
+          72,
+          48,
+          0.2
+        ],
+        "operation": "new",
+        "body_name": "TEST F13 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 9.5,
+        "base": [
+          72,
+          48,
+          2.7
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F13 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 13.6,
+        "base": [
+          220,
+          35,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F14 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          220,
+          35,
+          13.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F14 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 13.6,
+        "base": [
+          220,
+          77,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F14 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          220,
+          77,
+          13.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F14 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 0 -6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 0 -6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "0 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 0 -6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 0 -6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "0 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 0 6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 0 6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "0 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 0 6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 0 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 0 6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "0 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 1 -6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 1 -6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "90 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 1 -6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 1 -6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "90 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 1 6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 1 6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "90 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 1 6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 1 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 1 6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "90 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 2 -6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 2 -6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 2 -6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 2 -6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 2 6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 2 6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 2 6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 2 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 2 6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 3 -6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 3 -6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "270 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 3 -6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 -6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 3 -6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "270 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 3 6 25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          25
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 25"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 3 6 25"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "270 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 25,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "new",
+        "body_name": "TEST F15 3 6 90"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          6,
+          132.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          136.2,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          6,
+          153,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          6,
+          153.8,
+          90
+        ],
+        "axis": "Y",
+        "operation": "join",
+        "targets": [
+          "TEST F15 3 6 90"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "TEST F15 3 6 90"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "270 deg"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          88.0,
+          108.0,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F16 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          88.0,
+          108.0,
+          3.7
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          88.0,
+          108.0,
+          2.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          -108.0,
+          88.0,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F16 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -108.0,
+          88.0,
+          3.7
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          -108.0,
+          88.0,
+          2.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          -88.00000000000001,
+          -107.99999999999999,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F16 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -88.00000000000001,
+          -107.99999999999999,
+          3.7
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          -88.00000000000001,
+          -107.99999999999999,
+          2.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 3.7,
+        "base": [
+          107.99999999999999,
+          -88.00000000000001,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F16 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          107.99999999999999,
+          -88.00000000000001,
+          3.7
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 1.2,
+        "base": [
+          107.99999999999999,
+          -88.00000000000001,
+          2.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F16 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 95.0,
+        "base": [
+          171,
+          21,
+          1.3
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F17 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          171,
+          21,
+          96.3
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          171,
+          21,
+          95.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 95.0,
+        "base": [
+          171,
+          91,
+          1.3
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F17 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          171,
+          91,
+          96.3
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          171,
+          91,
+          95.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 95.0,
+        "base": [
+          225,
+          21,
+          1.3
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F17 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          225,
+          21,
+          96.3
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          225,
+          21,
+          95.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 95.0,
+        "base": [
+          225,
+          91,
+          1.3
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F17 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          225,
+          91,
+          96.3
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          225,
+          91,
+          95.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F17 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          -78,
+          -274,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          -78,
+          -274,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          -78,
+          -274,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          78,
+          -274,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          78,
+          -274,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          78,
+          -274,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          -78,
+          -174,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          -78,
+          -174,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          -78,
+          -174,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          78,
+          -174,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          78,
+          -174,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          78,
+          -174,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          -42,
+          -275,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 4"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          -42,
+          -275,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 4"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          -42,
+          -275,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 4"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          42,
+          -275,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          42,
+          -275,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          42,
+          -275,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          -42,
+          -173,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 6"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          -42,
+          -173,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 6"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          -42,
+          -173,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 6"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          42,
+          -173,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 7"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          42,
+          -173,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 7"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          42,
+          -173,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 7"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          -79,
+          -224,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 8"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          -79,
+          -224,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 8"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          -79,
+          -224,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 8"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          79,
+          -224,
+          98.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F18 9"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          79,
+          -224,
+          108.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 9"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          79,
+          -224,
+          108.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F18 9"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          -65,
+          -258,
+          72.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F19 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          -65,
+          -258,
+          82.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          -65,
+          -258,
+          82.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          -65,
+          -190,
+          72.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F19 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          -65,
+          -190,
+          82.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          -65,
+          -190,
+          82.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          65,
+          -258,
+          72.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F19 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          65,
+          -258,
+          82.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          65,
+          -258,
+          82.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 10.0,
+        "base": [
+          65,
+          -190,
+          72.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F19 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.7,
+        "height": 1.65,
+        "base": [
+          65,
+          -190,
+          82.5
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 0.5,
+        "base": [
+          65,
+          -190,
+          82.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F19 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 14.9,
+        "base": [
+          -55.5,
+          -258.5,
+          19.55
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F20 0"
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 3.4,
+        "top_diameter": 6,
+        "height": 1.3,
+        "base": [
+          -55.5,
+          -258.5,
+          34.25
+        ],
+        "operation": "join",
+        "targets": [
+          "TEST F20 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 1.25,
+        "base": [
+          -55.5,
+          -258.5,
+          26.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.350852961085883,
+        "height": 4,
+        "base": [
+          -55.5,
+          -258.5,
+          22.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 14.9,
+        "base": [
+          -55.5,
+          -189.5,
+          19.55
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F20 1"
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 3.4,
+        "top_diameter": 6,
+        "height": 1.3,
+        "base": [
+          -55.5,
+          -189.5,
+          34.25
+        ],
+        "operation": "join",
+        "targets": [
+          "TEST F20 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 1.25,
+        "base": [
+          -55.5,
+          -189.5,
+          26.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.350852961085883,
+        "height": 4,
+        "base": [
+          -55.5,
+          -189.5,
+          22.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 14.9,
+        "base": [
+          55.5,
+          -258.5,
+          19.55
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F20 2"
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 3.4,
+        "top_diameter": 6,
+        "height": 1.3,
+        "base": [
+          55.5,
+          -258.5,
+          34.25
+        ],
+        "operation": "join",
+        "targets": [
+          "TEST F20 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 1.25,
+        "base": [
+          55.5,
+          -258.5,
+          26.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.350852961085883,
+        "height": 4,
+        "base": [
+          55.5,
+          -258.5,
+          22.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 14.9,
+        "base": [
+          55.5,
+          -189.5,
+          19.55
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F20 3"
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 3.4,
+        "top_diameter": 6,
+        "height": 1.3,
+        "base": [
+          55.5,
+          -189.5,
+          34.25
+        ],
+        "operation": "join",
+        "targets": [
+          "TEST F20 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 1.25,
+        "base": [
+          55.5,
+          -189.5,
+          26.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.350852961085883,
+        "height": 4,
+        "base": [
+          55.5,
+          -189.5,
+          22.75
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F20 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 32.8,
+        "base": [
+          -75,
+          -271,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F21 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -75,
+          -271,
+          32.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -75,
+          -271,
+          31.999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 32.8,
+        "base": [
+          -75,
+          -177,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F21 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -75,
+          -177,
+          32.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -75,
+          -177,
+          31.999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 32.8,
+        "base": [
+          75,
+          -271,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F21 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          75,
+          -271,
+          32.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          75,
+          -271,
+          31.999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 32.8,
+        "base": [
+          75,
+          -177,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F21 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          75,
+          -177,
+          32.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          75,
+          -177,
+          31.999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F21 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 25.0,
+        "base": [
+          -98,
+          -272,
+          128.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F22 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -98,
+          -272,
+          153.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -98,
+          -272,
+          138.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11.547005383792515,
+        "height": 6,
+        "base": [
+          -98,
+          -272,
+          132.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 5.6,
+        "base": [
+          -98,
+          -272,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F23 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -98,
+          -272,
+          5.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -98,
+          -272,
+          3.9999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 25.0,
+        "base": [
+          -98,
+          -176,
+          128.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F22 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -98,
+          -176,
+          153.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -98,
+          -176,
+          138.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11.547005383792515,
+        "height": 6,
+        "base": [
+          -98,
+          -176,
+          132.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 5.6,
+        "base": [
+          -98,
+          -176,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F23 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -98,
+          -176,
+          5.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -98,
+          -176,
+          3.9999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 25.0,
+        "base": [
+          98,
+          -272,
+          128.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F22 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          98,
+          -272,
+          153.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          98,
+          -272,
+          138.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11.547005383792515,
+        "height": 6,
+        "base": [
+          98,
+          -272,
+          132.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 5.6,
+        "base": [
+          98,
+          -272,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F23 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          98,
+          -272,
+          5.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          98,
+          -272,
+          3.9999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 25.0,
+        "base": [
+          98,
+          -176,
+          128.6
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F22 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          98,
+          -176,
+          153.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          98,
+          -176,
+          138.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 11.547005383792515,
+        "height": 6,
+        "base": [
+          98,
+          -176,
+          132.4
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F22 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 5.6,
+        "base": [
+          98,
+          -176,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F23 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          98,
+          -176,
+          5.6
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          98,
+          -176,
+          3.9999999999999996
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F23 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35.0,
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          133.8
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F24 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          168.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          168.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          143.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          138.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35.0,
+        "base": [
+          31.75,
+          -259.0,
+          133.8
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F24 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          31.75,
+          -259.0,
+          168.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          31.75,
+          -259.0,
+          168.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          31.75,
+          -259.0,
+          143.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          31.75,
+          -259.0,
+          138.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35.0,
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          133.8
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F24 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          168.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          168.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          143.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          138.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35.0,
+        "base": [
+          -31.75,
+          -259.0,
+          133.8
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F24 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -31.75,
+          -259.0,
+          168.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -31.75,
+          -259.0,
+          168.0
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -31.75,
+          -259.0,
+          143.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.08290376865476,
+        "height": 5,
+        "base": [
+          -31.75,
+          -259.0,
+          138.2
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F24 3"
+        ]
+      }
+    },
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "RT01 - rotating table"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          32.5,
+          0.0,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          32.5,
+          0.0,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          22.980970388562795,
+          22.980970388562792,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          22.980970388562795,
+          22.980970388562792,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          1.990051048614449e-15,
+          32.5,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          1.990051048614449e-15,
+          32.5,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          -22.980970388562792,
+          22.980970388562795,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -22.980970388562792,
+          22.980970388562795,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          -32.5,
+          3.980102097228898e-15,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 4"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -32.5,
+          3.980102097228898e-15,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 4"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          -22.9809703885628,
+          -22.980970388562792,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -22.9809703885628,
+          -22.980970388562792,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          -5.970153145843346e-15,
+          -32.5,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 6"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -5.970153145843346e-15,
+          -32.5,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 6"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 20,
+        "base": [
+          22.98097038856279,
+          -22.9809703885628,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F04 7"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          22.98097038856279,
+          -22.9809703885628,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F04 7"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 45,
+        "base": [
+          15,
+          0,
+          65
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F05 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          15,
+          0,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F05 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 45,
+        "base": [
+          0,
+          15,
+          65
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F05 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          0,
+          15,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F05 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 45,
+        "base": [
+          -15,
+          0,
+          65
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F05 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          -15,
+          0,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F05 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 45,
+        "base": [
+          0,
+          -15,
+          65
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F05 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.5,
+        "height": 5,
+        "base": [
+          0,
+          -15,
+          110
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F05 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          -65,
+          -22,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          -65,
+          -22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          -22,
+          -65,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          -22,
+          -65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          -65,
+          22,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          -65,
+          22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          -22,
+          65,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          -22,
+          65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          65,
+          -22,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 4"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          65,
+          -22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 4"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          22,
+          -65,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          22,
+          -65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 5"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          65,
+          22,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 6"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          65,
+          22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 6"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 16,
+        "base": [
+          22,
+          65,
+          109
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST F06 7"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 2.75,
+        "base": [
+          22,
+          65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F06 7"
+        ]
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 6,
+        "top_diameter": 3.4,
+        "height": 1.3,
+        "base": [
+          -63.21985447626402,
+          -36.50000000000001,
+          99.8
+        ],
+        "operation": "new",
+        "body_name": "TEST F25"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3,
+        "height": 6.7,
+        "base": [
+          -63.21985447626402,
+          -36.50000000000001,
+          101.1
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "TEST F25"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 16,
+        "base": [
+          -47,
+          -47,
+          112
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST permitted fixture tip -47 -47"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 16,
+        "base": [
+          -47,
+          47,
+          112
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST permitted fixture tip -47 47"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 16,
+        "base": [
+          47,
+          -47,
+          112
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST permitted fixture tip 47 -47"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 16,
+        "base": [
+          47,
+          47,
+          112
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "body_name": "TEST permitted fixture tip 47 47"
+      }
+    },
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "M01 aluminium base plate",
+          "M03 metal bench spacer",
+          "M04 metal bench spacer",
+          "M05 metal bench spacer",
+          "M06 metal bench spacer",
+          "M11 steel locating column",
+          "P11 column sleeve",
+          "M12 steel locating column",
+          "P12 column sleeve",
+          "M13 steel locating column",
+          "P13 column sleeve",
+          "M14 steel locating column",
+          "P14 column sleeve",
+          "M02 aluminium bearing seat",
+          "B01 bearing outer ring reference",
+          "M60 monolithic worm carrier",
+          "M61 worm bearing retainer left",
+          "M62 retainer shim left",
+          "B02 worm support bearing left",
+          "M61 worm bearing retainer right",
+          "M62 retainer shim right",
+          "B02 worm support bearing right",
+          "B03 worm shaft reference",
+          "B04 duplex worm envelope",
+          "B05 clamp coupling reference",
+          "P24 NEMA17 motor bracket",
+          "B06 NEMA17 motor and encoder envelope",
+          "B08 axial home sensor reference",
+          "B13 sensor upper jam nut",
+          "B13 sensor lower jam nut",
+          "B09 sensor connector and cable reservation",
+          "B07 output encoder reserved volume",
+          "B10 bearing inner ring reference",
+          "B11 duplex wheel envelope",
+          "M20 registered output hub",
+          "M21 wheel drive pin",
+          "B12 retained steel home target",
+          "P31 platter quadrant",
+          "P32 platter quadrant",
+          "P33 platter quadrant",
+          "P34 platter quadrant",
+          "P41 fixed housing quadrant",
+          "P42 fixed housing quadrant",
+          "P43 fixed housing quadrant",
+          "P44 fixed housing quadrant",
+          "P45 seam backing strip 1",
+          "P45 seam backing strip 2",
+          "P45 seam backing strip 3",
+          "P45 seam backing strip 4",
+          "P46 motor service hood",
+          "B20 core static gasket",
+          "B25 motor hood gasket",
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B21 heat spreader gasket",
+          "M31 heat-spreader compression stop",
+          "M32 heat-spreader compression stop",
+          "M33 heat-spreader compression stop",
+          "M34 heat-spreader compression stop",
+          "B22 driver packaging envelope",
+          "P51 removable controller tray",
+          "B23 controller packaging envelope",
+          "P52 electronics lid",
+          "B24 lid gasket",
+          "B26 external heatsink reference",
+          "B27 thermal interface pad",
+          "P53 electronics foot 1",
+          "P53 electronics foot 2",
+          "P53 electronics foot 3",
+          "P53 electronics foot 4",
+          "M40 stepped motor support",
+          "B41 motor anchor washer",
+          "B42 motor anchor washer",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace",
+          "B51 bridge anchor washer",
+          "B52 bridge anchor washer",
+          "B53 bridge anchor washer",
+          "B54 bridge anchor washer",
+          "Base_08q",
+          "Base_08q (2)",
+          "Base_08q (3)",
+          "WaveShare_Mounting_Plate_01d",
+          "Rotation_Pitch_08i",
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          "Passive_Horn_01",
+          "STS3215_03a",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "SO_ARM100_08k_116_Square",
+          "SO_ARM100_08k_Mirror",
+          "SO_ARM100_08k_Mirror (2)",
+          "Wrist_Roll_Pitch_08i",
+          "Wrist_Roll_08c",
+          "Moving_Jaw_08d",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "STS3215_03a_Wrist_Roll",
+          "TEST F01 0",
+          "TEST F01 1",
+          "TEST F01 2",
+          "TEST F01 3",
+          "TEST F02 0",
+          "TEST F02 1",
+          "TEST F02 2",
+          "TEST F02 3",
+          "TEST F03 0",
+          "TEST F03 1",
+          "TEST F03 2",
+          "TEST F03 3",
+          "TEST F03 4",
+          "TEST F03 5",
+          "TEST F03 6",
+          "TEST F03 7",
+          "TEST F07 0",
+          "TEST F07 1",
+          "TEST F07 2",
+          "TEST F07 3",
+          "TEST F09 -1 32.5 27",
+          "TEST F09 -1 32.5 73",
+          "TEST F09 -1 78.5 27",
+          "TEST F09 -1 78.5 73",
+          "TEST F09 1 32.5 27",
+          "TEST F09 1 32.5 73",
+          "TEST F09 1 78.5 27",
+          "TEST F09 1 78.5 73",
+          "TEST F10 0",
+          "TEST F10 1",
+          "TEST F10 2",
+          "TEST F10 3",
+          "TEST F11 40 34.5",
+          "TEST F11 40 65.5",
+          "TEST F11 71 34.5",
+          "TEST F11 71 65.5",
+          "TEST F13 0",
+          "TEST F13 1",
+          "TEST F14 0",
+          "TEST F14 1",
+          "TEST F15 0 -6 25",
+          "TEST F15 0 -6 90",
+          "TEST F15 0 6 25",
+          "TEST F15 0 6 90",
+          "TEST F15 1 -6 25",
+          "TEST F15 1 -6 90",
+          "TEST F15 1 6 25",
+          "TEST F15 1 6 90",
+          "TEST F15 2 -6 25",
+          "TEST F15 2 -6 90",
+          "TEST F15 2 6 25",
+          "TEST F15 2 6 90",
+          "TEST F15 3 -6 25",
+          "TEST F15 3 -6 90",
+          "TEST F15 3 6 25",
+          "TEST F15 3 6 90",
+          "TEST F16 0",
+          "TEST F16 1",
+          "TEST F16 2",
+          "TEST F16 3",
+          "TEST F17 0",
+          "TEST F17 1",
+          "TEST F17 2",
+          "TEST F17 3",
+          "TEST F18 0",
+          "TEST F18 1",
+          "TEST F18 2",
+          "TEST F18 3",
+          "TEST F18 4",
+          "TEST F18 5",
+          "TEST F18 6",
+          "TEST F18 7",
+          "TEST F18 8",
+          "TEST F18 9",
+          "TEST F19 0",
+          "TEST F19 1",
+          "TEST F19 2",
+          "TEST F19 3",
+          "TEST F20 0",
+          "TEST F20 1",
+          "TEST F20 2",
+          "TEST F20 3",
+          "TEST F21 0",
+          "TEST F21 1",
+          "TEST F21 2",
+          "TEST F21 3",
+          "TEST F22 0",
+          "TEST F23 0",
+          "TEST F22 1",
+          "TEST F23 1",
+          "TEST F22 2",
+          "TEST F23 2",
+          "TEST F22 3",
+          "TEST F23 3",
+          "TEST F24 0",
+          "TEST F24 1",
+          "TEST F24 2",
+          "TEST F24 3",
+          "TEST F04 0",
+          "TEST F04 1",
+          "TEST F04 2",
+          "TEST F04 3",
+          "TEST F04 4",
+          "TEST F04 5",
+          "TEST F04 6",
+          "TEST F04 7",
+          "TEST F05 0",
+          "TEST F05 1",
+          "TEST F05 2",
+          "TEST F05 3",
+          "TEST F06 0",
+          "TEST F06 1",
+          "TEST F06 2",
+          "TEST F06 3",
+          "TEST F06 4",
+          "TEST F06 5",
+          "TEST F06 6",
+          "TEST F06 7",
+          "TEST F25",
+          "TEST permitted fixture tip -47 -47",
+          "TEST permitted fixture tip -47 47",
+          "TEST permitted fixture tip 47 -47",
+          "TEST permitted fixture tip 47 47"
+        ],
+        "exclude_pairs": [
+          [
+            "TEST F01 0",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F01 1",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F01 2",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F01 3",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F07 0",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F07 1",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F07 2",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F07 3",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F09 -1 32.5 27",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F09 -1 32.5 73",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F09 -1 78.5 27",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F09 -1 78.5 73",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F09 1 32.5 27",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F09 1 32.5 73",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F09 1 78.5 27",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F09 1 78.5 73",
+            "M60 monolithic worm carrier"
+          ],
+          [
+            "TEST F10 0",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F10 1",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F10 2",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F10 3",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F11 40 34.5",
+            "B06 NEMA17 motor and encoder envelope"
+          ],
+          [
+            "TEST F11 40 65.5",
+            "B06 NEMA17 motor and encoder envelope"
+          ],
+          [
+            "TEST F11 71 34.5",
+            "B06 NEMA17 motor and encoder envelope"
+          ],
+          [
+            "TEST F11 71 65.5",
+            "B06 NEMA17 motor and encoder envelope"
+          ],
+          [
+            "TEST F13 0",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F13 1",
+            "M01 aluminium base plate"
+          ],
+          [
+            "TEST F17 0",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F17 1",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F17 2",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F17 3",
+            "M40 stepped motor support"
+          ],
+          [
+            "TEST F04 0",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F04 1",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F04 2",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F04 3",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F04 4",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F04 5",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F04 6",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F04 7",
+            "B10 bearing inner ring reference"
+          ],
+          [
+            "TEST F05 0",
+            "B11 duplex wheel envelope"
+          ],
+          [
+            "TEST F05 1",
+            "B11 duplex wheel envelope"
+          ],
+          [
+            "TEST F05 2",
+            "B11 duplex wheel envelope"
+          ],
+          [
+            "TEST F05 3",
+            "B11 duplex wheel envelope"
+          ],
+          [
+            "TEST F06 0",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F06 1",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F06 2",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F06 3",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F06 4",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F06 5",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F06 6",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F06 7",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST F25",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST permitted fixture tip -47 -47",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST permitted fixture tip -47 47",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST permitted fixture tip 47 -47",
+            "M20 registered output hub"
+          ],
+          [
+            "TEST permitted fixture tip 47 47",
+            "M20 registered output hub"
+          ],
+          [
+            "M21 wheel drive pin",
+            "M20 registered output hub"
+          ],
+          [
+            "B04 duplex worm envelope",
+            "B11 duplex wheel envelope"
+          ],
+          [
+            "Base_08q",
+            "Base_08q (2)"
+          ],
+          [
+            "Base_08q",
+            "Base_08q (3)"
+          ],
+          [
+            "Base_08q",
+            "WaveShare_Mounting_Plate_01d"
+          ],
+          [
+            "Base_08q",
+            "Rotation_Pitch_08i"
+          ],
+          [
+            "Base_08q",
+            "SO_ARM100_08k_Asym_Mirror_Clip"
+          ],
+          [
+            "Base_08q",
+            "Passive_Horn_01"
+          ],
+          [
+            "Base_08q",
+            "STS3215_03a"
+          ],
+          [
+            "Base_08q",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "Base_08q",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "Base_08q",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "Base_08q",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "Base_08q",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "Base_08q",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "Base_08q",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "Base_08q",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Base_08q",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Base_08q",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Base_08q",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "Base_08q (2)",
+            "Base_08q (3)"
+          ],
+          [
+            "Base_08q (2)",
+            "WaveShare_Mounting_Plate_01d"
+          ],
+          [
+            "Base_08q (2)",
+            "Rotation_Pitch_08i"
+          ],
+          [
+            "Base_08q (2)",
+            "SO_ARM100_08k_Asym_Mirror_Clip"
+          ],
+          [
+            "Base_08q (2)",
+            "Passive_Horn_01"
+          ],
+          [
+            "Base_08q (2)",
+            "STS3215_03a"
+          ],
+          [
+            "Base_08q (2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "Base_08q (2)",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "Base_08q (2)",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "Base_08q (2)",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "Base_08q (2)",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "Base_08q (2)",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "Base_08q (2)",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "Base_08q (2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Base_08q (2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Base_08q (2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Base_08q (2)",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "Base_08q (3)",
+            "WaveShare_Mounting_Plate_01d"
+          ],
+          [
+            "Base_08q (3)",
+            "Rotation_Pitch_08i"
+          ],
+          [
+            "Base_08q (3)",
+            "SO_ARM100_08k_Asym_Mirror_Clip"
+          ],
+          [
+            "Base_08q (3)",
+            "Passive_Horn_01"
+          ],
+          [
+            "Base_08q (3)",
+            "STS3215_03a"
+          ],
+          [
+            "Base_08q (3)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "Base_08q (3)",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "Base_08q (3)",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "Base_08q (3)",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "Base_08q (3)",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "Base_08q (3)",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "Base_08q (3)",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "Base_08q (3)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Base_08q (3)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Base_08q (3)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Base_08q (3)",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "Rotation_Pitch_08i"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "SO_ARM100_08k_Asym_Mirror_Clip"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "Passive_Horn_01"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "STS3215_03a"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "WaveShare_Mounting_Plate_01d",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "SO_ARM100_08k_Asym_Mirror_Clip"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "Passive_Horn_01"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "STS3215_03a"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Rotation_Pitch_08i",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "Passive_Horn_01"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "STS3215_03a"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "SO_ARM100_08k_Asym_Mirror_Clip",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "Passive_Horn_01",
+            "STS3215_03a"
+          ],
+          [
+            "Passive_Horn_01",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "Passive_Horn_01",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "Passive_Horn_01",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "Passive_Horn_01",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "Passive_Horn_01",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "Passive_Horn_01",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "Passive_Horn_01",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "Passive_Horn_01",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Passive_Horn_01",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Passive_Horn_01",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Passive_Horn_01",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "STS3215_03a",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)"
+          ],
+          [
+            "STS3215_03a",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "STS3215_03a",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "STS3215_03a",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "STS3215_03a",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "STS3215_03a",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "STS3215_03a",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "STS3215_03a",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "STS3215_03a",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "STS3215_03a",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "STS3215_03a",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "SO_ARM100_08k_116_Square"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "SO_ARM100_08k_Mirror"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "SO_ARM100_08k_116_Square",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "SO_ARM100_08k_Mirror (2)"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "SO_ARM100_08k_Mirror",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "SO_ARM100_08k_Mirror (2)",
+            "Wrist_Roll_Pitch_08i"
+          ],
+          [
+            "SO_ARM100_08k_Mirror (2)",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "SO_ARM100_08k_Mirror (2)",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "SO_ARM100_08k_Mirror (2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "SO_ARM100_08k_Mirror (2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "SO_ARM100_08k_Mirror (2)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "SO_ARM100_08k_Mirror (2)",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "Wrist_Roll_Pitch_08i",
+            "Wrist_Roll_08c"
+          ],
+          [
+            "Wrist_Roll_Pitch_08i",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "Wrist_Roll_Pitch_08i",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Wrist_Roll_Pitch_08i",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Wrist_Roll_Pitch_08i",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Wrist_Roll_Pitch_08i",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "Wrist_Roll_08c",
+            "Moving_Jaw_08d"
+          ],
+          [
+            "Wrist_Roll_08c",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Wrist_Roll_08c",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Wrist_Roll_08c",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Wrist_Roll_08c",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "Moving_Jaw_08d",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)"
+          ],
+          [
+            "Moving_Jaw_08d",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "Moving_Jaw_08d",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "Moving_Jaw_08d",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+            "STS3215_03a_Wrist_Roll"
+          ],
+          [
+            "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+            "STS3215_03a_Wrist_Roll"
+          ]
+        ],
+        "budget_s": 60
+      }
+    }
+  ]
+}

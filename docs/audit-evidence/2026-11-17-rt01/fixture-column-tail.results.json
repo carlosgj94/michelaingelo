@@ -1,0 +1,83 @@
+{
+  "note": "Inspection/measurement results extracted from CLI --results output; verbose state echoes omitted. Probe inputs are unchanged.",
+  "results": [
+    {
+      "bodies": 1,
+      "ms": 29.696459,
+      "near": [],
+      "nearest": {
+        "AUDIT M6x35 fixture tail": [
+          {
+            "body": "AUDIT F01 column screw head",
+            "distance_mm": 0.0
+          }
+        ]
+      },
+      "overlaps": [
+        {
+          "a": "AUDIT F01 column screw head",
+          "area_mm2": 143.25662500481383,
+          "b": "AUDIT M6x35 fixture tail",
+          "bbox": {
+            "max": [
+              69.46803743153546,
+              2.999999999999986,
+              97.59999999999998
+            ],
+            "min": [
+              63.46803743153547,
+              -3.0000000000000173,
+              93.0
+            ]
+          },
+          "center": [
+            66.46803743154528,
+            1.0360375781168423e-11,
+            95.2999999999847
+          ],
+          "volume_mm3": 130.06193585982209
+        }
+      ],
+      "pairs_checked": 1,
+      "pairs_pruned": 0,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    {
+      "bodies": 1,
+      "ms": 10.475959,
+      "near": [
+        {
+          "a": "AUDIT F01 column screw head",
+          "b": "AUDIT M6x35 fixture tail",
+          "distance_mm": 2.000000000000014,
+          "from": [
+            64.9018617500399,
+            -2.5587289295062123,
+            97.59999999999998
+          ],
+          "to": [
+            64.90186175003991,
+            -2.5587289295062123,
+            99.6
+          ]
+        }
+      ],
+      "nearest": {
+        "AUDIT M6x35 fixture tail": [
+          {
+            "body": "AUDIT F01 column screw head",
+            "distance_mm": 2.000000000000014
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 0,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    }
+  ]
+}

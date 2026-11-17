@@ -52,7 +52,7 @@ def orient_and_check(source, destination, angles):
         raise ValueError(f'Part exceeds A1 Mini print allowance: {destination.name}: {bounds}')
     data = bytearray(b'RT-01 oriented print mesh; units mm'.ljust(80, b'\0') + struct.pack('<I', count))
     edges, directed = Counter(), Counter()
-    signed_volume, degenerate = 0.0, 0
+    signed_volume, degenerate, bed_area = 0.0, 0, 0.0
     for normal, tri in triangles:
         tri = [tuple(v[k]-minimum[k] for k in range(3)) for v in tri]
         # Audit the exact float32 vertices that will be written, not higher precision intermediates.
@@ -60,6 +60,8 @@ def orient_and_check(source, destination, angles):
         a, b, c = tri
         cross = (b[1]*c[2]-b[2]*c[1], b[2]*c[0]-b[0]*c[2], b[0]*c[1]-b[1]*c[0])
         signed_volume += sum(a[k]*cross[k] for k in range(3))/6
+        if all(abs(v[2]) < 1e-5 for v in tri):
+            bed_area += abs((b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]))/2
         points = [tuple(round(v, 5) for v in point) for point in tri]
         if len(set(points)) != 3:
             degenerate += 1
@@ -77,7 +79,8 @@ def orient_and_check(source, destination, angles):
                 print_bbox_mm=[round(v, 4) for v in bounds],
                 footprint_with_5mm_brim_mm=[round(v+10, 4) for v in bounds[:2]],
                 mesh_volume_mm3=round(signed_volume, 4), closed_edges=True,
-                consistent_winding=True, sha256=hashlib.sha256(data).hexdigest())
+                consistent_winding=True, bed_contact_area_mm2=round(bed_area, 4),
+                sha256=hashlib.sha256(data).hexdigest())
 
 
 def main():
@@ -86,6 +89,8 @@ def main():
     args = parser.parse_args()
     parts = json.loads((ROOT/'cad/parts.json').read_text())['parts']
     out = ROOT/'exports/rotary-table'
+    previous_manifest = out/'print-manifest.json'
+    previous_prints = json.loads(previous_manifest.read_text()).get('parts', []) if previous_manifest.exists() else []
     for folder in ['stl', 'metal']:
         (out/folder).mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='rt01-export-') as temp:
@@ -123,8 +128,18 @@ def main():
             result['mesh_volume_error_percent'] = round(100*abs(result['mesh_volume_mm3']-cad_volume)/cad_volume, 6)
             if result['mesh_volume_error_percent'] > 0.25:
                 raise ValueError(f'Tessellation volume discrepancy: {part["name"]}')
+            if part['name'].startswith('P45') and (any(abs(a-b) > .001 for a,b in zip(result['print_bbox_mm'], [24,84,8])) or result['bed_contact_area_mm2'] < 1950):
+                raise ValueError(f'Seam strip is not broad-face down: {part["name"]}')
             results.append(result)
-        manifest = dict(design='RT-01', units='mm', nozzle_mm=0.4, layer_mm=0.2,
+        # Remove only obsolete files named by the previous generated manifest.
+        current_names = {Path(r['file']).name for r in results}
+        for old in previous_prints:
+            obsolete = out/'stl'/Path(old['file']).name
+            if obsolete.name not in current_names:
+                obsolete.unlink(missing_ok=True)
+        # Revision 4 renamed/replaced this generated metal part; retain the independent M55 drawing.
+        (out/'metal/m40-motor-support-sole.step').unlink(missing_ok=True)
+        manifest = dict(design='RT-01', revision=4, units='mm', nozzle_mm=0.4, layer_mm=0.2,
                         note='Prototype geometry. Print coupon first. No slicing or physical print verification implied.',
                         parts=results)
         coupon = out/'fit-coupon.stl'

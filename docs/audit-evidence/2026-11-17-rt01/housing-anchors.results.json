@@ -1,0 +1,219 @@
+{
+  "note": "Inspection/measurement results extracted from CLI --results output; verbose state echoes omitted. Probe inputs are unchanged.",
+  "results": [
+    {
+      "boolean_ms": 243.016,
+      "budget_exceeded": false,
+      "budget_s": 45.0,
+      "checked": 8,
+      "count": 4,
+      "interferences": [
+        {
+          "a": "P41 fixed housing quadrant",
+          "a_part": {
+            "component": "RT01 - removable shrouds",
+            "path": [
+              "RT01 - removable shrouds:1"
+            ],
+            "path_ids": [
+              1173
+            ]
+          },
+          "area_mm2": 239.7845884738744,
+          "b": "AUDIT F16 screw 0",
+          "b_part": {
+            "component": "AUDIT F16 housing mounting",
+            "path": [
+              "AUDIT F16 housing mounting:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              112.49999999999999,
+              112.49999999999999,
+              8.700000000000001
+            ],
+            "min": [
+              100.71772090984689,
+              100.71772090984686,
+              2.499999999999999
+            ]
+          },
+          "center": [
+            107.11461205095739,
+            107.11461205095816,
+            4.902307264506131
+          ],
+          "volume_mm3": 136.86048833102413
+        },
+        {
+          "a": "P42 fixed housing quadrant",
+          "a_part": {
+            "component": "RT01 - removable shrouds",
+            "path": [
+              "RT01 - removable shrouds:1"
+            ],
+            "path_ids": [
+              1173
+            ]
+          },
+          "area_mm2": 239.78458847387492,
+          "b": "AUDIT F16 screw 1",
+          "b_part": {
+            "component": "AUDIT F16 housing mounting",
+            "path": [
+              "AUDIT F16 housing mounting:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              -100.71772090984683,
+              112.5,
+              8.700000000000001
+            ],
+            "min": [
+              -112.49999999999997,
+              100.71772090984686,
+              2.4999999999999996
+            ]
+          },
+          "center": [
+            -107.1146120509581,
+            107.11461205095736,
+            4.902307264506099
+          ],
+          "volume_mm3": 136.86048833102643
+        },
+        {
+          "a": "P43 fixed housing quadrant",
+          "a_part": {
+            "component": "RT01 - removable shrouds",
+            "path": [
+              "RT01 - removable shrouds:1"
+            ],
+            "path_ids": [
+              1173
+            ]
+          },
+          "area_mm2": 239.78458847387407,
+          "b": "AUDIT F16 screw 2",
+          "b_part": {
+            "component": "AUDIT F16 housing mounting",
+            "path": [
+              "AUDIT F16 housing mounting:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              -100.71772090984686,
+              -100.71772090984685,
+              8.700000000000001
+            ],
+            "min": [
+              -112.50000000000003,
+              -112.49999999999997,
+              2.4999999999999996
+            ]
+          },
+          "center": [
+            -107.11461205095728,
+            -107.11461205095816,
+            4.902307264506115
+          ],
+          "volume_mm3": 136.86048833102691
+        },
+        {
+          "a": "P44 fixed housing quadrant",
+          "a_part": {
+            "component": "RT01 - removable shrouds",
+            "path": [
+              "RT01 - removable shrouds:1"
+            ],
+            "path_ids": [
+              1173
+            ]
+          },
+          "area_mm2": 239.78458847387517,
+          "b": "AUDIT F16 screw 3",
+          "b_part": {
+            "component": "AUDIT F16 housing mounting",
+            "path": [
+              "AUDIT F16 housing mounting:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              112.49999999999996,
+              -100.71772090984686,
+              8.700000000000001
+            ],
+            "min": [
+              100.71772090984683,
+              -112.50000000000003,
+              2.4999999999999996
+            ]
+          },
+          "center": [
+            107.11461205095812,
+            -107.11461205095732,
+            4.902307264506138
+          ],
+          "volume_mm3": 136.8604883310253
+        }
+      ],
+      "ms": 172.799,
+      "pairs_candidate": 4,
+      "pairs_cleared": 0,
+      "pairs_excluded": 0,
+      "pairs_intersected": 4,
+      "pairs_not_checked": 0,
+      "skipped_pairs": 0,
+      "slowest": [
+        {
+          "a": "P41 fixed housing quadrant",
+          "b": "AUDIT F16 screw 0",
+          "boolean_ms": 63.564,
+          "ms": 82.027,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "P44 fixed housing quadrant",
+          "b": "AUDIT F16 screw 3",
+          "boolean_ms": 60.245,
+          "ms": 79.786,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "P43 fixed housing quadrant",
+          "b": "AUDIT F16 screw 2",
+          "boolean_ms": 59.622,
+          "ms": 78.831,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "P42 fixed housing quadrant",
+          "b": "AUDIT F16 screw 1",
+          "boolean_ms": 59.585,
+          "ms": 78.687,
+          "tessellate_ms": 0.0
+        }
+      ],
+      "tessellate_ms": 0.0,
+      "threads": 4,
+      "truncated": false,
+      "unchecked": []
+    }
+  ]
+}

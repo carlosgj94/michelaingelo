@@ -1,0 +1,312 @@
+{
+  "note": "Inspection/measurement results extracted from CLI --results output; verbose state echoes omitted. Probe inputs are unchanged.",
+  "results": [
+    {
+      "bodies": [
+        {
+          "area_mm2": 31852.073844012455,
+          "bbox": {
+            "max": [
+              78.0,
+              77.99999999999999,
+              90.00000000000003
+            ],
+            "min": [
+              -77.99999999999999,
+              -77.99999999999999,
+              81.99999999999999
+            ]
+          },
+          "center_of_mass": [
+            0.04105287001492716,
+            0.2942183681024824,
+            86.00000000002744
+          ],
+          "closed": true,
+          "density_g_cm3": 1.29,
+          "edges": 48,
+          "face_types": {
+            "cylinder": 16,
+            "plane": 2
+          },
+          "faces": 18,
+          "kernel": {
+            "edges": 48,
+            "faces": 18,
+            "shells": 1,
+            "vertices": 32
+          },
+          "mass_g": 122.15722001680258,
+          "material": "Default",
+          "measured_by": "smlib",
+          "name": "M02 aluminium bearing seat",
+          "notes": [],
+          "vertices": 32,
+          "volume_mm3": 94695.51939287022
+        },
+        {
+          "area_mm2": 23123.001576087045,
+          "bbox": {
+            "max": [
+              59.999999999999986,
+              60.00000000000001,
+              105.00000000000001
+            ],
+            "min": [
+              -60.0,
+              -60.0,
+              89.99999999999999
+            ]
+          },
+          "center_of_mass": [
+            2.59058068507413e-09,
+            -3.163245834631973e-09,
+            97.37668446786431
+          ],
+          "closed": true,
+          "density_g_cm3": 1.29,
+          "edges": 54,
+          "face_types": {
+            "cylinder": 18,
+            "plane": 10
+          },
+          "faces": 28,
+          "kernel": {
+            "edges": 54,
+            "faces": 28,
+            "shells": 1,
+            "vertices": 36
+          },
+          "mass_g": 102.22051030118087,
+          "material": "Default",
+          "measured_by": "smlib",
+          "name": "B01 bearing outer ring reference",
+          "notes": [],
+          "vertices": 36,
+          "volume_mm3": 79240.70565983013
+        },
+        {
+          "area_mm2": 2263.3611256581667,
+          "bbox": {
+            "max": [
+              -37.47665940288702,
+              65.76093065034891,
+              115.0
+            ],
+            "min": [
+              -65.76093065034893,
+              37.476659402887016,
+              89.99999999999999
+            ]
+          },
+          "center_of_mass": [
+            -53.621770957317885,
+            53.621770957398475,
+            98.92873667320225
+          ],
+          "closed": true,
+          "density_g_cm3": 1.29,
+          "edges": 33,
+          "face_types": {
+            "cylinder": 3,
+            "plane": 10
+          },
+          "faces": 13,
+          "kernel": {
+            "edges": 33,
+            "faces": 13,
+            "shells": 1,
+            "vertices": 22
+          },
+          "mass_g": 4.446040986224473,
+          "material": "Default",
+          "measured_by": "smlib",
+          "name": "P25 home sensor bracket",
+          "notes": [],
+          "vertices": 22,
+          "volume_mm3": 3446.5434001740095
+        },
+        {
+          "area_mm2": 14493.61204381027,
+          "bbox": {
+            "max": [
+              42.400000000000006,
+              42.4,
+              105.00000000000001
+            ],
+            "min": [
+              -42.4,
+              -42.4,
+              89.99999999999997
+            ]
+          },
+          "center_of_mass": [
+            1.4487265135806337e-09,
+            -1.4586995434910045e-09,
+            97.50000000000354
+          ],
+          "closed": true,
+          "density_g_cm3": 1.29,
+          "edges": 30,
+          "face_types": {
+            "cylinder": 10,
+            "plane": 2
+          },
+          "faces": 12,
+          "kernel": {
+            "edges": 30,
+            "faces": 12,
+            "shells": 1,
+            "vertices": 20
+          },
+          "mass_g": 61.16853841212216,
+          "material": "Default",
+          "measured_by": "smlib",
+          "name": "B10 bearing inner ring reference",
+          "notes": [],
+          "vertices": 20,
+          "volume_mm3": 47417.471637304
+        },
+        {
+          "area_mm2": 53237.049065785,
+          "bbox": {
+            "max": [
+              74.99999999999999,
+              75.0,
+              116.00000000000003
+            ],
+            "min": [
+              -75.0,
+              -75.0,
+              67.0
+            ]
+          },
+          "center_of_mass": [
+            0.013207020522087862,
+            -0.01320703363762681,
+            106.48826225636222
+          ],
+          "closed": true,
+          "density_g_cm3": 1.29,
+          "edges": 342,
+          "face_types": {
+            "cylinder": 41,
+            "plane": 102
+          },
+          "faces": 143,
+          "kernel": {
+            "edges": 345,
+            "faces": 144,
+            "shells": 1,
+            "vertices": 230
+          },
+          "mass_g": 269.2168380052668,
+          "material": "Default",
+          "measured_by": "smlib",
+          "name": "P30 output hub",
+          "notes": [],
+          "vertices": 228,
+          "volume_mm3": 208695.2232598968
+        },
+        {
+          "area_mm2": 126045.87273482923,
+          "bbox": {
+            "max": [
+              84.0,
+              -168.0,
+              104.00000000000001
+            ],
+            "min": [
+              -84.0,
+              -280.00000000000006,
+              27.999999999999996
+            ]
+          },
+          "center_of_mass": [
+            3.304975713517398e-09,
+            -223.4357828832997,
+            62.802999490771434
+          ],
+          "closed": true,
+          "density_g_cm3": 1.29,
+          "edges": 231,
+          "face_types": {
+            "cylinder": 39,
+            "plane": 60
+          },
+          "faces": 99,
+          "kernel": {
+            "edges": 243,
+            "faces": 103,
+            "shells": 1,
+            "vertices": 162
+          },
+          "mass_g": 322.41199593163077,
+          "material": "Default",
+          "measured_by": "smlib",
+          "name": "P50 electronics service box",
+          "notes": [],
+          "vertices": 154,
+          "volume_mm3": 249931.77979196183
+        }
+      ],
+      "body_count": 6,
+      "total": {
+        "area_mm2": 251014.97039018216,
+        "edges": 738,
+        "faces": 313,
+        "mass_g": 881.6211436532276,
+        "open_bodies_skipped": 0,
+        "vertices": 492,
+        "volume_mm3": 683427.243142037
+      }
+    },
+    {
+      "bodies": 1,
+      "ms": 27.192041,
+      "near": [
+        {
+          "a": "P25 home sensor bracket",
+          "b": "P32 platter quadrant",
+          "distance_mm": 1.0,
+          "from": [
+            -53.033008588991066,
+            65.76093065034891,
+            115.0
+          ],
+          "to": [
+            -53.033008588991066,
+            65.76093065034891,
+            116.0
+          ]
+        }
+      ],
+      "nearest": {
+        "P25 home sensor bracket": [
+          {
+            "body": "P32 platter quadrant",
+            "distance_mm": 1.0
+          },
+          {
+            "body": "P33 platter quadrant",
+            "distance_mm": 42.6559569551681
+          },
+          {
+            "body": "P31 platter quadrant",
+            "distance_mm": 42.655956955168115
+          },
+          {
+            "body": "P34 platter quadrant",
+            "distance_mm": 65.41523137883755
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 3,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    }
+  ]
+}

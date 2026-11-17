@@ -1,0 +1,64 @@
+{
+  "commands": [
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "B08 axial home sensor reference"
+        ],
+        "against": [
+          "B12 retained steel home target"
+        ],
+        "nearest": 1
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "B08 axial home sensor reference"
+        ],
+        "against": [
+          "B01 bearing outer ring reference"
+        ],
+        "nearest": 1
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "M20 registered output hub"
+        ],
+        "against": [
+          "B01 bearing outer ring reference"
+        ],
+        "nearest": 1
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "M21 wheel drive pin"
+        ],
+        "against": [
+          "B11 duplex wheel envelope"
+        ],
+        "nearest": 1
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "B13 sensor upper jam nut"
+        ],
+        "against": [
+          "M20 registered output hub"
+        ],
+        "nearest": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "bodies": 1,
+    "ms": 19.333208000000003,
+    "near": [],
+    "nearest": {
+      "B08 axial home sensor reference": [
+        {
+          "body": "B12 retained steel home target",
+          "distance_mm": 1.1999999999999744
+        }
+      ]
+    },
+    "overlaps": [],
+    "pairs_checked": 0,
+    "pairs_pruned": 1,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 27.902666999999997,
+    "near": [],
+    "nearest": {
+      "B08 axial home sensor reference": [
+        {
+          "body": "B01 bearing outer ring reference",
+          "distance_mm": 8.999999999999996
+        }
+      ]
+    },
+    "overlaps": [],
+    "pairs_checked": 1,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 118.631792,
+    "near": [],
+    "nearest": {
+      "M20 registered output hub": [
+        {
+          "body": "B01 bearing outer ring reference",
+          "distance_mm": 0.9999999999999717
+        }
+      ]
+    },
+    "overlaps": [],
+    "pairs_checked": 1,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 32.329249999999995,
+    "near": [],
+    "nearest": {
+      "M21 wheel drive pin": [
+        {
+          "body": "B11 duplex wheel envelope",
+          "distance_mm": 0.005015187731178946
+        }
+      ]
+    },
+    "overlaps": [],
+    "pairs_checked": 1,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 114.574375,
+    "near": [],
+    "nearest": {
+      "B13 sensor upper jam nut": [
+        {
+          "body": "M20 registered output hub",
+          "distance_mm": 8.699999999999989
+        }
+      ]
+    },
+    "overlaps": [],
+    "pairs_checked": 1,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  }
+]

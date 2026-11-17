@@ -1,0 +1,413 @@
+{
+  "audit": "RT-01 independent read-only design audit",
+  "date": "2026-11-17",
+  "reviewed_commit": "a403195",
+  "native_sha256": "fc5b4c1079a4e5d9955af6266879d54597708b663fdfc605825a25b65dd6eb23",
+  "original_files_hashed": 116,
+  "original_files_changed": [],
+  "validation_hashes_match": {
+    "michelaingelo.sc": true,
+    "scripts/build_rotary_table.py": true,
+    "scripts/build_fastener_register.py": true,
+    "scripts/build_assembly_checks.py": true,
+    "cad/rotary-table-build.json": true,
+    "cad/parts.json": true,
+    "cad/fasteners.json": true,
+    "cad/fastener-clearance-checks.json": true,
+    "cad/support-access-checks.json": true,
+    "exports/rotary-table/rt01-assembly.step": true,
+    "exports/rotary-table/print-manifest.json": true
+  },
+  "print_package_current_file_comparisons": [
+    {
+      "file": "exports/rotary-table/stl/p11-column-sleeve.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p12-column-sleeve.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p13-column-sleeve.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p14-column-sleeve.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p20-worm-cartridge-sled.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p21-worm-bearing-block-left.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p21-worm-bearing-block-right.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p22-worm-bearing-retainer-left.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p22-worm-bearing-retainer-right.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p23-motor-pod-foundation.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p24-nema17-motor-bracket.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p25-home-sensor-bracket.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p30-output-hub.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p31-platter-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p32-platter-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p33-platter-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p34-platter-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p41-fixed-housing-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p42-fixed-housing-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p43-fixed-housing-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p44-fixed-housing-quadrant.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-1.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-2.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-3.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-4.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p46-motor-service-hood.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p50-electronics-service-box.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p51-removable-controller-tray.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p52-electronics-lid.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-1.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-2.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-3.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-4.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m01-aluminium-base-plate.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m02-aluminium-bearing-seat.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m30-driver-heat-spreader.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m40-motor-support-sole.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m50-so100-arm-mounting-plate.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m51-steel-side-channel-left.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m51-steel-side-channel-right.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m52-steel-front-x-brace.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/metal/m55-bench-backing-strip-make-two.step",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/fit-coupon.stl",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/print-manifest.json",
+      "matches": true
+    },
+    {
+      "file": "exports/rotary-table/seal-profiles.step",
+      "matches": true
+    },
+    {
+      "file": "docs/rotary-table-printing.md",
+      "matches": true
+    },
+    {
+      "file": "docs/rotary-table-bom.md",
+      "matches": true
+    },
+    {
+      "file": "docs/rotary-table-fasteners.md",
+      "matches": true
+    },
+    {
+      "file": "docs/rotary-table-validation.md",
+      "matches": true
+    },
+    {
+      "file": "docs/specs/rotary-table.md",
+      "matches": true
+    },
+    {
+      "file": "cad/arm-mount-reference.json",
+      "matches": true
+    },
+    {
+      "file": "cad/fasteners.json",
+      "matches": true
+    },
+    {
+      "file": "cad/fastener-shopping-list.csv",
+      "matches": true
+    },
+    {
+      "file": "cad/validation-results.json",
+      "matches": true
+    }
+  ],
+  "baseline_check": {
+    "interference_calls": 15,
+    "overlaps": 0,
+    "unchecked": 0,
+    "result": "Pass for existing critical-envelope subset; omitted hardware conflicts demonstrated by separate probes."
+  },
+  "mesh_review": {
+    "assembly_parts": 33,
+    "coupon": 1,
+    "all_closed_edges": true,
+    "all_consistent_winding": true,
+    "all_positive_volume": true,
+    "all_bed_z_nonnegative": true,
+    "assembly_mesh_hashes_match_manifest": true,
+    "largest_dimension_mm": 168,
+    "largest_5mm_brim_footprint_mm": 178,
+    "scope": "Independent binary STL review by printability reviewer; no slicing or physical printing."
+  },
+  "findings": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A12"
+  ],
+  "probes": [
+    "fastener-crossings",
+    "housing-anchors",
+    "omitted-hardware",
+    "sensor-nut",
+    "driver-removal",
+    "fixture-column-tail",
+    "fixture-home-tail",
+    "local-measurements"
+  ],
+  "limits": [
+    "Nominal geometry and stated probe hardware only",
+    "No live design edits or saved probe models",
+    "No slicer, print, physical fit, FEA, loaded motion, thermal or ingress test",
+    "Sensor hardware unselected; nut probe assumes AF13 x3mm",
+    "Driver removal tests straight lift, not every tilted path",
+    "Fixture-tail limits cover stated F01/F12 envelopes, not arbitrary fixtures"
+  ],
+  "source_file_hashes": {
+    "michelaingelo.sc": "fc5b4c1079a4e5d9955af6266879d54597708b663fdfc605825a25b65dd6eb23",
+    "README.md": "fa5554e07413f2ce02775ae10d045884c1bd6dd87f07dd4564eb6761efa04adb",
+    ".gitignore": "405f260af0e1cee9b5d95e2e7177da02a9fb3c7d892c7923dca3f521a16013e8",
+    ".gitattributes": "5afb83ef595203f48b4d08472406078eacc31ff5f1b9c05f82656611f65329ee",
+    "michelaingelo.sc.bak": "fc5b4c1079a4e5d9955af6266879d54597708b663fdfc605825a25b65dd6eb23",
+    ".~michelaingelo.sc.lock": "786f8c13fdc3d91914d6f047c4cf42c298892471318c9a796ec1869b223e379b",
+    "docs/rotary-table-with-arm.png": "53d521005edeb6ee56ffe4a9e8eb6a3b6d29bedd8c9d5d0f9fbe8f5a64e8e79b",
+    "docs/rotary-table-internals.png": "c41ca3413d9e52cc56a20d689ab1fb53affc5a52e8b7788f04e360edf086544d",
+    "docs/rotary-table-printing.md": "ffc2248c8d6715e1ad9135c2c726ac65bb4213e2a165cc9004acd6bf6a7c4e1c",
+    "docs/rotary-table-assembly.png": "ba34fe71d4139d0c1858547f92b47956ca981aa52ea93652dde269dda11bec03",
+    "docs/rotary-table-validation.md": "ac40558d40425a0ad7b5f2f23606613e5be0cde43821c337533c6238b10140bb",
+    "docs/rotary-table-fasteners.md": "592544cadc390eae772ba6afe51e37b4515eec72b3a4043b4fc49abd3deb9c4b",
+    "docs/rotary-table-motor-support.png": "7794d7c93bc6779ea37b0bcfe5de4009c61a7021556c23125b9391aa0b82e702",
+    "docs/rotary-table-bom.md": "4dbdaa904e763547a257ec987de5b920eac5160739589c88e527dd1f1feb86de",
+    "docs/rotary-table-arm-stand.png": "1405b3814e21d21699520d595b3d4ce3e63f2c321c26ae61243bf14c66549af5",
+    "cad/05-electronics.json": "e7c7972979c5ae7d2d8d3efb8926abe50e02770ee4d8c990f435127e550e3bdb",
+    "cad/fastener-clearance-checks.json": "2f9a02d6fa2d76e731548a6cd98a37f4410180feff8a9c2f8c088995f70a84a0",
+    "cad/07-presentation.json": "4526e45fa7cdd11b72e1807a816b2f3da1a130f02b244a348928a37cdd759662",
+    "cad/support-access-checks.json": "767b3aced4b7497f183e2de8afdb205e8e2c1b58a19bec6d262c446994cb814b",
+    "cad/fastener-shopping-list.csv": "1d1b124a1feea1f79bbbbd82e38d0bc56090705210a0349fec7875f7a4432f5d",
+    "cad/fasteners.json": "847ebf9577441dfa31bd34d309d4c483fa978d69f7dac3b99720ab8b901ac115",
+    "cad/stand-backing-strip.json": "eca2e45746e5e522bac323418c0c98e2085711e16dce6a87225f551223a61285",
+    "cad/arm-mount-reference.json": "5154b5639f19588d7f39b6d3433ed442ae066da3225b45d7e33b3fba74642e43",
+    "cad/fit-coupon-build.json": "885eb2c1c5d433632a1722f26e7b2f122f6bbd7aac15f43277bd0f8babfc9811",
+    "cad/02-drive.json": "e3973e42b1798b3489ddb39733cfec9a585be253baeb84c3c56779f03f464a36",
+    "cad/03-rotor.json": "c07325d4daf2ba4b8756c4bc675edc14f66aa9ae11c85668187ade8e190c24a4",
+    "cad/mount-so100.json": "c48a0a67bfa628094f9ac17311ba932731ac6332e1b0de44c9a5260f1a7d469e",
+    "cad/04-covers.json": "94f1952238b042817e0f68dda9db5a823f967eb71a63c35816d930bb7bde5ce6",
+    "cad/validation-results.json": "b58bc66d2e32093448dc08f24d8920eafca0e1261751f6f194dd920825530a70",
+    "cad/parts.json": "7f3c665262d85188c8ce541f49970e418b8f0e5601652f3b6bb012634a7d3c46",
+    "cad/06-support-revision.json": "78e1a46d42392fd2b57920e4e613a092b14f3ab67a9b5187dbcf505bd3b05e79",
+    "cad/01-core.json": "a290c033adcecce9d29c8d057e983949b9423bad4130ae0eae0b6c5508891bcc",
+    "cad/rotary-table-build.json": "83e8cebc5de154507296f18f241b31957f02c9ad47dc5577cd401f7a5dd377df",
+    "scripts/build_assembly_checks.py": "cdb4a47d881de388209c79734397556c23d4f501d35277564806201dbe1c092f",
+    "scripts/build_fit_coupon.py": "ea3c8e75ca4c270fd65b9699c09f9123793d541516c06712fa036a9bee9f64ee",
+    "scripts/export_rotary_table.py": "db242f7f3451f462abe65f1fd656ce824e868221a888ebace30bb6fa1bf586a2",
+    "scripts/build_rotary_table.py": "920f6b55948512c93dbc882f479408121d45e9637ca865f55bbd3485ac6a94ed",
+    "scripts/build_fastener_register.py": "66336e1e0bb9b54750561ef11d6276bfbb843e5707c25bdfa5a21de3423f6ed5",
+    "scripts/__pycache__/export_rotary_table.cpython-314.pyc": "96bfd5511b9b05227d2b36bb27ec081d7505a96bd9e4689ceaee5adf8f58bd73",
+    "scripts/__pycache__/build_rotary_table.cpython-314.pyc": "ae2dd57d2a43517f339e9aa16d2b0b2415a738d7a286f536efb647f1ced48050",
+    "exports/rotary-table/rt01-print-package.zip": "0ceac6cd1e636b6573a4c630c857097e7eaadf43e3f8f03204d2eca148941a3e",
+    "exports/rotary-table/seal-profiles.step": "39c68ded195756cdbdf8a3f72fe7e0434665da9d6fa2c3d06a194a085469bff1",
+    "exports/rotary-table/fit-coupon.stl": "67b5969deccc5f7d146d7ec68cc3770e364a9f23efd0524945847be4dfb8fc6c",
+    "exports/rotary-table/fit-coupon.sc": "9be1332ae331e049a1e30d0b5dfde2b4f5b295fb909b247efed9aaf7ee12ac19",
+    "exports/rotary-table/rt01-assembly.step": "e86a0470212bbd2147f3128c144c37540ff4ec2cb0985ed928f31a607aadb432",
+    "exports/rotary-table/print-manifest.json": "7c5330e4df4a4f5dad8b398870eb061d7a573e838be9c10ecf160b0e80940d7c",
+    "exports/rotary-table/metal/m55-bench-backing-strip-make-two.step": "06741d118a62de8869a832900bacaddb6eb2859a41bf3aa69c34618705ad8c66",
+    "exports/rotary-table/metal/m50-so100-arm-mounting-plate.step": "ec6f740dddc4cceb5cd0f2b282621af4cfc64b864f4530f09ee8a7ab1c07b9f1",
+    "exports/rotary-table/metal/m51-steel-side-channel-left.step": "1036a96f099bfdcd2dd966792d3192ab3857c737a8ce2cd940730a0f32800bf2",
+    "exports/rotary-table/metal/m01-aluminium-base-plate.step": "7291afa561dfd386c545d1237fcee9d098bd96b93ae6d7e06b20bd4f9479ed5a",
+    "exports/rotary-table/metal/m51-steel-side-channel-right.step": "250a0fe9e77c44fe5fffdfe031ae0801366acca1f3d53910b0a686772b2cfcab",
+    "exports/rotary-table/metal/m52-steel-front-x-brace.step": "ab6ea904c52e59bd450d007947b09d6f5a6493e695d494118882b65bede458a6",
+    "exports/rotary-table/metal/m40-motor-support-sole.step": "6574124b34fffa5ded1aa795a710c0dc02d05520bfee3601081dec68cb1bd9a1",
+    "exports/rotary-table/metal/m30-driver-heat-spreader.step": "cb4155c7b8adcc5cd66d860f5e136a2b2adf8c39ad5bfdf4714d64b4e21f60d0",
+    "exports/rotary-table/metal/m02-aluminium-bearing-seat.step": "5b3128816474c4ee1395e4148bd19f2bc62c6c413a971bfafed44193928496ed",
+    "exports/rotary-table/stl/p21-worm-bearing-block-left.stl": "139847e4582d8dcdd0c1bad74d5351f694e030e57dd9a557c34546945189e117",
+    "exports/rotary-table/stl/p45-seam-backing-strip-4.stl": "b03296c111579ddd37151ecd259da68e23c2468b16f0fb6a3e3db3d0f10fa889",
+    "exports/rotary-table/stl/p51-removable-controller-tray.stl": "287d35eedeb08a6ffc5ea65a9663b58461c8bd99a830d8098dd17b2650246f84",
+    "exports/rotary-table/stl/p50-electronics-service-box.stl": "4a5660f9a150a83d2901e089825a69a4b76911d3ecfdbdee0205aa23349c67b2",
+    "exports/rotary-table/stl/p45-seam-backing-strip-1.stl": "8db4ac1d4c443300e5765806e8ef9f1da58a7b8d344df0e0c4ee0250a8208f56",
+    "exports/rotary-table/stl/p41-fixed-housing-quadrant.stl": "e38d7ec0cb65e0dd29885cd35785d2adf29b8a799e7dc2dd7c8264f8e323d6df",
+    "exports/rotary-table/stl/p32-platter-quadrant.stl": "4b90cacae02304c39633408bd666a5f71246ee9806377bc39596c6cfd196dcd8",
+    "exports/rotary-table/stl/p45-seam-backing-strip-2.stl": "a3f8a508d6f336cc2e1c9795088fcc34dbee2d73809a6c965d359a26523daa62",
+    "exports/rotary-table/stl/p45-seam-backing-strip-3.stl": "5c2718c8cbc2b390d2954cd07fb8a9d17bd885520a279ba910091d24f5b2d65e",
+    "exports/rotary-table/stl/p20-worm-cartridge-sled.stl": "1b44127c2645b7343b07b15e01e543de0c52372fb984ebab4759388bc684bee7",
+    "exports/rotary-table/stl/p25-home-sensor-bracket.stl": "f3ade2370e8386548eb879a1d4392d82604b0625f19828ded8216ec6adc4057a",
+    "exports/rotary-table/stl/p52-electronics-lid.stl": "74c9269af6edc4a67cb947b11a3d67e651a9987ef0d482bf017ac656fc64a503",
+    "exports/rotary-table/stl/p22-worm-bearing-retainer-left.stl": "6f02284c3a57d154aa0e4c3fde4c11ab0a1a1ec31d6cad499f9d0428a680b43c",
+    "exports/rotary-table/stl/p30-output-hub.stl": "374b7afceb1ed49a8e78116fcf223a3f00fa944b4863d2819e548c987073ce4b",
+    "exports/rotary-table/stl/p33-platter-quadrant.stl": "b0b56c3b4bfd2fc560fb44af7b1f3217c186ff74abf60454fd53cf93101e6334",
+    "exports/rotary-table/stl/p53-electronics-foot-4.stl": "8d098408d1948f9e951996aa0939a9fcf421bf955b4e31399e355a4193de2835",
+    "exports/rotary-table/stl/p42-fixed-housing-quadrant.stl": "ab3b7e149e05ce0869b720e10d82786834cfb9ef998cd2328b74dc8c12cf7446",
+    "exports/rotary-table/stl/p23-motor-pod-foundation.stl": "b2560cae7b1866de3e38598620c3369240b56a6c995c972e5c20912180e472e0",
+    "exports/rotary-table/stl/p53-electronics-foot-2.stl": "4872e27340f8165fd30f3ea9a1ce05e25ae07a82169f08f7bcff452279b1e243",
+    "exports/rotary-table/stl/p11-column-sleeve.stl": "edb052ea5d1a6cf15a5a520201ec59c4b06997bb90ca3ba6ec3e47c351be8b8a",
+    "exports/rotary-table/stl/p21-worm-bearing-block-right.stl": "5f51ae98e24fc106bc1868d7837111fabefc9bc545b9a1affbff7231866e5032",
+    "exports/rotary-table/stl/p53-electronics-foot-3.stl": "fddc69d0ae825d0c7178fef51cd0044c938d3e3eed40fd055925bc19c6a41edc",
+    "exports/rotary-table/stl/p53-electronics-foot-1.stl": "057eff53f61c8c32fc2956e9e778ef141d69fbfe3817d3a807186f9f1f72bb03",
+    "exports/rotary-table/stl/p14-column-sleeve.stl": "fddcc855d4e3a8f91b51664cc72110b33b28ceefbb91de693083b2d1049d4d36",
+    "exports/rotary-table/stl/p24-nema17-motor-bracket.stl": "194aa55cac9372d94060a459d6981df346b1a5e20ed6bfc6342a4c1a36d85524",
+    "exports/rotary-table/stl/p12-column-sleeve.stl": "492b40fdcca959932e50e20604a063da5c029c4c5c280bbb1149d8160249a8cb",
+    "exports/rotary-table/stl/p31-platter-quadrant.stl": "71cc86e2bef8709dfb31ad32de70ad0ec743606f978c82578c38c1a6c96fe1e7",
+    "exports/rotary-table/stl/p44-fixed-housing-quadrant.stl": "e1664393fa68ab47524ea636032cf24ee2de43460025eaa020977e454e38b0e7",
+    "exports/rotary-table/stl/p34-platter-quadrant.stl": "cbe102ccdf98975a4b0e9e5fa04ae87b957011c6a4e26cbca0f6dbf6fc65bd6d",
+    "exports/rotary-table/stl/p46-motor-service-hood.stl": "5ac3eeae326aa6375de459b50b0d31dd783832275fb3b0288cc1dce23430b17d",
+    "exports/rotary-table/stl/p13-column-sleeve.stl": "8b6eeee5a0ffbf61af8d9d984e28223b8fdf6d063615cc2af0b3e31f80839d3b",
+    "exports/rotary-table/stl/p43-fixed-housing-quadrant.stl": "1dd1f4e0ba103e50061cbeae7a6a26341a2a34d3bdc6cbe7e9233488342bd3fa",
+    "exports/rotary-table/stl/p22-worm-bearing-retainer-right.stl": "64949cb472db12df35ac21414f4a826c625036cfcdc5e230fcdeb4d045334c22",
+    "docs/archive/rt01-before-braced-stand.sc": "44d43db123744060e03ad2fefffec751fe9bd67fe764b7adbc06c8cc5b457ef1",
+    "docs/archive/pre-rotary-table.sc": "f89a2a380554f9623a84ac64602c8b2300dd98e295825e7dab9b4b7fee08f610",
+    "docs/archive/rotary-table-validation-rev2.md": "ad2a20291df1711298de45b1879162d9d65ff2fed8cef2d4862f87728daf0025",
+    "docs/archive/rt01-before-braced-stand.sc.bak": "6205b8c25ca86927cb57410c288287070ac182783009f772e5e0e36fcc8d3637",
+    "docs/archive/rt01-before-support-and-arm-mount.sc": "1cb0c4d2a2b64cac2ed7ed2ade4cef2b65ca5af09fbff33b2b18c866907d74b4",
+    "docs/archive/base-fixing-section.png": "02dcba0f77381ec3a53ca90ace20accbb9cc7f5693d65618f9944ad3b47553c4",
+    "docs/archive/base-exploded.png": "29e047036f9bb65ed102b1c802f0de82f106a0aabb700aab51ec75fceddfc878",
+    "docs/archive/base-and-arm-README-2026-11-17.md": "c7e3d78ae13cc3858fe8c0329a58856667550dd83e1eb7c6f613d3a010e9ad16",
+    "docs/archive/base-section.png": "c349f3ea7b829357bc5c63c131bb2c59aafdb39d586d6ce99d23891ddab34b9f",
+    "docs/archive/.~rt01-before-braced-stand.sc.lock": "ba12be99d28488b45b94f5c2c2a3598fd5c78fcc1bb3bb4ed0da90fbdf37a5fa",
+    "docs/specs/rotary-table.md": "7ca8b28b9cc54a3d5cad06632de92271a028a843076d80ed57b7b24a9b382957",
+    "references/so-arm100/source-manifest.json": "6e35ffebcec5744ae83d75b3f31c245ef1956fe0def7b29af76265ba95b9056f",
+    "references/so-arm100/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "references/so-arm100/CITATION.cff": "357d040c6099ec36765fe5fa22e50db9679b16205aa29b01b765cbc809f2d1b0",
+    "references/so-arm100/README.md": "e59a56133537950d982741e73e2b5d1ebf0aaf8f07960951ddf1f6d6c88cb164",
+    "references/so-arm100/project-arm-reference-preview.png": "c3e8aebd71e16f96bde40f5bd37976cec37aed07aa2a38dcf1ec83ebb71af6c2",
+    "references/so-arm100/.gitattributes": "142e94958c65764cd9b8a60900b2bf4a29a18ec41a752f823c7e411be72b0018",
+    "references/so-arm100/base-preview.png": "4ae165802e25150379498439dded0ef85bef425083e9c0395747d81778a2639c",
+    "references/so-arm100/inspection.json": "453bea75ced5675726a0f3c1cacb30df1ca6f6feef482424dcd3f369daad2340",
+    "references/so-arm100/follower-preview.png": "103285d6990ca681af91f6d96b6fae6e97b18b26722a44e03d6553c72c948ea3",
+    "references/so-arm100/step/Base_attachment.step": "bf0ab4c59e4a3a1305ea1ebca012af0d8eb3f0a9a70e2b19587b6a7d13ad8b1b",
+    "references/so-arm100/step/Base_08q.step": "b2351aa80e4da4f58b7379191485376d111bd67c92dfa0d536029f7794a699a0",
+    "references/so-arm100/step/STS3215_03a.step": "cacd717c2f22bec856fdace2c3bc9fa58084d54b6e70378eae90562f34df93ef",
+    "references/so-arm100/step/Motor1_holder.step": "8aee26f5ae9f535849ead8365f39dc4ccb3468bfe3fefa454d65130e1655738e",
+    "references/so-arm100/stl/follower/Base_08q-4.STL": "890c51911e132e34970bc61079dda10519c04fd2b9548fc0f8d7e4793381ff6e",
+    "references/so-arm100/stl/follower/Base_08q-5.STL": "944ce4fd8ac3f338516d69d1e0b5862e2eeacb4a00988fd1bff25252ff4602c8",
+    "references/so-arm100/stl/follower/Base_08q-3.STL": "a9ab6b1b4db31a03072ae19d531f132039cba29f34764a1b57ee21c9aa8441de",
+    "references/so-arm100/step/follower/SO_5DOF_ARM100_Assembly.step": "6dda8ce9858b2a460082eb192678ba4dcfc062d8bbacc160111bf2019b8c6658"
+  },
+  "primary_sources": {
+    "bambu": "https://store.bblcdn.com/1531c9726f6b41fba4594d5b47966ee0.pdf",
+    "khk": "https://khkgears.net/pdf/agdl.pdf",
+    "thk": "https://tech.thk.com/en/products/pdfs/en_a18_022.pdf",
+    "source_access_note": "Bambu/KHK PDFs read directly. THK mounting table available in search index; direct per-page PDF redirects by region. Confirm final purchased drawing."
+  }
+}

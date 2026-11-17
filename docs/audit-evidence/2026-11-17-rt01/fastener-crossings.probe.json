@@ -1,0 +1,201 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "AUDIT F08-F09 bolt conflicts",
+        "grounded": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 65,
+        "base": [
+          -53,
+          31.5,
+          9.5
+        ],
+        "body_name": "AUDIT F08 -1 31.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 65,
+        "base": [
+          -53,
+          79.5,
+          9.5
+        ],
+        "body_name": "AUDIT F08 -1 79.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          -70.8,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 -1 32.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          -70.8,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 -1 32.5 73"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          -70.8,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 -1 78.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          -70.8,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 -1 78.5 73"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 65,
+        "base": [
+          53,
+          31.5,
+          9.5
+        ],
+        "body_name": "AUDIT F08 1 31.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 65,
+        "base": [
+          53,
+          79.5,
+          9.5
+        ],
+        "body_name": "AUDIT F08 1 79.5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          35.8,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 1 32.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          35.8,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 1 32.5 73"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          35.8,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 1 78.5 27"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 35,
+        "base": [
+          35.8,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "body_name": "AUDIT F09 1 78.5 73"
+      }
+    },
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "AUDIT F08 -1 31.5",
+          "AUDIT F08 -1 79.5",
+          "AUDIT F09 -1 32.5 27",
+          "AUDIT F09 -1 32.5 73",
+          "AUDIT F09 -1 78.5 27",
+          "AUDIT F09 -1 78.5 73",
+          "AUDIT F08 1 31.5",
+          "AUDIT F08 1 79.5",
+          "AUDIT F09 1 32.5 27",
+          "AUDIT F09 1 32.5 73",
+          "AUDIT F09 1 78.5 27",
+          "AUDIT F09 1 78.5 73"
+        ],
+        "budget_s": 45
+      }
+    }
+  ]
+}

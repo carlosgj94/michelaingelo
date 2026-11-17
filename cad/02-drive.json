@@ -25,8 +25,26 @@
           12
         ],
         "operation": "new",
-        "name": "084 P20 worm cartridge sled",
-        "body_name": "P20 worm cartridge sled"
+        "name": "103 M60 monolithic worm carrier",
+        "body_name": "M60 monolithic worm carrier"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 68,
+        "width": 6.02,
+        "height": 2.3,
+        "corner": [
+          -34,
+          52.49,
+          11.9
+        ],
+        "operation": "cut",
+        "name": "104 axial guide groove",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
       }
     },
     {
@@ -41,9 +59,9 @@
           11
         ],
         "operation": "cut",
-        "name": "085 adjustment slot web",
+        "name": "105 adjustment slot web",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -59,9 +77,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "086 P20 worm cartridge sled adjustment slot end",
+        "name": "106 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -77,9 +95,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "087 P20 worm cartridge sled adjustment slot end",
+        "name": "107 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -95,9 +113,9 @@
           11
         ],
         "operation": "cut",
-        "name": "088 adjustment slot web",
+        "name": "108 adjustment slot web",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -113,9 +131,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "089 P20 worm cartridge sled adjustment slot end",
+        "name": "109 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -131,9 +149,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "090 P20 worm cartridge sled adjustment slot end",
+        "name": "110 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -149,9 +167,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "091 P20 worm cartridge sled core bench bolt head access",
+        "name": "111 M60 monolithic worm carrier core bench bolt head access",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -167,9 +185,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "092 P20 worm cartridge sled core bench bolt head access",
+        "name": "112 M60 monolithic worm carrier core bench bolt head access",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -185,9 +203,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "093 P20 worm cartridge sled column sleeve adjustment clearance",
+        "name": "113 M60 monolithic worm carrier column sleeve adjustment clearance",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -203,9 +221,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "094 P20 worm cartridge sled column sleeve adjustment clearance",
+        "name": "114 M60 monolithic worm carrier column sleeve adjustment clearance",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -221,9 +239,9 @@
           11
         ],
         "operation": "cut",
-        "name": "095 adjustment slot web",
+        "name": "115 adjustment slot web",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -239,9 +257,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "096 P20 worm cartridge sled adjustment slot end",
+        "name": "116 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -257,9 +275,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "097 P20 worm cartridge sled adjustment slot end",
+        "name": "117 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -275,9 +293,9 @@
           11
         ],
         "operation": "cut",
-        "name": "098 adjustment slot web",
+        "name": "118 adjustment slot web",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -293,9 +311,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "099 P20 worm cartridge sled adjustment slot end",
+        "name": "119 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -311,9 +329,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "100 P20 worm cartridge sled adjustment slot end",
+        "name": "120 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -329,9 +347,9 @@
           11
         ],
         "operation": "cut",
-        "name": "101 adjustment slot web",
+        "name": "121 adjustment slot web",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -347,9 +365,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "102 P20 worm cartridge sled adjustment slot end",
+        "name": "122 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -365,9 +383,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "103 P20 worm cartridge sled adjustment slot end",
+        "name": "123 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -383,9 +401,9 @@
           11
         ],
         "operation": "cut",
-        "name": "104 adjustment slot web",
+        "name": "124 adjustment slot web",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -401,9 +419,9 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "105 P20 worm cartridge sled adjustment slot end",
+        "name": "125 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -419,370 +437,10 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "106 P20 worm cartridge sled adjustment slot end",
+        "name": "126 M60 monolithic worm carrier adjustment slot end",
         "targets": [
-          "P20 worm cartridge sled"
+          "M60 monolithic worm carrier"
         ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m5",
-        "height": 10,
-        "base": [
-          -53,
-          31.5,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "107 P20 worm cartridge sled clearance hole",
-        "targets": [
-          "P20 worm cartridge sled"
-        ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            -53,
-            31.5,
-            12
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "108 P20 worm cartridge sled nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "108 P20 worm cartridge sled nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P20 worm cartridge sled"
-        ],
-        "name": "109 P20 worm cartridge sled captive nut"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m5",
-        "height": 10,
-        "base": [
-          -53,
-          79.5,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "110 P20 worm cartridge sled clearance hole",
-        "targets": [
-          "P20 worm cartridge sled"
-        ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            -53,
-            79.5,
-            12
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "111 P20 worm cartridge sled nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "111 P20 worm cartridge sled nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P20 worm cartridge sled"
-        ],
-        "name": "112 P20 worm cartridge sled captive nut"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m5",
-        "height": 10,
-        "base": [
-          53,
-          31.5,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "113 P20 worm cartridge sled clearance hole",
-        "targets": [
-          "P20 worm cartridge sled"
-        ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            53,
-            31.5,
-            12
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "114 P20 worm cartridge sled nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "114 P20 worm cartridge sled nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P20 worm cartridge sled"
-        ],
-        "name": "115 P20 worm cartridge sled captive nut"
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m5",
-        "height": 10,
-        "base": [
-          53,
-          79.5,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "116 P20 worm cartridge sled clearance hole",
-        "targets": [
-          "P20 worm cartridge sled"
-        ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            53,
-            79.5,
-            12
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "117 P20 worm cartridge sled nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "117 P20 worm cartridge sled nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P20 worm cartridge sled"
-        ],
-        "name": "118 P20 worm cartridge sled captive nut"
       }
     },
     {
@@ -790,21 +448,23 @@
       "params": {
         "length": 26,
         "width": 60,
-        "height": 60,
+        "height": 60.2,
         "corner": [
           -66,
           25.5,
-          20
+          19.8
         ],
-        "operation": "new",
-        "name": "119 P21 worm bearing block left",
-        "body_name": "P21 worm bearing block left"
+        "operation": "join",
+        "name": "127 integral bearing support",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "15 mm+rt_fit",
+        "diameter": 15.3,
         "height": 28,
         "base": [
           -67,
@@ -813,17 +473,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "120 P21 worm bearing block left shaft clearance",
+        "name": "128 M60 monolithic worm carrier shaft clearance",
         "targets": [
-          "P21 worm bearing block left"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "35 mm+rt_fit",
-        "height": 12,
+        "diameter": 35.01,
+        "height": 12.05,
         "base": [
           -67,
           55.5,
@@ -831,89 +491,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "121 P21 worm bearing block left bearing slip seat",
+        "name": "129 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
         "targets": [
-          "P21 worm bearing block left"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
-        "height": 62,
-        "base": [
-          -53,
-          31.5,
-          19
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "122 P21 worm bearing block left block fixing",
-        "targets": [
-          "P21 worm bearing block left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 11,
-        "height": 7.5,
-        "base": [
-          -53,
-          31.5,
-          73.5
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "123 P21 worm bearing block left recessed M5 block screw and washer",
-        "targets": [
-          "P21 worm bearing block left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m5",
-        "height": 62,
-        "base": [
-          -53,
-          79.5,
-          19
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "124 P21 worm bearing block left block fixing",
-        "targets": [
-          "P21 worm bearing block left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 11,
-        "height": 7.5,
-        "base": [
-          -53,
-          79.5,
-          73.5
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "125 P21 worm bearing block left recessed M5 block screw and washer",
-        "targets": [
-          "P21 worm bearing block left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m4",
-        "height": 28,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
           -67,
           32.5,
@@ -921,17 +509,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "126 P21 worm bearing block left retainer screw",
+        "name": "130 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block left"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 28,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
           -67,
           32.5,
@@ -939,17 +527,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "127 P21 worm bearing block left retainer screw",
+        "name": "131 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block left"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 28,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
           -67,
           78.5,
@@ -957,17 +545,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "128 P21 worm bearing block left retainer screw",
+        "name": "132 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block left"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 28,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
           -67,
           78.5,
@@ -975,298 +563,10 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "129 P21 worm bearing block left retainer screw",
+        "name": "133 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block left"
+          "M60 monolithic worm carrier"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            -44.4,
-            32.5,
-            27
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "130 P21 worm bearing block left nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "130 P21 worm bearing block left nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block left"
-        ],
-        "name": "131 P21 worm bearing block left captive nut"
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            -44.4,
-            32.5,
-            73
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "132 P21 worm bearing block left nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "132 P21 worm bearing block left nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block left"
-        ],
-        "name": "133 P21 worm bearing block left captive nut"
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            -44.4,
-            78.5,
-            27
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "134 P21 worm bearing block left nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "134 P21 worm bearing block left nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block left"
-        ],
-        "name": "135 P21 worm bearing block left captive nut"
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            -44.4,
-            78.5,
-            73
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "136 P21 worm bearing block left nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "136 P21 worm bearing block left nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block left"
-        ],
-        "name": "137 P21 worm bearing block left captive nut"
       }
     },
     {
@@ -1276,13 +576,31 @@
         "width": 54,
         "height": 54,
         "corner": [
-          -70,
+          -70.05,
           28.5,
           23
         ],
         "operation": "new",
-        "name": "138 P22 worm bearing retainer left",
-        "body_name": "P22 worm bearing retainer left"
+        "name": "134 M61 worm bearing retainer left",
+        "body_name": "M61 worm bearing retainer left"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 34.9,
+        "height": 0.1,
+        "base": [
+          -66.05,
+          55.5,
+          50
+        ],
+        "axis": "X",
+        "operation": "join",
+        "name": "135 outer-race retaining boss",
+        "targets": [
+          "M61 worm bearing retainer left"
+        ]
       }
     },
     {
@@ -1291,15 +609,15 @@
         "diameter": 16,
         "height": 6,
         "base": [
-          -71,
+          -71.05,
           55.5,
           50
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "139 P22 worm bearing retainer left clearance hole",
+        "name": "136 M61 worm bearing retainer left clearance hole",
         "targets": [
-          "P22 worm bearing retainer left"
+          "M61 worm bearing retainer left"
         ]
       }
     },
@@ -1307,89 +625,195 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 28,
-        "height": 0.9,
+        "height": 0.8,
         "base": [
-          -66.8,
+          -66.6,
           55.5,
           50
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "140 P22 worm bearing retainer left inner-race relief",
+        "name": "137 M61 worm bearing retainer left inner-ring noncontact relief",
         "targets": [
-          "P22 worm bearing retainer left"
+          "M61 worm bearing retainer left"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 4.5,
         "height": 6,
         "base": [
-          -71,
+          -71.05,
           32.5,
           27
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "141 P22 worm bearing retainer left clearance hole",
+        "name": "138 M61 worm bearing retainer left clearance hole",
         "targets": [
-          "P22 worm bearing retainer left"
+          "M61 worm bearing retainer left"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 4.5,
         "height": 6,
         "base": [
-          -71,
+          -71.05,
           32.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "142 P22 worm bearing retainer left clearance hole",
+        "name": "139 M61 worm bearing retainer left clearance hole",
         "targets": [
-          "P22 worm bearing retainer left"
+          "M61 worm bearing retainer left"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 4.5,
         "height": 6,
         "base": [
-          -71,
+          -71.05,
           78.5,
           27
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "143 P22 worm bearing retainer left clearance hole",
+        "name": "140 M61 worm bearing retainer left clearance hole",
         "targets": [
-          "P22 worm bearing retainer left"
+          "M61 worm bearing retainer left"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 4.5,
         "height": 6,
         "base": [
-          -71,
+          -71.05,
           78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "144 P22 worm bearing retainer left clearance hole",
+        "name": "141 M61 worm bearing retainer left clearance hole",
         "targets": [
-          "P22 worm bearing retainer left"
+          "M61 worm bearing retainer left"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 0.05,
+        "width": 54,
+        "height": 54,
+        "corner": [
+          -66.05,
+          28.5,
+          23
+        ],
+        "operation": "new",
+        "name": "142 M62 retainer shim left",
+        "body_name": "M62 retainer shim left"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 35.5,
+        "height": 3,
+        "base": [
+          -67,
+          55.5,
+          50
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "143 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "144 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "145 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "146 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "147 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
         ]
       }
     },
@@ -1399,13 +823,13 @@
         "diameter": 35,
         "height": 11,
         "base": [
-          -66,
+          -65.95,
           55.5,
           50
         ],
         "axis": "X",
         "operation": "new",
-        "name": "145 B02 worm support bearing left",
+        "name": "148 B02 worm support bearing left",
         "body_name": "B02 worm support bearing left"
       }
     },
@@ -1415,13 +839,13 @@
         "diameter": 15,
         "height": "(11)+2 mm",
         "base": [
-          "(-66)-1 mm",
+          "(-65.95)-1 mm",
           55.5,
           50
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "146 B02 worm support bearing left bore",
+        "name": "149 B02 worm support bearing left bore",
         "targets": [
           "B02 worm support bearing left"
         ]
@@ -1432,21 +856,23 @@
       "params": {
         "length": 26,
         "width": 60,
-        "height": 60,
+        "height": 60.2,
         "corner": [
           40,
           25.5,
-          20
+          19.8
         ],
-        "operation": "new",
-        "name": "147 P21 worm bearing block right",
-        "body_name": "P21 worm bearing block right"
+        "operation": "join",
+        "name": "150 integral bearing support",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "15 mm+rt_fit",
+        "diameter": 15.3,
         "height": 28,
         "base": [
           39,
@@ -1455,460 +881,100 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "148 P21 worm bearing block right shaft clearance",
+        "name": "151 M60 monolithic worm carrier shaft clearance",
         "targets": [
-          "P21 worm bearing block right"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "35 mm+rt_fit",
-        "height": 12,
+        "diameter": 35.01,
+        "height": 12.05,
         "base": [
-          55,
+          54.95,
           55.5,
           50
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "149 P21 worm bearing block right bearing slip seat",
+        "name": "152 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
         "targets": [
-          "P21 worm bearing block right"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
-        "height": 62,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
-          53,
-          31.5,
-          19
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "150 P21 worm bearing block right block fixing",
-        "targets": [
-          "P21 worm bearing block right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 11,
-        "height": 7.5,
-        "base": [
-          53,
-          31.5,
-          73.5
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "151 P21 worm bearing block right recessed M5 block screw and washer",
-        "targets": [
-          "P21 worm bearing block right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m5",
-        "height": 62,
-        "base": [
-          53,
-          79.5,
-          19
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "152 P21 worm bearing block right block fixing",
-        "targets": [
-          "P21 worm bearing block right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 11,
-        "height": 7.5,
-        "base": [
-          53,
-          79.5,
-          73.5
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "153 P21 worm bearing block right recessed M5 block screw and washer",
-        "targets": [
-          "P21 worm bearing block right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m4",
-        "height": 28,
-        "base": [
-          39,
+          56,
           32.5,
           27
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "154 P21 worm bearing block right retainer screw",
+        "name": "153 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block right"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 28,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
-          39,
+          56,
           32.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "155 P21 worm bearing block right retainer screw",
+        "name": "154 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block right"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 28,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
-          39,
+          56,
           78.5,
           27
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "156 P21 worm bearing block right retainer screw",
+        "name": "155 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block right"
+          "M60 monolithic worm carrier"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 28,
+        "diameter": 3.3,
+        "height": 11,
         "base": [
-          39,
+          56,
           78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "157 P21 worm bearing block right retainer screw",
+        "name": "156 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
-          "P21 worm bearing block right"
+          "M60 monolithic worm carrier"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            40,
-            32.5,
-            27
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "158 P21 worm bearing block right nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "158 P21 worm bearing block right nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block right"
-        ],
-        "name": "159 P21 worm bearing block right captive nut"
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            40,
-            32.5,
-            73
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "160 P21 worm bearing block right nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "160 P21 worm bearing block right nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block right"
-        ],
-        "name": "161 P21 worm bearing block right captive nut"
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            40,
-            78.5,
-            27
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "162 P21 worm bearing block right nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "162 P21 worm bearing block right nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block right"
-        ],
-        "name": "163 P21 worm bearing block right captive nut"
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            40,
-            78.5,
-            73
-          ],
-          "x_dir": [
-            0,
-            1,
-            0
-          ],
-          "y_dir": [
-            0,
-            0,
-            1
-          ]
-        },
-        "name": "164 P21 worm bearing block right nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "164 P21 worm bearing block right nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P21 worm bearing block right"
-        ],
-        "name": "165 P21 worm bearing block right captive nut"
       }
     },
     {
@@ -1918,13 +984,31 @@
         "width": 54,
         "height": 54,
         "corner": [
-          66,
+          66.05,
           28.5,
           23
         ],
         "operation": "new",
-        "name": "166 P22 worm bearing retainer right",
-        "body_name": "P22 worm bearing retainer right"
+        "name": "157 M61 worm bearing retainer right",
+        "body_name": "M61 worm bearing retainer right"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 34.9,
+        "height": 0.1,
+        "base": [
+          65.95,
+          55.5,
+          50
+        ],
+        "axis": "X",
+        "operation": "join",
+        "name": "158 outer-race retaining boss",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
       }
     },
     {
@@ -1933,15 +1017,15 @@
         "diameter": 16,
         "height": 6,
         "base": [
-          65,
+          65.05,
           55.5,
           50
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "167 P22 worm bearing retainer right clearance hole",
+        "name": "159 M61 worm bearing retainer right clearance hole",
         "targets": [
-          "P22 worm bearing retainer right"
+          "M61 worm bearing retainer right"
         ]
       }
     },
@@ -1949,25 +1033,131 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 28,
-        "height": 0.9,
+        "height": 0.8,
         "base": [
-          65.9,
+          65.8,
           55.5,
           50
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "168 P22 worm bearing retainer right inner-race relief",
+        "name": "160 M61 worm bearing retainer right inner-ring noncontact relief",
         "targets": [
-          "P22 worm bearing retainer right"
+          "M61 worm bearing retainer right"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 4.5,
         "height": 6,
+        "base": [
+          65.05,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "161 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          65.05,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "162 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          65.05,
+          78.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "163 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          65.05,
+          78.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "164 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 0.05,
+        "width": 54,
+        "height": 54,
+        "corner": [
+          66,
+          28.5,
+          23
+        ],
+        "operation": "new",
+        "name": "165 M62 retainer shim right",
+        "body_name": "M62 retainer shim right"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 35.5,
+        "height": 3,
+        "base": [
+          65,
+          55.5,
+          50
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "166 M62 retainer shim right clearance hole",
+        "targets": [
+          "M62 retainer shim right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
         "base": [
           65,
           32.5,
@@ -1975,17 +1165,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "169 P22 worm bearing retainer right clearance hole",
+        "name": "167 M62 retainer shim right clearance hole",
         "targets": [
-          "P22 worm bearing retainer right"
+          "M62 retainer shim right"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 6,
+        "diameter": 4.5,
+        "height": 3,
         "base": [
           65,
           32.5,
@@ -1993,17 +1183,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "170 P22 worm bearing retainer right clearance hole",
+        "name": "168 M62 retainer shim right clearance hole",
         "targets": [
-          "P22 worm bearing retainer right"
+          "M62 retainer shim right"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 6,
+        "diameter": 4.5,
+        "height": 3,
         "base": [
           65,
           78.5,
@@ -2011,17 +1201,17 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "171 P22 worm bearing retainer right clearance hole",
+        "name": "169 M62 retainer shim right clearance hole",
         "targets": [
-          "P22 worm bearing retainer right"
+          "M62 retainer shim right"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
-        "height": 6,
+        "diameter": 4.5,
+        "height": 3,
         "base": [
           65,
           78.5,
@@ -2029,9 +1219,9 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "172 P22 worm bearing retainer right clearance hole",
+        "name": "170 M62 retainer shim right clearance hole",
         "targets": [
-          "P22 worm bearing retainer right"
+          "M62 retainer shim right"
         ]
       }
     },
@@ -2041,13 +1231,13 @@
         "diameter": 35,
         "height": 11,
         "base": [
-          55,
+          54.95,
           55.5,
           50
         ],
         "axis": "X",
         "operation": "new",
-        "name": "173 B02 worm support bearing right",
+        "name": "171 B02 worm support bearing right",
         "body_name": "B02 worm support bearing right"
       }
     },
@@ -2057,13 +1247,13 @@
         "diameter": 15,
         "height": "(11)+2 mm",
         "base": [
-          "(55)-1 mm",
+          "(54.95)-1 mm",
           55.5,
           50
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "174 B02 worm support bearing right bore",
+        "name": "172 B02 worm support bearing right bore",
         "targets": [
           "B02 worm support bearing right"
         ]
@@ -2081,7 +1271,7 @@
         ],
         "axis": "X",
         "operation": "new",
-        "name": "175 B03 worm shaft reference",
+        "name": "173 B03 worm shaft reference",
         "body_name": "B03 worm shaft reference"
       }
     },
@@ -2097,7 +1287,7 @@
         ],
         "axis": "X",
         "operation": "new",
-        "name": "176 B04 duplex worm envelope",
+        "name": "174 B04 duplex worm envelope",
         "body_name": "B04 duplex worm envelope"
       }
     },
@@ -2113,7 +1303,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "177 B04 duplex worm envelope",
+        "name": "175 B04 duplex worm envelope",
         "targets": [
           "B04 duplex worm envelope"
         ]
@@ -2131,7 +1321,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "178 B04 duplex worm envelope clearance hole",
+        "name": "176 B04 duplex worm envelope clearance hole",
         "targets": [
           "B04 duplex worm envelope"
         ]
@@ -2149,7 +1339,7 @@
         ],
         "axis": "X",
         "operation": "new",
-        "name": "179 B05 clamp coupling reference",
+        "name": "177 B05 clamp coupling reference",
         "body_name": "B05 clamp coupling reference"
       }
     },
@@ -2165,7 +1355,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "180 B05 clamp coupling reference bore",
+        "name": "178 B05 clamp coupling reference bore",
         "targets": [
           "B05 clamp coupling reference"
         ]
@@ -2183,7 +1373,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "181 B05 clamp coupling reference",
+        "name": "179 B05 clamp coupling reference",
         "targets": [
           "B05 clamp coupling reference"
         ]
@@ -2201,7 +1391,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "182 B05 clamp coupling reference clearance hole",
+        "name": "180 B05 clamp coupling reference clearance hole",
         "targets": [
           "B05 clamp coupling reference"
         ]
@@ -2219,14 +1409,14 @@
           4
         ],
         "operation": "new",
-        "name": "183 P23 motor-pod foundation",
-        "body_name": "P23 motor-pod foundation"
+        "name": "181 tool motor support riser",
+        "body_name": "tool motor support riser"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "12 mm+rt_fit",
+        "diameter": 6.6,
         "height": 10,
         "base": [
           220,
@@ -2235,16 +1425,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "184 P23 motor-pod foundation bench anchor compression sleeve",
+        "name": "182 tool motor support riser bench anchor",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "12 mm+rt_fit",
+        "diameter": 6.6,
         "height": 10,
         "base": [
           220,
@@ -2253,16 +1443,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "185 P23 motor-pod foundation bench anchor compression sleeve",
+        "name": "183 tool motor support riser bench anchor",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": 4.2,
         "height": 10,
         "base": [
           116,
@@ -2271,88 +1461,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "186 P23 motor-pod foundation clearance hole",
+        "name": "184 tool motor support riser M5 motor bracket thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            116,
-            32,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "187 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "187 P23 motor-pod foundation nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "188 P23 motor-pod foundation captive nut"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": 4.2,
         "height": 10,
         "base": [
           116,
@@ -2361,88 +1479,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "189 P23 motor-pod foundation clearance hole",
+        "name": "185 tool motor support riser M5 motor bracket thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            116,
-            79,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "190 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "190 P23 motor-pod foundation nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "191 P23 motor-pod foundation captive nut"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": 4.2,
         "height": 10,
         "base": [
           138,
@@ -2451,88 +1497,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "192 P23 motor-pod foundation clearance hole",
+        "name": "186 tool motor support riser M5 motor bracket thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            138,
-            32,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "193 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "193 P23 motor-pod foundation nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "194 P23 motor-pod foundation captive nut"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": 4.2,
         "height": 10,
         "base": [
           138,
@@ -2541,88 +1515,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "195 P23 motor-pod foundation clearance hole",
+        "name": "187 tool motor support riser M5 motor bracket thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            138,
-            79,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "196 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.000000000000",
-            "(rt_nut5)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*-0.000000000000",
-            "(rt_nut5)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(rt_nut5)/sqrt(3)*0.866025403784",
-            "(rt_nut5)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "196 P23 motor-pod foundation nut pocket profile",
-        "distance": 4.4,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "197 P23 motor-pod foundation captive nut"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 3.3,
         "height": 10,
         "base": [
           171,
@@ -2631,88 +1533,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "198 P23 motor-pod foundation clearance hole",
+        "name": "188 tool motor support riser M4 hood thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            171,
-            21,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "199 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "199 P23 motor-pod foundation nut pocket profile",
-        "distance": 3.6,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "200 P23 motor-pod foundation captive nut"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 3.3,
         "height": 10,
         "base": [
           171,
@@ -2721,88 +1551,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "201 P23 motor-pod foundation clearance hole",
+        "name": "189 tool motor support riser M4 hood thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            171,
-            91,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "202 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "202 P23 motor-pod foundation nut pocket profile",
-        "distance": 3.6,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "203 P23 motor-pod foundation captive nut"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 3.3,
         "height": 10,
         "base": [
           225,
@@ -2811,88 +1569,16 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "204 P23 motor-pod foundation clearance hole",
+        "name": "190 tool motor support riser M4 hood thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            225,
-            21,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "205 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "205 P23 motor-pod foundation nut pocket profile",
-        "distance": 3.6,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "206 P23 motor-pod foundation captive nut"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m4",
+        "diameter": 3.3,
         "height": 10,
         "base": [
           225,
@@ -2901,82 +1587,10 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "207 P23 motor-pod foundation clearance hole",
+        "name": "191 tool motor support riser M4 hood thread",
         "targets": [
-          "P23 motor-pod foundation"
+          "tool motor support riser"
         ]
-      }
-    },
-    {
-      "command": "sketch.create",
-      "params": {
-        "plane": {
-          "origin": [
-            225,
-            91,
-            4
-          ],
-          "x_dir": [
-            1,
-            0,
-            0
-          ],
-          "y_dir": [
-            0,
-            1,
-            0
-          ]
-        },
-        "name": "208 P23 motor-pod foundation nut pocket profile"
-      }
-    },
-    {
-      "command": "sketch.line",
-      "params": {
-        "points": [
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.000000000000",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-1.000000000000"
-          ],
-          [
-            "(7.4 mm+rt_fit*0)/sqrt(3)*0.866025403784",
-            "(7.4 mm+rt_fit*0)/sqrt(3)*-0.500000000000"
-          ]
-        ],
-        "closed": true,
-        "connect": false
-      }
-    },
-    {
-      "command": "sketch.finish",
-      "params": {}
-    },
-    {
-      "command": "solid.extrude",
-      "params": {
-        "sketch": "208 P23 motor-pod foundation nut pocket profile",
-        "distance": 3.6,
-        "operation": "cut",
-        "targets": [
-          "P23 motor-pod foundation"
-        ],
-        "name": "209 P23 motor-pod foundation captive nut"
       }
     },
     {
@@ -2991,7 +1605,7 @@
           12
         ],
         "operation": "new",
-        "name": "210 P24 NEMA17 motor bracket",
+        "name": "192 P24 NEMA17 motor bracket",
         "body_name": "P24 NEMA17 motor bracket"
       }
     },
@@ -3007,7 +1621,7 @@
           18
         ],
         "operation": "join",
-        "name": "211 P24 NEMA17 motor bracket",
+        "name": "193 P24 NEMA17 motor bracket",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3016,7 +1630,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 22.4,
+        "diameter": "rt_motor_pilot_h",
         "height": 8,
         "base": [
           111,
@@ -3025,7 +1639,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "212 P24 NEMA17 motor bracket motor pilot",
+        "name": "194 P24 NEMA17 motor bracket motor pilot",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3034,7 +1648,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m3",
+        "diameter": "rt_m3_h",
         "height": 8,
         "base": [
           111,
@@ -3043,7 +1657,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "213 P24 NEMA17 motor bracket NEMA17 fixing",
+        "name": "195 P24 NEMA17 motor bracket NEMA17 fixing",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3052,7 +1666,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m3",
+        "diameter": "rt_m3_h",
         "height": 8,
         "base": [
           111,
@@ -3061,7 +1675,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "214 P24 NEMA17 motor bracket NEMA17 fixing",
+        "name": "196 P24 NEMA17 motor bracket NEMA17 fixing",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3070,7 +1684,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m3",
+        "diameter": "rt_m3_h",
         "height": 8,
         "base": [
           111,
@@ -3079,7 +1693,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "215 P24 NEMA17 motor bracket NEMA17 fixing",
+        "name": "197 P24 NEMA17 motor bracket NEMA17 fixing",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3088,7 +1702,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m3",
+        "diameter": "rt_m3_h",
         "height": 8,
         "base": [
           111,
@@ -3097,7 +1711,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "216 P24 NEMA17 motor bracket NEMA17 fixing",
+        "name": "198 P24 NEMA17 motor bracket NEMA17 fixing",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3106,7 +1720,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": "rt_m5_h",
         "height": 10,
         "base": [
           104,
@@ -3115,7 +1729,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "217 P24 NEMA17 motor bracket clearance hole",
+        "name": "199 P24 NEMA17 motor bracket clearance hole",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3124,7 +1738,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": "rt_m5_h",
         "height": 10,
         "base": [
           104,
@@ -3133,7 +1747,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "218 P24 NEMA17 motor bracket clearance hole",
+        "name": "200 P24 NEMA17 motor bracket clearance hole",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3142,7 +1756,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": "rt_m5_h",
         "height": 10,
         "base": [
           126,
@@ -3151,7 +1765,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "219 P24 NEMA17 motor bracket clearance hole",
+        "name": "201 P24 NEMA17 motor bracket clearance hole",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3160,7 +1774,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": "rt_m5",
+        "diameter": "rt_m5_h",
         "height": 10,
         "base": [
           126,
@@ -3169,7 +1783,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "220 P24 NEMA17 motor bracket clearance hole",
+        "name": "202 P24 NEMA17 motor bracket clearance hole",
         "targets": [
           "P24 NEMA17 motor bracket"
         ]
@@ -3201,7 +1815,7 @@
           28.85
         ],
         "operation": "new",
-        "name": "221 B06 NEMA17 motor and encoder envelope",
+        "name": "203 B06 NEMA17 motor and encoder envelope",
         "body_name": "B06 NEMA17 motor and encoder envelope"
       }
     },
@@ -3217,7 +1831,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "222 B06 NEMA17 motor and encoder envelope",
+        "name": "204 B06 NEMA17 motor and encoder envelope",
         "targets": [
           "B06 NEMA17 motor and encoder envelope"
         ]
@@ -3235,7 +1849,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "223 B06 NEMA17 motor and encoder envelope",
+        "name": "205 B06 NEMA17 motor and encoder envelope",
         "targets": [
           "B06 NEMA17 motor and encoder envelope"
         ]
@@ -3264,151 +1878,255 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 2.5,
-        "height": 10,
+        "diameter": 8,
+        "height": 50,
         "base": [
-          -53.740115370177605,
-          45.25483399593904,
-          81
+          -63.21985447626402,
+          -36.50000000000001,
+          48.5
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "206 B08 axial home sensor reference",
+        "body_name": "B08 axial home sensor reference"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -63.21985447626402,
+            -36.50000000000001,
+            90
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "207 B13 sensor upper jam nut profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "13 mm/sqrt(3)*0.866025403784",
+            "13 mm/sqrt(3)*0.500000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*0.000000000000",
+            "13 mm/sqrt(3)*1.000000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*-0.866025403784",
+            "13 mm/sqrt(3)*0.500000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*-0.866025403784",
+            "13 mm/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*-0.000000000000",
+            "13 mm/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*0.866025403784",
+            "13 mm/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entities": [
+          "l1",
+          "l2",
+          "l3",
+          "l4",
+          "l5",
+          "l6"
+        ],
+        "fixed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "207 B13 sensor upper jam nut profile",
+        "distance": 4,
+        "operation": "new",
+        "body_name": "B13 sensor upper jam nut",
+        "name": "208 B13 sensor upper jam nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.2,
+        "height": 6,
+        "base": [
+          -63.21985447626402,
+          -36.50000000000001,
+          89
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "224 M02 aluminium bearing seat M3 home bracket tap drill",
+        "name": "209 B13 sensor upper jam nut clearance hole",
         "targets": [
-          "M02 aluminium bearing seat"
+          "B13 sensor upper jam nut"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -63.21985447626402,
+            -36.50000000000001,
+            78
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "210 B13 sensor lower jam nut profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "13 mm/sqrt(3)*0.866025403784",
+            "13 mm/sqrt(3)*0.500000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*0.000000000000",
+            "13 mm/sqrt(3)*1.000000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*-0.866025403784",
+            "13 mm/sqrt(3)*0.500000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*-0.866025403784",
+            "13 mm/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*-0.000000000000",
+            "13 mm/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "13 mm/sqrt(3)*0.866025403784",
+            "13 mm/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entities": [
+          "l1",
+          "l2",
+          "l3",
+          "l4",
+          "l5",
+          "l6"
+        ],
+        "fixed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "210 B13 sensor lower jam nut profile",
+        "distance": 4,
+        "operation": "new",
+        "body_name": "B13 sensor lower jam nut",
+        "name": "211 B13 sensor lower jam nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.2,
+        "height": 6,
+        "base": [
+          -63.21985447626402,
+          -36.50000000000001,
+          77
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "212 B13 sensor lower jam nut clearance hole",
+        "targets": [
+          "B13 sensor lower jam nut"
         ]
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 2.5,
-        "height": 10,
+        "diameter": 12,
+        "height": 25,
         "base": [
-          -45.25483399593904,
-          53.740115370177605,
-          81
+          -63.21985447626402,
+          -36.50000000000001,
+          23.5
         ],
         "axis": "Z",
-        "operation": "cut",
-        "name": "225 M02 aluminium bearing seat M3 home bracket tap drill",
-        "targets": [
-          "M02 aluminium bearing seat"
-        ]
-      }
-    },
-    {
-      "command": "component.activate",
-      "params": {
-        "component": "RT01 - worm cartridge"
-      }
-    },
-    {
-      "command": "solid.box",
-      "params": {
-        "length": 16,
-        "width": 18,
-        "height": 6,
-        "corner": [
-          -78,
-          -9,
-          90
-        ],
         "operation": "new",
-        "name": "226 P25 home sensor bracket",
-        "body_name": "P25 home sensor bracket"
+        "name": "213 B09 sensor connector and cable reservation",
+        "body_name": "B09 sensor connector and cable reservation"
       }
     },
     {
       "command": "solid.box",
       "params": {
-        "length": 6,
-        "width": 18,
-        "height": 20,
+        "length": 12,
+        "width": 55,
+        "height": 12,
         "corner": [
-          -84,
-          -9,
-          95
+          -69.21985447626402,
+          -91.5,
+          23.5
         ],
         "operation": "join",
-        "name": "227 P25 home sensor bracket",
+        "name": "214 B09 sensor connector and cable reservation",
         "targets": [
-          "P25 home sensor bracket"
+          "B09 sensor connector and cable reservation"
         ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m3",
-        "height": 9,
-        "base": [
-          -70,
-          -6,
-          89
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "228 P25 home sensor bracket clearance hole",
-        "targets": [
-          "P25 home sensor bracket"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m3",
-        "height": 9,
-        "base": [
-          -70,
-          6,
-          89
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "229 P25 home sensor bracket clearance hole",
-        "targets": [
-          "P25 home sensor bracket"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 8.4,
-        "height": 8,
-        "base": [
-          -85,
-          0,
-          109.5
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "230 P25 home sensor bracket M8 sensor body clearance",
-        "targets": [
-          "P25 home sensor bracket"
-        ]
-      }
-    },
-    {
-      "command": "solid.move",
-      "params": {
-        "bodies": [
-          "P25 home sensor bracket"
-        ],
-        "axis": [
-          0,
-          0,
-          1
-        ],
-        "origin": [
-          0,
-          0,
-          0
-        ],
-        "angle": "-45 deg",
-        "name": "231 P25 home sensor bracket quadrant placement"
       }
     },
     {
@@ -3423,7 +2141,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "232 B07 output encoder reserved volume",
+        "name": "215 B07 output encoder reserved volume",
         "body_name": "B07 output encoder reserved volume"
       }
     }

@@ -58,15 +58,15 @@
       "notes": ""
     },
     {
-      "name": "M11 steel compression tube",
-      "kind": "purchased",
-      "material": "Steel tube, cut square",
+      "name": "M11 steel locating column",
+      "kind": "metal",
+      "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "72 mm overall; 1 mm locates in each plate. See machining inspection table."
     },
     {
       "name": "P11 column sleeve",
@@ -80,15 +80,15 @@
       "notes": ""
     },
     {
-      "name": "M12 steel compression tube",
-      "kind": "purchased",
-      "material": "Steel tube, cut square",
+      "name": "M12 steel locating column",
+      "kind": "metal",
+      "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "72 mm overall; 1 mm locates in each plate. See machining inspection table."
     },
     {
       "name": "P12 column sleeve",
@@ -102,15 +102,15 @@
       "notes": ""
     },
     {
-      "name": "M13 steel compression tube",
-      "kind": "purchased",
-      "material": "Steel tube, cut square",
+      "name": "M13 steel locating column",
+      "kind": "metal",
+      "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "72 mm overall; 1 mm locates in each plate. See machining inspection table."
     },
     {
       "name": "P13 column sleeve",
@@ -124,15 +124,15 @@
       "notes": ""
     },
     {
-      "name": "M14 steel compression tube",
-      "kind": "purchased",
-      "material": "Steel tube, cut square",
+      "name": "M14 steel locating column",
+      "kind": "metal",
+      "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "72 mm overall; 1 mm locates in each plate. See machining inspection table."
     },
     {
       "name": "P14 column sleeve",
@@ -168,34 +168,34 @@
       "notes": "Ring split is illustrative; verify purchased variant."
     },
     {
-      "name": "P20 worm cartridge sled",
-      "kind": "print",
-      "material": "PETG",
+      "name": "M60 monolithic worm carrier",
+      "kind": "metal",
+      "material": "6061-T6 aluminium, machined in one setup",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "A01/A06: no separate block bolts; matched bearing seats and sliding guide."
     },
     {
-      "name": "P21 worm bearing block left",
-      "kind": "print",
-      "material": "PETG",
+      "name": "M61 worm bearing retainer left",
+      "kind": "metal",
+      "material": "Machined aluminium retainer",
       "print_rotation_deg": [
         0,
-        90,
+        0,
         0
       ],
-      "notes": "Bearing pocket opens upward; calibrate slip fit with coupon."
+      "notes": "0.10 mm outer-race boss; select M62 shim from measured bearing width and pocket depth."
     },
     {
-      "name": "P22 worm bearing retainer left",
-      "kind": "print",
-      "material": "PETG",
+      "name": "M62 retainer shim left",
+      "kind": "purchased",
+      "material": "Steel shim, selected thickness; CAD 0.05 mm",
       "print_rotation_deg": [
         0,
-        -90,
+        0,
         0
       ],
       "notes": ""
@@ -212,23 +212,23 @@
       "notes": ""
     },
     {
-      "name": "P21 worm bearing block right",
-      "kind": "print",
-      "material": "PETG",
+      "name": "M61 worm bearing retainer right",
+      "kind": "metal",
+      "material": "Machined aluminium retainer",
       "print_rotation_deg": [
         0,
-        -90,
+        0,
         0
       ],
-      "notes": "Bearing pocket opens upward; calibrate slip fit with coupon."
+      "notes": "0.10 mm outer-race boss; select M62 shim from measured bearing width and pocket depth."
     },
     {
-      "name": "P22 worm bearing retainer right",
-      "kind": "print",
-      "material": "PETG",
+      "name": "M62 retainer shim right",
+      "kind": "purchased",
+      "material": "Steel shim, selected thickness; CAD 0.05 mm",
       "print_rotation_deg": [
         0,
-        90,
+        0,
         0
       ],
       "notes": ""
@@ -278,17 +278,6 @@
       "notes": ""
     },
     {
-      "name": "P23 motor-pod foundation",
-      "kind": "print",
-      "material": "PETG",
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "notes": "Flat underside on bed; rests continuously on M40 metal sole. Insert captive nuts before fitting sole."
-    },
-    {
       "name": "P24 NEMA17 motor bracket",
       "kind": "print",
       "material": "PETG",
@@ -311,15 +300,48 @@
       "notes": ""
     },
     {
-      "name": "P25 home sensor bracket",
-      "kind": "print",
-      "material": "PETG",
+      "name": "B08 axial home sensor reference",
+      "kind": "purchased",
+      "material": "SICK IME08-02BPSZT0S mechanical reference",
       "print_rotation_deg": [
-        90,
-        -45,
+        0,
+        0,
+        0
+      ],
+      "notes": "M8x1; 50 mm envelope; sensing face Z98.5. Electrical integration remains pending."
+    },
+    {
+      "name": "B13 sensor upper jam nut",
+      "kind": "purchased",
+      "material": "M8x1 sensor nut AF13, conservative 4 mm thickness",
+      "print_rotation_deg": [
+        0,
+        0,
         0
       ],
       "notes": ""
+    },
+    {
+      "name": "B13 sensor lower jam nut",
+      "kind": "purchased",
+      "material": "M8x1 sensor nut AF13, conservative 4 mm thickness",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B09 sensor connector and cable reservation",
+      "kind": "space",
+      "material": "Connector and initial cable bend reservation",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Select matching M8 cordset and verify actual bend radius; no routing claim beyond this reservation."
     },
     {
       "name": "B07 output encoder reserved volume",
@@ -355,70 +377,37 @@
       "notes": "Four M5 hub holes require secondary machining; tooth blank only."
     },
     {
-      "name": "P30 output hub",
-      "kind": "print",
-      "material": "PETG",
+      "name": "M20 registered output hub",
+      "kind": "metal",
+      "material": "6061-T6 aluminium, machined registered hub",
       "print_rotation_deg": [
-        180,
+        0,
         0,
         0
       ],
-      "notes": "Flange face on bed; metal compression sleeves through neck."
+      "notes": "No printed torque/clamp interface. Finish pilots to measured purchased bores; see machining table."
     },
     {
-      "name": "B12 steel home target",
+      "name": "M21 wheel drive pin",
       "kind": "purchased",
-      "material": "Steel home flag, sensor-dependent",
+      "material": "Ground hardened-steel pin, nominal \u00d84 x 12",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "6.5 mm hub engagement; matched slot total tangential clearance 0.005\u20130.010 mm."
     },
     {
-      "name": "M21 hub compression sleeve",
-      "kind": "purchased",
-      "material": "Steel spacer tube",
+      "name": "B12 retained steel home target",
+      "kind": "metal",
+      "material": "Mild-steel target \u00d812 x 3 mm, M3 countersunk",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
-    },
-    {
-      "name": "M22 hub compression sleeve",
-      "kind": "purchased",
-      "material": "Steel spacer tube",
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "notes": ""
-    },
-    {
-      "name": "M23 hub compression sleeve",
-      "kind": "purchased",
-      "material": "Steel spacer tube",
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "notes": ""
-    },
-    {
-      "name": "M24 hub compression sleeve",
-      "kind": "purchased",
-      "material": "Steel spacer tube",
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "notes": ""
+      "notes": "Sensing face Z99.7; nominal gap 1.2 mm. F25 M3x8 installs upward."
     },
     {
       "name": "P31 platter quadrant",
@@ -517,7 +506,7 @@
         0,
         0
       ],
-      "notes": ""
+      "notes": "Assembly rotation is cancelled; all four strips print broad face down."
     },
     {
       "name": "P45 seam backing strip 2",
@@ -525,10 +514,10 @@
       "material": "PETG",
       "print_rotation_deg": [
         90,
-        0,
+        90,
         0
       ],
-      "notes": ""
+      "notes": "Assembly rotation is cancelled; all four strips print broad face down."
     },
     {
       "name": "P45 seam backing strip 3",
@@ -536,10 +525,10 @@
       "material": "PETG",
       "print_rotation_deg": [
         90,
-        0,
+        180,
         0
       ],
-      "notes": ""
+      "notes": "Assembly rotation is cancelled; all four strips print broad face down."
     },
     {
       "name": "P45 seam backing strip 4",
@@ -547,10 +536,10 @@
       "material": "PETG",
       "print_rotation_deg": [
         90,
-        0,
+        270,
         0
       ],
-      "notes": ""
+      "notes": "Assembly rotation is cancelled; all four strips print broad face down."
     },
     {
       "name": "P46 motor service hood",
@@ -784,42 +773,20 @@
       "notes": ""
     },
     {
-      "name": "M40 motor support sole",
+      "name": "M40 stepped motor support",
       "kind": "metal",
-      "material": "Aluminium 4 mm, flat bench-supported motor sole",
+      "material": "Machined aluminium sole and integral riser",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
-    },
-    {
-      "name": "M41 motor anchor compression sleeve",
-      "kind": "purchased",
-      "material": "Steel spacer OD12 ID6.6 x 8 mm",
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "notes": ""
+      "notes": "A04: all-metal anchor stack, no nominally equal printed compression stack."
     },
     {
       "name": "B41 motor anchor washer",
       "kind": "purchased",
       "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "notes": ""
-    },
-    {
-      "name": "M42 motor anchor compression sleeve",
-      "kind": "purchased",
-      "material": "Steel spacer OD12 ID6.6 x 8 mm",
       "print_rotation_deg": [
         0,
         0,

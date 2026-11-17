@@ -1,0 +1,3346 @@
+{
+  "bodies": [
+    {
+      "area_mm2": 67930.46887737857,
+      "bbox": {
+        "max": [
+          82.0,
+          102.0,
+          14.0
+        ],
+        "min": [
+          -82.0,
+          -82.0,
+          1.9999999999999984
+        ]
+      },
+      "center_of_mass": [
+        -0.06497181892182939,
+        10.046376595632575,
+        7.988936701174225
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 99,
+      "face_types": {
+        "cylinder": 23,
+        "plane": 21
+      },
+      "faces": 44,
+      "kernel": {
+        "edges": 104,
+        "faces": 45,
+        "shells": 1,
+        "vertices": 70
+      },
+      "mass_g": 310.3227038204647,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M01 aluminium base plate",
+      "notes": [],
+      "vertices": 66,
+      "volume_mm3": 240560.2355197401
+    },
+    {
+      "area_mm2": 749.6468390042044,
+      "bbox": {
+        "max": [
+          -55.00000000000001,
+          -55.00000000000001,
+          4.0
+        ],
+        "min": [
+          -72.99999999999999,
+          -72.99999999999999,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        -63.9999999998198,
+        -64.00000000014877,
+        2.000000000007334
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.13652643447884,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M03 metal bench spacer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 881.0282437820465
+    },
+    {
+      "area_mm2": 749.646839004205,
+      "bbox": {
+        "max": [
+          -55.00000000000001,
+          73.00000000000001,
+          4.0
+        ],
+        "min": [
+          -73.00000000000001,
+          55.00000000000001,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        -63.999999999819806,
+        63.99999999985123,
+        2.000000000007332
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.1365264344788453,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M04 metal bench spacer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 881.0282437820506
+    },
+    {
+      "area_mm2": 749.6468390042032,
+      "bbox": {
+        "max": [
+          72.99999999999999,
+          -55.00000000000001,
+          4.0
+        ],
+        "min": [
+          55.00000000000001,
+          -72.99999999999999,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        64.0000000001802,
+        -64.00000000014877,
+        2.0000000000073337
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.136526434478839,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M05 metal bench spacer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 881.0282437820458
+    },
+    {
+      "area_mm2": 749.6468390042049,
+      "bbox": {
+        "max": [
+          73.00000000000001,
+          73.00000000000001,
+          4.0
+        ],
+        "min": [
+          55.0,
+          55.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        64.0000000001802,
+        63.99999999985123,
+        2.0000000000073337
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.1365264344788417,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M06 metal bench spacer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 881.0282437820479
+    },
+    {
+      "area_mm2": 3761.0518930165294,
+      "bbox": {
+        "max": [
+          71.0,
+          5.0,
+          83.0
+        ],
+        "min": [
+          60.99999999999999,
+          -5.000000000000001,
+          10.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        66.00000000056708,
+        -5.556045770543276e-10,
+        47.00000000004722
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 4.490665423932275,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M11 steel locating column",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 3481.135987544399
+    },
+    {
+      "area_mm2": 7646.023908265708,
+      "bbox": {
+        "max": [
+          77.00000000000001,
+          11.000000000000004,
+          81.5
+        ],
+        "min": [
+          55.0,
+          -11.000000000000004,
+          12.0
+        ]
+      },
+      "center_of_mass": [
+        65.9999999995804,
+        3.4082363325292825e-10,
+        46.750000000036664
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 26.610484405795646,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P11 column sleeve",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 20628.282485112904
+    },
+    {
+      "area_mm2": 3761.0518930165263,
+      "bbox": {
+        "max": [
+          -61.0,
+          4.999999999999999,
+          83.00000000000001
+        ],
+        "min": [
+          -71.0,
+          -5.0,
+          10.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        -65.99999999943293,
+        -5.556026484827602e-10,
+        47.00000000004725
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 4.490665423932262,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M12 steel locating column",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 3481.1359875443886
+    },
+    {
+      "area_mm2": 7646.023908265716,
+      "bbox": {
+        "max": [
+          -55.0,
+          11.000000000000004,
+          81.5
+        ],
+        "min": [
+          -77.00000000000001,
+          -11.000000000000004,
+          11.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        -66.00000000041959,
+        3.408326495957402e-10,
+        46.750000000036685
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 26.610484405795667,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P12 column sleeve",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 20628.28248511292
+    },
+    {
+      "area_mm2": 3761.0518930165167,
+      "bbox": {
+        "max": [
+          41.00000000000001,
+          -52.99999999999999,
+          83.00000000000001
+        ],
+        "min": [
+          31.0,
+          -63.00000000000001,
+          11.0
+        ]
+      },
+      "center_of_mass": [
+        36.000000000567084,
+        -58.00000000055561,
+        47.00000000004725
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 4.49066542393229,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M13 steel locating column",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 3481.1359875444105
+    },
+    {
+      "area_mm2": 7646.023908265716,
+      "bbox": {
+        "max": [
+          46.99999999999999,
+          -47.0,
+          81.50000000000001
+        ],
+        "min": [
+          25.0,
+          -69.0,
+          11.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        35.99999999958041,
+        -57.99999999965918,
+        46.75000000003667
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 26.61048440579573,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P13 column sleeve",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 20628.28248511297
+    },
+    {
+      "area_mm2": 3761.051893016516,
+      "bbox": {
+        "max": [
+          -31.0,
+          -52.99999999999999,
+          83.00000000000001
+        ],
+        "min": [
+          -40.99999999999999,
+          -63.00000000000001,
+          11.0
+        ]
+      },
+      "center_of_mass": [
+        -35.999999999432916,
+        -58.00000000055561,
+        47.00000000004725
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 4.490665423932294,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M14 steel locating column",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 3481.135987544413
+    },
+    {
+      "area_mm2": 7646.023908265714,
+      "bbox": {
+        "max": [
+          -25.0,
+          -47.0,
+          81.5
+        ],
+        "min": [
+          -46.99999999999999,
+          -69.0,
+          12.0
+        ]
+      },
+      "center_of_mass": [
+        -36.00000000041959,
+        -57.999999999659195,
+        46.75000000003664
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 26.610484405795788,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P14 column sleeve",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 20628.282485113014
+    },
+    {
+      "area_mm2": 32179.56232132342,
+      "bbox": {
+        "max": [
+          78.00000000000001,
+          78.00000000000001,
+          92.0000000000002
+        ],
+        "min": [
+          -78.00000000000001,
+          -78.00000000000001,
+          81.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        0.04343828712599076,
+        0.4206539868887574,
+        86.01622176975253
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 117,
+      "face_types": {
+        "cylinder": 33,
+        "plane": 16
+      },
+      "faces": 49,
+      "kernel": {
+        "edges": 134,
+        "faces": 54,
+        "shells": 1,
+        "vertices": 90
+      },
+      "mass_g": 122.10526432992049,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M02 aluminium bearing seat",
+      "notes": [],
+      "vertices": 78,
+      "volume_mm3": 94655.24366660503
+    },
+    {
+      "area_mm2": 23123.00157608699,
+      "bbox": {
+        "max": [
+          60.0,
+          60.0,
+          105.00000000000001
+        ],
+        "min": [
+          -60.0,
+          -60.0,
+          89.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        2.590643467655098e-9,
+        -3.163231085890381e-9,
+        97.37668446786432
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 54,
+      "face_types": {
+        "cylinder": 18,
+        "plane": 10
+      },
+      "faces": 28,
+      "kernel": {
+        "edges": 54,
+        "faces": 28,
+        "shells": 1,
+        "vertices": 36
+      },
+      "mass_g": 102.22051030118068,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B01 bearing outer ring reference",
+      "notes": [],
+      "vertices": 36,
+      "volume_mm3": 79240.70565982998
+    },
+    {
+      "area_mm2": 1357.1680263597627,
+      "bbox": {
+        "max": [
+          -59.219854476264025,
+          -32.500000000000014,
+          98.50000000000001
+        ],
+        "min": [
+          -67.21985447626402,
+          -40.5,
+          48.5
+        ]
+      },
+      "center_of_mass": [
+        -63.21985447624735,
+        -36.500000000017536,
+        73.49999999952261
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 3,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 2
+      },
+      "faces": 3,
+      "kernel": {
+        "edges": 3,
+        "faces": 3,
+        "shells": 1,
+        "vertices": 2
+      },
+      "mass_g": 3.242123618849794,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B08 axial home sensor reference",
+      "notes": [],
+      "vertices": 2,
+      "volume_mm3": 2513.2741231393748
+    },
+    {
+      "area_mm2": 470.2737644899495,
+      "bbox": {
+        "max": [
+          -56.71985447626731,
+          -28.99444650053487,
+          94.0
+        ],
+        "min": [
+          -69.71985447626072,
+          -44.005553499465144,
+          89.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        -63.21985447626594,
+        -36.499999999991545,
+        92.00000000000149
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.48270830297994155,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B13 sensor upper jam nut",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 374.1924829301872
+    },
+    {
+      "area_mm2": 470.2737644899494,
+      "bbox": {
+        "max": [
+          -56.71985447626731,
+          -28.99444650053487,
+          82.0
+        ],
+        "min": [
+          -69.71985447626072,
+          -44.005553499465144,
+          78.0
+        ]
+      },
+      "center_of_mass": [
+        -63.21985447626594,
+        -36.499999999991545,
+        80.00000000000149
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.48270830297994155,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B13 sensor lower jam nut",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 374.1924829301872
+    },
+    {
+      "area_mm2": 3613.380460599301,
+      "bbox": {
+        "max": [
+          -57.21985447626401,
+          -30.500000000000004,
+          48.50000000000001
+        ],
+        "min": [
+          -69.21985447626402,
+          -91.5,
+          23.5
+        ]
+      },
+      "center_of_mass": [
+        -63.21985447644991,
+        -57.95945300644321,
+        31.325264868202034
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 15,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 6
+      },
+      "faces": 7,
+      "kernel": {
+        "edges": 15,
+        "faces": 7,
+        "shells": 1,
+        "vertices": 10
+      },
+      "mass_g": 12.988815694340213,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B09 sensor connector and cable reservation",
+      "notes": [],
+      "vertices": 10,
+      "volume_mm3": 10068.849375457528
+    },
+    {
+      "area_mm2": 4523.893421195387,
+      "bbox": {
+        "max": [
+          20.000000000000004,
+          20.0,
+          38.00000000000001
+        ],
+        "min": [
+          -20.0,
+          -20.000000000000004,
+          22.0
+        ]
+      },
+      "center_of_mass": [
+        3.4334782701900843e-10,
+        -3.044642936067658e-10,
+        30.000000000028997
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 3,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 2
+      },
+      "faces": 3,
+      "kernel": {
+        "edges": 3,
+        "faces": 3,
+        "shells": 1,
+        "vertices": 2
+      },
+      "mass_g": 25.93698894830643,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B07 output encoder reserved volume",
+      "notes": [],
+      "vertices": 2,
+      "volume_mm3": 20106.19298318328
+    },
+    {
+      "area_mm2": 58652.25926806429,
+      "bbox": {
+        "max": [
+          78.00000000000001,
+          100.5,
+          80.0
+        ],
+        "min": [
+          -78.0,
+          6.499999999999994,
+          11.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        -0.03995469756132364,
+        54.82548189041138,
+        36.59805610397897
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 192,
+      "face_types": {
+        "cylinder": 30,
+        "plane": 47
+      },
+      "faces": 77,
+      "kernel": {
+        "edges": 213,
+        "faces": 84,
+        "shells": 1,
+        "vertices": 142
+      },
+      "mass_g": 340.3710920775738,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M60 monolithic worm carrier",
+      "notes": [],
+      "vertices": 128,
+      "volume_mm3": 263853.55975005723
+    },
+    {
+      "area_mm2": 6634.3933680761975,
+      "bbox": {
+        "max": [
+          -65.94999999999999,
+          82.5,
+          77.0
+        ],
+        "min": [
+          -70.05000000000001,
+          28.5,
+          23.0
+        ]
+      },
+      "center_of_mass": [
+        -68.08107769057277,
+        55.5,
+        50.00000000000001
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 33,
+      "face_types": {
+        "cylinder": 7,
+        "plane": 8
+      },
+      "faces": 15,
+      "kernel": {
+        "edges": 33,
+        "faces": 15,
+        "shells": 1,
+        "vertices": 22
+      },
+      "mass_g": 13.430565021990176,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M61 worm bearing retainer left",
+      "notes": [],
+      "vertices": 22,
+      "volume_mm3": 10411.290714721066
+    },
+    {
+      "area_mm2": 3744.373187009539,
+      "bbox": {
+        "max": [
+          -65.99999999999999,
+          82.5,
+          77.0
+        ],
+        "min": [
+          -66.05000000000001,
+          28.5,
+          23.0
+        ]
+      },
+      "center_of_mass": [
+        -66.02499999999999,
+        55.49999999999999,
+        50.00000000000006
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 27,
+      "face_types": {
+        "cylinder": 5,
+        "plane": 6
+      },
+      "faces": 11,
+      "kernel": {
+        "edges": 27,
+        "faces": 11,
+        "shells": 1,
+        "vertices": 18
+      },
+      "mass_g": 0.12013671393531593,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M62 retainer shim left",
+      "notes": [],
+      "vertices": 18,
+      "volume_mm3": 93.12923560877203
+    },
+    {
+      "area_mm2": 3298.6722862876245,
+      "bbox": {
+        "max": [
+          -54.95,
+          73.0,
+          67.50000000000001
+        ],
+        "min": [
+          -65.95000000000002,
+          38.00000000000001,
+          32.5
+        ]
+      },
+      "center_of_mass": [
+        -60.45,
+        55.49999999999999,
+        49.99999999999999
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 11.144799938530102,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B02 worm support bearing left",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 8639.379797310157
+    },
+    {
+      "area_mm2": 6634.393368046618,
+      "bbox": {
+        "max": [
+          70.05000000000001,
+          82.5,
+          77.0
+        ],
+        "min": [
+          65.94999999999999,
+          28.5,
+          23.0
+        ]
+      },
+      "center_of_mass": [
+        68.08107769057277,
+        55.50000000000001,
+        50.00000000000001
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 33,
+      "face_types": {
+        "cylinder": 7,
+        "plane": 8
+      },
+      "faces": 15,
+      "kernel": {
+        "edges": 33,
+        "faces": 15,
+        "shells": 1,
+        "vertices": 22
+      },
+      "mass_g": 13.430565021990173,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M61 worm bearing retainer right",
+      "notes": [],
+      "vertices": 22,
+      "volume_mm3": 10411.290714721064
+    },
+    {
+      "area_mm2": 3744.373187009539,
+      "bbox": {
+        "max": [
+          66.05000000000001,
+          82.5,
+          77.0
+        ],
+        "min": [
+          65.99999999999999,
+          28.5,
+          23.0
+        ]
+      },
+      "center_of_mass": [
+        66.02499999999999,
+        55.50000000000007,
+        50.00000000000001
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 27,
+      "face_types": {
+        "cylinder": 5,
+        "plane": 6
+      },
+      "faces": 11,
+      "kernel": {
+        "edges": 27,
+        "faces": 11,
+        "shells": 1,
+        "vertices": 18
+      },
+      "mass_g": 0.1201367139353153,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M62 retainer shim right",
+      "notes": [],
+      "vertices": 18,
+      "volume_mm3": 93.12923560877155
+    },
+    {
+      "area_mm2": 3298.672286287623,
+      "bbox": {
+        "max": [
+          65.95000000000002,
+          73.0,
+          67.50000000000001
+        ],
+        "min": [
+          54.95,
+          38.00000000000001,
+          32.5
+        ]
+      },
+      "center_of_mass": [
+        60.45,
+        55.50000000000001,
+        50.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 11.144799938530099,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B02 worm support bearing right",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 8639.379797310154
+    },
+    {
+      "area_mm2": 8694.357668898872,
+      "bbox": {
+        "max": [
+          99.0,
+          63.00000000000001,
+          57.5
+        ],
+        "min": [
+          -78.00000000000001,
+          48.00000000000001,
+          42.5
+        ]
+      },
+      "center_of_mass": [
+        10.499999999999998,
+        55.5,
+        50.00000000000001
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 3,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 2
+      },
+      "faces": 3,
+      "kernel": {
+        "edges": 3,
+        "faces": 3,
+        "shells": 1,
+        "vertices": 2
+      },
+      "mass_g": 40.349241597428204,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B03 worm shaft reference",
+      "notes": [],
+      "vertices": 2,
+      "volume_mm3": 31278.481858471474
+    },
+    {
+      "area_mm2": 8984.954989292197,
+      "bbox": {
+        "max": [
+          28.0,
+          73.0,
+          67.50000000000001
+        ],
+        "min": [
+          -22.000000000000004,
+          38.00000000000001,
+          32.5
+        ]
+      },
+      "center_of_mass": [
+        -0.6346153846042215,
+        55.49999999999999,
+        50.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 9,
+      "face_types": {
+        "cylinder": 3,
+        "plane": 3
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 9,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 6
+      },
+      "mass_g": 42.147607040539285,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B04 duplex worm envelope",
+      "notes": [],
+      "vertices": 6,
+      "volume_mm3": 32672.563597317272
+    },
+    {
+      "area_mm2": 5497.7871437925405,
+      "bbox": {
+        "max": [
+          118.00000000000001,
+          68.0,
+          62.49999999999999
+        ],
+        "min": [
+          77.99999999999999,
+          43.0,
+          37.5
+        ]
+      },
+      "center_of_mass": [
+        99.9736842105172,
+        55.50000000000002,
+        50.00000000000001
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 9,
+      "face_types": {
+        "cylinder": 3,
+        "plane": 3
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 9,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 6
+      },
+      "mass_g": 19.250108984826344,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B05 clamp coupling reference",
+      "notes": [],
+      "vertices": 6,
+      "volume_mm3": 14922.565104516545
+    },
+    {
+      "area_mm2": 14648.557507055697,
+      "bbox": {
+        "max": [
+          146.0,
+          86.5,
+          80.0
+        ],
+        "min": [
+          108.0,
+          24.5,
+          11.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        126.99999999988748,
+        55.500000000131244,
+        33.73075163635178
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 51,
+      "face_types": {
+        "cylinder": 9,
+        "plane": 10
+      },
+      "faces": 19,
+      "kernel": {
+        "edges": 51,
+        "faces": 19,
+        "shells": 1,
+        "vertices": 34
+      },
+      "mass_g": 48.687219189215966,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P24 NEMA17 motor bracket",
+      "notes": [],
+      "vertices": 34,
+      "volume_mm3": 37742.030379237185
+    },
+    {
+      "area_mm2": 17598.38526866197,
+      "bbox": {
+        "max": [
+          210.0,
+          76.65,
+          71.15
+        ],
+        "min": [
+          106.0,
+          34.35,
+          28.85
+        ]
+      },
+      "center_of_mass": [
+        169.6254195028507,
+        55.50000000000001,
+        49.99999999999999
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 18,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 8
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 18,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 12
+      },
+      "mass_g": 186.19271039172898,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B06 NEMA17 motor and encoder envelope",
+      "notes": [],
+      "vertices": 12,
+      "volume_mm3": 144335.43441219302
+    },
+    {
+      "area_mm2": 14493.612043810257,
+      "bbox": {
+        "max": [
+          42.40000000000001,
+          42.4,
+          105.00000000000001
+        ],
+        "min": [
+          -42.4,
+          -42.40000000000001,
+          89.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        1.448755006335155e-9,
+        -1.4587106447419522e-9,
+        97.50000000000354
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 30,
+      "face_types": {
+        "cylinder": 10,
+        "plane": 2
+      },
+      "faces": 12,
+      "kernel": {
+        "edges": 30,
+        "faces": 12,
+        "shells": 1,
+        "vertices": 20
+      },
+      "mass_g": 61.16853841212225,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B10 bearing inner ring reference",
+      "notes": [],
+      "vertices": 20,
+      "volume_mm3": 47417.47163730407
+    },
+    {
+      "area_mm2": 20539.280647646134,
+      "bbox": {
+        "max": [
+          43.00000000000001,
+          42.99999999999999,
+          74.00000000000003
+        ],
+        "min": [
+          -42.99999999999999,
+          -43.00000000000001,
+          40.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        -0.01114961902671304,
+        -0.011149620488337432,
+        52.752672626846234
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 33,
+      "face_types": {
+        "cylinder": 9,
+        "plane": 10
+      },
+      "faces": 19,
+      "kernel": {
+        "edges": 36,
+        "faces": 20,
+        "shells": 1,
+        "vertices": 24
+      },
+      "mass_g": 157.10953430759267,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B11 duplex wheel envelope",
+      "notes": [],
+      "vertices": 22,
+      "volume_mm3": 121790.33667255244
+    },
+    {
+      "area_mm2": 53610.51415068444,
+      "bbox": {
+        "max": [
+          75.0,
+          74.99999999999999,
+          121.00000000000001
+        ],
+        "min": [
+          -75.0,
+          -74.99999999999999,
+          67.0
+        ]
+      },
+      "center_of_mass": [
+        -0.14685070152994842,
+        -0.08641220852525677,
+        105.96633882348249
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 172,
+      "face_types": {
+        "cone": 4,
+        "cylinder": 50,
+        "plane": 32
+      },
+      "faces": 86,
+      "kernel": {
+        "edges": 168,
+        "faces": 86,
+        "shells": 1,
+        "vertices": 112
+      },
+      "mass_g": 302.0386530219246,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M20 registered output hub",
+      "notes": [],
+      "vertices": 116,
+      "volume_mm3": 234138.4907146702
+    },
+    {
+      "area_mm2": 175.9291886013716,
+      "bbox": {
+        "max": [
+          12.606601717798211,
+          12.606601717798211,
+          80.5
+        ],
+        "min": [
+          8.606601717798211,
+          8.60660171779821,
+          68.5
+        ]
+      },
+      "center_of_mass": [
+        10.606601717771756,
+        10.606601717810962,
+        74.50000000001741
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 3,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 2
+      },
+      "faces": 3,
+      "kernel": {
+        "edges": 3,
+        "faces": 3,
+        "shells": 1,
+        "vertices": 2
+      },
+      "mass_g": 0.1945274171133836,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M21 wheel drive pin",
+      "notes": [],
+      "vertices": 2,
+      "volume_mm3": 150.79644737471597
+    },
+    {
+      "area_mm2": 346.96853580087617,
+      "bbox": {
+        "max": [
+          -57.21985447626401,
+          -30.500000000000004,
+          102.70000000000002
+        ],
+        "min": [
+          -69.21985447626402,
+          -42.50000000000001,
+          99.69999999999997
+        ]
+      },
+      "center_of_mass": [
+        -63.21985447615362,
+        -36.50000000009783,
+        101.24727361963373
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 9,
+      "face_types": {
+        "cone": 1,
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 9,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 6
+      },
+      "mass_g": 0.3853399009134732,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B12 retained steel home target",
+      "notes": [],
+      "vertices": 6,
+      "volume_mm3": 298.7131014833125
+    },
+    {
+      "area_mm2": 59413.98035273568,
+      "bbox": {
+        "max": [
+          159.99987499995123,
+          159.9998749999512,
+          128.0
+        ],
+        "min": [
+          0.19999999999998863,
+          0.19999999999987628,
+          98.0
+        ]
+      },
+      "center_of_mass": [
+        70.1644024676772,
+        70.16440246958703,
+        120.02028784027752
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 57,
+      "face_types": {
+        "cylinder": 8,
+        "plane": 18
+      },
+      "faces": 26,
+      "kernel": {
+        "edges": 63,
+        "faces": 28,
+        "shells": 1,
+        "vertices": 42
+      },
+      "mass_g": 357.3902823922214,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P31 platter quadrant",
+      "notes": [],
+      "vertices": 38,
+      "volume_mm3": 277046.73053660576
+    },
+    {
+      "area_mm2": 59413.98035273566,
+      "bbox": {
+        "max": [
+          -0.19999999999987628,
+          159.99987499995123,
+          128.0
+        ],
+        "min": [
+          -159.9998749999512,
+          0.19999999999998863,
+          98.0
+        ]
+      },
+      "center_of_mass": [
+        -70.16440246958706,
+        70.16440246767706,
+        120.02028784027749
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 57,
+      "face_types": {
+        "cylinder": 8,
+        "plane": 18
+      },
+      "faces": 26,
+      "kernel": {
+        "edges": 63,
+        "faces": 28,
+        "shells": 1,
+        "vertices": 42
+      },
+      "mass_g": 357.39028239222176,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P32 platter quadrant",
+      "notes": [],
+      "vertices": 38,
+      "volume_mm3": 277046.730536606
+    },
+    {
+      "area_mm2": 59413.980352735605,
+      "bbox": {
+        "max": [
+          -0.19999999999998866,
+          -0.199999999999868,
+          128.0
+        ],
+        "min": [
+          -159.99987499995123,
+          -159.9998749999512,
+          98.0
+        ]
+      },
+      "center_of_mass": [
+        -70.16440246767716,
+        -70.16440246958695,
+        120.02028784027752
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 57,
+      "face_types": {
+        "cylinder": 8,
+        "plane": 18
+      },
+      "faces": 26,
+      "kernel": {
+        "edges": 63,
+        "faces": 28,
+        "shells": 1,
+        "vertices": 42
+      },
+      "mass_g": 357.39028239222097,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P33 platter quadrant",
+      "notes": [],
+      "vertices": 38,
+      "volume_mm3": 277046.7305366054
+    },
+    {
+      "area_mm2": 59413.980352735736,
+      "bbox": {
+        "max": [
+          159.9998749999512,
+          -0.19999999999998866,
+          128.0
+        ],
+        "min": [
+          0.199999999999868,
+          -159.99987499995123,
+          98.0
+        ]
+      },
+      "center_of_mass": [
+        70.16440246958693,
+        -70.16440246767701,
+        120.0202878402775
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 57,
+      "face_types": {
+        "cylinder": 8,
+        "plane": 18
+      },
+      "faces": 26,
+      "kernel": {
+        "edges": 63,
+        "faces": 28,
+        "shells": 1,
+        "vertices": 42
+      },
+      "mass_g": 357.3902823922212,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P34 platter quadrant",
+      "notes": [],
+      "vertices": 38,
+      "volume_mm3": 277046.7305366056
+    },
+    {
+      "area_mm2": 65980.57449166971,
+      "bbox": {
+        "max": [
+          163.99987804873518,
+          163.9998780487352,
+          114.00000000000001
+        ],
+        "min": [
+          0.19999999999995136,
+          0.1999999999996044,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        75.32804653005586,
+        108.46127315832591,
+        52.57577745371215
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 141,
+      "face_types": {
+        "cylinder": 18,
+        "plane": 34
+      },
+      "faces": 52,
+      "kernel": {
+        "edges": 156,
+        "faces": 57,
+        "shells": 1,
+        "vertices": 104
+      },
+      "mass_g": 143.740752283955,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P41 fixed housing quadrant",
+      "notes": [],
+      "vertices": 94,
+      "volume_mm3": 111426.93975500387
+    },
+    {
+      "area_mm2": 94526.30850929813,
+      "bbox": {
+        "max": [
+          -0.1999999999996044,
+          163.99987804873518,
+          114.00000000000001
+        ],
+        "min": [
+          -163.99987804873518,
+          0.1999999999999608,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        -92.32437188287983,
+        92.33170899600486,
+        46.65376037993459
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 105,
+      "face_types": {
+        "cylinder": 17,
+        "plane": 23
+      },
+      "faces": 40,
+      "kernel": {
+        "edges": 123,
+        "faces": 46,
+        "shells": 1,
+        "vertices": 82
+      },
+      "mass_g": 208.85623520495082,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P42 fixed housing quadrant",
+      "notes": [],
+      "vertices": 70,
+      "volume_mm3": 161904.0582984115
+    },
+    {
+      "area_mm2": 94526.30850929831,
+      "bbox": {
+        "max": [
+          -0.19999999999995965,
+          -0.19999999999957963,
+          114.00000000000001
+        ],
+        "min": [
+          -163.99987804873518,
+          -163.9998780487352,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        -92.33170899600509,
+        -92.3243718828802,
+        46.653760379934575
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 105,
+      "face_types": {
+        "cylinder": 17,
+        "plane": 23
+      },
+      "faces": 40,
+      "kernel": {
+        "edges": 123,
+        "faces": 46,
+        "shells": 1,
+        "vertices": 82
+      },
+      "mass_g": 208.85623520495545,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P43 fixed housing quadrant",
+      "notes": [],
+      "vertices": 70,
+      "volume_mm3": 161904.05829841507
+    },
+    {
+      "area_mm2": 94526.30850929821,
+      "bbox": {
+        "max": [
+          163.99987804873518,
+          -0.19999999999997964,
+          114.00000000000001
+        ],
+        "min": [
+          0.19999999999957963,
+          -163.99987804873518,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        92.32437188288048,
+        -92.33170899600518,
+        46.65376037993501
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 105,
+      "face_types": {
+        "cylinder": 17,
+        "plane": 23
+      },
+      "faces": 40,
+      "kernel": {
+        "edges": 123,
+        "faces": 46,
+        "shells": 1,
+        "vertices": 82
+      },
+      "mass_g": 208.856235204957,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P44 fixed housing quadrant",
+      "notes": [],
+      "vertices": 70,
+      "volume_mm3": 161904.05829841626
+    },
+    {
+      "area_mm2": 6085.154839592647,
+      "bbox": {
+        "max": [
+          12.0,
+          145.0,
+          96.0
+        ],
+        "min": [
+          -12.0,
+          137.0,
+          12.0
+        ]
+      },
+      "center_of_mass": [
+        2.726550819806163e-10,
+        141.0,
+        53.8859545449991
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 6
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 20.148589967079786,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P45 seam backing strip 1",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 15619.061989984331
+    },
+    {
+      "area_mm2": 6085.154839592647,
+      "bbox": {
+        "max": [
+          -137.0,
+          12.000000000000009,
+          96.0
+        ],
+        "min": [
+          -145.0,
+          -11.999999999999991,
+          12.0
+        ]
+      },
+      "center_of_mass": [
+        -141.0,
+        2.726637162882052e-10,
+        53.885954544999095
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 6
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 20.148589967079793,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P45 seam backing strip 2",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 15619.061989984335
+    },
+    {
+      "area_mm2": 6085.154839592647,
+      "bbox": {
+        "max": [
+          11.999999999999984,
+          -137.0,
+          96.0
+        ],
+        "min": [
+          -12.000000000000018,
+          -145.0,
+          12.0
+        ]
+      },
+      "center_of_mass": [
+        -2.7267425744730083e-10,
+        -141.0,
+        53.885954544999095
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 6
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 20.1485899670798,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P45 seam backing strip 3",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 15619.061989984339
+    },
+    {
+      "area_mm2": 6085.154839592647,
+      "bbox": {
+        "max": [
+          145.0,
+          11.999999999999975,
+          96.0
+        ],
+        "min": [
+          137.0,
+          -12.000000000000027,
+          12.0
+        ]
+      },
+      "center_of_mass": [
+        141.0,
+        -2.7267810235465114e-10,
+        53.88595454499911
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 6
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 20.148589967079804,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P45 seam backing strip 4",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 15619.061989984342
+    },
+    {
+      "area_mm2": 67594.06366147958,
+      "bbox": {
+        "max": [
+          236.0,
+          97.00000000000004,
+          95.50000000000003
+        ],
+        "min": [
+          120.12643339415348,
+          15.0,
+          13.499999999999996
+        ]
+      },
+      "center_of_mass": [
+        196.14788540089035,
+        59.73402400237616,
+        60.71077355288009
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 102,
+      "face_types": {
+        "cylinder": 11,
+        "plane": 17
+      },
+      "faces": 28,
+      "kernel": {
+        "edges": 111,
+        "faces": 31,
+        "shells": 1,
+        "vertices": 74
+      },
+      "mass_g": 154.69677264690668,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P46 motor service hood",
+      "notes": [],
+      "vertices": 68,
+      "volume_mm3": 119919.97879605168
+    },
+    {
+      "area_mm2": 9480.0,
+      "bbox": {
+        "max": [
+          82.0,
+          82.0,
+          4.0
+        ],
+        "min": [
+          -82.0,
+          -82.0,
+          2.5
+        ]
+      },
+      "center_of_mass": [
+        -3.837530387227545e-15,
+        3.837530387227545e-15,
+        3.25
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "plane": 10
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 7.3375200000000005,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B20 core static gasket",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 5688.0
+    },
+    {
+      "area_mm2": 2979.6903044716946,
+      "bbox": {
+        "max": [
+          236.0,
+          97.00000000000004,
+          13.500000000000002
+        ],
+        "min": [
+          120.1264333941535,
+          15.0,
+          11.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        198.7627982592719,
+        60.60963749365607,
+        12.750000000022089
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 48,
+      "face_types": {
+        "cylinder": 6,
+        "plane": 12
+      },
+      "faces": 18,
+      "kernel": {
+        "edges": 48,
+        "faces": 18,
+        "shells": 1,
+        "vertices": 32
+      },
+      "mass_g": 2.0812233678234224,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B25 motor hood gasket",
+      "notes": [],
+      "vertices": 32,
+      "volume_mm3": 1613.3514479251335
+    },
+    {
+      "area_mm2": 126045.87258885773,
+      "bbox": {
+        "max": [
+          84.0,
+          -168.0,
+          104.00000000000001
+        ],
+        "min": [
+          -84.0,
+          -280.00000000000006,
+          27.999999999999993
+        ]
+      },
+      "center_of_mass": [
+        2.0930178979325593e-9,
+        -223.43578288468333,
+        62.802999491269965
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 231,
+      "face_types": {
+        "cylinder": 39,
+        "plane": 60
+      },
+      "faces": 99,
+      "kernel": {
+        "edges": 243,
+        "faces": 103,
+        "shells": 1,
+        "vertices": 162
+      },
+      "mass_g": 322.4119959401855,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P50 electronics service box",
+      "notes": [],
+      "vertices": 154,
+      "volume_mm3": 249931.7797985934
+    },
+    {
+      "area_mm2": 19129.712802282538,
+      "bbox": {
+        "max": [
+          59.0,
+          -186.0,
+          35.75000000000012
+        ],
+        "min": [
+          -59.0,
+          -262.0,
+          32.74999999999999
+        ]
+      },
+      "center_of_mass": [
+        -2.5424330342376217e-11,
+        -223.9999999998557,
+        34.24760703815993
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 36,
+      "face_types": {
+        "cone": 4,
+        "cylinder": 4,
+        "plane": 6
+      },
+      "faces": 14,
+      "kernel": {
+        "edges": 36,
+        "faces": 14,
+        "shells": 1,
+        "vertices": 24
+      },
+      "mass_g": 34.48537138150496,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M30 driver heat spreader",
+      "notes": [],
+      "vertices": 24,
+      "volume_mm3": 26732.846032174388
+    },
+    {
+      "area_mm2": 2485.84039150379,
+      "bbox": {
+        "max": [
+          54.00000000000001,
+          -191.99999999999997,
+          32.75
+        ],
+        "min": [
+          -54.0,
+          -256.0,
+          32.0
+        ]
+      },
+      "center_of_mass": [
+        -5.506307364075566e-10,
+        -223.9999999998758,
+        32.37500000000215
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 36,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 10
+      },
+      "faces": 14,
+      "kernel": {
+        "edges": 36,
+        "faces": 14,
+        "shells": 1,
+        "vertices": 24
+      },
+      "mass_g": 0.9622690802741298,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B21 heat spreader gasket",
+      "notes": [],
+      "vertices": 24,
+      "volume_mm3": 745.9450234683177
+    },
+    {
+      "area_mm2": 71.53406472283163,
+      "bbox": {
+        "max": [
+          -52.24999999999998,
+          -255.24999999999997,
+          32.75
+        ],
+        "min": [
+          -58.750000000000014,
+          -261.75,
+          32.0
+        ]
+      },
+      "center_of_mass": [
+        -55.499999999918785,
+        -258.5000000000705,
+        32.37500000000152
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.02332049387183631,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M31 heat-spreader compression stop",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 18.077902226229696
+    },
+    {
+      "area_mm2": 71.5340647228305,
+      "bbox": {
+        "max": [
+          -52.25000000000001,
+          -186.25000000000003,
+          32.75000000000001
+        ],
+        "min": [
+          -58.749999999999986,
+          -192.75,
+          32.0
+        ]
+      },
+      "center_of_mass": [
+        -55.49999999991877,
+        -189.5000000000705,
+        32.37500000000152
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.0233204938718358,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M32 heat-spreader compression stop",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 18.077902226229302
+    },
+    {
+      "area_mm2": 71.5340647228317,
+      "bbox": {
+        "max": [
+          58.75000000000002,
+          -255.24999999999997,
+          32.75
+        ],
+        "min": [
+          52.249999999999986,
+          -261.75,
+          32.0
+        ]
+      },
+      "center_of_mass": [
+        55.500000000081215,
+        -258.5000000000705,
+        32.37500000000152
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.02332049387183639,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M33 heat-spreader compression stop",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 18.07790222622976
+    },
+    {
+      "area_mm2": 71.53406472283004,
+      "bbox": {
+        "max": [
+          58.75,
+          -186.25000000000003,
+          32.75000000000001
+        ],
+        "min": [
+          52.25000000000001,
+          -192.75,
+          32.0
+        ]
+      },
+      "center_of_mass": [
+        55.500000000081236,
+        -189.50000000007046,
+        32.37500000000152
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.023320493871835556,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M34 heat-spreader compression stop",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 18.077902226229114
+    },
+    {
+      "area_mm2": 31516.0,
+      "bbox": {
+        "max": [
+          59.0,
+          -186.0,
+          71.0
+        ],
+        "min": [
+          -59.0,
+          -262.0,
+          36.0
+        ]
+      },
+      "center_of_mass": [
+        8.252328630843952e-15,
+        -224.0,
+        53.5
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 404.90520000000004,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B22 driver packaging envelope",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 313880.0
+    },
+    {
+      "area_mm2": 38361.0,
+      "bbox": {
+        "max": [
+          49.0,
+          -197.0,
+          32.25
+        ],
+        "min": [
+          -49.0,
+          -251.0,
+          14.25
+        ]
+      },
+      "center_of_mass": [
+        -9.878893208137952e-15,
+        -224.0,
+        25.75
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 120,
+      "face_types": {
+        "plane": 42
+      },
+      "faces": 42,
+      "kernel": {
+        "edges": 120,
+        "faces": 42,
+        "shells": 1,
+        "vertices": 80
+      },
+      "mass_g": 46.08009000000005,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B26 external heatsink reference",
+      "notes": [],
+      "vertices": 80,
+      "volume_mm3": 35721.00000000004
+    },
+    {
+      "area_mm2": 10735.999999999998,
+      "bbox": {
+        "max": [
+          49.0,
+          -197.0,
+          32.75
+        ],
+        "min": [
+          -49.0,
+          -251.0,
+          32.25
+        ]
+      },
+      "center_of_mass": [
+        6.87448754174549e-15,
+        -224.0,
+        32.5
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 3.41334,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B27 thermal interface pad",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 2645.9999999999995
+    },
+    {
+      "area_mm2": 22652.75503688305,
+      "bbox": {
+        "max": [
+          69.0,
+          -184.0,
+          82.00000000000001
+        ],
+        "min": [
+          -69.0,
+          -264.0,
+          78.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        4.864730657904723e-10,
+        -224.00000000004417,
+        80.4999999999974
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 72,
+      "face_types": {
+        "cylinder": 8,
+        "plane": 18
+      },
+      "faces": 26,
+      "kernel": {
+        "edges": 78,
+        "faces": 28,
+        "shells": 1,
+        "vertices": 52
+      },
+      "mass_g": 37.804655311288556,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P51 removable controller tray",
+      "notes": [],
+      "vertices": 48,
+      "volume_mm3": 29305.934349836094
+    },
+    {
+      "area_mm2": 14200.0,
+      "bbox": {
+        "max": [
+          40.0,
+          -196.5,
+          102.0
+        ],
+        "min": [
+          -40.0,
+          -251.5,
+          82.0
+        ]
+      },
+      "center_of_mass": [
+        -5.684341886080802e-16,
+        -224.0,
+        92.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 113.52,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B23 controller packaging envelope",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 88000.0
+    },
+    {
+      "area_mm2": 40117.67254508559,
+      "bbox": {
+        "max": [
+          84.0,
+          -168.0,
+          108.00000000000001
+        ],
+        "min": [
+          -84.0,
+          -280.0,
+          103.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        3.5550708763008718e-12,
+        -224.00000000016766,
+        106.00000000000243
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 42,
+      "face_types": {
+        "cylinder": 10,
+        "plane": 6
+      },
+      "faces": 16,
+      "kernel": {
+        "edges": 42,
+        "faces": 16,
+        "shells": 1,
+        "vertices": 28
+      },
+      "mass_g": 96.62207313667517,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P52 electronics lid",
+      "notes": [],
+      "vertices": 28,
+      "volume_mm3": 74900.83188889548
+    },
+    {
+      "area_mm2": 4320.000000000004,
+      "bbox": {
+        "max": [
+          75.5,
+          -176.5,
+          104.0
+        ],
+        "min": [
+          -75.5,
+          -271.5,
+          102.5
+        ]
+      },
+      "center_of_mass": [
+        5.894873067046757e-14,
+        -224.0,
+        103.25
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "plane": 10
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 2.7864,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B24 lid gasket",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 2160.0
+    },
+    {
+      "area_mm2": 2751.6424654674806,
+      "bbox": {
+        "max": [
+          -64.99999999999999,
+          -261.0,
+          28.000000000000004
+        ],
+        "min": [
+          -85.00000000000001,
+          -281.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        -74.99999999984207,
+        -271.0000000001569,
+        14.00000000006356
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 10.772968886205263,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P53 electronics foot 1",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 8351.138671476947
+    },
+    {
+      "area_mm2": 2751.6424654674784,
+      "bbox": {
+        "max": [
+          -64.99999999999999,
+          -167.0,
+          28.0
+        ],
+        "min": [
+          -85.00000000000001,
+          -187.00000000000003,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        -74.99999999984207,
+        -177.00000000015686,
+        14.000000000063565
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 10.772968886205263,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P53 electronics foot 2",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 8351.138671476947
+    },
+    {
+      "area_mm2": 2751.642465467481,
+      "bbox": {
+        "max": [
+          85.00000000000001,
+          -261.0,
+          28.000000000000004
+        ],
+        "min": [
+          64.99999999999999,
+          -281.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        75.00000000015793,
+        -271.0000000001569,
+        14.000000000063563
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 10.772968886205266,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P53 electronics foot 3",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 8351.13867147695
+    },
+    {
+      "area_mm2": 2751.6424654674775,
+      "bbox": {
+        "max": [
+          85.00000000000001,
+          -167.0,
+          28.0
+        ],
+        "min": [
+          64.99999999999999,
+          -187.00000000000003,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        75.00000000015793,
+        -177.00000000015686,
+        14.000000000063565
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 10.772968886205259,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P53 electronics foot 4",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 8351.138671476945
+    },
+    {
+      "area_mm2": 35557.37725375807,
+      "bbox": {
+        "max": [
+          236.0,
+          97.0,
+          13.500000000000002
+        ],
+        "min": [
+          64.0,
+          14.999999999999998,
+          -1.5080907044704174e-14
+        ]
+      },
+      "center_of_mass": [
+        156.53410130070932,
+        56.033537773403225,
+        5.89237534561948
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 135,
+      "face_types": {
+        "cone": 2,
+        "cylinder": 21,
+        "plane": 27
+      },
+      "faces": 50,
+      "kernel": {
+        "edges": 144,
+        "faces": 53,
+        "shells": 1,
+        "vertices": 96
+      },
+      "mass_g": 198.59429720420255,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M40 stepped motor support",
+      "notes": [],
+      "vertices": 90,
+      "volume_mm3": 153949.067600157
+    },
+    {
+      "area_mm2": 564.167208736097,
+      "bbox": {
+        "max": [
+          229.00000000000003,
+          44.00000000000001,
+          13.600000000000003
+        ],
+        "min": [
+          211.00000000000003,
+          25.999999999999996,
+          11.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        220.00000000018025,
+        34.99999999985122,
+        12.800000000002933
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.4546105737915454,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B41 motor anchor washer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 352.41129751282585
+    },
+    {
+      "area_mm2": 564.1672087360976,
+      "bbox": {
+        "max": [
+          229.0,
+          86.00000000000001,
+          13.600000000000003
+        ],
+        "min": [
+          211.0,
+          68.0,
+          11.999999999999998
+        ]
+      },
+      "center_of_mass": [
+        220.00000000018025,
+        76.99999999985123,
+        12.800000000002933
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.4546105737915454,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B42 motor anchor washer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 352.41129751282585
+    },
+    {
+      "area_mm2": 60120.273304351074,
+      "bbox": {
+        "max": [
+          114.0,
+          -166.0,
+          152.00000000000003
+        ],
+        "min": [
+          -114.0,
+          -282.0,
+          143.99999999999997
+        ]
+      },
+      "center_of_mass": [
+        1.596710255429234e-11,
+        -223.99972199455598,
+        147.99999999999525
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 66,
+      "face_types": {
+        "cylinder": 18,
+        "plane": 6
+      },
+      "faces": 24,
+      "kernel": {
+        "edges": 66,
+        "faces": 24,
+        "shells": 1,
+        "vertices": 44
+      },
+      "mass_g": 265.6871631270322,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M50 SO100 arm mounting plate",
+      "notes": [],
+      "vertices": 44,
+      "volume_mm3": 205959.04118374584
+    },
+    {
+      "area_mm2": 47066.05663207533,
+      "bbox": {
+        "max": [
+          -86.0,
+          -166.0,
+          144.00000000000003
+        ],
+        "min": [
+          -114.0,
+          -282.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        -108.5649149205049,
+        -223.99999999995438,
+        72.00000000164098
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 36,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 10
+      },
+      "faces": 14,
+      "kernel": {
+        "edges": 36,
+        "faces": 14,
+        "shells": 1,
+        "vertices": 24
+      },
+      "mass_g": 114.21738547560122,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M51 steel side channel left",
+      "notes": [],
+      "vertices": 24,
+      "volume_mm3": 88540.60889581489
+    },
+    {
+      "area_mm2": 47066.05663212194,
+      "bbox": {
+        "max": [
+          114.0,
+          -166.0,
+          144.00000000000003
+        ],
+        "min": [
+          86.0,
+          -282.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        108.56491492072008,
+        -224.0000000009872,
+        72.00000000038878
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 36,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 10
+      },
+      "faces": 14,
+      "kernel": {
+        "edges": 36,
+        "faces": 14,
+        "shells": 1,
+        "vertices": 24
+      },
+      "mass_g": 114.21738547577807,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M51 steel side channel right",
+      "notes": [],
+      "vertices": 24,
+      "volume_mm3": 88540.608895952
+    },
+    {
+      "area_mm2": 42308.17095840792,
+      "bbox": {
+        "max": [
+          114.0,
+          -162.0,
+          140.0
+        ],
+        "min": [
+          -114.0,
+          -166.0,
+          4.0
+        ]
+      },
+      "center_of_mass": [
+        5.066822851102664e-15,
+        -164.0,
+        75.19777158774373
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 48,
+      "face_types": {
+        "plane": 18
+      },
+      "faces": 18,
+      "kernel": {
+        "edges": 48,
+        "faces": 18,
+        "shells": 1,
+        "vertices": 32
+      },
+      "mass_g": 88.91712,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "M52 steel front X brace",
+      "notes": [],
+      "vertices": 32,
+      "volume_mm3": 68928.0
+    },
+    {
+      "area_mm2": 564.1672087361011,
+      "bbox": {
+        "max": [
+          -88.99999999999997,
+          -262.99999999999994,
+          153.60000000000005
+        ],
+        "min": [
+          -107.0,
+          -281.0,
+          151.99999999999997
+        ]
+      },
+      "center_of_mass": [
+        -97.9999999998198,
+        -272.0000000001488,
+        152.80000000000294
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.4546105737915555,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B51 bridge anchor washer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 352.4112975128337
+    },
+    {
+      "area_mm2": 564.1672087360935,
+      "bbox": {
+        "max": [
+          -89.00000000000001,
+          -167.00000000000003,
+          153.60000000000005
+        ],
+        "min": [
+          -106.99999999999999,
+          -185.0,
+          151.99999999999997
+        ]
+      },
+      "center_of_mass": [
+        -97.9999999998198,
+        -176.0000000001488,
+        152.80000000000294
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.45461057379154785,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B52 bridge anchor washer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 352.4112975128278
+    },
+    {
+      "area_mm2": 564.1672087361004,
+      "bbox": {
+        "max": [
+          107.00000000000001,
+          -262.99999999999994,
+          153.60000000000005
+        ],
+        "min": [
+          88.99999999999997,
+          -281.0,
+          151.99999999999997
+        ]
+      },
+      "center_of_mass": [
+        98.0000000001802,
+        -272.0000000001488,
+        152.80000000000294
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.4546105737915548,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B53 bridge anchor washer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 352.41129751283313
+    },
+    {
+      "area_mm2": 564.1672087360929,
+      "bbox": {
+        "max": [
+          106.99999999999999,
+          -167.00000000000003,
+          153.60000000000002
+        ],
+        "min": [
+          89.00000000000001,
+          -185.0,
+          151.99999999999997
+        ]
+      },
+      "center_of_mass": [
+        98.0000000001802,
+        -176.0000000001488,
+        152.80000000000294
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.4546105737915478,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "B54 bridge anchor washer",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 352.41129751282773
+    }
+  ],
+  "body_count": 81,
+  "params": [],
+  "sketches": [],
+  "timeline": [
+    {
+      "error": null,
+      "id": 3,
+      "ms": 10.720875,
+      "name": "rt01-assembly",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "BaseFeature",
+      "warning": null
+    }
+  ],
+  "total": {
+    "area_mm2": 1660862.6891414293,
+    "edges": 3022,
+    "faces": 1293,
+    "mass_g": 6289.136134512095,
+    "open_bodies_skipped": 0,
+    "vertices": 2016,
+    "volume_mm3": 4875299.329079146
+  }
+}

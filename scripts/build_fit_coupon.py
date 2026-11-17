@@ -1,26 +1,27 @@
-"""Generate the RT-01 PETG fit coupon; do not infer printer accuracy from CAD."""
-import contextlib, io, json
+"""Revision-4 coupon for production printed fits. No import side effects."""
+import json
 from pathlib import Path
-with contextlib.redirect_stdout(io.StringIO()):
-    import build_rotary_table as rt
-rt.commands=[];rt.parts=[];rt.stages=[];rt.serial=0
-rt.group('RT01 fit coupon')
-rt.cmd('parameters.add',name='coupon_zero',expression='0 mm',comment='Keeps nut-pocket coordinates fixed; leave at zero.')
-b='RT01 PETG fit coupon'
-rt.box(b,[140,70,8],[0,0,0])
-# A clipped lower-left corner establishes orientation when the print is turned over.
-rt.box(b,[4,4,10],[-1,-1,-1],'cut','orientation notch')
-for i,(x,d) in enumerate([(25,35.2),(70,35.3),(115,35.4)],1):
-    rt.hole(b,d,[x,25,4],5,label=f'bearing seat plus {d-35:.1f}')
-    rt.hole(b,15.4,[x,25,-1],6,label='seat bottom access')
-    for j in range(i):rt.hole(b,1.8,[x+(j-(i-1)/2)*3,4,-1],10,label='seat identity dot')
-for x,d in [(35,3.4),(60,4.5),(85,5.5),(110,6.6)]:
-    rt.hole(b,d,[x,48,-1],10,label=f'Metric clearance {d}')
-for x,af in [(15,8.2),(40,8.4),(65,8.6)]:
-    rt.hexcut(b,f'{af} mm+coupon_zero',4.5,[x,58,3.6]);rt.hole(b,5.5,[x,58,-1],6)
-for x,d in [(90,4.0),(110,4.2),(130,4.4)]:rt.hole(b,d,[x,58,2],7,label=f'insert trial {d}')
-rt.cmd('appearance.assign',bodies=[b],color='#DAE4E6')
-rt.cmd('view.apply',view='iso')
-root=Path(__file__).resolve().parents[1]
-(root/'cad/fit-coupon-build.json').write_text(json.dumps({'commands':rt.commands},indent=2)+'\n')
-print(f'Generated fit coupon: {len(rt.commands)} commands')
+ROOT=Path(__file__).resolve().parents[1]
+C=[];B='RT01 PETG fit coupon'
+def cmd(c,**p):C.append(dict(command=c,params=p))
+def box(size,corner,op='join'):
+ p=dict(length=size[0],width=size[1],height=size[2],corner=corner,operation=op)
+ p.update(body_name=B) if op=='new' else p.update(targets=[B]);cmd('solid.box',**p)
+def cyl(d,h,base,axis='Z',op='cut'):
+ cmd('solid.cylinder',diameter=d,height=h,base=base,axis=axis,operation=op,targets=[B])
+cmd('component.create',name='RT01 revision 4 fit coupon',grounded=True)
+box([150,100,4],[0,0,0],'new');box([4,4,6],[-1,-1,-1],'cut')
+for x,d in [(15,3.4),(35,4.5),(55,5.5),(75,6.6)]:cyl(d,6,[x,15,-1])
+for x,d in [(100,4.0),(120,4.2),(140,4.4)]:
+ box([16,16,4.2],[x-8,7,3.8]);cyl(d,8,[x,15,1])
+for x,d in [(15,10.2),(35,10.3),(55,10.4)]:
+ cyl(16,4.2,[x,42,3.8],op='join');cyl(d,10,[x,42,-1])
+for x,d in [(85,16.1),(110,16.3),(135,16.5)]:
+ box([20,20,4.2],[x-10,32,3.8]);cyl(d,6.2,[x,42,2.8])
+box([150,20,24],[0,75,0])
+horizontal=[3.4,3.5,3.6,4.5,4.6,4.7,5.5,5.6,5.7]
+for i,d in enumerate(horizontal):cyl(d,24,[15+15*i,73,15],'Y')
+cmd('appearance.assign',bodies=[B],color='#DAE4E6');cmd('view.apply',view='iso')
+(ROOT/'cad/fit-coupon-build.json').write_text(json.dumps(dict(commands=C),indent=2)+'\n')
+(ROOT/'cad/fit-coupon-features.json').write_text(json.dumps(dict(revision=4,notch='lower-left, X0/Y0',vertical_holes=dict(y=15,xd=[[15,3.4],[35,4.5],[55,5.5],[75,6.6]]),insert_trials=dict(y=15,xd=[[100,4],[120,4.2],[140,4.4]],depth=7),column_trials=dict(y=42,xd=[[15,10.2],[35,10.3],[55,10.4]],depth=8),fixture_boss_trials=dict(y=42,xd=[[85,16.1],[110,16.3],[135,16.5]],depth=5.2),horizontal_holes=dict(y_range=[75,95],z=15,xd=[[15+15*i,d] for i,d in enumerate(horizontal)]),required_first_articles=['One complete P11 column sleeve for the69.5 mm bore','P24 motor bracket for horizontal pilot/holes and clamp retention','P50/P52 enclosure land, insert and gasket compression','One platter quadrant on M20 raised fixture boss'],removed_interfaces='Printed bearing seats, wheel pilot, hub sleeve fit and captive nut pockets are removed from revision4. Metal fits use machining inspection, not this coupon.'),indent=2)+'\n')
+print(f'Generated revision4 coupon: {len(C)} commands')

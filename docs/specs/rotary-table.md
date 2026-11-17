@@ -1,156 +1,118 @@
-# Rotary table specification — RT-01
+# Rotary table specification — RT-01 revision 4
 
-Status: revision 3 prototype; not fabrication released. Hardware quantities and defined stack-ups are in [the fastener register](../rotary-table-fasteners.md). The design baseline was written before the CAD rebuild on 2026-11-17 and the dimensions below were reconciled with the finished model. The requirements below are engineering targets, not measured performance. Geometry and print checks are recorded separately in `docs/rotary-table-validation.md`.
+2026-11-17. **Prototype for review; not fabrication released.** The [audit response](../rotary-table-audit-response-2026-11-17.md) records each finding, decision, evidence and remaining acceptance test. The original [revision 3 specification](../archive/rotary-table-spec-rev3.md) is historical. This document governs the current geometry.
 
+## 1. Scope and architecture
 
-## Revision 3 — braced arm stand and assembly fasteners
+A 320 mm horizontal platter rotates about vertical Z. The existing SO100 stays on a fixed, bench-anchored steel stand above the controller box. The arm's imported geometry and relative pose are preserved; revision 4 raises the whole arm and its mounting plate by 8 mm for driver removal. Neither the printed enclosure nor its lid carries arm load.
 
-Recorded before the CAD changes on 2026-11-17. The arm has **not** been tested on this assembly: the concern is the purchased arm's abrupt motion and the resulting reaction loads, not an observed failure of this stand.
+The user approved printed parts with a metal core. Audit fixes expand that core: a machined output hub, one-piece worm-bearing carrier, metal retainer caps and integral motor foundation replace the corresponding printed precision/clamp interfaces. There are **25 printed assembly pieces**, 17 metal fabrication bodies and purchased/reference parts. The aluminium/steel parts require machining or fabrication; this is no longer a two-plate-only metal kit. Scaling preserves the load path and drive arrangement, then requires new sizing; it is not uniform CAD scaling.
 
-- Retain the arm mounting face at Z144 and the service box underneath. Replace the four tall round posts with two **welded 4 mm steel side channels**, 116 mm deep and 136 mm high, with 28 mm top/bottom flanges, and a **4 mm front X brace**. The rear stays open for removing the lid and accessing cables. These are metal fabrication parts, not A1 Mini prints. Weld dimensions/process and load capacity require review against the actual arm/tool loads; the CAD is a fabrication concept, not a rated stand.
-- Keep the 228 × 116 × 8 mm aluminium arm plate. Attach it to the steel flanges using four M6 × 25 bolts at X±98, Y−272/−176. Use separate bench bolts through the bottom flanges, with two 40 × 136 × 3 mm steel backing strips below the bench. No arm load passes through the printed box or lid.
-- Anchor the stand and rotary table to the **same rigid, braced workbench** using through-bolts. A loose wood block is not the design basis. Bench thickness is unknown: the fastener register must give a length formula, not invent a final anchor length. Backing strips are supplied as separate fabrication geometry because their assembly height depends on that thickness.
-- Extend M01 to 164 × 184 × 8 mm (Y−82 to102) and P20 to 156 × 94 × 8 mm (Y6.5 to100.5). Move cartridge anchors to X±52/Y18 and X±70/Y92, outside the bearing supports, and add Ø25 access openings over the two covered core bench bolts. The original 164 mm square gasket still seals the floor opening.
-- Audit every designed joint for screw diameter, length, head, washers, nuts/inserts, thread engagement and assembly access. Exclude screws inside the purchased arm; include its four base attachments. Explicitly list unfinished purchased-component interfaces rather than imply that the entire machine is order-ready.
-- Correct the wheel-hub bolts to M5 × 45, recess the worm-block bolt heads, provide bolt-tip clearance in the base/motor sole, move the home bracket clear of the column bolt, and use flush heat-spreader clamp screws outside the thermal opening. Keep all sealing and tool-access provisions compatible with these changes.
-- Check the stand, fastener envelopes, full table rotation and lid removal in CAD; regenerate affected print/manufacturing files and the hardware register. Physical stiffness, bolt preload, thermal behaviour and motion accuracy remain to be tested. A stiffer stand does not correct servo backlash or abrupt motion commands.
+Workpiece load path: fixture → printed platter/metal fixture bosses → M20 metal hub → inner bearing ring → outer ring → M02 seat → four locating steel columns → M01 base → rigid bench. Motor torque path: motor → coupling → supported worm shaft → duplex worm/wheel → metal face joint and M21 drive pin → hub → platter. No belt or assumption of worm self-locking.
 
-Revision 3 supersedes the four-post support and provisional fastener list in Revision 2 below.
+## 2. Baseline and performance targets
 
-## Revision 2 — motor support and arm above the controller box (superseded support)
-
-Requested on 2026-11-17 after reviewing the motor-pod overhang. These decisions are recorded before changing the CAD:
-
-- Replace the printed underlapping motor tab with a **continuous 172 × 82 × 4 mm aluminium sole plate**, on the bench at Z0. The printed motor platform rests on it at Z4. Two underside countersunk M5 screws join the sole to the main core; their centres move to X72, Y20/48, clear of the core gasket. Add two M6 bench anchors at X220, Y35/77, with 8 mm metal compression sleeves through the printed platform. This removes the unsupported overhang and gives the screw heads a defined recess.
-- Fit the existing SO100 above the electronics box, facing +Y toward the platter. A **228 × 116 × 8 mm aluminium arm plate at Z136–144** is carried by four independent **Ø20 / Ø6.6 × 136 mm steel standoffs** at X±102, Y−272/−176. M6 through-bolts anchor the plate/standoffs directly to the bench. The electronics enclosure and its lid carry none of the arm load.
-- Seat the arm's measured base underside at Z144, centred at X0/Y−224. Keep the imported arm geometry and joint pose intact; apply one rigid placement transform. Use the four existing nominal Ø5 mounting passages measured from the imported base, with M4 clearance in the metal plate; verify the owned revision and screw seating before drilling metal.
-- Preserve **28 mm between the lid top (Z108) and arm-plate underside (Z136)**. Ten tool-access holes in the arm plate align with the lid fasteners. The lid lifts and withdraws rearward between the external standoffs without removing the arm. Keep gland access and the external heat sink unobstructed.
-- Verify nominal contacts, new part/arm overlaps, lid withdrawal, fastener alignment, all printable envelopes, and fresh-build/export consistency. The mounted pose does not certify the arm's full workspace or loaded stiffness.
-
-This revision supersedes the earlier instruction to keep the arm unmounted and separate. The original reference file remains archived.
-
-## 1. Scope and decisions
-
-Replace the old stationary 450 mm base with a single horizontal platter rotating around vertical Z (C axis). Mount the existing SO100 above the controller box on the independent metal braced stand described in Revision 3. The bridge, box and rotary table are each anchored to the bench. Arm internals, spindle and workpiece-clamp design are outside this revision.
-
-The user approved a printed assembly with a metal core: two small aluminium datum plates, purchased bearings and metal gearing, printed platter sections, housings, mounts and electronics enclosure. The motor sole and arm adapter are aluminium; Revision 3 adds welded steel side channels and a front X brace. Additional stock metal hardware includes compression tubes, shafts, couplings, nuts and a controller heat spreader. Do not print bearing races, worm teeth or shafts for the precision version.
-
-Use a 320 mm platter instead of the earlier 450 mm estimate. Four quadrant sections fit the A1 Mini without outsourcing a large print. Scaling means retaining this load path and replaceable drive cartridge, then resizing the bearing, gearing and structure; do not uniformly scale bought components, holes or print clearances.
-
-## 2. Design envelope and acceptance targets
-
-| Item | Baseline |
+| Item | Requirement / nominal geometry |
 | --- | --- |
-| Platter | 320 mm diameter, four sections, 12 mm deck with underside ribs |
-| Rotating tabletop | Z = 116–128 mm; right-hand rotation about Z |
-| Fixed enclosure | 308 mm main outside diameter; 328 mm including drainage gutter |
-| Core base plate | 164 × 184 × 8 mm aluminium, X±82 / Y−82 to102, underside Z = 4 mm |
-| Bearing seat | 156 mm OD × 8 mm aluminium ring, 94 mm central opening; Z = 82–90 mm |
-| Bearing | RU85-size preloaded crossed-roller ring; nominal 55 × 120 × 15 mm, Z = 90–105 mm |
-| Output support | Inner bearing ring carries a bolted output hub and four platter sections |
-| Load | 5 kg maximum workpiece + fixture target, initially foam; rotating hardware added separately in sizing |
-| Workpiece assumptions | Centre-of-mass offset ≤80 mm; cutting height ≤150 mm above the table |
-| Cutting-force assumption | 10 N at up to 160 mm radius; foam commissioning only |
-| Working speed | 0.1–2 rpm initially; controlled acceleration ≤0.2 rad/s² |
-| Output torque | Design for ≥4 N·m continuous and ≥8 N·m short peak after measured friction; do not infer this from motor holding torque |
-| Reversal error target | ≤0.10° at the platter (0.28 mm tangential error at R160); aspirational ≤0.05° after adjustment |
-| Load deflection target | ≤0.20 mm measured at R140 under a 10 N tangential force; test in both directions |
-| Runout target | ≤0.20 mm axial TIR at R140 after assembly and shimming |
-| Maximum printed-part envelope | 168 × 168 × 168 mm in the specified orientation; normally ≤164 mm in X/Y |
-| Environment | Fine dust and incidental splashes; no immersion, hose washing or certified IP rating |
+| Platter | Ø320, four 12 mm thick ribbed sections; deck Z116–128 |
+| Housing | Ø308 main wall, Ø328 gutter; indirect splash labyrinth |
+| M01 | 164 × 184 × 8 aluminium base at Z4–12; local lower thread bosses and upper guide tongue |
+| M02 | Ø156 / Ø94 × 8 seat at Z82–90; interrupted bearing register and sensor nut pad |
+| Bearing reference | RU85 size, Ø55 / Ø120 × 15, Z90–105; actual preload/seal variant must be selected |
+| Columns | Four Ø10 / Ø6.2 × 72 steel columns, Z11–83; 1 mm recess in each plate, 70 mm exposed span |
+| Printed column sleeves | Ø22 / nominal Ø10.30 × 69.5, Z12–81.5; nominal 0.5 mm clamp relief |
+| M20 | Ø150 × 10 flange at Z106–116, Ø76 bearing face at Z105, registered neck/wheel pilot, four raised fixture bosses to Z121 |
+| Worm axis | X direction; Y55.500, Z50.000; wheel axis Z through X0/Y0 |
+| Gear pair | KHK KWGDL2-R1 + AGDL2-40R1, module 2, RH, 40:1, centre distance 55.5 |
+| Motor provision | Closed-loop NEMA17; face X130, 42.3 square, rear length ≤80 plus 20 cable space; 5 mm shaft |
+| Arm plate / stand | M50 228 × 116 × 8 at Z144–152; two 144 mm high welded steel channels and front brace |
+| Workpiece + fixture target | ≤5 kg initially foam; offset ≤80 mm; cutting height ≤150 above table |
+| Cutting-force assumption | 10 N at R160; 1.60 N·m tangential torque before friction/acceleration |
+| Speed / acceleration | Initial 0.1–2 rpm; ≤0.2 rad/s² subject to commissioning |
+| Torque target | ≥4 N·m continuous / ≥8 N·m brief peak after friction; not inferred from motor holding torque |
+| Reversal error | ≤0.10° at the platter; aspirational ≤0.05° after adjustment |
+| Runout / stiffness | ≤0.20 mm axial TIR at R140; ≤0.20 mm tangential deflection at R140 under 10 N, both directions |
+| Environment | Fine dust and incidental splashes; no machine IP rating, immersion or hose-washing claim |
 
-The 5 kg payload at 80 mm eccentricity creates 3.92 N·m of overturning moment. A 10 N lateral cutting force at 150 mm adds 1.50 N·m. Use at least 10.84 N·m as the initial factored overturning design case (factor 2), plus the actual fixture geometry. Tangential cutting torque is 1.60 N·m before friction and acceleration. These are load cases, not a structural verification. Measure rotating inertia and drive friction before selecting final motor current, speed and acceleration.
+All performance rows are **acceptance targets, not measured results**. Payload moment is 5 × 9.81 × 0.08 = 3.924 N·m; the lateral force adds 1.50 N·m. An initial factor of two gives 10.85 N·m overturning before additional real arm/tool/fixture loads. Measure rotating inertia and friction before final drive selection. Stand bracing does not smooth the purchased arm's commands or remove its internal backlash.
 
-## 3. Mechanical architecture
+## 3. Metal location, machining and inspection
 
-Load path: fixture → ribbed platter sections → output hub → bearing inner ring → bearing outer ring → aluminium seat → four steel compression tubes → aluminium base plate → bench bolts. Printed covers do not carry the workpiece. The printed hub and deck remain structural prototype parts and must pass the load tests; larger versions need a metal hub and platter.
+Dimensions below are project inspection requirements, **not manufacturer-approved fits**. Obtain the actual bearing/gear drawings first; final shop drawings must state material, GD&T, roughness, threads, corner relief and permissible preload. Nominal STEP geometry does not encode these tolerances. Inspect near 20 °C, then verify at the maximum intended operating temperature.
 
-Motion path: closed-loop NEMA17 motor → metal clamp coupling → supported steel worm shaft → duplex worm → metal worm wheel → bolted output hub → platter. The worm shaft has bearings on both sides of the mesh to react axial force in both directions. No belt and no assumption of worm self-locking.
-
-Core coordinates are millimetres; Z0 is the bench. Four support columns are centred at (66,0), (-66,0), (36,-58), (-36,-58). Steel tubes are 10 mm OD, ≥6.2 mm ID, 70 mm long. Printed sleeves are 69.5 mm long, leaving 0.5 mm clearance so that metal carries the clamp load. The metal bearing seat rests on the tubes, not on soft printed layers. M6 through bolts clamp into tapped holes in the aluminium base.
-
-The bearing outer-ring attachment reference is eight M5 positions on 105 mm PCD; the inner-ring reference is eight M5 positions on 65 mm PCD. Confirm the purchased RU85 variant's hole types, angular phase, preload grade, shoulder requirements and permitted bolt torque against its drawing. Bearing reference bodies show envelopes and interfaces, not internal rollers. Do not use printed clearance fits to establish bearing preload. Machine the datum faces flat and parallel; initial drawing targets are 0.03 mm bearing-seat flatness and 0.05 mm base flatness, subject to the bearing supplier's requirements.
-
-The output hub has a 150 mm flange, a raised 76 mm bearing-contact boss and a neck passing through the bearing bore. Keep the flange 1 mm above the stationary outer ring. Attach the worm wheel to the neck with four M5 fasteners on a 30 mm PCD, using metal compression sleeves through the printed neck. The soft wheel hub requires a concentric pilot and tapped attachment holes; retain the manufacturer's tooth geometry. This secondary machining and the shaft drawing must be checked by the fabricator before ordering.
-
-Each platter quadrant bolts to the hub at two positions. Four M6 fixture points on a 94 × 94 mm square pass through the deck into captive metal nuts in the hub. They are an attachment interface, not a complete workholding system. Seal unused holes; use bonded sealing washers or a gasketed fixture when wet.
-
-## 4. Drive and controller provisions
-
-Reference gear pair: **KHK KWGDL2-R1 + AGDL2-40R1**, module 2, right hand, single start, 40:1. Nominal centre distance 55.5 mm. Wheel pitch diameter 80 mm, maximum OD 86 mm, toothed face 18 mm, hub 15 mm, total height 33 mm. Worm OD 35 mm, toothed length 36 mm, hub length 14 mm, total length 50 mm. Worm axis: X, Y=55.5, Z=50. Wheel teeth span Z=41–59; hub spans Z=59–74. Reference tooth is placed at X0.
-
-Model the purchased tooth bodies as labelled envelopes. They are not printable gears or a tooth-contact simulation. Specify the manufacturer's duplex pair together; ordinary worms of the same module are not substitutes. The worm's stock bore is 14 mm and the wheel's is 15 mm. The proposed shaft interface needs the worm finish-bored/keyed to 15 mm by the supplier or machinist. Final key, shaft shoulders, bearing retention, preload nuts and machining tolerances are procurement-release items.
-
-Provide a replaceable worm cartridge and axial adjustment slots ±3 mm. Adjustment changes backlash, not centre distance. Measure running torque through a full revolution; do not preload to binding. KHK's maximum permitted shift is not a recommended assembly setting. Mount both arrow markings in the specified direction. Lubrication must follow the gear and bearing suppliers, with lubricant compatible with enclosure seals.
-
-Two 7202-size angular-contact bearings (15 × 35 × 11 mm) are the space reference, arranged to react reversing thrust; use a matched/preload-suitable pair and a metal shaft-retention stack. Printed bearing blocks have a slip-fit seat and bolted retainers; they do not establish precision preload. Bearing centres are X=±60.5, Y=55.5, Z=50.
-
-Motor provision: NEMA17 face 42.3 mm square, 31 mm mounting square, M3 screws, 22 mm pilot, 5 mm shaft. Reserve 80 mm behind the motor face for body and encoder, plus 20 mm for a rear connector/cable bend. Motor face X=130; shaft points toward −X. Allow a 40 mm long, 25 mm OD clamp coupling with 5/15 mm bores. Coupling and motor are purchased components; simplified CAD envelopes must be checked against the final part drawing. Use a closed-loop drive with a matched motor/encoder; reserve room for an output-angle encoder, but do not claim motor feedback measures platter error.
-
-Electronics service box: 168 × 112 × 80 mm including lid, behind the table on its own four 28 mm feet. The box spans Z28–108; the external heat sink has 14.25 mm clearance above the bench. Separate screw-down lid, replaceable 2 mm EPDM gasket, gland entries and removable controller tray. Reserve a 118 × 76 × 35 mm motor-driver envelope, an 80 × 55 × 20 mm motion-controller envelope, and wiring/service space. These are packaging envelopes, not selected boards or a wiring design. Use slotted tray mounting, then drill the final board pattern from its drawing. Keep a route for motor power, encoder, home sensor and external emergency-stop wiring.
-
-Use an external enclosed 24 V DC supply for initial packaging. No mains supply is placed in the printed enclosure. Include a 118 × 76 × 3 mm aluminium heat spreader and a 98 × 54 × 18 mm external finned heat-sink provision below the sealed floor. A 0.5 mm thermal adhesive pad is represented; final heat-sink retention and driver thermal contact must be designed for the selected parts. The heat-spreader gasket is 1 mm nominal compressed to 0.75 mm against metal shim stops. Keep its four clamp penetrations sealed. Validate temperatures with the lid shut and at maximum intended current. Sealed air volume alone is not adequate cooling evidence. Ground/bond exposed metal as required by the final electrical design. Electrical integration and coordinated robot control are not implemented in this revision.
-
-## 5. Dust and splash resistance
-
-1. Rotating skirt: downward overhang around the platter. Fixed upstand sits inside it, with nominal 2 mm radial and axial running clearance. The two turns in the entry path reject direct splash; this is not a contact seal.
-2. Rib clearance: all rotating ribs end below R146.2; the main fixed wall starts at R150. Seam braces end at Z96 and ribs start at Z98, preserving 2 mm vertically as they sweep. The upstand ends at Z114 beneath the Z116 deck.
-3. Outside gutter: catches water outside the drive space and drains through downward/outward outlets. No drain empties into the electronics box. Avoid recesses that retain slurry.
-4. Static joints: seal the four housing seams and platter seams with removable neutral-cure RTV/appropriate sealant, backed by bolted seam strips. Printed seam gaps are 0.4 mm; they are not watertight without sealing.
-5. Motor pod: a separate screw-down hood, 2 mm EPDM compressed to 1.5 mm against hard stops, and RTV at the curved transition to the main enclosure. Two 16.5 mm gland provisions are on the stationary rear wall.
-6. Electronics: three 16.5 mm gland provisions, a continuous EPDM gasket, compression stops and cable glands with their own seals. Nominal gasket thickness 2 mm, compressed to 1.5 mm (25%); choose material with an appropriate compression range. Lid bolts sit outside the wet-to-dry seal where possible. Use gland manufacturer's cable range and cutout, not generic thread assumptions.
-7. Bearing and gearbox: choose sealed bearing variants; protect grease behind covers. The rotating labyrinth does not replace bearing seals. Seal printed walls if a coupon shows leakage through layers. Recheck after service.
-8. Do an unpowered dust/splash ingress check with absorbent indicators before installing electronics. Repeat after assembly changes. No IP65 or waterproof claim follows from CAD.
-
-## 6. A1 Mini fabrication specification
-
-Printer envelope: 180 × 180 × 180 mm. Baseline 0.4 mm nozzle, PETG, 0.20 mm layer height. Use dry filament, calibrated flow and elephant-foot compensation. PLA may be used for dimensional coupons, not as the thermal/wet baseline. Do not assume the open A1 Mini can reliably print large ABS/ASA structural parts.
-
-| Interface | Nominal design allowance before coupon correction |
+| Interface | Geometry and acceptance requirement |
 | --- | --- |
-| Two printed mating parts | 0.25 mm per side; 0.50 mm total across a sliding fit |
-| Housing/platter section seams | 0.40 mm total gap, backed and sealed after assembly |
-| Printed cylindrical slip seat | Purchased OD +0.30 mm **diametral**; coupons +0.20/+0.30/+0.40 mm |
-| Rotating splash labyrinth | 2.0 mm radial and axial; do not tighten to printer nominal resolution |
-| M3 printed through hole | 3.4 mm |
-| M4 printed through hole | 4.5 mm |
-| M5 printed through hole | 5.5 mm |
-| M6 printed through hole | 6.6 mm |
-| M5 hex-nut pocket | 8.4 mm across flats ×4.4 mm deep, validate actual nut |
-| M6 hex-nut pocket | 10.4 mm across flats ×5.4 mm deep, validate actual nut |
-| M3 heat-set insert trial pilot | 4.0 mm for RX-M3x5.7; **verify purchased insert and printed coupon** |
-| Metal plate fastener holes | Standard clearance/tapped dimensions; do not apply printed-fit allowance |
+| Base datums | M01 top is datum A; bearing axis is datum B; carrier guide establishes X direction. Base flatness ≤0.05; M02 bearing seating land ≤0.03, or tighter supplier requirement. Finish mating datums after fabrication/coating. |
+| Columns and plate location | Ground, square ends, 72.000 nominal, matched within 0.01. One Ø10.02 round recess at (66, 0), one 10.52 × 10.02 X slot at (−66, 0); other recesses Ø10.4. Finish locating clearance to 0.015–0.020 diametral against measured columns. Round/slot references in both plates prevent using screw clearance as the XY datum. Recess depths 1.000 nominal; verify the assembled 70 mm separation and parallelism. |
+| Outer bearing on M02 | Four interrupted pads, effective locating diameter Ø120.02, relieved Ø121.6 for the lower corner. Finish to measured ring OD +0.010–0.030. The seating plane carries load, not the corner radius. Confirm actual chamfer/seal envelope. |
+| Inner bearing on M20 | Ø54.98 pilot at Z90–104, Ø53.5 relief at the shoulder. Finish pilot to measured bearing bore minus 0.020–0.030 diametral. Wheel pilot and bearing pilot total indicated concentricity ≤0.01; flange face runout ≤0.02 to the pilot datum. |
+| Wheel on M20 | Ø14.98 × 7 nominal pilot; finish to measured wheel bore minus 0.010–0.025 diametral. Relief Ø14.5 × 0.5 at the shoulder. Inspect wheel bore/tooth datum runout after secondary machining; target ≤0.03 radial TIR before setting mesh. |
+| M60 guide | Integral M01 tongue 60 × 6 × 2; groove 68 × 6.02 × 2.2. Finish measured side clearance to 0.010–0.020 total, straight/parallel to worm X axis within 0.01 over 60. At ±3 travel, ≥1 mm end clearance remains. Tighten F07 after adjustment. |
+| Worm-bearing seats | Both Ø35.01 × 11.05 deep in one setup in M60; finish to measured outer rings +0.005–0.015 diametral. Coaxiality ≤0.015; shoulder perpendicularity ≤0.01. Verify the supplier permits this retained clearance fit for the selected load arrangement. |
+| Assembled worm location | Measure centre distance 55.500 ±0.030, worm height relative to wheel tooth midplane ±0.030 and axis squareness ≤0.02 over 100. These are assembled acceptance limits, not independent tolerances to add blindly. Correct/rework datums if the stack fails; X adjustment cannot repair Y/Z misalignment. |
+| Bearing caps | M61 is 4 mm metal with a 0.10 annular outer-race boss, Ø34.9 outside / Ø28 inside, shaft hole Ø16. Confirm the annulus contacts only the real outer race. M62 shim nominal 0.05, selected after measurement. |
 
-Main enclosure walls are 4 mm; the housing floor is 2.5 mm. Local sensor and insert geometry is thinner and must be checked on the coupon/first articles. Do not extrapolate the main wall thickness to every small feature. Structural parts: 6 perimeters, 8 top/bottom layers, 35–45% infill as a starting profile; use solid modifier regions around bolted interfaces. Covers may use 4 perimeters and 20–25% infill. Fasten with metal nuts/inserts and washers, not printed threads. Compression tubes bypass plastic where sustained clamp force matters. Final screw torque must be established on coupons; metal hardware torque tables do not apply to PETG joints.
+For each cap, axial outer-ring clearance is **pocket depth − bearing width + shim thickness − boss height**. Nominally 11.05 − 11 + 0.05 − 0.10 = 0. Select/lap shims for 0–0.005 mm clearance without distorting the outer ring; use blue/contact and indicator checks. This controls outer-ring retention only. Shaft shoulders, spacers and locknuts must separately define the angular-contact pair's inner-ring retention/preload. That shaft drawing remains a fabrication gate.
 
-Print platter sections with the flat work surface on the bed and ribs/skirt upward. Print sleeves and bearing blocks with the bearing axis vertical where possible to keep the fit round. Print the hub flange face on the bed, neck up. Print the service box upright, lid flat, and seam strips flat. The revised motor foundation prints flat on its underside; the motor bracket and home-sensor bracket print on their sides; the motor hood prints roof-down. Housing gutters and the electronics box inward top rim need local support. Keep supports out of gasket lands and bearing seats. The largest 168 mm part with 5 mm brim each side occupies 178 mm, inside the bed; check the actual slicer footprint including skirt, purge line and orientation.
+The radial location budget is an inspection chain: bearing/pilot clearance, pilot concentricity, column location, guide clearance, bearing-seat alignment and thermal expansion all contribute. Passing each nominal CAD feature is insufficient; accept the assembled centre distance, wheel TIR and running torque through 360°. The small metal fits above are not PETG print allowances.
 
-Include a compact fit coupon with the actual fastener holes, insert pilots, nut pockets and bearing-seat clearance options. Print and measure it before the full assembly. PETG shrinkage, hole bias and material brand determine the final correction; nominal CAD allowances are not guaranteed printer accuracy.
+## 4. Wheel attachment and workholding
 
-## 7. Assembly and commissioning order
+M20 is 6061-T6 aluminium. Four F05 M5×45 cap screws clamp a **solid 36 mm metal grip** into the wheel, with 9 mm nominal thread engagement. The old equal-length printed stack and four hub compression sleeves are removed. Specify wheel material, tap depth, thread capacity, bolt preload and an anti-loosening method with the fabricator; do not choose torque from the screw diameter alone.
 
-1. Print/measure coupons and correct the named fit parameters. Obtain hardware drawings; finish metal datum plates, output wheel attachment and shaft/retention stack.
-2. Assemble the base plate, metal compression tubes and bearing seat on a flat bench. Verify flatness and squareness before tightening the bearing.
-3. Install bearing, output hub and wheel; verify outer-ring/flange clearance and free rotation before installing the worm.
-4. Assemble worm shaft, opposed support bearings and retainers. Set axial preload in the metal retention stack. Bolt the cartridge down, align centre distance and adjust duplex backlash through 360°.
-5. Install motor, coupling and cable restraint. Verify no shaft or motor bearing carries the platter's axial load.
-6. Fit printed covers, backed seams, labyrinth, gutter and drain outlets. Fit platter quadrants and seal their seams. Install a properly secured foam fixture.
-7. Assemble driver/controller on the removable tray and heat spreader. Fit glands and lid gasket; perform unpowered ingress checks first.
-8. Test low-speed motion unloaded, then progressively loaded. Measure bidirectional lost motion, TIR, tangential stiffness, motor/driver temperature and ingress. Log results and revise speed/current/load limits.
+M21 is a ground hardened-steel Ø4×12 drive pin at R15/45°. It presses 6.5 mm into M20 and projects 5.5 into a 6.2 mm deep **radial slot** in the wheel. Match press interference to 0.005–0.012 mm and total tangential slot clearance to 0.005–0.010. The radial slot avoids competing with the concentric pilot; bottom clearance is 0.7 mm. The pin provides a positive torque path; the bolts keep the faces seated.
 
-A brake or table clamp can be added for stationary machining, but it cannot supply stiffness while the table is rotating. Continuous carving requires coordinated motion control and measured loaded accuracy. No carving validation is implied by the CAD joint animation.
+At 8 N·m, pin tangential force is 533 N, average single-shear stress 42.4 MPa, and average wheel-slot bearing stress 24.2 MPa over the 5.5 mm engagement. A deliberately conservative tip-load bending estimate is 467 MPa (about 473 MPa combined with shear); require certified pin yield/proof strength ≥1000 MPa for an initial factor >2 on that estimate, and review fatigue/contact/fit with the supplier. These calculations are demands and preliminary sizing, not a validated pin rating. Maximum geometric slot contribution is 0.010/15 radians = **0.0382°**; bearing, mesh, shaft, printed platter and bolted-joint errors remain separate. Check reversal under load, temperature and repeated cycling.
 
-## 8. Verification and release gates
+Eight F06 M5×16 button screws attach platter quadrants into M20, with 7 mm metal engagement. The deck remains printed and its creep/deflection must be tested.
 
-CAD: all new bodies closed; no failed features; every printable part fits ≤168 mm in its intended orientation; mounting holes and gasket compression checked; no unintended intersections at 17 sampled positions around a revolution, with analytic radial/vertical clearances for the rib and labyrinth sweeps; bought gear-tooth envelope overlap explicitly excluded from interference results. Keep the imported arm's existing surface warnings separate from new-part health.
+Four fixture points at (±47,±47) now use **blind M6 metal threads** in Ø16 raised bosses. Boss face Z121, 9 mm full thread to Z112, tap-drill cylinder to Z110, drill tip Z108.5. At least 2.5 mm metal remains above the Z106 underside. Platter pockets clear the bosses at nominal Ø16.30. Do not reintroduce through-holes or captive nuts.
 
-Do not mark fabrication released until: actual motor/driver/encoder/gland drawings are chosen; bearing variant and mounting holes confirmed; shaft/key/preload and worm-wheel secondary machining drawings agreed; print coupons passed; fastener lengths and access checked against actual hardware; dimensional and loaded tests passed. Do not claim stone-machining capability from the foam prototype.
+Require **8–9 mm actual screw engagement**: under-head bolt length minus fixture/washer stack above Z128 must equal **15–16 mm**. Example: M6×20 requires a 4–5 mm upper stack. Never force a bolt against a blind bottom. Four maximum-depth screw tips are included in rotation checks; actual clamps, workpiece, seal washers and their upper collision envelope are not yet designed. Seal unused fixture holes.
 
-## 9. Sources
+## 5. Drive and home sensor
 
-- [Bambu A1 Mini specifications](https://bambulab.com/en/a1-mini/tech-specs): 180 mm build envelope; verify against the printer profile before slicing.
-- [KHK duplex worm catalog](https://khkgears.net/pdf/agdl.pdf), printed pp. 406–409: axial backlash adjustment, KWGDL2-R1/AGDL2-40R1 geometry, supplier assembly restrictions. Gear references are purchased components, not copied tooth CAD.
-- [THK RU product family](https://www.thk.com/jp/ja/products/cross_roller_ring/cross_roller_ring/ru/ru/) and [THK dimensional guide](https://tech.thk.com/upload/catalog_claim/pdf/IMTS2022_THK_Mobile_Guidebook.pdf): integrated mounting rings; confirm current purchased variant before machining.
-- [Föhrenbach RT2A](https://foehrenbach.com/en/products/rotary-tables-with-worm-gear-series-rt2a): industrial bearing/worm architecture reference, not a selected table.
+The KHK wheel envelope is Ø86, toothed face Z41–59, hub Z59–74, nominal bore 15. The worm envelope is Ø35, tooth length 36 and hub length 14. It needs supplier-approved finish boring/keying from the catalog bore 14 to the proposed shaft 15. These are purchased tooth envelopes, not printable gears or a meshing simulation. Buy the specified duplex pair together; follow KHK arrow/reference-tooth alignment, axial adjustment and lubrication instructions.
 
-The tolerances and targets in this specification are project design choices unless explicitly attributed to a manufacturer. They need the listed physical validation.
+M60's integral blocks eliminate F08 completely. F09 is eight M4×12 screws into metal, nominal 7.15 engagement; require ≥9 full thread and 10 drilled depth. The two 15×35×11 angular-contact bearing references sit at X±60.45. Select an opposed/preload-suitable pair and finish the shaft/retention drawing. Adjust the carrier ±3 along X, then measure running torque at every angle; do not preload to binding.
+
+M40 now combines the 4 mm sole and 8 mm riser in metal. F14 bench bolts clamp metal directly. Old P23 and motor anchor sleeves are removed. P24 remains a printed motor bracket: verify its horizontal holes, pilot and clamp retention on a first article. Motor face is X130; 40 mm coupling envelope spans X78–118. Shaft-end gap is nominal 7 mm, minimum 4 at +3 cartridge shift. Select the coupling's actual insertion depth, clamps and flexible alignment limits.
+
+Home sensor mechanical reference: **SICK IME08-02BPSZT0S, 1040870**, M8×1, 50 long with 34 threaded length, PNP normally open, 10–30 VDC. It mounts axially through M02 at **R73, 210°**, face Z98.5. A local Ø18 metal pad supports two AF13 nuts modeled conservatively 4 mm thick; confirm the supplied thickness. The cable/connector reservation extends below the body; select the M8 cordset and check its actual bend radius.
+
+A mild-steel Ø12×3 target at Z99.7–102.7 is retained with upward F25 M3×8 in the hub boss. Head is recessed 0.1, hub engagement 5.1. Nominal face gap is **1.2 mm**; adjust/test throughout 0.9–1.5 under actual runout and load. Supplier safe sensing distance is 1.62 for the specified standard target. The disc surrounds an 8×8 target square, but its countersink and the assembled background still require a real signal test. Ordinary hub background is 7.5 above the sensing face. Bearing OD is 9 mm from the sensing-face edge; the layout conservatively allows the drawing's 8 mm lateral and 6 mm overhead restrictions. Verify exactly one home event per revolution. Homing is not output-angle feedback. Only the selected sensor has a published IP67 rating; the machine does not.
+
+## 6. Electronics, stand and service
+
+P50/P52 enclosure is 168×112×80 including lid, at Z28–108 on four 28 mm feet. Reserve driver 118×76×35 at Z36–71 and controller 80×55×20 on the removable tray. M30 is a 118×76×3 aluminium spreader; external heat sink envelope 98×54×18 with a 0.5 thermal pad. Driver attachment/contact, heat-sink retention, board standoffs and wiring are unselected; an adhesive-pad envelope is not a retention design. Use an external enclosed 24 V supply, matched to the final motor/drive; keep mains outside this box. Validate temperature with the lid closed at maximum intended duty.
+
+M50 underside is Z144: **40 mm above the open box rim and 36 above the closed lid**. Steel side channels are 144 high, 116 deep, with 4 mm webs and 28×116×4 top/bottom flanges; front brace is 228×136×4 at Z4–140. Weld, inspect distortion and finish the upper mounting datum. Review weld size and real arm/tool reactions before fabrication. Through-bolt stand and core to the **same rigid braced bench**; a loose timber block is not the mounting basis. Bench thickness T is unknown, so anchor lengths remain formulas in the register. Two separate 40×136×3 backing strips go beneath the stand.
+
+Service with the arm plate installed: disconnect power/cables and release the selected device attachment; remove lid screws through the ten Ø8 tool holes; lift lid/gasket8 and slide rearward 140. Release tray screws, lift tray/controller27 and slide rearward 140. Lift the full driver 70 to Z106–141, then slide rearward 140. Its route leaves 2 mm above the rim and 3 below M50. The model proves the bare envelope route; connectors, service loops and thermal-pad separation must be demonstrated with actual electronics. Arm travel and spindle/workpiece collisions require a separate articulated workspace study.
+
+## 7. Covers, dust and splash control
+
+Retain the overlapping rotating skirt, fixed upstand and external gutter: nominal 2 mm radial skirt gap and 2 mm deck/upstand gap. Rotating ribs end inside R146.2 versus wall R150; ribs start Z98 above seam structures ending Z96. The hub flange stays 1 mm above the stationary bearing envelope. Lowest target is Z99.7 versus column cap-head top 97.6, nominal 2.1; other hub bosses are higher. These are continuous geometric bounds, not allowances already proven under distortion/load.
+
+Housing anchors move to (88, 108) rotated by quadrant. Their OD15 washer footprint is supported: minimum nominal wall gap 3.19, and 3.0 from the motor-foundation opening at the closest edge. F15 seam washers seat on new Ø10 flat pockets at local Y153/X153, retaining 16 mm grip and the M4×25 stack. Remaining outer wall below the pocket is nominally at least 3.0 mm in the washer footprint. Use low clamp force and seal every seam.
+
+Static seams use removable compatible RTV. Core/hood/lid gaskets are 2 mm EPDM, installed 1.5; spreader gasket is 1, installed 0.75 against metal stops. Cover bolts and glands need sealed penetrations. Cut gasket stock at uncompressed thickness, not STEP thickness. Check drainage, curved hood transition, gland lands, porosity and seals with unpowered absorbent indicators before installing electronics. No certified water/dust rating follows from these features.
+
+## 8. Printing and acceptance gates
+
+A1 Mini baseline: 180³ volume, 0.4 nozzle, 0.20 layers, dry PETG. Maximum assembly-part dimension 168; 5 mm brim each side gives 178. Check purge lines/support expansion in the slicer. Use the [printing guide](../rotary-table-printing.md), revised coupon and full-size first articles. Never scale the whole part to correct a fit.
+
+Printed holes use separate vertical/horizontal parameters; metal fits use the inspection table above. Main walls are 4, housing floor 2.5. Start load-carrying printed parts at six walls/eight top-bottom layers/35–45% infill; covers at four walls/20–25%. These are process starting points, not strength ratings. No printed threads are used for durable joints. Actual torque must respect PETG creep and insert pull-out.
+
+CAD acceptance: 81 new bodies closed; no failed features; constrained sketches; all 23 active fastener groups represented; 17 unique uniform angles plus targeted narrow crossings and closure; ±3 carrier adjustment; service sequence; analytical sweep bounds; 25 oriented STLs/coupon; source/native/STEP agreement. Exclude only documented thread/press-fit contacts, purchased tooth blanks and unchanged imported arm self-contact. See [validation](../rotary-table-validation.md).
+
+Physical release still requires: final bearing and drive drawings, pin/wheel strength and preload approval, actual devices/cables, fixture design, bench T and weld review, sliced/printed fit calibration, full travel/hand-rotation test, sensor signal test, progressive loads/stopping, reversal/runout/stiffness/temperature and dust/splash tests. No FEA, physical print, carving or stone-machining qualification is implied.
+
+## Sources
+
+- [KHK duplex catalog](https://khkgears.net/pdf/agdl.pdf): selected pair, dimensions and adjustment restrictions.
+- [THK RU dimensional table](https://tech.thk.com/en/products/pdfs/en_a18_022.pdf): RU85 dimensions and mounting-hole reference. Obtain the final variant drawing.
+- [SICK IME08-02BPSZT0S datasheet](https://www.sick.com/media/pdf/6/86/386/dataSheet_IME08-02BPSZT0S_1040870_en.pdf): dimensions, safe sensing range, installation and electrical requirements. Nut thickness is not specified; 4 mm here is a conservative allowance to confirm.
+- [Bambu A1 Mini technical specification](https://store.bblcdn.com/1531c9726f6b41fba4594d5b47966ee0.pdf): printer envelope/nozzle.
+
+Other tolerances and acceptance targets are project choices, not attributed supplier guarantees.

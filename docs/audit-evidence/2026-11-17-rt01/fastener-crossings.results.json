@@ -1,0 +1,411 @@
+{
+  "note": "Inspection/measurement results extracted from CLI --results output; verbose state echoes omitted. Probe inputs are unchanged.",
+  "results": [
+    {
+      "boolean_ms": 385.417,
+      "budget_exceeded": false,
+      "budget_s": 45.0,
+      "checked": 12,
+      "count": 8,
+      "interferences": [
+        {
+          "a": "AUDIT F08 -1 31.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 73.25309096758205,
+          "b": "AUDIT F09 -1 32.5 27",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              -50.50000035143153,
+              33.99999999098637,
+              29.0
+            ],
+            "min": [
+              -55.499999668071716,
+              30.5,
+              25.000000227270018
+            ]
+          },
+          "center": [
+            -52.99999999794857,
+            32.18659050082093,
+            26.99999997859601
+          ],
+          "volume_mm3": 49.0046042336849
+        },
+        {
+          "a": "AUDIT F08 -1 31.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 70.16842537000318,
+          "b": "AUDIT F09 -1 32.5 73",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              -50.49999999999998,
+              33.999999897726106,
+              74.50000000000001
+            ],
+            "min": [
+              -55.49999999999999,
+              30.499999999999996,
+              71.00000005584135
+            ]
+          },
+          "center": [
+            -52.99999997544618,
+            32.16604690097032,
+            72.84976480388721
+          ],
+          "volume_mm3": 45.03633497751494
+        },
+        {
+          "a": "AUDIT F08 -1 79.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 73.25309228277061,
+          "b": "AUDIT F09 -1 78.5 27",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              -50.50000009662274,
+              80.5,
+              28.9999996106804
+            ],
+            "min": [
+              -55.49999962386221,
+              77.00000028207825,
+              25.000000006860404
+            ]
+          },
+          "center": [
+            -53.000000020495854,
+            78.81340948729408,
+            27.000000004070532
+          ],
+          "volume_mm3": 49.004605642114356
+        },
+        {
+          "a": "AUDIT F08 -1 79.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 70.16842581596562,
+          "b": "AUDIT F09 -1 78.5 73",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              -50.49999999999999,
+              80.5,
+              74.50000000000003
+            ],
+            "min": [
+              -55.49999999999999,
+              77.00000028207825,
+              71.00000000686036
+            ]
+          },
+          "center": [
+            -53.00000000298028,
+            78.83395309902697,
+            72.8497648132706
+          ],
+          "volume_mm3": 45.03633522158304
+        },
+        {
+          "a": "AUDIT F08 1 31.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 73.25309096758203,
+          "b": "AUDIT F09 1 32.5 27",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              55.49999964856847,
+              33.99999999098637,
+              29.0
+            ],
+            "min": [
+              50.500000331928284,
+              30.5,
+              25.000000227270014
+            ]
+          },
+          "center": [
+            53.00000000205143,
+            32.18659050082093,
+            26.99999997859601
+          ],
+          "volume_mm3": 49.00460423368485
+        },
+        {
+          "a": "AUDIT F08 1 31.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 70.1684253700032,
+          "b": "AUDIT F09 1 32.5 73",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              55.500000000000014,
+              33.9999998977261,
+              74.50000000000001
+            ],
+            "min": [
+              50.5,
+              30.499999999999996,
+              71.00000005584135
+            ]
+          },
+          "center": [
+            53.00000002455382,
+            32.16604690097033,
+            72.84976480388721
+          ],
+          "volume_mm3": 45.03633497751499
+        },
+        {
+          "a": "AUDIT F08 1 79.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 73.25309228277057,
+          "b": "AUDIT F09 1 78.5 27",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              55.49999990337726,
+              80.5,
+              28.9999996106804
+            ],
+            "min": [
+              50.50000037613779,
+              77.00000028207825,
+              25.00000000686041
+            ]
+          },
+          "center": [
+            52.99999997950414,
+            78.8134094872941,
+            27.000000004070532
+          ],
+          "volume_mm3": 49.00460564211427
+        },
+        {
+          "a": "AUDIT F08 1 79.5",
+          "a_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "area_mm2": 70.1684258159655,
+          "b": "AUDIT F09 1 78.5 73",
+          "b_part": {
+            "component": "AUDIT F08-F09 bolt conflicts",
+            "path": [
+              "AUDIT F08-F09 bolt conflicts:1"
+            ],
+            "path_ids": [
+              1569
+            ]
+          },
+          "bbox": {
+            "max": [
+              55.50000000000001,
+              80.5,
+              74.5
+            ],
+            "min": [
+              50.499999999999986,
+              77.00000028207825,
+              71.00000000686039
+            ]
+          },
+          "center": [
+            52.99999999701973,
+            78.83395309902697,
+            72.8497648132706
+          ],
+          "volume_mm3": 45.03633522158296
+        }
+      ],
+      "ms": 118.28,
+      "pairs_candidate": 8,
+      "pairs_cleared": 0,
+      "pairs_excluded": 0,
+      "pairs_intersected": 8,
+      "pairs_not_checked": 0,
+      "skipped_pairs": 0,
+      "slowest": [
+        {
+          "a": "AUDIT F08 -1 31.5",
+          "b": "AUDIT F09 -1 32.5 27",
+          "boolean_ms": 52.26,
+          "ms": 89.994,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "AUDIT F08 -1 79.5",
+          "b": "AUDIT F09 -1 78.5 27",
+          "boolean_ms": 51.753,
+          "ms": 89.522,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "AUDIT F08 1 79.5",
+          "b": "AUDIT F09 1 78.5 27",
+          "boolean_ms": 50.422,
+          "ms": 87.199,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "AUDIT F08 1 31.5",
+          "b": "AUDIT F09 1 32.5 27",
+          "boolean_ms": 49.904,
+          "ms": 87.139,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "AUDIT F08 -1 79.5",
+          "b": "AUDIT F09 -1 78.5 73",
+          "boolean_ms": 48.131,
+          "ms": 79.959,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "AUDIT F08 -1 31.5",
+          "b": "AUDIT F09 -1 32.5 73",
+          "boolean_ms": 45.231,
+          "ms": 76.953,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "AUDIT F08 1 31.5",
+          "b": "AUDIT F09 1 32.5 73",
+          "boolean_ms": 44.476,
+          "ms": 75.595,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "AUDIT F08 1 79.5",
+          "b": "AUDIT F09 1 78.5 73",
+          "boolean_ms": 43.24,
+          "ms": 73.426,
+          "tessellate_ms": 0.0
+        }
+      ],
+      "tessellate_ms": 0.0,
+      "threads": 8,
+      "truncated": false,
+      "unchecked": []
+    }
+  ]
+}

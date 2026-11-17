@@ -1,0 +1,1220 @@
+{
+  "revision": 4,
+  "groups": {
+    "F01": 4,
+    "F02": 4,
+    "F03": 8,
+    "F07": 4,
+    "F09": 8,
+    "F10": 4,
+    "F11": 4,
+    "F13": 2,
+    "F14": 2,
+    "F15": 16,
+    "F16": 4,
+    "F17": 4,
+    "F18": 10,
+    "F19": 4,
+    "F20": 4,
+    "F21": 4,
+    "F22": 4,
+    "F23": 4,
+    "F24": 4,
+    "F04": 8,
+    "F05": 4,
+    "F06": 8,
+    "F25": 1
+  },
+  "retired": [
+    "F08",
+    "F12"
+  ],
+  "fixed_and_bench_screws": 119,
+  "fixture_tip_bounds": 4,
+  "permanent_retention": [
+    "B13 sensor upper jam nut",
+    "B13 sensor lower jam nut",
+    "M21 wheel drive pin",
+    "M62 retainer shim left",
+    "M62 retainer shim right"
+  ],
+  "angles_deg": [
+    0.0,
+    21.176470588235293,
+    42.35294117647059,
+    63.529411764705884,
+    84.70588235294117,
+    105.88235294117646,
+    127.05882352941177,
+    148.23529411764707,
+    169.41176470588235,
+    190.58823529411765,
+    211.76470588235293,
+    232.94117647058823,
+    254.11764705882354,
+    275.29411764705884,
+    296.47058823529414,
+    317.6470588235294,
+    338.8235294117647,
+    28.17255342332686,
+    45.0,
+    91.82744657667308,
+    135.0,
+    150.0,
+    225.0,
+    315.0,
+    330.0,
+    360.0
+  ],
+  "cartridge_offsets_mm": [
+    3,
+    -3
+  ],
+  "exclusions": [
+    {
+      "a": "TEST F01 0",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F01 1",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F01 2",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F01 3",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F07 0",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F07 1",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F07 2",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F07 3",
+      "b": "M01 aluminium base plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F09 -1 32.5 27",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F09 -1 32.5 73",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F09 -1 78.5 27",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F09 -1 78.5 73",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F09 1 32.5 27",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F09 1 32.5 73",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F09 1 78.5 27",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F09 1 78.5 73",
+      "b": "M60 monolithic worm carrier",
+      "reason": "M4 thread, 7.15 engagement in at least9 full thread"
+    },
+    {
+      "a": "TEST F10 0",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F10 1",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F10 2",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F10 3",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F11 40 34.5",
+      "b": "B06 NEMA17 motor and encoder envelope",
+      "reason": "Provisional motor screw thread engagement3.5; confirm SKU"
+    },
+    {
+      "a": "TEST F11 40 65.5",
+      "b": "B06 NEMA17 motor and encoder envelope",
+      "reason": "Provisional motor screw thread engagement3.5; confirm SKU"
+    },
+    {
+      "a": "TEST F11 71 34.5",
+      "b": "B06 NEMA17 motor and encoder envelope",
+      "reason": "Provisional motor screw thread engagement3.5; confirm SKU"
+    },
+    {
+      "a": "TEST F11 71 65.5",
+      "b": "B06 NEMA17 motor and encoder envelope",
+      "reason": "Provisional motor screw thread engagement3.5; confirm SKU"
+    },
+    {
+      "a": "TEST F13 0",
+      "b": "M01 aluminium base plate",
+      "reason": "M5 tapped attachment; carrier has tip relief"
+    },
+    {
+      "a": "TEST F13 1",
+      "b": "M01 aluminium base plate",
+      "reason": "M5 tapped attachment; carrier has tip relief"
+    },
+    {
+      "a": "TEST F17 0",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F17 1",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F17 2",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F17 3",
+      "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 0",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 1",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 2",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 3",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 4",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 5",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 6",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F04 7",
+      "b": "B10 bearing inner ring reference",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F05 0",
+      "b": "B11 duplex wheel envelope",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F05 1",
+      "b": "B11 duplex wheel envelope",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F05 2",
+      "b": "B11 duplex wheel envelope",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F05 3",
+      "b": "B11 duplex wheel envelope",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 0",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 1",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 2",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 3",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 4",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 5",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 6",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F06 7",
+      "b": "M20 registered output hub",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F25",
+      "b": "M20 registered output hub",
+      "reason": "M3 target thread, 5.1 engagement"
+    },
+    {
+      "a": "TEST permitted fixture tip -47 -47",
+      "b": "M20 registered output hub",
+      "reason": "Permitted M6 thread engagement9 from Z121; blind drill bottomZ108.5"
+    },
+    {
+      "a": "TEST permitted fixture tip -47 47",
+      "b": "M20 registered output hub",
+      "reason": "Permitted M6 thread engagement9 from Z121; blind drill bottomZ108.5"
+    },
+    {
+      "a": "TEST permitted fixture tip 47 -47",
+      "b": "M20 registered output hub",
+      "reason": "Permitted M6 thread engagement9 from Z121; blind drill bottomZ108.5"
+    },
+    {
+      "a": "TEST permitted fixture tip 47 47",
+      "b": "M20 registered output hub",
+      "reason": "Permitted M6 thread engagement9 from Z121; blind drill bottomZ108.5"
+    },
+    {
+      "a": "M21 wheel drive pin",
+      "b": "M20 registered output hub",
+      "reason": "Intentional press fit4/3.99; finish to measured pin"
+    },
+    {
+      "a": "B04 duplex worm envelope",
+      "b": "B11 duplex wheel envelope",
+      "reason": "Purchased tooth envelopes; no tooth-contact simulation"
+    },
+    {
+      "a": "Base_08q",
+      "b": "Base_08q (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "Base_08q (3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "WaveShare_Mounting_Plate_01d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "Rotation_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "Passive_Horn_01",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "STS3215_03a",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "Base_08q (3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "WaveShare_Mounting_Plate_01d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "Rotation_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "Passive_Horn_01",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "STS3215_03a",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (2)",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "WaveShare_Mounting_Plate_01d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "Rotation_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "Passive_Horn_01",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "STS3215_03a",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Base_08q (3)",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "Rotation_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "Passive_Horn_01",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "STS3215_03a",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "WaveShare_Mounting_Plate_01d",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "Passive_Horn_01",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "STS3215_03a",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Rotation_Pitch_08i",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "Passive_Horn_01",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "STS3215_03a",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "STS3215_03a",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Passive_Horn_01",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "SO_ARM100_08k_116_Square",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "SO_ARM100_08k_Mirror",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_116_Square",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "SO_ARM100_08k_Mirror (2)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror (2)",
+      "b": "Wrist_Roll_Pitch_08i",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror (2)",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror (2)",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror (2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror (2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror (2)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "SO_ARM100_08k_Mirror (2)",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_Pitch_08i",
+      "b": "Wrist_Roll_08c",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_Pitch_08i",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_Pitch_08i",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_Pitch_08i",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_Pitch_08i",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_Pitch_08i",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_08c",
+      "b": "Moving_Jaw_08d",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_08c",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_08c",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_08c",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Wrist_Roll_08c",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Moving_Jaw_08d",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Moving_Jaw_08d",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Moving_Jaw_08d",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "Moving_Jaw_08d",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    },
+    {
+      "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+      "b": "STS3215_03a_Wrist_Roll",
+      "reason": "Unchanged imported arm self-contacts"
+    }
+  ],
+  "limits": [
+    "Bench bolts are checked above Z0; unknown bench/backing geometry below Z0 remains a release gate.",
+    "Heat-set insert retention inside its pilot requires first-article testing; boss geometry and complete screw stacks are checked.",
+    "Unselected board, coupling and shaft-retention fasteners remain explicit open interfaces."
+  ]
+}
