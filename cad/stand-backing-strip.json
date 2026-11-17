@@ -1,0 +1,57 @@
+{
+  "commands": [
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 40,
+        "width": 136,
+        "height": 3,
+        "corner": [
+          -20,
+          -68,
+          0
+        ],
+        "body_name": "M55 bench backing strip - make two"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5,
+        "base": [
+          0,
+          -48,
+          -1
+        ],
+        "operation": "cut",
+        "targets": [
+          "M55 bench backing strip - make two"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5,
+        "base": [
+          0,
+          48,
+          -1
+        ],
+        "operation": "cut",
+        "targets": [
+          "M55 bench backing strip - make two"
+        ]
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/Users/carlos/Projects/cad/michelaingelo/exports/rotary-table/metal/m55-bench-backing-strip-make-two.step",
+        "format": "step"
+      }
+    }
+  ]
+}

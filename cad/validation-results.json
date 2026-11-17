@@ -1,0 +1,258 @@
+{
+  "design": "RT-01",
+  "revision": 3,
+  "date": "2026-11-17",
+  "status": "Prototype geometry checked; not fabrication released",
+  "source_sha256": {
+    "michelaingelo.sc": "fc5b4c1079a4e5d9955af6266879d54597708b663fdfc605825a25b65dd6eb23",
+    "scripts/build_rotary_table.py": "920f6b55948512c93dbc882f479408121d45e9637ca865f55bbd3485ac6a94ed",
+    "scripts/build_fastener_register.py": "66336e1e0bb9b54750561ef11d6276bfbb843e5707c25bdfa5a21de3423f6ed5",
+    "scripts/build_assembly_checks.py": "cdb4a47d881de388209c79734397556c23d4f501d35277564806201dbe1c092f",
+    "cad/rotary-table-build.json": "83e8cebc5de154507296f18f241b31957f02c9ad47dc5577cd401f7a5dd377df",
+    "cad/parts.json": "7f3c665262d85188c8ce541f49970e418b8f0e5601652f3b6bb012634a7d3c46",
+    "cad/fasteners.json": "847ebf9577441dfa31bd34d309d4c483fa978d69f7dac3b99720ab8b901ac115",
+    "cad/fastener-clearance-checks.json": "2f9a02d6fa2d76e731548a6cd98a37f4410180feff8a9c2f8c088995f70a84a0",
+    "cad/support-access-checks.json": "767b3aced4b7497f183e2de8afdb205e8e2c1b58a19bec6d262c446994cb814b",
+    "exports/rotary-table/rt01-assembly.step": "e86a0470212bbd2147f3128c144c37540ff4ec2cb0985ed928f31a607aadb432",
+    "exports/rotary-table/print-manifest.json": "7c5330e4df4a4f5dad8b398870eb061d7a573e838be9c10ecf160b0e80940d7c"
+  },
+  "bodies": {
+    "table_closed": 84,
+    "arm_total": 19,
+    "arm_closed": 18,
+    "arm_preexisting_open": 1,
+    "arm_volumes_and_bounds_unchanged": true
+  },
+  "sketches": {
+    "total": 37,
+    "fully_constrained": 37,
+    "new_feature_errors": 0,
+    "new_feature_warnings": 0,
+    "reference_note": "Original arm import warnings retained. Existing Sketch1 preserved as fixed review geometry at its original world plane after breaking obsolete face-projection link."
+  },
+  "fasteners": {
+    "joint_rows": 24,
+    "defined_length_screws": 106,
+    "bench_bolts": 18,
+    "scope": "Selected critical envelopes plus documented nominal stack calculations; not every hardware item is a retained CAD solid."
+  },
+  "interference": {
+    "probe_assemblies": 64,
+    "rotation_degrees": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180,
+      210,
+      240,
+      270,
+      300,
+      330,
+      360
+    ],
+    "cartridge_axial_offsets_mm": [
+      3,
+      -3
+    ],
+    "exclusions": [
+      "Bought worm/wheel tooth envelopes",
+      "Imported arm internal body pairs",
+      "Screw thread volumes in designated tapped recipients",
+      "F22 shank against existing top washer pair"
+    ],
+    "results": [
+      {
+        "pose": {
+          "rotor_deg": 0
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 553,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 30
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 60
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 90
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 552,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 120
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 150
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 180
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 552,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 210
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 240
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 270
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 552,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 300
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 330
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 569,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "rotor_deg": 360
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 553,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "cartridge_x_mm": 3
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 553,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      },
+      {
+        "pose": {
+          "cartridge_x_mm": -3
+        },
+        "overlaps": 0,
+        "unchecked": 0,
+        "pairs_candidate": 553,
+        "pairs_intersected": 172,
+        "pairs_excluded": 73
+      }
+    ]
+  },
+  "access": {
+    "checks": 7,
+    "overlaps": 0,
+    "unchecked": 0,
+    "lid_tool_shafts": 10,
+    "lid_lift_mm": 8,
+    "lid_rearward_offsets_mm": [
+      40,
+      80,
+      140
+    ],
+    "plate_lid_gap_mm": 28
+  },
+  "fresh_build": {
+    "bodies": 84,
+    "max_volume_delta_mm3": 0.002678277887753211,
+    "max_bbox_coordinate_delta_mm": 1.580957587066223e-13
+  },
+  "step_roundtrip": {
+    "bodies": 84,
+    "max_volume_delta_mm3": 0.0026778175379149616,
+    "max_bbox_coordinate_delta_mm": 1.1746159600534156e-13
+  },
+  "print_meshes": {
+    "assembly_parts": 33,
+    "coupon": 1,
+    "all_closed_and_consistent": true,
+    "max_dimension_mm": 168.0,
+    "max_5mm_brim_footprint_mm": 178.0,
+    "max_volume_error_percent": 0.040419
+  },
+  "unrun": [
+    "Slicing and physical print/coupon",
+    "Bench selection and final anchor length",
+    "Weld sizing, structural analysis and dynamic stand tests",
+    "Final purchased-device interfaces and worm-shaft fabrication drawing",
+    "Loaded accuracy, control, thermal and ingress tests",
+    "Full moving-arm workspace/collision study"
+  ]
+}

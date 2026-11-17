@@ -1,0 +1,884 @@
+{
+  "design": "RT-01",
+  "units": "mm",
+  "nozzle_mm": 0.4,
+  "layer_mm": 0.2,
+  "note": "Prototype geometry. Print coupon first. No slicing or physical print verification implied.",
+  "parts": [
+    {
+      "file": "exports/rotary-table/stl/p11-column-sleeve.stl",
+      "triangles": 11358,
+      "print_bbox_mm": [
+        21.9967,
+        21.9967,
+        69.5
+      ],
+      "footprint_with_5mm_brim_mm": [
+        31.9967,
+        31.9967
+      ],
+      "mesh_volume_mm3": 20619.9448,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "edb052ea5d1a6cf15a5a520201ec59c4b06997bb90ca3ba6ec3e47c351be8b8a",
+      "name": "P11 column sleeve",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 20628.28248511293,
+      "mesh_volume_error_percent": 0.040419
+    },
+    {
+      "file": "exports/rotary-table/stl/p12-column-sleeve.stl",
+      "triangles": 11346,
+      "print_bbox_mm": [
+        21.9967,
+        21.9967,
+        69.5
+      ],
+      "footprint_with_5mm_brim_mm": [
+        31.9967,
+        31.9967
+      ],
+      "mesh_volume_mm3": 20619.9448,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "492b40fdcca959932e50e20604a063da5c029c4c5c280bbb1149d8160249a8cb",
+      "name": "P12 column sleeve",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 20628.282485112977,
+      "mesh_volume_error_percent": 0.040419
+    },
+    {
+      "file": "exports/rotary-table/stl/p13-column-sleeve.stl",
+      "triangles": 11332,
+      "print_bbox_mm": [
+        21.9967,
+        21.9967,
+        69.5
+      ],
+      "footprint_with_5mm_brim_mm": [
+        31.9967,
+        31.9967
+      ],
+      "mesh_volume_mm3": 20619.9458,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "8b6eeee5a0ffbf61af8d9d984e28223b8fdf6d063615cc2af0b3e31f80839d3b",
+      "name": "P13 column sleeve",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 20628.28248511292,
+      "mesh_volume_error_percent": 0.040414
+    },
+    {
+      "file": "exports/rotary-table/stl/p14-column-sleeve.stl",
+      "triangles": 11348,
+      "print_bbox_mm": [
+        21.9967,
+        21.9967,
+        69.5
+      ],
+      "footprint_with_5mm_brim_mm": [
+        31.9967,
+        31.9967
+      ],
+      "mesh_volume_mm3": 20619.9458,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "fddcc855d4e3a8f91b51664cc72110b33b28ceefbb91de693083b2d1049d4d36",
+      "name": "P14 column sleeve",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 20628.28248511296,
+      "mesh_volume_error_percent": 0.040414
+    },
+    {
+      "file": "exports/rotary-table/stl/p20-worm-cartridge-sled.stl",
+      "triangles": 6060,
+      "print_bbox_mm": [
+        156.0,
+        94.0,
+        8.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        166.0,
+        104.0
+      ],
+      "mesh_volume_mm3": 103482.3522,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "1b44127c2645b7343b07b15e01e543de0c52372fb984ebab4759388bc684bee7",
+      "name": "P20 worm cartridge sled",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 103474.77983780202,
+      "mesh_volume_error_percent": 0.007318
+    },
+    {
+      "file": "exports/rotary-table/stl/p21-worm-bearing-block-left.stl",
+      "triangles": 86506,
+      "print_bbox_mm": [
+        60.0,
+        60.0,
+        26.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        70.0,
+        70.0
+      ],
+      "mesh_volume_mm3": 74445.7572,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "139847e4582d8dcdd0c1bad74d5351f694e030e57dd9a557c34546945189e117",
+      "name": "P21 worm bearing block left",
+      "rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "notes": "Bearing pocket opens upward; calibrate slip fit with coupon.",
+      "cad_volume_mm3": 74438.931417357,
+      "mesh_volume_error_percent": 0.00917
+    },
+    {
+      "file": "exports/rotary-table/stl/p22-worm-bearing-retainer-left.stl",
+      "triangles": 4038,
+      "print_bbox_mm": [
+        54.0,
+        54.0,
+        4.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        64.0,
+        64.0
+      ],
+      "mesh_volume_mm3": 10274.2728,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "6f02284c3a57d154aa0e4c3fde4c11ab0a1a1ec31d6cad499f9d0428a680b43c",
+      "name": "P22 worm bearing retainer left",
+      "rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 10273.531091472618,
+      "mesh_volume_error_percent": 0.00722
+    },
+    {
+      "file": "exports/rotary-table/stl/p21-worm-bearing-block-right.stl",
+      "triangles": 85520,
+      "print_bbox_mm": [
+        60.0,
+        60.0,
+        26.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        70.0,
+        70.0
+      ],
+      "mesh_volume_mm3": 74445.7742,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "5f51ae98e24fc106bc1868d7837111fabefc9bc545b9a1affbff7231866e5032",
+      "name": "P21 worm bearing block right",
+      "rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "notes": "Bearing pocket opens upward; calibrate slip fit with coupon.",
+      "cad_volume_mm3": 74438.93141734153,
+      "mesh_volume_error_percent": 0.009192
+    },
+    {
+      "file": "exports/rotary-table/stl/p22-worm-bearing-retainer-right.stl",
+      "triangles": 4018,
+      "print_bbox_mm": [
+        54.0,
+        54.0,
+        4.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        64.0,
+        64.0
+      ],
+      "mesh_volume_mm3": 10274.2728,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "64949cb472db12df35ac21414f4a826c625036cfcdc5e230fcdeb4d045334c22",
+      "name": "P22 worm bearing retainer right",
+      "rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 10273.531091472614,
+      "mesh_volume_error_percent": 0.00722
+    },
+    {
+      "file": "exports/rotary-table/stl/p23-motor-pod-foundation.stl",
+      "triangles": 5718,
+      "print_bbox_mm": [
+        153.5,
+        82.0,
+        9.5
+      ],
+      "footprint_with_5mm_brim_mm": [
+        163.5,
+        92.0
+      ],
+      "mesh_volume_mm3": 96686.8526,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "b2560cae7b1866de3e38598620c3369240b56a6c995c972e5c20912180e472e0",
+      "name": "P23 motor-pod foundation",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Flat underside on bed; rests continuously on M40 metal sole. Insert captive nuts before fitting sole.",
+      "cad_volume_mm3": 96683.00717543224,
+      "mesh_volume_error_percent": 0.003977
+    },
+    {
+      "file": "exports/rotary-table/stl/p24-nema17-motor-bracket.stl",
+      "triangles": 4982,
+      "print_bbox_mm": [
+        38.0,
+        68.0,
+        62.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        48.0,
+        78.0
+      ],
+      "mesh_volume_mm3": 37827.8818,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "194aa55cac9372d94060a459d6981df346b1a5e20ed6bfc6342a4c1a36d85524",
+      "name": "P24 NEMA17 motor bracket",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": "Print L-shaped side on bed; clean motor pilot after support removal.",
+      "cad_volume_mm3": 37825.345416384924,
+      "mesh_volume_error_percent": 0.006706
+    },
+    {
+      "file": "exports/rotary-table/stl/p25-home-sensor-bracket.stl",
+      "triangles": 2216,
+      "print_bbox_mm": [
+        22.0,
+        25.0,
+        18.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        32.0,
+        35.0
+      ],
+      "mesh_volume_mm3": 3446.8549,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "f3ade2370e8386548eb879a1d4392d82604b0625f19828ded8216ec6adc4057a",
+      "name": "P25 home sensor bracket",
+      "rotation_deg": [
+        90,
+        -45,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 3446.5434001740095,
+      "mesh_volume_error_percent": 0.009038
+    },
+    {
+      "file": "exports/rotary-table/stl/p30-output-hub.stl",
+      "triangles": 25134,
+      "print_bbox_mm": [
+        149.9999,
+        150.0,
+        49.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        159.9999,
+        160.0
+      ],
+      "mesh_volume_mm3": 208687.4462,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "374b7afceb1ed49a8e78116fcf223a3f00fa944b4863d2819e548c987073ce4b",
+      "name": "P30 output hub",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Flange face on bed; metal compression sleeves through neck.",
+      "cad_volume_mm3": 208695.2232598968,
+      "mesh_volume_error_percent": 0.003727
+    },
+    {
+      "file": "exports/rotary-table/stl/p31-platter-quadrant.stl",
+      "triangles": 3874,
+      "print_bbox_mm": [
+        159.7999,
+        159.7999,
+        30.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        169.7999,
+        169.7999
+      ],
+      "mesh_volume_mm3": 277944.2601,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "71cc86e2bef8709dfb31ad32de70ad0ec743606f978c82578c38c1a6c96fe1e7",
+      "name": "P31 platter quadrant",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly.",
+      "cad_volume_mm3": 277953.9250962929,
+      "mesh_volume_error_percent": 0.003477
+    },
+    {
+      "file": "exports/rotary-table/stl/p32-platter-quadrant.stl",
+      "triangles": 3874,
+      "print_bbox_mm": [
+        159.7999,
+        159.7999,
+        30.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        169.7999,
+        169.7999
+      ],
+      "mesh_volume_mm3": 277944.2614,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "4b90cacae02304c39633408bd666a5f71246ee9806377bc39596c6cfd196dcd8",
+      "name": "P32 platter quadrant",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly.",
+      "cad_volume_mm3": 277953.9250962926,
+      "mesh_volume_error_percent": 0.003477
+    },
+    {
+      "file": "exports/rotary-table/stl/p33-platter-quadrant.stl",
+      "triangles": 3874,
+      "print_bbox_mm": [
+        159.7999,
+        159.7999,
+        30.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        169.7999,
+        169.7999
+      ],
+      "mesh_volume_mm3": 277944.2606,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "b0b56c3b4bfd2fc560fb44af7b1f3217c186ff74abf60454fd53cf93101e6334",
+      "name": "P33 platter quadrant",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly.",
+      "cad_volume_mm3": 277953.92509629275,
+      "mesh_volume_error_percent": 0.003477
+    },
+    {
+      "file": "exports/rotary-table/stl/p34-platter-quadrant.stl",
+      "triangles": 3874,
+      "print_bbox_mm": [
+        159.7999,
+        159.7999,
+        30.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        169.7999,
+        169.7999
+      ],
+      "mesh_volume_mm3": 277944.2592,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "cbe102ccdf98975a4b0e9e5fa04ae87b957011c6a4e26cbca0f6dbf6fc65bd6d",
+      "name": "P34 platter quadrant",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly.",
+      "cad_volume_mm3": 277953.9250962931,
+      "mesh_volume_error_percent": 0.003478
+    },
+    {
+      "file": "exports/rotary-table/stl/p41-fixed-housing-quadrant.stl",
+      "triangles": 17482,
+      "print_bbox_mm": [
+        163.7999,
+        163.7999,
+        114.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        173.7999,
+        173.7999
+      ],
+      "mesh_volume_mm3": 111663.0346,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "e38d7ec0cb65e0dd29885cd35785d2adf29b8a799e7dc2dd7c8264f8e323d6df",
+      "name": "P41 fixed housing quadrant",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces.",
+      "cad_volume_mm3": 111658.85219964772,
+      "mesh_volume_error_percent": 0.003746
+    },
+    {
+      "file": "exports/rotary-table/stl/p42-fixed-housing-quadrant.stl",
+      "triangles": 18254,
+      "print_bbox_mm": [
+        163.7999,
+        163.7999,
+        114.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        173.7999,
+        173.7999
+      ],
+      "mesh_volume_mm3": 162133.8844,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "ab3b7e149e05ce0869b720e10d82786834cfb9ef998cd2328b74dc8c12cf7446",
+      "name": "P42 fixed housing quadrant",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces.",
+      "cad_volume_mm3": 162135.970740823,
+      "mesh_volume_error_percent": 0.001287
+    },
+    {
+      "file": "exports/rotary-table/stl/p43-fixed-housing-quadrant.stl",
+      "triangles": 18260,
+      "print_bbox_mm": [
+        163.7999,
+        163.7999,
+        114.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        173.7999,
+        173.7999
+      ],
+      "mesh_volume_mm3": 162133.8822,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "1dd1f4e0ba103e50061cbeae7a6a26341a2a34d3bdc6cbe7e9233488342bd3fa",
+      "name": "P43 fixed housing quadrant",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces.",
+      "cad_volume_mm3": 162135.97074082107,
+      "mesh_volume_error_percent": 0.001288
+    },
+    {
+      "file": "exports/rotary-table/stl/p44-fixed-housing-quadrant.stl",
+      "triangles": 18260,
+      "print_bbox_mm": [
+        163.7999,
+        163.7999,
+        114.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        173.7999,
+        173.7999
+      ],
+      "mesh_volume_mm3": 162133.8833,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "e1664393fa68ab47524ea636032cf24ee2de43460025eaa020977e454e38b0e7",
+      "name": "P44 fixed housing quadrant",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces.",
+      "cad_volume_mm3": 162135.97074082162,
+      "mesh_volume_error_percent": 0.001287
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-1.stl",
+      "triangles": 2158,
+      "print_bbox_mm": [
+        24.0,
+        84.0,
+        8.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        34.0,
+        94.0
+      ],
+      "mesh_volume_mm3": 15619.8843,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "8db4ac1d4c443300e5765806e8ef9f1da58a7b8d344df0e0c4ee0250a8208f56",
+      "name": "P45 seam backing strip 1",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 15619.0619899843,
+      "mesh_volume_error_percent": 0.005265
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-2.stl",
+      "triangles": 2158,
+      "print_bbox_mm": [
+        8.0,
+        84.0,
+        24.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        18.0,
+        94.0
+      ],
+      "mesh_volume_mm3": 15619.8843,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "a3f8a508d6f336cc2e1c9795088fcc34dbee2d73809a6c965d359a26523daa62",
+      "name": "P45 seam backing strip 2",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 15619.061989984299,
+      "mesh_volume_error_percent": 0.005265
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-3.stl",
+      "triangles": 2158,
+      "print_bbox_mm": [
+        24.0,
+        84.0,
+        8.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        34.0,
+        94.0
+      ],
+      "mesh_volume_mm3": 15619.8843,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "5c2718c8cbc2b390d2954cd07fb8a9d17bd885520a279ba910091d24f5b2d65e",
+      "name": "P45 seam backing strip 3",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 15619.061989984302,
+      "mesh_volume_error_percent": 0.005265
+    },
+    {
+      "file": "exports/rotary-table/stl/p45-seam-backing-strip-4.stl",
+      "triangles": 2158,
+      "print_bbox_mm": [
+        8.0,
+        84.0,
+        24.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        18.0,
+        94.0
+      ],
+      "mesh_volume_mm3": 15619.8843,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "b03296c111579ddd37151ecd259da68e23c2468b16f0fb6a3e3db3d0f10fa889",
+      "name": "P45 seam backing strip 4",
+      "rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 15619.061989984306,
+      "mesh_volume_error_percent": 0.005265
+    },
+    {
+      "file": "exports/rotary-table/stl/p46-motor-service-hood.stl",
+      "triangles": 16190,
+      "print_bbox_mm": [
+        115.8736,
+        82.0,
+        82.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        125.8736,
+        92.0
+      ],
+      "mesh_volume_mm3": 119915.6166,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "5ac3eeae326aa6375de459b50b0d31dd783832275fb3b0288cc1dce23430b17d",
+      "name": "P46 motor service hood",
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Seal curved mating edge; remove hood independently.",
+      "cad_volume_mm3": 119919.97880242861,
+      "mesh_volume_error_percent": 0.003638
+    },
+    {
+      "file": "exports/rotary-table/stl/p50-electronics-service-box.stl",
+      "triangles": 14736,
+      "print_bbox_mm": [
+        168.0,
+        112.0,
+        76.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        178.0,
+        122.0
+      ],
+      "mesh_volume_mm3": 249917.248,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "4a5660f9a150a83d2901e089825a69a4b76911d3ecfdbdee0205aa23349c67b2",
+      "name": "P50 electronics service box",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support underside of inward top rim; keep top gasket land clean.",
+      "cad_volume_mm3": 249931.77979196183,
+      "mesh_volume_error_percent": 0.005814
+    },
+    {
+      "file": "exports/rotary-table/stl/p51-removable-controller-tray.stl",
+      "triangles": 2274,
+      "print_bbox_mm": [
+        138.0,
+        80.0,
+        3.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        148.0,
+        90.0
+      ],
+      "mesh_volume_mm3": 29306.3849,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "287d35eedeb08a6ffc5ea65a9663b58461c8bd99a830d8098dd17b2650246f84",
+      "name": "P51 removable controller tray",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 29305.93434983609,
+      "mesh_volume_error_percent": 0.001537
+    },
+    {
+      "file": "exports/rotary-table/stl/p52-electronics-lid.stl",
+      "triangles": 2628,
+      "print_bbox_mm": [
+        168.0,
+        112.0,
+        4.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        178.0,
+        122.0
+      ],
+      "mesh_volume_mm3": 74903.1748,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "74c9269af6edc4a67cb947b11a3d67e651a9987ef0d482bf017ac656fc64a503",
+      "name": "P52 electronics lid",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 74900.83188889548,
+      "mesh_volume_error_percent": 0.003128
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-1.stl",
+      "triangles": 17120,
+      "print_bbox_mm": [
+        19.9993,
+        19.9993,
+        28.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        29.9993,
+        29.9993
+      ],
+      "mesh_volume_mm3": 8350.4302,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "057eff53f61c8c32fc2956e9e778ef141d69fbfe3817d3a807186f9f1f72bb03",
+      "name": "P53 electronics foot 1",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 8351.138671476956,
+      "mesh_volume_error_percent": 0.008484
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-2.stl",
+      "triangles": 17126,
+      "print_bbox_mm": [
+        19.9993,
+        19.9993,
+        28.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        29.9993,
+        29.9993
+      ],
+      "mesh_volume_mm3": 8350.4291,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "4872e27340f8165fd30f3ea9a1ce05e25ae07a82169f08f7bcff452279b1e243",
+      "name": "P53 electronics foot 2",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 8351.138671476958,
+      "mesh_volume_error_percent": 0.008497
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-3.stl",
+      "triangles": 17152,
+      "print_bbox_mm": [
+        19.9993,
+        19.9993,
+        28.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        29.9993,
+        29.9993
+      ],
+      "mesh_volume_mm3": 8350.4302,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "fddc69d0ae825d0c7178fef51cd0044c938d3e3eed40fd055925bc19c6a41edc",
+      "name": "P53 electronics foot 3",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 8351.138671476958,
+      "mesh_volume_error_percent": 0.008484
+    },
+    {
+      "file": "exports/rotary-table/stl/p53-electronics-foot-4.stl",
+      "triangles": 17124,
+      "print_bbox_mm": [
+        19.9993,
+        19.9993,
+        28.0
+      ],
+      "footprint_with_5mm_brim_mm": [
+        29.9993,
+        29.9993
+      ],
+      "mesh_volume_mm3": 8350.4291,
+      "closed_edges": true,
+      "consistent_winding": true,
+      "sha256": "8d098408d1948f9e951996aa0939a9fcf421bf955b4e31399e355a4193de2835",
+      "name": "P53 electronics foot 4",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "",
+      "cad_volume_mm3": 8351.13867147696,
+      "mesh_volume_error_percent": 0.008497
+    }
+  ],
+  "coupon": {
+    "file": "exports/rotary-table/fit-coupon.stl",
+    "triangles": 10792,
+    "print_bbox_mm": [
+      140.0,
+      70.0,
+      8.0
+    ],
+    "footprint_with_5mm_brim_mm": [
+      150.0,
+      80.0
+    ],
+    "mesh_volume_mm3": 62258.2581,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "sha256": "67b5969deccc5f7d146d7ec68cc3770e364a9f23efd0524945847be4dfb8fc6c"
+  }
+}

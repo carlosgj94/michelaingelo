@@ -3,3 +3,7 @@
 # SolidCraft's active-document locks and local backups.
 .~*.sc.lock
 *.sc.bak
+
+# Python CAD script caches.
+__pycache__/
+*.pyc

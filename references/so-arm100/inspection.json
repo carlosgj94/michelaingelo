@@ -1,0 +1,252 @@
+{
+  "tool": "SolidCraft 0.43.0",
+  "inspected_on": "2026-11-17",
+  "units": "mm for STEP measurements; STL coordinates are unitless upstream print exports",
+  "step_measurements": {
+    "step/Base_08q.step": {
+      "bodyCount": 1,
+      "bodies": [
+        {
+          "name": "Base_08q v2",
+          "closed": true,
+          "bbox": {
+            "max": [
+              55.4625,
+              74.00000000000001,
+              71
+            ],
+            "min": [
+              -55.4625,
+              -1.4311468676808703e-14,
+              -16.0000000025911
+            ]
+          },
+          "size_mm": [
+            110.925,
+            74,
+            87
+          ],
+          "volume_mm3": 120683.51058195582
+        }
+      ]
+    },
+    "step/Base_attachment.step": {
+      "bodyCount": 1,
+      "bodies": [
+        {
+          "name": "Base_attachment v1",
+          "closed": true,
+          "bbox": {
+            "max": [
+              14.4171361036775,
+              17.8,
+              59.2
+            ],
+            "min": [
+              -14.4171361036775,
+              2.4,
+              50.199999999999996
+            ]
+          },
+          "size_mm": [
+            28.834,
+            15.4,
+            9
+          ],
+          "volume_mm3": 3369.5251690900222
+        }
+      ]
+    },
+    "step/Motor1_holder.step": {
+      "bodyCount": 1,
+      "bodies": [
+        {
+          "name": "Motor1_holder v1",
+          "closed": true,
+          "bbox": {
+            "max": [
+              22.35,
+              69.5,
+              59.3999999999999
+            ],
+            "min": [
+              -22.3500000000015,
+              38.1,
+              -20.8
+            ]
+          },
+          "size_mm": [
+            44.7,
+            31.4,
+            80.2
+          ],
+          "volume_mm3": 23803.09517605078
+        }
+      ]
+    },
+    "step/STS3215_03a.step": {
+      "bodyCount": 1,
+      "bodies": [
+        {
+          "name": "STS3215_03a v1",
+          "closed": true,
+          "bbox": {
+            "max": [
+              22.7,
+              12.4,
+              20.200000000000003
+            ],
+            "min": [
+              -22.7,
+              -12.4,
+              -19.4
+            ]
+          },
+          "size_mm": [
+            45.4,
+            24.8,
+            39.6
+          ],
+          "volume_mm3": 36216.97306941514
+        }
+      ]
+    },
+    "step/follower/SO_5DOF_ARM100_Assembly.step": {
+      "bodyCount": 19,
+      "closedBodyCount": 18,
+      "size_mm": [
+        110.925,
+        168.34,
+        211.772
+      ],
+      "bbox": {
+        "min": [
+          -55.4625,
+          -1.9691130778939698,
+          -54.13943637940429
+        ],
+        "max": [
+          55.4625,
+          166.37095167290704,
+          157.63292580444158
+        ]
+      }
+    }
+  },
+  "stl_checks": [
+    {
+      "file": "stl/follower/Base_08q-3.STL",
+      "triangles": 14522,
+      "size_units": [
+        110.925,
+        74,
+        87
+      ]
+    },
+    {
+      "file": "stl/follower/Base_08q-4.STL",
+      "triangles": 708,
+      "size_units": [
+        28.833,
+        9.183,
+        15.4
+      ]
+    },
+    {
+      "file": "stl/follower/Base_08q-5.STL",
+      "triangles": 6868,
+      "size_units": [
+        85.161,
+        53.689,
+        31.4
+      ]
+    }
+  ],
+  "assembly_import_warnings": [
+    "solid 'Body1': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 1.529e-2 mm)",
+    "solid 'Body1': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 5.038e-2 mm)",
+    "solid 'Body1': 2 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 1.053e-2 mm)",
+    "solid 'Body1': imported as surfaces: face #57223: edge #33807: spline seam endpoints do not coincide",
+    "solid 'Body1': left out: face #57223: edge #33807: spline seam endpoints do not coincide",
+    "solid 'Body1': left out: face #57460: edge #33807: spline seam endpoints do not coincide",
+    "solid 'Body2': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 6.090e-2 mm)"
+  ],
+  "non_closed_assembly_bodies": [
+    {
+      "name": "SO_ARM100_08k_Mirror",
+      "bbox": {
+        "max": [
+          24.800000000000097,
+          156.15935384148378,
+          78.68584093949815
+        ],
+        "min": [
+          -35.19999999999997,
+          114.03647868180575,
+          -51.986389389083655
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "Bounding boxes use the exported source axes.",
+    "The follower assembly is shown in its exported folded pose; its bounds are not the arm reachable envelope.",
+    "Source CAD files are preserved byte-for-byte; previews and this inspection report are derived."
+  ],
+  "base_import_result": {
+    "errors": 0,
+    "warnings": [
+      "solid 'Body2': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 6.090e-2 mm)"
+    ]
+  },
+  "project_integration": {
+    "project": "../../michelaingelo.sc",
+    "component": "SO100 follower arm - unmounted reference",
+    "base_component": "Base_08q",
+    "source_file": "step/follower/SO_5DOF_ARM100_Assembly.step",
+    "placement_mm": [
+      400,
+      0,
+      0
+    ],
+    "source_pose": "Source folded joint pose retained; whole assembly oriented upright, facing the platform (-X)",
+    "offset_parameter": {
+      "name": "so100_reference_x",
+      "expression": "base_d / 2 + 175 mm",
+      "value_mm": 400
+    },
+    "named_views": [
+      "Base and SO100 reference",
+      "SO100 reference close-up"
+    ],
+    "placed_body_count": 26,
+    "closed_body_count": 25,
+    "total_volume_mm3": 4820773.917452926,
+    "failed_timeline_features": 0,
+    "base_sketches_fully_constrained": 3,
+    "notes": [
+      "Seven existing base and fixing-reference solids retain their previous geometry.",
+      "The arm import retains the assembly_import_warnings listed above, including one open surface.",
+      "Carrier, mounting adapter and usable carving envelope remain to be designed."
+    ],
+    "source_axis_mapping": {
+      "X": "-project Y",
+      "Y": "+project Z",
+      "Z": "-project X"
+    },
+    "mounting_plane_z_mm": 0,
+    "arm_base_bbox_mm": {
+      "max": [
+        416.0000000025911,
+        55.4625,
+        74.00000000000004
+      ],
+      "min": [
+        329,
+        -55.4625,
+        -1.4311468676808703e-14
+      ]
+    },
+    "offset_parameter_check": "Trial 410 mm moved the mounting base 10 mm along project X only; restored to 400 mm"
+  }
+}

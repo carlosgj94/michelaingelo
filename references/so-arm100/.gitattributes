@@ -1,0 +1,3 @@
+# Preserve upstream CAD bytes and omit large text diffs.
+*.step binary
+*.STL binary

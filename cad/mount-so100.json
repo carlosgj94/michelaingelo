@@ -1,0 +1,54 @@
+{
+  "commands": [
+    {
+      "command": "occurrence.move",
+      "params": {
+        "occurrence": "SO100 follower arm - unmounted reference:1",
+        "to_matrix": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -251.5,
+          0,
+          1,
+          0,
+          144
+        ],
+        "move_grounded": true
+      }
+    },
+    {
+      "command": "component.rename",
+      "params": {
+        "component": "SO100 follower arm - unmounted reference",
+        "name": "SO100 follower arm - mounted reference"
+      }
+    },
+    {
+      "command": "joint.as_built",
+      "params": {
+        "type": "rigid",
+        "a": "RT01 - arm support bridge:1",
+        "b": "SO100 follower arm - mounted reference:1",
+        "at": {
+          "occurrence": "RT01 - arm support bridge:1",
+          "point": [
+            0,
+            -224,
+            144
+          ],
+          "z": [
+            0,
+            0,
+            1
+          ]
+        },
+        "name": "SO100 fixed bridge mount"
+      }
+    }
+  ]
+}

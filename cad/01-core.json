@@ -1,0 +1,1580 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "RT01 - stationary core",
+        "grounded": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_r",
+        "expression": "160 mm",
+        "comment": "Platter radius; validated range 150\u2013160 mm. Purchased core stays fixed.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_fit",
+        "expression": "0.30 mm",
+        "comment": "Printed cylindrical clearance DIAMETRAL; coupon range 0.20\u20130.40 mm.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_seam",
+        "expression": "0.40 mm",
+        "comment": "Total printed section seam gap; 0.30\u20130.60 mm, seal after assembly.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_m3",
+        "expression": "3.4 mm",
+        "comment": "Printed M3 clearance; calibrate coupon.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_m4",
+        "expression": "4.5 mm",
+        "comment": "Printed M4 clearance; calibrate coupon.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_m5",
+        "expression": "5.5 mm",
+        "comment": "Printed M5 clearance; calibrate coupon.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_m6",
+        "expression": "6.6 mm",
+        "comment": "Printed M6 clearance; calibrate coupon.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_nut5",
+        "expression": "8.4 mm",
+        "comment": "M5 hex pocket across flats; validate nut and coupon.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_nut6",
+        "expression": "10.4 mm",
+        "comment": "M6 hex pocket across flats; validate nut and coupon.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_motor_l",
+        "expression": "80 mm",
+        "comment": "Motor plus encoder reserved length; range 60\u201380 mm.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_insert",
+        "expression": "4.0 mm",
+        "comment": "RX-M3x5.7 nominal insert pilot; verify printed coupon before installing.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 164,
+        "width": 184,
+        "height": 8,
+        "corner": [
+          -82,
+          -82,
+          4
+        ],
+        "operation": "new",
+        "name": "001 M01 aluminium base plate",
+        "body_name": "M01 aluminium base plate"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          -64,
+          -64,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "002 M01 aluminium base plate bench fixing",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          -64,
+          64,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "003 M01 aluminium base plate bench fixing",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          64,
+          -64,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "004 M01 aluminium base plate bench fixing",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          64,
+          64,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "005 M01 aluminium base plate bench fixing",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 10,
+        "base": [
+          66,
+          0,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "006 M01 aluminium base plate M6 tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 10,
+        "base": [
+          -66,
+          0,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "007 M01 aluminium base plate M6 tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 10,
+        "base": [
+          36,
+          -58,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "008 M01 aluminium base plate M6 tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 10,
+        "base": [
+          -36,
+          -58,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "009 M01 aluminium base plate M6 tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 10,
+        "base": [
+          -52,
+          18,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "010 M01 aluminium base plate M5 cartridge tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 10,
+        "base": [
+          52,
+          18,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "011 M01 aluminium base plate M5 cartridge tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 10,
+        "base": [
+          -70,
+          92,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "012 M01 aluminium base plate M5 cartridge tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 10,
+        "base": [
+          70,
+          92,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "013 M01 aluminium base plate M5 cartridge tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 10,
+        "base": [
+          72,
+          20,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "014 M01 aluminium base plate M5 motor-pod tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 10,
+        "base": [
+          72,
+          48,
+          3
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "015 M01 aluminium base plate M5 motor-pod tap drill",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 6.0,
+        "width": 6.6,
+        "height": 5.5,
+        "corner": [
+          -56.0,
+          28.2,
+          7.5
+        ],
+        "operation": "cut",
+        "name": "016 adjustment slot web",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          -56.0,
+          31.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "017 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          -50.0,
+          31.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "018 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 6.0,
+        "width": 6.6,
+        "height": 5.5,
+        "corner": [
+          -56.0,
+          76.2,
+          7.5
+        ],
+        "operation": "cut",
+        "name": "019 adjustment slot web",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          -56.0,
+          79.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "020 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          -50.0,
+          79.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "021 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 6.0,
+        "width": 6.6,
+        "height": 5.5,
+        "corner": [
+          50.0,
+          28.2,
+          7.5
+        ],
+        "operation": "cut",
+        "name": "022 adjustment slot web",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          50.0,
+          31.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "023 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          56.0,
+          31.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "024 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 6.0,
+        "width": 6.6,
+        "height": 5.5,
+        "corner": [
+          50.0,
+          76.2,
+          7.5
+        ],
+        "operation": "cut",
+        "name": "025 adjustment slot web",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          50.0,
+          79.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "026 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5.5,
+        "base": [
+          56.0,
+          79.5,
+          7.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "027 M01 aluminium base plate adjustment slot end",
+        "targets": [
+          "M01 aluminium base plate"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 4,
+        "base": [
+          -64,
+          -64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "028 M03 metal bench spacer",
+        "body_name": "M03 metal bench spacer"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": "(4)+2 mm",
+        "base": [
+          -64,
+          -64,
+          "(0)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "029 M03 metal bench spacer bore",
+        "targets": [
+          "M03 metal bench spacer"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 4,
+        "base": [
+          -64,
+          64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "030 M04 metal bench spacer",
+        "body_name": "M04 metal bench spacer"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": "(4)+2 mm",
+        "base": [
+          -64,
+          64,
+          "(0)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "031 M04 metal bench spacer bore",
+        "targets": [
+          "M04 metal bench spacer"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 4,
+        "base": [
+          64,
+          -64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "032 M05 metal bench spacer",
+        "body_name": "M05 metal bench spacer"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": "(4)+2 mm",
+        "base": [
+          64,
+          -64,
+          "(0)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "033 M05 metal bench spacer bore",
+        "targets": [
+          "M05 metal bench spacer"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 4,
+        "base": [
+          64,
+          64,
+          0
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "034 M06 metal bench spacer",
+        "body_name": "M06 metal bench spacer"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": "(4)+2 mm",
+        "base": [
+          64,
+          64,
+          "(0)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "035 M06 metal bench spacer bore",
+        "targets": [
+          "M06 metal bench spacer"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 70,
+        "base": [
+          66,
+          0,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "036 M11 steel compression tube",
+        "body_name": "M11 steel compression tube"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.2,
+        "height": "(70)+2 mm",
+        "base": [
+          66,
+          0,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "037 M11 steel compression tube bore",
+        "targets": [
+          "M11 steel compression tube"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 22,
+        "height": 69.5,
+        "base": [
+          66,
+          0,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "038 P11 column sleeve",
+        "body_name": "P11 column sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "10 mm+rt_fit",
+        "height": "(69.5)+2 mm",
+        "base": [
+          66,
+          0,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "039 P11 column sleeve bore",
+        "targets": [
+          "P11 column sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 70,
+        "base": [
+          -66,
+          0,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "040 M12 steel compression tube",
+        "body_name": "M12 steel compression tube"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.2,
+        "height": "(70)+2 mm",
+        "base": [
+          -66,
+          0,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "041 M12 steel compression tube bore",
+        "targets": [
+          "M12 steel compression tube"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 22,
+        "height": 69.5,
+        "base": [
+          -66,
+          0,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "042 P12 column sleeve",
+        "body_name": "P12 column sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "10 mm+rt_fit",
+        "height": "(69.5)+2 mm",
+        "base": [
+          -66,
+          0,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "043 P12 column sleeve bore",
+        "targets": [
+          "P12 column sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 70,
+        "base": [
+          36,
+          -58,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "044 M13 steel compression tube",
+        "body_name": "M13 steel compression tube"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.2,
+        "height": "(70)+2 mm",
+        "base": [
+          36,
+          -58,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "045 M13 steel compression tube bore",
+        "targets": [
+          "M13 steel compression tube"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 22,
+        "height": 69.5,
+        "base": [
+          36,
+          -58,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "046 P13 column sleeve",
+        "body_name": "P13 column sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "10 mm+rt_fit",
+        "height": "(69.5)+2 mm",
+        "base": [
+          36,
+          -58,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "047 P13 column sleeve bore",
+        "targets": [
+          "P13 column sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 70,
+        "base": [
+          -36,
+          -58,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "048 M14 steel compression tube",
+        "body_name": "M14 steel compression tube"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.2,
+        "height": "(70)+2 mm",
+        "base": [
+          -36,
+          -58,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "049 M14 steel compression tube bore",
+        "targets": [
+          "M14 steel compression tube"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 22,
+        "height": 69.5,
+        "base": [
+          -36,
+          -58,
+          12
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "050 P14 column sleeve",
+        "body_name": "P14 column sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "10 mm+rt_fit",
+        "height": "(69.5)+2 mm",
+        "base": [
+          -36,
+          -58,
+          "(12)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "051 P14 column sleeve bore",
+        "targets": [
+          "P14 column sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 156,
+        "height": 8,
+        "base": [
+          0,
+          0,
+          82
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "052 M02 aluminium bearing seat",
+        "body_name": "M02 aluminium bearing seat"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 94,
+        "height": "(8)+2 mm",
+        "base": [
+          0,
+          0,
+          "(82)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "053 M02 aluminium bearing seat bore",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          48.50367545684255,
+          20.090880199167213,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "054 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          20.090880199167216,
+          48.50367545684255,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "055 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          -20.09088019916721,
+          48.50367545684255,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "056 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          -48.50367545684255,
+          20.09088019916722,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "057 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          -48.50367545684256,
+          -20.09088019916721,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "058 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          -20.0908801991672,
+          -48.50367545684256,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "059 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          20.090880199167223,
+          -48.50367545684255,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "060 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 10,
+        "base": [
+          48.50367545684256,
+          -20.090880199167202,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "061 M02 aluminium bearing seat outer bearing bolt",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          66,
+          0,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "062 M02 aluminium bearing seat column clamp",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          -66,
+          0,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "063 M02 aluminium bearing seat column clamp",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          36,
+          -58,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "064 M02 aluminium bearing seat column clamp",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 10,
+        "base": [
+          -36,
+          -58,
+          81
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "065 M02 aluminium bearing seat column clamp",
+        "targets": [
+          "M02 aluminium bearing seat"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 120,
+        "height": 15,
+        "base": [
+          0,
+          0,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "066 B01 bearing outer ring reference",
+        "body_name": "B01 bearing outer ring reference"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 85.2,
+        "height": "(15)+2 mm",
+        "base": [
+          0,
+          0,
+          "(90)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "067 B01 bearing outer ring reference bore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          48.50367545684255,
+          20.090880199167213,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "068 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          48.50367545684255,
+          20.090880199167213,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "069 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          20.090880199167216,
+          48.50367545684255,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "070 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          20.090880199167216,
+          48.50367545684255,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "071 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          -20.09088019916721,
+          48.50367545684255,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "072 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          -20.09088019916721,
+          48.50367545684255,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "073 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          -48.50367545684255,
+          20.09088019916722,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "074 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          -48.50367545684255,
+          20.09088019916722,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "075 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          -48.50367545684256,
+          -20.09088019916721,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "076 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          -48.50367545684256,
+          -20.09088019916721,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "077 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          -20.0908801991672,
+          -48.50367545684256,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "078 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          -20.0908801991672,
+          -48.50367545684256,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "079 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          20.090880199167223,
+          -48.50367545684255,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "080 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          20.090880199167223,
+          -48.50367545684255,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "081 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": 17,
+        "base": [
+          48.50367545684256,
+          -20.090880199167202,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "082 B01 bearing outer ring reference clearance hole",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.5,
+        "height": 6.4,
+        "base": [
+          48.50367545684256,
+          -20.090880199167202,
+          99.6
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "083 B01 bearing outer ring reference bearing counterbore",
+        "targets": [
+          "B01 bearing outer ring reference"
+        ]
+      }
+    }
+  ]
+}

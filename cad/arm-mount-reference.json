@@ -1,0 +1,87 @@
+{
+  "body": "Base_08q (2)",
+  "source_base_bottom_z_mm": 86.19749181814313,
+  "source_base_center_xy_mm": [
+    417.70304049961504,
+    53.18422644276097
+  ],
+  "mounted_base_center_mm": [
+    0,
+    -224,
+    144
+  ],
+  "rotation_about_world_z_deg": -90,
+  "new_root_transform_row_major_3x4": [
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    -251.5,
+    0,
+    1,
+    0,
+    144
+  ],
+  "adapter_holes": [
+    {
+      "source_face_index": 5,
+      "source_axis_origin_mm": [
+        382.92804975202193,
+        80.96072375086466,
+        86.19749181814319
+      ],
+      "source_diameter_mm": 5.0,
+      "plate_hole_center_mm": [
+        27.776497308103686,
+        -189.2250092524069,
+        144
+      ]
+    },
+    {
+      "source_face_index": 6,
+      "source_axis_origin_mm": [
+        452.70304049961504,
+        84.93422644276097,
+        86.19749181814322
+      ],
+      "source_diameter_mm": 5.000000000000001,
+      "plate_hole_center_mm": [
+        31.75,
+        -259.0,
+        144
+      ]
+    },
+    {
+      "source_face_index": 16,
+      "source_axis_origin_mm": [
+        382.92804975202193,
+        25.407729134657263,
+        86.19749181814312
+      ],
+      "source_diameter_mm": 4.999999999999993,
+      "plate_hole_center_mm": [
+        -27.77649730810371,
+        -189.2250092524069,
+        144
+      ]
+    },
+    {
+      "source_face_index": 17,
+      "source_axis_origin_mm": [
+        452.70304049961504,
+        21.434226442760973,
+        86.19749181814313
+      ],
+      "source_diameter_mm": 5.000000000000009,
+      "plate_hole_center_mm": [
+        -31.75,
+        -259.0,
+        144
+      ]
+    }
+  ],
+  "note": "Derived from four nominal 5 mm mounting passages in the pinned SO100 STEP. M4 adapter clearance; confirm physical revision and screw seating."
+}

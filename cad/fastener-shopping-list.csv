@@ -1,0 +1,41 @@
+item,installed_quantity,conditional_screw_quantity,note
+EPDM seal washer OD7 ID3.2 x 1 (0.75 compressed),4,0,No spares included; provisional interfaces per register
+M3 DIN 985 nyloc nut h4,4,0,No spares included; provisional interfaces per register
+M3 washer ID3.2 OD7 x 0.5,24,0,No spares included; provisional interfaces per register
+M3x10 ISO 4762 socket cap,4,4,No spares included; provisional interfaces per register
+M3x10 ISO 7380-1 button,14,0,No spares included; provisional interfaces per register
+M3x12 ISO 7380-1 button,2,0,No spares included; provisional interfaces per register
+M3x16 DIN 7991 90-degree countersunk,4,0,No spares included; provisional interfaces per register
+M4 DIN 934 plain nut AF7 h3.2,12,0,No spares included; provisional interfaces per register
+M4 DIN 985 nyloc nut h5,24,0,No spares included; provisional interfaces per register
+M4 fender washer ID4.3 OD12 x 1,4,0,No spares included; provisional interfaces per register
+M4 washer ID4.3 OD9 x 0.8,56,0,No spares included; provisional interfaces per register
+M4x25 ISO 4762 socket cap,16,0,No spares included; provisional interfaces per register
+M4x35 ISO 4762 socket cap,12,4,No spares included; provisional interfaces per register
+M4x95 ISO 4762 socket cap,4,0,No spares included; provisional interfaces per register
+M5 DIN 9021 washer ID5.3 OD15 x 1.2,8,0,No spares included; provisional interfaces per register
+M5 DIN 934 plain nut AF8 h4,24,0,No spares included; provisional interfaces per register
+M5 DIN 985 nyloc nut h5,4,0,No spares included; provisional interfaces per register
+M5 washer ID5.3 OD10 x 1,20,0,No spares included; provisional interfaces per register
+M5x12 DIN 7991 90-degree countersunk,2,0,No spares included; provisional interfaces per register
+M5x16 ISO 4762 socket cap,4,0,No spares included; provisional interfaces per register
+M5x20 ISO 4762 socket cap,12,8,No spares included; provisional interfaces per register
+M5x25 ISO 4762 socket cap,8,8,No spares included; provisional interfaces per register
+M5x25 ISO 7380-1 button,8,0,No spares included; provisional interfaces per register
+M5x45 ISO 4762 socket cap,4,4,No spares included; provisional interfaces per register
+M5x65 ISO 4762 socket cap,4,0,No spares included; provisional interfaces per register
+M6 DIN 934 plain nut AF10 h5,4,0,No spares included; provisional interfaces per register
+M6 DIN 985 nyloc nut h6,14,0,No spares included; provisional interfaces per register
+M6 fender washer ID6.6 OD24 x 2,6,0,No spares included; provisional interfaces per register
+M6 small washer ID6.4 OD11 x 1.6,4,0,No spares included; provisional interfaces per register
+M6 washer ID6.6 OD18 x 1.6,22,0,No spares included; provisional interfaces per register
+M6x25 ISO 4762 socket cap,4,0,No spares included; provisional interfaces per register
+M6x90 ISO 4762 socket cap,4,0,No spares included; provisional interfaces per register
+Metal compression shim OD6.5 ID3.4 x 0.75,4,0,No spares included; provisional interfaces per register
+ruthex RX-M3x5.7 heat-set insert,14,0,No spares included; provisional interfaces per register
+M6 bench bolt / F02,4,4,Choose length after measuring T; see register
+M6 bench bolt / F14,2,2,Choose length after measuring T; see register
+M5 bench bolt / F16,4,4,Choose length after measuring T; see register
+M4 bench bolt / F21,4,4,Choose length after measuring T; see register
+M6 bench bolt / F23,4,4,Choose length after measuring T; see register
+"Steel backing strip 40x136x3, 2x Ø6.6 holes96 apart",2,0,"F23; fabrication drawing, not placed at an invented bench thickness"

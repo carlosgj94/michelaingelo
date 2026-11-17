@@ -1,0 +1,930 @@
+{
+  "design": "RT-01",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "M01 aluminium base plate",
+      "kind": "metal",
+      "material": "Aluminium, machined datum",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M03 metal bench spacer",
+      "kind": "purchased",
+      "material": "Metal spacer",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M04 metal bench spacer",
+      "kind": "purchased",
+      "material": "Metal spacer",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M05 metal bench spacer",
+      "kind": "purchased",
+      "material": "Metal spacer",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M06 metal bench spacer",
+      "kind": "purchased",
+      "material": "Metal spacer",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M11 steel compression tube",
+      "kind": "purchased",
+      "material": "Steel tube, cut square",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P11 column sleeve",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M12 steel compression tube",
+      "kind": "purchased",
+      "material": "Steel tube, cut square",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P12 column sleeve",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M13 steel compression tube",
+      "kind": "purchased",
+      "material": "Steel tube, cut square",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P13 column sleeve",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M14 steel compression tube",
+      "kind": "purchased",
+      "material": "Steel tube, cut square",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P14 column sleeve",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M02 aluminium bearing seat",
+      "kind": "metal",
+      "material": "Aluminium, machined datum",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B01 bearing outer ring reference",
+      "kind": "purchased",
+      "material": "RU85-size bearing envelope",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Ring split is illustrative; verify purchased variant."
+    },
+    {
+      "name": "P20 worm cartridge sled",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P21 worm bearing block left",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "notes": "Bearing pocket opens upward; calibrate slip fit with coupon."
+    },
+    {
+      "name": "P22 worm bearing retainer left",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B02 worm support bearing left",
+      "kind": "purchased",
+      "material": "7202 bearing envelope",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P21 worm bearing block right",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "notes": "Bearing pocket opens upward; calibrate slip fit with coupon."
+    },
+    {
+      "name": "P22 worm bearing retainer right",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B02 worm support bearing right",
+      "kind": "purchased",
+      "material": "7202 bearing envelope",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B03 worm shaft reference",
+      "kind": "purchased",
+      "material": "Steel shaft machining reference",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Key, shoulders, locknuts and preload stack require fabrication drawing."
+    },
+    {
+      "name": "B04 duplex worm envelope",
+      "kind": "purchased",
+      "material": "KHK KWGDL2-R1 reference",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Finish bore 15 mm proposed. Tooth envelope, not meshing tooth CAD."
+    },
+    {
+      "name": "B05 clamp coupling reference",
+      "kind": "purchased",
+      "material": "Metal coupling 15/5 mm envelope",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P23 motor-pod foundation",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Flat underside on bed; rests continuously on M40 metal sole. Insert captive nuts before fitting sole."
+    },
+    {
+      "name": "P24 NEMA17 motor bracket",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": "Print L-shaped side on bed; clean motor pilot after support removal."
+    },
+    {
+      "name": "B06 NEMA17 motor and encoder envelope",
+      "kind": "purchased",
+      "material": "Matched closed-loop NEMA17, envelope",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P25 home sensor bracket",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        90,
+        -45,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B07 output encoder reserved volume",
+      "kind": "space",
+      "material": "Output encoder keep-out",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Optional encoder; mounting/shaft interface not yet selected."
+    },
+    {
+      "name": "B10 bearing inner ring reference",
+      "kind": "purchased",
+      "material": "RU85-size bearing envelope",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B11 duplex wheel envelope",
+      "kind": "purchased",
+      "material": "KHK AGDL2-40R1 reference",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Four M5 hub holes require secondary machining; tooth blank only."
+    },
+    {
+      "name": "P30 output hub",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Flange face on bed; metal compression sleeves through neck."
+    },
+    {
+      "name": "B12 steel home target",
+      "kind": "purchased",
+      "material": "Steel home flag, sensor-dependent",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M21 hub compression sleeve",
+      "kind": "purchased",
+      "material": "Steel spacer tube",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M22 hub compression sleeve",
+      "kind": "purchased",
+      "material": "Steel spacer tube",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M23 hub compression sleeve",
+      "kind": "purchased",
+      "material": "Steel spacer tube",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M24 hub compression sleeve",
+      "kind": "purchased",
+      "material": "Steel spacer tube",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P31 platter quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly."
+    },
+    {
+      "name": "P32 platter quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly."
+    },
+    {
+      "name": "P33 platter quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly."
+    },
+    {
+      "name": "P34 platter quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Work face on bed; seal quadrant seams after assembly."
+    },
+    {
+      "name": "P41 fixed housing quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces."
+    },
+    {
+      "name": "P42 fixed housing quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces."
+    },
+    {
+      "name": "P43 fixed housing quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces."
+    },
+    {
+      "name": "P44 fixed housing quadrant",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support external gutter underside; keep supports away from gasket faces."
+    },
+    {
+      "name": "P45 seam backing strip 1",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P45 seam backing strip 2",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P45 seam backing strip 3",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P45 seam backing strip 4",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P46 motor service hood",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "notes": "Seal curved mating edge; remove hood independently."
+    },
+    {
+      "name": "B20 core static gasket",
+      "kind": "purchased",
+      "material": "EPDM 2 mm, compressed 25%",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B25 motor hood gasket",
+      "kind": "purchased",
+      "material": "EPDM 2 mm compressed to 1.5 mm; RTV at curved transition",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P50 electronics service box",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Support underside of inward top rim; keep top gasket land clean."
+    },
+    {
+      "name": "M30 driver heat spreader",
+      "kind": "metal",
+      "material": "Aluminium heat spreader, exposed underside",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B21 heat spreader gasket",
+      "kind": "purchased",
+      "material": "Closed-cell gasket 1 mm compressed to 0.75 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M31 heat-spreader compression stop",
+      "kind": "purchased",
+      "material": "Metal shim washer 0.75 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M32 heat-spreader compression stop",
+      "kind": "purchased",
+      "material": "Metal shim washer 0.75 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M33 heat-spreader compression stop",
+      "kind": "purchased",
+      "material": "Metal shim washer 0.75 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M34 heat-spreader compression stop",
+      "kind": "purchased",
+      "material": "Metal shim washer 0.75 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B22 driver packaging envelope",
+      "kind": "space",
+      "material": "Motor driver keep-out",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Not selected electronics; includes component height, excludes wiring."
+    },
+    {
+      "name": "P51 removable controller tray",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B23 controller packaging envelope",
+      "kind": "space",
+      "material": "Motion controller keep-out",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P52 electronics lid",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B24 lid gasket",
+      "kind": "purchased",
+      "material": "EPDM 2 mm compressed to 1.5 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B26 external heatsink reference",
+      "kind": "purchased",
+      "material": "Aluminium finned heatsink envelope",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "98 x 54 x 18 envelope; final part and sealed mounting need selection."
+    },
+    {
+      "name": "B27 thermal interface pad",
+      "kind": "purchased",
+      "material": "Thermally conductive adhesive pad reference",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P53 electronics foot 1",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P53 electronics foot 2",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P53 electronics foot 3",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "P53 electronics foot 4",
+      "kind": "print",
+      "material": "PETG",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M40 motor support sole",
+      "kind": "metal",
+      "material": "Aluminium 4 mm, flat bench-supported motor sole",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M41 motor anchor compression sleeve",
+      "kind": "purchased",
+      "material": "Steel spacer OD12 ID6.6 x 8 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B41 motor anchor washer",
+      "kind": "purchased",
+      "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M42 motor anchor compression sleeve",
+      "kind": "purchased",
+      "material": "Steel spacer OD12 ID6.6 x 8 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B42 motor anchor washer",
+      "kind": "purchased",
+      "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M50 SO100 arm mounting plate",
+      "kind": "metal",
+      "material": "Aluminium 8 mm, arm adapter with lid-tool access",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "M51 steel side channel left",
+      "kind": "metal",
+      "material": "4 mm welded steel plate, web and two 28 mm flanges",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Weld before finish-machining top datum and drilling matched flanges. Rear stays open."
+    },
+    {
+      "name": "M51 steel side channel right",
+      "kind": "metal",
+      "material": "4 mm welded steel plate, web and two 28 mm flanges",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Weld before finish-machining top datum and drilling matched flanges. Rear stays open."
+    },
+    {
+      "name": "M52 steel front X brace",
+      "kind": "metal",
+      "material": "4 mm steel, weld vertical edges to both side channels",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": "Front shear bracing; fabrication shop to specify welds from actual loads."
+    },
+    {
+      "name": "B51 bridge anchor washer",
+      "kind": "purchased",
+      "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B52 bridge anchor washer",
+      "kind": "purchased",
+      "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B53 bridge anchor washer",
+      "kind": "purchased",
+      "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    },
+    {
+      "name": "B54 bridge anchor washer",
+      "kind": "purchased",
+      "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "notes": ""
+    }
+  ]
+}

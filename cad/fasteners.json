@@ -1,0 +1,420 @@
+{
+  "design": "RT-01",
+  "revision": 3,
+  "units": "mm",
+  "date": "2026-11-17",
+  "status": "Prototype register; not a complete order release",
+  "bench_thickness_symbol": "T",
+  "excludes": "All purchased-arm internal screws; includes four arm base attachments",
+  "rows": [
+    {
+      "id": "F01",
+      "joint": "Core columns: M02 / metal tubes / M01",
+      "quantity": 4,
+      "thread": "M6",
+      "pitch_mm": 1,
+      "length_mm": 90,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M6 small washer ID6.4 OD11 x 1.6": 1
+      },
+      "stack_and_assembly": "Seat Z91.6; tip Z1.6. Seat 8 + tube 70 + washer 1.6; 8 mm tapped M01 engagement. Bolt tip stays 1.6 above bench. Clamp metal, not P11-14 sleeves.",
+      "location": "(66,0), (-66,0), (36,-58), (-36,-58)",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F02",
+      "joint": "Core to bench",
+      "quantity": 4,
+      "thread": "M6",
+      "pitch_mm": 1,
+      "length_mm": null,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M6 washer ID6.6 OD18 x 1.6": 1,
+        "M6 fender washer ID6.6 OD24 x 2": 1,
+        "M6 DIN 985 nyloc nut h6": 1
+      },
+      "stack_and_assembly": "L >= T + 23.6; round up to next available 5 mm. Includes core/spacer 12, washers 3.6, nut 6, two pitches 2. P20 has \u00d825 head access openings over Y+64; tighten these before the worm supports are fitted. Nominal head top19.6 is0.4 below blocks.",
+      "location": "X +/-64, Y +/-64",
+      "status": "Bench thickness required"
+    },
+    {
+      "id": "F03",
+      "joint": "Outer bearing to M02",
+      "quantity": 8,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 25,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M5 washer ID5.3 OD10 x 1": 1,
+        "M5 DIN 934 plain nut AF8 h4": 1
+      },
+      "stack_and_assembly": "Head seat Z99.6; tip74.6; underside washer81-82, nut77-81. 2.4 mm projection. No washer in bearing head counterbore. Fit nuts before enclosing the core.",
+      "location": "PCD105, phase22.5 deg",
+      "status": "Confirm purchased bearing drawing"
+    },
+    {
+      "id": "F04",
+      "joint": "P30 to inner bearing",
+      "quantity": 8,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 20,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {},
+      "stack_and_assembly": "Head seat110, tip90: 15 mm thread into bearing envelope. No washer in recessed head. Confirm actual ring tapping and supplier screw class before ordering.",
+      "location": "PCD65, phase0 deg",
+      "status": "Confirm purchased bearing drawing"
+    },
+    {
+      "id": "F05",
+      "joint": "P30 metal sleeves to wheel",
+      "quantity": 4,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 45,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {},
+      "stack_and_assembly": "Head seat110; sleeve36 down to74; tip65 gives 9 mm engagement and 3 mm to blind-hole bottom62. M5x50 is too long. No head washer.",
+      "location": "PCD30 at cardinal points",
+      "status": "Confirm wheel machining"
+    },
+    {
+      "id": "F06",
+      "joint": "Four platter quadrants to P30",
+      "quantity": 8,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 25,
+      "head": "ISO 7380-1 button",
+      "hardware_per_joint": {
+        "M5 DIN 934 plain nut AF8 h4": 1
+      },
+      "stack_and_assembly": "Seat125, head <=2.75 high in 3 mm recess. Nut106.4-110.4; tip100. Install nuts before hub assembly. No head washer.",
+      "location": "( +/-65, +/-22 ) and ( +/-22, +/-65 )",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F07",
+      "joint": "Worm sled to M01",
+      "quantity": 4,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 16,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M5 washer ID5.3 OD10 x 1": 1
+      },
+      "stack_and_assembly": "Seat21, tip5; 7 mm engagement in M01. Washer bridges 5.5 mm slot width. Adjust cartridge before tightening; screws now outside bearing-block/cap tool paths.",
+      "location": "Front X +/-52, Y18; rear X +/-70, Y92",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F08",
+      "joint": "Worm blocks to sled",
+      "quantity": 4,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 65,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M5 washer ID5.3 OD10 x 1": 1,
+        "M5 DIN 934 plain nut AF8 h4": 1
+      },
+      "stack_and_assembly": "Washer seats73.5, head74.5-79.5 in new recess; tip9.5. Captive nut12.4-16.4. Base tip relief slots reach7.5 and allow +/-3 axial adjustment. Tighten BEFORE fitting M02; insert nuts before fitting sled.",
+      "location": "X +/-53, Y31.5/79.5",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F09",
+      "joint": "Worm bearing retainer caps",
+      "quantity": 8,
+      "thread": "M4",
+      "pitch_mm": 0.7,
+      "length_mm": 35,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M4 washer ID4.3 OD9 x 0.8": 1,
+        "M4 DIN 934 plain nut AF7 h3.2": 1
+      },
+      "stack_and_assembly": "Cap4 + block26; nut in 4.4 mm recess on inside face. Bolt extends4.2 past inner block face. Nut pockets take plain nuts, not nylocs.",
+      "location": "Both X faces; Y32.5/78.5, Z27/73",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F10",
+      "joint": "Motor bracket to P23",
+      "quantity": 4,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 20,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M5 washer ID5.3 OD10 x 1": 1,
+        "M5 DIN 934 plain nut AF8 h4": 1
+      },
+      "stack_and_assembly": "Seat21, tip1. Nut4.4-8.4. M40 through-reliefs clear the tips, which remain1 above bench. Fit captive nuts before sole.",
+      "location": "X116/138, Y32/79",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F11",
+      "joint": "NEMA17 face to bracket",
+      "quantity": 4,
+      "thread": "M3",
+      "pitch_mm": 0.5,
+      "length_mm": 10,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M3 washer ID3.2 OD7 x 0.5": 1
+      },
+      "stack_and_assembly": "Bracket6 + washer0.5; motor thread penetration3.5. Confirm permissible depth with selected motor.",
+      "location": "AxisX; Y40/71, Z34.5/65.5",
+      "status": "Confirm motor SKU"
+    },
+    {
+      "id": "F12",
+      "joint": "Home bracket to M02",
+      "quantity": 2,
+      "thread": "M3",
+      "pitch_mm": 0.5,
+      "length_mm": 12,
+      "head": "ISO 7380-1 button",
+      "hardware_per_joint": {
+        "M3 washer ID3.2 OD7 x 0.5": 1
+      },
+      "stack_and_assembly": "Foot6 + washer0.5, thread engagement5.5. Head top98.15 below rotating platter screw tips100. Mount now rotated -45 deg away from column bolt.",
+      "location": "(-70,+/-6) rotated -45 deg about table centre",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F13",
+      "joint": "M40 sole to M01",
+      "quantity": 2,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": 12,
+      "head": "DIN 7991 90-degree countersunk",
+      "hardware_per_joint": {},
+      "stack_and_assembly": "Overall length includes head. Head recessed ~0.2 from underside Z0; tip~12.2, full 8 mm thread in M01. P20 has 1 mm underside tip-relief slots allowing +/-3 axial adjustment. Head diameter <=10; no washer. Install from underside before bench anchoring.",
+      "location": "X72, Y20/48",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F14",
+      "joint": "Motor pod to bench",
+      "quantity": 2,
+      "thread": "M6",
+      "pitch_mm": 1,
+      "length_mm": null,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M6 washer ID6.6 OD18 x 1.6": 1,
+        "M6 fender washer ID6.6 OD24 x 2": 1,
+        "M6 DIN 985 nyloc nut h6": 1
+      },
+      "stack_and_assembly": "L >= T + 23.6. Sole4 + metal sleeve8; same remaining stack as F02. Existing B41-42 washers are included, not additional.",
+      "location": "X220, Y35/77",
+      "status": "Bench thickness required"
+    },
+    {
+      "id": "F15",
+      "joint": "Fixed housing seam strips",
+      "quantity": 16,
+      "thread": "M4",
+      "pitch_mm": 0.7,
+      "length_mm": 25,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M4 washer ID4.3 OD9 x 0.8": 2,
+        "M4 DIN 985 nyloc nut h5": 1
+      },
+      "stack_and_assembly": "Two printed flanges total16; washers1.6 + nut5; tip projection2.4. Use low clamp force. These are M4, not the old BOM M3.",
+      "location": "Four seams; two holes at each of Z25 and90",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F16",
+      "joint": "Fixed housing to bench",
+      "quantity": 4,
+      "thread": "M5",
+      "pitch_mm": 0.8,
+      "length_mm": null,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M5 DIN 9021 washer ID5.3 OD15 x 1.2": 2,
+        "M5 DIN 985 nyloc nut h5": 1
+      },
+      "stack_and_assembly": "L >= T + 11.5 (floor2.5, washers2.4, nut5, two pitches1.6). Nonstructural cover clamping only.",
+      "location": "(105,105) rotated0/90/180/270 deg",
+      "status": "Bench thickness required"
+    },
+    {
+      "id": "F17",
+      "joint": "Motor hood to foundation",
+      "quantity": 4,
+      "thread": "M4",
+      "pitch_mm": 0.7,
+      "length_mm": 95,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M4 washer ID4.3 OD9 x 0.8": 1,
+        "M4 DIN 934 plain nut AF7 h3.2": 1
+      },
+      "stack_and_assembly": "Seat96.3; tip1.3. Nut4.4-7.6. Sole holes clear tips. Length95 is non-preferred: cut/deburr a100 mm screw to95 if unavailable; retain >=12 mm threaded tip.",
+      "location": "X171/225, Y21/91",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F18",
+      "joint": "Electronics lid",
+      "quantity": 10,
+      "thread": "M3",
+      "pitch_mm": 0.5,
+      "length_mm": 10,
+      "head": "ISO 7380-1 button",
+      "hardware_per_joint": {
+        "M3 washer ID3.2 OD7 x 0.5": 1,
+        "ruthex RX-M3x5.7 heat-set insert": 1
+      },
+      "stack_and_assembly": "Seat108.5; tip98.5; insert flush104 down98.3, engagement5.5. 7 mm pilot depth. Fit inserts flush and coupon-check retention.",
+      "location": "Ten lid points; matching \u00d88 access holes in M50",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F19",
+      "joint": "Controller tray",
+      "quantity": 4,
+      "thread": "M3",
+      "pitch_mm": 0.5,
+      "length_mm": 10,
+      "head": "ISO 7380-1 button",
+      "hardware_per_joint": {
+        "M3 washer ID3.2 OD7 x 0.5": 1,
+        "ruthex RX-M3x5.7 heat-set insert": 1
+      },
+      "stack_and_assembly": "Seat82.5; tip72.5. Insert79 down73.3, engagement5.7; tip remains1.5 above pilot floor71.",
+      "location": "X +/-65, Y-258/-190",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F20",
+      "joint": "Heat spreader to box floor",
+      "quantity": 4,
+      "thread": "M3",
+      "pitch_mm": 0.5,
+      "length_mm": 16,
+      "head": "DIN 7991 90-degree countersunk",
+      "hardware_per_joint": {
+        "M3 washer ID3.2 OD7 x 0.5": 1,
+        "M3 DIN 985 nyloc nut h4": 1,
+        "EPDM seal washer OD7 ID3.2 x 1 (0.75 compressed)": 1,
+        "Metal compression shim OD6.5 ID3.4 x 0.75": 1
+      },
+      "stack_and_assembly": "Head diameter <=6, recessed ~0.2 below spreader top35.75. Tip~19.55, nut22.75-26.75. Seal washer and metal washer below floor28; shim above floor32. Shim M31-34 counted here. Keep screw flush below driver envelope.",
+      "location": "X +/-55.5, Y-258.5/-189.5",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F21",
+      "joint": "Electronics feet and box to bench",
+      "quantity": 4,
+      "thread": "M4",
+      "pitch_mm": 0.7,
+      "length_mm": null,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M4 washer ID4.3 OD9 x 0.8": 1,
+        "M4 fender washer ID4.3 OD12 x 1": 1,
+        "M4 DIN 985 nyloc nut h5": 1
+      },
+      "stack_and_assembly": "L >= T + 40.2 (feet28 + floor4 + washers1.8 + nut5 + two pitches1.4). Install before electronics; avoid compressing PETG.",
+      "location": "X +/-75, Y-271/-177",
+      "status": "Bench thickness required"
+    },
+    {
+      "id": "F22",
+      "joint": "M50 to steel stand top flanges",
+      "quantity": 4,
+      "thread": "M6",
+      "pitch_mm": 1,
+      "length_mm": 25,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M6 washer ID6.6 OD18 x 1.6": 2,
+        "M6 DIN 985 nyloc nut h6": 1
+      },
+      "stack_and_assembly": "Plate8 + flange4 + washers3.2 + nut6; projection3.8. Head seat145.6, tip120.6. Existing B51-54 top washers are included.",
+      "location": "X +/-98, Y-272/-176",
+      "status": "Defined geometry"
+    },
+    {
+      "id": "F23",
+      "joint": "Steel stand bottom flanges to bench",
+      "quantity": 4,
+      "thread": "M6",
+      "pitch_mm": 1,
+      "length_mm": null,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M6 washer ID6.6 OD18 x 1.6": 2,
+        "M6 DIN 985 nyloc nut h6": 1
+      },
+      "stack_and_assembly": "L >= T + 18.2 (flange4, washers3.2, backing strip3, nut6, two pitches2). Two shared steel strips40x136x3 under bench, holes96 apart.",
+      "location": "X +/-98, Y-272/-176",
+      "status": "Bench thickness required"
+    },
+    {
+      "id": "F24",
+      "joint": "SO100 base to M50",
+      "quantity": 4,
+      "thread": "M4",
+      "pitch_mm": 0.7,
+      "length_mm": 35,
+      "head": "ISO 4762 socket cap",
+      "hardware_per_joint": {
+        "M4 washer ID4.3 OD9 x 0.8": 2,
+        "M4 DIN 985 nyloc nut h5": 1
+      },
+      "stack_and_assembly": "Nominal imported foot16 + plate8 + washers1.6 + nut5; projection4.4. Head seat160.8, tip125.8. Verify owned arm revision and flat washer seating; arm internal screws excluded.",
+      "location": "Measured nonrectangular four-hole pattern in arm-mount-reference.json",
+      "status": "Verify physical arm foot"
+    }
+  ],
+  "pending": [
+    {
+      "interface": "Workholding",
+      "remaining": "Four M6 DIN 934 captive nuts AF10 h5 are specified in P30; fixture screw lengths, washers and clamps depend on the fixture. Do not bottom against fixed core."
+    },
+    {
+      "interface": "Worm shaft retention",
+      "remaining": "Key sizes, shaft shoulders, bearing preload locknut(s), spacers and retaining screws require a finished shaft drawing; quantity/length unknown."
+    },
+    {
+      "interface": "Coupling",
+      "remaining": "Clamping screws supplied with selected coupling; quantity and torque unknown until SKU is selected."
+    },
+    {
+      "interface": "Home sensor and target",
+      "remaining": "Two sensor jam nuts normally supplied with sensor; confirm thread (often M8x1). Steel target retention/adhesive and sensor tip clearance remain to select."
+    },
+    {
+      "interface": "Driver / controller",
+      "remaining": "Board mounting screw and standoff patterns unselected. The 14 lid/tray screws do not fasten the boards."
+    },
+    {
+      "interface": "Heat sink",
+      "remaining": "B27 represents thermal adhesive pad, not verified structural retention. Select rated adhesive or mechanical retention and any fasteners with final heat sink."
+    },
+    {
+      "interface": "Optional encoder / external devices",
+      "remaining": "Encoder mounting, PSU, E-stop and cable clamps depend on selected devices. Not included in fixed quantities."
+    },
+    {
+      "interface": "Stand fabrication",
+      "remaining": "Two side channels and front brace are welded, not screwed together. Fabricator must specify weld size/process, finish datums and inspect distortion. No unlisted hidden frame screws."
+    }
+  ]
+}

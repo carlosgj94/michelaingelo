@@ -1,0 +1,3047 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "RT01 - rotating table",
+        "grounded": false
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 84.8,
+        "height": 15,
+        "base": [
+          0,
+          0,
+          90
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "233 B10 bearing inner ring reference",
+        "body_name": "B10 bearing inner ring reference"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 55,
+        "height": "(15)+2 mm",
+        "base": [
+          0,
+          0,
+          "(90)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "234 B10 bearing inner ring reference bore",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          32.5,
+          0.0,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "235 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          22.980970388562795,
+          22.980970388562792,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "236 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          1.990051048614449e-15,
+          32.5,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "237 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          -22.980970388562792,
+          22.980970388562795,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "238 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          -32.5,
+          3.980102097228898e-15,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "239 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          -22.9809703885628,
+          -22.980970388562792,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "240 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          -5.970153145843346e-15,
+          -32.5,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "241 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 17,
+        "base": [
+          22.98097038856279,
+          -22.9809703885628,
+          89
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "242 B10 bearing inner ring reference M5 thread envelope",
+        "targets": [
+          "B10 bearing inner ring reference"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 86,
+        "height": 18,
+        "base": [
+          0,
+          0,
+          41
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "243 B11 duplex wheel envelope",
+        "body_name": "B11 duplex wheel envelope"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 45,
+        "height": 15,
+        "base": [
+          0,
+          0,
+          59
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "244 B11 duplex wheel envelope",
+        "targets": [
+          "B11 duplex wheel envelope"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 15,
+        "height": 35,
+        "base": [
+          0,
+          0,
+          40
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "245 B11 duplex wheel envelope clearance hole",
+        "targets": [
+          "B11 duplex wheel envelope"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 13,
+        "base": [
+          15,
+          0,
+          62
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "246 B11 duplex wheel envelope M5 hub attachment tap drill",
+        "targets": [
+          "B11 duplex wheel envelope"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 13,
+        "base": [
+          0,
+          15,
+          62
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "247 B11 duplex wheel envelope M5 hub attachment tap drill",
+        "targets": [
+          "B11 duplex wheel envelope"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 13,
+        "base": [
+          -15,
+          0,
+          62
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "248 B11 duplex wheel envelope M5 hub attachment tap drill",
+        "targets": [
+          "B11 duplex wheel envelope"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.2,
+        "height": 13,
+        "base": [
+          0,
+          -15,
+          62
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "249 B11 duplex wheel envelope M5 hub attachment tap drill",
+        "targets": [
+          "B11 duplex wheel envelope"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 150,
+        "height": 10,
+        "base": [
+          0,
+          0,
+          106
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "250 P30 output hub",
+        "body_name": "P30 output hub"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 76,
+        "height": 2,
+        "base": [
+          0,
+          0,
+          105
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "251 P30 output hub",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 44,
+        "height": 32,
+        "base": [
+          0,
+          0,
+          74
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "252 P30 output hub",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14.8,
+        "height": 8,
+        "base": [
+          0,
+          0,
+          67
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "253 P30 output hub",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "8 mm+rt_fit",
+        "height": 38,
+        "base": [
+          15,
+          0,
+          73
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "254 P30 output hub compression sleeve",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          15,
+          0,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "255 P30 output hub M5x45 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "8 mm+rt_fit",
+        "height": 38,
+        "base": [
+          0,
+          15,
+          73
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "256 P30 output hub compression sleeve",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          0,
+          15,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "257 P30 output hub M5x45 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "8 mm+rt_fit",
+        "height": 38,
+        "base": [
+          -15,
+          0,
+          73
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "258 P30 output hub compression sleeve",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          -15,
+          0,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "259 P30 output hub M5x45 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "8 mm+rt_fit",
+        "height": 38,
+        "base": [
+          0,
+          -15,
+          73
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "260 P30 output hub compression sleeve",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          0,
+          -15,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "261 P30 output hub M5x45 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          32.5,
+          0.0,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "262 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          32.5,
+          0.0,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "263 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          22.980970388562795,
+          22.980970388562792,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "264 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          22.980970388562795,
+          22.980970388562792,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "265 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          1.990051048614449e-15,
+          32.5,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "266 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          1.990051048614449e-15,
+          32.5,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "267 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          -22.980970388562792,
+          22.980970388562795,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "268 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          -22.980970388562792,
+          22.980970388562795,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "269 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          -32.5,
+          3.980102097228898e-15,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "270 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          -32.5,
+          3.980102097228898e-15,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "271 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          -22.9809703885628,
+          -22.980970388562792,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "272 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          -22.9809703885628,
+          -22.980970388562792,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "273 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          -5.970153145843346e-15,
+          -32.5,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "274 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          -5.970153145843346e-15,
+          -32.5,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "275 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 13,
+        "base": [
+          22.98097038856279,
+          -22.9809703885628,
+          104
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "276 P30 output hub inner bearing attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 7,
+        "base": [
+          22.98097038856279,
+          -22.9809703885628,
+          110
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "277 P30 output hub M5x20 recessed head",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          -65,
+          -22,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "278 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -65,
+            -22,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "279 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "279 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "280 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          -22,
+          -65,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "281 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -22,
+            -65,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "282 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "282 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "283 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 12,
+        "base": [
+          -47,
+          -47,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "284 P30 output hub fixture attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -47,
+            -47,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "285 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.000000000000",
+            "(rt_nut6)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.000000000000",
+            "(rt_nut6)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "285 P30 output hub nut pocket profile",
+        "distance": 5.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "286 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          -65,
+          22,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "287 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -65,
+            22,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "288 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "288 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "289 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          -22,
+          65,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "290 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -22,
+            65,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "291 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "291 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "292 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 12,
+        "base": [
+          -47,
+          47,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "293 P30 output hub fixture attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -47,
+            47,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "294 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.000000000000",
+            "(rt_nut6)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.000000000000",
+            "(rt_nut6)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "294 P30 output hub nut pocket profile",
+        "distance": 5.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "295 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          65,
+          -22,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "296 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            65,
+            -22,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "297 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "297 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "298 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          22,
+          -65,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "299 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            22,
+            -65,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "300 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "300 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "301 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 12,
+        "base": [
+          47,
+          -47,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "302 P30 output hub fixture attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            47,
+            -47,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "303 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.000000000000",
+            "(rt_nut6)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.000000000000",
+            "(rt_nut6)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "303 P30 output hub nut pocket profile",
+        "distance": 5.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "304 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          65,
+          22,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "305 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            65,
+            22,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "306 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "306 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "307 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 12,
+        "base": [
+          22,
+          65,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "308 P30 output hub clearance hole",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            22,
+            65,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "309 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.000000000000",
+            "(rt_nut5)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*-0.000000000000",
+            "(rt_nut5)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut5)/sqrt(3)*0.866025403784",
+            "(rt_nut5)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "309 P30 output hub nut pocket profile",
+        "distance": 4.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "310 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 12,
+        "base": [
+          47,
+          47,
+          105
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "311 P30 output hub fixture attachment",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            47,
+            47,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "312 P30 output hub nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.000000000000",
+            "(rt_nut6)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*-0.000000000000",
+            "(rt_nut6)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_nut6)/sqrt(3)*0.866025403784",
+            "(rt_nut6)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "312 P30 output hub nut pocket profile",
+        "distance": 5.4,
+        "operation": "cut",
+        "targets": [
+          "P30 output hub"
+        ],
+        "name": "313 P30 output hub captive nut"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8.3,
+        "height": 2,
+        "base": [
+          -53.740115370177605,
+          53.740115370177605,
+          110
+        ],
+        "axis": [
+          0.7071067811865475,
+          -0.7071067811865475,
+          0
+        ],
+        "operation": "cut",
+        "name": "314 P30 output hub home target recess",
+        "targets": [
+          "P30 output hub"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
+        "base": [
+          -53.740115370177605,
+          53.740115370177605,
+          110
+        ],
+        "axis": [
+          0.7071067811865475,
+          -0.7071067811865475,
+          0
+        ],
+        "operation": "new",
+        "name": "315 B12 steel home target",
+        "body_name": "B12 steel home target"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 36,
+        "base": [
+          15,
+          0,
+          74
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "316 M21 hub compression sleeve",
+        "body_name": "M21 hub compression sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": "(36)+2 mm",
+        "base": [
+          15,
+          0,
+          "(74)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "317 M21 hub compression sleeve bore",
+        "targets": [
+          "M21 hub compression sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 36,
+        "base": [
+          0,
+          15,
+          74
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "318 M22 hub compression sleeve",
+        "body_name": "M22 hub compression sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": "(36)+2 mm",
+        "base": [
+          0,
+          15,
+          "(74)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "319 M22 hub compression sleeve bore",
+        "targets": [
+          "M22 hub compression sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 36,
+        "base": [
+          -15,
+          0,
+          74
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "320 M23 hub compression sleeve",
+        "body_name": "M23 hub compression sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": "(36)+2 mm",
+        "base": [
+          -15,
+          0,
+          "(74)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "321 M23 hub compression sleeve bore",
+        "targets": [
+          "M23 hub compression sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 36,
+        "base": [
+          0,
+          -15,
+          74
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "322 M24 hub compression sleeve",
+        "body_name": "M24 hub compression sleeve"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.5,
+        "height": "(36)+2 mm",
+        "base": [
+          0,
+          -15,
+          "(74)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "323 M24 hub compression sleeve bore",
+        "targets": [
+          "M24 hub compression sleeve"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 12,
+        "base": [
+          0,
+          0,
+          116
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "324 P31 platter quadrant",
+        "body_name": "P31 platter quadrant"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 14,
+        "base": [
+          0,
+          0,
+          103
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "325 tool skirt 0",
+        "body_name": "tool skirt 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r-8 mm",
+        "height": "(14)+2 mm",
+        "base": [
+          0,
+          0,
+          "(103)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "326 tool skirt 0 bore",
+        "targets": [
+          "tool skirt 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P31 platter quadrant",
+        "tools": [
+          "tool skirt 0"
+        ],
+        "operation": "join"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 501,
+        "width": 1000,
+        "height": 300,
+        "corner": [
+          "rt_seam/2-501 mm",
+          -500,
+          -1
+        ],
+        "operation": "cut",
+        "name": "327 quadrant X seam",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 1000,
+        "width": 501,
+        "height": 300,
+        "corner": [
+          -500,
+          "rt_seam/2-501 mm",
+          -1
+        ],
+        "operation": "cut",
+        "name": "328 quadrant Y seam",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": "rt_r*0.375",
+        "width": 12,
+        "height": 19,
+        "corner": [
+          "rt_r*0.5",
+          "rt_r*0.1875",
+          98
+        ],
+        "operation": "join",
+        "name": "329 radial rib A",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": "rt_r*0.375",
+        "height": 19,
+        "corner": [
+          "rt_r*0.1875",
+          "rt_r*0.5",
+          98
+        ],
+        "operation": "join",
+        "name": "330 radial rib B",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          65,
+          22,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "331 P31 platter quadrant clearance hole",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          65,
+          22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "332 P31 platter quadrant flush M5 button head",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          22,
+          65,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "333 P31 platter quadrant clearance hole",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          22,
+          65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "334 P31 platter quadrant flush M5 button head",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 14,
+        "base": [
+          47,
+          47,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "335 P31 platter quadrant M6 fixture point",
+        "targets": [
+          "P31 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P31 platter quadrant"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "0 deg",
+        "name": "336 P31 platter quadrant quadrant placement"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 12,
+        "base": [
+          0,
+          0,
+          116
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "337 P32 platter quadrant",
+        "body_name": "P32 platter quadrant"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 14,
+        "base": [
+          0,
+          0,
+          103
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "338 tool skirt 1",
+        "body_name": "tool skirt 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r-8 mm",
+        "height": "(14)+2 mm",
+        "base": [
+          0,
+          0,
+          "(103)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "339 tool skirt 1 bore",
+        "targets": [
+          "tool skirt 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P32 platter quadrant",
+        "tools": [
+          "tool skirt 1"
+        ],
+        "operation": "join"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 501,
+        "width": 1000,
+        "height": 300,
+        "corner": [
+          "rt_seam/2-501 mm",
+          -500,
+          -1
+        ],
+        "operation": "cut",
+        "name": "340 quadrant X seam",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 1000,
+        "width": 501,
+        "height": 300,
+        "corner": [
+          -500,
+          "rt_seam/2-501 mm",
+          -1
+        ],
+        "operation": "cut",
+        "name": "341 quadrant Y seam",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": "rt_r*0.375",
+        "width": 12,
+        "height": 19,
+        "corner": [
+          "rt_r*0.5",
+          "rt_r*0.1875",
+          98
+        ],
+        "operation": "join",
+        "name": "342 radial rib A",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": "rt_r*0.375",
+        "height": 19,
+        "corner": [
+          "rt_r*0.1875",
+          "rt_r*0.5",
+          98
+        ],
+        "operation": "join",
+        "name": "343 radial rib B",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          65,
+          22,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "344 P32 platter quadrant clearance hole",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          65,
+          22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "345 P32 platter quadrant flush M5 button head",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          22,
+          65,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "346 P32 platter quadrant clearance hole",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          22,
+          65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "347 P32 platter quadrant flush M5 button head",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 14,
+        "base": [
+          47,
+          47,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "348 P32 platter quadrant M6 fixture point",
+        "targets": [
+          "P32 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P32 platter quadrant"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "90 deg",
+        "name": "349 P32 platter quadrant quadrant placement"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 12,
+        "base": [
+          0,
+          0,
+          116
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "350 P33 platter quadrant",
+        "body_name": "P33 platter quadrant"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 14,
+        "base": [
+          0,
+          0,
+          103
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "351 tool skirt 2",
+        "body_name": "tool skirt 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r-8 mm",
+        "height": "(14)+2 mm",
+        "base": [
+          0,
+          0,
+          "(103)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "352 tool skirt 2 bore",
+        "targets": [
+          "tool skirt 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P33 platter quadrant",
+        "tools": [
+          "tool skirt 2"
+        ],
+        "operation": "join"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 501,
+        "width": 1000,
+        "height": 300,
+        "corner": [
+          "rt_seam/2-501 mm",
+          -500,
+          -1
+        ],
+        "operation": "cut",
+        "name": "353 quadrant X seam",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 1000,
+        "width": 501,
+        "height": 300,
+        "corner": [
+          -500,
+          "rt_seam/2-501 mm",
+          -1
+        ],
+        "operation": "cut",
+        "name": "354 quadrant Y seam",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": "rt_r*0.375",
+        "width": 12,
+        "height": 19,
+        "corner": [
+          "rt_r*0.5",
+          "rt_r*0.1875",
+          98
+        ],
+        "operation": "join",
+        "name": "355 radial rib A",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": "rt_r*0.375",
+        "height": 19,
+        "corner": [
+          "rt_r*0.1875",
+          "rt_r*0.5",
+          98
+        ],
+        "operation": "join",
+        "name": "356 radial rib B",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          65,
+          22,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "357 P33 platter quadrant clearance hole",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          65,
+          22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "358 P33 platter quadrant flush M5 button head",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          22,
+          65,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "359 P33 platter quadrant clearance hole",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          22,
+          65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "360 P33 platter quadrant flush M5 button head",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 14,
+        "base": [
+          47,
+          47,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "361 P33 platter quadrant M6 fixture point",
+        "targets": [
+          "P33 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P33 platter quadrant"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "180 deg",
+        "name": "362 P33 platter quadrant quadrant placement"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 12,
+        "base": [
+          0,
+          0,
+          116
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "363 P34 platter quadrant",
+        "body_name": "P34 platter quadrant"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r",
+        "height": 14,
+        "base": [
+          0,
+          0,
+          103
+        ],
+        "axis": "Z",
+        "operation": "new",
+        "name": "364 tool skirt 3",
+        "body_name": "tool skirt 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "2*rt_r-8 mm",
+        "height": "(14)+2 mm",
+        "base": [
+          0,
+          0,
+          "(103)-1 mm"
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "365 tool skirt 3 bore",
+        "targets": [
+          "tool skirt 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P34 platter quadrant",
+        "tools": [
+          "tool skirt 3"
+        ],
+        "operation": "join"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 501,
+        "width": 1000,
+        "height": 300,
+        "corner": [
+          "rt_seam/2-501 mm",
+          -500,
+          -1
+        ],
+        "operation": "cut",
+        "name": "366 quadrant X seam",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 1000,
+        "width": 501,
+        "height": 300,
+        "corner": [
+          -500,
+          "rt_seam/2-501 mm",
+          -1
+        ],
+        "operation": "cut",
+        "name": "367 quadrant Y seam",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": "rt_r*0.375",
+        "width": 12,
+        "height": 19,
+        "corner": [
+          "rt_r*0.5",
+          "rt_r*0.1875",
+          98
+        ],
+        "operation": "join",
+        "name": "368 radial rib A",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": "rt_r*0.375",
+        "height": 19,
+        "corner": [
+          "rt_r*0.1875",
+          "rt_r*0.5",
+          98
+        ],
+        "operation": "join",
+        "name": "369 radial rib B",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          65,
+          22,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "370 P34 platter quadrant clearance hole",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          65,
+          22,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "371 P34 platter quadrant flush M5 button head",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m5",
+        "height": 14,
+        "base": [
+          22,
+          65,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "372 P34 platter quadrant clearance hole",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10.5,
+        "height": 4,
+        "base": [
+          22,
+          65,
+          125
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "373 P34 platter quadrant flush M5 button head",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m6",
+        "height": 14,
+        "base": [
+          47,
+          47,
+          115
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "374 P34 platter quadrant M6 fixture point",
+        "targets": [
+          "P34 platter quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P34 platter quadrant"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "270 deg",
+        "name": "375 P34 platter quadrant quadrant placement"
+      }
+    }
+  ]
+}

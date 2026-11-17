@@ -1,0 +1,795 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "Temporary fit probes",
+        "grounded": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 26,
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          136
+        ],
+        "body_name": "TEST M4 arm shank 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 26,
+        "base": [
+          31.75,
+          -259.0,
+          136
+        ],
+        "body_name": "TEST M4 arm shank 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 26,
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          136
+        ],
+        "body_name": "TEST M4 arm shank 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 26,
+        "base": [
+          -31.75,
+          -259.0,
+          136
+        ],
+        "body_name": "TEST M4 arm shank 4"
+      }
+    },
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "TEST M4 arm shank 1",
+          "TEST M4 arm shank 2",
+          "TEST M4 arm shank 3",
+          "TEST M4 arm shank 4",
+          "Base_08q (2)",
+          "M50 SO100 arm mounting plate"
+        ],
+        "budget_s": 25
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 10,
+        "top_diameter": 5,
+        "height": 2.5,
+        "base": [
+          72,
+          20,
+          0
+        ],
+        "body_name": "TEST M5 recessed head 20"
+      }
+    },
+    {
+      "command": "solid.cone",
+      "params": {
+        "diameter": 10,
+        "top_diameter": 5,
+        "height": 2.5,
+        "base": [
+          72,
+          48,
+          0
+        ],
+        "body_name": "TEST M5 recessed head 48"
+      }
+    },
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "TEST M5 recessed head 20",
+          "TEST M5 recessed head 48",
+          "M40 motor support sole"
+        ],
+        "budget_s": 25
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          -78,
+          -274,
+          110.2
+        ],
+        "body_name": "TEST lid tool 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          78,
+          -274,
+          110.2
+        ],
+        "body_name": "TEST lid tool 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          -78,
+          -174,
+          110.2
+        ],
+        "body_name": "TEST lid tool 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          78,
+          -174,
+          110.2
+        ],
+        "body_name": "TEST lid tool 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          -42,
+          -275,
+          110.2
+        ],
+        "body_name": "TEST lid tool 4"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          -42,
+          -173,
+          110.2
+        ],
+        "body_name": "TEST lid tool 5"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          -79,
+          -224,
+          110.2
+        ],
+        "body_name": "TEST lid tool 6"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          79,
+          -224,
+          110.2
+        ],
+        "body_name": "TEST lid tool 7"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          42,
+          -275,
+          110.2
+        ],
+        "body_name": "TEST lid tool 8"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6,
+        "height": 58,
+        "base": [
+          42,
+          -173,
+          110.2
+        ],
+        "body_name": "TEST lid tool 9"
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "TEST lid tool 0",
+          "TEST lid tool 1",
+          "TEST lid tool 2",
+          "TEST lid tool 3",
+          "TEST lid tool 4",
+          "TEST lid tool 5",
+          "TEST lid tool 6",
+          "TEST lid tool 7",
+          "TEST lid tool 8",
+          "TEST lid tool 9"
+        ],
+        "against": [
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace",
+          "Base_08q",
+          "Base_08q (2)",
+          "Base_08q (3)",
+          "WaveShare_Mounting_Plate_01d",
+          "Rotation_Pitch_08i",
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          "Passive_Horn_01",
+          "STS3215_03a",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "SO_ARM100_08k_116_Square",
+          "SO_ARM100_08k_Mirror",
+          "SO_ARM100_08k_Mirror (2)",
+          "Wrist_Roll_Pitch_08i",
+          "Wrist_Roll_08c",
+          "Moving_Jaw_08d",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "STS3215_03a_Wrist_Roll"
+        ],
+        "clearance": 0
+      }
+    },
+    {
+      "command": "occurrence.move",
+      "params": {
+        "occurrence": "RT01 - electronics lid:1",
+        "translate": [
+          0,
+          0,
+          8
+        ],
+        "move_grounded": true
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "P52 electronics lid",
+          "B24 lid gasket"
+        ],
+        "against": [
+          "M01 aluminium base plate",
+          "M03 metal bench spacer",
+          "M04 metal bench spacer",
+          "M05 metal bench spacer",
+          "M06 metal bench spacer",
+          "M11 steel compression tube",
+          "P11 column sleeve",
+          "M12 steel compression tube",
+          "P12 column sleeve",
+          "M13 steel compression tube",
+          "P13 column sleeve",
+          "M14 steel compression tube",
+          "P14 column sleeve",
+          "M02 aluminium bearing seat",
+          "B01 bearing outer ring reference",
+          "P20 worm cartridge sled",
+          "P21 worm bearing block left",
+          "P22 worm bearing retainer left",
+          "B02 worm support bearing left",
+          "P21 worm bearing block right",
+          "P22 worm bearing retainer right",
+          "B02 worm support bearing right",
+          "B03 worm shaft reference",
+          "B04 duplex worm envelope",
+          "B05 clamp coupling reference",
+          "P23 motor-pod foundation",
+          "P24 NEMA17 motor bracket",
+          "B06 NEMA17 motor and encoder envelope",
+          "P25 home sensor bracket",
+          "B07 output encoder reserved volume",
+          "B10 bearing inner ring reference",
+          "B11 duplex wheel envelope",
+          "P30 output hub",
+          "B12 steel home target",
+          "M21 hub compression sleeve",
+          "M22 hub compression sleeve",
+          "M23 hub compression sleeve",
+          "M24 hub compression sleeve",
+          "P31 platter quadrant",
+          "P32 platter quadrant",
+          "P33 platter quadrant",
+          "P34 platter quadrant",
+          "P41 fixed housing quadrant",
+          "P42 fixed housing quadrant",
+          "P43 fixed housing quadrant",
+          "P44 fixed housing quadrant",
+          "P45 seam backing strip 1",
+          "P45 seam backing strip 2",
+          "P45 seam backing strip 3",
+          "P45 seam backing strip 4",
+          "P46 motor service hood",
+          "B20 core static gasket",
+          "B25 motor hood gasket",
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B21 heat spreader gasket",
+          "M31 heat-spreader compression stop",
+          "M32 heat-spreader compression stop",
+          "M33 heat-spreader compression stop",
+          "M34 heat-spreader compression stop",
+          "B22 driver packaging envelope",
+          "P51 removable controller tray",
+          "B23 controller packaging envelope",
+          "B26 external heatsink reference",
+          "B27 thermal interface pad",
+          "P53 electronics foot 1",
+          "P53 electronics foot 2",
+          "P53 electronics foot 3",
+          "P53 electronics foot 4",
+          "M40 motor support sole",
+          "M41 motor anchor compression sleeve",
+          "B41 motor anchor washer",
+          "M42 motor anchor compression sleeve",
+          "B42 motor anchor washer",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace",
+          "B51 bridge anchor washer",
+          "B52 bridge anchor washer",
+          "B53 bridge anchor washer",
+          "B54 bridge anchor washer",
+          "Base_08q",
+          "Base_08q (2)",
+          "Base_08q (3)",
+          "WaveShare_Mounting_Plate_01d",
+          "Rotation_Pitch_08i",
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          "Passive_Horn_01",
+          "STS3215_03a",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "SO_ARM100_08k_116_Square",
+          "SO_ARM100_08k_Mirror",
+          "SO_ARM100_08k_Mirror (2)",
+          "Wrist_Roll_Pitch_08i",
+          "Wrist_Roll_08c",
+          "Moving_Jaw_08d",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "STS3215_03a_Wrist_Roll"
+        ],
+        "clearance": 0
+      }
+    },
+    {
+      "command": "occurrence.move",
+      "params": {
+        "occurrence": "RT01 - electronics lid:1",
+        "translate": [
+          0,
+          -40,
+          0
+        ],
+        "move_grounded": true
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "P52 electronics lid",
+          "B24 lid gasket"
+        ],
+        "against": [
+          "M01 aluminium base plate",
+          "M03 metal bench spacer",
+          "M04 metal bench spacer",
+          "M05 metal bench spacer",
+          "M06 metal bench spacer",
+          "M11 steel compression tube",
+          "P11 column sleeve",
+          "M12 steel compression tube",
+          "P12 column sleeve",
+          "M13 steel compression tube",
+          "P13 column sleeve",
+          "M14 steel compression tube",
+          "P14 column sleeve",
+          "M02 aluminium bearing seat",
+          "B01 bearing outer ring reference",
+          "P20 worm cartridge sled",
+          "P21 worm bearing block left",
+          "P22 worm bearing retainer left",
+          "B02 worm support bearing left",
+          "P21 worm bearing block right",
+          "P22 worm bearing retainer right",
+          "B02 worm support bearing right",
+          "B03 worm shaft reference",
+          "B04 duplex worm envelope",
+          "B05 clamp coupling reference",
+          "P23 motor-pod foundation",
+          "P24 NEMA17 motor bracket",
+          "B06 NEMA17 motor and encoder envelope",
+          "P25 home sensor bracket",
+          "B07 output encoder reserved volume",
+          "B10 bearing inner ring reference",
+          "B11 duplex wheel envelope",
+          "P30 output hub",
+          "B12 steel home target",
+          "M21 hub compression sleeve",
+          "M22 hub compression sleeve",
+          "M23 hub compression sleeve",
+          "M24 hub compression sleeve",
+          "P31 platter quadrant",
+          "P32 platter quadrant",
+          "P33 platter quadrant",
+          "P34 platter quadrant",
+          "P41 fixed housing quadrant",
+          "P42 fixed housing quadrant",
+          "P43 fixed housing quadrant",
+          "P44 fixed housing quadrant",
+          "P45 seam backing strip 1",
+          "P45 seam backing strip 2",
+          "P45 seam backing strip 3",
+          "P45 seam backing strip 4",
+          "P46 motor service hood",
+          "B20 core static gasket",
+          "B25 motor hood gasket",
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B21 heat spreader gasket",
+          "M31 heat-spreader compression stop",
+          "M32 heat-spreader compression stop",
+          "M33 heat-spreader compression stop",
+          "M34 heat-spreader compression stop",
+          "B22 driver packaging envelope",
+          "P51 removable controller tray",
+          "B23 controller packaging envelope",
+          "B26 external heatsink reference",
+          "B27 thermal interface pad",
+          "P53 electronics foot 1",
+          "P53 electronics foot 2",
+          "P53 electronics foot 3",
+          "P53 electronics foot 4",
+          "M40 motor support sole",
+          "M41 motor anchor compression sleeve",
+          "B41 motor anchor washer",
+          "M42 motor anchor compression sleeve",
+          "B42 motor anchor washer",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace",
+          "B51 bridge anchor washer",
+          "B52 bridge anchor washer",
+          "B53 bridge anchor washer",
+          "B54 bridge anchor washer",
+          "Base_08q",
+          "Base_08q (2)",
+          "Base_08q (3)",
+          "WaveShare_Mounting_Plate_01d",
+          "Rotation_Pitch_08i",
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          "Passive_Horn_01",
+          "STS3215_03a",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "SO_ARM100_08k_116_Square",
+          "SO_ARM100_08k_Mirror",
+          "SO_ARM100_08k_Mirror (2)",
+          "Wrist_Roll_Pitch_08i",
+          "Wrist_Roll_08c",
+          "Moving_Jaw_08d",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "STS3215_03a_Wrist_Roll"
+        ],
+        "clearance": 0
+      }
+    },
+    {
+      "command": "occurrence.move",
+      "params": {
+        "occurrence": "RT01 - electronics lid:1",
+        "translate": [
+          0,
+          -40,
+          0
+        ],
+        "move_grounded": true
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "P52 electronics lid",
+          "B24 lid gasket"
+        ],
+        "against": [
+          "M01 aluminium base plate",
+          "M03 metal bench spacer",
+          "M04 metal bench spacer",
+          "M05 metal bench spacer",
+          "M06 metal bench spacer",
+          "M11 steel compression tube",
+          "P11 column sleeve",
+          "M12 steel compression tube",
+          "P12 column sleeve",
+          "M13 steel compression tube",
+          "P13 column sleeve",
+          "M14 steel compression tube",
+          "P14 column sleeve",
+          "M02 aluminium bearing seat",
+          "B01 bearing outer ring reference",
+          "P20 worm cartridge sled",
+          "P21 worm bearing block left",
+          "P22 worm bearing retainer left",
+          "B02 worm support bearing left",
+          "P21 worm bearing block right",
+          "P22 worm bearing retainer right",
+          "B02 worm support bearing right",
+          "B03 worm shaft reference",
+          "B04 duplex worm envelope",
+          "B05 clamp coupling reference",
+          "P23 motor-pod foundation",
+          "P24 NEMA17 motor bracket",
+          "B06 NEMA17 motor and encoder envelope",
+          "P25 home sensor bracket",
+          "B07 output encoder reserved volume",
+          "B10 bearing inner ring reference",
+          "B11 duplex wheel envelope",
+          "P30 output hub",
+          "B12 steel home target",
+          "M21 hub compression sleeve",
+          "M22 hub compression sleeve",
+          "M23 hub compression sleeve",
+          "M24 hub compression sleeve",
+          "P31 platter quadrant",
+          "P32 platter quadrant",
+          "P33 platter quadrant",
+          "P34 platter quadrant",
+          "P41 fixed housing quadrant",
+          "P42 fixed housing quadrant",
+          "P43 fixed housing quadrant",
+          "P44 fixed housing quadrant",
+          "P45 seam backing strip 1",
+          "P45 seam backing strip 2",
+          "P45 seam backing strip 3",
+          "P45 seam backing strip 4",
+          "P46 motor service hood",
+          "B20 core static gasket",
+          "B25 motor hood gasket",
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B21 heat spreader gasket",
+          "M31 heat-spreader compression stop",
+          "M32 heat-spreader compression stop",
+          "M33 heat-spreader compression stop",
+          "M34 heat-spreader compression stop",
+          "B22 driver packaging envelope",
+          "P51 removable controller tray",
+          "B23 controller packaging envelope",
+          "B26 external heatsink reference",
+          "B27 thermal interface pad",
+          "P53 electronics foot 1",
+          "P53 electronics foot 2",
+          "P53 electronics foot 3",
+          "P53 electronics foot 4",
+          "M40 motor support sole",
+          "M41 motor anchor compression sleeve",
+          "B41 motor anchor washer",
+          "M42 motor anchor compression sleeve",
+          "B42 motor anchor washer",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace",
+          "B51 bridge anchor washer",
+          "B52 bridge anchor washer",
+          "B53 bridge anchor washer",
+          "B54 bridge anchor washer",
+          "Base_08q",
+          "Base_08q (2)",
+          "Base_08q (3)",
+          "WaveShare_Mounting_Plate_01d",
+          "Rotation_Pitch_08i",
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          "Passive_Horn_01",
+          "STS3215_03a",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "SO_ARM100_08k_116_Square",
+          "SO_ARM100_08k_Mirror",
+          "SO_ARM100_08k_Mirror (2)",
+          "Wrist_Roll_Pitch_08i",
+          "Wrist_Roll_08c",
+          "Moving_Jaw_08d",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "STS3215_03a_Wrist_Roll"
+        ],
+        "clearance": 0
+      }
+    },
+    {
+      "command": "occurrence.move",
+      "params": {
+        "occurrence": "RT01 - electronics lid:1",
+        "translate": [
+          0,
+          -60,
+          0
+        ],
+        "move_grounded": true
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "P52 electronics lid",
+          "B24 lid gasket"
+        ],
+        "against": [
+          "M01 aluminium base plate",
+          "M03 metal bench spacer",
+          "M04 metal bench spacer",
+          "M05 metal bench spacer",
+          "M06 metal bench spacer",
+          "M11 steel compression tube",
+          "P11 column sleeve",
+          "M12 steel compression tube",
+          "P12 column sleeve",
+          "M13 steel compression tube",
+          "P13 column sleeve",
+          "M14 steel compression tube",
+          "P14 column sleeve",
+          "M02 aluminium bearing seat",
+          "B01 bearing outer ring reference",
+          "P20 worm cartridge sled",
+          "P21 worm bearing block left",
+          "P22 worm bearing retainer left",
+          "B02 worm support bearing left",
+          "P21 worm bearing block right",
+          "P22 worm bearing retainer right",
+          "B02 worm support bearing right",
+          "B03 worm shaft reference",
+          "B04 duplex worm envelope",
+          "B05 clamp coupling reference",
+          "P23 motor-pod foundation",
+          "P24 NEMA17 motor bracket",
+          "B06 NEMA17 motor and encoder envelope",
+          "P25 home sensor bracket",
+          "B07 output encoder reserved volume",
+          "B10 bearing inner ring reference",
+          "B11 duplex wheel envelope",
+          "P30 output hub",
+          "B12 steel home target",
+          "M21 hub compression sleeve",
+          "M22 hub compression sleeve",
+          "M23 hub compression sleeve",
+          "M24 hub compression sleeve",
+          "P31 platter quadrant",
+          "P32 platter quadrant",
+          "P33 platter quadrant",
+          "P34 platter quadrant",
+          "P41 fixed housing quadrant",
+          "P42 fixed housing quadrant",
+          "P43 fixed housing quadrant",
+          "P44 fixed housing quadrant",
+          "P45 seam backing strip 1",
+          "P45 seam backing strip 2",
+          "P45 seam backing strip 3",
+          "P45 seam backing strip 4",
+          "P46 motor service hood",
+          "B20 core static gasket",
+          "B25 motor hood gasket",
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B21 heat spreader gasket",
+          "M31 heat-spreader compression stop",
+          "M32 heat-spreader compression stop",
+          "M33 heat-spreader compression stop",
+          "M34 heat-spreader compression stop",
+          "B22 driver packaging envelope",
+          "P51 removable controller tray",
+          "B23 controller packaging envelope",
+          "B26 external heatsink reference",
+          "B27 thermal interface pad",
+          "P53 electronics foot 1",
+          "P53 electronics foot 2",
+          "P53 electronics foot 3",
+          "P53 electronics foot 4",
+          "M40 motor support sole",
+          "M41 motor anchor compression sleeve",
+          "B41 motor anchor washer",
+          "M42 motor anchor compression sleeve",
+          "B42 motor anchor washer",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace",
+          "B51 bridge anchor washer",
+          "B52 bridge anchor washer",
+          "B53 bridge anchor washer",
+          "B54 bridge anchor washer",
+          "Base_08q",
+          "Base_08q (2)",
+          "Base_08q (3)",
+          "WaveShare_Mounting_Plate_01d",
+          "Rotation_Pitch_08i",
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          "Passive_Horn_01",
+          "STS3215_03a",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "SO_ARM100_08k_116_Square",
+          "SO_ARM100_08k_Mirror",
+          "SO_ARM100_08k_Mirror (2)",
+          "Wrist_Roll_Pitch_08i",
+          "Wrist_Roll_08c",
+          "Moving_Jaw_08d",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "STS3215_03a_Wrist_Roll"
+        ],
+        "clearance": 0
+      }
+    }
+  ]
+}
