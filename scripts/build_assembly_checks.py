@@ -167,14 +167,18 @@ tool_contracts={
  'F19':dict(shaft_diameter_mm=2.31,shaft_projection_mm=22,hub_diameter_mm=8,
              handle_reach_mm=65,handle_section_mm=[8,8],engaged_tip_z_mm=83,
              rear_entry_y_mm=-306,rear_entry_tip_z_mm=106.5,disengagement_mm=2.5,
-             screw_backout_mm=7,retrieval_lift_mm=27,
-             retrieval_capture_diameter_mm=8,retrieval_capture_height_mm=14.4,
+             screw_backout_mm=7,thread_contact_lift_min_mm=6,retrieval_lift_to_tip_z_mm=106.5,
+             captive_washer=dict(outer_diameter_mm=7,thickness_mm=.5,bore_mm=[2.75,2.80],
+                 neck_max_diameter_mm=2.68,thread_stop_min_diameter_mm=2.88,axial_float_max_mm=.25),
+             gripper=dict(jaw_and_stem_max_diameter_mm=8,jaw_lower_edge_above_head_seat_mm=.10,
+                 bridge_reach_mm=145,bridge_section_mm=[8,4],bridge_bottom_above_head_seat_mm=17.5),
              preconditions=['Isolate power; remove lid/gasket and all F18 screws.',
                'Disconnect and label controller/service leads; park loose leads outside the rear tool and extraction corridor before working.',
                'Keep the controller/tray, driver reservation and all other installed hardware while accessing each F19 socket.',
-               'Use an AF2 lever driver within the stated envelope, then a positive mechanical screw-and-washer capture; do not assume magnetic pickup of A2 stainless hardware.'],
-             limits=['B22/B23/B09 existing reserves are checked, but selected connectors, flexible leads and hand access require an installed service trial.',
-               'The retrieval capture is a maximum tool envelope, not a selected product; it must retain both the loose screw and washer.'])}
+               'Use an AF2 lever driver within the stated envelope, then a rear-operated mechanical head gripper sized for the captive screw.',
+               'Keep removed fasteners outside the tray service sweep.'],
+             limits=['F19 includes the enlarged 118 x 70 x 20 controller reserve. Actual head grip, captive retention, insert-mouth position, hand access and fitted cables require the physical trial.',
+               'The gripper is a dimensional acceptance envelope. Select or fabricate a tool with jaws that retain and release the screw head from the rear.'])}
 
 # F24: side entry with the long arm pointing outward. Every tightening stroke
 # is clockwise viewed from +Z. Mirrored sites use different starting clocking.
@@ -215,64 +219,190 @@ for i,point in enumerate(armdata['adapter_holes']):
  check(f'F24 tool {i} outboard withdrawal',[n],released=socket)
 tool_contracts['F24']['clocking']=f24_clocking
 
-# F19: rear-entry AF2 lever, complete vertical approach and conservative bounds
-# covering the entire engaged/disengaged inboard swing. Retrieve hardware with
-# a separate short capture tool so a long driver and screw need not clear the
-# rim as one tall assembly.
-removed_tray_screws=[]
-for i,(x,y) in enumerate([(x,y) for x in [-65,65] for y in [-258,-190]]):
- target=f'TEST F19 {i}';socket=(target,)
- removed=lid+[name for name in probes if name.startswith('TEST F18 ')]+removed_tray_screws
- n=f'TEST F19 rear entry sweep {i}'
- tool_box(n,[2.31,y+308.31,22],[x-1.155,-307.155,106.5])
- tool_box(n,[8,y+375,8],[x-4,-371,128.5],'join')
- check(f'F19 tool {i} complete rear entry',[n],removed,socket)
- n=f'TEST F19 engagement sweep {i}';lever_tool(n,x,y,83,2.31,22,8,'Y',travel=23.5)
- check(f'F19 tool {i} complete vertical approach',[n],removed,socket)
- n=f'TEST F19 full turning bound {i}'
- # Swing only below the high rear-entry plane: full7 mm backout plus2.5
- # disengagement. Restore rear yaw here before the straight upward withdrawal.
- cyl(n,2.31,31.5,[x,y,83]);cyl(n,8,17.5,[x,y,105],op='join')
- tool_box(n,[65*math.sin(math.pi/3)+8,69,17.5],
-          [x-4 if x<0 else x-65*math.sin(math.pi/3)-4,y-69,105],'join')
- check(f'F19 tool {i} continuous turning and reset bound',[n],removed,socket)
- n=f'TEST F19 compact lever {i}';lever_tool(n,x,y,85.5,2.31,22,8,'Y')
- start=0 if x<0 else -60;end=start+60;yaw=start
- if start:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=start)
- cmd('solid.move',bodies=[n],translate=[0,0,-2.5]);check(f'F19 tool {i} first engagement',[n],removed,socket)
- for stroke in range(2):
-  cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=end-yaw);yaw=end
-  check(f'F19 tool {i} counterclockwise release stroke {stroke}',[n],removed,socket)
-  cmd('solid.move',bodies=[n],translate=[0,0,2.5]);check(f'F19 tool {i} disengaged after stroke {stroke}',[n],removed,socket)
-  cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=start-yaw);yaw=start
-  if stroke==0:
-   cmd('solid.move',bodies=[n],translate=[0,0,-2.5]);check(f'F19 tool {i} second engagement',[n],removed,socket)
- # The same bounded cycles repeat until the screw is unthreaded. Check the
- # seven-millimetre axial backout, then remove the bare key before retrieval.
- cmd('solid.move',bodies=[n],translate=[0,0,-2.5])
- cmd('solid.move',bodies=[n,target],translate=[0,0,7]);check(f'F19 tool {i} fully unthreaded at backout7',[n,target],removed)
- cmd('solid.move',bodies=[n],translate=[0,0,2.5])
- check(f'F19 tool {i} low disengagement after backout',[n],removed,socket)
- if yaw:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=-yaw)
- check(f'F19 tool {i} low rear clocking',[n],removed,socket)
- cmd('solid.move',bodies=[n],translate=[0,0,14])
- check(f'F19 tool {i} straight upward withdrawal',[n],removed,socket)
- cmd('solid.move',bodies=[n],translate=[0,-306-y,0]);check(f'F19 tool {i} bare driver withdrawn',[n],removed,socket)
- # Positive capture encloses both head and washer, not the lower shank.
- pickup=f'TEST F19 positive retrieval {i}';cyl(pickup,8,14.4,[x,y,88.75])
- sweep=f'TEST F19 capture vertical sweep {i}';cyl(sweep,8,32.15,[x,y,88.75])
- check(f'F19 screw {i} capture approach',[sweep],removed,socket)
- sweep=f'TEST F19 captured lift sweep {i}';cyl(sweep,3,37,[x,y,79.5])
- cyl(sweep,8,41.4,[x,y,88.75],op='join')
- check(f'F19 screw {i} complete captured lift',[sweep],removed,socket)
- cmd('solid.move',bodies=[pickup,target],translate=[0,0,27]);check(f'F19 screw {i} lifted above rim',[pickup,target],removed)
- sweep=f'TEST F19 captured rear sweep {i}';tool_box(sweep,[8,y+314,23.65],[x-4,-310,106.5])
- check(f'F19 screw {i} retrieval entry and captured withdrawal',[sweep],removed,socket)
- cmd('solid.move',bodies=[pickup,target],translate=[0,-306-y,0]);check(f'F19 screw {i} retrieved rearward',[pickup,target],removed)
- removed_tray_screws.append(target)
-# Each later service proof starts from its original installed population.
-for i,(x,y) in enumerate([(x,y) for x in [-65,65] for y in [-258,-190]]):
- cmd('solid.move',bodies=[f'TEST F19 {i}'],translate=[0,y+306,-34])
+# F19. The general assembly check uses the same maximum exterior stack.
+# For service, replace that bounding stack in the collision population with
+# two separate solids. The washer can lag the screw by 0.25 mm.
+general_service_population = allnames
+sites = [(x, y) for x in [-65, 65] for y in [-258, -190]]
+screws = [f'F19 captive screw {i}' for i in range(4)]
+washers = [f'F19 captive washer {i}' for i in range(4)]
+storage_y = -306
+seat_z = 82.5
+washer_float = .25
+storage_lift = 34
+thread_contact_lift = 6
+contact_screw_z = seat_z + thread_contact_lift
+board = 'F19 enlarged controller reservation'
+tool_box(board, [118, 70, 20], [-59, -259, 82])
+allnames = [name for name in allnames if not name.startswith('TEST F19 ')] + screws + washers + [board]
+
+for screw_name, washer, (x, y) in zip(screws, washers, sites):
+    cyl(screw_name, 3, 9.25, [x, y, 72.5])
+    cyl(screw_name, 2.68, .75, [x, y, seat_z-.75], op='join')
+    cyl(screw_name, 5.7, 1.65, [x, y, seat_z], op='join')
+    cyl(washer, 7, .5, [x, y, 82])
+    cyl(washer, 2.75, 1.5, [x, y, 81.5], op='cut')
+
+lid_parts = lid + [name for name in probes if name.startswith('TEST F18 ')]
+parked = []
+hardware_lift = [0.] * 4
+washer_lift = [0.] * 4
+
+
+def translate(bodies, dy=0, dz=0):
+    if dy or dz:
+        cmd('solid.move', bodies=bodies, translate=[0, dy, dz])
+
+
+def shift_hardware(i, height, lag=True):
+    # The washer may remain seated on the tray while slack is taken up.
+    lower_washer = max(0, height-washer_float) if lag else height
+    translate([screws[i]], dz=height-hardware_lift[i])
+    translate([washers[i]], dz=lower_washer-washer_lift[i])
+    hardware_lift[i] = height
+    washer_lift[i] = lower_washer
+
+
+def tool_check(i, phase, bodies, contact=()):
+    check(f'F19 site {i+1} {phase}', bodies, lid_parts+parked+list(contact))
+
+
+def torque_access(i, removing):
+    x, y = sites[i]
+    screw_name, washer = screws[i], washers[i]
+    action = 'remove' if removing else 'refit'
+    key = f'F19 {action} AF2 key {i}'
+    entry = key+' full rear travel'
+    tool_box(entry, [2.31, y+308.31, 22], [x-1.155, -307.155, 106.5])
+    tool_box(entry, [8, y+375, 8], [x-4, -371, 128.5], 'join')
+    tool_check(i, action+' AF2 full rear entry and exit', [entry])
+    # This bound covers every axial position, every 60-degree turn,
+    # and every 2.5 mm lift to disengage before the return stroke.
+    bound = key+' turning bound'
+    cyl(bound, 2.31, 31.5, [x, y, 83])
+    cyl(bound, 8, 17.5, [x, y, 105], op='join')
+    tool_box(bound, [65*math.sin(math.pi/3)+8, 69, 17.5],
+             [x-4 if x<0 else x-65*math.sin(math.pi/3)-4, y-69, 105], 'join')
+    tool_check(i, action+' AF2 full turning and reset bound', [bound], [screw_name])
+    down = key+' entry descent bound'
+    lever_tool(down, x, y, 83, 2.31, 22, 8, 'Y', travel=23.5)
+    tool_check(i, action+' AF2 full axial entry and exit', [down], [screw_name])
+
+    start, end = (0, 60) if x < 0 else (-60, 0)
+    if not removing:
+        start, end = end, start
+    origin = [x, y, seat_z]
+    height = hardware_lift[i]
+    lever_tool(key, x, y, 83+height+2.5, 2.31, 22, 8, 'Y')
+    if start:
+        cmd('solid.move', bodies=[key], axis=[0, 0, 1], origin=origin, angle=start)
+    for stroke in range(2):
+        translate([key], dz=-2.5)
+        tool_check(i, f'{action} AF2 socket engagement {stroke+1}', [key], [screw_name])
+        advance = (.5/6) * (1 if removing else -1)
+        cmd('solid.move', bodies=[key], axis=[0, 0, 1], origin=origin, angle=end-start)
+        translate([key], dz=advance)
+        height += advance
+        shift_hardware(i, height)
+        tool_check(i, f'{action} AF2 driven turn {stroke+1}', [key, screw_name, washer])
+        translate([key], dz=2.5)
+        tool_check(i, f'{action} AF2 lift after turn {stroke+1}', [key])
+        cmd('solid.move', bodies=[key], axis=[0, 0, 1], origin=origin, angle=start-end)
+    final_height = 7 if removing else 0
+    shift_hardware(i, final_height)
+    translate([key], dz=final_height-height)
+    tool_check(i, action+' AF2 at end of repeated turns', [key, screw_name, washer])
+    if start:
+        cmd('solid.move', bodies=[key], axis=[0, 0, 1], origin=origin, angle=-start)
+    translate([key], dz=106.5-(85.5+final_height))
+    tool_check(i, action+' AF2 rear-clocked and raised', [key])
+    translate([key], dy=storage_y-y)
+    tool_check(i, action+' AF2 withdrawn', [key])
+
+
+def transfer(i, removing):
+    x, y = sites[i]
+    screw_name, washer = screws[i], washers[i]
+    action = 'remove' if removing else 'refit'
+    tool = f'F19 {action} captive fastener gripper {i}'
+    low_nose = contact_screw_z+.10
+    low_bridge = contact_screw_z+17.5
+    reach = 145
+    travel = storage_lift-thread_contact_lift
+    # Model the outside envelope of open/closed head jaws and their reach.
+    # The head is intentionally inside the jaws during capture and release.
+    empty_rear = tool+' empty horizontal sweep'
+    tool_box(empty_rear, [8, y-storage_y+reach+4, 21.4],
+             [x-4, storage_y-reach, low_nose+18])
+    tool_check(i, action+' gripper full empty rear sweep', [empty_rear], [screw_name, washer])
+    loaded_rear = tool+' loaded horizontal sweep'
+    tool_box(loaded_rear, [8, y-storage_y+reach+4, 31.5],
+             [x-4, storage_y-reach, 106.5])
+    tool_check(i, action+' gripper full loaded rear sweep', [loaded_rear], [screw_name, washer])
+    vertical = tool+' full vertical sweep'
+    cyl(vertical, 8, 17.4+travel+4, [x, y, low_nose])
+    tool_box(vertical, [8, reach, travel+4], [x-4, y-reach, low_bridge], 'join')
+    tool_check(i, action+' gripper full vertical sweep', [vertical], [screw_name, washer])
+    payload = tool+' complete payload lift bound'
+    cyl(payload, 3, 11.65+travel, [x, y, 72.5+thread_contact_lift])
+    cyl(payload, 7, .5+washer_float+travel, [x, y, 82+thread_contact_lift-washer_float], op='join')
+    tool_check(i, action+' captive stack full axial travel', [payload], [screw_name, washer])
+
+    cyl(tool, 8, 21.4, [x, y, low_nose])
+    tool_box(tool, [8, reach, 4], [x-4, y-reach, low_bridge], 'join')
+    if removing:
+        translate([tool], dy=storage_y-y, dz=18)
+        tool_check(i, 'remove gripper enters from rear', [tool])
+        translate([tool], dy=y-storage_y)
+        translate([tool], dz=-18)
+        tool_check(i, 'remove jaws grip head above captive washer', [tool], [screw_name])
+        translate([tool], dz=travel)
+        shift_hardware(i, storage_lift)
+        tool_check(i, 'remove captured stack just above rim', [tool, screw_name, washer])
+        translate([tool, screw_name, washer], dy=storage_y-y)
+        tool_check(i, 'remove captured stack fully withdrawn', [tool, screw_name, washer])
+    else:
+        translate([tool], dy=storage_y-y, dz=travel)
+        tool_check(i, 'refit loaded tool enters from rear', [tool, screw_name, washer])
+        translate([tool, screw_name, washer], dy=y-storage_y)
+        tool_check(i, 'refit captive stack positioned over hole', [tool, screw_name, washer])
+        translate([tool], dz=-travel)
+        shift_hardware(i, thread_contact_lift)
+        tool_check(i, 'refit jaws release at insert mouth', [tool], [screw_name])
+        tool_check(i, 'refit screw and washer at thread pickup', [screw_name, washer])
+        translate([tool], dz=18)
+        translate([tool], dy=storage_y-y)
+        tool_check(i, 'refit empty gripper withdrawn', [tool])
+
+
+for i in range(4):
+    tool_check(i, 'installed screw and captive washer', [screws[i], washers[i]])
+    torque_access(i, removing=True)
+    shift_hardware(i, thread_contact_lift)
+    tool_check(i, 'free washer against its thread stop and other hardware', [washers[i]])
+    # Test the opposite end of washer axial float before gripping the head.
+    shift_hardware(i, thread_contact_lift, lag=False)
+    tool_check(i, 'free washer at top of permitted float', [washers[i]])
+    shift_hardware(i, thread_contact_lift)
+    transfer(i, removing=True)
+    parked += [screws[i], washers[i]]
+
+# Set removed fasteners aside, then withdraw and return the tray before refitting.
+tray_with_board = tray+[board]
+for phase, dy, dz in [
+    ('lift for removal', 0, 27), ('slide out', -140, 0),
+    ('slide back in', 140, 0), ('lower onto posts', 0, -27),
+]:
+    translate(tray_with_board, dy=dy, dz=dz)
+    check('F19 tray '+phase, tray_with_board, lid_parts+parked)
+
+for i in reversed(range(4)):
+    parked = [name for name in parked if name not in (screws[i], washers[i])]
+    transfer(i, removing=False)
+    torque_access(i, removing=False)
+    tool_check(i, 'refitted screw seated and washer supported', [screws[i], washers[i]])
+
+allnames = general_service_population
 coverage['service_tool_contracts']=tool_contracts
 
 for label,moving,height,removed,released in [

@@ -26,7 +26,7 @@ Prototype hardware uses corrosion-protected class 8.8 steel bolts and compatible
 | F16 | Fixed housing to bench | 4 | M5 × L(T), ISO 4762 socket cap | 2 × M5 DIN 9021 washer ID5.3 OD15 x 1.2; 1 × M5 DIN 985 nyloc nut h5 | Bench thickness required |
 | F17 | Motor hood to integral metal support | 4 | M4 × 95, ISO 4762 socket cap | 1 × M4 washer ID4.3 OD9 x 0.8 | Defined geometry |
 | F18 | Electronics lid | 10 | M3 × 10, ISO 7380-1 button | 1 × M3 washer ID3.2 OD7 x 0.5; 1 × ruthex RX-M3x5.7 heat-set insert | Defined geometry |
-| F19 | Controller tray | 4 | M3 × 10, ISO 7380-1 button | 1 × M3 washer ID3.2 OD7 x 0.5; 1 × ruthex RX-M3x5.7 heat-set insert | Defined geometry |
+| F19 | Controller tray | 4 | M3 × 10, AF2 button with captive washer (SEMS) | 1 × ruthex RX-M3x5.7 heat-set insert | Confirm captive fastener drawing and trial |
 | F20 | Heat spreader to box floor | 4 | M3 × 16, DIN 7991 90-degree countersunk | 1 × M3 washer ID3.2 OD7 x 0.5; 1 × M3 DIN 985 nyloc nut h4; 1 × EPDM seal washer OD7 ID3.2 x 1 (0.75 compressed); 1 × Metal compression shim OD6.5 ID3.4 x 0.75 | Defined geometry |
 | F21 | Electronics feet and box to bench | 4 | M4 × L(T), ISO 4762 socket cap | 1 × M4 washer ID4.3 OD9 x 0.8; 1 × M4 fender washer ID4.3 OD12 x 1; 1 × M4 DIN 985 nyloc nut h5; 1 × EPDM seal washer OD9 ID3.8 x 1 (0.75 compressed) | Bench thickness required |
 | F22 | M50 to steel stand top flanges | 4 | M6 × 25, ISO 4762 socket cap | 2 × M6 washer ID6.6 OD18 x 1.6; 1 × M6 DIN 985 nyloc nut h6 | Defined geometry |
@@ -76,7 +76,7 @@ F08 (separate block bolts) and F12 (printed sensor bracket bolts) are deleted in
 
 **F18 — Electronics lid.** Seat108.5; tip 98.5; insert flush 104 down 98.3, engagement 5.5. 7 mm pilot depth. Fit inserts flush and coupon-check retention. Location: Ten lid points; matching Ø8 access holes in M50.
 
-**F19 — Controller tray.** Seat82.5; tip 72.5. Insert79 down 73.3, engagement 5.7; tip remains 1.5 above pilot floor 71. Location: X +/-65, Y-258/-190.
+**F19 — Controller tray.** Specify four A2-70 assemblies with an OD7 × 0.50 captive metal washer in each. M3 × 0.5 thread, 10 mm from the bare head underside to the tip, AF2 head within Ø5.7 × 1.65 and at least 0.40 mm of straight lower head wall for the pickup jaws. The socket must admit the key to 0.50 mm above the head underside. Washer bore Ø2.75–2.80, neck Ø2.68 maximum, retained by the rolled Ø2.88 minimum thread crest with at most 0.25 mm measured axial float. Require full mating thread from 3.5 to 9.2 mm below the head and at most 0.50 mm of tip lead. Nominal head seat Z82.5, tip Z72.5 and 5.7 mm insert engagement. Confirm drawing, retention, fit and removal with the real hardware. Location: X +/-65, Y-258/-190.
 
 **F20 — Heat spreader to box floor.** Head diameter <=6, recessed ~0.2 below spreader top 35.75. Tip~19.55, nut 22.75-26.75. Seal washer and metal washer below floor 28; shim above floor 32. Shim M31-34 counted here. Keep screw flush below driver envelope. Location: X +/-55.5, Y-258.5/-189.5.
 

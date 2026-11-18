@@ -26,8 +26,8 @@
     "removal": "Move radially outward 20 mm, then lift 30 mm; keep this bench area clear."
   },
   "capacities_ml": {
-    "to_pour_notch": 26.341614705882343,
-    "to_fill_mark": 19.900014705882345
+    "to_pour_notch": 26.29756323529411,
+    "to_fill_mark": 19.873963235294113
   },
   "flow": {
     "floor_drop_mm": 13,
@@ -59,7 +59,7 @@
   "instructions": [
     "Print four identical cups upright, flat cup base on the bed; yellow PETG, 0.4 mm nozzle, 0.20 mm layers and four walls.",
     "The raised inlet underside is 45 degrees; inspect the sliced tip and bridges. Clean brim off the bench foot.",
-    "Use a flat, level, rigid bench at Z0. Centre the inlet directly below the drain: the full 5 mm projected bore has 0.5 mm inward and 3.5 mm tangential mouth margins. Verify positioning with a safe tracer before use.",
+    "Use a flat, level, rigid bench at Z0. Centre the inlet directly below the drain. The full 5 mm projected bore has 0.5 mm inward and 3.5 mm tangential mouth margins. Confirm the position with a safe tracer and mark each cup footprint. After emptying, return each cup to its mark and repeat the tracer check at all four outlets.",
     "Open cups collect incidental drips. Inspect and empty before the Z17 mark; lift and pour through the outer notch, then rinse or brush through the open top.",
     "Inspect the existing 0.50 mm printed gutter lip and validate its cleanout method. Never clip this accessory to that lip.",
     "Geometric capacity and routes only. No physical flow, splashing, seal, level-tolerance or contaminant-collection performance is claimed."

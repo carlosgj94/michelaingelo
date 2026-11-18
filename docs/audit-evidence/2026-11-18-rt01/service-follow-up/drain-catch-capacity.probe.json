@@ -593,21 +593,14 @@
       }
     },
     {
-      "command": "solid.box",
+      "command": "solid.combine",
       "params": {
-        "length": 8,
-        "width": 1,
-        "height": 0.6,
-        "corner": [
-          40,
-          17.5,
-          17
+        "target": "REVIEW capacity to pour notch",
+        "tools": [
+          "P54 removable drain catch"
         ],
         "operation": "cut",
-        "targets": [
-          "REVIEW capacity to pour notch"
-        ],
-        "name": "REVIEW capacity to pour notch mark displacement"
+        "keep_tools": true
       }
     },
     {
@@ -761,21 +754,37 @@
       }
     },
     {
-      "command": "solid.box",
+      "command": "solid.combine",
       "params": {
-        "length": 8,
-        "width": 1,
-        "height": 0.6,
-        "corner": [
-          40,
-          17.5,
-          17
+        "target": "REVIEW capacity to fill mark",
+        "tools": [
+          "P54 removable drain catch"
         ],
         "operation": "cut",
-        "targets": [
+        "keep_tools": true
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "REVIEW capacity to pour notch",
           "REVIEW capacity to fill mark"
         ],
-        "name": "REVIEW capacity to fill mark mark displacement"
+        "against": [
+          "P54 removable drain catch"
+        ],
+        "nearest": 1
+      }
+    },
+    {
+      "command": "inspect.measure",
+      "params": {
+        "bodies": [
+          "P54 removable drain catch",
+          "REVIEW capacity to pour notch",
+          "REVIEW capacity to fill mark"
+        ]
       }
     }
   ]

@@ -20,6 +20,14 @@ OUT = ROOT/'exports/rotary-table/drain-catch'
 EVIDENCE = ROOT/'docs/audit-evidence/2026-11-18-rt01/service-follow-up'
 BODY = 'P54 removable drain catch'
 YELLOW = '#F6C915'
+CAPACITY_LEVELS = {
+    'to_pour_notch': ('REVIEW capacity to pour notch', 20),
+    'to_fill_mark': ('REVIEW capacity to fill mark', 17),
+}
+CUP_POSITION = ('Use a flat, level, rigid bench at Z0. Centre the inlet directly below the drain. '
+                'The full 5 mm projected bore has 0.5 mm inward and 3.5 mm tangential mouth margins. '
+                'Confirm the position with a safe tracer and mark each cup footprint. After emptying, '
+                'return each cup to its mark and repeat the tracer check at all four outlets.')
 
 
 def write(path, value):
@@ -117,9 +125,29 @@ def liquid(commands, body, level):
     xz_prism(commands, body, body+' inlet volume',
              [[left, floor(left)], [right, floor(right)], [right, level], [left, level]],
              'dc_inlet_width-2*dc_wall', 'join')
-    # Match the small displacement of the internal fill mark.
-    add(commands, 'solid.box', length=8, width=1, height=.6, corner=[40, 17.5, 17],
-        operation='cut', targets=[body], name=body+' mark displacement')
+    # Subtract the finished cup so the inlet sidewalls and fill mark displace liquid.
+    add(commands, 'solid.combine', target=body, tools=[BODY], operation='cut', keep_tools=True)
+
+
+def measure_capacity(build):
+    capacity = list(build)
+    for name, level in CAPACITY_LEVELS.values():
+        liquid(capacity, name, level)
+    liquids = [name for name, _ in CAPACITY_LEVELS.values()]
+    add(capacity, 'inspect.clearance', bodies=liquids, against=[BODY], nearest=1)
+    add(capacity, 'inspect.measure', bodies=[BODY, *liquids])
+    cap_script = EVIDENCE/'drain-catch-capacity.probe.json'
+    write(cap_script, dict(commands=capacity))
+    with tempfile.TemporaryDirectory(prefix='rt01-drain-capacity-') as directory:
+        results_file = Path(directory)/'capacity.results.json'
+        run(cap_script, results=True, output=results_file)
+        clearance, measurement = json.loads(results_file.read_text())[-2:]
+    assert clearance['pairs_checked'] == len(liquids), clearance
+    assert not any(clearance.get(key) for key in ('overlaps', 'unchecked', 'truncated', 'pairs_not_checked')), clearance
+    assert all(body['closed'] and body['kernel']['shells'] == 1 for body in measurement['bodies']), measurement
+    write(EVIDENCE/'drain-catch-capacity.measure.json', dict(measurement, cup_clearance=clearance))
+    volumes = {body['name']: body['volume_mm3']/1000 for body in measurement['bodies']}
+    return {key: volumes[name] for key, (name, _) in CAPACITY_LEVELS.items()}
 
 
 def move_to_drain(commands, body, q):
@@ -165,15 +193,7 @@ def main():
     mesh['mesh_volume_error_percent'] = 100*abs(mesh['mesh_volume_mm3']-part['volume_mm3'])/part['volume_mm3']
     assert mesh['mesh_volume_error_percent'] < .25
 
-    # Measured liquid volumes are geometry only, not physical flow/storage results.
-    capacity = list(build)
-    liquid(capacity, 'REVIEW capacity to pour notch', 20)
-    liquid(capacity, 'REVIEW capacity to fill mark', 17)
-    cap_script = EVIDENCE/'drain-catch-capacity.probe.json'
-    write(cap_script, dict(commands=capacity))
-    cap_measure = EVIDENCE/'drain-catch-capacity.measure.json'
-    run(cap_script, output=cap_measure)
-    cap = {b['name']: b['volume_mm3']/1000 for b in json.loads(cap_measure.read_text())['bodies']}
+    capacities = measure_capacity(build)
 
     route = []
     parameters(route)
@@ -249,12 +269,12 @@ def main():
                                   native_inlet_axis_xy_mm=[0, 0], stl_inlet_axis_xy_mm=[5, 20],
                                   orientation='Canonical +X points outward; rotate about inlet axis, then place that axis at R161.',
                                   removal='Move radially outward 20 mm, then lift 30 mm; keep this bench area clear.'),
-                   capacities_ml=dict(to_pour_notch=cap['REVIEW capacity to pour notch'], to_fill_mark=cap['REVIEW capacity to fill mark']),
+                   capacities_ml=capacities,
                    flow=dict(floor_drop_mm=13, floor_run_mm=68, slope_degrees=math.degrees(math.atan(13/68)), inlet_floor_at_drain_mm=15-13*5/68, outlet='Accessible outer V-pour notch; empty after outward removal, not a continuous drain.'),
                    route_clearances=clearances, discharge_rays=discharges, discharge_ray_coverage='Centre and radial/tangential offsets +/-2.45 mm at each 5 mm bore; 20 rays total.', print=mesh,
                    instructions=['Print four identical cups upright, flat cup base on the bed; yellow PETG, 0.4 mm nozzle, 0.20 mm layers and four walls.',
                                  'The raised inlet underside is 45 degrees; inspect the sliced tip and bridges. Clean brim off the bench foot.',
-                                 'Use a flat, level, rigid bench at Z0. Centre the inlet directly below the drain: the full 5 mm projected bore has 0.5 mm inward and 3.5 mm tangential mouth margins. Verify positioning with a safe tracer before use.',
+                                 CUP_POSITION,
                                  'Open cups collect incidental drips. Inspect and empty before the Z17 mark; lift and pour through the outer notch, then rinse or brush through the open top.',
                                  'Inspect the existing 0.50 mm printed gutter lip and validate its cleanout method. Never clip this accessory to that lip.',
                                  'Geometric capacity and routes only. No physical flow, splashing, seal, level-tolerance or contaminant-collection performance is claimed.'])

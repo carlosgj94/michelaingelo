@@ -92,6 +92,11 @@ def main():
  for label,result in clearances.items():
   issues={key: result[key] for key in ['overlaps','unchecked','truncated','pairs_not_checked','budget_exceeded'] if result.get(key)}
   assert not issues,(label,issues)
+ f19_checks = [label for label in clearances if label.startswith('F19 ')]
+ for site in range(1, 5):
+  for phase in ('free washer against its thread stop and other hardware', 'remove captured stack fully withdrawn',
+                'refit jaws release at insert mouth', 'refitted screw seated and washer supported'):
+   assert f'F19 site {site} {phase}' in f19_checks
  assert list(service['seating'])==[row['name'] for row in coverage['seating_checks']]
  for row in coverage['seating_checks']:
   result=service['seating'][row['name']]
@@ -139,12 +144,13 @@ def main():
   health=dict(new_closed_bodies=len(names),total_world_bodies=len(native),sketches_zero_dof=len(health['sketches']),timeline_entries=len(health['timeline']),failed_features=0,arm_import_warnings=[f['warning'] for f in health['timeline'] if f.get('warning')]),
   source_comparison=compare(native,fresh,names),step_round_trip=compare(native,step,names),arm_preservation=compare(native,baseline,arm),
   hardware=dict(groups=len(coverage['groups']),screws=sum(coverage['groups'].values()),specified_lengths=sum(r['quantity'] for r in register['rows'] if r['length_mm'] and r['id']!='F24'),arm_screws_to_fit=4,bench_bolts=sum(r['quantity'] for r in register['rows'] if not r['length_mm']),fixture_tip_probes=4,rotation_angles_deg=coverage['angles_deg'],cartridge_offsets_mm=[3,-3],unexpected_intersections=0,unchecked_pairs=0,budget_failures=0,exclusions='cad/hardware-check-coverage.json'),
-  service=dict(clearance_checks=len(clearances),supported_seats=sum(len(row['gauges']) for row in coverage['seating_checks']),unexpected_intersections=0,unchecked_pairs=0,raised_driver_rim_clearance_mm=rim_gap,raised_driver_plate_clearance_mm=plate_gap,critical_hood_washer_clearance_mm=hood_washer_gap),
+  service=dict(clearance_checks=len(clearances),supported_seats=sum(len(row['gauges']) for row in coverage['seating_checks']),unexpected_intersections=0,unchecked_pairs=0,raised_driver_rim_clearance_mm=rim_gap,raised_driver_plate_clearance_mm=plate_gap,critical_hood_washer_clearance_mm=hood_washer_gap,
+               f19=dict(captive_fasteners=4,clearance_checks=len(f19_checks),physical_trial='pending')),
   fit_parameter_trial=dict(changes=fit[0]['changed'],features_recomputed=fit[0]['recomputed'],changed_print_bodies=changed,failed_features=0,scope='One simultaneous enlargement trial of twelve printed fits. Physical print fit remains pending.'),
   prints=dict(assembly_stls=25,coupons=1,largest_dimension_mm=max(max(p['print_bbox_mm']) for p in manifest['parts']),largest_brim_footprint_mm=max(max(p['footprint_with_5mm_brim_mm']) for p in manifest['parts']),max_mesh_volume_error_percent=max(p['mesh_volume_error_percent'] for p in manifest['parts']),seam_strips=[dict(name=p['name'],bounds_mm=p['print_bbox_mm'],bed_contact_area_mm2=p['bed_contact_area_mm2']) for p in strips]),
   drain_catch=dict(quantity=catch['quantity'],file=catch_print['file'],print_bbox_mm=catch_print['print_bbox_mm'],capacities_ml=catch['capacities_ml'],manifest=str(DRAIN_MANIFEST.relative_to(ROOT))),
   analytic_nominal_bounds_mm=dict(anchor_washer_to_wall=150-math.hypot(88,108)-7.5,anchor_washer_to_motor_opening=108-7.5-97.5,carrier_end_gap_at_limit=1,blind_fixture_bottom_metal=2.5,target_to_column_heads=2.1,rib_to_wall=3.8,skirt_radial_gap=2,deck_upstand_gap=2),
-  not_run=['Owned-foot seat and thread/preload qualification','Slicing, printing, fit, insert, seal and nut-trap retention tests','Loaded reversal, runout, stiffness, fatigue and stopping tests','Home signal, selected connectors/cables and electronics thermal tests','Articulated arm/tool/workpiece study and actual bench/weld qualification'],
+  not_run=['Owned-foot seat and thread/preload qualification','Slicing, printing, fit, insert, seal and nut-trap retention tests','F19 captive-washer retention, tool grip and fitted four-site removal and refitting','P54 marked-position return and repeated tracer test at all four outlets','Loaded reversal, runout, stiffness, fatigue and stopping tests','Home signal, selected connectors/cables and electronics thermal tests','Articulated arm/tool/workpiece study and actual bench/weld qualification'],
   limits=['Geometry verifies the represented envelopes and nominal seats. Hardware supplier tolerances and actual clamp loads require physical acceptance.','The 17 November evidence and the 18 November revision 4 audit are historical. The new service test includes retained hardware and two exact swept boxes for the driver envelope.','Foam prototype scope. Rock work requires its own tooling, extraction and qualification.'])
  if args.replay_service:
   SERVICE_RESULTS.parent.mkdir(parents=True,exist_ok=True)

@@ -41,12 +41,12 @@
       "volume_mm3": 25646.036764705877
     },
     {
-      "area_mm2": 6772.089011945958,
+      "area_mm2": 6805.178879970426,
       "bbox": {
         "max": [
           63.00000000000001,
           18.0,
-          20.0
+          20.000000000000004
         ],
         "min": [
           -3.0,
@@ -55,33 +55,33 @@
         ]
       },
       "center_of_mass": [
-        37.78398461213631,
-        -0.0016172129338178,
-        13.409945888277758
+        37.83512440176324,
+        -0.001619921953180207,
+        13.405056841709232
       ],
       "closed": true,
       "density_g_cm3": 1.29,
-      "edges": 36,
+      "edges": 48,
       "face_types": {
-        "plane": 15
+        "plane": 19
       },
-      "faces": 15,
+      "faces": 19,
       "kernel": {
-        "edges": 36,
-        "faces": 15,
+        "edges": 48,
+        "faces": 19,
         "shells": 1,
-        "vertices": 24
+        "vertices": 32
       },
-      "mass_g": 33.98068297058823,
+      "mass_g": 33.923856573529406,
       "material": "Default",
       "measured_by": "smlib",
       "name": "REVIEW capacity to pour notch",
       "notes": [],
-      "vertices": 24,
-      "volume_mm3": 26341.614705882344
+      "vertices": 32,
+      "volume_mm3": 26297.56323529411
     },
     {
-      "area_mm2": 6151.489011945959,
+      "area_mm2": 6166.578879970426,
       "bbox": {
         "max": [
           63.00000000000001,
@@ -95,40 +95,65 @@
         ]
       },
       "center_of_mass": [
-        39.33433096783109,
-        -5.3377304482993433e-17,
-        11.762159539839677
+        39.376377384095875,
+        -2.6571189792868873e-17,
+        11.758140397108484
       ],
       "closed": true,
       "density_g_cm3": 1.29,
-      "edges": 24,
+      "edges": 36,
       "face_types": {
-        "plane": 10
+        "plane": 14
       },
-      "faces": 10,
+      "faces": 14,
       "kernel": {
-        "edges": 24,
-        "faces": 10,
+        "edges": 36,
+        "faces": 14,
         "shells": 1,
-        "vertices": 16
+        "vertices": 24
       },
-      "mass_g": 25.671018970588225,
+      "mass_g": 25.637412573529403,
       "material": "Default",
       "measured_by": "smlib",
       "name": "REVIEW capacity to fill mark",
       "notes": [],
-      "vertices": 16,
-      "volume_mm3": 19900.014705882346
+      "vertices": 24,
+      "volume_mm3": 19873.96323529411
     }
   ],
   "body_count": 3,
   "total": {
-    "area_mm2": 26439.86016430595,
-    "edges": 141,
-    "faces": 55,
-    "mass_g": 92.73508936764702,
+    "area_mm2": 26488.03990035488,
+    "edges": 165,
+    "faces": 63,
+    "mass_g": 92.64465657352939,
     "open_bodies_skipped": 0,
-    "vertices": 94,
-    "volume_mm3": 71887.66617647056
+    "vertices": 110,
+    "volume_mm3": 71817.5632352941
+  },
+  "cup_clearance": {
+    "bodies": 2,
+    "ms": 42.716375,
+    "near": [],
+    "nearest": {
+      "REVIEW capacity to fill mark": [
+        {
+          "body": "P54 removable drain catch",
+          "distance_mm": 0.0
+        }
+      ],
+      "REVIEW capacity to pour notch": [
+        {
+          "body": "P54 removable drain catch",
+          "distance_mm": 0.0
+        }
+      ]
+    },
+    "overlaps": [],
+    "pairs_checked": 2,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
   }
 }

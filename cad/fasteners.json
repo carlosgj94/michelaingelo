@@ -254,14 +254,13 @@
       "thread": "M3",
       "pitch_mm": 0.5,
       "length_mm": 10,
-      "head": "ISO 7380-1 button",
+      "head": "AF2 button with captive washer (SEMS)",
       "hardware_per_joint": {
-        "M3 washer ID3.2 OD7 x 0.5": 1,
         "ruthex RX-M3x5.7 heat-set insert": 1
       },
-      "stack_and_assembly": "Seat82.5; tip 72.5. Insert79 down 73.3, engagement 5.7; tip remains 1.5 above pilot floor 71.",
+      "stack_and_assembly": "Specify four A2-70 assemblies with an OD7 \u00d7 0.50 captive metal washer in each. M3 \u00d7 0.5 thread, 10 mm from the bare head underside to the tip, AF2 head within \u00d85.7 \u00d7 1.65 and at least 0.40 mm of straight lower head wall for the pickup jaws. The socket must admit the key to 0.50 mm above the head underside. Washer bore \u00d82.75\u20132.80, neck \u00d82.68 maximum, retained by the rolled \u00d82.88 minimum thread crest with at most 0.25 mm measured axial float. Require full mating thread from 3.5 to 9.2 mm below the head and at most 0.50 mm of tip lead. Nominal head seat Z82.5, tip Z72.5 and 5.7 mm insert engagement. Confirm drawing, retention, fit and removal with the real hardware.",
       "location": "X +/-65, Y-258/-190",
-      "status": "Defined geometry"
+      "status": "Confirm captive fastener drawing and trial"
     },
     {
       "id": "F20",

@@ -159,7 +159,7 @@ Threads are coarse: M3 × 0.5, M4 × 0.7, M5 × 0.8, M6 × 1. Screw length is un
 
 | Size, mm | Total qty | Joint allocation | Use / confirmation |
 | --- | --- | --- | --- |
-| M3 × 10 | 14 | F18 (10), F19 (4) | Electronics lid; Controller tray |
+| M3 × 10 | 10 | F18 (10) | Electronics lid |
 | M5 × 16 | 8 | F06 (8) | Recessed platter screws; button heads required |
 
 ### Countersunk screws — DIN 7991, 90°
@@ -170,7 +170,9 @@ Threads are coarse: M3 × 0.5, M4 × 0.7, M5 × 0.8, M6 × 1. Screw length is un
 | M3 × 16 | 4 | F20 (4) | Heat spreader; head Ø≤6 |
 | M5 × 12 | 2 | F13 (2) | Motor support to core; head Ø≤10 |
 
-These three tables total **97 specified-length screws**, comprising 68 socket cap, 22 button and seven countersunk. The four additional F24 screws are sized after measuring the fitted arm seats in section 8. Dimensions with a supplier confirmation note are provisional. If M4 × 95 is unavailable, the register permits finishing M4 × 100 to 95 while retaining at least 16 mm of threaded tip.
+Order **four F19 M3 × 10 AF2 captive-washer assemblies** for the controller tray. Use the F19 dimensional specification and confirm the supplier drawing. Each assembly includes its own Ø7 × 0.50 washer, captured behind the rolled threads. [F19 specification](rotary-table-fasteners.md#stack-location-and-assembly-access)
+
+The tables and F19 assemblies total **97 specified-length screws**, comprising 68 socket cap, 18 plain button, four captive-washer button and seven countersunk. The four additional F24 screws are sized after measuring the fitted arm seats in section 8. Dimensions with a supplier confirmation note are provisional. If M4 × 95 is unavailable, the register permits finishing M4 × 100 to 95 while retaining at least 16 mm of threaded tip.
 
 ### Bench through-bolts — choose length after measuring the bench
 
@@ -203,7 +205,7 @@ ID and OD are inner and outer diameter. The final dimension is thickness. The ei
 
 | Item / dimensions, mm | Total qty | Use |
 | --- | --- | --- |
-| M3 washer ID3.2 OD7 x 0.5 | 22 | Motor face, lid/tray and heat spreader |
+| M3 loose washer ID3.2 OD7 × 0.5 | 18 | Motor face, lid and heat spreader. The four tray washers come with the F19 assemblies. |
 | M4 fender washer ID4.3 OD12 x 1 | 4 | Under bench at electronics feet |
 | M4 washer ID4.3 OD9 x 0.8 | 52 | Includes four upper arm-seat washers and four F21 washers |
 | M5 DIN 9021 washer ID5.3 OD15 x 1.2 | 8 | Housing bench anchors, above and below |

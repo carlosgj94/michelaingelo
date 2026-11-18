@@ -79,13 +79,18 @@
     "exclusions": "cad/hardware-check-coverage.json"
   },
   "service": {
-    "clearance_checks": 478,
+    "clearance_checks": 586,
     "supported_seats": 8,
     "unexpected_intersections": 0,
     "unchecked_pairs": 0,
     "raised_driver_rim_clearance_mm": 2.5,
     "raised_driver_plate_clearance_mm": 2.4999999999999813,
-    "critical_hood_washer_clearance_mm": 0.9000000238349471
+    "critical_hood_washer_clearance_mm": 0.9000000238349471,
+    "f19": {
+      "captive_fasteners": 4,
+      "clearance_checks": 184,
+      "physical_trial": "pending"
+    }
   },
   "fit_parameter_trial": {
     "changes": {
@@ -187,8 +192,8 @@
       24.0
     ],
     "capacities_ml": {
-      "to_pour_notch": 26.341614705882343,
-      "to_fill_mark": 19.900014705882345
+      "to_pour_notch": 26.29756323529411,
+      "to_fill_mark": 19.873963235294113
     },
     "manifest": "exports/rotary-table/drain-catch/drain-catch-manifest.json"
   },
@@ -205,6 +210,8 @@
   "not_run": [
     "Owned-foot seat and thread/preload qualification",
     "Slicing, printing, fit, insert, seal and nut-trap retention tests",
+    "F19 captive-washer retention, tool grip and fitted four-site removal and refitting",
+    "P54 marked-position return and repeated tracer test at all four outlets",
     "Loaded reversal, runout, stiffness, fatigue and stopping tests",
     "Home signal, selected connectors/cables and electronics thermal tests",
     "Articulated arm/tool/workpiece study and actual bench/weld qualification"
@@ -217,19 +224,19 @@
   "evidence_sha256": {
     "cad/rotary-table-build.json": "9795a1973e3f177eca1be9da175d849939dd5af04ef2c8c41c8754a1a4b4bb48",
     "cad/parts.json": "482f1568da47119fc8e9bed3a89741e473f20a34e41763d2cb841ac91ecc099f",
-    "cad/fasteners.json": "c1e6a336e4bcd8aa221205f2fd085cc31881a0c7253d31a1567e77920c8c175e",
+    "cad/fasteners.json": "c34121a724fc0a35cbfe519dd228bbd4d20a4f6d96aa807a2cf9ce25d9ce0d7c",
     "cad/fastener-clearance-checks.json": "23ad01c138cd67a675cf4a66b0747d8980256a6c96d43cfb1d12d2b7296cf5c6",
-    "cad/support-access-checks.json": "4834871c3edce63c0ac46279548418b924c26eb4039ca4c70c26ac1872e08d22",
+    "cad/support-access-checks.json": "678ca347c645844107db61a1b6ca64dc2d5c30fddf0d3b9ab0e6f57024589b39",
     "cad/fit-coupon-build.json": "900cd2a3eb0dee1f052c1faf817cd36abe611aca34b303fb4f7e1857b93cc966",
-    "cad/hardware-check-coverage.json": "a03ed7e4975c768b0d4ad813d69c57dc181946193c0527865c0d05d4def72b12",
+    "cad/hardware-check-coverage.json": "fc1776ab218c6851c3ff09752df3a65a53f320961ea62be191beb5b46862621f",
     "cad/stand-backing-strip.json": "f1a0c688340ddf429792ccdf294d74fdafa7db3f60fd532008a362a4b32b2b97",
     "exports/rotary-table/metal/m55-bench-backing-strip-make-two.step": "6c5a7f725389c1da089bbbbc4e1c9b6707033112e425771095cea5f52b57b26e",
     "exports/rotary-table/print-manifest.json": "08bc56ab9dc92231539540f6ad9e299572cd486472c9a98f49728f8a6a0b31aa",
     "exports/rotary-table/rt01-assembly.step": "48b8972f43dd2a5320285bd4fd48c50e71dc52452a5ca6f22bea6d85d1f7710e",
-    "exports/rotary-table/drain-catch/drain-catch-manifest.json": "519e9401fb11bd5a2d6c7cd11e8ce6e0347dea0c003374c07826320ad22a05bb",
+    "exports/rotary-table/drain-catch/drain-catch-manifest.json": "ee0caec3fe5955dc28bbcb5715b215cb5a82824e555e241789c37a3379a9a211",
     "exports/rotary-table/drain-catch/p54-removable-drain-catch.stl": "b40b77dda44dbd0688878e945c1e626f0bf26d18896c3dc1e5a645fa91bc54e8",
     "exports/rotary-table/drain-catch/p54-removable-drain-catch.sc": "2c8676e3acead0bc9faabac254492e04c178ea652e601459bcd754b8d6d46bc2",
-    "scripts/build_drain_catch.py": "d3241294a0ce40f8a5c2bbc316f0e973596de6bdcff28f498971fb6312dc9278",
+    "scripts/build_drain_catch.py": "bf2a883e2f9e1cf8bc7909160b046f38a613762feaabb94ba0c82bb0dcb1eded",
     "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-placement.png": "d500a876cd40495af6a36e3ef397757496e99f0296ede9cb17f1a79af71ec274",
     "docs/audit-evidence/2026-11-18-rt01/revision5/baseline.measure.json": "a3078c4a776fe83258df2d5fd213cc6dc50d52f636c19df84e450526861990dc",
     "docs/audit-evidence/2026-11-18-rt01/revision5/bench-fastening.probe.json": "ffc13e102337ba07fa0c6e7d2d761abcf98c6030b956d31565089ab9c8a7fc43",
@@ -253,13 +260,28 @@
     "docs/audit-evidence/2026-11-18-rt01/revision5/step.measure.json": "f4bfb0393128f6589e395294dc2c72c80a7cd5ac066c2ec2aa60a749c6bedf47",
     "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-build.json": "2140317d7c1b93c5b42f8c722aca65af83ad474b681b00fd3feaca38eceec38c",
     "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-build.measure.json": "160978658c3afcbe77fcae90fe18e7f7ce36669c4c23fafeb204efd57465dbf6",
-    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-capacity.measure.json": "89dddf7b636fc95e37a159b869c47858a42eccd7f179f161584fddb38f64e4ce",
-    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-capacity.probe.json": "f289e69dfef4b3391d21ffafc57a5ef4b3946613b353962c98279e327c21dab3",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-capacity.measure.json": "6350044fa774ad268b9bfcaa398359c20b731701c7301d54959115c9a213be6c",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-capacity.probe.json": "204a64e4bd456390df68a3d41ce78258967101a1a0f0ce2b04584a8d2a46c465",
     "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-placement.probe.json": "83df18c1ad0142c1c32562dc71e372227815cbcbfeb2d7820728542b94cdef2d",
     "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-route.probe.json": "3cf6310894f8a250567b9f6bc02632b489d72eeb18217ae3dc6c12faa8af4460",
     "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-route.results.json": "182439d1206db527954b80b600cfcd3203e75119de414fbacfb516b391871f54",
-    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-summary.json": "ac2b93df48bda210ae31a6cddb96eb05564b34b2f539485ec63b81a6dfe22491",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-summary.json": "f2de423c342c2276fb407e6ae821cba0a33ae752dd340f0561bd174b3ceb5ff7",
     "docs/audit-evidence/2026-11-18-rt01/service-follow-up/f07-carrier-limits.results.json": "957c5129dcd0946c261967f33711c3fa94f4f1249ed230f4b41406d9b6e140e4",
-    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/service.results.json": "fb219d415f98a3bee4f7aafd363b3e19132bd82e3e56720af14f548d0a25fe7d"
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-assembly-build.json": "69f238e30331e00594fdaa3fa0bfa139ddd8e7009c6aaf645b35253691995eba",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-assembly.measure.json": "9d22cc59ead8b3cb3cf3316dc9aafd36fc4b85f0498641ad2c085d59f2f8dcb2",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-clearance-summary.json": "c388a3ab3886b9a35d8772965b91529854509d9329c851eff7157a571a6acc4f",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-install-rotation.probe.json": "51b6beaa47b03263aca13e7d2a7f41df1d798eb88f320cc2df807b870b65a73e",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-install-rotation.results.json": "7a19ba8056656bdc7fc3010d341c9b3a3065e280d0b72cf332943ed8d3f95854",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-internal.probe.json": "5bec31fcc9c6c8fc4b08f21191411bb2c1abf6360a2ce326a0f6f93e4ce47a8c",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-internal.results.json": "0f49772352ec1cd53418552b60bd241e3267216cf2f1717a20c5ba05d8b2ce2d",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-loading.probe.json": "a63b91048fa5051a2619ea98196054b446e2e00b0195e6603c843efd3ad4191f",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/foam-fixture-loading.results.json": "1834e7fba563e2fbdc83c96875bc0df19dec79dfc6e833040914f97137685ca1",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/p56-foam-fixture-base-build.json": "4bf2b12feb7959810dbac8195166dad4880231ff385120fee23e9824c2df9782",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/p56-foam-fixture-base-build.measure.json": "8f892496ce701e39616445f1757d50ef0b4da07c86db41db43b360e45085dd7d",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/p57-sliding-jaw-build.json": "5e6e0e2035ac6a0601b0857ee70fe8f3c632a1d31e20870926a58ff255dcaedc",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/p57-sliding-jaw-build.measure.json": "676061be8a433424933742aced29ffe88a41ed414d8ae04a8b1bfba5a12bf534",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/p58-top-keeper-build.json": "249151e9293406b6676feefd775594e635092872c8a85c4ecffb14023d4f46fc",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/p58-top-keeper-build.measure.json": "291c517f40d2fad4538320448dc3503d3be866309c13887ffbc1e458bc905378",
+    "docs/audit-evidence/2026-11-18-rt01/service-follow-up/service.results.json": "4ca44ee425b7aa2b3a870c906038e32849616945cdf095e60317f652895a3bc2"
   }
 }
