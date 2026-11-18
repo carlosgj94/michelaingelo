@@ -6,12 +6,13 @@ Use the [specification](specs/rotary-table.md), [BOM](rotary-table-bom.md) and [
 
 - `exports/rotary-table/stl/`: **25** assembly STLs, millimetres, oriented and placed on Z0. Do not use retired P20/P21/P22/P23/P25/P30 files from older packages.
 - `fit-coupon.stl`: **150×100×24** coupon; feature map in [cad/fit-coupon-features.json](../cad/fit-coupon-features.json).
+- [P54 removable drain catch](../exports/rotary-table/drain-catch/p54-removable-drain-catch.stl): print four copies, one per outlet.
 - `print-manifest.json`: dimensions, brim footprint, bed-contact area, mesh/CAD volume checks and hashes.
 - `metal/`:17 custom metal body STEPs plus one backing-strip drawing (make two). These require the separate machining/fabrication requirements.
 - `rt01-assembly.step`:81 table/support/reference bodies; excludes arm. Cyan spaces are reservations, not physical parts.
 - `seal-profiles.step`: compressed thicknesses; cut uncompressed gasket stock from the BOM.
 
-A1 Mini baseline is dry yellow PETG with a 0.4 mm nozzle and 0.20 mm layers. Assign yellow PETG in Bambu Studio for the 25 assembly STLs and the fit coupon. Start from the filament profile and calibrate flow, first layer and elephant foot. The largest dimension is 168 mm. With a 5 mm brim on each side it occupies 178 mm on the 180 mm bed. Inspect purge lines, support expansion and placement in the slicer. Print one large quadrant per plate. Slicing and physical printing are pending.
+A1 Mini baseline is dry yellow PETG with a 0.4 mm nozzle and 0.20 mm layers. Assign yellow PETG in Bambu Studio for the 25 assembly STLs, the fit coupon and the four drain catches. Start from the filament profile and calibrate flow, first layer and elephant foot. The largest dimension is 168 mm. With a 5 mm brim on each side it occupies 178 mm on the 180 mm bed. Inspect purge lines, support expansion and placement in the slicer. Print one large quadrant per plate. Slicing and physical printing are pending.
 
 For platter, motor bracket and column sleeves, start with six walls,eight top/bottom layers, 35–45% infill and solid regions around clamps. Covers/service box:four walls, 20–25%. These are starting profiles, not strength qualifications. Keep supports/brim residue off functional lands. Metal components are not printable substitutes.
 
@@ -60,9 +61,9 @@ Orientations reduce support demand; they do not make every feature support-free.
 2. **Install concealed base hardware.** Fit the F13 countersunk screws joining M40 to M01. Tighten all four F02 core anchors through the metal spacers before fitting M60. The Ø25 recesses in M60 leave 1.4 mm over the screw heads; the blocks cover the key paths. For retorque, unload the table and open the drive, then remove the carrier and any obstructing shaft, rotor or bearing-seat stack. Recheck guide alignment and backlash after refitting. Use OD11 F01 washers beside the bearing.
 3. **Fit cartridge and columns.** Seat M60 on its metal guide, install F07 loosely for axial adjustment. There are no F08 block bolts. Fit matched 72 mm locating columns and shorter printed sleeves, then M02 onto the round/slot datums. Check metal-only column clamp path and assembled worm/bearing alignment.
 4. **Build rotor.** Fit the bearing rings to their designated seat/hub without bridging them; pilot M20 into the inner ring. Press M21 into M20 with a controlled fixture, align the wheel radial slot/pilot and clamp F05. Fit the mild-steel target with recessed F25 before access is obstructed. Inspect pilot/tooth runout and free rotation. Platter screws are now M5×16 into metal, not the old 25 mm nut stack.
-5. **Build worm shaft.** Assemble the approved shaft/key/inner-ring retention stack. Fit M61 caps and M62 shims and verify outer-ring contact. Set duplex backlash with the housing open. Approach the front F07 screws from the side with a short-leg 4 mm hex key. The probe used a 5 mm-wide handle reaching 65 mm, with 15 mm from the engaged tip to the top of the handle. Swing toward the centre and withdraw in the straight orientation. Verify the actual key with the hub, bearing and selected harness in place. Tighten F07, mark the carrier position and check torque through 360°. Follow KHK markings and lubrication instructions.
+5. **Build worm shaft.** Assemble the approved shaft/key/inner-ring retention stack. Fit M61 caps and M62 shims and verify outer-ring contact. Set duplex backlash and tighten the front F07 screws using the [worm adjustment tool procedure](#worm-adjustment-tool). Mark the carrier position and check torque through 360°. Follow KHK markings and lubrication instructions.
 6. **Fit motor and sensor.** Anchor integral M40 directly through metal; no P23 or anchor sleeves. Bolt P24 and motor with confirmed engagement, align coupling and retain shaft insertion over±3 cartridge travel. Fit the axial sensor through M02 with both nuts; set 1.2 mm gap to the retained steel target, verify cable route and one event per revolution under actual variation. Use a PNP-compatible input.
-7. **Close covers.** Fit the housing and seam strips. Apply a continuous, replaceable compatible RTV barrier through the platter seams and seal unused fixture holes and recesses. Keep the swept gaps clear of squeeze-out. Fit the hood gasket against the metal stops and seal the curved joint. Direct the four drains through the floor notches into a cleanable external catch. Verify the fixture's 8–9 mm screw engagement and its full rotation sweep.
+7. **Close covers.** Fit the housing and seam strips. Apply a continuous, replaceable compatible RTV barrier through the platter seams and seal unused fixture holes and recesses. Keep the swept gaps clear of squeeze-out. Fit the hood gasket against the metal stops and seal the curved joint. Place one [removable catch](#drain-catches) below each drain. Verify the fixture's 8–9 mm screw engagement and its full rotation sweep.
 8. **Build stand and electronics.** Install both M55 strips with the scallops inward toward the electronics bolts. Measure and fit all four F24 bearing seats before clamping the arm. F24 threads into M50 from above with at least 1 mm tip recess. For each F21, slide the seal and metal washer through the inward slot, drop in the captive nut and tighten the reversed bolt from below. The uncompressed seal and washer have 0.20 mm nominal loading allowance. Trial assembly and retention on the coupon first. Fit and seal the spreader, heat sink, driver, controller and cable hardware after anchoring the box.
 9. **Commission.** First unpowered ingress and hand-rotation checks. Then unloaded low speed, followed by progressive load/stopping, reversal/TIR/deflection, sensor, temperature and dust/splash tests. Do not infer a carving rating from the animation.
 
@@ -72,9 +73,40 @@ Bench anchor lengths depend on measured T; use the register formulas. Do not use
 
 ## Service with the arm installed
 
-Power off, disconnect and label device leads, then release the brackets and driver thermal interface. Remove ten lid screws through the Ø8 plate access holes. Lift lid/gasket 8 mm and slide rearward 140 mm. Release the tray screws, lift tray/controller 27 mm and slide rearward 140 mm. Lift the driver 70.5 mm to Z106.5–141.5 and move it rearward 140 mm. The raised envelope has 2.5 mm nominal clearance above the rim and below M50. The initial lift passes the tray posts with 1 mm nominal clearance per side. Prove the route with the selected device, connectors, tools and thermal interface in place before accepting service access.
+Power off, disconnect and label device leads, then release the brackets and driver thermal interface. Remove ten lid screws through the Ø8 plate access holes. Lift the lid and gasket 8 mm and slide them rearward 140 mm. Follow the [F19 tool procedure](#tray-screws-f19) to release and retrieve all four tray screws. Lift the tray and controller 27 mm and slide them rearward 140 mm. Lift the driver 70.5 mm to Z106.5–141.5 and move it rearward 140 mm. The raised envelope has 2.5 mm nominal clearance above the rim and below M50. The initial lift passes the tray posts with 1 mm nominal clearance per side. Prove the route with the selected device, connectors, tools and thermal interface in place before accepting service access.
 
 For motor service, remove all four F17 screws, free the curved RTV joint and disconnect or release the gland cables. Slide the hood 70 mm along +X before lifting it. Use a replacement B25 gasket when the old seal is dragged, torn or compressed out of shape. Inspect the four screw-post seats and verify a new seal after reassembly.
+
+### Tray screws (F19)
+
+With the lid removed, park the disconnected leads clear of the rear tool and tray paths. The checked AF2 lever has a stem within Ø2.31 × 22 mm, a hub within Ø8 mm and a 65 mm lever with an 8 × 8 mm section. Enter from Y−306 with the tip at Z106.5 and the lever pointing rearward. Align the stem above the screw and lower it into the socket. Use the 60° sector between rearward and inward. Viewed from above, loosen counterclockwise from rearward to inward at X−65 and from inward to rearward at X+65. Lift 2.5 mm clear of the socket before resetting the lever. Follow the screw up as it backs out.
+
+Once the screw is free, lift the bare driver 2.5 mm out of the socket and return the lever to the rearward orientation while it is still low. Raise the tip to Z106.5 and withdraw straight rearward. Use a positive mechanical pickup that holds both screw and washer and fits the checked Ø8 × 14.4 mm envelope above the hardware. Lift the captured assembly 27 mm before moving it rearward. Retrieve all four fasteners before lifting the tray. For refitting, use the same access sector in the opposite direction to tighten. Verify the tools, disconnection, retention and refitting with the installed controller and leads. [Tool envelope and clocking](../cad/hardware-check-coverage.json)
+
+### Arm mounting screws (F24)
+
+Isolate power and support the arm in the saved folded pose before using this route. The checked AF3 tool has a shaft within Ø3.47 × 25 mm from the engaged tip, an Ø8 mm bend or hub and an outboard 65 mm handle within an 8 × 5 mm section. Approach from the corresponding side at X−90 or X+90 with the tip clear of the screw. Rotate to the start angle while raised. Drop into the socket, tighten clockwise, lift 3 mm before resetting and return to the outboard orientation before withdrawing. The nominal check uses a head seat at Z168.8. Recheck the route and actual engagement after fitting the four matched seats.
+
+Angles are measured counterclockwise from +X, viewed from above. The front row is closest to the table. [Tool envelope and hole coordinates](../cad/hardware-check-coverage.json)
+
+| Site | Clockwise tightening stroke |
+| --- | --- |
+| X+ front | 60° to 0° |
+| X+ rear | 0° to −60° |
+| X− front | 180° to 120° |
+| X− rear | 240° to 180° |
+
+### Worm adjustment tool
+
+Isolate power, free the hood glands and curved seam, and remove the motor hood, fixed housing quadrants and seam backing strips. Keep the hub, wheel, bearing and columns installed. Secure the harness clear of the tool route. Fit a compact AF4 key within the checked envelope. It uses a Ø5 mm shaft envelope and a 5 × 5 mm handle section reaching 65 mm from the stem, with **12 mm from the engaged tip to the top of the handle**. Match the real bend and verify that the tool can apply the required clamp torque.
+
+Approach horizontally from −Y with the handle pointing −Y and the tip raised 5 mm above its fully engaged position. The probe moves the stem from Y−62 to Y18. Looking down, turn the tool at X−52 60° counterclockwise while raised, engage it and tighten clockwise toward −Y. At X+52, engage with the handle pointing −Y and tighten clockwise 60° toward the centre. Lift the key 5 mm clear before resetting for the next stroke. After the last stroke, return to the −Y orientation while lifted and pull the key out along the entry route. The two screw paths have 0.50 mm minimum sampled clearance at carrier X = −3, 0 and +3. Verify the actual key and demonstrate two successive tightening strokes to the required clamp torque on each screw.
+
+## Drain catches
+
+Print four P54 catches upright with the open side up. Each catch is nominally **70 × 40 × 24 mm**. Place them on the flat bench beneath the four Ø5 drain axes at R161 and 45°, 135°, 225° and 315°. Centre the raised inlet under the bore and face the pour notch away from the table. The bore's nominal projection clears the inlet's inward wall by 0.50 mm, so check centring with the first-article tracer before marking the positions on the bench. Leave room to slide each cup radially outward. [P54 print file](../exports/rotary-table/drain-catch/p54-removable-drain-catch.stl)
+
+Empty a cup before the fill mark, which is about **20 mL** nominal. Stop the machine, slide the cup 20 mm outward and lift 30 mm to clear the housing. Pour through the notch away from the machine and clean the open channel and sump. The printed gutter has a local **0.50 mm radial lip** at each bore. Inspect it in the layer preview and on a first article before using a cleaning tool. Use an unpowered tracer to check all four outlets, including splash, pooling and leakage at the prints, drive and electronics. Repeat after rotating and cleaning the table. [Installed placement](audit-evidence/2026-11-18-rt01/service-follow-up/drain-catch-placement.png)
 
 ## Regeneration and checks
 
@@ -88,6 +120,7 @@ python3 scripts/build_fit_coupon.py
 python3 scripts/rebuild_assembly.py --in michelaingelo.sc --out /tmp/rt01-review.sc
 /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/fit-coupon-build.json --save exports/rotary-table/fit-coupon.sc --out exports/rotary-table/fit-coupon.stl --quality fine --quiet
 python3 scripts/export_rotary_table.py --in /tmp/rt01-review.sc
+python3 scripts/build_drain_catch.py --model /tmp/rt01-review.sc
 /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/stand-backing-strip.json --quiet
 /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/fastener-clearance-checks.json --in /tmp/rt01-review.sc --results --quiet
 /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/support-access-checks.json --in /tmp/rt01-review.sc --results --quiet

@@ -37,7 +37,9 @@ Print **one copy of every linked assembly STL**. The quantities below are the nu
 | --- | --- | --- | --- |
 | Fit coupon | 1 initially | 150 × 100 × 24 | [fit-coupon.stl](../exports/rotary-table/fit-coupon.stl) |
 
-Buy yellow PETG filament. The required mass is **TBD after slicing**, including supports, brim and calibration. The 25-piece total does not include extra calibration/reprint attempts. Largest assembly dimension is 168 mm; the largest footprint with a 5 mm brim is 178 mm on the 180 mm bed. Inspect actual slicer placement. Retired P20/P21/P22/P23/P25/P30 prints are not part of this BOM.
+Print **four P54 removable drain catches** in yellow PETG, one below each outlet. Each catch is nominally 70 × 40 × 24 mm and sits on the bench. Use the same STL for all four. [P54 STL](../exports/rotary-table/drain-catch/p54-removable-drain-catch.stl) · [Placement and cleaning](rotary-table-printing.md#drain-catches)
+
+Buy yellow PETG filament. The required mass is **TBD after slicing**, including the catches, supports, brim and calibration. The 25-piece count covers the installed assembly bodies. Largest assembly dimension is 168 mm, and the largest footprint with a 5 mm brim is 178 mm on the 180 mm bed. Inspect actual slicer placement. Retired P20/P21/P22/P23/P25/P30 prints are not part of this BOM.
 
 ## 2. To Be Fabricated — metal structure and precision parts
 

@@ -1,0 +1,2456 @@
+{
+  "check": "Supplemental F07 complete clockwise tool cycles at both carrier travel limits",
+  "recorded_utc": "2026-11-18T10:16:51.159505+00:00",
+  "source_native": "michelaingelo.sc",
+  "source_native_sha256": "6fa96aa3e4a9380bfe4d64823aa8246d0498cd365a7af2194f9eef73170a3f9f",
+  "solidcraft_version": "0.44.1",
+  "production_script": "cad/support-access-checks.json",
+  "production_coverage": "cad/hardware-check-coverage.json",
+  "centered_case": "Covered by the tracked production service script; no centered results duplicated here",
+  "geometry": {
+    "front_screw_axes_mm": [
+      [
+        -52,
+        18
+      ],
+      [
+        52,
+        18
+      ]
+    ],
+    "engaged_tip_z_mm": 23,
+    "assumed_socket_engagement_mm": 3,
+    "shaft_envelope_diameter_mm": 5,
+    "handle_section_mm": [
+      5,
+      5
+    ],
+    "handle_reach_mm": 65,
+    "tip_to_handle_top_mm": 12,
+    "disengagement_mm": 5,
+    "clockwise_strokes_per_screw": 2,
+    "left_engaged_yaw_deg": [
+      60,
+      45,
+      30,
+      12,
+      0
+    ],
+    "right_engaged_yaw_deg": [
+      0,
+      -12,
+      -30,
+      -45,
+      -60
+    ],
+    "rear_tool_axis_y_mm": [
+      -62,
+      -42,
+      -22,
+      -2,
+      18
+    ],
+    "rear_infeed_and_retreat_lift_mm": 5
+  },
+  "coverage": "102 sampled clearance poses per carrier limit: rear infeed, airborne alignment, entry, two clockwise tightening strokes, disengagement, airborne re-indexing, re-engagement and rear retreat. No continuous swept-volume claim.",
+  "prerequisites": "Fixed housing quadrants, seam strips and motor hood absent together with F15/F16/F17 cover hardware; optional B07 encoder absent. Retain hub, bearing, wheel, columns, sleeves and all other registered hardware. F07 screw axes remain fixed in M01 while the carrier moves.",
+  "derivation_procedure": [
+    "Generate the normal production service commands and coverage with scripts/build_assembly_checks.py; use an isolated copy or intercept Path.write_text when generation is not authorized.",
+    "Read production service_checks from cad/hardware-check-coverage.json. Associate successive inspect.clearance commands in cad/support-access-checks.json with those labels in order.",
+    "Walk the production service commands from the beginning. Keep every non-inspection command, but omit preceding inspect.* commands. Start retaining inspect.clearance commands at creation of TEST F07 side key 0, preserving the matching labels.",
+    "Stop immediately before creation of the first TEST M55 backing strip body. This retains the production hardware population, service preparation and complete F07 commands for both screws.",
+    "Immediately before creation of TEST F07 side key 0, insert the exact offset_move recorded for this case. Do not move M01, the F07 screws, rotor or columns. All 17 moving body names are recorded in offset_move.",
+    "Run the resulting temporary script with /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run TEMP.json --in michelaingelo.sc --results --quiet --json-out TEMP.results.json. Do not pass --save.",
+    "For each retained F07 inspection, record the nearest reported pair, overlaps, unchecked list and truncation flag. Aggregate the minimum by screw and phase as below."
+  ],
+  "limits": [
+    "The imported arm and purchased components retain the production simplifications/exclusions.",
+    "The 12 mm tool is a candidate envelope, not a selected commercial key. Measure the actual bend, shaft/handle section, available socket engagement and torque capability.",
+    "The minimum 0.50 mm sleeve clearance and 1.00 mm fully lifted inward-handle/wheel clearance are nominal, before actual tool and assembly tolerances.",
+    "Actual harness clearance and two successive tightening strokes to the required clamp torque must be demonstrated physically."
+  ],
+  "cases": [
+    {
+      "carrier_x_offset_mm": -3,
+      "clearance_checks": 102,
+      "overlap_count": 0,
+      "unchecked_count": 0,
+      "truncated_results": 0,
+      "minimum_clearance_mm": 0.4999999999999929,
+      "offset_move": {
+        "command": "solid.move",
+        "params": {
+          "bodies": [
+            "M60 monolithic worm carrier",
+            "M61 worm bearing retainer left",
+            "M61 worm bearing retainer right",
+            "M62 retainer shim left",
+            "M62 retainer shim right",
+            "B02 worm support bearing left",
+            "B02 worm support bearing right",
+            "B03 worm shaft reference",
+            "B04 duplex worm envelope",
+            "TEST F09 -1 32.5 27",
+            "TEST F09 -1 32.5 73",
+            "TEST F09 -1 78.5 27",
+            "TEST F09 -1 78.5 73",
+            "TEST F09 1 32.5 27",
+            "TEST F09 1 32.5 73",
+            "TEST F09 1 78.5 27",
+            "TEST F09 1 78.5 73"
+          ],
+          "translate": [
+            -3,
+            0,
+            0
+          ]
+        }
+      },
+      "probe_sha256": "efe5a76df08cac2c3570eed0b7b92956b3ad217af261fb2609abc4613469def7",
+      "raw_result_sha256": "2e61756f9283aaeea9779a993ab663050249b9db3e72757758fc74eff2e19e7f",
+      "minimum_by_screw_and_phase": [
+        {
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "poses": 8,
+          "minimum_clearance_mm": 0.999999999999993,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 stroke 2 reset at 45 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "poses": 10,
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 stroke 1 engaged at 0 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "poses": 4,
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 final withdrawal at 0 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "poses": 4,
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 initial airborne reset at 30 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "poses": 5,
+          "minimum_clearance_mm": 1.9999999999999936,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 initial engagement lifted 4 mm at 60 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "poses": 5,
+          "minimum_clearance_mm": 1.9999999999999933,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 re-engagement before stroke 2 lifted 4 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 rear infeed 0 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "poses": 4,
+          "minimum_clearance_mm": 0.6421356237309135,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 rear retreat -20 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "poses": 10,
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 stroke 1 disengagement 1 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "poses": 8,
+          "minimum_clearance_mm": 0.4999999999999929,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 stroke 2 reset at 0 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "poses": 10,
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 stroke 2 engaged at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 initial engagement lifted 4 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 re-engagement before stroke 2 lifted 4 mm"
+        },
+        {
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 rear infeed 0 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "poses": 4,
+          "minimum_clearance_mm": 0.6421356237309134,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 rear retreat -20 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "poses": 10,
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 1 stroke 1 disengagement 5 mm at -60 degrees"
+        }
+      ],
+      "compact_rows": [
+        {
+          "label": "F07 side key 0 rear infeed -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.71985447626399,
+          "nearest_body": "B09 sensor connector and cable reservation",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.6421356237309316,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed 0 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.6658047088533714,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 60 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 4 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 1.9999999999999936,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 3 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 2.9999999999999933,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 2 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 3.9999999999999942,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 1 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 4.007804885470345,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 0 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 3.010398644698071,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 60 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698071,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 45 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980717,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 30 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698074,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 12 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.665804708853365,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 0 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 1 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 2 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 3 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 4 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.665804708853365,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 60 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 4 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 1.9999999999999933,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 3 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 3.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 2 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 4.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 1 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 4.00780488547035,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 0 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 3.0103986446980744,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 60 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980744,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 45 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980717,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 30 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980775,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 12 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.6658047088533512,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 0 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 1 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 2 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 3 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 4 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.6658047088533428,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.999999999999993,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 60 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 0.999999999999993,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 0.9999999999999932,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 1.6658047088533359,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 0 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 0.6421356237309135,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.5000000000000213,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.5000000000000147,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.719854476263997,
+          "nearest_body": "B09 sensor connector and cable reservation",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.9924225024706246,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.642135623730954,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed 0 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 4 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 3 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 2 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 1 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 0 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at 0 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -12 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.6658047088533705,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -30 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980704,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -45 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698071,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -60 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698074,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 1 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.007804885470347,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 2 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 3 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 3.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 4 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 2.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 5 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at -45 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at -30 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.9999999999999952,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at -12 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.6658047088533705,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at 0 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 4 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 3 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 2 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 1 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 0 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at 0 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -12 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.665804708853365,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -30 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980735,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -45 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980735,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -60 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980704,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 1 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.007804885470344,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 2 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 3 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 3.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 4 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 2.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 5 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at -45 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at -30 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.9999999999999938,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at -12 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.6658047088533603,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at 0 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.4999999999999929,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 0.6421356237309134,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.500000000000014,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.500000000000014,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.9924225024706175,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "carrier_x_offset_mm": 3,
+      "clearance_checks": 102,
+      "overlap_count": 0,
+      "unchecked_count": 0,
+      "truncated_results": 0,
+      "minimum_clearance_mm": 0.4999999999999929,
+      "offset_move": {
+        "command": "solid.move",
+        "params": {
+          "bodies": [
+            "M60 monolithic worm carrier",
+            "M61 worm bearing retainer left",
+            "M61 worm bearing retainer right",
+            "M62 retainer shim left",
+            "M62 retainer shim right",
+            "B02 worm support bearing left",
+            "B02 worm support bearing right",
+            "B03 worm shaft reference",
+            "B04 duplex worm envelope",
+            "TEST F09 -1 32.5 27",
+            "TEST F09 -1 32.5 73",
+            "TEST F09 -1 78.5 27",
+            "TEST F09 -1 78.5 73",
+            "TEST F09 1 32.5 27",
+            "TEST F09 1 32.5 73",
+            "TEST F09 1 78.5 27",
+            "TEST F09 1 78.5 73"
+          ],
+          "translate": [
+            3,
+            0,
+            0
+          ]
+        }
+      },
+      "probe_sha256": "d49726c41693850b2edf699e7c1f01a117f6361427dc2900629a163ec7d87cdb",
+      "raw_result_sha256": "ca6b1093a35feb0c34676ff07f8d3d529131d4afab87fb4e69cc85652d2ab3a1",
+      "minimum_by_screw_and_phase": [
+        {
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "poses": 8,
+          "minimum_clearance_mm": 0.999999999999993,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 stroke 2 reset at 45 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "poses": 10,
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 stroke 1 engaged at 0 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "poses": 4,
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 final withdrawal at 0 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "poses": 4,
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 initial airborne reset at 30 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "poses": 5,
+          "minimum_clearance_mm": 1.9999999999999936,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 initial engagement lifted 4 mm at 60 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "poses": 5,
+          "minimum_clearance_mm": 1.9999999999999933,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 0 re-engagement before stroke 2 lifted 4 mm"
+        },
+        {
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 rear infeed 0 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "poses": 4,
+          "minimum_clearance_mm": 0.6421356237309135,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 rear retreat -20 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "poses": 10,
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "at_label": "F07 side key 0 stroke 1 disengagement 1 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "poses": 8,
+          "minimum_clearance_mm": 0.4999999999999929,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 stroke 2 reset at 0 degrees lifted 5 mm"
+        },
+        {
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "poses": 10,
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 stroke 2 engaged at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 initial engagement lifted 4 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 re-engagement before stroke 2 lifted 4 mm"
+        },
+        {
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "poses": 5,
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 rear infeed 0 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "poses": 4,
+          "minimum_clearance_mm": 0.6421356237309134,
+          "nearest_body": "P11 column sleeve",
+          "at_label": "F07 side key 1 rear retreat -20 mm lifted 5 mm at 0 degrees"
+        },
+        {
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "poses": 10,
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "at_label": "F07 side key 1 stroke 1 disengagement 5 mm at -60 degrees"
+        }
+      ],
+      "compact_rows": [
+        {
+          "label": "F07 side key 0 rear infeed -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.71985447626399,
+          "nearest_body": "B09 sensor connector and cable reservation",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.6421356237309316,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear infeed 0 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.6658047088533714,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial airborne reset at 60 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "initial airborne alignment",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 4 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 1.9999999999999936,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 3 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 2.9999999999999933,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 2 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 3.9999999999999942,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 1 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 4.007804885470343,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 initial engagement lifted 0 mm at 60 degrees",
+          "screw_index": 0,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 3.010398644698074,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 60 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698074,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 45 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980704,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 30 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980744,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 12 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.665804708853365,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 engaged at 0 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 1 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 2 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 3 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 4 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 disengagement 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000072,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.665804708853365,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 1 reset at 60 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 4 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 1.9999999999999933,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 3 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 3.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 2 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 4.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 1 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 4.007804885470343,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 re-engagement before stroke 2 lifted 0 mm",
+          "screw_index": 0,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 3.010398644698071,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 60 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698071,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 45 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980673,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 30 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698074,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 12 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.6658047088533512,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 engaged at 0 degrees",
+          "screw_index": 0,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 1 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 2 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 3 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 4 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 disengagement 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.6658047088533428,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.999999999999993,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 stroke 2 reset at 60 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 45 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 0.999999999999993,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 30 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 0.9999999999999932,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 12 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 1.6658047088533359,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 final withdrawal at 0 degrees lifted 5 mm",
+          "screw_index": 0,
+          "phase": "final airborne return to rear",
+          "minimum_clearance_mm": 0.5000000000000143,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 0.6421356237309135,
+          "nearest_body": "P12 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.5000000000000213,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.5000000000000147,
+          "nearest_body": "P14 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 0 rear retreat -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 0,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.719854476263997,
+          "nearest_body": "B09 sensor connector and cable reservation",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.9924225024706246,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 2.5,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.642135623730954,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear infeed 0 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear infeed",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 4 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 3 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 2 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 1 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 initial engagement lifted 0 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "initial engagement",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at 0 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5000000000000071,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -12 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.6658047088533705,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -30 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698074,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -45 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980735,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 engaged at -60 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980766,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 1 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.00780488547035,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 2 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 3 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 3.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 4 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 2.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 disengagement 5 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at -45 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at -30 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.9999999999999952,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at -12 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.6658047088533705,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 1 reset at 0 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 4 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 3 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 2 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 1 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 re-engagement before stroke 2 lifted 0 mm",
+          "screw_index": 1,
+          "phase": "re-engagement for second stroke",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at 0 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 0.5,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -12 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 1.665804708853365,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -30 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698074,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -45 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.0103986446980695,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 engaged at -60 degrees",
+          "screw_index": 1,
+          "phase": "clockwise tightening",
+          "minimum_clearance_mm": 3.010398644698073,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 1 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.007804885470346,
+          "nearest_body": "M60 monolithic worm carrier",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 2 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 4.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 3 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 3.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 4 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 2.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 disengagement 5 mm at -60 degrees",
+          "screw_index": 1,
+          "phase": "socket disengagement",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at -45 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.0,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at -30 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.9999999999999938,
+          "nearest_body": "B11 duplex wheel envelope",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at -12 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 1.6658047088533603,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 stroke 2 reset at 0 degrees lifted 5 mm",
+          "screw_index": 1,
+          "phase": "airborne re-indexing",
+          "minimum_clearance_mm": 0.4999999999999929,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -20 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 0.6421356237309134,
+          "nearest_body": "P11 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -40 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.500000000000014,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -60 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.500000000000014,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        },
+        {
+          "label": "F07 side key 1 rear retreat -80 mm lifted 5 mm at 0 degrees",
+          "screw_index": 1,
+          "phase": "rear retreat",
+          "minimum_clearance_mm": 2.9924225024706175,
+          "nearest_body": "P13 column sleeve",
+          "overlap_count": 0,
+          "unchecked_count": 0,
+          "truncated": false
+        }
+      ]
+    }
+  ]
+}

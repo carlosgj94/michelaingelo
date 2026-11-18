@@ -1,0 +1,54 @@
+{
+  "bodies": [
+    {
+      "area_mm2": 13516.28214041403,
+      "bbox": {
+        "max": [
+          65.0,
+          20.0,
+          24.000000000000004
+        ],
+        "min": [
+          -5.0,
+          -20.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        28.777409038567377,
+        0.0016610753696883038,
+        7.553328355424263
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 81,
+      "face_types": {
+        "plane": 30
+      },
+      "faces": 30,
+      "kernel": {
+        "edges": 81,
+        "faces": 30,
+        "shells": 1,
+        "vertices": 54
+      },
+      "mass_g": 33.08338742647058,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P54 removable drain catch",
+      "notes": [],
+      "vertices": 54,
+      "volume_mm3": 25646.036764705877
+    }
+  ],
+  "body_count": 1,
+  "total": {
+    "area_mm2": 13516.28214041403,
+    "edges": 81,
+    "faces": 30,
+    "mass_g": 33.08338742647058,
+    "open_bodies_skipped": 0,
+    "vertices": 54,
+    "volume_mm3": 25646.036764705877
+  }
+}

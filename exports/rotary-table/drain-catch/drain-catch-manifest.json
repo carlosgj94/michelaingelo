@@ -1,0 +1,67 @@
+{
+  "design": "RT-01 P54 removable drain catch",
+  "quantity": 4,
+  "editable_native": {
+    "file": "exports/rotary-table/drain-catch/p54-removable-drain-catch.sc",
+    "sha256": "2c8676e3acead0bc9faabac254492e04c178ea652e601459bcd754b8d6d46bc2"
+  },
+  "placement": {
+    "drain_radius_mm": 161,
+    "angles_deg": [
+      45,
+      135,
+      225,
+      315
+    ],
+    "bench_z_mm": 0,
+    "native_inlet_axis_xy_mm": [
+      0,
+      0
+    ],
+    "stl_inlet_axis_xy_mm": [
+      5,
+      20
+    ],
+    "orientation": "Canonical +X points outward; rotate about inlet axis, then place that axis at R161.",
+    "removal": "Move radially outward 20 mm, then lift 30 mm; keep this bench area clear."
+  },
+  "capacities_ml": {
+    "to_pour_notch": 26.341614705882343,
+    "to_fill_mark": 19.900014705882345
+  },
+  "flow": {
+    "floor_drop_mm": 13,
+    "floor_run_mm": 68,
+    "slope_degrees": 10.823011226207099,
+    "inlet_floor_at_drain_mm": 14.044117647058824,
+    "outlet": "Accessible outer V-pour notch; empty after outward removal, not a continuous drain."
+  },
+  "print": {
+    "file": "exports/rotary-table/drain-catch/p54-removable-drain-catch.stl",
+    "triangles": 802,
+    "print_bbox_mm": [
+      70.0,
+      40.0,
+      24.0
+    ],
+    "footprint_with_5mm_brim_mm": [
+      80.0,
+      50.0
+    ],
+    "mesh_volume_mm3": 25646.0368,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "bed_contact_area_mm2": 2420.0,
+    "sha256": "b40b77dda44dbd0688878e945c1e626f0bf26d18896c3dc1e5a645fa91bc54e8",
+    "cad_volume_mm3": 25646.036764705877,
+    "mesh_volume_error_percent": 1.376201889173871e-07
+  },
+  "instructions": [
+    "Print four identical cups upright, flat cup base on the bed; yellow PETG, 0.4 mm nozzle, 0.20 mm layers and four walls.",
+    "The raised inlet underside is 45 degrees; inspect the sliced tip and bridges. Clean brim off the bench foot.",
+    "Use a flat, level, rigid bench at Z0. Centre the inlet directly below the drain: the full 5 mm projected bore has 0.5 mm inward and 3.5 mm tangential mouth margins. Verify positioning with a safe tracer before use.",
+    "Open cups collect incidental drips. Inspect and empty before the Z17 mark; lift and pour through the outer notch, then rinse or brush through the open top.",
+    "Inspect the existing 0.50 mm printed gutter lip and validate its cleanout method. Never clip this accessory to that lip.",
+    "Geometric capacity and routes only. No physical flow, splashing, seal, level-tolerance or contaminant-collection performance is claimed."
+  ]
+}

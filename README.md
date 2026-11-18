@@ -23,7 +23,7 @@ This is **prototype geometry for review, not a fabrication release or tested pre
 - [Fastener register](docs/rotary-table-fasteners.md) and [CSV](cad/fastener-shopping-list.csv) — 23 active groups with 119 screws and bolts, including four measured-fit arm screws and 18 bench anchors whose lengths depend on the bench.
 - [Bill of materials](docs/rotary-table-bom.md) — printed parts, fabricated parts, bought hardware and pending selections.
 - [Printing/assembly guide](docs/rotary-table-printing.md) — coupon map, first articles, print orientation and assembly/service sequence.
-- [Print package](exports/rotary-table/rt01-print-package.zip) — 25 oriented STLs, coupon, manifests, guides and metal references.
+- [Print package](exports/rotary-table/rt01-print-package.zip) — 25 oriented assembly STLs, fit coupon, removable drain catch, manifests, guides and metal references.
 - [Assembly STEP](exports/rotary-table/rt01-assembly.step), [metal parts](exports/rotary-table/metal/), [seal profiles](exports/rotary-table/seal-profiles.step) — bought devices are labelled simplified envelopes; STEP files are not tolerance drawings.
 - [Arm source](references/so-arm100/README.md), [mount coordinates](cad/arm-mount-reference.json), [historical designs](docs/archive/) — preserved reference/context.
 

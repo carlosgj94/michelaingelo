@@ -138,6 +138,143 @@ hood=['P46 motor service hood']
 released_lid=('TEST F18 ',)
 released_tray=released_lid+('TEST F19 ',)
 
+# Dimensioned tool envelopes are acceptance limits for a selected physical tool,
+# not a claim that a particular commercial driver or a human hand was checked.
+def tool_box(n,size,corner,op='new'):
+ p=dict(length=size[0],width=size[1],height=size[2],corner=corner,operation=op)
+ p.update(body_name=n) if op=='new' else p.update(targets=[n])
+ cmd('solid.box',**p)
+
+def lever_tool(n,x,y,tip,shaft_d,shaft_h,handle_h,axis,side=1,travel=0):
+ # The enlarged hub bounds the bend or bit holder. The bar includes its grip.
+ cyl(n,shaft_d,shaft_h+travel,[x,y,tip])
+ cyl(n,8,handle_h+travel,[x,y,tip+shaft_h],op='join')
+ corner=[x if side>0 else x-65,y-4,tip+shaft_h] if axis=='X' else [x-4,y-65,tip+shaft_h]
+ tool_box(n,[65,8,handle_h+travel] if axis=='X' else [8,65,handle_h+travel],corner,'join')
+
+tool_contracts={
+ 'F24':dict(shaft_diameter_mm=3.47,shaft_projection_mm=25,hub_diameter_mm=8,
+             handle_reach_mm=65,handle_section_mm=[8,5],engaged_tip_z_mm=170.8,
+             disengagement_mm=3,approach_axis_x_mm=90,rotation_sample_step_deg=5,
+             bounding_rotation_radius_mm=69,
+             between_sample_motion_bound_mm=2*69*math.sin(math.radians(5)/4),
+             preconditions=['Power isolated; arm supported in the saved folded pose.',
+               'Provisional F24 head seat Z168.8 only; revise checks after the matched seats are designed.',
+               'All other F24 fasteners remain installed; exclude only the working socket.',
+               'Select/measure an actual AF3 tool within the shaft, bend and grip envelope; confirm its rating and hand access for the qualified clamp torque.'],
+             limits=['The arm/foot clamps, actual seating pressure, hand volume and tool strength are not qualified by clearance.',
+               'Angular paths are sampled every5 degrees; subtract the recorded between-sample bound from the measured minimum before claiming continuous angular clearance.']),
+ 'F19':dict(shaft_diameter_mm=2.31,shaft_projection_mm=22,hub_diameter_mm=8,
+             handle_reach_mm=65,handle_section_mm=[8,8],engaged_tip_z_mm=83,
+             rear_entry_y_mm=-306,rear_entry_tip_z_mm=106.5,disengagement_mm=2.5,
+             screw_backout_mm=7,retrieval_lift_mm=27,
+             retrieval_capture_diameter_mm=8,retrieval_capture_height_mm=14.4,
+             preconditions=['Isolate power; remove lid/gasket and all F18 screws.',
+               'Disconnect and label controller/service leads; park loose leads outside the rear tool and extraction corridor before working.',
+               'Keep the controller/tray, driver reservation and all other installed hardware while accessing each F19 socket.',
+               'Use an AF2 lever driver within the stated envelope, then a positive mechanical screw-and-washer capture; do not assume magnetic pickup of A2 stainless hardware.'],
+             limits=['B22/B23/B09 existing reserves are checked, but selected connectors, flexible leads and hand access require an installed service trial.',
+               'The retrieval capture is a maximum tool envelope, not a selected product; it must retain both the loose screw and washer.'])}
+
+# F24: side entry with the long arm pointing outward. Every tightening stroke
+# is clockwise viewed from +Z. Mirrored sites use different starting clocking.
+f24_clocking=[]
+for i,point in enumerate(armdata['adapter_holes']):
+ x,y=point['plate_hole_center_mm'][:2];side=1 if x>0 else -1
+ arc=side*(1 if y>-224 else -1)
+ start=60 if arc>0 else 0;end=start-60;outside=0 if side>0 else 180
+ f24_clocking.append(dict(site=i,center_mm=[x,y],handle_start_azimuth_deg=outside+start,handle_end_azimuth_deg=outside+end))
+ socket=(f'TEST F24 {i}',)
+ delta=90-abs(x)
+ n=f'TEST F24 outboard entry sweep {i}'
+ tool_box(n,[delta+3.47,3.47,25],[x-1.735 if side>0 else -91.735,y-1.735,173.8])
+ tool_box(n,[delta+69,8,5],[x-4 if side>0 else -155,y-4,198.8],'join')
+ check(f'F24 tool {i} complete outboard entry', [n], released=socket)
+ n=f'TEST F24 engagement sweep {i}';lever_tool(n,x,y,170.8,3.47,25,5,'X',side,3)
+ check(f'F24 tool {i} complete axial engagement', [n], released=socket)
+ n=f'TEST F24 compact lever {i}';lever_tool(n,x,y,173.8,3.47,25,5,'X',side)
+ yaw=0
+ if start:
+  for angle in range(5,start+1,5):
+   cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,170.8],angle=angle-yaw);yaw=angle
+   check(f'F24 tool {i} raised entry clocking {angle}',[n],released=socket)
+ cmd('solid.move',bodies=[n],translate=[0,0,-3]);check(f'F24 tool {i} first engagement',[n],released=socket)
+ for stroke in range(2):
+  for angle in range(start-5,end-1,-5):
+   cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,170.8],angle=angle-yaw);yaw=angle
+   check(f'F24 tool {i} clockwise stroke {stroke} at {angle}',[n],released=socket)
+  cmd('solid.move',bodies=[n],translate=[0,0,3]);check(f'F24 tool {i} disengaged after stroke {stroke}',[n],released=socket)
+  for angle in range(end+5,start+1,5):
+   cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,170.8],angle=angle-yaw);yaw=angle
+   check(f'F24 tool {i} raised reset {stroke} at {angle}',[n],released=socket)
+  if stroke==0:
+   cmd('solid.move',bodies=[n],translate=[0,0,-3]);check(f'F24 tool {i} second engagement',[n],released=socket)
+ # Return to the straight outboard orientation while disengaged, then leave.
+ if yaw:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,170.8],angle=-yaw)
+ cmd('solid.move',bodies=[n],translate=[side*(90-abs(x)),0,0])
+ check(f'F24 tool {i} outboard withdrawal',[n],released=socket)
+tool_contracts['F24']['clocking']=f24_clocking
+
+# F19: rear-entry AF2 lever, complete vertical approach and conservative bounds
+# covering the entire engaged/disengaged inboard swing. Retrieve hardware with
+# a separate short capture tool so a long driver and screw need not clear the
+# rim as one tall assembly.
+removed_tray_screws=[]
+for i,(x,y) in enumerate([(x,y) for x in [-65,65] for y in [-258,-190]]):
+ target=f'TEST F19 {i}';socket=(target,)
+ removed=lid+[name for name in probes if name.startswith('TEST F18 ')]+removed_tray_screws
+ n=f'TEST F19 rear entry sweep {i}'
+ tool_box(n,[2.31,y+308.31,22],[x-1.155,-307.155,106.5])
+ tool_box(n,[8,y+375,8],[x-4,-371,128.5],'join')
+ check(f'F19 tool {i} complete rear entry',[n],removed,socket)
+ n=f'TEST F19 engagement sweep {i}';lever_tool(n,x,y,83,2.31,22,8,'Y',travel=23.5)
+ check(f'F19 tool {i} complete vertical approach',[n],removed,socket)
+ n=f'TEST F19 full turning bound {i}'
+ # Swing only below the high rear-entry plane: full7 mm backout plus2.5
+ # disengagement. Restore rear yaw here before the straight upward withdrawal.
+ cyl(n,2.31,31.5,[x,y,83]);cyl(n,8,17.5,[x,y,105],op='join')
+ tool_box(n,[65*math.sin(math.pi/3)+8,69,17.5],
+          [x-4 if x<0 else x-65*math.sin(math.pi/3)-4,y-69,105],'join')
+ check(f'F19 tool {i} continuous turning and reset bound',[n],removed,socket)
+ n=f'TEST F19 compact lever {i}';lever_tool(n,x,y,85.5,2.31,22,8,'Y')
+ start=0 if x<0 else -60;end=start+60;yaw=start
+ if start:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=start)
+ cmd('solid.move',bodies=[n],translate=[0,0,-2.5]);check(f'F19 tool {i} first engagement',[n],removed,socket)
+ for stroke in range(2):
+  cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=end-yaw);yaw=end
+  check(f'F19 tool {i} counterclockwise release stroke {stroke}',[n],removed,socket)
+  cmd('solid.move',bodies=[n],translate=[0,0,2.5]);check(f'F19 tool {i} disengaged after stroke {stroke}',[n],removed,socket)
+  cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=start-yaw);yaw=start
+  if stroke==0:
+   cmd('solid.move',bodies=[n],translate=[0,0,-2.5]);check(f'F19 tool {i} second engagement',[n],removed,socket)
+ # The same bounded cycles repeat until the screw is unthreaded. Check the
+ # seven-millimetre axial backout, then remove the bare key before retrieval.
+ cmd('solid.move',bodies=[n],translate=[0,0,-2.5])
+ cmd('solid.move',bodies=[n,target],translate=[0,0,7]);check(f'F19 tool {i} fully unthreaded at backout7',[n,target],removed)
+ cmd('solid.move',bodies=[n],translate=[0,0,2.5])
+ check(f'F19 tool {i} low disengagement after backout',[n],removed,socket)
+ if yaw:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,y,83],angle=-yaw)
+ check(f'F19 tool {i} low rear clocking',[n],removed,socket)
+ cmd('solid.move',bodies=[n],translate=[0,0,14])
+ check(f'F19 tool {i} straight upward withdrawal',[n],removed,socket)
+ cmd('solid.move',bodies=[n],translate=[0,-306-y,0]);check(f'F19 tool {i} bare driver withdrawn',[n],removed,socket)
+ # Positive capture encloses both head and washer, not the lower shank.
+ pickup=f'TEST F19 positive retrieval {i}';cyl(pickup,8,14.4,[x,y,88.75])
+ sweep=f'TEST F19 capture vertical sweep {i}';cyl(sweep,8,32.15,[x,y,88.75])
+ check(f'F19 screw {i} capture approach',[sweep],removed,socket)
+ sweep=f'TEST F19 captured lift sweep {i}';cyl(sweep,3,37,[x,y,79.5])
+ cyl(sweep,8,41.4,[x,y,88.75],op='join')
+ check(f'F19 screw {i} complete captured lift',[sweep],removed,socket)
+ cmd('solid.move',bodies=[pickup,target],translate=[0,0,27]);check(f'F19 screw {i} lifted above rim',[pickup,target],removed)
+ sweep=f'TEST F19 captured rear sweep {i}';tool_box(sweep,[8,y+314,23.65],[x-4,-310,106.5])
+ check(f'F19 screw {i} retrieval entry and captured withdrawal',[sweep],removed,socket)
+ cmd('solid.move',bodies=[pickup,target],translate=[0,-306-y,0]);check(f'F19 screw {i} retrieved rearward',[pickup,target],removed)
+ removed_tray_screws.append(target)
+# Each later service proof starts from its original installed population.
+for i,(x,y) in enumerate([(x,y) for x in [-65,65] for y in [-258,-190]]):
+ cmd('solid.move',bodies=[f'TEST F19 {i}'],translate=[0,y+306,-34])
+coverage['service_tool_contracts']=tool_contracts
+
 for label,moving,height,removed,released in [
  ('lid',lid,8,[],released_lid),('tray',tray,27,lid,released_tray),
  ('driver',driver,70.5,lid+tray,released_tray),
@@ -179,18 +316,73 @@ for i,(x,y) in enumerate([(x,y) for x in [-64,64] for y in [-64,64]]):
 
 # Short leg engages from the side with the housing open and retaining the hub,
 # bearing and wheel. B07 is optional and has no baseline installed hardware.
-for i,(x,sign) in enumerate([(-52,1),(52,-1)]):
- n=f'TEST F07 side key {i}';cyl(n,5,15,[x,18,23])
- cmd('solid.box',length=5,width=65,height=5,corner=[x-2.5,-47,33],operation='join',targets=[n])
+# This is a measured-tool candidate, not a claim about every AF4 hex key.
+# Sample two clockwise tightening strokes viewed from +Z, disengaging before
+# each return swing. Finish both keys withdrawn in the rearward orientation.
+coverage['f07_tool_cycle']=dict(
+ tool='AF4 compact hex-key candidate; verify the actual bend, section and torque capability',
+ shaft_envelope_diameter_mm=5,handle_section_mm=[5,5],handle_reach_mm=65,
+ engaged_tip_z_mm=23,tip_to_handle_top_mm=12,disengagement_mm=5,
+ assumed_socket_engagement_mm=3,
+ tightening_strokes=2,tightening_direction='Clockwise viewed from +Z for both right-hand screws',
+ engaged_yaw_samples_deg={'left':[60,45,30,12,0],'right':[0,-12,-30,-45,-60]},
+ disengagement_samples_mm=[1,2,3,4,5],
+ reset_yaw_samples_deg={'left':[12,30,45,60],'right':[-45,-30,-12,0]},
+ reengagement_samples_mm=[4,3,2,1,0],
+ rear_infeed_offsets_mm=[-80,-60,-40,-20,0],rear_retreat_offsets_mm=[-20,-40,-60,-80],
+ prerequisites='All fixed housing quadrants, seam strips and motor hood removed with F15/F16/F17 cover hardware; retain hub, bearing, wheel, columns, sleeves and other registered hardware; optional B07 encoder absent',
+ carrier_x_offset_mm=0,
+ coverage='Sampled tool poses for rear infeed/retreat, swing, disengagement, reset and re-engagement at the centered carrier; not a continuous swept-volume proof')
+for i,(x,tightening,reset) in enumerate([
+ (-52,[60,45,30,12,0],[12,30,45,60]),
+ (52,[0,-12,-30,-45,-60],[-45,-30,-12,0]),
+]):
+ n=f'TEST F07 side key {i}';cyl(n,5,12,[x,-62,28])
+ cmd('solid.box',length=5,width=65,height=5,corner=[x-2.5,-127,35],operation='join',targets=[n])
  against=[b for b in allnames if b!=f'TEST F07 {i}' and not b.startswith(('P4','B25 ','B07 ','TEST F15 ','TEST F16 ','TEST F17 '))]
- previous=0
- for step,yaw in enumerate([0,12,30,45,60,0]):
-  if yaw!=previous:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,18,23],angle=sign*(yaw-previous))
+ yaw=0;lift=5;rear=-80
+ for offset in [-80,-60,-40,-20,0]:
+  if offset!=rear:cmd('solid.move',bodies=[n],translate=[0,offset-rear,0])
+  rear=offset
   cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
-  service_labels.append(f'F07 side key {i} step {step} at {yaw} degrees');previous=yaw
- cmd('solid.move',bodies=[n],translate=[0,0,5])
- cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
- service_labels.append(f'F07 side key {i} withdrawal')
+  service_labels.append(f'F07 side key {i} rear infeed {rear} mm lifted {lift} mm at 0 degrees')
+ if tightening[0]:
+  for angle in reset:
+   cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,18,23],angle=angle-yaw);yaw=angle
+   cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+   service_labels.append(f'F07 side key {i} initial airborne reset at {yaw} degrees lifted {lift} mm')
+ for height in [4,3,2,1,0]:
+  cmd('solid.move',bodies=[n],translate=[0,0,height-lift]);lift=height
+  cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+  service_labels.append(f'F07 side key {i} initial engagement lifted {lift} mm at {yaw} degrees')
+ for stroke in range(1,3):
+  for angle in tightening:
+   if angle!=yaw:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,18,23],angle=angle-yaw)
+   yaw=angle
+   cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+   service_labels.append(f'F07 side key {i} stroke {stroke} engaged at {yaw} degrees')
+  for height in [1,2,3,4,5]:
+   cmd('solid.move',bodies=[n],translate=[0,0,height-lift]);lift=height
+   cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+   service_labels.append(f'F07 side key {i} stroke {stroke} disengagement {lift} mm at {yaw} degrees')
+  for angle in reset:
+   cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,18,23],angle=angle-yaw);yaw=angle
+   cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+   service_labels.append(f'F07 side key {i} stroke {stroke} reset at {yaw} degrees lifted {lift} mm')
+  if stroke==1:
+   for height in [4,3,2,1,0]:
+    cmd('solid.move',bodies=[n],translate=[0,0,height-lift]);lift=height
+    cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+    service_labels.append(f'F07 side key {i} re-engagement before stroke 2 lifted {lift} mm')
+ if yaw:
+  for angle in [45,30,12,0]:
+   cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,18,23],angle=angle-yaw);yaw=angle
+   cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+   service_labels.append(f'F07 side key {i} final withdrawal at {yaw} degrees lifted {lift} mm')
+ for offset in [-20,-40,-60,-80]:
+  cmd('solid.move',bodies=[n],translate=[0,offset-rear,0]);rear=offset
+  cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+  service_labels.append(f'F07 side key {i} rear retreat {rear} mm lifted {lift} mm at 0 degrees')
 
 # Relative washer-to-strip distances are independent of the common bench thickness.
 # Reuse the actual production drawing at both locations. No bench material is modeled.

@@ -1,0 +1,134 @@
+{
+  "bodies": [
+    {
+      "area_mm2": 13516.28214041403,
+      "bbox": {
+        "max": [
+          65.0,
+          20.0,
+          24.000000000000004
+        ],
+        "min": [
+          -5.0,
+          -20.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        28.777409038567377,
+        0.0016610753696883038,
+        7.553328355424263
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 81,
+      "face_types": {
+        "plane": 30
+      },
+      "faces": 30,
+      "kernel": {
+        "edges": 81,
+        "faces": 30,
+        "shells": 1,
+        "vertices": 54
+      },
+      "mass_g": 33.08338742647058,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P54 removable drain catch",
+      "notes": [],
+      "vertices": 54,
+      "volume_mm3": 25646.036764705877
+    },
+    {
+      "area_mm2": 6772.089011945958,
+      "bbox": {
+        "max": [
+          63.00000000000001,
+          18.0,
+          20.0
+        ],
+        "min": [
+          -3.0,
+          -18.0,
+          1.9999999999999982
+        ]
+      },
+      "center_of_mass": [
+        37.78398461213631,
+        -0.0016172129338178,
+        13.409945888277758
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 36,
+      "face_types": {
+        "plane": 15
+      },
+      "faces": 15,
+      "kernel": {
+        "edges": 36,
+        "faces": 15,
+        "shells": 1,
+        "vertices": 24
+      },
+      "mass_g": 33.98068297058823,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REVIEW capacity to pour notch",
+      "notes": [],
+      "vertices": 24,
+      "volume_mm3": 26341.614705882344
+    },
+    {
+      "area_mm2": 6151.489011945959,
+      "bbox": {
+        "max": [
+          63.00000000000001,
+          18.0,
+          17.0
+        ],
+        "min": [
+          -3.0,
+          -18.0,
+          1.9999999999999982
+        ]
+      },
+      "center_of_mass": [
+        39.33433096783109,
+        -5.3377304482993433e-17,
+        11.762159539839677
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "plane": 10
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 25.671018970588225,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REVIEW capacity to fill mark",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 19900.014705882346
+    }
+  ],
+  "body_count": 3,
+  "total": {
+    "area_mm2": 26439.86016430595,
+    "edges": 141,
+    "faces": 55,
+    "mass_g": 92.73508936764702,
+    "open_bodies_skipped": 0,
+    "vertices": 94,
+    "volume_mm3": 71887.66617647056
+  }
+}
