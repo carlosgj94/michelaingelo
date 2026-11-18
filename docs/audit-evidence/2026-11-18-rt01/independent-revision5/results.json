@@ -1,0 +1,2038 @@
+{
+  "native_sha256": "6fa96aa3e4a9380bfe4d64823aa8246d0498cd365a7af2194f9eef73170a3f9f",
+  "solidcraft": "solidcraft-cli 0.44.1",
+  "checks": {
+    "Drain 0 discharge over flat bench": {
+      "first_hits": [
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        }
+      ]
+    },
+    "Drain 0 radial wall at Z101": {
+      "first_hits": [
+        {
+          "body": "P41 fixed housing quadrant",
+          "depth_mm": 2.5
+        },
+        {
+          "body": "P41 fixed housing quadrant",
+          "depth_mm": 0.45
+        }
+      ]
+    },
+    "Drain 0 full height gauge": {
+      "nearest": [
+        [
+          "P41 fixed housing quadrant",
+          0.01
+        ],
+        [
+          "P31 platter quadrant",
+          0.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "Drain 1 discharge over flat bench": {
+      "first_hits": [
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        }
+      ]
+    },
+    "Drain 1 radial wall at Z101": {
+      "first_hits": [
+        {
+          "body": "P42 fixed housing quadrant",
+          "depth_mm": 2.5
+        },
+        {
+          "body": "P42 fixed housing quadrant",
+          "depth_mm": 0.45
+        }
+      ]
+    },
+    "Drain 1 full height gauge": {
+      "nearest": [
+        [
+          "P42 fixed housing quadrant",
+          0.01
+        ],
+        [
+          "P32 platter quadrant",
+          0.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "Drain 2 discharge over flat bench": {
+      "first_hits": [
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        }
+      ]
+    },
+    "Drain 2 radial wall at Z101": {
+      "first_hits": [
+        {
+          "body": "P43 fixed housing quadrant",
+          "depth_mm": 2.5
+        },
+        {
+          "body": "P43 fixed housing quadrant",
+          "depth_mm": 0.45
+        }
+      ]
+    },
+    "Drain 2 full height gauge": {
+      "nearest": [
+        [
+          "P43 fixed housing quadrant",
+          0.01
+        ],
+        [
+          "P33 platter quadrant",
+          0.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "Drain 3 discharge over flat bench": {
+      "first_hits": [
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        },
+        {
+          "body": "Review flat bench",
+          "depth_mm": 95.95
+        }
+      ]
+    },
+    "Drain 3 radial wall at Z101": {
+      "first_hits": [
+        {
+          "body": "P44 fixed housing quadrant",
+          "depth_mm": 2.5
+        },
+        {
+          "body": "P44 fixed housing quadrant",
+          "depth_mm": 0.45
+        }
+      ]
+    },
+    "Drain 3 full height gauge": {
+      "nearest": [
+        [
+          "P44 fixed housing quadrant",
+          0.01
+        ],
+        [
+          "P34 platter quadrant",
+          0.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 0 flat washer to foot": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          0.270963
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 0 long AF3 inscribed tool": {
+      "nearest": [
+        [
+          "SO_ARM100_08k_116_Square",
+          0.0
+        ],
+        [
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          1.783605
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "Review F24 0 long AF3 inscribed tool",
+          "SO_ARM100_08k_116_Square",
+          10.661729
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 0 short AF3 tool envelope": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          5.718828
+        ],
+        [
+          "Base_08q (3)",
+          11.681712
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 0 23.5 mm screw head insertion": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          1.551503
+        ],
+        [
+          "Base_08q (3)",
+          9.916712
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 1 flat washer to foot": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          0.615661
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 1 long AF3 inscribed tool": {
+      "nearest": [
+        [
+          "SO_ARM100_08k_116_Square",
+          3.811587
+        ],
+        [
+          "Base_08q (2)",
+          6.245098
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 1 short AF3 tool envelope": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          6.100417
+        ],
+        [
+          "Base_08q (3)",
+          7.665
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 1 23.5 mm screw head insertion": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          1.861732
+        ],
+        [
+          "Base_08q (3)",
+          5.9
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 2 flat washer to foot": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          0.270963
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 2 long AF3 inscribed tool": {
+      "nearest": [
+        [
+          "SO_ARM100_08k_116_Square",
+          0.0
+        ],
+        [
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          1.952089
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "Review F24 2 long AF3 inscribed tool",
+          "SO_ARM100_08k_116_Square",
+          10.661729
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 2 short AF3 tool envelope": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          5.718828
+        ],
+        [
+          "Base_08q (3)",
+          11.681712
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 2 23.5 mm screw head insertion": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          1.551503
+        ],
+        [
+          "Base_08q (3)",
+          9.916712
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 3 flat washer to foot": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          0.615661
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 3 long AF3 inscribed tool": {
+      "nearest": [
+        [
+          "SO_ARM100_08k_116_Square",
+          4.200336
+        ],
+        [
+          "Base_08q (2)",
+          6.245098
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 3 short AF3 tool envelope": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          6.100417
+        ],
+        [
+          "Base_08q (3)",
+          7.665
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F24 site 3 23.5 mm screw head insertion": {
+      "nearest": [
+        [
+          "Base_08q (2)",
+          1.861732
+        ],
+        [
+          "Base_08q (3)",
+          5.9
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F21 site 0 constant-volume circular seal": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          0.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "P50 electronics service box",
+          "Review compressed F21 ring 0",
+          5.678015
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F21 site 1 constant-volume circular seal": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          0.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "P50 electronics service box",
+          "Review compressed F21 ring 1",
+          5.678015
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F21 site 2 constant-volume circular seal": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          0.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "P50 electronics service box",
+          "Review compressed F21 ring 2",
+          5.678015
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F21 site 3 constant-volume circular seal": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          0.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "P50 electronics service box",
+          "Review compressed F21 ring 3",
+          5.678015
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 specified key at 60 deg lift 0": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          3.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 specified key at 60 deg lift 2.9": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.1
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 specified key at 60 deg lift 3": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 specified key at 60 deg lift 3.1": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "B11 duplex wheel envelope",
+          "Review F07 key 0 height 15",
+          26.330317
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 specified key at 60 deg lift 5": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "B11 duplex wheel envelope",
+          "Review F07 key 0 height 15",
+          526.606335
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 0 deg": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          0.5
+        ],
+        [
+          "B09 sensor connector and cable reservation",
+          2.719854
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 5 deg": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          2.015529
+        ],
+        [
+          "P14 column sleeve",
+          2.891942
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 10 deg": {
+      "nearest": [
+        [
+          "P14 column sleeve",
+          1.623901
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 15 deg": {
+      "nearest": [
+        [
+          "P14 column sleeve",
+          1.668151
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 20 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "P14 column sleeve",
+          3.590845
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 25 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 30 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 35 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 40 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 45 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 50 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 55 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key engaged at 60 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after engaged stroke step 1": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          4.007805
+        ],
+        [
+          "B11 duplex wheel envelope",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after engaged stroke step 2": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          4.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after engaged stroke step 3": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          3.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after engaged stroke step 4": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          2.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after engaged stroke step 5": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 60 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 55 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 50 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 45 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 40 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 35 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 30 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 25 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 20 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "P14 column sleeve",
+          3.590845
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 15 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.002646
+        ],
+        [
+          "P14 column sleeve",
+          1.668151
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 10 deg": {
+      "nearest": [
+        [
+          "P14 column sleeve",
+          1.623901
+        ],
+        [
+          "B11 duplex wheel envelope",
+          2.771063
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 5 deg": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          2.015529
+        ],
+        [
+          "P14 column sleeve",
+          2.891942
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key released at 0 deg": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          0.5
+        ],
+        [
+          "B09 sensor connector and cable reservation",
+          2.719854
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after released stroke step 1": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          0.5
+        ],
+        [
+          "B09 sensor connector and cable reservation",
+          2.719854
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after released stroke step 2": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          0.5
+        ],
+        [
+          "B09 sensor connector and cable reservation",
+          2.719854
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after released stroke step 3": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          0.5
+        ],
+        [
+          "B09 sensor connector and cable reservation",
+          2.719854
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after released stroke step 4": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          0.5
+        ],
+        [
+          "B09 sensor connector and cable reservation",
+          2.719854
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 0 short key after released stroke step 5": {
+      "nearest": [
+        [
+          "P12 column sleeve",
+          0.5
+        ],
+        [
+          "B09 sensor connector and cable reservation",
+          2.719854
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 specified key at 60 deg lift 0": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          3.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 specified key at 60 deg lift 2.9": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.1
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 specified key at 60 deg lift 3": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 specified key at 60 deg lift 3.1": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "B11 duplex wheel envelope",
+          "Review F07 key 1 height 15",
+          26.330317
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 specified key at 60 deg lift 5": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          0.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "B11 duplex wheel envelope",
+          "Review F07 key 1 height 15",
+          526.606335
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 0 deg": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          0.5
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 5 deg": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          2.015529
+        ],
+        [
+          "P13 column sleeve",
+          2.891942
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 10 deg": {
+      "nearest": [
+        [
+          "P13 column sleeve",
+          1.623901
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 15 deg": {
+      "nearest": [
+        [
+          "P13 column sleeve",
+          1.668151
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 20 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "P13 column sleeve",
+          3.590845
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 25 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 30 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 35 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 40 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 45 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 50 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 55 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key engaged at 60 deg": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ],
+        [
+          "B11 duplex wheel envelope",
+          6.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after engaged stroke step 1": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          4.007805
+        ],
+        [
+          "B11 duplex wheel envelope",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after engaged stroke step 2": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          4.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after engaged stroke step 3": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          3.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after engaged stroke step 4": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          2.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after engaged stroke step 5": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 60 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 55 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 50 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 45 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 40 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 35 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 30 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 25 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 20 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.0
+        ],
+        [
+          "P13 column sleeve",
+          3.590845
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 15 deg": {
+      "nearest": [
+        [
+          "B11 duplex wheel envelope",
+          1.002482
+        ],
+        [
+          "P13 column sleeve",
+          1.668151
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 10 deg": {
+      "nearest": [
+        [
+          "P13 column sleeve",
+          1.623901
+        ],
+        [
+          "B11 duplex wheel envelope",
+          2.771063
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 5 deg": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          2.015529
+        ],
+        [
+          "P13 column sleeve",
+          2.891942
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key released at 0 deg": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          0.5
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after released stroke step 1": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          0.5
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after released stroke step 2": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          0.5
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after released stroke step 3": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          0.5
+        ],
+        [
+          "M60 monolithic worm carrier",
+          5.0
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after released stroke step 4": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          0.5
+        ],
+        [
+          "M60 monolithic worm carrier",
+          4.007805
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F07 1 short key after released stroke step 5": {
+      "nearest": [
+        [
+          "P11 column sleeve",
+          0.5
+        ],
+        [
+          "M60 monolithic worm carrier",
+          3.010399
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 0 straight AF2 core": {
+      "nearest": [
+        [
+          "M50 SO100 arm mounting plate",
+          0.0
+        ],
+        [
+          "P51 removable controller tray",
+          2.261084
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "M50 SO100 arm mounting plate",
+          "Review F19 long key 0",
+          25.132741
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 0 compact rear entry": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          2.5
+        ],
+        [
+          "M50 SO100 arm mounting plate",
+          7.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 0 compact vertical engagement": {
+      "nearest": [
+        [
+          "P51 removable controller tray",
+          1.13887
+        ],
+        [
+          "P50 electronics service box",
+          1.414214
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 1 straight AF2 core": {
+      "nearest": [
+        [
+          "M50 SO100 arm mounting plate",
+          0.0
+        ],
+        [
+          "P51 removable controller tray",
+          2.261084
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "M50 SO100 arm mounting plate",
+          "Review F19 long key 1",
+          25.132741
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 1 compact rear entry": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          2.5
+        ],
+        [
+          "M50 SO100 arm mounting plate",
+          7.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 1 compact vertical engagement": {
+      "nearest": [
+        [
+          "P51 removable controller tray",
+          1.13887
+        ],
+        [
+          "P50 electronics service box",
+          1.414214
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 2 straight AF2 core": {
+      "nearest": [
+        [
+          "M50 SO100 arm mounting plate",
+          0.0
+        ],
+        [
+          "P51 removable controller tray",
+          2.261084
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "M50 SO100 arm mounting plate",
+          "Review F19 long key 2",
+          25.132741
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 2 compact rear entry": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          2.5
+        ],
+        [
+          "M50 SO100 arm mounting plate",
+          7.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 2 compact vertical engagement": {
+      "nearest": [
+        [
+          "P51 removable controller tray",
+          1.13887
+        ],
+        [
+          "P50 electronics service box",
+          1.414214
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 3 straight AF2 core": {
+      "nearest": [
+        [
+          "M50 SO100 arm mounting plate",
+          0.0
+        ],
+        [
+          "P51 removable controller tray",
+          2.261084
+        ]
+      ],
+      "overlaps_mm3": [
+        [
+          "M50 SO100 arm mounting plate",
+          "Review F19 long key 3",
+          25.132741
+        ]
+      ],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 3 compact rear entry": {
+      "nearest": [
+        [
+          "P50 electronics service box",
+          2.5
+        ],
+        [
+          "M50 SO100 arm mounting plate",
+          7.5
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F19 site 3 compact vertical engagement": {
+      "nearest": [
+        [
+          "P51 removable controller tray",
+          1.13887
+        ],
+        [
+          "P50 electronics service box",
+          1.414214
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F02 head 0 at carrier X0": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          1.4
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F02 head 1 at carrier X0": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          1.4
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F02 head 0 at carrier X-3": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          1.4
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F02 head 1 at carrier X-3": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          1.4
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F02 head 0 at carrier X3": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          1.4
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    },
+    "F02 head 1 at carrier X3": {
+      "nearest": [
+        [
+          "M60 monolithic worm carrier",
+          1.4
+        ]
+      ],
+      "overlaps_mm3": [],
+      "unchecked": [],
+      "truncated": false
+    }
+  }
+}
