@@ -1,0 +1,139 @@
+{
+  "commands": [
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "P56 foam fixture base",
+          "P57 sliding jaw 1",
+          "P57 sliding jaw 2",
+          "P58 open centre keeper",
+          "REF lower EVA pad",
+          "REF fixed X EVA pad",
+          "REF fixed Y EVA pad",
+          "REF moving X EVA pad",
+          "REF moving Y EVA pad",
+          "REF small foam blank",
+          "REF keeper EVA ring",
+          "REF tie -1 underbase",
+          "REF tie -1 keeper rail",
+          "REF tie -1 head envelope",
+          "REF tie -1 leg -1",
+          "REF tie -1 leg 1",
+          "REF tie 1 underbase",
+          "REF tie 1 keeper rail",
+          "REF tie 1 head envelope",
+          "REF tie 1 leg -1",
+          "REF tie 1 leg 1",
+          "REF M6 mount screw -47 -47",
+          "REF M6 mount washer -47 -47",
+          "REF M6 mount screw -47 47",
+          "REF M6 mount washer -47 47",
+          "REF M6 mount screw 47 -47",
+          "REF M6 mount washer 47 -47",
+          "REF M6 mount screw 47 47",
+          "REF M6 mount washer 47 47",
+          "REF jaw retainer 0 -17",
+          "REF jaw washer 0 -17",
+          "REF jaw nut 0 -17",
+          "REF jaw retainer 0 17",
+          "REF jaw washer 0 17",
+          "REF jaw nut 0 17",
+          "REF M4 adjuster 0",
+          "REF M4 locking nut 0",
+          "REF jaw retainer 1 -17",
+          "REF jaw washer 1 -17",
+          "REF jaw nut 1 -17",
+          "REF jaw retainer 1 17",
+          "REF jaw washer 1 17",
+          "REF jaw nut 1 17",
+          "REF M4 adjuster 1",
+          "REF M4 locking nut 1"
+        ],
+        "exclude_pairs": [
+          [
+            "REF tie -1 underbase",
+            "REF tie -1 keeper rail"
+          ],
+          [
+            "REF tie -1 underbase",
+            "REF tie -1 head envelope"
+          ],
+          [
+            "REF tie -1 underbase",
+            "REF tie -1 leg -1"
+          ],
+          [
+            "REF tie -1 underbase",
+            "REF tie -1 leg 1"
+          ],
+          [
+            "REF tie -1 keeper rail",
+            "REF tie -1 head envelope"
+          ],
+          [
+            "REF tie -1 keeper rail",
+            "REF tie -1 leg -1"
+          ],
+          [
+            "REF tie -1 keeper rail",
+            "REF tie -1 leg 1"
+          ],
+          [
+            "REF tie -1 head envelope",
+            "REF tie -1 leg -1"
+          ],
+          [
+            "REF tie -1 head envelope",
+            "REF tie -1 leg 1"
+          ],
+          [
+            "REF tie -1 leg -1",
+            "REF tie -1 leg 1"
+          ],
+          [
+            "REF tie 1 underbase",
+            "REF tie 1 keeper rail"
+          ],
+          [
+            "REF tie 1 underbase",
+            "REF tie 1 head envelope"
+          ],
+          [
+            "REF tie 1 underbase",
+            "REF tie 1 leg -1"
+          ],
+          [
+            "REF tie 1 underbase",
+            "REF tie 1 leg 1"
+          ],
+          [
+            "REF tie 1 keeper rail",
+            "REF tie 1 head envelope"
+          ],
+          [
+            "REF tie 1 keeper rail",
+            "REF tie 1 leg -1"
+          ],
+          [
+            "REF tie 1 keeper rail",
+            "REF tie 1 leg 1"
+          ],
+          [
+            "REF tie 1 head envelope",
+            "REF tie 1 leg -1"
+          ],
+          [
+            "REF tie 1 head envelope",
+            "REF tie 1 leg 1"
+          ],
+          [
+            "REF tie 1 leg -1",
+            "REF tie 1 leg 1"
+          ]
+        ],
+        "budget_s": 60
+      }
+    }
+  ]
+}

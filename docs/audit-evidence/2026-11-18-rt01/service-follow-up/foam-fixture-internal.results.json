@@ -1,0 +1,79 @@
+[
+  {
+    "boolean_ms": 1230.831,
+    "budget_exceeded": false,
+    "budget_s": 60.0,
+    "checked": 45,
+    "count": 0,
+    "interferences": [],
+    "ms": 341.67,
+    "pairs_candidate": 81,
+    "pairs_cleared": 30,
+    "pairs_excluded": 8,
+    "pairs_intersected": 51,
+    "pairs_not_checked": 0,
+    "skipped_pairs": 0,
+    "slowest": [
+      {
+        "a": "P56 foam fixture base",
+        "b": "REF lower EVA pad",
+        "boolean_ms": 73.269,
+        "ms": 73.27,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P56 foam fixture base",
+        "b": "REF fixed X EVA pad",
+        "boolean_ms": 66.398,
+        "ms": 66.399,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P56 foam fixture base",
+        "b": "REF M4 locking nut 1",
+        "boolean_ms": 62.476,
+        "ms": 62.477,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P56 foam fixture base",
+        "b": "REF jaw nut 1 17",
+        "boolean_ms": 56.056,
+        "ms": 56.058,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P56 foam fixture base",
+        "b": "REF jaw nut 1 -17",
+        "boolean_ms": 54.24,
+        "ms": 54.241,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P56 foam fixture base",
+        "b": "REF tie 1 underbase",
+        "boolean_ms": 51.787,
+        "ms": 51.789,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P56 foam fixture base",
+        "b": "REF M4 locking nut 0",
+        "boolean_ms": 51.108,
+        "ms": 51.109,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P56 foam fixture base",
+        "b": "P57 sliding jaw 2",
+        "boolean_ms": 48.848,
+        "ms": 48.849,
+        "tessellate_ms": 0.0
+      }
+    ],
+    "tessellate_ms": 0.0,
+    "threads": 10,
+    "truncated": false,
+    "unchecked": []
+  }
+]

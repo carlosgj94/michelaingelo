@@ -1,0 +1,84 @@
+{
+  "slicer": "Bambu Studio 02.08.02.60",
+  "printer": "Bambu Lab A1 mini",
+  "nozzle_mm": 0.4,
+  "material": "Generic PETG",
+  "bed": "Textured PEI Plate",
+  "units": "mm",
+  "scope": "Headless slicing of the listed STL files. Verify dimensional fit, adhesion and duty on a first article.",
+  "parts": {
+    "arm_seats": {
+      "settings": {
+        "layer_height": "0.1",
+        "initial_layer_print_height": "0.1",
+        "wall_loops": "4",
+        "top_shell_layers": "9",
+        "bottom_shell_layers": "7",
+        "sparse_infill_pattern": "concentric",
+        "sparse_infill_density": "100%",
+        "enable_support": "0",
+        "brim_type": "outer_only",
+        "brim_width": "3"
+      },
+      "files": [
+        {
+          "file": "exports/rotary-table/arm-seats/p55-front-left.stl",
+          "copies": 1,
+          "sha256": "f33ecfc47de98ceb139ca94ff3496c790f7e1559b1e6fa0cc4bebc46c8a74154"
+        },
+        {
+          "file": "exports/rotary-table/arm-seats/p55-front-right.stl",
+          "copies": 1,
+          "sha256": "6fcfdfe28df5e3b008647f5a7cc363b120e8839af56666e75f6728b2b5e0cfb7"
+        },
+        {
+          "file": "exports/rotary-table/arm-seats/p55-rear-left.stl",
+          "copies": 1,
+          "sha256": "1913c71d949f334484db88dc303b3d50351b8c5af334d0714664d061ed9df2d4"
+        },
+        {
+          "file": "exports/rotary-table/arm-seats/p55-rear-right.stl",
+          "copies": 1,
+          "sha256": "bebba7bc3a29230a02ef1681b70cb0cce29e03f80437f88b49d489a05f021d04"
+        }
+      ],
+      "plates": 1,
+      "sliced_objects": 4,
+      "material_g": 0.433
+    },
+    "foam_fixture": {
+      "settings": {
+        "layer_height": "0.2",
+        "initial_layer_print_height": "0.2",
+        "wall_loops": "6",
+        "top_shell_layers": "8",
+        "bottom_shell_layers": "8",
+        "sparse_infill_pattern": "grid",
+        "sparse_infill_density": "40%",
+        "enable_support": "0",
+        "brim_type": "auto_brim",
+        "brim_width": "5"
+      },
+      "files": [
+        {
+          "file": "exports/rotary-table/foam-fixture/p56-foam-fixture-base.stl",
+          "copies": 1,
+          "sha256": "96f683c3a4a9a772ca7678c36c4ab7e923d8a4abfeab054f083aa7be4e084522"
+        },
+        {
+          "file": "exports/rotary-table/foam-fixture/p57-sliding-jaw.stl",
+          "copies": 2,
+          "sha256": "4d83063d3138b623ec96cbbf3eebf5fe54a79263838f6f2eae54120d5127a1b7"
+        },
+        {
+          "file": "exports/rotary-table/foam-fixture/p58-top-keeper.stl",
+          "copies": 1,
+          "sha256": "866de5f3fb477d5606d8265a7d6e9f1ad80a58abc93647639382bf26104ef701"
+        }
+      ],
+      "plates": 2,
+      "sliced_objects": 4,
+      "material_g": 99.939
+    }
+  }
+}

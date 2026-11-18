@@ -8,7 +8,7 @@ The [18 November audit and response](docs/rotary-table-design-audit-2026-11-18.m
 
 The precision core now uses a **machined metal hub, one-piece worm-bearing carrier, metal retainer caps and integral motor foundation**. Purchased crossed-roller and angular-contact bearings support a 40:1 KHK duplex worm drive. Metal pilots, a carrier guide and a drive pin replace the former printed alignment/clamp interfaces. This adds machining beyond the original two-plate concept.
 
-The assembly has **25 A1 Mini printed pieces plus a fit coupon** in yellow PETG. The CAD colors mark sourcing. Grey parts are made to order and black parts are bought off the shelf. Four top-down fasteners engage M50 with recessed tips, clearing the full driver envelope for rearward removal. Final screw lengths and the bearing seats under their heads depend on the owned arm foot.
+The assembly has **25 A1 Mini printed pieces plus a fit coupon** in yellow PETG. Grey CAD parts are made to order and black parts are bought off the shelf. Four top-down fasteners engage M50 with recessed tips, clearing the driver for rearward removal. The prototype accessories include four [arm seats](docs/rotary-table-printing.md#prototype-arm-seats) made from the imported foot geometry and a [first foam fixture](docs/rotary-table-printing.md#prototype-foam-fixture). Check the arm screw lengths after fitting the seats.
 
 ![RT-01 with mounted arm reference](docs/rotary-table-with-arm.png)
 

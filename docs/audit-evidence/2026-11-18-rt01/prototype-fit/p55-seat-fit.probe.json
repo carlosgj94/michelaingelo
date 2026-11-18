@@ -1,0 +1,420 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "P55 provisional SO100 seats",
+        "grounded": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "p55_top",
+        "expression": "168 mm",
+        "comment": "Provisional printed fitted shim; nominal imported foot only."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "p55_bottom",
+        "expression": "165 mm",
+        "comment": "Provisional printed fitted shim; nominal imported foot only."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "p55_od",
+        "expression": "9 mm",
+        "comment": "Provisional printed fitted shim; nominal imported foot only."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "p55_bore",
+        "expression": "5.2 mm",
+        "comment": "Provisional printed fitted shim; nominal imported foot only."
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_od",
+        "height": "p55_top-p55_bottom",
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          "p55_bottom"
+        ],
+        "body_name": "P55 seat 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_bore",
+        "height": 5,
+        "base": [
+          27.776497308103686,
+          -189.2250092524069,
+          164
+        ],
+        "operation": "cut",
+        "targets": [
+          "P55 seat 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P55 seat 0",
+        "tools": [
+          "Base_08q (2)"
+        ],
+        "operation": "cut",
+        "keep_tools": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_od",
+        "height": "p55_top-p55_bottom",
+        "base": [
+          31.75,
+          -259.0,
+          "p55_bottom"
+        ],
+        "body_name": "P55 seat 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_bore",
+        "height": 5,
+        "base": [
+          31.75,
+          -259.0,
+          164
+        ],
+        "operation": "cut",
+        "targets": [
+          "P55 seat 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P55 seat 1",
+        "tools": [
+          "Base_08q (2)"
+        ],
+        "operation": "cut",
+        "keep_tools": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_od",
+        "height": "p55_top-p55_bottom",
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          "p55_bottom"
+        ],
+        "body_name": "P55 seat 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_bore",
+        "height": 5,
+        "base": [
+          -27.77649730810371,
+          -189.2250092524069,
+          164
+        ],
+        "operation": "cut",
+        "targets": [
+          "P55 seat 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P55 seat 2",
+        "tools": [
+          "Base_08q (2)"
+        ],
+        "operation": "cut",
+        "keep_tools": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_od",
+        "height": "p55_top-p55_bottom",
+        "base": [
+          -31.75,
+          -259.0,
+          "p55_bottom"
+        ],
+        "body_name": "P55 seat 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "p55_bore",
+        "height": 5,
+        "base": [
+          -31.75,
+          -259.0,
+          164
+        ],
+        "operation": "cut",
+        "targets": [
+          "P55 seat 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P55 seat 3",
+        "tools": [
+          "Base_08q (2)"
+        ],
+        "operation": "cut",
+        "keep_tools": true
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "P55 seat 0",
+          "P55 seat 1",
+          "P55 seat 2",
+          "P55 seat 3"
+        ],
+        "color": "#F6C915",
+        "name": "Yellow PETG prototype seats"
+      }
+    },
+    {
+      "command": "inspect.measure",
+      "params": {
+        "bodies": [
+          "P55 seat 0",
+          "P55 seat 1",
+          "P55 seat 2",
+          "P55 seat 3"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "P55 seat 0",
+          "P55 seat 1",
+          "P55 seat 2",
+          "P55 seat 3"
+        ],
+        "against": [
+          "M01 aluminium base plate",
+          "M03 metal bench spacer",
+          "M04 metal bench spacer",
+          "M05 metal bench spacer",
+          "M06 metal bench spacer",
+          "M11 steel locating column",
+          "P11 column sleeve",
+          "M12 steel locating column",
+          "P12 column sleeve",
+          "M13 steel locating column",
+          "P13 column sleeve",
+          "M14 steel locating column",
+          "P14 column sleeve",
+          "M02 aluminium bearing seat",
+          "B01 bearing outer ring reference",
+          "M60 monolithic worm carrier",
+          "M61 worm bearing retainer left",
+          "M62 retainer shim left",
+          "B02 worm support bearing left",
+          "M61 worm bearing retainer right",
+          "M62 retainer shim right",
+          "B02 worm support bearing right",
+          "B03 worm shaft reference",
+          "B04 duplex worm envelope",
+          "B05 clamp coupling reference",
+          "P24 NEMA17 motor bracket",
+          "B06 NEMA17 motor and encoder envelope",
+          "B08 axial home sensor reference",
+          "B13 sensor upper jam nut",
+          "B13 sensor lower jam nut",
+          "B09 sensor connector and cable reservation",
+          "B07 output encoder reserved volume",
+          "B10 bearing inner ring reference",
+          "B11 duplex wheel envelope",
+          "M20 registered output hub",
+          "M21 wheel drive pin",
+          "B12 retained steel home target",
+          "P31 platter quadrant",
+          "P32 platter quadrant",
+          "P33 platter quadrant",
+          "P34 platter quadrant",
+          "P41 fixed housing quadrant",
+          "P42 fixed housing quadrant",
+          "P43 fixed housing quadrant",
+          "P44 fixed housing quadrant",
+          "P45 seam backing strip 1",
+          "P45 seam backing strip 2",
+          "P45 seam backing strip 3",
+          "P45 seam backing strip 4",
+          "P46 motor service hood",
+          "B20 core static gasket",
+          "B25 motor hood gasket",
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B21 heat spreader gasket",
+          "M31 heat-spreader compression stop",
+          "M32 heat-spreader compression stop",
+          "M33 heat-spreader compression stop",
+          "M34 heat-spreader compression stop",
+          "B22 driver packaging envelope",
+          "P51 removable controller tray",
+          "B23 controller packaging envelope",
+          "P52 electronics lid",
+          "B24 lid gasket",
+          "B26 external heatsink reference",
+          "B27 thermal interface pad",
+          "P53 electronics foot 1",
+          "P53 electronics foot 2",
+          "P53 electronics foot 3",
+          "P53 electronics foot 4",
+          "M40 stepped motor support",
+          "B41 motor anchor washer",
+          "B42 motor anchor washer",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace",
+          "B51 bridge anchor washer",
+          "B52 bridge anchor washer",
+          "B53 bridge anchor washer",
+          "B54 bridge anchor washer",
+          "Base_08q",
+          "Base_08q (2)",
+          "Base_08q (3)",
+          "WaveShare_Mounting_Plate_01d",
+          "Rotation_Pitch_08i",
+          "SO_ARM100_08k_Asym_Mirror_Clip",
+          "Passive_Horn_01",
+          "STS3215_03a",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "SO_ARM100_08k_116_Square",
+          "SO_ARM100_08k_Mirror",
+          "SO_ARM100_08k_Mirror (2)",
+          "Wrist_Roll_Pitch_08i",
+          "Wrist_Roll_08c",
+          "Moving_Jaw_08d",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "STS3215_03a_Wrist_Roll"
+        ],
+        "nearest": 4
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P55 seat 0"
+        ],
+        "copy": true,
+        "translate": [
+          0,
+          0,
+          -0.02
+        ],
+        "body_name": "P55 contact gauge 0"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P55 seat 1"
+        ],
+        "copy": true,
+        "translate": [
+          0,
+          0,
+          -0.02
+        ],
+        "body_name": "P55 contact gauge 1"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P55 seat 2"
+        ],
+        "copy": true,
+        "translate": [
+          0,
+          0,
+          -0.02
+        ],
+        "body_name": "P55 contact gauge 2"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "P55 seat 3"
+        ],
+        "copy": true,
+        "translate": [
+          0,
+          0,
+          -0.02
+        ],
+        "body_name": "P55 contact gauge 3"
+      }
+    },
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "P55 contact gauge 0",
+          "P55 contact gauge 1",
+          "P55 contact gauge 2",
+          "P55 contact gauge 3",
+          "Base_08q (2)"
+        ],
+        "budget_s": 60
+      }
+    }
+  ]
+}

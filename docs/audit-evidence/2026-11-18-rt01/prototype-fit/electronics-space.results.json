@@ -1,0 +1,1296 @@
+{
+  "source_native_sha256": "6fa96aa3e4a9380bfe4d64823aa8246d0498cd365a7af2194f9eef73170a3f9f",
+  "minimum_clearance_mm": 1.0,
+  "selected_reservations_mm": {
+    "driver": [
+      118,
+      80,
+      35
+    ],
+    "controller": [
+      118,
+      70,
+      20
+    ]
+  },
+  "scope": [
+    "Nominal capacity includes attached rigid connectors within the selected boxes.",
+    "The driver-side thermal interface has its own 0.25 mm allowance. Its spreader and flush fasteners remain in overlap checks.",
+    "The tray and lid leave before the driver. Device withdrawal follows the recorded lift and rear translation.",
+    "Final mounts, flexing leads, hand access, cooling and fitted service need the selected hardware."
+  ],
+  "candidates": {
+    "driver": [
+      {
+        "size_mm": [
+          118,
+          76,
+          35
+        ],
+        "passes": true,
+        "minimum_mm": 1.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.9999999999999929
+              },
+              {
+                "body": "M34 heat-spreader compression stop",
+                "distance_mm": 3.249999999999993
+              },
+              {
+                "body": "M33 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.9999999999999858
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "M34 heat-spreader compression stop",
+                "distance_mm": 3.249999999999993
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.4999999999999813
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 10.499999999999972
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 12.899999999999949
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          118,
+          80,
+          35
+        ],
+        "passes": true,
+        "minimum_mm": 1.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.9999999999999929
+              },
+              {
+                "body": "M33 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              },
+              {
+                "body": "M34 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.9999999999999858
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "M33 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.4999999999999813
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 10.499999999999972
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 12.899999999999949
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          118,
+          84,
+          35
+        ],
+        "passes": false,
+        "minimum_mm": 0.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.9999999999999929
+              },
+              {
+                "body": "M33 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              },
+              {
+                "body": "M34 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.0
+              },
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "M33 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.4999999999999813
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 10.499999999999972
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 12.899999999999949
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          122,
+          80,
+          35
+        ],
+        "passes": false,
+        "minimum_mm": 0.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.0
+              },
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F19 3",
+                "distance_mm": 2.915475947422653
+              },
+              {
+                "body": "TEST F19 1",
+                "distance_mm": 2.915475947422657
+              }
+            ],
+            "overlaps": [
+              {
+                "a": "P50 electronics service box",
+                "area_mm2": 1773.601774069256,
+                "b": "REVIEW driver (122, 80, 35) installed",
+                "bbox": {
+                  "max": [
+                    61.00000000000002,
+                    -186.99999999999997,
+                    71.00000000000001
+                  ],
+                  "min": [
+                    -61.000000000000014,
+                    -261.0,
+                    35.99999999999999
+                  ]
+                },
+                "center": [
+                  2.4392885757558727e-13,
+                  -224.00000000000014,
+                  53.50000000000002
+                ],
+                "volume_mm3": 572.2538807765013
+              }
+            ]
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.0
+              },
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "M33 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              }
+            ],
+            "overlaps": [
+              {
+                "a": "P50 electronics service box",
+                "area_mm2": 2171.5221288831062,
+                "b": "REVIEW driver (122, 80, 35) complete lift",
+                "bbox": {
+                  "max": [
+                    61.00000000000002,
+                    -186.99999999999994,
+                    79.00000000000001
+                  ],
+                  "min": [
+                    -61.000000000000014,
+                    -261.0,
+                    35.99999999999999
+                  ]
+                },
+                "center": [
+                  1.954216058868356e-13,
+                  -224.00000000000017,
+                  57.50000000000003
+                ],
+                "volume_mm3": 703.0547678111301
+              }
+            ]
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 2.4999999999999813
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 3.5
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 10.499999999999972
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 12.899999999999949
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          118,
+          80,
+          37
+        ],
+        "passes": false,
+        "minimum_mm": 0.5,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.9999999999999929
+              },
+              {
+                "body": "M33 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              },
+              {
+                "body": "M34 heat-spreader compression stop",
+                "distance_mm": 3.2499999999999933
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "M30 driver heat spreader",
+                "distance_mm": 0.2499999999998863
+              },
+              {
+                "body": "TEST F20 1",
+                "distance_mm": 0.44999999999999574
+              },
+              {
+                "body": "TEST F20 0",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 2",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "TEST F20 3",
+                "distance_mm": 0.45000000000000284
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 0.4999999999999804
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 0.9999999999999858
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 1.4999999999999716
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 0.4999999999999804
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 1.4999999999999716
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 1.5
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 1.5
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 1.5
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 2.5
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 8.499999999999943
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 10.899999999999949
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      }
+    ],
+    "controller": [
+      {
+        "size_mm": [
+          80,
+          55,
+          20
+        ],
+        "passes": true,
+        "minimum_mm": 2.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "P52 electronics lid",
+                "distance_mm": 2.0
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 14.5
+              },
+              {
+                "body": "B24 lid gasket",
+                "distance_mm": 16.924054216147795
+              },
+              {
+                "body": "TEST F18 4",
+                "distance_mm": 20.961997285302
+              },
+              {
+                "body": "TEST F18 6",
+                "distance_mm": 20.96199728530203
+              },
+              {
+                "body": "TEST F18 7",
+                "distance_mm": 20.961997285302033
+              },
+              {
+                "body": "TEST F18 5",
+                "distance_mm": 20.96199728530212
+              },
+              {
+                "body": "TEST F19 0",
+                "distance_mm": 22.33118270617896
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 14.5
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.847122228653546
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 16.84712222865359
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 16.918924315688656
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 16.91892431568866
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 22.99999999999997
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 25.39999999999995
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 5.0
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 15.999999999999975
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.847122228653546
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 16.84712222865359
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 23.0
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 25.39999999999995
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          108,
+          64,
+          20
+        ],
+        "passes": true,
+        "minimum_mm": 2.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "P52 electronics lid",
+                "distance_mm": 2.0
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 6.869978247782913
+              },
+              {
+                "body": "TEST F19 0",
+                "distance_mm": 7.680339887498934
+              },
+              {
+                "body": "TEST F19 3",
+                "distance_mm": 7.680339887498934
+              },
+              {
+                "body": "TEST F19 1",
+                "distance_mm": 7.680339887498935
+              },
+              {
+                "body": "TEST F19 2",
+                "distance_mm": 7.680339887498951
+              },
+              {
+                "body": "B24 lid gasket",
+                "distance_mm": 12.426729702987435
+              },
+              {
+                "body": "TEST F18 5",
+                "distance_mm": 16.62077013859466
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 6.869978247782913
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.01875808728178
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 16.018758087281796
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 16.0312195418814
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 16.03121954188143
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 22.99999999999997
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 25.39999999999995
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.999999999999987
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 15.999999999999975
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.01875808728178
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 16.018758087281796
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 23.0
+              },
+              {
+                "body": "Base_08q",
+                "distance_mm": 25.39999999999995
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          114,
+          68,
+          20
+        ],
+        "passes": true,
+        "minimum_mm": 2.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "P52 electronics lid",
+                "distance_mm": 2.0
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.242640687119275
+              },
+              {
+                "body": "TEST F19 0",
+                "distance_mm": 4.499999999999986
+              },
+              {
+                "body": "TEST F19 2",
+                "distance_mm": 4.499999999999986
+              },
+              {
+                "body": "TEST F19 3",
+                "distance_mm": 4.499999999999986
+              },
+              {
+                "body": "TEST F19 1",
+                "distance_mm": 4.499999999999993
+              },
+              {
+                "body": "B24 lid gasket",
+                "distance_mm": 10.428659762617807
+              },
+              {
+                "body": "TEST F18 6",
+                "distance_mm": 14.773286702694158
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.242640687119275
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 14.999999999999982
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 15.999999999999973
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 22.99999999999997
+              },
+              {
+                "body": "M52 steel front X brace",
+                "distance_mm": 24.0
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.999999999999987
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 14.999999999999982
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 15.999999999999975
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 23.0
+              },
+              {
+                "body": "M52 steel front X brace",
+                "distance_mm": 24.0
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          118,
+          70,
+          20
+        ],
+        "passes": true,
+        "minimum_mm": 2.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "P52 electronics lid",
+                "distance_mm": 2.0
+              },
+              {
+                "body": "TEST F19 2",
+                "distance_mm": 2.4999999999999876
+              },
+              {
+                "body": "TEST F19 0",
+                "distance_mm": 2.499999999999993
+              },
+              {
+                "body": "TEST F19 1",
+                "distance_mm": 2.499999999999993
+              },
+              {
+                "body": "TEST F19 3",
+                "distance_mm": 2.5000000000000013
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 3.1622776601683613
+              },
+              {
+                "body": "B24 lid gasket",
+                "distance_mm": 9.429931659938498
+              },
+              {
+                "body": "TEST F18 5",
+                "distance_mm": 13.865424623862042
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 3.1622776601683613
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 14.999999999999988
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 15.999999999999973
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 22.99999999999997
+              },
+              {
+                "body": "M52 steel front X brace",
+                "distance_mm": 23.0
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.999999999999987
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 14.999999999999988
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 15.999999999999973
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 15.999999999999975
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 16.0
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 22.99999999999997
+              },
+              {
+                "body": "M52 steel front X brace",
+                "distance_mm": 23.0
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      },
+      {
+        "size_mm": [
+          114,
+          68,
+          21
+        ],
+        "passes": true,
+        "minimum_mm": 1.0,
+        "phases": {
+          "installed": {
+            "nearest": [
+              {
+                "body": "P52 electronics lid",
+                "distance_mm": 1.0
+              },
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.242640687119275
+              },
+              {
+                "body": "TEST F19 0",
+                "distance_mm": 4.499999999999986
+              },
+              {
+                "body": "TEST F19 2",
+                "distance_mm": 4.499999999999986
+              },
+              {
+                "body": "TEST F19 1",
+                "distance_mm": 4.499999999999993
+              },
+              {
+                "body": "TEST F19 3",
+                "distance_mm": 4.499999999999993
+              },
+              {
+                "body": "B24 lid gasket",
+                "distance_mm": 10.416666666666629
+              },
+              {
+                "body": "TEST F18 6",
+                "distance_mm": 14.396180048887947
+              }
+            ],
+            "overlaps": []
+          },
+          "complete lift": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.242640687119275
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 13.999999999999979
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 14.999999999999943
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 14.999999999999975
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 22.0
+              },
+              {
+                "body": "M52 steel front X brace",
+                "distance_mm": 24.0
+              }
+            ],
+            "overlaps": []
+          },
+          "complete rear withdrawal": {
+            "nearest": [
+              {
+                "body": "P50 electronics service box",
+                "distance_mm": 4.999999999999987
+              },
+              {
+                "body": "M50 SO100 arm mounting plate",
+                "distance_mm": 14.0
+              },
+              {
+                "body": "TEST F24 3",
+                "distance_mm": 14.999999999999972
+              },
+              {
+                "body": "TEST F24 0",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "TEST F24 1",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "TEST F24 2",
+                "distance_mm": 15.0
+              },
+              {
+                "body": "Base_08q (2)",
+                "distance_mm": 21.99999999999997
+              },
+              {
+                "body": "M52 steel front X brace",
+                "distance_mm": 24.0
+              }
+            ],
+            "overlaps": []
+          }
+        }
+      }
+    ]
+  }
+}

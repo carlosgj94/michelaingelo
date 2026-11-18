@@ -1,0 +1,97 @@
+{
+  "source_native_sha256": "6fa96aa3e4a9380bfe4d64823aa8246d0498cd365a7af2194f9eef73170a3f9f",
+  "application": "P55 nominal seats for the imported SO100 foot",
+  "nominal_stack": {
+    "washer_land_z_mm": 168,
+    "head_seat_z_mm": 168.8,
+    "screw_mm": 23.5,
+    "engagement_mm": 6.7,
+    "tip_z_mm": 145.3
+  },
+  "verified_no_unintended_overlap": true,
+  "parts": [
+    {
+      "label": "front-right",
+      "print_file": "exports/rotary-table/arm-seats/p55-front-right.stl",
+      "sha256": "6fcfdfe28df5e3b008647f5a7cc363b120e8839af56666e75f6728b2b5e0cfb7",
+      "xy_center_mm": [
+        27.776497308103686,
+        -189.2250092524069
+      ],
+      "max_print_size_mm": [
+        9,
+        9,
+        3
+      ],
+      "projection_of_foot_contact_mm2": 41.28229,
+      "nominal_minimum_thickness_mm": 0.44012,
+      "closed": true,
+      "shells": 1,
+      "native_body": "P55 seat 0"
+    },
+    {
+      "label": "rear-right",
+      "print_file": "exports/rotary-table/arm-seats/p55-rear-right.stl",
+      "sha256": "bebba7bc3a29230a02ef1681b70cb0cce29e03f80437f88b49d489a05f021d04",
+      "xy_center_mm": [
+        31.75,
+        -259.0
+      ],
+      "max_print_size_mm": [
+        9,
+        9,
+        3
+      ],
+      "projection_of_foot_contact_mm2": 41.28229,
+      "nominal_minimum_thickness_mm": 0.78129,
+      "closed": true,
+      "shells": 1,
+      "native_body": "P55 seat 1"
+    },
+    {
+      "label": "front-left",
+      "print_file": "exports/rotary-table/arm-seats/p55-front-left.stl",
+      "sha256": "f33ecfc47de98ceb139ca94ff3496c790f7e1559b1e6fa0cc4bebc46c8a74154",
+      "xy_center_mm": [
+        -27.77649730810371,
+        -189.2250092524069
+      ],
+      "max_print_size_mm": [
+        9,
+        9,
+        3
+      ],
+      "projection_of_foot_contact_mm2": 41.28229,
+      "nominal_minimum_thickness_mm": 0.44012,
+      "closed": true,
+      "shells": 1,
+      "native_body": "P55 seat 2"
+    },
+    {
+      "label": "rear-left",
+      "print_file": "exports/rotary-table/arm-seats/p55-rear-left.stl",
+      "sha256": "1913c71d949f334484db88dc303b3d50351b8c5af334d0714664d061ed9df2d4",
+      "xy_center_mm": [
+        -31.75,
+        -259.0
+      ],
+      "max_print_size_mm": [
+        9,
+        9,
+        3
+      ],
+      "projection_of_foot_contact_mm2": 41.28229,
+      "nominal_minimum_thickness_mm": 0.78129,
+      "closed": true,
+      "shells": 1,
+      "native_body": "P55 seat 3"
+    }
+  ],
+  "supporting_probe": "docs/audit-evidence/2026-11-18-rt01/prototype-fit/p55-seat-fit.probe.json",
+  "scope": "CAD contact and nominal fit. Confirm contact on the real foot, fit grip, and preload retention.",
+  "editable_model": {
+    "file": "exports/rotary-table/arm-seats/p55-fitted-seats.sc",
+    "sha256": "5e01f23b484e1754fcf07e1404af089baaf732195979b9df9c6cc2380b32af36",
+    "matching_volume_and_bounds": true
+  }
+}

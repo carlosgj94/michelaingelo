@@ -1,0 +1,298 @@
+{
+  "source_native_sha256": "6fa96aa3e4a9380bfe4d64823aa8246d0498cd365a7af2194f9eef73170a3f9f",
+  "study_model_sha256": "2b5a153c9165f58bb3cad6f77c832c333b8956cc9808b44d7ed2edee4ed90281",
+  "manufacturer_drawing": "https://khkgears.net/pdf/2025/worm-gears.pdf",
+  "centre_distance_mm": 55.5,
+  "shaft_z_mm": 50,
+  "scope": [
+    "The editable study shows the two unmachined stock envelopes.",
+    "The assembled probe uses the 15 mm worm bore, 11.98 mm M20 pilot and F05/M21 relief in the wheel boss.",
+    "The shaft key, shoulders, spacers, axial retention and bearing preload require final machining drawings.",
+    "Tooth shapes and contact pattern are outside the envelope checks."
+  ],
+  "catalog_backlash_mm": [
+    0.06,
+    0.16
+  ],
+  "catalog_backlash_at_platter_degrees": [
+    0.08594366926962349,
+    0.2291831180523293
+  ],
+  "fits": {
+    "stock worm bore against existing shaft": {
+      "bodies": 1,
+      "ms": 54.26975,
+      "near": [],
+      "nearest": {
+        "KHK SWG2-R1 worm": [
+          {
+            "body": "B03 worm shaft reference",
+            "distance_mm": 0.0
+          }
+        ]
+      },
+      "overlaps": [
+        {
+          "a": "B03 worm shaft reference",
+          "area_mm2": 4368.3845848166075,
+          "b": "KHK SWG2-R1 worm",
+          "bbox": {
+            "max": [
+              31.000000000000014,
+              62.9999999999999,
+              57.499999999999936
+            ],
+            "min": [
+              -19.000000000000014,
+              47.99999999999983,
+              42.49999999999988
+            ]
+          },
+          "center": [
+            6.000000000000003,
+            55.5,
+            50.0
+          ],
+          "volume_mm3": 3180.862561759657
+        }
+      ],
+      "pairs_checked": 1,
+      "pairs_pruned": 0,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "stock wheel bore against existing pilot": {
+      "bodies": 1,
+      "ms": 149.51279200000002,
+      "near": [],
+      "nearest": {
+        "KHK AG2-40R1 wheel": [
+          {
+            "body": "M20 registered output hub",
+            "distance_mm": 0.0
+          }
+        ]
+      },
+      "overlaps": [
+        {
+          "a": "M20 registered output hub",
+          "area_mm2": 718.8598593129475,
+          "b": "KHK AG2-40R1 wheel",
+          "bbox": {
+            "max": [
+              7.490000000000001,
+              7.490000000000001,
+              74.0
+            ],
+            "min": [
+              -7.490000000000003,
+              -7.490000000000005,
+              67.0
+            ]
+          },
+          "center": [
+            3.16393697915876e-15,
+            1.1836707887998235e-15,
+            70.4586228936623
+          ],
+          "volume_mm3": 436.46743638927165
+        }
+      ],
+      "pairs_checked": 1,
+      "pairs_pruned": 0,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "machined worm against retained assembly": {
+      "bodies": 1,
+      "ms": 284.78691699999996,
+      "near": [],
+      "nearest": {
+        "KHK SWG2-R1 worm": [
+          {
+            "body": "B03 worm shaft reference",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST F03 2",
+            "distance_mm": 7.984838473184196
+          },
+          {
+            "body": "TEST F03 1",
+            "distance_mm": 7.9848384731842295
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 8.999999999999996
+          },
+          {
+            "body": "M02 aluminium bearing seat",
+            "distance_mm": 14.500000000000071
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 5,
+      "pairs_pruned": 197,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "machined wheel against retained assembly": {
+      "bodies": 1,
+      "ms": 245.123166,
+      "near": [],
+      "nearest": {
+        "KHK AG2-40R1 wheel": [
+          {
+            "body": "M20 registered output hub",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST F05 0",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST F05 1",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST F05 2",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST F05 3",
+            "distance_mm": 0.0
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 11,
+      "pairs_pruned": 191,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "wheel sweep against stationary assembly": {
+      "bodies": 1,
+      "ms": 182.392875,
+      "near": [],
+      "nearest": {
+        "Study rotating wheel outer sweep": [
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 4.436800060712355
+          },
+          {
+            "body": "P11 column sleeve",
+            "distance_mm": 12.000000000000007
+          },
+          {
+            "body": "P12 column sleeve",
+            "distance_mm": 12.000000000000014
+          },
+          {
+            "body": "P14 column sleeve",
+            "distance_mm": 14.26419266350405
+          },
+          {
+            "body": "P13 column sleeve",
+            "distance_mm": 14.264192663504053
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 5,
+      "pairs_pruned": 187,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    }
+  },
+  "study_bodies": [
+    {
+      "area_mm2": 8515.28688755514,
+      "bbox": {
+        "max": [
+          31.000000000000007,
+          73.0,
+          67.50000000000001
+        ],
+        "min": [
+          -19.000000000000004,
+          37.99999999999999,
+          32.5
+        ]
+      },
+      "center_of_mass": [
+        3.3364161849710974,
+        55.5,
+        50.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 4
+      },
+      "faces": 8,
+      "kernel": {
+        "edges": 12,
+        "faces": 8,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 43.819327031352124,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "KHK SWG2-R1 worm",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 33968.47056693963
+    },
+    {
+      "area_mm2": 19619.24612166826,
+      "bbox": {
+        "max": [
+          42.99999999999999,
+          43.00000000000001,
+          74.0
+        ],
+        "min": [
+          -43.00000000000001,
+          -43.0,
+          40.99999999999999
+        ]
+      },
+      "center_of_mass": [
+        5.723801470322706e-16,
+        -4.397343727839041e-18,
+        52.932564204319974
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 9,
+      "face_types": {
+        "cylinder": 3,
+        "plane": 3
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 9,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 6
+      },
+      "mass_g": 160.84073955038573,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "KHK AG2-40R1 wheel",
+      "notes": [],
+      "vertices": 6,
+      "volume_mm3": 124682.74383750831
+    }
+  ]
+}

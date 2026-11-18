@@ -1,0 +1,164 @@
+{
+  "commands": [
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 15,
+        "width": 50,
+        "height": 2.5,
+        "corner": [
+          27,
+          -25,
+          136
+        ],
+        "operation": "new",
+        "body_name": "P57 sliding jaw"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 4,
+        "width": 50,
+        "height": 14,
+        "corner": [
+          27,
+          -25,
+          136
+        ],
+        "operation": "join",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 5.6,
+        "width": 3.4,
+        "height": 4,
+        "corner": [
+          33.2,
+          -18.7,
+          135.5
+        ],
+        "operation": "cut",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.4,
+        "height": 4,
+        "base": [
+          33.2,
+          -17,
+          135.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.4,
+        "height": 4,
+        "base": [
+          38.8,
+          -17,
+          135.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 5.6,
+        "width": 3.4,
+        "height": 4,
+        "corner": [
+          33.2,
+          15.3,
+          135.5
+        ],
+        "operation": "cut",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.4,
+        "height": 4,
+        "base": [
+          33.2,
+          17,
+          135.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.4,
+        "height": 4,
+        "base": [
+          38.8,
+          17,
+          135.5
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.6,
+        "height": 3,
+        "base": [
+          29.2,
+          0,
+          143
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "targets": [
+          "P57 sliding jaw"
+        ]
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "P57 sliding jaw"
+        ],
+        "color": "#F6C915"
+      }
+    }
+  ]
+}

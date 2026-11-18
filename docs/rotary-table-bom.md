@@ -6,7 +6,7 @@ In SolidCraft, expand the **Bodies** folder in a subassembly to see its sourcing
 
 | SolidCraft group | Display color | What it covers |
 | --- | --- | --- |
-| **To Be Printed** | Yellow | 25 yellow PETG assembly bodies. Section 1 also lists the separate fit coupon. |
+| **To Be Printed** | Yellow | 25 yellow PETG assembly bodies. Section 1 also lists the fit coupon, catches and prototype accessories. |
 | **To Be Bought** | Black | Bearings, gear pair, motor, coupling, sensor, spacers, washers and seals. Check the notes for stock that needs cutting and parts that need secondary machining. |
 | **To Be Fabricated** | Grey | 17 custom metal bodies and the B03 shaft reference. Section 2 also lists the two separate bench backing strips. |
 | **Space Reservations** | Cyan | Driver, controller and sensor cordset envelopes for parts still to be selected. The optional output encoder has no quantity in the baseline order. |
@@ -39,7 +39,11 @@ Print **one copy of every linked assembly STL**. The quantities below are the nu
 
 Print **four P54 removable drain catches** in yellow PETG, one below each outlet. Each catch is nominally 70 × 40 × 24 mm and sits on the bench. Use the same STL for all four. [P54 STL](../exports/rotary-table/drain-catch/p54-removable-drain-catch.stl) · [Placement and cleaning](rotary-table-printing.md#drain-catches)
 
-Buy yellow PETG filament. The required mass is **TBD after slicing**, including the catches, supports, brim and calibration. The 25-piece count covers the installed assembly bodies. Largest assembly dimension is 168 mm, and the largest footprint with a 5 mm brim is 178 mm on the 180 mm bed. Inspect actual slicer placement. Retired P20/P21/P22/P23/P25/P30 prints are not part of this BOM.
+Print **one of each of the four P55 arm seats** in yellow PETG. Each fits a specific F24 recess and is within Ø9 × 3 mm in its installed orientation. Use the flat face under the existing Ø9 metal washer. [Arm seat manifest](../exports/rotary-table/arm-seats/p55-seat-manifest.json) · [Fitting instructions](rotary-table-printing.md#prototype-arm-seats)
+
+For the first foam fixture, print **one P56 fixture base, two P57 sliding jaws and one P58 top keeper** in yellow PETG. The base has a 130 × 130 mm footprint, a 3 mm plate and 25 mm overall height. [Fixture manifest](../exports/rotary-table/foam-fixture/foam-fixture-manifest.json) · [Assembly instructions](rotary-table-printing.md#prototype-foam-fixture)
+
+Buy yellow PETG filament. Determine the required mass after slicing the assembly parts, prototype accessories, supports, brim and calibration parts. The 25-piece count covers the main assembly bodies. Largest assembly dimension is 168 mm, and the largest footprint with a 5 mm brim is 178 mm on the 180 mm bed. Inspect actual slicer placement. Retired P20/P21/P22/P23/P25/P30 prints are not part of this BOM.
 
 ## 2. To Be Fabricated — metal structure and precision parts
 
@@ -72,13 +76,19 @@ The M50 plate, M51 channels, M52 brace and M55 strips are the new support for th
 | Component | Qty | Reference / specification | Status / purchase note |
 | --- | --- | --- | --- |
 | Crossed-roller output bearing | **1 complete bearing** | RU85-size, Ø55 bore × Ø120 OD × 15 | **Confirm** exact preload, seals, ring holes and threads. B01 and B10 are the two modeled rings of this one bearing; do not order two bearings |
-| Angular-contact worm bearings, B02 | 2 | 7202-size, Ø15 × Ø35 × 11 | **Confirm** opposed arrangement, preload suitability and actual supplier variant |
-| Duplex worm, B04 | 1 | KHK KWGDL2-R1, module 2, right-hand | **Confirm** supplier-approved Ø15 bore/key machining and matching wheel |
-| Duplex worm wheel, B11 | 1 | KHK AGDL2-40R1, 40:1 with the worm above | **Confirm** bore/pilot, four M5 hub threads and drive-pin radial slot machining |
+| Angular-contact worm bearings, B02 | 2 | **Candidate** SKF 7202 BEGAP, Ø15 × Ø35 × 11, 40°, universal matching with light preload | Tuli lists 142 in stock at €34.63 each ex VAT and publishes shipping rates to Spain. Confirm opposed assembly, fits and preload stack. [Seller](https://www.tuli-shop.com/skf-bearing-7202-begap-15x35x11mm) · [SKF datasheet](https://docs.rs-online.com/17e8/A700000013821028.pdf) |
+| Worm, B04 | 1 | KHK KWGDL2-R1 duplex baseline. **Foam-trial alternative** KHK SWG2-R1, hardened and ground, module 2, one start, right-hand | Raptor EU lists the alternative in stock. The Ø12 stock bore needs approved machining to fit the Ø15 shaft and key. [SWG2-R1 seller](https://eu.raptorsupplies.com/pd/khk-gears/swg2-r1) |
+| Worm wheel, B11 | 1 | KHK AGDL2-40R1 duplex baseline. **Foam-trial alternative** KHK AG2-40R1, 40 teeth, aluminium bronze ring with cast-iron hub, Ø12 bore | Raptor lists the alternative in stock. Requires a resized wheel pilot on M20 and approved F05 and M21 machining in the wheel boss. [AG2-40R1 EU seller](https://eu.raptorsupplies.com/pd/khk-gears/ag2-40r1) · [Current worldwide listing](https://www.raptorsupplies.com/pd/khk-gears/ag2-40r1) |
 | Motor-to-worm clamp coupling, B05 | 1 | Metal coupling, 15/5 mm bores, envelope ≤Ø25 × 40 | **TBD SKU**: verify insertion depth, clamp access and alignment allowance. Use its supplied clamp screws; their count is not in the fixed screw totals |
 | Wheel drive pin, M21/H02 | 1 | Ground hardened steel, Ø4 × 12 nominal | **Confirm** certified strength and matched press/slot fits in the specification; not a generic soft pin |
 
-The worm and wheel are **one matched gear pair**. They are not printed. Secondary machining of purchased parts needs supplier/fabricator approval. Shaft keys, locknuts, inner-ring spacers and retaining hardware are still **TBD** and are not silently included in the 119-screw count.
+The EU listings viewed on 2026-11-18 show about **€310 ex VAT** combined for the matched SWG2-R1 / AG2-40R1 pair. Raptor Supplies lists Spain as a delivery destination. The EU wheel listing is indexed from an earlier date. The current worldwide listing also shows stock. Confirm current quantity, landed cost and delivery date at checkout. The main assembly and metal STEPs use the duplex pair. KHK's Spanish distributor Lindis lists the gear range and handles availability by inquiry. HPC France's WH2-1 and M2-40/1 report a lead time on request. [Raptor delivery destinations](https://www.raptorsupplies.com/where-we-deliver) · [Lindis KHK range](https://lindis.com/es/ct/engranajes-y-cremalleras-khk-32) · [KHK worm gear catalogue](https://khkgears.net/pdf/2025/worm-gears.pdf)
+
+Order only one of the two matched pairs. The foam-trial alternative keeps the 55.5 mm centre distance and has **0.06–0.16 mm** catalog backlash. That is about **0.086–0.229° at the platter** before the rest of the machine contributes. Use it for setup, hand rotation and unloaded motion if the proposed machining is approved. Bidirectional cutting still requires a measured reversal result within 0.10°. The duplex pair retains the designed axial backlash adjustment. [Drive details](specs/rotary-table.md#foam-trial-drive-alternative)
+
+Shaft keys, locknuts, inner-ring spacers and retaining hardware are still **TBD** and are outside the 119-screw count.
+
+Ruland **MRLC25-10-5-A** is a possible coupling if B03 gets a Ø10 coupling end. Its body is Ø25 × 34, with 9.6 mm maximum shaft insertion per side and Ø26.9 mm screw clearance. Finish the shaft length and verify the required adjustment, rotating clearance and motor torque before choosing it. Ruland lists it as built to order. [Ruland product data](https://www.ruland.com/mrlc25-10-5-a.html) · [RS Spain listing](https://es.rs-online.com/web/p/acoplamientos-flexibles/0604975)
 
 ## 4. Buy or cut to size — spacers and precision shims
 
@@ -95,14 +105,16 @@ These items serve the **rotary table**. No arm actuator, arm controller or arm p
 | Component type | Qty | Required reference / space | Status / purchase note |
 | --- | --- | --- | --- |
 | Closed-loop stepper motor with motor encoder, B06 | 1 matched assembly | NEMA17, ≤42.3 square × 80 rear length, 5 mm shaft; 20 mm additional cable reservation | **TBD SKU**; select with the driver and actual speed/torque requirements |
-| Motor driver, B22 | 1 | Body reservation ≤118 × 76 × 35 | **TBD SKU**; match the drive and supply. Include any connector parts that stay attached during extraction in this envelope. Select the driver-side thermal interface. |
-| Motion controller, B23 | 1 | Body reservation ≤80 × 55 × 20 | **TBD SKU**; compatible motion commands and home-sensor interface. Board holes/standoffs not designed |
+| Motor driver, B22 | 1 | Checked reservation ≤118 × 80 × 35 | **TBD SKU**. Match the drive and supply and select the driver-side thermal interface. Include the attached rigid connectors in the reservation. |
+| Motion controller, B23 | 1 | Checked reservation ≤118 × 70 × 20 | **TBD SKU**. Match the motion and home-sensor interfaces. Include finished mounts and rigid connector ends within the installed limits. |
 | Inductive home sensor, B08 | 1 | SICK IME08-02BPSZT0S mechanical reference, M8 × 1, PNP normally open | **Confirm** sensor and input compatibility. Two mounting nuts are listed in section 7 and normally supplied with it |
 | Home-sensor cordset, B09 | 1 | Matching M8 connector and cable | **TBD** exact connector, length, bend radius and routing |
 | External enclosed DC power supply | 1 | 24 V baseline, outside printed box | **TBD** current/power rating to match selected motor/driver; this is not an arm supply |
 | External finned heat sink, B26 | 1 | Envelope ≤98 × 54 × 18 | **TBD SKU**, thermal capacity and retention method |
 | Thermal interface pad, B27 | 1 fitted piece | 98 × 54 × 0.5 reference envelope | **TBD** grade/attachment; an adhesive-pad placeholder does not establish heat-sink retention |
 | Platter/output encoder, B07 | Optional; 0 in baseline order | Reserved Ø40 × 16 space | **TBD** device, mount and electrical interface. Separate from the motor's encoder; homing does not provide continuous platter-angle feedback |
+
+The reservations above passed nominal installed, lift and rear withdrawal checks in the existing enclosure, including the installed hardware envelopes. The cyan bodies in the revision 5 assembly show the earlier examples. Allow for actual thermal contact, board mounting, removable leads and strain relief before selecting parts. [Device envelope checks](audit-evidence/2026-11-18-rt01/prototype-fit/electronics-space.results.json)
 
 ## 6. Buy / cut — seals, wiring and consumables
 
@@ -216,9 +228,9 @@ The existing arm attaches with bolts to **M50, the metal mounting plate above th
 | --- | --- |
 | M4 ISO 4762 socket-head screw, finish to measured length | **4** |
 | M4 metal washer, ID4.3 / OD9 × 0.8 | **4** already included above |
-| Matched supported upper bearing seat | **4 positions**, detail and material pending measurements of the owned foot |
+| P55 printed upper bearing seat | **4**, one for each position. Fit the matching seat from section 1. |
 
-F24 enters four tapped holes from above. Measure grip G from the top of M50 to the installed head seat at each hole. Select length L so L − G is 6.5–7.0 mm and at least 6.0 mm of full thread engages after entry and tip runout. Require at least 1 mm recess from the underside. Use the seat acceptance in the fastener register before ordering or cutting screws. [Nonrectangular four-hole pattern](../cad/arm-mount-reference.json)
+F24 enters four tapped holes from above. The imported foot with P55 seats and the 0.8 mm metal washers gives a nominal head seat at Z168.8 and grip G = 16.8 mm. An M4 × 23.5 mm screw gives 6.7 mm penetration and tip Z145.3. Confirm the grip after fitting each seat, then finish a suitable M4 × 25 screw to length. Require 6.5–7.0 mm penetration, at least 6.0 mm of full thread after entry and tip runout, and at least 1 mm tip recess. [Nonrectangular four-hole pattern](../cad/arm-mount-reference.json)
 
 ## 9. Items that cannot yet be ordered to a final specification
 
@@ -229,11 +241,22 @@ F24 enters four tapped holes from above. Measure grip G from the top of M50 to t
 | Motor / coupling / controls | Exact compatible products, coupling fasteners, board standoffs/screws, supply rating and electrical protection |
 | Cooling | Driver mounting/contact, pad specification and heat-sink retention/fasteners |
 | Cables and seals | Cordset and cable lengths, glands/plugs, strain relief and connector service clearances |
-| Workholding | Actual clamps, workpiece fixtures and screws. Four blind M6 mounting positions exist; bolt length depends on the fixture stack, so no arbitrary clamp kit or screw length is added here |
+| Workholding | First foam fixture below. Qualify the actual cutting tool and fixture for larger or harder workpieces. |
 | Bench and stand fabrication | Bench thickness/rigidity, anchor lengths, any extra backing, weld details and corrosion protection |
 | Optional output encoder | Device, mounting and wiring only if this option is adopted |
 
-For workholding, require **8–9 mm engagement** into the blind M6 bosses. Screw length minus the fixture and washer stack above Z128 must be **15–16 mm**. Fixture screws and unfinished device mounting hardware are outside the current 119-screw schedule.
+### Bought hardware for the first foam fixture
+
+These items are in addition to the 119 screws and bolts in the main assembly schedule. The 3.0 mm fixture base and 1.6 mm metal washers give 8.4 mm nominal metal thread engagement with the M6 × 20 screws. Check fitted thickness stays within the 8–9 mm engagement range.
+
+| Joint or material | Quantity and specification |
+| --- | --- |
+| Fixture to platter | 4 × M6 × 20 ISO 4762 cap screws and 4 metal washers ID6.4 / OD12 × 1.6 |
+| Sliding-jaw retainers | 4 × M3 × 8 ISO 7380-1 button screws, 4 washers ID3.2 / OD7 × 0.5 and 4 plain nuts AF5.5 × 2.4 |
+| Jaw adjusters | 2 × M4 × 25 ISO 4762 cap screws and 2 M4 DIN 985 nylocs AF7 × 5 |
+| Keeper restraint | 2 replaceable 4.8 × 300 mm nylon cable ties, ≤1.2 thick with heads within 12 × 8 × 6 |
+| Workpiece | One 50 × 50 × 40 mm rigid foam blank |
+| Pads | Cut EVA to make one 50 × 50 × 2 bottom pad, four 50 × 14 × 2 side pads and one 1 mm keeper ring, 50 square outside and 42 square inside |
 
 ## Sources and review files
 

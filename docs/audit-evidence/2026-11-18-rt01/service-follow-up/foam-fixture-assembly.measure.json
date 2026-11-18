@@ -1,0 +1,1841 @@
+{
+  "bodies": [
+    {
+      "area_mm2": 44859.52533766527,
+      "bbox": {
+        "max": [
+          65.0,
+          65.0,
+          153.0
+        ],
+        "min": [
+          -65.0,
+          -65.0,
+          128.0
+        ]
+      },
+      "center_of_mass": [
+        2.1304568342407535,
+        2.130456834240738,
+        132.34995430146938
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 272,
+      "face_types": {
+        "cylinder": 14,
+        "plane": 90
+      },
+      "faces": 104,
+      "kernel": {
+        "edges": 280,
+        "faces": 104,
+        "shells": 1,
+        "vertices": 188
+      },
+      "mass_g": 92.17363272797277,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P56 foam fixture base",
+      "notes": [],
+      "vertices": 180,
+      "volume_mm3": 71452.42847129672
+    },
+    {
+      "area_mm2": 3089.9426512072514,
+      "bbox": {
+        "max": [
+          42.0,
+          25.0,
+          150.0
+        ],
+        "min": [
+          27.0,
+          -25.0,
+          135.99999999999997
+        ]
+      },
+      "center_of_mass": [
+        31.321250105440186,
+        4.943516829774118e-15,
+        141.22753374846076
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 45,
+      "face_types": {
+        "cylinder": 5,
+        "plane": 13
+      },
+      "faces": 18,
+      "kernel": {
+        "edges": 51,
+        "faces": 20,
+        "shells": 1,
+        "vertices": 34
+      },
+      "mass_g": 5.165791765771509,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P57 sliding jaw 1",
+      "notes": [],
+      "vertices": 30,
+      "volume_mm3": 4004.4897409081464
+    },
+    {
+      "area_mm2": 3089.942651207252,
+      "bbox": {
+        "max": [
+          25.000000000000004,
+          42.0,
+          150.0
+        ],
+        "min": [
+          -25.0,
+          27.0,
+          135.99999999999997
+        ]
+      },
+      "center_of_mass": [
+        -1.3802939782119744e-16,
+        31.32125010544019,
+        141.22753374846076
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 45,
+      "face_types": {
+        "cylinder": 5,
+        "plane": 13
+      },
+      "faces": 18,
+      "kernel": {
+        "edges": 51,
+        "faces": 20,
+        "shells": 1,
+        "vertices": 34
+      },
+      "mass_g": 5.165791765771514,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P57 sliding jaw 2",
+      "notes": [],
+      "vertices": 30,
+      "volume_mm3": 4004.4897409081505
+    },
+    {
+      "area_mm2": 5027.039999999995,
+      "bbox": {
+        "max": [
+          30.0,
+          30.0,
+          177.0
+        ],
+        "min": [
+          -30.0,
+          -30.0,
+          174.0
+        ]
+      },
+      "center_of_mass": [
+        -3.6783272855872845e-15,
+        -1.7350191946075479e-15,
+        175.40886075949368
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 48,
+      "face_types": {
+        "plane": 18
+      },
+      "faces": 18,
+      "kernel": {
+        "edges": 48,
+        "faces": 18,
+        "shells": 1,
+        "vertices": 32
+      },
+      "mass_g": 6.603768000000029,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "P58 open centre keeper",
+      "notes": [],
+      "vertices": 32,
+      "volume_mm3": 5119.200000000023
+    },
+    {
+      "area_mm2": 5400.0,
+      "bbox": {
+        "max": [
+          25.0,
+          25.0,
+          133.0
+        ],
+        "min": [
+          -25.0,
+          -25.0,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        -1.1102230246251565e-16,
+        1.1102230246251565e-16,
+        132.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 6.45,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF lower EVA pad",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 5000.0
+    },
+    {
+      "area_mm2": 1656.0,
+      "bbox": {
+        "max": [
+          -25.0,
+          25.0,
+          150.0
+        ],
+        "min": [
+          -27.0,
+          -25.0,
+          136.0
+        ]
+      },
+      "center_of_mass": [
+        -26.0,
+        5.887354096297975e-16,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 1.806,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF fixed X EVA pad",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 1400.0
+    },
+    {
+      "area_mm2": 1656.0,
+      "bbox": {
+        "max": [
+          25.0,
+          -25.0,
+          150.0
+        ],
+        "min": [
+          -25.0,
+          -27.0,
+          136.0
+        ]
+      },
+      "center_of_mass": [
+        -5.887354096297973e-16,
+        -26.0,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 1.806,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF fixed Y EVA pad",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 1400.0
+    },
+    {
+      "area_mm2": 1656.0,
+      "bbox": {
+        "max": [
+          27.0,
+          25.0,
+          150.0
+        ],
+        "min": [
+          25.0,
+          -25.0,
+          136.0
+        ]
+      },
+      "center_of_mass": [
+        26.0,
+        5.887354096297973e-16,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 1.806,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF moving X EVA pad",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 1400.0
+    },
+    {
+      "area_mm2": 1656.0,
+      "bbox": {
+        "max": [
+          25.0,
+          27.0,
+          150.0
+        ],
+        "min": [
+          -25.0,
+          25.0,
+          136.0
+        ]
+      },
+      "center_of_mass": [
+        -5.8873540962979775e-16,
+        26.0,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 1.806,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF moving Y EVA pad",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 1400.0
+    },
+    {
+      "area_mm2": 13000.0,
+      "bbox": {
+        "max": [
+          25.0,
+          25.0,
+          173.0
+        ],
+        "min": [
+          -25.0,
+          -25.0,
+          133.0
+        ]
+      },
+      "center_of_mass": [
+        -1.7763568394002506e-16,
+        1.7763568394002506e-16,
+        153.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 129.0,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF small foam blank",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 100000.0
+    },
+    {
+      "area_mm2": 1840.0,
+      "bbox": {
+        "max": [
+          25.0,
+          25.0,
+          174.0
+        ],
+        "min": [
+          -25.0,
+          -25.0,
+          173.0
+        ]
+      },
+      "center_of_mass": [
+        5.406303424261632e-16,
+        -5.406303424261632e-16,
+        173.5
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+        "plane": 10
+      },
+      "faces": 10,
+      "kernel": {
+        "edges": 24,
+        "faces": 10,
+        "shells": 1,
+        "vertices": 16
+      },
+      "mass_g": 0.9494400000000001,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF keeper EVA ring",
+      "notes": [],
+      "vertices": 16,
+      "volume_mm3": 736.0
+    },
+    {
+      "area_mm2": 971.5199999999987,
+      "bbox": {
+        "max": [
+          -29.599999999999998,
+          40.0,
+          130.0
+        ],
+        "min": [
+          -34.4,
+          -40.0,
+          128.8
+        ]
+      },
+      "center_of_mass": [
+        -32.0,
+        4.625929269271456e-17,
+        129.39999999999998
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.5944320000000085,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie -1 underbase",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 460.8000000000066
+    },
+    {
+      "area_mm2": 767.519999999999,
+      "bbox": {
+        "max": [
+          -22.599999999999998,
+          31.5,
+          177.6
+        ],
+        "min": [
+          -27.4,
+          -31.5,
+          176.4
+        ]
+      },
+      "center_of_mass": [
+        -25.0,
+        9.503959445810689e-16,
+        177.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.4681151999999735,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie -1 keeper rail",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 362.8799999999794
+    },
+    {
+      "area_mm2": 432.0,
+      "bbox": {
+        "max": [
+          -26.0,
+          50.0,
+          142.0
+        ],
+        "min": [
+          -38.0,
+          42.0,
+          136.0
+        ]
+      },
+      "center_of_mass": [
+        -32.0,
+        46.0,
+        139.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.7430399999999999,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie -1 head envelope",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 576.0
+    },
+    {
+      "area_mm2": 597.8044360888318,
+      "bbox": {
+        "max": [
+          -22.62476105914763,
+          -30.848896015641735,
+          177.443980041788
+        ],
+        "min": [
+          -34.37523894085237,
+          -40.651103984358265,
+          128.95601995821204
+        ]
+      },
+      "center_of_mass": [
+        -28.5,
+        -35.74999999999999,
+        153.20000000000002
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.36302732282620076,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie -1 leg -1",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 281.4165293226362
+    },
+    {
+      "area_mm2": 597.804436088832,
+      "bbox": {
+        "max": [
+          -22.62476105914763,
+          40.651103984358265,
+          177.443980041788
+        ],
+        "min": [
+          -34.37523894085237,
+          30.848896015641735,
+          128.95601995821204
+        ]
+      },
+      "center_of_mass": [
+        -28.499999999999996,
+        35.74999999999999,
+        153.20000000000002
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.36302732282620415,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie -1 leg 1",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 281.4165293226389
+    },
+    {
+      "area_mm2": 971.5199999999976,
+      "bbox": {
+        "max": [
+          34.4,
+          40.0,
+          130.0
+        ],
+        "min": [
+          29.6,
+          -40.0,
+          128.8
+        ]
+      },
+      "center_of_mass": [
+        32.0,
+        4.62592926927142e-17,
+        129.39999999999998
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.5944320000000081,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie 1 underbase",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 460.80000000000626
+    },
+    {
+      "area_mm2": 767.519999999999,
+      "bbox": {
+        "max": [
+          27.400000000000002,
+          31.5,
+          177.6
+        ],
+        "min": [
+          22.6,
+          -31.5,
+          176.4
+        ]
+      },
+      "center_of_mass": [
+        25.0,
+        9.503959445810689e-16,
+        177.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.4681151999999735,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie 1 keeper rail",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 362.8799999999794
+    },
+    {
+      "area_mm2": 432.0,
+      "bbox": {
+        "max": [
+          38.0,
+          50.0,
+          142.0
+        ],
+        "min": [
+          26.0,
+          42.0,
+          136.0
+        ]
+      },
+      "center_of_mass": [
+        32.0,
+        46.0,
+        139.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.7430399999999999,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie 1 head envelope",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 576.0
+    },
+    {
+      "area_mm2": 597.8044360888318,
+      "bbox": {
+        "max": [
+          34.37523894085237,
+          -30.848896015641735,
+          177.443980041788
+        ],
+        "min": [
+          22.62476105914763,
+          -40.651103984358265,
+          128.95601995821204
+        ]
+      },
+      "center_of_mass": [
+        28.499999999999993,
+        -35.74999999999999,
+        153.20000000000002
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.3630273228262043,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie 1 leg -1",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 281.416529322639
+    },
+    {
+      "area_mm2": 597.8044360888318,
+      "bbox": {
+        "max": [
+          34.37523894085237,
+          40.651103984358265,
+          177.443980041788
+        ],
+        "min": [
+          22.62476105914763,
+          30.848896015641735,
+          128.95601995821204
+        ]
+      },
+      "center_of_mass": [
+        28.499999999999996,
+        35.75,
+        153.2
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.36302732282620115,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF tie 1 leg 1",
+      "notes": [],
+      "vertices": 8,
+      "volume_mm3": 281.41652932263656
+    },
+    {
+      "area_mm2": 722.5663103256528,
+      "bbox": {
+        "max": [
+          -41.99999999999999,
+          -41.99999999999999,
+          138.6
+        ],
+        "min": [
+          -52.00000000000001,
+          -52.00000000000001,
+          112.59999999999998
+        ]
+      },
+      "center_of_mass": [
+        -47.0,
+        -47.0,
+        128.5090909090909
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.3373759926331747,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount screw -47 -47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 1036.7255756846316
+    },
+    {
+      "area_mm2": 254.34334123462992,
+      "bbox": {
+        "max": [
+          -40.99999999999999,
+          -40.99999999999999,
+          132.60000000000002
+        ],
+        "min": [
+          -53.00000000000001,
+          -53.00000000000001,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        -47.000000000000036,
+        -47.00000000000001,
+        131.8
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.16703420882536316,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount washer -47 -47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 129.48388281035903
+    },
+    {
+      "area_mm2": 722.5663103256528,
+      "bbox": {
+        "max": [
+          -41.99999999999999,
+          52.00000000000001,
+          138.6
+        ],
+        "min": [
+          -52.00000000000001,
+          41.99999999999999,
+          112.59999999999998
+        ]
+      },
+      "center_of_mass": [
+        -47.0,
+        47.0,
+        128.5090909090909
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.3373759926331747,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount screw -47 47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 1036.7255756846316
+    },
+    {
+      "area_mm2": 254.34334123462992,
+      "bbox": {
+        "max": [
+          -40.99999999999999,
+          53.00000000000001,
+          132.60000000000002
+        ],
+        "min": [
+          -53.00000000000001,
+          40.99999999999999,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        -47.000000000000036,
+        46.99999999999999,
+        131.8
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.1670342088253631,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount washer -47 47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 129.48388281035898
+    },
+    {
+      "area_mm2": 722.5663103256529,
+      "bbox": {
+        "max": [
+          52.00000000000001,
+          -41.99999999999999,
+          138.6
+        ],
+        "min": [
+          41.99999999999999,
+          -52.00000000000001,
+          112.59999999999998
+        ]
+      },
+      "center_of_mass": [
+        47.00000000000001,
+        -47.0,
+        128.5090909090909
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.3373759926331747,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount screw 47 -47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 1036.7255756846316
+    },
+    {
+      "area_mm2": 254.3433412346299,
+      "bbox": {
+        "max": [
+          53.00000000000001,
+          -40.99999999999999,
+          132.60000000000002
+        ],
+        "min": [
+          40.99999999999999,
+          -53.00000000000001,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        46.999999999999964,
+        -47.00000000000001,
+        131.8
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.1670342088253632,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount washer 47 -47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 129.48388281035906
+    },
+    {
+      "area_mm2": 722.5663103256529,
+      "bbox": {
+        "max": [
+          52.00000000000001,
+          52.00000000000001,
+          138.6
+        ],
+        "min": [
+          41.99999999999999,
+          41.99999999999999,
+          112.59999999999998
+        ]
+      },
+      "center_of_mass": [
+        47.00000000000001,
+        47.0,
+        128.5090909090909
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 1.3373759926331754,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount screw 47 47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 1036.725575684632
+    },
+    {
+      "area_mm2": 254.34334123462986,
+      "bbox": {
+        "max": [
+          53.00000000000001,
+          53.00000000000001,
+          132.60000000000002
+        ],
+        "min": [
+          40.99999999999999,
+          40.99999999999999,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        46.999999999999964,
+        46.99999999999999,
+        131.8
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.1670342088253631,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M6 mount washer 47 47",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 129.48388281035898
+    },
+    {
+      "area_mm2": 155.98007525073328,
+      "bbox": {
+        "max": [
+          38.85,
+          -14.15,
+          140.65000000000003
+        ],
+        "min": [
+          33.15,
+          -19.85,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        36.0,
+        -17.000000000000004,
+        137.05926360477199
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.12726196391716982,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw retainer 0 -17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 98.65268520710838
+    },
+    {
+      "area_mm2": 76.90618815987804,
+      "bbox": {
+        "max": [
+          39.50000000000001,
+          -13.500000000000002,
+          139.00000000000003
+        ],
+        "min": [
+          32.5,
+          -20.500000000000004,
+          138.49999999999997
+        ]
+      },
+      "center_of_mass": [
+        35.999999999999936,
+        -16.999999999999925,
+        138.75
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.01963511116456884,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw washer 0 -17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 15.22101640664251
+    },
+    {
+      "area_mm2": 106.16315544196675,
+      "bbox": {
+        "max": [
+          39.17542648054294,
+          -14.25,
+          134.80000000000004
+        ],
+        "min": [
+          32.82457351945706,
+          -19.75,
+          132.4
+        ]
+      },
+      "center_of_mass": [
+        36.0,
+        -17.0,
+        133.6
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.05620723377591207,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw nut 0 -17",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 43.57149905109463
+    },
+    {
+      "area_mm2": 155.98007525073334,
+      "bbox": {
+        "max": [
+          38.85,
+          19.85,
+          140.65000000000003
+        ],
+        "min": [
+          33.15,
+          14.15,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        36.00000000000001,
+        16.999999999999993,
+        137.05926360477199
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.12726196391717004,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw retainer 0 17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 98.65268520710856
+    },
+    {
+      "area_mm2": 76.90618815987804,
+      "bbox": {
+        "max": [
+          39.50000000000001,
+          20.500000000000004,
+          139.00000000000003
+        ],
+        "min": [
+          32.5,
+          13.499999999999998,
+          138.49999999999997
+        ]
+      },
+      "center_of_mass": [
+        36.000000000000064,
+        17.000000000000075,
+        138.75
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.019635111164568828,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw washer 0 17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 15.221016406642502
+    },
+    {
+      "area_mm2": 106.16315544196677,
+      "bbox": {
+        "max": [
+          39.17542648054294,
+          19.75,
+          134.80000000000004
+        ],
+        "min": [
+          32.82457351945706,
+          14.25,
+          132.4
+        ]
+      },
+      "center_of_mass": [
+        36.0,
+        17.0,
+        133.6
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.05620723377591208,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw nut 0 17",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 43.571499051094634
+    },
+    {
+      "area_mm2": 479.0928796724428,
+      "bbox": {
+        "max": [
+          58.20000000000002,
+          3.5000000000000058,
+          146.49999999999997
+        ],
+        "min": [
+          29.199999999999996,
+          -3.5000000000000058,
+          139.5
+        ]
+      },
+      "center_of_mass": [
+        46.468456375838954,
+        6.367345139925618e-17,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.6038455239464926,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M4 adjuster 0",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 468.097305384878
+    },
+    {
+      "area_mm2": 244.81846759292299,
+      "bbox": {
+        "max": [
+          48.400000000000006,
+          3.5000000000000004,
+          147.0414518843274
+        ],
+        "min": [
+          43.39999999999999,
+          -3.5000000000000013,
+          138.9585481156726
+        ]
+      },
+      "center_of_mass": [
+        45.9,
+        -4.911067362550718e-16,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.17563308940630654,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M4 locking nut 0",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 136.14968171031515
+    },
+    {
+      "area_mm2": 155.98007525073334,
+      "bbox": {
+        "max": [
+          19.85,
+          38.85,
+          140.65000000000003
+        ],
+        "min": [
+          14.15,
+          33.15,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        17.000000000000004,
+        35.99999999999999,
+        137.05926360477199
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.12726196391717012,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw retainer 1 -17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 98.65268520710863
+    },
+    {
+      "area_mm2": 76.90618815987786,
+      "bbox": {
+        "max": [
+          20.500000000000004,
+          39.50000000000001,
+          139.00000000000003
+        ],
+        "min": [
+          13.499999999999998,
+          32.49999999999999,
+          138.49999999999997
+        ]
+      },
+      "center_of_mass": [
+        17.0,
+        36.00000000000008,
+        138.75
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.019635111164568817,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw washer 1 -17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 15.221016406642493
+    },
+    {
+      "area_mm2": 106.16315544196661,
+      "bbox": {
+        "max": [
+          19.75,
+          39.17542648054294,
+          134.80000000000004
+        ],
+        "min": [
+          14.25,
+          32.82457351945706,
+          132.4
+        ]
+      },
+      "center_of_mass": [
+        17.0,
+        36.0,
+        133.60000000000002
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.0562072337759119,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw nut 1 -17",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 43.5714990510945
+    },
+    {
+      "area_mm2": 155.98007525073334,
+      "bbox": {
+        "max": [
+          -14.15,
+          38.85,
+          140.65000000000003
+        ],
+        "min": [
+          -19.85,
+          33.15,
+          131.0
+        ]
+      },
+      "center_of_mass": [
+        -16.999999999999996,
+        35.99999999999999,
+        137.05926360477199
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.12726196391717007,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw retainer 1 17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 98.65268520710859
+    },
+    {
+      "area_mm2": 76.90618815987786,
+      "bbox": {
+        "max": [
+          -13.499999999999998,
+          39.50000000000001,
+          139.00000000000003
+        ],
+        "min": [
+          -20.500000000000004,
+          32.5,
+          138.5
+        ]
+      },
+      "center_of_mass": [
+        -17.0,
+        36.00000000000008,
+        138.75
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 2
+      },
+      "faces": 4,
+      "kernel": {
+        "edges": 6,
+        "faces": 4,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.019635111164568807,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw washer 1 17",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 15.221016406642484
+    },
+    {
+      "area_mm2": 106.16315544196664,
+      "bbox": {
+        "max": [
+          -14.25,
+          39.17542648054294,
+          134.80000000000004
+        ],
+        "min": [
+          -19.75,
+          32.82457351945706,
+          132.4
+        ]
+      },
+      "center_of_mass": [
+        -17.0,
+        36.0,
+        133.60000000000002
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.05620723377591189,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF jaw nut 1 17",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 43.57149905109449
+    },
+    {
+      "area_mm2": 479.0928796724428,
+      "bbox": {
+        "max": [
+          3.5000000000000093,
+          58.20000000000002,
+          146.49999999999997
+        ],
+        "min": [
+          -3.5000000000000027,
+          29.199999999999996,
+          139.5
+        ]
+      },
+      "center_of_mass": [
+        2.8645815610958195e-15,
+        46.468456375838954,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 6,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 3
+      },
+      "faces": 5,
+      "kernel": {
+        "edges": 6,
+        "faces": 5,
+        "shells": 1,
+        "vertices": 4
+      },
+      "mass_g": 0.6038455239464926,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M4 adjuster 1",
+      "notes": [],
+      "vertices": 4,
+      "volume_mm3": 468.0973053848779
+    },
+    {
+      "area_mm2": 244.81846759292299,
+      "bbox": {
+        "max": [
+          3.500000000000004,
+          48.400000000000006,
+          147.0414518843274
+        ],
+        "min": [
+          -3.499999999999998,
+          43.39999999999999,
+          138.9585481156726
+        ]
+      },
+      "center_of_mass": [
+        2.9629209954665563e-15,
+        45.9,
+        143.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 21,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 8
+      },
+      "faces": 9,
+      "kernel": {
+        "edges": 21,
+        "faces": 9,
+        "shells": 1,
+        "vertices": 14
+      },
+      "mass_g": 0.17563308940630662,
+      "material": "Default",
+      "measured_by": "smlib",
+      "name": "REF M4 locking nut 1",
+      "notes": [],
+      "vertices": 14,
+      "volume_mm3": 136.1496817103152
+    }
+  ],
+  "body_count": 45,
+  "total": {
+    "area_mm2": 96375.4073606173,
+    "edges": 860,
+    "faces": 400,
+    "mass_g": 266.1847232187912,
+    "open_bodies_skipped": 0,
+    "vertices": 572,
+    "volume_mm3": 206344.74668123323
+  }
+}

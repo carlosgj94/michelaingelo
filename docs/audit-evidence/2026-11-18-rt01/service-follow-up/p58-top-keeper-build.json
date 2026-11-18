@@ -1,0 +1,79 @@
+{
+  "commands": [
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 60,
+        "width": 60,
+        "height": 3,
+        "corner": [
+          -30,
+          -30,
+          174
+        ],
+        "operation": "new",
+        "body_name": "P58 open centre keeper"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 42,
+        "width": 42,
+        "height": 5,
+        "corner": [
+          -21,
+          -21,
+          173
+        ],
+        "operation": "cut",
+        "targets": [
+          "P58 open centre keeper"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 5.4,
+        "width": 62,
+        "height": 2,
+        "corner": [
+          -27.7,
+          -31,
+          176.4
+        ],
+        "operation": "cut",
+        "targets": [
+          "P58 open centre keeper"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 5.4,
+        "width": 62,
+        "height": 2,
+        "corner": [
+          22.3,
+          -31,
+          176.4
+        ],
+        "operation": "cut",
+        "targets": [
+          "P58 open centre keeper"
+        ]
+      }
+    },
+    {
+      "command": "appearance.assign",
+      "params": {
+        "bodies": [
+          "P58 open centre keeper"
+        ],
+        "color": "#F6C915"
+      }
+    }
+  ]
+}
