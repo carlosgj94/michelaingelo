@@ -2,10 +2,33 @@
 """Check retained CAD and export evidence before writing the validation record."""
 import argparse, hashlib, json, math
 from pathlib import Path
+from zipfile import ZipFile
 ROOT=Path(__file__).resolve().parents[1]
 E=ROOT/'docs/audit-evidence/2026-11-18-rt01/revision5'
 def read(p):return json.loads(p.read_text())
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+
+def native_geometry_sha256(path):
+    """Fingerprint the full native archive with only display appearances excluded."""
+    entry_hashes = {}
+    with ZipFile(path) as archive:
+        document_bytes = archive.read('document.json')
+        document = json.loads(document_bytes)
+        document.pop('appearances', None)
+        structural_document = json.dumps(document, sort_keys=True).encode()
+        for name in archive.namelist():
+            if name == 'document.json':
+                contents = structural_document
+            elif name == 'cache/model.json':
+                cache = json.loads(archive.read(name))
+                assert cache['document'] == hashlib.sha256(document_bytes).hexdigest()
+                cache['document'] = hashlib.sha256(structural_document).hexdigest()
+                contents = json.dumps(cache, sort_keys=True).encode()
+            else:
+                contents = archive.read(name)
+            entry_hashes[name] = hashlib.sha256(contents).hexdigest()
+    return hashlib.sha256(json.dumps(entry_hashes, sort_keys=True).encode()).hexdigest()
+
 def bodies(p):return {b['name']:b for b in read(p)['bodies']}
 def compare(a,b,names,z=0):
  v=max(abs((a[n].get('volume_mm3') or 0)-(b[n].get('volume_mm3') or 0)) for n in names)
@@ -66,9 +89,13 @@ def main():
  register=read(ROOT/'cad/fasteners.json')
  assert coverage['groups']=={r['id']:r['quantity'] for r in register['rows']}
  revision=part_register['revision'];assert revision==register['revision']==manifest['revision']==coverage['revision']==5
- provenance=read(E/'input-provenance.json');assert provenance['candidate_native_sha256']==sha(args.native)
+ provenance=read(E/'input-provenance.json')
+ native_sha=sha(args.native)
+ checked_native_sha=provenance['candidate_native_sha256']
+ if native_sha!=checked_native_sha:
+  assert native_geometry_sha256(args.native)==provenance['candidate_native_geometry_sha256'], 'Native changes exceed display appearances.'
  report=dict(design='RT-01',revision=revision,date='2026-11-18',status='CAD corrections verified for the foam prototype. Fabrication release and physical tests pending.',
-  native_sha256=sha(args.native),baseline_sha256=provenance['baseline_native_sha256'],
+  native_sha256=native_sha,geometry_validated_native_sha256=checked_native_sha,baseline_sha256=provenance['baseline_native_sha256'],
   health=dict(new_closed_bodies=len(names),total_world_bodies=len(native),sketches_zero_dof=len(health['sketches']),timeline_entries=len(health['timeline']),failed_features=0,arm_import_warnings=[f['warning'] for f in health['timeline'] if f.get('warning')]),
   source_comparison=compare(native,fresh,names),step_round_trip=compare(native,step,names),arm_preservation=compare(native,baseline,arm),
   hardware=dict(groups=len(coverage['groups']),screws=sum(coverage['groups'].values()),specified_lengths=sum(r['quantity'] for r in register['rows'] if r['length_mm'] and r['id']!='F24'),arm_screws_to_fit=4,bench_bolts=sum(r['quantity'] for r in register['rows'] if not r['length_mm']),fixture_tip_probes=4,rotation_angles_deg=coverage['angles_deg'],cartridge_offsets_mm=[3,-3],unexpected_intersections=0,unchecked_pairs=0,budget_failures=0,exclusions='cad/hardware-check-coverage.json'),

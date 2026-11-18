@@ -2,6 +2,8 @@
 
 **The corrective CAD passes the checks below.** The [audit response](rotary-table-design-audit-2026-11-18.md#revision-5-response-for-review) records the disposition of each finding. Fabrication release and physical tests are pending.
 
+The sourcing colors are a display update to revision 5. The native archive matches the tested candidate with its display appearances excluded. The validation record identifies both the current colored file and the file used for the mechanical checks.
+
 | Check | Result and scope |
 | --- | --- |
 | Native model | 741 timeline entries, zero failed features, 11 sketches with zero degrees of freedom. All 81 table and support bodies closed. 100 placed bodies including the arm. |

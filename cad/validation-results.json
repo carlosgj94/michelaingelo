@@ -3,7 +3,8 @@
   "revision": 5,
   "date": "2026-11-18",
   "status": "CAD corrections verified for the foam prototype. Fabrication release and physical tests pending.",
-  "native_sha256": "1657ef88425f4e11237289d5e265fbcf35dfd9450d6296671abc0c090eed4c50",
+  "native_sha256": "6fa96aa3e4a9380bfe4d64823aa8246d0498cd365a7af2194f9eef73170a3f9f",
+  "geometry_validated_native_sha256": "1657ef88425f4e11237289d5e265fbcf35dfd9450d6296671abc0c090eed4c50",
   "baseline_sha256": "ec2f769737bc460da0205142b2fdd3fcab7844b11034e9225c389dcfc5e7f18b",
   "health": {
     "new_closed_bodies": 81,
@@ -200,7 +201,7 @@
     "Foam prototype scope. Rock work requires its own tooling, extraction and qualification."
   ],
   "evidence_sha256": {
-    "cad/rotary-table-build.json": "b15afb59c9185a1d0bd683ef832711695ad7ab55603cf9d2d6ee35b4ee8c8251",
+    "cad/rotary-table-build.json": "9795a1973e3f177eca1be9da175d849939dd5af04ef2c8c41c8754a1a4b4bb48",
     "cad/parts.json": "482f1568da47119fc8e9bed3a89741e473f20a34e41763d2cb841ac91ecc099f",
     "cad/fasteners.json": "c1e6a336e4bcd8aa221205f2fd085cc31881a0c7253d31a1567e77920c8c175e",
     "cad/fastener-clearance-checks.json": "23ad01c138cd67a675cf4a66b0747d8980256a6c96d43cfb1d12d2b7296cf5c6",
@@ -210,7 +211,7 @@
     "cad/stand-backing-strip.json": "f1a0c688340ddf429792ccdf294d74fdafa7db3f60fd532008a362a4b32b2b97",
     "exports/rotary-table/metal/m55-bench-backing-strip-make-two.step": "6c5a7f725389c1da089bbbbc4e1c9b6707033112e425771095cea5f52b57b26e",
     "exports/rotary-table/print-manifest.json": "08bc56ab9dc92231539540f6ad9e299572cd486472c9a98f49728f8a6a0b31aa",
-    "exports/rotary-table/rt01-assembly.step": "dccca1e34ee50a44da8a40723e705846ec81880d33a99c311325b49db73d7cc1",
+    "exports/rotary-table/rt01-assembly.step": "48b8972f43dd2a5320285bd4fd48c50e71dc52452a5ca6f22bea6d85d1f7710e",
     "docs/audit-evidence/2026-11-18-rt01/revision5/baseline.measure.json": "a3078c4a776fe83258df2d5fd213cc6dc50d52f636c19df84e450526861990dc",
     "docs/audit-evidence/2026-11-18-rt01/revision5/bench-fastening.probe.json": "ffc13e102337ba07fa0c6e7d2d761abcf98c6030b956d31565089ab9c8a7fc43",
     "docs/audit-evidence/2026-11-18-rt01/revision5/bench-fastening.results.json": "a16d9cbc6a31e40f365eac66f9f37766404063d2dd6ba226ee131b2e48e9a486",
@@ -226,7 +227,7 @@
     "docs/audit-evidence/2026-11-18-rt01/revision5/fresh.measure.json": "ed69a179046c8abc8ad71b41dff19674e0b8585ca2e893af70ab30894f448057",
     "docs/audit-evidence/2026-11-18-rt01/revision5/gland-volume.probe.json": "382a2b93401154e25295d36d6749c9113cf9e93702b90444e74eb15f0968a2e1",
     "docs/audit-evidence/2026-11-18-rt01/revision5/health.results.json": "2a744b59378cc5e085f751ad1ba0081d462109c42acc76a45de659c23345dda0",
-    "docs/audit-evidence/2026-11-18-rt01/revision5/input-provenance.json": "f2a43fb2597fa7abbb61e176ef434ff4635346c1e2f08fd111532dedfa720460",
+    "docs/audit-evidence/2026-11-18-rt01/revision5/input-provenance.json": "43c1d2c5823fc08be232c7594e6b47ad273d2647a93f50137e4f346d5b3b694f",
     "docs/audit-evidence/2026-11-18-rt01/revision5/native.measure.json": "f22d3d5e0006bc7bb1c44fa288bfd5b71e8c4b719c1226ebcca5aa81baf80105",
     "docs/audit-evidence/2026-11-18-rt01/revision5/rotation-hardware.results.json": "07721ad3f42656076856ab131e3d23cf677e1d58c9666b73adfdd465ddc482a3",
     "docs/audit-evidence/2026-11-18-rt01/revision5/service.results.json": "ce24cec41c7b67377f8504463987fdb77badb32e671b5aeadf6472969920fc90",

@@ -1,6 +1,7 @@
 {
   "baseline_native_sha256": "ec2f769737bc460da0205142b2fdd3fcab7844b11034e9225c389dcfc5e7f18b",
   "candidate_native_sha256": "1657ef88425f4e11237289d5e265fbcf35dfd9450d6296671abc0c090eed4c50",
+  "candidate_native_geometry_sha256": "05704a9d06df85cc8f30dd3492284904c4be2e077e475ae9e81ed2276acc6c9e",
   "changed_main_assembly_bodies": [
     "M60 monolithic worm carrier",
     "P41 fixed housing quadrant",

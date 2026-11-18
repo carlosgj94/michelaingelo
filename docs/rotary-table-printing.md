@@ -11,7 +11,7 @@ Use the [specification](specs/rotary-table.md), [BOM](rotary-table-bom.md) and [
 - `rt01-assembly.step`:81 table/support/reference bodies; excludes arm. Cyan spaces are reservations, not physical parts.
 - `seal-profiles.step`: compressed thicknesses; cut uncompressed gasket stock from the BOM.
 
-A1 Mini baseline is dry PETG with a 0.4 mm nozzle and 0.20 mm layers. Start from the filament profile and calibrate flow, first layer and elephant foot. The largest dimension is 168 mm. With a 5 mm brim on each side it occupies 178 mm on the 180 mm bed. Inspect purge lines, support expansion and placement in the slicer. Print one large quadrant per plate. Slicing and physical printing are pending.
+A1 Mini baseline is dry yellow PETG with a 0.4 mm nozzle and 0.20 mm layers. Assign yellow PETG in Bambu Studio for the 25 assembly STLs and the fit coupon. Start from the filament profile and calibrate flow, first layer and elephant foot. The largest dimension is 168 mm. With a 5 mm brim on each side it occupies 178 mm on the 180 mm bed. Inspect purge lines, support expansion and placement in the slicer. Print one large quadrant per plate. Slicing and physical printing are pending.
 
 For platter, motor bracket and column sleeves, start with six walls,eight top/bottom layers, 35–45% infill and solid regions around clamps. Covers/service box:four walls, 20–25%. These are starting profiles, not strength qualifications. Keep supports/brim residue off functional lands. Metal components are not printable substitutes.
 

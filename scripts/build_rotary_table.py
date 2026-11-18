@@ -446,14 +446,15 @@ stage('07-presentation')
 cmd('component.activate',component='root')
 cmd('joint.as_built',type='revolute',a='RT01 - stationary core:1',b='RT01 - rotating table:1',at={'occurrence':'RT01 - stationary core:1','point':[0,0,97.5],'z':[0,0,1]},name='RT01 vertical C axis')
 cmd('motion.study',name='RT01 one revolution',steps=16,keys=[{'joint':'RT01 vertical C axis','points':[[0,0],[16,360]]}])
-# Label colour distinguishes printable parts, metal, bought parts and space reservations.
-for kind,color in [('print','#536D7B'),('metal','#BFC8CD'),('purchased','#A9B0B8'),('space','#48B8CC')]:
- names=[p['name'] for p in parts if p['kind']==kind]
- cmd('appearance.assign',bodies=names,color=color)
-cmd('appearance.assign',bodies=[HUB]+[f'P3{q+1} platter quadrant' for q in range(4)],color='#DBE2E3')
-cmd('appearance.assign',bodies=['B04 duplex worm envelope','B11 duplex wheel envelope'],color='#BE9553')
-cmd('appearance.assign',bodies=['B20 core static gasket','B21 heat spreader gasket','B24 lid gasket','B25 motor hood gasket'],color='#253035')
-cmd('appearance.assign',bodies=['P52 electronics lid','P46 motor service hood'],color='#397F87')
+# Use the BOM sourcing category, including for metal stock and reference geometry.
+for sourcing,color,name in [
+ ('print','#F6C915','Yellow PETG'),
+ ('fabricate','#91969D','Grey fabricated metal'),
+ ('buy','#202124','Black purchased component'),
+ ('reservation','#48B8CC','Cyan space reservation'),
+]:
+ names=[p['name'] for p in parts if p['sourcing']==sourcing]
+ cmd('appearance.assign',bodies=names,color=color,name=name)
 cmd('browser.visibility',visible=False,items=['B07 output encoder reserved volume'])
 cmd('view.save',name='RT01 assembly',camera={'target':[0,-52,65],'yaw':-0.85,'pitch':0.62,'distance':720})
 cmd('view.save',name='RT01 and arm reference',camera={'target':[20,-90,130],'yaw':-0.85,'pitch':0.5,'distance':950})

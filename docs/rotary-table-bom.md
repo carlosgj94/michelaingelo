@@ -4,13 +4,13 @@ For **one rotary table, its electronics enclosure and its fixed arm mounting sta
 
 In SolidCraft, expand the **Bodies** folder in a subassembly to see its sourcing groups. Use this BOM for the quantities, specifications and ordering notes behind those labels. Quantities are installed totals with **no spares**. The [parts list](../cad/parts.json), [print manifest](../exports/rotary-table/print-manifest.json) and [fastener register](rotary-table-fasteners.md) supply the underlying data.
 
-| SolidCraft group | What it covers |
-| --- | --- |
-| **To Be Printed** | 25 PETG assembly bodies. Section 1 also lists the separate fit coupon. |
-| **To Be Bought** | Bearings, gear pair, motor, coupling, sensor, spacers, washers and seals. Check the notes for stock that needs cutting and parts that need secondary machining. |
-| **To Be Fabricated** | 17 custom metal bodies and the B03 shaft reference. Section 2 also lists the two separate bench backing strips. |
-| **Space Reservations** | Driver, controller and sensor cordset envelopes for parts still to be selected. The optional output encoder has no quantity in the baseline order. |
-| **Existing Arm Reference** | The mounted SO100 and its internal components. Only its mounting hardware appears in the RT-01 order. |
+| SolidCraft group | Display color | What it covers |
+| --- | --- | --- |
+| **To Be Printed** | Yellow | 25 yellow PETG assembly bodies. Section 1 also lists the separate fit coupon. |
+| **To Be Bought** | Black | Bearings, gear pair, motor, coupling, sensor, spacers, washers and seals. Check the notes for stock that needs cutting and parts that need secondary machining. |
+| **To Be Fabricated** | Grey | 17 custom metal bodies and the B03 shaft reference. Section 2 also lists the two separate bench backing strips. |
+| **Space Reservations** | Cyan | Driver, controller and sensor cordset envelopes for parts still to be selected. The optional output encoder has no quantity in the baseline order. |
+| **Existing Arm Reference** | Imported appearance | The mounted SO100 and its internal components. Only its mounting hardware appears in the RT-01 order. |
 
 Section 7 lists bought hardware even when it has no permanent CAD body. The assembly uses **97 specified-length screws, four arm screws to fit, and 18 bench bolts to size for the actual bench**. The fastener CSV gives the same quantities for purchasing.
 
@@ -37,7 +37,7 @@ Print **one copy of every linked assembly STL**. The quantities below are the nu
 | --- | --- | --- | --- |
 | Fit coupon | 1 initially | 150 × 100 × 24 | [fit-coupon.stl](../exports/rotary-table/fit-coupon.stl) |
 
-Buy PETG filament; the required mass is **TBD after slicing**, including supports, brim and calibration. The 25-piece total does not include extra calibration/reprint attempts. Largest assembly dimension is 168 mm; the largest footprint with a 5 mm brim is 178 mm on the 180 mm bed. Inspect actual slicer placement. Retired P20/P21/P22/P23/P25/P30 prints are not part of this BOM.
+Buy yellow PETG filament. The required mass is **TBD after slicing**, including supports, brim and calibration. The 25-piece total does not include extra calibration/reprint attempts. Largest assembly dimension is 168 mm; the largest footprint with a 5 mm brim is 178 mm on the 180 mm bed. Inspect actual slicer placement. Retired P20/P21/P22/P23/P25/P30 prints are not part of this BOM.
 
 ## 2. To Be Fabricated — metal structure and precision parts
 

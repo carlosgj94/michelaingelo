@@ -80,7 +80,8 @@
           "P53 electronics foot 3",
           "P53 electronics foot 4"
         ],
-        "color": "#536D7B"
+        "color": "#F6C915",
+        "name": "Yellow PETG"
       }
     },
     {
@@ -96,6 +97,7 @@
           "M60 monolithic worm carrier",
           "M61 worm bearing retainer left",
           "M61 worm bearing retainer right",
+          "B03 worm shaft reference",
           "M20 registered output hub",
           "B12 retained steel home target",
           "M30 driver heat spreader",
@@ -105,7 +107,8 @@
           "M51 steel side channel right",
           "M52 steel front X brace"
         ],
-        "color": "#BFC8CD"
+        "color": "#91969D",
+        "name": "Grey fabricated metal"
       }
     },
     {
@@ -121,7 +124,6 @@
           "B02 worm support bearing left",
           "M62 retainer shim right",
           "B02 worm support bearing right",
-          "B03 worm shaft reference",
           "B04 duplex worm envelope",
           "B05 clamp coupling reference",
           "B06 NEMA17 motor and encoder envelope",
@@ -148,7 +150,8 @@
           "B53 bridge anchor washer",
           "B54 bridge anchor washer"
         ],
-        "color": "#A9B0B8"
+        "color": "#202124",
+        "name": "Black purchased component"
       }
     },
     {
@@ -160,52 +163,8 @@
           "B22 driver packaging envelope",
           "B23 controller packaging envelope"
         ],
-        "color": "#48B8CC"
-      }
-    },
-    {
-      "command": "appearance.assign",
-      "params": {
-        "bodies": [
-          "M20 registered output hub",
-          "P31 platter quadrant",
-          "P32 platter quadrant",
-          "P33 platter quadrant",
-          "P34 platter quadrant"
-        ],
-        "color": "#DBE2E3"
-      }
-    },
-    {
-      "command": "appearance.assign",
-      "params": {
-        "bodies": [
-          "B04 duplex worm envelope",
-          "B11 duplex wheel envelope"
-        ],
-        "color": "#BE9553"
-      }
-    },
-    {
-      "command": "appearance.assign",
-      "params": {
-        "bodies": [
-          "B20 core static gasket",
-          "B21 heat spreader gasket",
-          "B24 lid gasket",
-          "B25 motor hood gasket"
-        ],
-        "color": "#253035"
-      }
-    },
-    {
-      "command": "appearance.assign",
-      "params": {
-        "bodies": [
-          "P52 electronics lid",
-          "P46 motor service hood"
-        ],
-        "color": "#397F87"
+        "color": "#48B8CC",
+        "name": "Cyan space reservation"
       }
     },
     {
