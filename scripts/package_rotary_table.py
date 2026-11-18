@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Package the current prototype exports, review documents and reproducible source."""
 import hashlib,json
+from os.path import relpath
 from pathlib import Path
 from zipfile import ZipFile,ZIP_DEFLATED
 ROOT=Path(__file__).resolve().parents[1]
+BOM=ROOT/'docs/rotary-table-bom.md'
+BOM_URL='https://github.com/carlosgj94/michelaingelo/blob/main/docs/rotary-table-bom.md'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
  out=ROOT/'exports/rotary-table';report=json.loads((ROOT/'cad/validation-results.json').read_text());manifest=json.loads((out/'print-manifest.json').read_text())
@@ -17,10 +20,27 @@ def main():
  files+=[p for p in (ROOT/'docs/audit-evidence').rglob('*') if p.is_file() and p.suffix in ('.json','.py','.png')]
  files+=[ROOT/'docs/archive/rotary-table-spec-rev3.md',ROOT/'docs/archive/rotary-table-validation-rev3.md']
  files+=[p for p in out.rglob('*') if p.is_file() and p.suffix!='.zip']
+ files=sorted(set(files)-{BOM})
  archive=out/'rt01-print-package.zip'
  with ZipFile(archive,'w',compression=ZIP_DEFLATED,compresslevel=9) as z:
-  for p in sorted(set(files)):z.write(p,p.relative_to(ROOT))
-  z.writestr('README-FIRST.txt',f'RT-01 revision {revision} foam prototype\n\nOpen README.md and the revision {revision} response in docs/rotary-table-design-audit-2026-11-18.md.\n25 oriented assembly STLs plus a fit coupon. Use the metal STEP files with the machining specification and supplier drawings.\nThe native assembly, generators, BOM and verification evidence are included. The repository holds the original arm source and historical native files.\nPhysical fit, load, thermal, ingress and stopping acceptance remain pending.\n')
+  for p in files:
+   member=p.relative_to(ROOT).as_posix()
+   if p.suffix=='.md':
+    document=p.read_text(encoding='utf-8')
+    relative_bom=Path(relpath(BOM,p.parent)).as_posix()
+    packaged_document=document.replace(f']({relative_bom})',f']({BOM_URL})')
+    if packaged_document!=document:
+     z.writestr(member,packaged_document)
+     continue
+   z.write(p,member)
+  z.writestr('README-FIRST.txt',(
+   f'RT-01 revision {revision} foam prototype\n\n'
+   f'Open README.md and the revision {revision} response in docs/rotary-table-design-audit-2026-11-18.md.\n'
+   '25 oriented assembly STLs plus a fit coupon. Use the metal STEP files with the machining specification and supplier drawings.\n'
+   'The native assembly, generators and verification evidence are included. The repository holds the original arm source and historical native files.\n'
+   f'The current bill of materials is in the repository.\n{BOM_URL}\n'
+   'Physical fit, load, thermal, ingress and stopping acceptance remain pending.\n'
+  ))
  with ZipFile(archive) as z:
   assert z.testzip() is None
   assert len([n for n in z.namelist() if n.startswith('exports/rotary-table/stl/') and n.endswith('.stl')])==25
