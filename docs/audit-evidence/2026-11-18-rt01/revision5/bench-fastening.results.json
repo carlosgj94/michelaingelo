@@ -1,0 +1,613 @@
+[
+  {
+    "bodies": 12,
+    "ms": 208.809583,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 0",
+        "distance_mm": 0.0,
+        "from": [
+          -62.17413478510304,
+          -267.4979312132348,
+          32.0
+        ],
+        "to": [
+          -62.17413478510304,
+          -267.4979312132348,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 1",
+        "distance_mm": 0.0,
+        "from": [
+          -64.39033476262617,
+          -181.45850964990976,
+          32.0
+        ],
+        "to": [
+          -64.39033476262617,
+          -181.45850964990976,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 2",
+        "distance_mm": 0.0,
+        "from": [
+          69.48934246145657,
+          -271.30952263853067,
+          32.0
+        ],
+        "to": [
+          69.48934246145657,
+          -271.30952263853067,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 3",
+        "distance_mm": 0.0,
+        "from": [
+          60.909874640428924,
+          -178.8763993559458,
+          32.0
+        ],
+        "to": [
+          60.909874640428924,
+          -178.8763993559458,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 12,
+    "ms": 227.24466600000002,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 0",
+        "distance_mm": 0.0,
+        "from": [
+          -64.17413478510304,
+          -267.4979312132348,
+          32.0
+        ],
+        "to": [
+          -64.17413478510304,
+          -267.4979312132348,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 1",
+        "distance_mm": 0.0,
+        "from": [
+          -71.40245232483593,
+          -177.93188707875325,
+          32.0
+        ],
+        "to": [
+          -71.40245232483593,
+          -177.93188707875325,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 2",
+        "distance_mm": 0.0,
+        "from": [
+          71.43337010137343,
+          -271.7715112081157,
+          32.0
+        ],
+        "to": [
+          71.43337010137343,
+          -271.7715112081157,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 3",
+        "distance_mm": 0.0,
+        "from": [
+          62.649016152352225,
+          -178.14845093822439,
+          32.0
+        ],
+        "to": [
+          62.649016152352225,
+          -178.14845093822439,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 12,
+    "ms": 355.724125,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 0",
+        "distance_mm": 0.0,
+        "from": [
+          -72.83582239963843,
+          -271.6154959903145,
+          32.0
+        ],
+        "to": [
+          -72.83582239963843,
+          -271.6154959903145,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 1",
+        "distance_mm": 0.0,
+        "from": [
+          -72.93359129587756,
+          -177.89019945378942,
+          32.0
+        ],
+        "to": [
+          -72.93359129587756,
+          -177.89019945378942,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 2",
+        "distance_mm": 0.0,
+        "from": [
+          72.75187416567182,
+          -270.908183699562,
+          32.0
+        ],
+        "to": [
+          72.75187416567182,
+          -270.908183699562,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 3",
+        "distance_mm": 0.0,
+        "from": [
+          73.25356802961208,
+          -178.41861741593948,
+          32.0
+        ],
+        "to": [
+          73.25356802961208,
+          -178.41861741593948,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 12,
+    "ms": 362.407042,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 0",
+        "distance_mm": 0.0,
+        "from": [
+          -72.90174274626669,
+          -271.8122908944187,
+          32.0
+        ],
+        "to": [
+          -72.90174274626669,
+          -271.8122908944187,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 1",
+        "distance_mm": 0.0,
+        "from": [
+          -73.86418107563065,
+          -178.94227067399072,
+          32.0
+        ],
+        "to": [
+          -73.86418107563065,
+          -178.94227067399072,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 2",
+        "distance_mm": 0.0,
+        "from": [
+          74.45231064375905,
+          -273.1823236169414,
+          32.0
+        ],
+        "to": [
+          74.45231064375905,
+          -273.1823236169414,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 3",
+        "distance_mm": 0.0,
+        "from": [
+          73.00306598605928,
+          -175.96329630850158,
+          32.0
+        ],
+        "to": [
+          73.00306598605928,
+          -175.96329630850158,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 12,
+    "ms": 352.671958,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 0",
+        "distance_mm": 0.0,
+        "from": [
+          -75.34843132385761,
+          -273.22285753312144,
+          32.0
+        ],
+        "to": [
+          -75.34843132385761,
+          -273.22285753312144,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 1",
+        "distance_mm": 0.0,
+        "from": [
+          -77.04866469426486,
+          -177.93030799763974,
+          32.0
+        ],
+        "to": [
+          -77.04866469426486,
+          -177.93030799763974,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 2",
+        "distance_mm": 0.0,
+        "from": [
+          75.57755112757462,
+          -273.1746113894297,
+          32.0
+        ],
+        "to": [
+          75.57755112757462,
+          -273.1746113894297,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 3",
+        "distance_mm": 0.0,
+        "from": [
+          75.98229489800316,
+          -174.97574785825557,
+          32.0
+        ],
+        "to": [
+          75.98229489800316,
+          -174.97574785825557,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 12,
+    "ms": 358.255333,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 0",
+        "distance_mm": 0.0,
+        "from": [
+          -79.45850964990973,
+          -271.6096652373738,
+          32.0
+        ],
+        "to": [
+          -79.45850964990973,
+          -271.6096652373738,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 1",
+        "distance_mm": 0.0,
+        "from": [
+          -75.98986804980176,
+          -174.97944036366616,
+          32.0
+        ],
+        "to": [
+          -75.98986804980176,
+          -174.97944036366616,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 2",
+        "distance_mm": 0.0,
+        "from": [
+          74.52551121728203,
+          -273.19940000797374,
+          32.0
+        ],
+        "to": [
+          74.52551121728203,
+          -273.19940000797374,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR washer loading 3",
+        "distance_mm": 0.0,
+        "from": [
+          72.80120565096759,
+          -176.5227124444709,
+          32.0
+        ],
+        "to": [
+          72.80120565096759,
+          -176.5227124444709,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 214.466792,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 16,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 209.500959,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 16,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 240.591833,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 16,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 215.003375,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 16,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 6.521416,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 3,
+    "pairs_pruned": 9,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 3.717417,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 3,
+    "pairs_pruned": 9,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 3.5340409999999998,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 3,
+    "pairs_pruned": 9,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 1,
+    "ms": 3.495208,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 3,
+    "pairs_pruned": 9,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "boolean_ms": 774.586,
+    "budget_exceeded": false,
+    "budget_s": 60.0,
+    "checked": 39,
+    "count": 0,
+    "interferences": [],
+    "ms": 538.686,
+    "pairs_candidate": 58,
+    "pairs_cleared": 30,
+    "pairs_excluded": 8,
+    "pairs_intersected": 28,
+    "pairs_not_checked": 0,
+    "skipped_pairs": 0,
+    "slowest": [
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR F21 seal 3",
+        "boolean_ms": 108.317,
+        "ms": 108.317,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR F21 seal 0",
+        "boolean_ms": 105.943,
+        "ms": 105.944,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR F21 seal 2",
+        "boolean_ms": 87.312,
+        "ms": 87.313,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "ANCHOR F21 seal 1",
+        "boolean_ms": 78.02,
+        "ms": 78.021,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "P53 electronics foot 3",
+        "boolean_ms": 77.153,
+        "ms": 77.155,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "P53 electronics foot 1",
+        "boolean_ms": 68.097,
+        "ms": 68.097,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "P53 electronics foot 4",
+        "boolean_ms": 67.585,
+        "ms": 67.586,
+        "tessellate_ms": 0.0
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "P53 electronics foot 2",
+        "boolean_ms": 58.887,
+        "ms": 58.888,
+        "tessellate_ms": 0.0
+      }
+    ],
+    "tessellate_ms": 0.0,
+    "threads": 10,
+    "truncated": false,
+    "unchecked": []
+  }
+]

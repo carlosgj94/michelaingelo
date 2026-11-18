@@ -25,7 +25,7 @@
           4
         ],
         "operation": "new",
-        "name": "496 P50 electronics service box",
+        "name": "508 P50 electronics service box",
         "body_name": "P50 electronics service box"
       }
     },
@@ -41,7 +41,7 @@
           74
         ],
         "operation": "cut",
-        "name": "497 service opening",
+        "name": "509 service opening",
         "targets": [
           "P50 electronics service box"
         ]
@@ -59,7 +59,7 @@
           8
         ],
         "operation": "cut",
-        "name": "498 electronics chamber",
+        "name": "510 electronics chamber",
         "targets": [
           "P50 electronics service box"
         ]
@@ -77,7 +77,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "499 lid insert boss",
+        "name": "511 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -95,7 +95,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "500 lid insert boss",
+        "name": "512 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -113,7 +113,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "501 lid insert boss",
+        "name": "513 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -131,7 +131,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "502 lid insert boss",
+        "name": "514 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -149,7 +149,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "503 lid insert boss",
+        "name": "515 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -167,7 +167,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "504 lid insert boss",
+        "name": "516 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -185,7 +185,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "505 lid insert boss",
+        "name": "517 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -203,7 +203,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "506 lid insert boss",
+        "name": "518 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -221,7 +221,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "507 lid insert boss",
+        "name": "519 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -239,7 +239,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "508 lid insert boss",
+        "name": "520 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -248,7 +248,7 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 3,
+        "length": 3.5,
         "width": 95,
         "height": 2,
         "corner": [
@@ -257,7 +257,7 @@
           78.5
         ],
         "operation": "cut",
-        "name": "509 lid gasket long groove",
+        "name": "521 lid gasket long groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -266,16 +266,16 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 3,
+        "length": 3.5,
         "width": 95,
         "height": 2,
         "corner": [
-          72.5,
+          72,
           -271.5,
           78.5
         ],
         "operation": "cut",
-        "name": "510 lid gasket long groove",
+        "name": "522 lid gasket long groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -284,16 +284,16 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 145,
-        "width": 3,
+        "length": 144,
+        "width": 3.5,
         "height": 2,
         "corner": [
-          -72.5,
+          -72,
           -271.5,
           78.5
         ],
         "operation": "cut",
-        "name": "511 lid gasket end groove",
+        "name": "523 lid gasket end groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -302,16 +302,16 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 145,
-        "width": 3,
+        "length": 144,
+        "width": 3.5,
         "height": 2,
         "corner": [
-          -72.5,
-          -179.5,
+          -72,
+          -180,
           78.5
         ],
         "operation": "cut",
-        "name": "512 lid gasket end groove",
+        "name": "524 lid gasket end groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -329,7 +329,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "513 P50 electronics service box M3 insert pilot",
+        "name": "525 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -347,7 +347,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "514 P50 electronics service box M3 insert pilot",
+        "name": "526 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -365,7 +365,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "515 P50 electronics service box M3 insert pilot",
+        "name": "527 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -383,7 +383,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "516 P50 electronics service box M3 insert pilot",
+        "name": "528 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -401,7 +401,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "517 P50 electronics service box M3 insert pilot",
+        "name": "529 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -419,7 +419,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "518 P50 electronics service box M3 insert pilot",
+        "name": "530 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -437,7 +437,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "519 P50 electronics service box M3 insert pilot",
+        "name": "531 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -455,7 +455,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "520 P50 electronics service box M3 insert pilot",
+        "name": "532 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -473,7 +473,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "521 P50 electronics service box M3 insert pilot",
+        "name": "533 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -491,7 +491,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "522 P50 electronics service box M3 insert pilot",
+        "name": "534 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -509,7 +509,7 @@
           3
         ],
         "operation": "cut",
-        "name": "523 heat spreader opening",
+        "name": "535 heat spreader opening",
         "targets": [
           "P50 electronics service box"
         ]
@@ -527,7 +527,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "524 P50 electronics service box heat spreader clamp",
+        "name": "536 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -545,7 +545,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "525 P50 electronics service box heat spreader clamp",
+        "name": "537 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -563,7 +563,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "526 P50 electronics service box heat spreader clamp",
+        "name": "538 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -581,7 +581,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "527 P50 electronics service box heat spreader clamp",
+        "name": "539 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -599,7 +599,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "528 tray post",
+        "name": "540 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -617,7 +617,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "529 P50 electronics service box tray insert pilot",
+        "name": "541 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -635,7 +635,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "530 tray post",
+        "name": "542 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -653,7 +653,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "531 P50 electronics service box tray insert pilot",
+        "name": "543 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -671,7 +671,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "532 tray post",
+        "name": "544 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -689,7 +689,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "533 P50 electronics service box tray insert pilot",
+        "name": "545 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -707,7 +707,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "534 tray post",
+        "name": "546 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -725,7 +725,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "535 P50 electronics service box tray insert pilot",
+        "name": "547 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -743,7 +743,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "536 P50 electronics service box M16 gland provision",
+        "name": "548 P50 electronics service box M16 gland provision",
         "targets": [
           "P50 electronics service box"
         ]
@@ -761,7 +761,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "537 P50 electronics service box M16 gland provision",
+        "name": "549 P50 electronics service box M16 gland provision",
         "targets": [
           "P50 electronics service box"
         ]
@@ -779,7 +779,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "538 P50 electronics service box M16 gland provision",
+        "name": "550 P50 electronics service box M16 gland provision",
         "targets": [
           "P50 electronics service box"
         ]
@@ -797,10 +797,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "539 P50 electronics service box bench fixing",
+        "name": "551 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "552 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "553 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -275.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "554 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -271,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "555 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "555 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "556 P50 electronics service box captive nut"
       }
     },
     {
@@ -815,10 +941,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "540 P50 electronics service box bench fixing",
+        "name": "557 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "558 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "559 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -181.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "560 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -177,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "561 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "561 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "562 P50 electronics service box captive nut"
       }
     },
     {
@@ -833,10 +1085,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "541 P50 electronics service box bench fixing",
+        "name": "563 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "564 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "565 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -275.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "566 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -271,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "567 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "567 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "568 P50 electronics service box captive nut"
       }
     },
     {
@@ -851,10 +1229,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "542 P50 electronics service box bench fixing",
+        "name": "569 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "570 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "571 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -181.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "572 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -177,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "573 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "573 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "574 P50 electronics service box captive nut"
       }
     },
     {
@@ -869,7 +1373,7 @@
           8.75
         ],
         "operation": "new",
-        "name": "543 M30 driver heat spreader",
+        "name": "575 M30 driver heat spreader",
         "body_name": "M30 driver heat spreader"
       }
     },
@@ -885,7 +1389,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "544 M30 driver heat spreader clearance hole",
+        "name": "576 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -907,7 +1411,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "545 flush M3 heat spreader clamp"
+        "name": "577 flush M3 heat spreader clamp"
       }
     },
     {
@@ -922,7 +1426,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "546 M30 driver heat spreader clearance hole",
+        "name": "578 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -944,7 +1448,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "547 flush M3 heat spreader clamp"
+        "name": "579 flush M3 heat spreader clamp"
       }
     },
     {
@@ -959,7 +1463,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "548 M30 driver heat spreader clearance hole",
+        "name": "580 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -981,7 +1485,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "549 flush M3 heat spreader clamp"
+        "name": "581 flush M3 heat spreader clamp"
       }
     },
     {
@@ -996,7 +1500,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "550 M30 driver heat spreader clearance hole",
+        "name": "582 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -1018,7 +1522,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "551 flush M3 heat spreader clamp"
+        "name": "583 flush M3 heat spreader clamp"
       }
     },
     {
@@ -1033,7 +1537,7 @@
           8
         ],
         "operation": "new",
-        "name": "552 B21 heat spreader gasket",
+        "name": "584 B21 heat spreader gasket",
         "body_name": "B21 heat spreader gasket"
       }
     },
@@ -1049,7 +1553,7 @@
           7.5
         ],
         "operation": "cut",
-        "name": "553 seal centre",
+        "name": "585 seal centre",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -1067,7 +1571,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "554 B21 heat spreader gasket compression shim corner relief",
+        "name": "586 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -1085,7 +1589,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "555 B21 heat spreader gasket compression shim corner relief",
+        "name": "587 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -1103,7 +1607,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "556 B21 heat spreader gasket compression shim corner relief",
+        "name": "588 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -1121,7 +1625,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "557 B21 heat spreader gasket compression shim corner relief",
+        "name": "589 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -1139,7 +1643,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "558 M31 heat-spreader compression stop",
+        "name": "590 M31 heat-spreader compression stop",
         "body_name": "M31 heat-spreader compression stop"
       }
     },
@@ -1155,7 +1659,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "559 M31 heat-spreader compression stop bore",
+        "name": "591 M31 heat-spreader compression stop bore",
         "targets": [
           "M31 heat-spreader compression stop"
         ]
@@ -1173,7 +1677,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "560 M32 heat-spreader compression stop",
+        "name": "592 M32 heat-spreader compression stop",
         "body_name": "M32 heat-spreader compression stop"
       }
     },
@@ -1189,7 +1693,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "561 M32 heat-spreader compression stop bore",
+        "name": "593 M32 heat-spreader compression stop bore",
         "targets": [
           "M32 heat-spreader compression stop"
         ]
@@ -1207,7 +1711,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "562 M33 heat-spreader compression stop",
+        "name": "594 M33 heat-spreader compression stop",
         "body_name": "M33 heat-spreader compression stop"
       }
     },
@@ -1223,7 +1727,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "563 M33 heat-spreader compression stop bore",
+        "name": "595 M33 heat-spreader compression stop bore",
         "targets": [
           "M33 heat-spreader compression stop"
         ]
@@ -1241,7 +1745,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "564 M34 heat-spreader compression stop",
+        "name": "596 M34 heat-spreader compression stop",
         "body_name": "M34 heat-spreader compression stop"
       }
     },
@@ -1257,7 +1761,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "565 M34 heat-spreader compression stop bore",
+        "name": "597 M34 heat-spreader compression stop bore",
         "targets": [
           "M34 heat-spreader compression stop"
         ]
@@ -1275,7 +1779,7 @@
           12
         ],
         "operation": "new",
-        "name": "566 B22 driver packaging envelope",
+        "name": "598 B22 driver packaging envelope",
         "body_name": "B22 driver packaging envelope"
       }
     },
@@ -1304,7 +1808,7 @@
           55
         ],
         "operation": "new",
-        "name": "567 P51 removable controller tray",
+        "name": "599 P51 removable controller tray",
         "body_name": "P51 removable controller tray"
       }
     },
@@ -1320,7 +1824,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "568 P51 removable controller tray clearance hole",
+        "name": "600 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1338,7 +1842,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "569 P51 removable controller tray clearance hole",
+        "name": "601 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1356,7 +1860,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "570 P51 removable controller tray clearance hole",
+        "name": "602 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1374,7 +1878,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "571 P51 removable controller tray clearance hole",
+        "name": "603 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1392,7 +1896,7 @@
           54
         ],
         "operation": "cut",
-        "name": "572 adjustment slot web",
+        "name": "604 adjustment slot web",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1410,7 +1914,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "573 P51 removable controller tray adjustment slot end",
+        "name": "605 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1428,7 +1932,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "574 P51 removable controller tray adjustment slot end",
+        "name": "606 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1446,7 +1950,7 @@
           54
         ],
         "operation": "cut",
-        "name": "575 adjustment slot web",
+        "name": "607 adjustment slot web",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1464,7 +1968,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "576 P51 removable controller tray adjustment slot end",
+        "name": "608 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1482,7 +1986,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "577 P51 removable controller tray adjustment slot end",
+        "name": "609 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1500,7 +2004,7 @@
           54
         ],
         "operation": "cut",
-        "name": "578 cable passage",
+        "name": "610 cable passage",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1518,7 +2022,7 @@
           54
         ],
         "operation": "cut",
-        "name": "579 cable passage",
+        "name": "611 cable passage",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -1536,7 +2040,7 @@
           58
         ],
         "operation": "new",
-        "name": "580 B23 controller packaging envelope",
+        "name": "612 B23 controller packaging envelope",
         "body_name": "B23 controller packaging envelope"
       }
     },
@@ -1565,7 +2069,7 @@
           80
         ],
         "operation": "new",
-        "name": "581 P52 electronics lid",
+        "name": "613 P52 electronics lid",
         "body_name": "P52 electronics lid"
       }
     },
@@ -1581,7 +2085,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "582 P52 electronics lid clearance hole",
+        "name": "614 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1599,7 +2103,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "583 P52 electronics lid clearance hole",
+        "name": "615 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1617,7 +2121,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "584 P52 electronics lid clearance hole",
+        "name": "616 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1635,7 +2139,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "585 P52 electronics lid clearance hole",
+        "name": "617 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1653,7 +2157,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "586 P52 electronics lid clearance hole",
+        "name": "618 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1671,7 +2175,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "587 P52 electronics lid clearance hole",
+        "name": "619 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1689,7 +2193,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "588 P52 electronics lid clearance hole",
+        "name": "620 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1707,7 +2211,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "589 P52 electronics lid clearance hole",
+        "name": "621 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1725,7 +2229,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "590 P52 electronics lid clearance hole",
+        "name": "622 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1743,7 +2247,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "591 P52 electronics lid clearance hole",
+        "name": "623 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -1752,32 +2256,32 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 151,
-        "width": 95,
+        "length": "147.5 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
+        "width": "91.5 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
         "height": 1.5,
         "corner": [
-          -75.5,
-          -271.5,
+          "-73.75 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
+          "-269.75 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
           78.5
         ],
         "operation": "new",
-        "name": "592 B24 lid gasket",
+        "name": "624 B24 lid gasket",
         "body_name": "B24 lid gasket"
       }
     },
     {
       "command": "solid.box",
       "params": {
-        "length": 145,
-        "width": 89,
+        "length": "147.5 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
+        "width": "91.5 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
         "height": 3,
         "corner": [
-          -72.5,
-          -268.5,
+          "-73.75 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
+          "-269.75 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
           78
         ],
         "operation": "cut",
-        "name": "593 gasket centre",
+        "name": "625 gasket centre",
         "targets": [
           "B24 lid gasket"
         ]
@@ -1801,7 +2305,7 @@
           5.25
         ],
         "operation": "new",
-        "name": "594 B26 external heatsink reference",
+        "name": "626 B26 external heatsink reference",
         "body_name": "B26 external heatsink reference"
       }
     },
@@ -1817,7 +2321,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "595 external heatsink fin",
+        "name": "627 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1835,7 +2339,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "596 external heatsink fin",
+        "name": "628 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1853,7 +2357,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "597 external heatsink fin",
+        "name": "629 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1871,7 +2375,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "598 external heatsink fin",
+        "name": "630 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1889,7 +2393,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "599 external heatsink fin",
+        "name": "631 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1907,7 +2411,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "600 external heatsink fin",
+        "name": "632 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1925,7 +2429,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "601 external heatsink fin",
+        "name": "633 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1943,7 +2447,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "602 external heatsink fin",
+        "name": "634 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1961,7 +2465,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "603 external heatsink fin",
+        "name": "635 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -1979,7 +2483,7 @@
           8.25
         ],
         "operation": "new",
-        "name": "604 B27 thermal interface pad",
+        "name": "636 B27 thermal interface pad",
         "body_name": "B27 thermal interface pad"
       }
     },
@@ -2008,7 +2512,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "605 P53 electronics foot 1",
+        "name": "637 P53 electronics foot 1",
         "body_name": "P53 electronics foot 1"
       }
     },
@@ -2024,7 +2528,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "606 P53 electronics foot 1 bore",
+        "name": "638 P53 electronics foot 1 bore",
         "targets": [
           "P53 electronics foot 1"
         ]
@@ -2042,7 +2546,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "607 P53 electronics foot 2",
+        "name": "639 P53 electronics foot 2",
         "body_name": "P53 electronics foot 2"
       }
     },
@@ -2058,7 +2562,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "608 P53 electronics foot 2 bore",
+        "name": "640 P53 electronics foot 2 bore",
         "targets": [
           "P53 electronics foot 2"
         ]
@@ -2076,7 +2580,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "609 P53 electronics foot 3",
+        "name": "641 P53 electronics foot 3",
         "body_name": "P53 electronics foot 3"
       }
     },
@@ -2092,7 +2596,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "610 P53 electronics foot 3 bore",
+        "name": "642 P53 electronics foot 3 bore",
         "targets": [
           "P53 electronics foot 3"
         ]
@@ -2110,7 +2614,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "611 P53 electronics foot 4",
+        "name": "643 P53 electronics foot 4",
         "body_name": "P53 electronics foot 4"
       }
     },
@@ -2126,7 +2630,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "612 P53 electronics foot 4 bore",
+        "name": "644 P53 electronics foot 4 bore",
         "targets": [
           "P53 electronics foot 4"
         ]

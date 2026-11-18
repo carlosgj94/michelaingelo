@@ -1,10 +1,10 @@
-# Rotary table specification — RT-01 revision 4
+# Rotary table specification — RT-01 revision 5
 
-2026-11-17. **Prototype for review; not fabrication released.** The [audit response](../rotary-table-audit-response-2026-11-17.md) records each finding, decision, evidence and remaining acceptance test. The original [revision 3 specification](../archive/rotary-table-spec-rev3.md) is historical. This document governs the current geometry.
+2026-11-18. **Foam prototype for review. Fabrication release is pending.** The [current audit response](../rotary-table-design-audit-2026-11-18.md#revision-5-response-for-review) records the service, fastening and seal changes. The [previous response](../rotary-table-audit-response-2026-11-17.md) records the earlier precision-core changes.
 
 ## 1. Scope and architecture
 
-A 320 mm horizontal platter rotates about vertical Z. The existing SO100 stays on a fixed, bench-anchored steel stand above the controller box. The arm's imported geometry and relative pose are preserved; revision 4 raises the whole arm and its mounting plate by 8 mm for driver removal. Neither the printed enclosure nor its lid carries arm load.
+A 320 mm horizontal platter rotates about vertical Z. The existing SO100 mounts to a fixed, bench-anchored steel stand above the controller box. M50 supports the arm at Z152. Its four top-down mounting screws have recessed tips to clear the driver during withdrawal. The steel stand transfers the arm load to the bench independently of the enclosure.
 
 The user approved printed parts with a metal core. Audit fixes expand that core: a machined output hub, one-piece worm-bearing carrier, metal retainer caps and integral motor foundation replace the corresponding printed precision/clamp interfaces. There are **25 printed assembly pieces**, 17 metal fabrication bodies and purchased/reference parts. The aluminium/steel parts require machining or fabrication; this is no longer a two-plate-only metal kit. Scaling preserves the load path and drive arrangement, then requires new sizing; it is not uniform CAD scaling.
 
@@ -36,6 +36,8 @@ Workpiece load path: fixture → printed platter/metal fixture bosses → M20 me
 
 All performance rows are **acceptance targets, not measured results**. Payload moment is 5 × 9.81 × 0.08 = 3.924 N·m; the lateral force adds 1.50 N·m. An initial factor of two gives 10.85 N·m overturning before additional real arm/tool/fixture loads. Measure rotating inertia and friction before final drive selection. Stand bracing does not smooth the purchased arm's commands or remove its internal backlash.
 
+The column pattern is a bolted metal joint. Check the −Y row's hold-down and the bearing-seat bending under the +Y eccentric load. At the 58 mm row spacing, 10.85 N·m corresponds to opposing ±187 N reaction increments at the two rows in the simple screening model. Verify preload and no slip/separation under load, then measure M02 relative to M01 and the tool relative to the fixture. Include both horizontal axes and the actual stand and bench. Record transient peak and settling before changing plate thickness or arm height.
+
 ## 3. Metal location, machining and inspection
 
 Dimensions below are project inspection requirements, **not manufacturer-approved fits**. Obtain the actual bearing/gear drawings first; final shop drawings must state material, GD&T, roughness, threads, corner relief and permissible preload. Nominal STEP geometry does not encode these tolerances. Inspect near 20 °C, then verify at the maximum intended operating temperature.
@@ -66,6 +68,8 @@ At 8 N·m, pin tangential force is 533 N, average single-shear stress 42.4 MPa, 
 
 Eight F06 M5×16 button screws attach platter quadrants into M20, with 7 mm metal engagement. The deck remains printed and its creep/deflection must be tested.
 
+Load the rim, quadrant centres and both sides of each seam during the printed-deck test. Measure differential height and local vertical displacement in addition to the specified tangential deflection. The fixture design must account for the 7 mm printed layer above each metal boss. Define a hard clamp load path, anti-rotation and restraint for the intended workpiece before rock trials. The cosmetic column sleeves need free clearance from the metal clamp stack. Inspect them for movement and fretting during the prototype test.
+
 Four fixture points at (±47,±47) now use **blind M6 metal threads** in Ø16 raised bosses. Boss face Z121, 9 mm full thread to Z112, tap-drill cylinder to Z110, drill tip Z108.5. At least 2.5 mm metal remains above the Z106 underside. Platter pockets clear the bosses at nominal Ø16.30. Do not reintroduce through-holes or captive nuts.
 
 Require **8–9 mm actual screw engagement**: under-head bolt length minus fixture/washer stack above Z128 must equal **15–16 mm**. Example: M6×20 requires a 4–5 mm upper stack. Never force a bolt against a blind bottom. Four maximum-depth screw tips are included in rotation checks; actual clamps, workpiece, seal washers and their upper collision envelope are not yet designed. Seal unused fixture holes.
@@ -74,7 +78,7 @@ Require **8–9 mm actual screw engagement**: under-head bolt length minus fixtu
 
 The KHK wheel envelope is Ø86, toothed face Z41–59, hub Z59–74, nominal bore 15. The worm envelope is Ø35, tooth length 36 and hub length 14. It needs supplier-approved finish boring/keying from the catalog bore 14 to the proposed shaft 15. These are purchased tooth envelopes, not printable gears or a meshing simulation. Buy the specified duplex pair together; follow KHK arrow/reference-tooth alignment, axial adjustment and lubrication instructions.
 
-M60's integral blocks eliminate F08 completely. F09 is eight M4×12 screws into metal, nominal 7.15 engagement; require ≥9 full thread and 10 drilled depth. The two 15×35×11 angular-contact bearing references sit at X±60.45. Select an opposed/preload-suitable pair and finish the shaft/retention drawing. Adjust the carrier ±3 along X, then measure running torque at every angle; do not preload to binding.
+M60's integral blocks eliminate F08 completely. F09 is eight M4×12 screws into metal, nominal 7.15 engagement; require ≥9 full thread and 10 drilled depth. The two 15×35×11 angular-contact bearing references sit at X±60.45. Select an opposed/preload-suitable pair and finish the shaft drawing with positive worm torque transfer and axial retention of both inner rings. Adjust the carrier ±3 along X, then measure running torque over a revolution. Mark the carrier and check its X position after reversing under load.
 
 M40 now combines the 4 mm sole and 8 mm riser in metal. F14 bench bolts clamp metal directly. Old P23 and motor anchor sleeves are removed. P24 remains a printed motor bracket: verify its horizontal holes, pilot and clamp retention on a first article. Motor face is X130; 40 mm coupling envelope spans X78–118. Shaft-end gap is nominal 7 mm, minimum 4 at +3 cartridge shift. Select the coupling's actual insertion depth, clamps and flexible alignment limits.
 
@@ -84,11 +88,15 @@ A mild-steel Ø12×3 target at Z99.7–102.7 is retained with upward F25 M3×8 i
 
 ## 6. Electronics, stand and service
 
-P50/P52 enclosure is 168×112×80 including lid, at Z28–108 on four 28 mm feet. Reserve driver 118×76×35 at Z36–71 and controller 80×55×20 on the removable tray. M30 is a 118×76×3 aluminium spreader; external heat sink envelope 98×54×18 with a 0.5 thermal pad. Driver attachment/contact, heat-sink retention, board standoffs and wiring are unselected; an adhesive-pad envelope is not a retention design. Use an external enclosed 24 V supply, matched to the final motor/drive; keep mains outside this box. Validate temperature with the lid closed at maximum intended duty.
+P50/P52 enclosure is 168×112×80 including lid, at Z28–108 on four 28 mm feet. The F21 anchor heads and fender washers are below the bench. Inside P50, each printed nut trap holds an AF7 nut above a sealed washer stack. Check trap torque retention and seal compression on the coupon and first article.
 
-M50 underside is Z144: **40 mm above the open box rim and 36 above the closed lid**. Steel side channels are 144 high, 116 deep, with 4 mm webs and 28×116×4 top/bottom flanges; front brace is 228×136×4 at Z4–140. Weld, inspect distortion and finish the upper mounting datum. Review weld size and real arm/tool reactions before fabrication. Through-bolt stand and core to the **same rigid braced bench**; a loose timber block is not the mounting basis. Bench thickness T is unknown, so anchor lengths remain formulas in the register. Two separate 40×136×3 backing strips go beneath the stand.
+Reserve a 118×76×35 driver at Z36–71 and an 80×55×20 controller on the removable tray. M30 is a 118×76×3 aluminium spreader. B27 is the 0.5 mm thermal pad below M30. The driver-side 0.25 mm nominal allowance requires a selected thermal interface and measured contact pressure. Design positive heat-sink retention and actual board mounting and cable restraints around the selected parts, then verify service, stop and isolation behaviour and closed-lid temperature at intended duty. Use an external enclosed 24 V supply matched to the final drive.
 
-Service with the arm plate installed: disconnect power/cables and release the selected device attachment; remove lid screws through the ten Ø8 tool holes; lift lid/gasket8 and slide rearward 140. Release tray screws, lift tray/controller27 and slide rearward 140. Lift the full driver 70 to Z106–141, then slide rearward 140. Its route leaves 2 mm above the rim and 3 below M50. The model proves the bare envelope route; connectors, service loops and thermal-pad separation must be demonstrated with actual electronics. Arm travel and spindle/workpiece collisions require a separate articulated workspace study.
+M50 underside is Z144, 40 mm above the open rim and 36 mm above the closed lid. The 144 mm steel channels have 4 mm webs and 28×116×4 flanges. The front brace is 228×136×4 at Z4–140. Weld, inspect distortion and finish the upper datum. Size welds and anchors for actual reactions. Bolt the stand and core to the same rigid braced bench. Use measured thickness T in the anchor formulas. Install the two 40×136×3 backing strips with their Ø16 scallops toward the box and verify the F21 and F23 washer seats.
+
+F24 uses four M4×0.7-6H through threads in M50. Measure each foot recess and use a matched, supported upper bearing seat. Require 6.5–7.0 mm screw penetration, at least 6.0 mm effective full engagement and tip Z≥145. Inspect the witness imprint and torque/preload retention before releasing the foot connection.
+
+For service, release cables and thermal attachments, then withdraw the lid and tray as in the assembly guide. Lift the full driver 70.5 mm to Z106.5–141.5 and slide it rearward 140 mm. The hardware-aware CAD check covers both translating segments. Nominal withdrawal margins are 2.5 mm at the rim and M50. The lift has 1 mm nominal side clearance at the tray posts. Gauge the actual route with the selected device and handling provisions. Arm, tool, workpiece and moving cable clearance require a separate articulated workspace study.
 
 ## 7. Covers, dust and splash control
 
@@ -96,7 +104,9 @@ Retain the overlapping rotating skirt, fixed upstand and external gutter: nomina
 
 Housing anchors move to (88, 108) rotated by quadrant. Their OD15 washer footprint is supported: minimum nominal wall gap 3.19, and 3.0 from the motor-foundation opening at the closest edge. F15 seam washers seat on new Ø10 flat pockets at local Y153/X153, retaining 16 mm grip and the M4×25 stack. Remaining outer wall below the pocket is nominally at least 3.0 mm in the washer footprint. Use low clamp force and seal every seam.
 
-Static seams use removable compatible RTV. Core/hood/lid gaskets are 2 mm EPDM, installed 1.5; spreader gasket is 1, installed 0.75 against metal stops. Cover bolts and glands need sealed penetrations. Cut gasket stock at uncompressed thickness, not STEP thickness. Check drainage, curved hood transition, gland lands, porosity and seals with unpowered absorbent indicators before installing electronics. No certified water/dust rating follows from these features.
+Apply removable compatible RTV continuously through the seams. The platter seams are inside the peripheral labyrinth. Verify seal continuity and clear squeeze-out from the swept envelope. The four drain bores discharge through notches in the lower flange. Put a cleanable external catch below them and test the level gutter for pooling, clogging and clean-out access.
+
+Core and hood use 2 mm EPDM at 1.5 mm installed thickness. Cut the lid ring from 2 mm EPDM sheet with a 2 mm ring width. Its 3.5×1.5 mm groove has 76.19% nominal volume fill. Approve the compound, squeeze and worst-case gland fill with tolerances and swell. For the spreader use 1 mm gasket compressed to 0.75 mm. Seal the F21 and F20 penetrations and fit sized glands or blanking plugs. Inspect gland lands, gaskets and printed porosity with unpowered tracer and witness media. Use the BOM for uncompressed cut sizes.
 
 ## 8. Printing and acceptance gates
 
@@ -104,9 +114,9 @@ A1 Mini baseline: 180³ volume, 0.4 nozzle, 0.20 layers, dry PETG. Maximum assem
 
 Printed holes use separate vertical/horizontal parameters; metal fits use the inspection table above. Main walls are 4, housing floor 2.5. Start load-carrying printed parts at six walls/eight top-bottom layers/35–45% infill; covers at four walls/20–25%. These are process starting points, not strength ratings. No printed threads are used for durable joints. Actual torque must respect PETG creep and insert pull-out.
 
-CAD acceptance: 81 new bodies closed; no failed features; constrained sketches; all 23 active fastener groups represented; 17 unique uniform angles plus targeted narrow crossings and closure; ±3 carrier adjustment; service sequence; analytical sweep bounds; 25 oriented STLs/coupon; source/native/STEP agreement. Exclude only documented thread/press-fit contacts, purchased tooth blanks and unchanged imported arm self-contact. See [validation](../rotary-table-validation.md).
+CAD acceptance includes 81 closed table/support bodies, constrained sketches, the 23 fastener groups through rotation and carrier travel, service with retained hardware, supported anchor footprints, and 25 oriented STLs plus the coupon. Check named source, native and STEP geometry together. See [validation](../rotary-table-validation.md) for the checks and their limits.
 
-Physical release still requires: final bearing and drive drawings, pin/wheel strength and preload approval, actual devices/cables, fixture design, bench T and weld review, sliced/printed fit calibration, full travel/hand-rotation test, sensor signal test, progressive loads/stopping, reversal/runout/stiffness/temperature and dust/splash tests. No FEA, physical print, carving or stone-machining qualification is implied.
+Physical release still requires: final bearing and drive drawings, pin/wheel strength and preload approval, actual devices/cables, fixture design, bench T and weld review, sliced/printed fit calibration, full travel/hand-rotation test, sensor signal test, progressive loads/stopping, reversal/runout/stiffness/temperature and dust/splash tests. The audit’s ideal-contact stand simulation is a screening comparison. Revision 5 has no structural rerun or physical print or carving qualification.
 
 ## Sources
 

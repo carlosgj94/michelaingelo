@@ -1,0 +1,76 @@
+{
+  "scope": "Disposable cover/gasket proofs. Integrated assembly rerun remains root responsibility.",
+  "hood": {
+    "clearance_poses": 12,
+    "unexpected_intersections": 0,
+    "unchecked": 0,
+    "critical_washer_checks": [
+      {
+        "offset_x_mm": 48,
+        "minimum_washer_clearance_mm": 0.9007065604879618
+      },
+      {
+        "offset_x_mm": 49,
+        "minimum_washer_clearance_mm": 0.9000000238349471
+      },
+      {
+        "offset_x_mm": 50,
+        "minimum_washer_clearance_mm": 0.900706603694151
+      }
+    ],
+    "post_bottom_z_mm": 13.5,
+    "foot_od_mm": 8,
+    "foot_reduced_height_mm": 1,
+    "full_post_start_z_mm": 14.5,
+    "full_post_top_z_mm": 93.5,
+    "roof_bottom_z_mm": 92.5,
+    "roof_overlap_mm": 1,
+    "requires": "Disconnect cables and curved RTV; replace disturbed B25 gasket; +X70 then up30. Actual harness and seal qualification remain."
+  },
+  "drains": {
+    "all_four_downward_rays_miss_lower_flange": true,
+    "notch_radial_start_mm": 156,
+    "notch_tangential_width_mm": 8,
+    "requires": "External catch, cleanout and sealed platter seams remain assembly/test requirements."
+  },
+  "lid_gasket": {
+    "stock_outside_mm": [
+      149.5,
+      93.5
+    ],
+    "stock_inside_mm": [
+      145.5,
+      89.5
+    ],
+    "stock_thickness_mm": 2,
+    "closed_gland_outside_mm": [
+      151,
+      95
+    ],
+    "closed_gland_inside_mm": [
+      144,
+      88
+    ],
+    "closed_height_mm": 1.5,
+    "closed_gland_volume_mm3": 2509.5,
+    "stock_and_installed_ring_volume_mm3": 1912,
+    "nominal_fill_percent": 76.19047619047619,
+    "inner_land_mm": 2,
+    "requires": "Supplier material/compression-force/tolerance/swell data and physical seal/ingress tests."
+  },
+  "source_files_edited": [
+    "scripts/build_rotary_table.py"
+  ],
+  "shared_outputs_regenerated": false,
+  "evidence_sha256": {
+    "candidate-build.json": "43ab2d8ab51a595aa36807d9a0958fed8a197b25911fe5bcc70d2e051d9b5953",
+    "cover-proof.results.json": "61820974725bb55621545b8c6f0123160ba813df4c46c28340f07ed2547fe785",
+    "cover-proof.stages.json": "3b585b11ca4f26b17ed1be76494500d065cbc86f2ce7eed10db5aecf92091fd1",
+    "gland-volume.measure.json": "4f67e50c23043a596d427651b7dd04910158a431eea95ccfb1aca71d1a5d7ab4",
+    "candidate.measure.json": "440ffb7868d0d12cdf54c748e45ee1e2045d7012fccb77bdd6094c309f6ba1bd",
+    "foot-proof.probe.json": "3433e5f53ba4a86eb53bb4867019f323da7c9eb0467e08ddd378e6c88c1d3b72",
+    "foot-proof.results.json": "9b275a5a7f9368ba5362999472053debdd034669cb8aeaae0f6d460a29dd578b",
+    "cover-proof.probe.json": "910b3891050f64a1c2abca5dadc64c9a6d3fc629bfc3638c256bdc2e594e4c9b",
+    "gland-volume.probe.json": "382a2b93401154e25295d36d6749c9113cf9e93702b90444e74eb15f0968a2e1"
+  }
+}

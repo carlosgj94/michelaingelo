@@ -1,0 +1,158 @@
+{
+  "commands": [
+    {
+      "command": "parameters.change",
+      "params": {
+        "changes": {
+          "rt_seam": "0.3 mm",
+          "rt_motor_l": "60 mm"
+        }
+      }
+    },
+    {
+      "command": "view.pick",
+      "params": {
+        "all": true,
+        "rays": [
+          {
+            "origin": [
+              0.14,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "origin": [
+              0.16,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "origin": [
+              0.29,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "origin": [
+              0.31,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "P46 motor service hood"
+        ],
+        "against": [
+          "B06 NEMA17 motor and encoder envelope"
+        ],
+        "nearest": 1
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "changes": {
+          "rt_seam": "0.6 mm",
+          "rt_motor_l": "80 mm"
+        }
+      }
+    },
+    {
+      "command": "view.pick",
+      "params": {
+        "all": true,
+        "rays": [
+          {
+            "origin": [
+              0.14,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "origin": [
+              0.16,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "origin": [
+              0.29,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "origin": [
+              0.31,
+              85,
+              129
+            ],
+            "dir": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "P46 motor service hood"
+        ],
+        "against": [
+          "B06 NEMA17 motor and encoder envelope"
+        ],
+        "nearest": 1
+      }
+    }
+  ]
+}

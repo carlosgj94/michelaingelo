@@ -1,0 +1,70 @@
+[
+  {
+    "bodies": 2,
+    "ms": 49.7015,
+    "near": [
+      {
+        "a": "M60 monolithic worm carrier",
+        "b": "ANCHOR F02 head -64",
+        "distance_mm": 1.399999999999995,
+        "from": [
+          -61.256792562677596,
+          68.18028862111446,
+          21.0
+        ],
+        "to": [
+          -61.256792562677596,
+          68.18028862111446,
+          19.600000000000005
+        ]
+      },
+      {
+        "a": "M60 monolithic worm carrier",
+        "b": "ANCHOR F02 head 64",
+        "distance_mm": 1.3999999999999952,
+        "from": [
+          66.0,
+          59.41742432167217,
+          20.999999999999996
+        ],
+        "to": [
+          65.9999999968935,
+          59.417424303688364,
+          19.6
+        ]
+      }
+    ],
+    "nearest": {
+      "ANCHOR F02 head -64": [
+        {
+          "body": "M60 monolithic worm carrier",
+          "distance_mm": 1.399999999999995
+        }
+      ],
+      "ANCHOR F02 head 64": [
+        {
+          "body": "M60 monolithic worm carrier",
+          "distance_mm": 1.3999999999999952
+        }
+      ]
+    },
+    "overlaps": [],
+    "pairs_checked": 2,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 2,
+    "ms": 32.389041999999996,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 2,
+    "pairs_pruned": 20,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  }
+]

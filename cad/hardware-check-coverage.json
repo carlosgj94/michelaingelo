@@ -1,5 +1,5 @@
 {
-  "revision": 4,
+  "revision": 5,
   "groups": {
     "F01": 4,
     "F02": 4,
@@ -219,6 +219,26 @@
     {
       "a": "TEST F17 3",
       "b": "M40 stepped motor support",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F24 0",
+      "b": "M50 SO100 arm mounting plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F24 1",
+      "b": "M50 SO100 arm mounting plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F24 2",
+      "b": "M50 SO100 arm mounting plate",
+      "reason": "Specified thread engagement; length/depth checked separately"
+    },
+    {
+      "a": "TEST F24 3",
+      "b": "M50 SO100 arm mounting plate",
       "reason": "Specified thread engagement; length/depth checked separately"
     },
     {
@@ -1213,8 +1233,102 @@
     }
   ],
   "limits": [
-    "Bench bolts are checked above Z0; unknown bench/backing geometry below Z0 remains a release gate.",
-    "Heat-set insert retention inside its pilot requires first-article testing; boss geometry and complete screw stacks are checked.",
-    "Unselected board, coupling and shaft-retention fasteners remain explicit open interfaces."
+    "Bench bolts in rotation are checked above Z0; below-bench seats are checked separately.",
+    "Heat-set insert retention inside its pilot requires first-article testing.",
+    "F24 upper seating, actual screw lengths and unselected board, coupling and shaft-retention fasteners remain open interfaces."
+  ],
+  "service_checks": [
+    "lid tool approach",
+    "lid lift 8",
+    "lid rearward 10",
+    "lid rearward 20",
+    "lid rearward 30",
+    "lid rearward 40",
+    "lid rearward 50",
+    "lid rearward 60",
+    "lid rearward 70",
+    "lid rearward 80",
+    "lid rearward 100",
+    "lid rearward 120",
+    "lid rearward 140",
+    "tray lift 27",
+    "tray rearward 10",
+    "tray rearward 20",
+    "tray rearward 30",
+    "tray rearward 40",
+    "tray rearward 50",
+    "tray rearward 60",
+    "tray rearward 70",
+    "tray rearward 80",
+    "tray rearward 100",
+    "tray rearward 120",
+    "tray rearward 140",
+    "driver lift 70.5",
+    "driver rearward 10",
+    "driver rearward 20",
+    "driver rearward 30",
+    "driver rearward 40",
+    "driver rearward 50",
+    "driver rearward 60",
+    "driver rearward 70",
+    "driver rearward 80",
+    "driver rearward 100",
+    "driver rearward 120",
+    "driver rearward 140",
+    "driver complete lift sweep",
+    "driver complete withdrawal sweep",
+    "hood outward 2",
+    "hood outward 5",
+    "hood outward 10",
+    "hood outward 20",
+    "hood outward 30",
+    "hood outward 48",
+    "hood outward 49",
+    "hood posts clear motor anchor washers at X+49",
+    "hood outward 50",
+    "hood outward 70",
+    "hood outward 70 and up 30",
+    "F02 key before carrier 0",
+    "F02 key before carrier 1",
+    "F02 key before carrier 2",
+    "F02 key before carrier 3",
+    "F07 side key 0 step 0 at 0 degrees",
+    "F07 side key 0 step 1 at 12 degrees",
+    "F07 side key 0 step 2 at 30 degrees",
+    "F07 side key 0 step 3 at 45 degrees",
+    "F07 side key 0 step 4 at 60 degrees",
+    "F07 side key 0 step 5 at 0 degrees",
+    "F07 side key 0 withdrawal",
+    "F07 side key 1 step 0 at 0 degrees",
+    "F07 side key 1 step 1 at 12 degrees",
+    "F07 side key 1 step 2 at 30 degrees",
+    "F07 side key 1 step 3 at 45 degrees",
+    "F07 side key 1 step 4 at 60 degrees",
+    "F07 side key 1 step 5 at 0 degrees",
+    "F07 side key 1 withdrawal",
+    "below-bench electronics and stand hardware",
+    "below-bench stand washer contact"
+  ],
+  "seating_checks": [
+    {
+      "name": "F23 washer seats",
+      "gauges": [
+        "TEST F23 washer seats annulus 0",
+        "TEST F23 washer seats annulus 1",
+        "TEST F23 washer seats annulus 2",
+        "TEST F23 washer seats annulus 3"
+      ],
+      "expected_overlap_mm3_per_gauge": 11.01285304715902
+    },
+    {
+      "name": "F21 seal lands",
+      "gauges": [
+        "TEST F21 seal lands annulus 0",
+        "TEST F21 seal lands annulus 1",
+        "TEST F21 seal lands annulus 2",
+        "TEST F21 seal lands annulus 3"
+      ],
+      "expected_overlap_mm3_per_gauge": 2.3856469213197493
+    }
   ]
 }

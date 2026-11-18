@@ -3,7 +3,7 @@
     {
       "command": "component.create",
       "params": {
-        "name": "RT01 revision 4 fit coupon",
+        "name": "RT01 revision 5 fit coupon",
         "grounded": true
       }
     },
@@ -407,6 +407,159 @@
           2.8
         ],
         "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8.2,
+        "base": [
+          30,
+          62,
+          3.8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 8,
+        "base": [
+          30,
+          62,
+          -1
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          30,
+          62,
+          4
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          21,
+          57.3,
+          4
+        ],
+        "operation": "cut",
+        "targets": [
+          "RT01 PETG fit coupon"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "name": "F21 M4 nut pocket",
+        "plane": {
+          "origin": [
+            30,
+            62,
+            6
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            3.7,
+            2.136195996002
+          ],
+          [
+            0.0,
+            4.272391992003
+          ],
+          [
+            -3.7,
+            2.136195996002
+          ],
+          [
+            -3.7,
+            -2.136195996002
+          ],
+          [
+            -0.0,
+            -4.272391992003
+          ],
+          [
+            3.7,
+            -2.136195996002
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entities": [
+          "l1",
+          "l2",
+          "l3",
+          "l4",
+          "l5",
+          "l6"
+        ],
+        "fixed": true
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "F21 M4 nut pocket",
+        "distance": 6.5,
         "operation": "cut",
         "targets": [
           "RT01 PETG fit coupon"

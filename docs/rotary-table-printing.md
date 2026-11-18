@@ -1,4 +1,4 @@
-# RT-01 printing and assembly — revision 4
+# RT-01 printing and assembly — revision 5
 
 Use the [specification](specs/rotary-table.md), [BOM](rotary-table-bom.md) and [fastener register](rotary-table-fasteners.md). The exports are prototype geometry. CAD clearance does not certify cutting precision, payload, water resistance or real print fits.
 
@@ -11,7 +11,7 @@ Use the [specification](specs/rotary-table.md), [BOM](rotary-table-bom.md) and [
 - `rt01-assembly.step`:81 table/support/reference bodies; excludes arm. Cyan spaces are reservations, not physical parts.
 - `seal-profiles.step`: compressed thicknesses; cut uncompressed gasket stock from the BOM.
 
-A1 Mini:180×180×180, 0.4 nozzle, 0.20 layers,dry PETG. Start from the matching manufacturer filament profile and calibrate flow, first layer and elephant foot. Largest dimension 168; a 5 mm brim each side occupies 178, leaving only 1 mm per side if centred. Inspect purge lines, support expansion and plate placement in the actual slicer. One large quadrant per plate. **No slicing or physical printing has been performed for revision 4.**
+A1 Mini baseline is dry PETG with a 0.4 mm nozzle and 0.20 mm layers. Start from the filament profile and calibrate flow, first layer and elephant foot. The largest dimension is 168 mm. With a 5 mm brim on each side it occupies 178 mm on the 180 mm bed. Inspect purge lines, support expansion and placement in the slicer. Print one large quadrant per plate. Slicing and physical printing are pending.
 
 For platter, motor bracket and column sleeves, start with six walls,eight top/bottom layers, 35–45% infill and solid regions around clamps. Covers/service box:four walls, 20–25%. These are starting profiles, not strength qualifications. Keep supports/brim residue off functional lands. Metal components are not printable substitutes.
 
@@ -26,8 +26,9 @@ View from above with the notch at lower left (X0/Y0). Let it cool before measuri
 | Insert pilots | Y15; X100/120/140:Ø4.0/4.2/4.4, 7 deep | `rt_insert`; actual RX-M3x5.7 insertion and pull-out/clamp test |
 | Column bores | Y42; X15/35/55:Ø10.2/10.3/10.4, 8 long | `rt_column_bore`; confirm with full 69.5 mm P11 bore |
 | Fixture-boss pockets | Y42; X85/110/135:Ø16.1/16.3/16.5, 5.2 deep | `rt_fixture_boss_bore`; actualØ16 metal boss must clear without forcing |
+| F21 captive nut and washer slot | X30/Y62, AF7.4, 2 mm side opening toward −X | Slide the actual seal and washer into the slot, drop the AF7 nut into the trap and trial a sealed low-preload clamp. Adjust `rt_anchor_nut_af` from the result. |
 
-The former printed bearing seats, wheel pilot, hub/motor sleeves and nut pockets have been removed. Their old coupons/`rt_fit` workflow no longer apply. Metal pilots/seats/slot fits require machining inspection, not a print coupon.
+Machine and inspect the bearing seats, hub pilots and carrier guide to the specified metal fits. The coupon covers the current printed interfaces.
 
 Required first articles before the full print set:
 
@@ -48,7 +49,7 @@ The current parameters were exercised together with larger hole/boss/insert valu
 | P41–P44 | Floor down; local support under gutter, keep drains clear; seam holes horizontal |
 | P45 all four | Broad face down, 24×84 footprint, 8 high; holes vertical in the print |
 | P46 | Roof down; inspect long screw columns and gland apertures |
-| P50 | Upright; support under inward rim, remove without damaging gasket groove |
+| P50 | Upright; support under inward rim. Inspect the F21 loading slots for bridge sag and clear supports from the access passages, nut traps and gasket groove. |
 | P51,P52 | Flat; protect lid sealing land from first-layer distortion |
 
 Orientations reduce support demand; they do not make every feature support-free. Review layer previews at pockets, bridges and horizontal holes. Export checks catch strip orientation, topology and envelope errors, not layer adhesion or physical fit.
@@ -56,20 +57,24 @@ Orientations reduce support demand; they do not make every feature support-free.
 ## Assembly order
 
 1. **Finish drawings and inspect metal.** Select actual bearings/motor/coupling; approve shaft keys, shoulders, retention/preload, wheel secondary machining and drive-pin strength. Machine/inspect M01/M02/M20/M60/caps/columns using the specification. Match cap shims to measured outer rings. Protect precision fits from coatings, swarf and slurry.
-2. **Install concealed base hardware.** Fit F13 underside M5×12 countersunk screws joining M40 to M01 before bench anchoring. Anchor the core through four metal spacers; the two covered F02 heads are accessed through M60'sØ25 openings before the shaft/bearings are fitted. Use the specified small OD11 F01 washers beside the bearing.
+2. **Install concealed base hardware.** Fit the F13 countersunk screws joining M40 to M01. Tighten all four F02 core anchors through the metal spacers before fitting M60. The Ø25 recesses in M60 leave 1.4 mm over the screw heads; the blocks cover the key paths. For retorque, unload the table and open the drive, then remove the carrier and any obstructing shaft, rotor or bearing-seat stack. Recheck guide alignment and backlash after refitting. Use OD11 F01 washers beside the bearing.
 3. **Fit cartridge and columns.** Seat M60 on its metal guide, install F07 loosely for axial adjustment. There are no F08 block bolts. Fit matched 72 mm locating columns and shorter printed sleeves, then M02 onto the round/slot datums. Check metal-only column clamp path and assembled worm/bearing alignment.
 4. **Build rotor.** Fit the bearing rings to their designated seat/hub without bridging them; pilot M20 into the inner ring. Press M21 into M20 with a controlled fixture, align the wheel radial slot/pilot and clamp F05. Fit the mild-steel target with recessed F25 before access is obstructed. Inspect pilot/tooth runout and free rotation. Platter screws are now M5×16 into metal, not the old 25 mm nut stack.
-5. **Build worm shaft.** Assemble the approved shaft/key/inner-ring retention stack. Fit metal M61 caps and selected M62 shims with F09 M4×12; verify outer-ring contact without binding. Cap screws do not define shaft preload. Set duplex backlash using X adjustment, tighten F07, then check torque through 360°. Follow KHK markings/lubrication.
+5. **Build worm shaft.** Assemble the approved shaft/key/inner-ring retention stack. Fit M61 caps and M62 shims and verify outer-ring contact. Set duplex backlash with the housing open. Approach the front F07 screws from the side with a short-leg 4 mm hex key. The probe used a 5 mm-wide handle reaching 65 mm, with 15 mm from the engaged tip to the top of the handle. Swing toward the centre and withdraw in the straight orientation. Verify the actual key with the hub, bearing and selected harness in place. Tighten F07, mark the carrier position and check torque through 360°. Follow KHK markings and lubrication instructions.
 6. **Fit motor and sensor.** Anchor integral M40 directly through metal; no P23 or anchor sleeves. Bolt P24 and motor with confirmed engagement, align coupling and retain shaft insertion over±3 cartridge travel. Fit the axial sensor through M02 with both nuts; set 1.2 mm gap to the retained steel target, verify cable route and one event per revolution under actual variation. Use a PNP-compatible input.
-7. **Close covers.** Fit housing anchors at the new locations, backing strips and flat seam seats; seal seams and penetrations. Fit hood gasket against metal hard stops, seal curved transition. Install platter quadrants and the selected fixture with 8–9 mm screw engagement; verify all actual workholding through a full revolution. Keep drains and running gaps clear.
-8. **Build stand and electronics.** Weld/finish the 144 mm steel stand, through-bolt to the same rigid bench using backing strips, then fit M50/F22 and the arm/F24. Verify the actual arm foot. Anchor the service box separately. Fit spreader, compression stops, sealed screws and selected heat sink/driver mounting. Fit controller standoffs, glands, strain relief and wiring; keep mains external.
+7. **Close covers.** Fit the housing and seam strips. Apply a continuous, replaceable compatible RTV barrier through the platter seams and seal unused fixture holes and recesses. Keep the swept gaps clear of squeeze-out. Fit the hood gasket against the metal stops and seal the curved joint. Direct the four drains through the floor notches into a cleanable external catch. Verify the fixture's 8–9 mm screw engagement and its full rotation sweep.
+8. **Build stand and electronics.** Install both M55 strips with the scallops inward toward the electronics bolts. Measure and fit all four F24 bearing seats before clamping the arm. F24 threads into M50 from above with at least 1 mm tip recess. For each F21, slide the seal and metal washer through the inward slot, drop in the captive nut and tighten the reversed bolt from below. The uncompressed seal and washer have 0.20 mm nominal loading allowance. Trial assembly and retention on the coupon first. Fit and seal the spreader, heat sink, driver, controller and cable hardware after anchoring the box.
 9. **Commission.** First unpowered ingress and hand-rotation checks. Then unloaded low speed, followed by progressive load/stopping, reversal/TIR/deflection, sensor, temperature and dust/splash tests. Do not infer a carving rating from the animation.
+
+Load F21 seals and washers before the nuts, with the tray and electronics removed. Enter through the opening above the tray posts, shift toward the anchor rows below the rim, and lower the washer stack beside the posts. Slide it outward into the slot and lower the nut into the trap. Inspect the seal imprint and nut retention on the real print before enclosing it.
 
 Bench anchor lengths depend on measured T; use the register formulas. Do not use a loose wood block as a precision foundation. A rigid stand does not change the purchased arm's controller behavior.
 
 ## Service with the arm installed
 
-Power off and disconnect/label device leads; release actual thermal/bracket attachments. Remove ten lid screws using the Ø8 plate access holes. Lift lid/gasket8, slide rearward 140. Remove tray screws; lift tray/controller27 and slide rearward 140. Lift driver 70 and slide rearward 140. Full driver envelope at Z106–141 clears the rim by 2 and plate by 3. The open rear must remain clear. Actual connector/service-loop access must be demonstrated after device selection; the CAD sequence checks bare envelopes.
+Power off, disconnect and label device leads, then release the brackets and driver thermal interface. Remove ten lid screws through the Ø8 plate access holes. Lift lid/gasket 8 mm and slide rearward 140 mm. Release the tray screws, lift tray/controller 27 mm and slide rearward 140 mm. Lift the driver 70.5 mm to Z106.5–141.5 and move it rearward 140 mm. The raised envelope has 2.5 mm nominal clearance above the rim and below M50. The initial lift passes the tray posts with 1 mm nominal clearance per side. Prove the route with the selected device, connectors, tools and thermal interface in place before accepting service access.
+
+For motor service, remove all four F17 screws, free the curved RTV joint and disconnect or release the gland cables. Slide the hood 70 mm along +X before lifting it. Use a replacement B25 gasket when the old seal is dragged, torn or compressed out of shape. Inspect the four screw-post seats and verify a new seal after reassembly.
 
 ## Regeneration and checks
 
@@ -83,6 +88,7 @@ python3 scripts/build_fit_coupon.py
 python3 scripts/rebuild_assembly.py --in michelaingelo.sc --out /tmp/rt01-review.sc
 /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/fit-coupon-build.json --save exports/rotary-table/fit-coupon.sc --out exports/rotary-table/fit-coupon.stl --quality fine --quiet
 python3 scripts/export_rotary_table.py --in /tmp/rt01-review.sc
+/Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/stand-backing-strip.json --quiet
 /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/fastener-clearance-checks.json --in /tmp/rt01-review.sc --results --quiet
 /Applications/SolidCraft.app/Contents/MacOS/solidcraft-cli run cad/support-access-checks.json --in /tmp/rt01-review.sc --results --quiet
 ```

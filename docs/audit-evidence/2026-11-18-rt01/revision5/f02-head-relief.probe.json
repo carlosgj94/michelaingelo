@@ -1,0 +1,212 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "ANCHOR F02 revised relief verification",
+        "grounded": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 25,
+        "height": 10,
+        "base": [
+          -64,
+          64,
+          11
+        ],
+        "operation": "cut",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -64,
+          64,
+          12
+        ],
+        "body_name": "ANCHOR F02 head -64"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          -64,
+          64,
+          13.6
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F02 head -64"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.8,
+        "height": 100,
+        "base": [
+          -64,
+          64,
+          17
+        ],
+        "body_name": "ANCHOR F02 straight key -64"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 100,
+        "width": 5.8,
+        "height": 5.8,
+        "corner": [
+          -114,
+          61.1,
+          111.2
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F02 straight key -64"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 25,
+        "height": 10,
+        "base": [
+          64,
+          64,
+          11
+        ],
+        "operation": "cut",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          64,
+          64,
+          12
+        ],
+        "body_name": "ANCHOR F02 head 64"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 6,
+        "base": [
+          64,
+          64,
+          13.6
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F02 head 64"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5.8,
+        "height": 100,
+        "base": [
+          64,
+          64,
+          17
+        ],
+        "body_name": "ANCHOR F02 straight key 64"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 100,
+        "width": 5.8,
+        "height": 5.8,
+        "corner": [
+          14,
+          61.1,
+          111.2
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F02 straight key 64"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR F02 head -64",
+          "ANCHOR F02 head 64"
+        ],
+        "against": [
+          "M60 monolithic worm carrier"
+        ],
+        "clearance": 2,
+        "nearest": 1
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR F02 straight key -64",
+          "ANCHOR F02 straight key 64"
+        ],
+        "against": [
+          "M01 aluminium base plate",
+          "M02 aluminium bearing seat",
+          "M40 stepped motor support",
+          "M11 steel locating column",
+          "M12 steel locating column",
+          "M13 steel locating column",
+          "M14 steel locating column",
+          "P11 column sleeve",
+          "P12 column sleeve",
+          "P13 column sleeve",
+          "P14 column sleeve"
+        ],
+        "clearance": 1
+      }
+    },
+    {
+      "command": "inspect.measure",
+      "params": {
+        "bodies": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    }
+  ]
+}

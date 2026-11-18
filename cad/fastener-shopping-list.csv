@@ -1,5 +1,6 @@
 item,installed_quantity,conditional_screw_quantity,note
 EPDM seal washer OD7 ID3.2 x 1 (0.75 compressed),4,0,No spares included; provisional interfaces per register
+EPDM seal washer OD9 ID3.8 x 1 (0.75 compressed),4,0,No spares included; provisional interfaces per register
 Ground steel drive pin nominal diameter 4 x12,1,0,No spares included; provisional interfaces per register
 M3 DIN 985 nyloc nut h4,4,0,No spares included; provisional interfaces per register
 M3 washer ID3.2 OD7 x 0.5,22,0,No spares included; provisional interfaces per register
@@ -7,12 +8,12 @@ M3x10 ISO 4762 socket cap,4,4,No spares included; provisional interfaces per reg
 M3x10 ISO 7380-1 button,14,0,No spares included; provisional interfaces per register
 M3x16 DIN 7991 90-degree countersunk,4,0,No spares included; provisional interfaces per register
 M3x8 DIN 7991 90-degree countersunk,1,0,No spares included; provisional interfaces per register
-M4 DIN 985 nyloc nut h5,24,0,No spares included; provisional interfaces per register
+M4 DIN 985 nyloc nut h5,20,0,No spares included; provisional interfaces per register
+"M4 ISO 4762 socket cap, finish to measured length / F24",4,4,Measure owned foot and fitted seat before selecting and finishing length
 M4 fender washer ID4.3 OD12 x 1,4,0,No spares included; provisional interfaces per register
-M4 washer ID4.3 OD9 x 0.8,56,0,No spares included; provisional interfaces per register
+M4 washer ID4.3 OD9 x 0.8,52,0,No spares included; provisional interfaces per register
 M4x12 ISO 4762 socket cap,8,0,No spares included; provisional interfaces per register
 M4x25 ISO 4762 socket cap,16,0,No spares included; provisional interfaces per register
-M4x35 ISO 4762 socket cap,4,4,No spares included; provisional interfaces per register
 M4x95 ISO 4762 socket cap,4,0,No spares included; provisional interfaces per register
 M5 DIN 9021 washer ID5.3 OD15 x 1.2,8,0,No spares included; provisional interfaces per register
 M5 DIN 934 plain nut AF8 h4,8,0,No spares included; provisional interfaces per register
@@ -39,4 +40,4 @@ M6 bench bolt / F14,2,2,Choose length after measuring T; see register
 M5 bench bolt / F16,4,4,Choose length after measuring T; see register
 M4 bench bolt / F21,4,4,Choose length after measuring T; see register
 M6 bench bolt / F23,4,4,Choose length after measuring T; see register
-"Steel backing strip 40x136x3, 2x Ø6.6 holes96 apart",2,0,"F23; fabrication drawing, not placed at an invented bench thickness"
+M55 steel backing strip 40x136x3 with two Ø16 scallops,2,0,F23; orient scallops inward per fabrication drawing

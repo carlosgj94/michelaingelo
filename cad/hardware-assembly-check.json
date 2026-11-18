@@ -9,7 +9,7 @@
     {
       "command": "component.create",
       "params": {
-        "name": "Disposable revision 4 hardware",
+        "name": "Disposable revision 5 hardware",
         "grounded": true
       }
     },
@@ -5019,7 +5019,7 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4,
-        "height": 32.8,
+        "height": 44.95,
         "base": [
           -75,
           -271,
@@ -5033,12 +5033,12 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 7,
-        "height": 4,
+        "diameter": 9,
+        "height": 1.55,
         "base": [
           -75,
           -271,
-          32.8
+          32
         ],
         "axis": "Z",
         "operation": "join",
@@ -5048,16 +5048,70 @@
       }
     },
     {
-      "command": "solid.cylinder",
+      "command": "sketch.create",
       "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          -75,
-          -271,
-          31.999999999999996
+        "name": "TEST F21 0 hex",
+        "plane": {
+          "origin": [
+            -75,
+            -271,
+            33.55
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "0.000000000000 mm",
+            "4.041451884327 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "-2.020725942164 mm"
+          ],
+          [
+            "-0.000000000000 mm",
+            "-4.041451884327 mm"
+          ],
+          [
+            "3.500000000000 mm",
+            "-2.020725942164 mm"
+          ]
         ],
-        "axis": "Z",
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "TEST F21 0 hex",
+        "distance": 5,
         "operation": "join",
         "targets": [
           "TEST F21 0"
@@ -5068,7 +5122,7 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4,
-        "height": 32.8,
+        "height": 44.95,
         "base": [
           -75,
           -177,
@@ -5082,12 +5136,12 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 7,
-        "height": 4,
+        "diameter": 9,
+        "height": 1.55,
         "base": [
           -75,
           -177,
-          32.8
+          32
         ],
         "axis": "Z",
         "operation": "join",
@@ -5097,16 +5151,70 @@
       }
     },
     {
-      "command": "solid.cylinder",
+      "command": "sketch.create",
       "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          -75,
-          -177,
-          31.999999999999996
+        "name": "TEST F21 1 hex",
+        "plane": {
+          "origin": [
+            -75,
+            -177,
+            33.55
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "0.000000000000 mm",
+            "4.041451884327 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "-2.020725942164 mm"
+          ],
+          [
+            "-0.000000000000 mm",
+            "-4.041451884327 mm"
+          ],
+          [
+            "3.500000000000 mm",
+            "-2.020725942164 mm"
+          ]
         ],
-        "axis": "Z",
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "TEST F21 1 hex",
+        "distance": 5,
         "operation": "join",
         "targets": [
           "TEST F21 1"
@@ -5117,7 +5225,7 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4,
-        "height": 32.8,
+        "height": 44.95,
         "base": [
           75,
           -271,
@@ -5131,12 +5239,12 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 7,
-        "height": 4,
+        "diameter": 9,
+        "height": 1.55,
         "base": [
           75,
           -271,
-          32.8
+          32
         ],
         "axis": "Z",
         "operation": "join",
@@ -5146,16 +5254,70 @@
       }
     },
     {
-      "command": "solid.cylinder",
+      "command": "sketch.create",
       "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          75,
-          -271,
-          31.999999999999996
+        "name": "TEST F21 2 hex",
+        "plane": {
+          "origin": [
+            75,
+            -271,
+            33.55
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "0.000000000000 mm",
+            "4.041451884327 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "-2.020725942164 mm"
+          ],
+          [
+            "-0.000000000000 mm",
+            "-4.041451884327 mm"
+          ],
+          [
+            "3.500000000000 mm",
+            "-2.020725942164 mm"
+          ]
         ],
-        "axis": "Z",
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "TEST F21 2 hex",
+        "distance": 5,
         "operation": "join",
         "targets": [
           "TEST F21 2"
@@ -5166,7 +5328,7 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4,
-        "height": 32.8,
+        "height": 44.95,
         "base": [
           75,
           -177,
@@ -5180,12 +5342,12 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 7,
-        "height": 4,
+        "diameter": 9,
+        "height": 1.55,
         "base": [
           75,
           -177,
-          32.8
+          32
         ],
         "axis": "Z",
         "operation": "join",
@@ -5195,16 +5357,70 @@
       }
     },
     {
-      "command": "solid.cylinder",
+      "command": "sketch.create",
       "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          75,
-          -177,
-          31.999999999999996
+        "name": "TEST F21 3 hex",
+        "plane": {
+          "origin": [
+            75,
+            -177,
+            33.55
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "0.000000000000 mm",
+            "4.041451884327 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "2.020725942164 mm"
+          ],
+          [
+            "-3.500000000000 mm",
+            "-2.020725942164 mm"
+          ],
+          [
+            "-0.000000000000 mm",
+            "-4.041451884327 mm"
+          ],
+          [
+            "3.500000000000 mm",
+            "-2.020725942164 mm"
+          ]
         ],
-        "axis": "Z",
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "TEST F21 3 hex",
+        "distance": 5,
         "operation": "join",
         "targets": [
           "TEST F21 3"
@@ -5675,11 +5891,11 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 4,
-        "height": 35.0,
+        "height": 23.80000000000001,
         "base": [
           27.776497308103686,
           -189.2250092524069,
-          133.8
+          145
         ],
         "axis": "Z",
         "operation": "new",
@@ -5723,46 +5939,12 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          27.776497308103686,
-          -189.2250092524069,
-          143.2
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 0"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 8.08290376865476,
-        "height": 5,
-        "base": [
-          27.776497308103686,
-          -189.2250092524069,
-          138.2
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 0"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
         "diameter": 4,
-        "height": 35.0,
+        "height": 23.80000000000001,
         "base": [
           31.75,
           -259.0,
-          133.8
+          145
         ],
         "axis": "Z",
         "operation": "new",
@@ -5806,46 +5988,12 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          31.75,
-          -259.0,
-          143.2
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 1"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 8.08290376865476,
-        "height": 5,
-        "base": [
-          31.75,
-          -259.0,
-          138.2
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 1"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
         "diameter": 4,
-        "height": 35.0,
+        "height": 23.80000000000001,
         "base": [
           -27.77649730810371,
           -189.2250092524069,
-          133.8
+          145
         ],
         "axis": "Z",
         "operation": "new",
@@ -5889,46 +6037,12 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          -27.77649730810371,
-          -189.2250092524069,
-          143.2
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 2"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 8.08290376865476,
-        "height": 5,
-        "base": [
-          -27.77649730810371,
-          -189.2250092524069,
-          138.2
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 2"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
         "diameter": 4,
-        "height": 35.0,
+        "height": 23.80000000000001,
         "base": [
           -31.75,
           -259.0,
-          133.8
+          145
         ],
         "axis": "Z",
         "operation": "new",
@@ -5961,40 +6075,6 @@
           -31.75,
           -259.0,
           168.0
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 3"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 9,
-        "height": 0.8,
-        "base": [
-          -31.75,
-          -259.0,
-          143.2
-        ],
-        "axis": "Z",
-        "operation": "join",
-        "targets": [
-          "TEST F24 3"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 8.08290376865476,
-        "height": 5,
-        "base": [
-          -31.75,
-          -259.0,
-          138.2
         ],
         "axis": "Z",
         "operation": "join",
@@ -7089,6 +7169,22 @@
           [
             "TEST F17 3",
             "M40 stepped motor support"
+          ],
+          [
+            "TEST F24 0",
+            "M50 SO100 arm mounting plate"
+          ],
+          [
+            "TEST F24 1",
+            "M50 SO100 arm mounting plate"
+          ],
+          [
+            "TEST F24 2",
+            "M50 SO100 arm mounting plate"
+          ],
+          [
+            "TEST F24 3",
+            "M50 SO100 arm mounting plate"
           ],
           [
             "TEST F04 0",

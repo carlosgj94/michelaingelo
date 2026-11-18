@@ -1,0 +1,633 @@
+[
+  {
+    "bodies": 12,
+    "ms": 43.264583,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 0,
+    "pairs_pruned": 84,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 12,
+    "ms": 12.45875,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 72,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 12,
+    "ms": 69.349541,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 12,
+    "pairs_pruned": 72,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 9.514999999999999,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 24,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 9.016542000000001,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 24,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 8.335083000000001,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 24,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 242.107708,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 24,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 4,
+    "ms": 219.130042,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 4,
+    "pairs_pruned": 24,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 60.284542,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 61.127584,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 96.0115,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 0",
+        "distance_mm": 0.0,
+        "from": [
+          -68.55566225955567,
+          -273.7332235706368,
+          40.0
+        ],
+        "to": [
+          -68.55566225955567,
+          -273.7332235706368,
+          40.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 1",
+        "distance_mm": 0.0,
+        "from": [
+          -68.99044718792337,
+          -174.9200165288169,
+          40.0
+        ],
+        "to": [
+          -68.99044718792337,
+          -174.9200165288169,
+          40.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 2",
+        "distance_mm": 0.0,
+        "from": [
+          69.09012535957105,
+          -269.1236006440542,
+          40.0
+        ],
+        "to": [
+          69.09012535957105,
+          -269.1236006440542,
+          40.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 3",
+        "distance_mm": 0.0,
+        "from": [
+          69.37511617790541,
+          -175.9472139676884,
+          40.0
+        ],
+        "to": [
+          69.37511617790541,
+          -175.9472139676884,
+          40.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 172.85604199999997,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 0",
+        "distance_mm": 0.0,
+        "from": [
+          -62.721626020003136,
+          -267.11940571467807,
+          32.0
+        ],
+        "to": [
+          -62.721626020003136,
+          -267.11940571467807,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 1",
+        "distance_mm": 0.0,
+        "from": [
+          -64.11446694422602,
+          -181.41200988293681,
+          32.0
+        ],
+        "to": [
+          -64.11446694422602,
+          -181.41200988293681,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 2",
+        "distance_mm": 0.0,
+        "from": [
+          69.48934246145657,
+          -271.3095226385306,
+          32.0
+        ],
+        "to": [
+          69.48934246145657,
+          -271.3095226385306,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 3",
+        "distance_mm": 0.0,
+        "from": [
+          60.62488382209456,
+          -178.0527860323116,
+          32.0
+        ],
+        "to": [
+          60.62488382209456,
+          -178.0527860323116,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 222.532125,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 0",
+        "distance_mm": 0.0,
+        "from": [
+          -63.544732723413325,
+          -268.1170972879146,
+          32.0
+        ],
+        "to": [
+          -63.544732723413325,
+          -268.1170972879146,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 1",
+        "distance_mm": 0.0,
+        "from": [
+          -71.40245232483593,
+          -177.93188707875325,
+          32.0
+        ],
+        "to": [
+          -71.40245232483593,
+          -177.93188707875325,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 2",
+        "distance_mm": 0.0,
+        "from": [
+          68.58851088716456,
+          -272.04241698055995,
+          32.0
+        ],
+        "to": [
+          68.58851088716456,
+          -272.04241698055995,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 3",
+        "distance_mm": 0.0,
+        "from": [
+          62.62488382209456,
+          -178.0527860323116,
+          32.0
+        ],
+        "to": [
+          62.62488382209456,
+          -178.0527860323116,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 357.024542,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 0",
+        "distance_mm": 0.0,
+        "from": [
+          -72.92317823096643,
+          -271.86562771424457,
+          32.0
+        ],
+        "to": [
+          -72.92317823096643,
+          -271.86562771424457,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 1",
+        "distance_mm": 0.0,
+        "from": [
+          -72.92317823096643,
+          -177.86562771424454,
+          32.0
+        ],
+        "to": [
+          -72.92317823096643,
+          -177.86562771424454,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 2",
+        "distance_mm": 0.0,
+        "from": [
+          72.75201682843314,
+          -271.09524526419784,
+          32.0
+        ],
+        "to": [
+          72.75201682843314,
+          -271.09524526419784,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 3",
+        "distance_mm": 0.0,
+        "from": [
+          73.25356802961208,
+          -178.41861741593948,
+          32.0
+        ],
+        "to": [
+          73.25356802961208,
+          -178.41861741593948,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 381.287875,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 0",
+        "distance_mm": 0.0,
+        "from": [
+          -72.92317823096643,
+          -271.86562771424457,
+          32.0
+        ],
+        "to": [
+          -72.92317823096643,
+          -271.86562771424457,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 1",
+        "distance_mm": 0.0,
+        "from": [
+          -72.92317823096643,
+          -177.86562771424454,
+          32.0
+        ],
+        "to": [
+          -72.92317823096643,
+          -177.86562771424454,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 2",
+        "distance_mm": 0.0,
+        "from": [
+          74.4925398975277,
+          -273.1920274278391,
+          32.0
+        ],
+        "to": [
+          74.4925398975277,
+          -273.1920274278391,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 3",
+        "distance_mm": 0.0,
+        "from": [
+          72.90396626137382,
+          -176.18198865133752,
+          32.0
+        ],
+        "to": [
+          72.90396626137382,
+          -176.18198865133752,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 352.306291,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 0",
+        "distance_mm": 0.0,
+        "from": [
+          -75.34843132385761,
+          -273.22285753312144,
+          32.0
+        ],
+        "to": [
+          -75.34843132385761,
+          -273.22285753312144,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 1",
+        "distance_mm": 0.0,
+        "from": [
+          -76.61751513502666,
+          -178.564015597096,
+          32.0
+        ],
+        "to": [
+          -76.61751513502666,
+          -178.564015597096,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 2",
+        "distance_mm": 0.0,
+        "from": [
+          75.62513650265424,
+          -273.16141258279146,
+          32.0
+        ],
+        "to": [
+          75.62513650265424,
+          -273.16141258279146,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 3",
+        "distance_mm": 0.0,
+        "from": [
+          74.27358136119825,
+          -174.87048926717867,
+          32.0
+        ],
+        "to": [
+          74.27358136119825,
+          -174.87048926717867,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  {
+    "bodies": 8,
+    "ms": 365.316292,
+    "near": [
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 0",
+        "distance_mm": 0.0,
+        "from": [
+          -77.24705225313986,
+          -271.1151354491849,
+          32.0
+        ],
+        "to": [
+          -77.24705225313986,
+          -271.1151354491849,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 1",
+        "distance_mm": 0.0,
+        "from": [
+          -73.13680937642586,
+          -175.73864330967592,
+          32.0
+        ],
+        "to": [
+          -73.13680937642586,
+          -175.73864330967592,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 2",
+        "distance_mm": 0.0,
+        "from": [
+          74.9829788434097,
+          -273.24993561690735,
+          32.0
+        ],
+        "to": [
+          74.9829788434097,
+          -273.24993561690735,
+          32.0
+        ]
+      },
+      {
+        "a": "P50 electronics service box",
+        "b": "PORTAL uncompressed EPDM 3",
+        "distance_mm": 0.0,
+        "from": [
+          72.93914903880619,
+          -176.09700868456756,
+          32.0
+        ],
+        "to": [
+          72.93914903880619,
+          -176.09700868456756,
+          32.0
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 8,
+    "pairs_pruned": 48,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  }
+]

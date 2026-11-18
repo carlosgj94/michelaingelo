@@ -1,0 +1,2762 @@
+{
+  "clearances": {
+    "lid tool approach": {
+      "bodies": 10,
+      "ms": 477.501709,
+      "near": [],
+      "nearest": {
+        "TEST lid tool 0": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.999999999999952
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.200000000000009
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 5.0
+          }
+        ],
+        "TEST lid tool 1": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.9999999999999523
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.1999999999999886
+          },
+          {
+            "body": "M51 steel side channel right",
+            "distance_mm": 5.0
+          }
+        ],
+        "TEST lid tool 2": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.9999999999999915
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.200000000000003
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 5.0
+          }
+        ],
+        "TEST lid tool 3": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 1.00000000000001
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.200000000000003
+          },
+          {
+            "body": "M51 steel side channel right",
+            "distance_mm": 5.0
+          }
+        ],
+        "TEST lid tool 4": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.9999999999999919
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.1999999999999917
+          },
+          {
+            "body": "Base_08q (2)",
+            "distance_mm": 4.575924825477907
+          }
+        ],
+        "TEST lid tool 5": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.9999999999999494
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.1999999999999917
+          },
+          {
+            "body": "Base_08q (2)",
+            "distance_mm": 4.5759248254779346
+          }
+        ],
+        "TEST lid tool 6": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 1.0000000000000044
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.1999999999999935
+          },
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 4.0
+          }
+        ],
+        "TEST lid tool 7": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.9999999999999896
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.200000000000003
+          },
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 4.0
+          }
+        ],
+        "TEST lid tool 8": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.9999999999999475
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.1999999999999886
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 4.0
+          }
+        ],
+        "TEST lid tool 9": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 0.9999999999999852
+          },
+          {
+            "body": "P52 electronics lid",
+            "distance_mm": 2.200000000000003
+          },
+          {
+            "body": "M51 steel side channel right",
+            "distance_mm": 4.0
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 10,
+      "pairs_pruned": 2120,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid lift 8": {
+      "bodies": 2,
+      "ms": 283.23641599999996,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.513341009889708
+          },
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 10.916666666666629
+          },
+          {
+            "body": "P43 fixed housing quadrant",
+            "distance_mm": 15.46264622243948
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 2.0
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 8.0
+          },
+          {
+            "body": "P33 platter quadrant",
+            "distance_mm": 8.000125000048797
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 10": {
+      "bodies": 2,
+      "ms": 412.49766700000004,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.958570973342157
+          },
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 20.91666666666663
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 8.0
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 12.0
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 20": {
+      "bodies": 2,
+      "ms": 462.0475,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 8.5
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 25.92746827422823
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 8.0
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644064
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 30": {
+      "bodies": 2,
+      "ms": 441.1705,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 8.5
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 25.92746827422823
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 8.0
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644068
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 40": {
+      "bodies": 2,
+      "ms": 355.20904199999995,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 8.5
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 25.927468274228232
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 7.999999999999972
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644064
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 50": {
+      "bodies": 2,
+      "ms": 464.776125,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 8.5
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 25.927468274228232
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 8.0
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644068
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 60": {
+      "bodies": 2,
+      "ms": 376.365166,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 8.5
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 25.927468274228232
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 8.0
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644068
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 70": {
+      "bodies": 2,
+      "ms": 346.27887499999997,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 8.5
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 25.927468274228232
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 7.999999999999986
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644068
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 80": {
+      "bodies": 2,
+      "ms": 344.57225,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.079200254870292
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 25.927468274228232
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 7.999999999999986
+          },
+          {
+            "body": "B23 controller packaging envelope",
+            "distance_mm": 10.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644068
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 100": {
+      "bodies": 2,
+      "ms": 318.928,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.499999999999988
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 26.330178082061973
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 26.33017808206198
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 8.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 16.726027621644068
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 16.726027621644075
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 120": {
+      "bodies": 2,
+      "ms": 251.92187500000003,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 18.122461508059825
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 33.55116325189865
+          },
+          {
+            "body": "M51 steel side channel right",
+            "distance_mm": 33.55116325189865
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 11.313708498984761
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 22.185541468424553
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 22.18554146842457
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "lid rearward 140": {
+      "bodies": 2,
+      "ms": 179.274625,
+      "near": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 37.48453384767877
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 46.068939886025376
+          },
+          {
+            "body": "M51 steel side channel right",
+            "distance_mm": 46.068939886025376
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 29.120439557122072
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 35.4400902933387
+          },
+          {
+            "body": "M51 steel side channel right",
+            "distance_mm": 35.4400902933387
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 422,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray lift 27": {
+      "bodies": 2,
+      "ms": 135.237208,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 15.0
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 15.337861650177969
+          },
+          {
+            "body": "TEST F24 2",
+            "distance_mm": 16.847122228653564
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.23606797749979
+          },
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 18.0
+          },
+          {
+            "body": "P43 fixed housing quadrant",
+            "distance_mm": 20.396197637438764
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 10": {
+      "bodies": 2,
+      "ms": 261.279709,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.726812023536855
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 15.0
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 15.999999999999972
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 1.9999999999999858
+          },
+          {
+            "body": "M52 steel front X brace",
+            "distance_mm": 28.0
+          },
+          {
+            "body": "P43 fixed housing quadrant",
+            "distance_mm": 30.26561278234356
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 20": {
+      "bodies": 2,
+      "ms": 308.795917,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 5.0
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 15.0
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 15.999999999999972
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 1.999999999999986
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 32.56009827994997
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 32.56009827994997
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 30": {
+      "bodies": 2,
+      "ms": 237.783875,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 5.0
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 15.0
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 15.999999999999972
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.0
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 32.56009827994993
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 32.56009827994997
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 40": {
+      "bodies": 2,
+      "ms": 494.44645799999995,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 5.0
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 15.0
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 15.999999999999972
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.0
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 32.56009827994993
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 32.56009827994997
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 50": {
+      "bodies": 2,
+      "ms": 220.12362499999998,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 5.0
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 14.999999999999973
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 15.999999999999972
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 32.56009827994996
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 32.56009827994997
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 60": {
+      "bodies": 2,
+      "ms": 246.045042,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 5.0
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 15.0
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 15.999999999999972
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 32.56009827994996
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 32.56009827994997
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 70": {
+      "bodies": 2,
+      "ms": 240.769625,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 5.0
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 15.0
+          },
+          {
+            "body": "TEST F24 3",
+            "distance_mm": 16.918924315688606
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.0
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 32.56009827994997
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 32.56009827994997
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 80": {
+      "bodies": 2,
+      "ms": 246.993666,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 5.0
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 14.999999999999972
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 22.276669409945466
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 1.999999999999977
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 32.56009827994997
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 32.56009827994997
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 100": {
+      "bodies": 2,
+      "ms": 254.905667,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 17.24093964956667
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 20.862646045025066
+          },
+          {
+            "body": "Base_08q (2)",
+            "distance_mm": 38.02776825831888
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 4.47213595499958
+          },
+          {
+            "body": "TEST F22 2",
+            "distance_mm": 34.49422766322355
+          },
+          {
+            "body": "TEST F22 0",
+            "distance_mm": 34.49422766322358
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 120": {
+      "bodies": 2,
+      "ms": 183.60195900000002,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 36.8408740395773
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 37.61980861195336
+          },
+          {
+            "body": "Base_08q (2)",
+            "distance_mm": 54.9673820527784
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 24.083189157584595
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 41.340053217188775
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 41.641325627314025
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "tray rearward 140": {
+      "bodies": 2,
+      "ms": 233.579125,
+      "near": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 56.5265424380441
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 56.72080746956976
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 72.16127770487438
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 44.045431091090485
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 54.67174773134658
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 54.89990892524322
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 410,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver lift 70.5": {
+      "bodies": 1,
+      "ms": 188.849208,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 0",
+            "distance_mm": 3.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 10": {
+      "bodies": 1,
+      "ms": 143.487958,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 20": {
+      "bodies": 1,
+      "ms": 118.43695799999999,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 30": {
+      "bodies": 1,
+      "ms": 84.971334,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.4999999999999716
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 40": {
+      "bodies": 1,
+      "ms": 67.55254199999999,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 50": {
+      "bodies": 1,
+      "ms": 101.754042,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.499999999999972
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 60": {
+      "bodies": 1,
+      "ms": 68.8135,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 70": {
+      "bodies": 1,
+      "ms": 174.43716700000002,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 80": {
+      "bodies": 1,
+      "ms": 173.785958,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 1",
+            "distance_mm": 6.103277807866805
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 100": {
+      "bodies": 1,
+      "ms": 113.5415,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 4.7169905660283025
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 6.5
+          },
+          {
+            "body": "Base_08q (2)",
+            "distance_mm": 22.19817807045685
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 120": {
+      "bodies": 1,
+      "ms": 234.74225,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 24.12985702402731
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 26.119915773217954
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 36.12478373637689
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver rearward 140": {
+      "bodies": 1,
+      "ms": 180.281334,
+      "near": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 44.07096549884062
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 46.06788469204984
+          },
+          {
+            "body": "M51 steel side channel left",
+            "distance_mm": 51.62363799656123
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver complete lift sweep": {
+      "bodies": 1,
+      "ms": 196.137,
+      "near": [],
+      "nearest": {
+        "TEST driver complete lift sweep": [
+          {
+            "body": "M30 driver heat spreader",
+            "distance_mm": 0.2499999999998863
+          },
+          {
+            "body": "TEST F20 1",
+            "distance_mm": 0.44999999999999574
+          },
+          {
+            "body": "TEST F20 0",
+            "distance_mm": 0.45000000000000284
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 2,
+      "pairs_pruned": 202,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "driver complete withdrawal sweep": {
+      "bodies": 1,
+      "ms": 195.78475,
+      "near": [],
+      "nearest": {
+        "TEST driver complete withdrawal sweep": [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "distance_mm": 2.4999999999999813
+          },
+          {
+            "body": "P50 electronics service box",
+            "distance_mm": 2.5
+          },
+          {
+            "body": "TEST F24 0",
+            "distance_mm": 3.5
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 204,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 2": {
+      "bodies": 1,
+      "ms": 694.303541,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "P41 fixed housing quadrant",
+            "distance_mm": 1.4999999999999858
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 15,
+      "pairs_pruned": 198,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 5": {
+      "bodies": 1,
+      "ms": 471.157292,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "P41 fixed housing quadrant",
+            "distance_mm": 1.4999999999999858
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 15,
+      "pairs_pruned": 198,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 10": {
+      "bodies": 1,
+      "ms": 542.533458,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "P41 fixed housing quadrant",
+            "distance_mm": 1.4999999999999716
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 15,
+      "pairs_pruned": 198,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 20": {
+      "bodies": 1,
+      "ms": 542.5504169999999,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "P24 NEMA17 motor bracket",
+            "distance_mm": 6.499999999999815
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 11,
+      "pairs_pruned": 202,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 30": {
+      "bodies": 1,
+      "ms": 485.80258399999997,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "B42 motor anchor washer",
+            "distance_mm": 6.999999999999986
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 8,
+      "pairs_pruned": 205,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 48": {
+      "bodies": 1,
+      "ms": 424.92787500000003,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "B41 motor anchor washer",
+            "distance_mm": 0.9007065604879618
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 7,
+      "pairs_pruned": 206,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 49": {
+      "bodies": 1,
+      "ms": 291.32483399999995,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "B42 motor anchor washer",
+            "distance_mm": 0.9000000238349471
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 7,
+      "pairs_pruned": 206,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood posts clear motor anchor washers at X+49": {
+      "bodies": 1,
+      "ms": 79.128208,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B42 motor anchor washer",
+            "distance_mm": 0.9000000238349471
+          },
+          {
+            "body": "B41 motor anchor washer",
+            "distance_mm": 0.9000028474725841
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 2,
+      "pairs_pruned": 0,
+      "pairs_reused": 2,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 50": {
+      "bodies": 1,
+      "ms": 376.471667,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "B41 motor anchor washer",
+            "distance_mm": 0.900706603694151
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 7,
+      "pairs_pruned": 206,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 70": {
+      "bodies": 1,
+      "ms": 394.17675,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B25 motor hood gasket",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "M40 stepped motor support",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "B42 motor anchor washer",
+            "distance_mm": 6.999999999999986
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 7,
+      "pairs_pruned": 206,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "hood outward 70 and up 30": {
+      "bodies": 1,
+      "ms": 269.595083,
+      "near": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "body": "B06 NEMA17 motor and encoder envelope",
+            "distance_mm": 16.34999999999981
+          },
+          {
+            "body": "TEST F14 1",
+            "distance_mm": 26.309884074240998
+          },
+          {
+            "body": "TEST F14 0",
+            "distance_mm": 26.446162212606545
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 212,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F02 key before carrier 0": {
+      "bodies": 1,
+      "ms": 56.028209000000004,
+      "near": [],
+      "nearest": {
+        "TEST F02 straight key 0": [
+          {
+            "body": "M01 aluminium base plate",
+            "distance_mm": 4.6097722286464435
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 6,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F02 key before carrier 1": {
+      "bodies": 1,
+      "ms": 39.425959,
+      "near": [],
+      "nearest": {
+        "TEST F02 straight key 1": [
+          {
+            "body": "M01 aluminium base plate",
+            "distance_mm": 4.609772228646439
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 6,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F02 key before carrier 2": {
+      "bodies": 1,
+      "ms": 43.689040999999996,
+      "near": [],
+      "nearest": {
+        "TEST F02 straight key 2": [
+          {
+            "body": "M01 aluminium base plate",
+            "distance_mm": 4.6097722286464435
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 6,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F02 key before carrier 3": {
+      "bodies": 1,
+      "ms": 95.852625,
+      "near": [],
+      "nearest": {
+        "TEST F02 straight key 3": [
+          {
+            "body": "M01 aluminium base plate",
+            "distance_mm": 4.609772228646439
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 6,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 0 step 0 at 0 degrees": {
+      "bodies": 1,
+      "ms": 221.89012499999998,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 0": [
+          {
+            "body": "P12 column sleeve",
+            "distance_mm": 0.5000000000000071
+          },
+          {
+            "body": "B09 sensor connector and cable reservation",
+            "distance_mm": 2.719854476264011
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 0 step 1 at 12 degrees": {
+      "bodies": 1,
+      "ms": 187.80129200000002,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 0": [
+          {
+            "body": "P14 column sleeve",
+            "distance_mm": 1.6658047088533714
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.010398644698075
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 0 step 2 at 30 degrees": {
+      "bodies": 1,
+      "ms": 269.56683300000003,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 0": [
+          {
+            "body": "B11 duplex wheel envelope",
+            "distance_mm": 2.999999999999993
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.0103986446980766
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 0 step 3 at 45 degrees": {
+      "bodies": 1,
+      "ms": 232.025417,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 0": [
+          {
+            "body": "B11 duplex wheel envelope",
+            "distance_mm": 3.0
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.010398644698072
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 0 step 4 at 60 degrees": {
+      "bodies": 1,
+      "ms": 118.937584,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 0": [
+          {
+            "body": "B11 duplex wheel envelope",
+            "distance_mm": 3.0
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.01039864469808
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 0 step 5 at 0 degrees": {
+      "bodies": 1,
+      "ms": 105.84895800000001,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 0": [
+          {
+            "body": "P12 column sleeve",
+            "distance_mm": 0.5
+          },
+          {
+            "body": "B09 sensor connector and cable reservation",
+            "distance_mm": 2.719854476264004
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 0 withdrawal": {
+      "bodies": 1,
+      "ms": 51.778625000000005,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 0": [
+          {
+            "body": "P12 column sleeve",
+            "distance_mm": 0.5
+          },
+          {
+            "body": "B09 sensor connector and cable reservation",
+            "distance_mm": 2.719854476264011
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 1 step 0 at 0 degrees": {
+      "bodies": 1,
+      "ms": 151.049083,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 1": [
+          {
+            "body": "P11 column sleeve",
+            "distance_mm": 0.5000000000000071
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.010398644698079
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 1 step 1 at 12 degrees": {
+      "bodies": 1,
+      "ms": 104.794208,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 1": [
+          {
+            "body": "P13 column sleeve",
+            "distance_mm": 1.6658047088533705
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.010398644698076
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 1 step 2 at 30 degrees": {
+      "bodies": 1,
+      "ms": 132.54274999999998,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 1": [
+          {
+            "body": "B11 duplex wheel envelope",
+            "distance_mm": 3.0
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.0103986446980744
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 1 step 3 at 45 degrees": {
+      "bodies": 1,
+      "ms": 109.931917,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 1": [
+          {
+            "body": "B11 duplex wheel envelope",
+            "distance_mm": 3.0
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.010398644698074
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 1 step 4 at 60 degrees": {
+      "bodies": 1,
+      "ms": 100.15995799999999,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 1": [
+          {
+            "body": "B11 duplex wheel envelope",
+            "distance_mm": 3.0
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.010398644698076
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 1 step 5 at 0 degrees": {
+      "bodies": 1,
+      "ms": 180.617167,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 1": [
+          {
+            "body": "P11 column sleeve",
+            "distance_mm": 0.5
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 3.0103986446980726
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F07 side key 1 withdrawal": {
+      "bodies": 1,
+      "ms": 194.95345799999998,
+      "near": [],
+      "nearest": {
+        "TEST F07 side key 1": [
+          {
+            "body": "P11 column sleeve",
+            "distance_mm": 0.5
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "distance_mm": 4.999999999999993
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 1,
+      "pairs_pruned": 186,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "below-bench electronics and stand hardware": {
+      "bodies": 4,
+      "ms": 174.553333,
+      "near": [],
+      "nearest": {
+        "TEST F21 underside 0": [
+          {
+            "body": "TEST M55 backing strip -1",
+            "distance_mm": 1.9999999999999711
+          },
+          {
+            "body": "TEST F23 underside 0",
+            "distance_mm": 8.267293027752158
+          },
+          {
+            "body": "TEST F23 underside 1",
+            "distance_mm": 82.76873230883163
+          }
+        ],
+        "TEST F21 underside 1": [
+          {
+            "body": "TEST M55 backing strip -1",
+            "distance_mm": 1.9999999999999736
+          },
+          {
+            "body": "TEST F23 underside 1",
+            "distance_mm": 8.267293027752169
+          },
+          {
+            "body": "TEST F23 underside 0",
+            "distance_mm": 82.76873230883156
+          }
+        ],
+        "TEST F21 underside 2": [
+          {
+            "body": "TEST M55 backing strip 1",
+            "distance_mm": 1.9999999999999483
+          },
+          {
+            "body": "TEST F23 underside 2",
+            "distance_mm": 8.267293027752176
+          },
+          {
+            "body": "TEST F23 underside 3",
+            "distance_mm": 82.76873230883169
+          }
+        ],
+        "TEST F21 underside 3": [
+          {
+            "body": "TEST M55 backing strip 1",
+            "distance_mm": 1.9999999999999796
+          },
+          {
+            "body": "TEST F23 underside 3",
+            "distance_mm": 8.267293027752155
+          },
+          {
+            "body": "TEST F23 underside 2",
+            "distance_mm": 82.76873230883156
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 4,
+      "pairs_pruned": 20,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    "below-bench stand washer contact": {
+      "bodies": 4,
+      "ms": 220.357583,
+      "near": [],
+      "nearest": {
+        "TEST F23 underside 0": [
+          {
+            "body": "TEST M55 backing strip -1",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST M55 backing strip 1",
+            "distance_mm": 167.11691458524302
+          }
+        ],
+        "TEST F23 underside 1": [
+          {
+            "body": "TEST M55 backing strip -1",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST M55 backing strip 1",
+            "distance_mm": 167.11691458524308
+          }
+        ],
+        "TEST F23 underside 2": [
+          {
+            "body": "TEST M55 backing strip 1",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST M55 backing strip -1",
+            "distance_mm": 167.11691458524294
+          }
+        ],
+        "TEST F23 underside 3": [
+          {
+            "body": "TEST M55 backing strip 1",
+            "distance_mm": 0.0
+          },
+          {
+            "body": "TEST M55 backing strip -1",
+            "distance_mm": 167.11691458524305
+          }
+        ]
+      },
+      "overlaps": [],
+      "pairs_checked": 4,
+      "pairs_pruned": 4,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    }
+  },
+  "seating": {
+    "F23 washer seats": {
+      "boolean_ms": 140.057,
+      "budget_exceeded": false,
+      "budget_s": 30.0,
+      "checked": 6,
+      "count": 4,
+      "interferences": [
+        {
+          "a": "TEST M55 backing strip -1",
+          "a_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "area_mm2": 444.3782808502823,
+          "b": "TEST F23 washer seats annulus 0",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              -88.99999999999997,
+              -262.99999999999994,
+              -32.94999999999999
+            ],
+            "min": [
+              -107.00000000000014,
+              -281.00000000000017,
+              -33.0
+            ]
+          },
+          "center": [
+            -98.0,
+            -272.0,
+            -32.975
+          ],
+          "volume_mm3": 11.012853047160021
+        },
+        {
+          "a": "TEST M55 backing strip -1",
+          "a_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "area_mm2": 444.37828085027587,
+          "b": "TEST F23 washer seats annulus 1",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              -88.99999999999999,
+              -167.0,
+              -32.94999999999999
+            ],
+            "min": [
+              -107.00000000000001,
+              -185.00000000000003,
+              -33.0
+            ]
+          },
+          "center": [
+            -98.0,
+            -176.0,
+            -32.975
+          ],
+          "volume_mm3": 11.012853047159947
+        },
+        {
+          "a": "TEST M55 backing strip 1",
+          "a_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "area_mm2": 444.37828085028195,
+          "b": "TEST F23 washer seats annulus 2",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              107.00000000000003,
+              -262.99999999999994,
+              -32.94999999999999
+            ],
+            "min": [
+              88.99999999999986,
+              -281.00000000000017,
+              -33.0
+            ]
+          },
+          "center": [
+            98.0,
+            -272.0,
+            -32.974999999999994
+          ],
+          "volume_mm3": 11.012853047160023
+        },
+        {
+          "a": "TEST M55 backing strip 1",
+          "a_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "area_mm2": 444.3782808502756,
+          "b": "TEST F23 washer seats annulus 3",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              107.00000000000001,
+              -167.0,
+              -32.94999999999999
+            ],
+            "min": [
+              89.0,
+              -185.0,
+              -33.0
+            ]
+          },
+          "center": [
+            98.0,
+            -176.0,
+            -32.974999999999994
+          ],
+          "volume_mm3": 11.012853047159936
+        }
+      ],
+      "ms": 108.339,
+      "pairs_candidate": 4,
+      "pairs_cleared": 0,
+      "pairs_excluded": 0,
+      "pairs_intersected": 4,
+      "pairs_not_checked": 0,
+      "skipped_pairs": 0,
+      "slowest": [
+        {
+          "a": "TEST M55 backing strip -1",
+          "b": "TEST F23 washer seats annulus 0",
+          "boolean_ms": 41.28,
+          "ms": 66.91,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "TEST M55 backing strip -1",
+          "b": "TEST F23 washer seats annulus 1",
+          "boolean_ms": 38.511,
+          "ms": 64.33,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "TEST M55 backing strip 1",
+          "b": "TEST F23 washer seats annulus 3",
+          "boolean_ms": 31.772,
+          "ms": 53.065,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "TEST M55 backing strip 1",
+          "b": "TEST F23 washer seats annulus 2",
+          "boolean_ms": 28.495,
+          "ms": 50.049,
+          "tessellate_ms": 0.0
+        }
+      ],
+      "tessellate_ms": 0.0,
+      "threads": 4,
+      "truncated": false,
+      "unchecked": []
+    },
+    "F21 seal lands": {
+      "boolean_ms": 386.005,
+      "budget_exceeded": false,
+      "budget_s": 30.0,
+      "checked": 5,
+      "count": 4,
+      "interferences": [
+        {
+          "a": "P50 electronics service box",
+          "a_part": {
+            "component": "RT01 - electronics base",
+            "path": [
+              "RT01 - electronics base:1"
+            ],
+            "path_ids": [
+              2870
+            ]
+          },
+          "area_mm2": 97.54645189396413,
+          "b": "TEST F21 seal lands annulus 0",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              -70.5,
+              -266.5,
+              32.0
+            ],
+            "min": [
+              -79.50000000000009,
+              -275.5000000000001,
+              31.949999999999996
+            ]
+          },
+          "center": [
+            -75.0,
+            -271.0,
+            31.974999999999998
+          ],
+          "volume_mm3": 2.3856469213197875
+        },
+        {
+          "a": "P50 electronics service box",
+          "a_part": {
+            "component": "RT01 - electronics base",
+            "path": [
+              "RT01 - electronics base:1"
+            ],
+            "path_ids": [
+              2870
+            ]
+          },
+          "area_mm2": 97.54645189396477,
+          "b": "TEST F21 seal lands annulus 1",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              -70.49999999999999,
+              -172.49999999999997,
+              32.0
+            ],
+            "min": [
+              -79.50000000000004,
+              -181.50000000000006,
+              31.949999999999992
+            ]
+          },
+          "center": [
+            -75.0,
+            -177.00000000000003,
+            31.974999999999998
+          ],
+          "volume_mm3": 2.385646921319819
+        },
+        {
+          "a": "P50 electronics service box",
+          "a_part": {
+            "component": "RT01 - electronics base",
+            "path": [
+              "RT01 - electronics base:1"
+            ],
+            "path_ids": [
+              2870
+            ]
+          },
+          "area_mm2": 97.54645189396425,
+          "b": "TEST F21 seal lands annulus 2",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              79.50000000000001,
+              -266.49999999999994,
+              32.0
+            ],
+            "min": [
+              70.49999999999991,
+              -275.5000000000001,
+              31.949999999999996
+            ]
+          },
+          "center": [
+            75.0,
+            -271.0,
+            31.974999999999998
+          ],
+          "volume_mm3": 2.385646921319787
+        },
+        {
+          "a": "P50 electronics service box",
+          "a_part": {
+            "component": "RT01 - electronics base",
+            "path": [
+              "RT01 - electronics base:1"
+            ],
+            "path_ids": [
+              2870
+            ]
+          },
+          "area_mm2": 97.54645189396464,
+          "b": "TEST F21 seal lands annulus 3",
+          "b_part": {
+            "component": "Disposable service tools",
+            "path": [
+              "Disposable service tools:1"
+            ],
+            "path_ids": [
+              3539
+            ]
+          },
+          "bbox": {
+            "max": [
+              79.50000000000001,
+              -172.49999999999997,
+              32.0
+            ],
+            "min": [
+              70.49999999999997,
+              -181.50000000000006,
+              31.949999999999996
+            ]
+          },
+          "center": [
+            75.0,
+            -177.00000000000003,
+            31.974999999999998
+          ],
+          "volume_mm3": 2.3856469213198217
+        }
+      ],
+      "ms": 295.629,
+      "pairs_candidate": 4,
+      "pairs_cleared": 0,
+      "pairs_excluded": 0,
+      "pairs_intersected": 4,
+      "pairs_not_checked": 0,
+      "skipped_pairs": 0,
+      "slowest": [
+        {
+          "a": "P50 electronics service box",
+          "b": "TEST F21 seal lands annulus 2",
+          "boolean_ms": 103.603,
+          "ms": 135.988,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "P50 electronics service box",
+          "b": "TEST F21 seal lands annulus 3",
+          "boolean_ms": 108.024,
+          "ms": 130.524,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "P50 electronics service box",
+          "b": "TEST F21 seal lands annulus 1",
+          "boolean_ms": 94.141,
+          "ms": 115.822,
+          "tessellate_ms": 0.0
+        },
+        {
+          "a": "P50 electronics service box",
+          "b": "TEST F21 seal lands annulus 0",
+          "boolean_ms": 80.238,
+          "ms": 102.697,
+          "tessellate_ms": 0.0
+        }
+      ],
+      "tessellate_ms": 0.0,
+      "threads": 4,
+      "truncated": false,
+      "unchecked": []
+    }
+  }
+}

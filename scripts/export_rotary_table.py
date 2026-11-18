@@ -87,7 +87,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--in', dest='native', type=Path, default=ROOT/'michelaingelo.sc')
     args = parser.parse_args()
-    parts = json.loads((ROOT/'cad/parts.json').read_text())['parts']
+    part_register = json.loads((ROOT/'cad/parts.json').read_text())
+    parts = part_register['parts']
     out = ROOT/'exports/rotary-table'
     previous_manifest = out/'print-manifest.json'
     previous_prints = json.loads(previous_manifest.read_text()).get('parts', []) if previous_manifest.exists() else []
@@ -139,7 +140,7 @@ def main():
                 obsolete.unlink(missing_ok=True)
         # Revision 4 renamed/replaced this generated metal part; retain the independent M55 drawing.
         (out/'metal/m40-motor-support-sole.step').unlink(missing_ok=True)
-        manifest = dict(design='RT-01', revision=4, units='mm', nozzle_mm=0.4, layer_mm=0.2,
+        manifest = dict(design='RT-01', revision=part_register['revision'], units='mm', nozzle_mm=0.4, layer_mm=0.2,
                         note='Prototype geometry. Print coupon first. No slicing or physical print verification implied.',
                         parts=results)
         coupon = out/'fit-coupon.stl'

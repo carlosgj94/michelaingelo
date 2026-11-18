@@ -106,6 +106,15 @@
     {
       "command": "parameters.add",
       "params": {
+        "name": "rt_anchor_nut_af",
+        "expression": "7.4 mm",
+        "comment": "F21 captive M4 nyloc pocket across flats; calibrate actual nut fit and low-torque retention on a first article.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
         "name": "rt_m5_h",
         "expression": "5.6 mm",
         "comment": "Printed horizontal M5 hole; separate calibration from vertical holes.",
@@ -127,6 +136,24 @@
         "name": "rt_motor_l",
         "expression": "80 mm",
         "comment": "Motor plus encoder reserved length; range 60\u201380 mm.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_lid_gasket_stock_w",
+        "expression": "2 mm",
+        "comment": "Solid EPDM stock ring width, centred in the 3.5 mm groove; review gland fill and compression force before changing.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_lid_gasket_stock_t",
+        "expression": "2 mm",
+        "comment": "Solid EPDM uncompressed thickness; 1.5 mm hard-stop height. Stock volume must fit the gland with tolerance/swell allowance.",
         "favorite": true
       }
     },
@@ -2135,42 +2162,6 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 25,
-        "height": 10,
-        "base": [
-          -64,
-          64,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "111 M60 monolithic worm carrier core bench bolt head access",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 25,
-        "height": 10,
-        "base": [
-          64,
-          64,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "112 M60 monolithic worm carrier core bench bolt head access",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
         "diameter": 30,
         "height": 10,
         "base": [
@@ -2180,7 +2171,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "113 M60 monolithic worm carrier column sleeve adjustment clearance",
+        "name": "111 M60 monolithic worm carrier column sleeve adjustment clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2198,7 +2189,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "114 M60 monolithic worm carrier column sleeve adjustment clearance",
+        "name": "112 M60 monolithic worm carrier column sleeve adjustment clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2216,7 +2207,7 @@
           11
         ],
         "operation": "cut",
-        "name": "115 adjustment slot web",
+        "name": "113 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2234,7 +2225,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "116 M60 monolithic worm carrier adjustment slot end",
+        "name": "114 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2252,7 +2243,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "117 M60 monolithic worm carrier adjustment slot end",
+        "name": "115 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2270,7 +2261,7 @@
           11
         ],
         "operation": "cut",
-        "name": "118 adjustment slot web",
+        "name": "116 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2288,7 +2279,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "119 M60 monolithic worm carrier adjustment slot end",
+        "name": "117 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2306,7 +2297,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "120 M60 monolithic worm carrier adjustment slot end",
+        "name": "118 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2324,7 +2315,7 @@
           11
         ],
         "operation": "cut",
-        "name": "121 adjustment slot web",
+        "name": "119 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2342,7 +2333,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "122 M60 monolithic worm carrier adjustment slot end",
+        "name": "120 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2360,7 +2351,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "123 M60 monolithic worm carrier adjustment slot end",
+        "name": "121 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2378,7 +2369,7 @@
           11
         ],
         "operation": "cut",
-        "name": "124 adjustment slot web",
+        "name": "122 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2396,7 +2387,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "125 M60 monolithic worm carrier adjustment slot end",
+        "name": "123 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2414,7 +2405,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "126 M60 monolithic worm carrier adjustment slot end",
+        "name": "124 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2432,7 +2423,7 @@
           19.8
         ],
         "operation": "join",
-        "name": "127 integral bearing support",
+        "name": "125 integral bearing support",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2450,7 +2441,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "128 M60 monolithic worm carrier shaft clearance",
+        "name": "126 M60 monolithic worm carrier shaft clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2468,7 +2459,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "129 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
+        "name": "127 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2482,6 +2473,42 @@
         "base": [
           -67,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "128 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          -67,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "129 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          -67,
+          78.5,
           27
         ],
         "axis": "X",
@@ -2499,48 +2526,12 @@
         "height": 11,
         "base": [
           -67,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "131 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          -67,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "132 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          -67,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "133 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2558,7 +2549,7 @@
           23
         ],
         "operation": "new",
-        "name": "134 M61 worm bearing retainer left",
+        "name": "132 M61 worm bearing retainer left",
         "body_name": "M61 worm bearing retainer left"
       }
     },
@@ -2574,7 +2565,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "135 outer-race retaining boss",
+        "name": "133 outer-race retaining boss",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -2592,7 +2583,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "136 M61 worm bearing retainer left clearance hole",
+        "name": "134 M61 worm bearing retainer left clearance hole",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -2610,7 +2601,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "137 M61 worm bearing retainer left inner-ring noncontact relief",
+        "name": "135 M61 worm bearing retainer left inner-ring noncontact relief",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -2624,6 +2615,42 @@
         "base": [
           -71.05,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "136 M61 worm bearing retainer left clearance hole",
+        "targets": [
+          "M61 worm bearing retainer left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          -71.05,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "137 M61 worm bearing retainer left clearance hole",
+        "targets": [
+          "M61 worm bearing retainer left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          -71.05,
+          78.5,
           27
         ],
         "axis": "X",
@@ -2641,48 +2668,12 @@
         "height": 6,
         "base": [
           -71.05,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "139 M61 worm bearing retainer left clearance hole",
-        "targets": [
-          "M61 worm bearing retainer left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          -71.05,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "140 M61 worm bearing retainer left clearance hole",
-        "targets": [
-          "M61 worm bearing retainer left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          -71.05,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "141 M61 worm bearing retainer left clearance hole",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -2700,7 +2691,7 @@
           23
         ],
         "operation": "new",
-        "name": "142 M62 retainer shim left",
+        "name": "140 M62 retainer shim left",
         "body_name": "M62 retainer shim left"
       }
     },
@@ -2713,6 +2704,42 @@
           -67,
           55.5,
           50
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "141 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "142 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          32.5,
+          73
         ],
         "axis": "X",
         "operation": "cut",
@@ -2729,7 +2756,7 @@
         "height": 3,
         "base": [
           -67,
-          32.5,
+          78.5,
           27
         ],
         "axis": "X",
@@ -2747,48 +2774,12 @@
         "height": 3,
         "base": [
           -67,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "145 M62 retainer shim left clearance hole",
-        "targets": [
-          "M62 retainer shim left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          -67,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "146 M62 retainer shim left clearance hole",
-        "targets": [
-          "M62 retainer shim left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          -67,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "147 M62 retainer shim left clearance hole",
         "targets": [
           "M62 retainer shim left"
         ]
@@ -2806,7 +2797,7 @@
         ],
         "axis": "X",
         "operation": "new",
-        "name": "148 B02 worm support bearing left",
+        "name": "146 B02 worm support bearing left",
         "body_name": "B02 worm support bearing left"
       }
     },
@@ -2822,7 +2813,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "149 B02 worm support bearing left bore",
+        "name": "147 B02 worm support bearing left bore",
         "targets": [
           "B02 worm support bearing left"
         ]
@@ -2840,7 +2831,7 @@
           19.8
         ],
         "operation": "join",
-        "name": "150 integral bearing support",
+        "name": "148 integral bearing support",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2858,7 +2849,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "151 M60 monolithic worm carrier shaft clearance",
+        "name": "149 M60 monolithic worm carrier shaft clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2876,7 +2867,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "152 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
+        "name": "150 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2890,6 +2881,42 @@
         "base": [
           56,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "151 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          56,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "152 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          56,
+          78.5,
           27
         ],
         "axis": "X",
@@ -2907,48 +2934,12 @@
         "height": 11,
         "base": [
           56,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "154 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          56,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "155 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          56,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "156 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -2966,7 +2957,7 @@
           23
         ],
         "operation": "new",
-        "name": "157 M61 worm bearing retainer right",
+        "name": "155 M61 worm bearing retainer right",
         "body_name": "M61 worm bearing retainer right"
       }
     },
@@ -2982,7 +2973,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "158 outer-race retaining boss",
+        "name": "156 outer-race retaining boss",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -3000,7 +2991,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "159 M61 worm bearing retainer right clearance hole",
+        "name": "157 M61 worm bearing retainer right clearance hole",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -3018,7 +3009,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "160 M61 worm bearing retainer right inner-ring noncontact relief",
+        "name": "158 M61 worm bearing retainer right inner-ring noncontact relief",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -3032,6 +3023,42 @@
         "base": [
           65.05,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "159 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          65.05,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "160 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          65.05,
+          78.5,
           27
         ],
         "axis": "X",
@@ -3049,48 +3076,12 @@
         "height": 6,
         "base": [
           65.05,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "162 M61 worm bearing retainer right clearance hole",
-        "targets": [
-          "M61 worm bearing retainer right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          65.05,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "163 M61 worm bearing retainer right clearance hole",
-        "targets": [
-          "M61 worm bearing retainer right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          65.05,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "164 M61 worm bearing retainer right clearance hole",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -3108,7 +3099,7 @@
           23
         ],
         "operation": "new",
-        "name": "165 M62 retainer shim right",
+        "name": "163 M62 retainer shim right",
         "body_name": "M62 retainer shim right"
       }
     },
@@ -3121,6 +3112,42 @@
           65,
           55.5,
           50
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "164 M62 retainer shim right clearance hole",
+        "targets": [
+          "M62 retainer shim right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          65,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "165 M62 retainer shim right clearance hole",
+        "targets": [
+          "M62 retainer shim right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          65,
+          32.5,
+          73
         ],
         "axis": "X",
         "operation": "cut",
@@ -3137,7 +3164,7 @@
         "height": 3,
         "base": [
           65,
-          32.5,
+          78.5,
           27
         ],
         "axis": "X",
@@ -3155,48 +3182,12 @@
         "height": 3,
         "base": [
           65,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "168 M62 retainer shim right clearance hole",
-        "targets": [
-          "M62 retainer shim right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          65,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "169 M62 retainer shim right clearance hole",
-        "targets": [
-          "M62 retainer shim right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          65,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "170 M62 retainer shim right clearance hole",
         "targets": [
           "M62 retainer shim right"
         ]
@@ -3214,7 +3205,7 @@
         ],
         "axis": "X",
         "operation": "new",
-        "name": "171 B02 worm support bearing right",
+        "name": "169 B02 worm support bearing right",
         "body_name": "B02 worm support bearing right"
       }
     },
@@ -3230,9 +3221,45 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "172 B02 worm support bearing right bore",
+        "name": "170 B02 worm support bearing right bore",
         "targets": [
           "B02 worm support bearing right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 25,
+        "height": 10,
+        "base": [
+          -64,
+          64,
+          11
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "171 M60 monolithic worm carrier core bench bolt head relief; tighten before carrier installation",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 25,
+        "height": 10,
+        "base": [
+          64,
+          64,
+          11
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "172 M60 monolithic worm carrier core bench bolt head relief; tighten before carrier installation",
+        "targets": [
+          "M60 monolithic worm carrier"
         ]
       }
     },
@@ -7003,6 +7030,52 @@
       }
     },
     {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "372 tool drain floor relief 0",
+        "body_name": "tool drain floor relief 0"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 0"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "373 tool drain floor relief 0 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P41 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 0"
+        ],
+        "operation": "cut"
+      }
+    },
+    {
       "command": "solid.cylinder",
       "params": {
         "diameter": "rt_m5",
@@ -7014,7 +7087,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "372 P41 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "374 P41 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P41 fixed housing quadrant"
         ]
@@ -7037,7 +7110,7 @@
           0
         ],
         "angle": "0 deg",
-        "name": "373 P41 fixed housing quadrant quadrant placement"
+        "name": "375 P41 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -7052,7 +7125,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "374 motor enclosure passage",
+        "name": "376 motor enclosure passage",
         "targets": [
           "P41 fixed housing quadrant"
         ]
@@ -7070,7 +7143,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "375 motor foundation passage",
+        "name": "377 motor foundation passage",
         "targets": [
           "P41 fixed housing quadrant"
         ]
@@ -7088,7 +7161,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "376 P42 fixed housing quadrant",
+        "name": "378 P42 fixed housing quadrant",
         "body_name": "P42 fixed housing quadrant"
       }
     },
@@ -7104,7 +7177,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "377 floor perimeter",
+        "name": "379 floor perimeter",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7122,7 +7195,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "378 outer drainage gutter",
+        "name": "380 outer drainage gutter",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7140,7 +7213,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "379 tool gutter lip 1",
+        "name": "381 tool gutter lip 1",
         "body_name": "tool gutter lip 1"
       }
     },
@@ -7156,7 +7229,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "380 tool gutter lip 1 bore",
+        "name": "382 tool gutter lip 1 bore",
         "targets": [
           "tool gutter lip 1"
         ]
@@ -7184,7 +7257,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "381 P42 fixed housing quadrant drive cavity",
+        "name": "383 P42 fixed housing quadrant drive cavity",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7202,7 +7275,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "382 metal core opening",
+        "name": "384 metal core opening",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7220,7 +7293,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "383 quadrant X seam",
+        "name": "385 quadrant X seam",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7238,7 +7311,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "384 quadrant Y seam",
+        "name": "386 quadrant Y seam",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7256,7 +7329,7 @@
           12
         ],
         "operation": "join",
-        "name": "385 seam flange Y",
+        "name": "387 seam flange Y",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7274,7 +7347,7 @@
           12
         ],
         "operation": "join",
-        "name": "386 seam flange X",
+        "name": "388 seam flange X",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7292,7 +7365,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "387 P42 fixed housing quadrant horizontal seam screw",
+        "name": "389 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7310,7 +7383,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "388 P42 fixed housing quadrant horizontal seam screw",
+        "name": "390 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7328,7 +7401,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "389 P42 fixed housing quadrant flat outer washer seat",
+        "name": "391 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7346,7 +7419,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "390 P42 fixed housing quadrant flat outer washer seat",
+        "name": "392 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7364,7 +7437,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "391 P42 fixed housing quadrant horizontal seam screw",
+        "name": "393 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7382,7 +7455,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "392 P42 fixed housing quadrant horizontal seam screw",
+        "name": "394 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7400,7 +7473,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "393 P42 fixed housing quadrant flat outer washer seat",
+        "name": "395 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7418,7 +7491,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "394 P42 fixed housing quadrant flat outer washer seat",
+        "name": "396 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7436,10 +7509,56 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "395 P42 fixed housing quadrant external gutter drain",
+        "name": "397 P42 fixed housing quadrant external gutter drain",
         "targets": [
           "P42 fixed housing quadrant"
         ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "398 tool drain floor relief 1",
+        "body_name": "tool drain floor relief 1"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 1"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "399 tool drain floor relief 1 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P42 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 1"
+        ],
+        "operation": "cut"
       }
     },
     {
@@ -7454,7 +7573,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "396 P42 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "400 P42 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -7477,7 +7596,7 @@
           0
         ],
         "angle": "90 deg",
-        "name": "397 P42 fixed housing quadrant quadrant placement"
+        "name": "401 P42 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -7492,7 +7611,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "398 P43 fixed housing quadrant",
+        "name": "402 P43 fixed housing quadrant",
         "body_name": "P43 fixed housing quadrant"
       }
     },
@@ -7508,7 +7627,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "399 floor perimeter",
+        "name": "403 floor perimeter",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7526,7 +7645,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "400 outer drainage gutter",
+        "name": "404 outer drainage gutter",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7544,7 +7663,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "401 tool gutter lip 2",
+        "name": "405 tool gutter lip 2",
         "body_name": "tool gutter lip 2"
       }
     },
@@ -7560,7 +7679,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "402 tool gutter lip 2 bore",
+        "name": "406 tool gutter lip 2 bore",
         "targets": [
           "tool gutter lip 2"
         ]
@@ -7588,7 +7707,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "403 P43 fixed housing quadrant drive cavity",
+        "name": "407 P43 fixed housing quadrant drive cavity",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7606,7 +7725,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "404 metal core opening",
+        "name": "408 metal core opening",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7624,7 +7743,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "405 quadrant X seam",
+        "name": "409 quadrant X seam",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7642,7 +7761,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "406 quadrant Y seam",
+        "name": "410 quadrant Y seam",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7660,7 +7779,7 @@
           12
         ],
         "operation": "join",
-        "name": "407 seam flange Y",
+        "name": "411 seam flange Y",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7678,7 +7797,7 @@
           12
         ],
         "operation": "join",
-        "name": "408 seam flange X",
+        "name": "412 seam flange X",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7693,78 +7812,6 @@
           6,
           "rt_r-16 mm",
           25
-        ],
-        "axis": "Y",
-        "operation": "cut",
-        "name": "409 P43 fixed housing quadrant horizontal seam screw",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m4_h",
-        "height": 12,
-        "base": [
-          "rt_r-16 mm",
-          6,
-          25
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "410 P43 fixed housing quadrant horizontal seam screw",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 10,
-        "height": 4,
-        "base": [
-          6,
-          "rt_r-7 mm",
-          25
-        ],
-        "axis": "Y",
-        "operation": "cut",
-        "name": "411 P43 fixed housing quadrant flat outer washer seat",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 10,
-        "height": 4,
-        "base": [
-          "rt_r-7 mm",
-          6,
-          25
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "412 P43 fixed housing quadrant flat outer washer seat",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m4_h",
-        "height": 12,
-        "base": [
-          6,
-          "rt_r-16 mm",
-          90
         ],
         "axis": "Y",
         "operation": "cut",
@@ -7782,7 +7829,7 @@
         "base": [
           "rt_r-16 mm",
           6,
-          90
+          25
         ],
         "axis": "X",
         "operation": "cut",
@@ -7800,7 +7847,7 @@
         "base": [
           6,
           "rt_r-7 mm",
-          90
+          25
         ],
         "axis": "Y",
         "operation": "cut",
@@ -7818,11 +7865,83 @@
         "base": [
           "rt_r-7 mm",
           6,
-          90
+          25
         ],
         "axis": "X",
         "operation": "cut",
         "name": "416 P43 fixed housing quadrant flat outer washer seat",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m4_h",
+        "height": 12,
+        "base": [
+          6,
+          "rt_r-16 mm",
+          90
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "name": "417 P43 fixed housing quadrant horizontal seam screw",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m4_h",
+        "height": 12,
+        "base": [
+          "rt_r-16 mm",
+          6,
+          90
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "418 P43 fixed housing quadrant horizontal seam screw",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 4,
+        "base": [
+          6,
+          "rt_r-7 mm",
+          90
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "name": "419 P43 fixed housing quadrant flat outer washer seat",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 4,
+        "base": [
+          "rt_r-7 mm",
+          6,
+          90
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "420 P43 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7840,10 +7959,56 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "417 P43 fixed housing quadrant external gutter drain",
+        "name": "421 P43 fixed housing quadrant external gutter drain",
         "targets": [
           "P43 fixed housing quadrant"
         ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "422 tool drain floor relief 2",
+        "body_name": "tool drain floor relief 2"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 2"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "423 tool drain floor relief 2 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P43 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 2"
+        ],
+        "operation": "cut"
       }
     },
     {
@@ -7858,7 +8023,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "418 P43 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "424 P43 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -7881,7 +8046,7 @@
           0
         ],
         "angle": "180 deg",
-        "name": "419 P43 fixed housing quadrant quadrant placement"
+        "name": "425 P43 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -7896,7 +8061,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "420 P44 fixed housing quadrant",
+        "name": "426 P44 fixed housing quadrant",
         "body_name": "P44 fixed housing quadrant"
       }
     },
@@ -7912,7 +8077,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "421 floor perimeter",
+        "name": "427 floor perimeter",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -7930,7 +8095,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "422 outer drainage gutter",
+        "name": "428 outer drainage gutter",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -7948,7 +8113,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "423 tool gutter lip 3",
+        "name": "429 tool gutter lip 3",
         "body_name": "tool gutter lip 3"
       }
     },
@@ -7964,7 +8129,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "424 tool gutter lip 3 bore",
+        "name": "430 tool gutter lip 3 bore",
         "targets": [
           "tool gutter lip 3"
         ]
@@ -7992,7 +8157,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "425 P44 fixed housing quadrant drive cavity",
+        "name": "431 P44 fixed housing quadrant drive cavity",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8010,7 +8175,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "426 metal core opening",
+        "name": "432 metal core opening",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8028,7 +8193,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "427 quadrant X seam",
+        "name": "433 quadrant X seam",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8046,7 +8211,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "428 quadrant Y seam",
+        "name": "434 quadrant Y seam",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8064,7 +8229,7 @@
           12
         ],
         "operation": "join",
-        "name": "429 seam flange Y",
+        "name": "435 seam flange Y",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8082,7 +8247,7 @@
           12
         ],
         "operation": "join",
-        "name": "430 seam flange X",
+        "name": "436 seam flange X",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8100,7 +8265,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "431 P44 fixed housing quadrant horizontal seam screw",
+        "name": "437 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8118,7 +8283,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "432 P44 fixed housing quadrant horizontal seam screw",
+        "name": "438 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8136,7 +8301,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "433 P44 fixed housing quadrant flat outer washer seat",
+        "name": "439 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8154,7 +8319,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "434 P44 fixed housing quadrant flat outer washer seat",
+        "name": "440 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8172,7 +8337,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "435 P44 fixed housing quadrant horizontal seam screw",
+        "name": "441 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8190,7 +8355,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "436 P44 fixed housing quadrant horizontal seam screw",
+        "name": "442 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8208,7 +8373,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "437 P44 fixed housing quadrant flat outer washer seat",
+        "name": "443 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8226,7 +8391,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "438 P44 fixed housing quadrant flat outer washer seat",
+        "name": "444 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8244,10 +8409,56 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "439 P44 fixed housing quadrant external gutter drain",
+        "name": "445 P44 fixed housing quadrant external gutter drain",
         "targets": [
           "P44 fixed housing quadrant"
         ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "446 tool drain floor relief 3",
+        "body_name": "tool drain floor relief 3"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 3"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "447 tool drain floor relief 3 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P44 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 3"
+        ],
+        "operation": "cut"
       }
     },
     {
@@ -8262,7 +8473,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "440 P44 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "448 P44 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -8285,7 +8496,7 @@
           0
         ],
         "angle": "270 deg",
-        "name": "441 P44 fixed housing quadrant quadrant placement"
+        "name": "449 P44 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -8300,7 +8511,7 @@
           12
         ],
         "operation": "new",
-        "name": "442 P45 seam backing strip 1",
+        "name": "450 P45 seam backing strip 1",
         "body_name": "P45 seam backing strip 1"
       }
     },
@@ -8316,7 +8527,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "443 P45 seam backing strip 1 clearance hole",
+        "name": "451 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -8334,7 +8545,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "444 P45 seam backing strip 1 clearance hole",
+        "name": "452 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -8352,7 +8563,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "445 P45 seam backing strip 1 clearance hole",
+        "name": "453 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -8370,7 +8581,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "446 P45 seam backing strip 1 clearance hole",
+        "name": "454 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -8393,7 +8604,7 @@
           0
         ],
         "angle": "0 deg",
-        "name": "447 P45 seam backing strip 1 quadrant placement"
+        "name": "455 P45 seam backing strip 1 quadrant placement"
       }
     },
     {
@@ -8408,7 +8619,7 @@
           12
         ],
         "operation": "new",
-        "name": "448 P45 seam backing strip 2",
+        "name": "456 P45 seam backing strip 2",
         "body_name": "P45 seam backing strip 2"
       }
     },
@@ -8424,7 +8635,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "449 P45 seam backing strip 2 clearance hole",
+        "name": "457 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -8442,7 +8653,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "450 P45 seam backing strip 2 clearance hole",
+        "name": "458 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -8460,7 +8671,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "451 P45 seam backing strip 2 clearance hole",
+        "name": "459 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -8478,7 +8689,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "452 P45 seam backing strip 2 clearance hole",
+        "name": "460 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -8501,7 +8712,7 @@
           0
         ],
         "angle": "90 deg",
-        "name": "453 P45 seam backing strip 2 quadrant placement"
+        "name": "461 P45 seam backing strip 2 quadrant placement"
       }
     },
     {
@@ -8516,7 +8727,7 @@
           12
         ],
         "operation": "new",
-        "name": "454 P45 seam backing strip 3",
+        "name": "462 P45 seam backing strip 3",
         "body_name": "P45 seam backing strip 3"
       }
     },
@@ -8532,7 +8743,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "455 P45 seam backing strip 3 clearance hole",
+        "name": "463 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -8550,7 +8761,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "456 P45 seam backing strip 3 clearance hole",
+        "name": "464 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -8568,7 +8779,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "457 P45 seam backing strip 3 clearance hole",
+        "name": "465 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -8586,7 +8797,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "458 P45 seam backing strip 3 clearance hole",
+        "name": "466 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -8609,7 +8820,7 @@
           0
         ],
         "angle": "180 deg",
-        "name": "459 P45 seam backing strip 3 quadrant placement"
+        "name": "467 P45 seam backing strip 3 quadrant placement"
       }
     },
     {
@@ -8624,7 +8835,7 @@
           12
         ],
         "operation": "new",
-        "name": "460 P45 seam backing strip 4",
+        "name": "468 P45 seam backing strip 4",
         "body_name": "P45 seam backing strip 4"
       }
     },
@@ -8640,7 +8851,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "461 P45 seam backing strip 4 clearance hole",
+        "name": "469 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -8658,7 +8869,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "462 P45 seam backing strip 4 clearance hole",
+        "name": "470 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -8676,7 +8887,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "463 P45 seam backing strip 4 clearance hole",
+        "name": "471 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -8694,7 +8905,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "464 P45 seam backing strip 4 clearance hole",
+        "name": "472 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -8717,7 +8928,7 @@
           0
         ],
         "angle": "270 deg",
-        "name": "465 P45 seam backing strip 4 quadrant placement"
+        "name": "473 P45 seam backing strip 4 quadrant placement"
       }
     },
     {
@@ -8732,7 +8943,7 @@
           12
         ],
         "operation": "new",
-        "name": "466 P46 motor service hood",
+        "name": "474 P46 motor service hood",
         "body_name": "P46 motor service hood"
       }
     },
@@ -8748,7 +8959,7 @@
           11
         ],
         "operation": "cut",
-        "name": "467 motor cavity",
+        "name": "475 motor cavity",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8766,7 +8977,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "468 P46 motor service hood curved housing mating edge",
+        "name": "476 P46 motor service hood curved housing mating edge",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8776,7 +8987,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          171,
+          21,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "477 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           171,
           21,
@@ -8784,7 +9013,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "469 hood screw column",
+        "name": "478 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8802,7 +9031,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "470 P46 motor service hood clearance hole",
+        "name": "479 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8812,7 +9041,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          171,
+          91,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "480 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           171,
           91,
@@ -8820,7 +9067,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "471 hood screw column",
+        "name": "481 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8838,7 +9085,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "472 P46 motor service hood clearance hole",
+        "name": "482 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8848,7 +9095,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          225,
+          21,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "483 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           225,
           21,
@@ -8856,7 +9121,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "473 hood screw column",
+        "name": "484 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8874,7 +9139,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "474 P46 motor service hood clearance hole",
+        "name": "485 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8884,7 +9149,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          225,
+          91,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "486 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           225,
           91,
@@ -8892,7 +9175,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "475 hood screw column",
+        "name": "487 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8910,7 +9193,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "476 P46 motor service hood clearance hole",
+        "name": "488 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -8928,7 +9211,7 @@
           2.5
         ],
         "operation": "new",
-        "name": "477 B20 core static gasket",
+        "name": "489 B20 core static gasket",
         "body_name": "B20 core static gasket"
       }
     },
@@ -8944,7 +9227,7 @@
           2
         ],
         "operation": "cut",
-        "name": "478 gasket opening",
+        "name": "490 gasket opening",
         "targets": [
           "B20 core static gasket"
         ]
@@ -8968,7 +9251,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "479 motor hood gasket hard stop",
+        "name": "491 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -8986,7 +9269,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "480 tool motor support riser M4 hard stop thread",
+        "name": "492 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -9004,7 +9287,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "481 motor hood gasket hard stop",
+        "name": "493 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -9022,7 +9305,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "482 tool motor support riser M4 hard stop thread",
+        "name": "494 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -9040,7 +9323,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "483 motor hood gasket hard stop",
+        "name": "495 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -9058,7 +9341,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "484 tool motor support riser M4 hard stop thread",
+        "name": "496 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -9076,7 +9359,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "485 motor hood gasket hard stop",
+        "name": "497 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -9094,7 +9377,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "486 tool motor support riser M4 hard stop thread",
+        "name": "498 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -9132,7 +9415,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "487 P46 motor service hood motor cable gland provision",
+        "name": "499 P46 motor service hood motor cable gland provision",
         "targets": [
           "P46 motor service hood"
         ]
@@ -9150,7 +9433,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "488 P46 motor service hood motor cable gland provision",
+        "name": "500 P46 motor service hood motor cable gland provision",
         "targets": [
           "P46 motor service hood"
         ]
@@ -9168,7 +9451,7 @@
           12
         ],
         "operation": "new",
-        "name": "489 B25 motor hood gasket",
+        "name": "501 B25 motor hood gasket",
         "body_name": "B25 motor hood gasket"
       }
     },
@@ -9184,7 +9467,7 @@
           11.5
         ],
         "operation": "cut",
-        "name": "490 motor seal centre",
+        "name": "502 motor seal centre",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -9202,7 +9485,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "491 B25 motor hood gasket curved seal edge",
+        "name": "503 B25 motor hood gasket curved seal edge",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -9220,7 +9503,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "492 B25 motor hood gasket sealed hood screw clearance",
+        "name": "504 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -9238,7 +9521,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "493 B25 motor hood gasket sealed hood screw clearance",
+        "name": "505 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -9256,7 +9539,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "494 B25 motor hood gasket sealed hood screw clearance",
+        "name": "506 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -9274,7 +9557,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "495 B25 motor hood gasket sealed hood screw clearance",
+        "name": "507 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -9322,7 +9605,7 @@
           4
         ],
         "operation": "new",
-        "name": "496 P50 electronics service box",
+        "name": "508 P50 electronics service box",
         "body_name": "P50 electronics service box"
       }
     },
@@ -9338,7 +9621,7 @@
           74
         ],
         "operation": "cut",
-        "name": "497 service opening",
+        "name": "509 service opening",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9356,7 +9639,7 @@
           8
         ],
         "operation": "cut",
-        "name": "498 electronics chamber",
+        "name": "510 electronics chamber",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9374,7 +9657,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "499 lid insert boss",
+        "name": "511 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9392,7 +9675,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "500 lid insert boss",
+        "name": "512 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9410,7 +9693,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "501 lid insert boss",
+        "name": "513 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9428,7 +9711,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "502 lid insert boss",
+        "name": "514 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9446,7 +9729,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "503 lid insert boss",
+        "name": "515 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9464,7 +9747,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "504 lid insert boss",
+        "name": "516 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9482,7 +9765,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "505 lid insert boss",
+        "name": "517 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9500,7 +9783,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "506 lid insert boss",
+        "name": "518 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9518,7 +9801,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "507 lid insert boss",
+        "name": "519 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9536,7 +9819,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "508 lid insert boss",
+        "name": "520 lid insert boss",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9545,7 +9828,7 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 3,
+        "length": 3.5,
         "width": 95,
         "height": 2,
         "corner": [
@@ -9554,7 +9837,7 @@
           78.5
         ],
         "operation": "cut",
-        "name": "509 lid gasket long groove",
+        "name": "521 lid gasket long groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9563,16 +9846,16 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 3,
+        "length": 3.5,
         "width": 95,
         "height": 2,
         "corner": [
-          72.5,
+          72,
           -271.5,
           78.5
         ],
         "operation": "cut",
-        "name": "510 lid gasket long groove",
+        "name": "522 lid gasket long groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9581,16 +9864,16 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 145,
-        "width": 3,
+        "length": 144,
+        "width": 3.5,
         "height": 2,
         "corner": [
-          -72.5,
+          -72,
           -271.5,
           78.5
         ],
         "operation": "cut",
-        "name": "511 lid gasket end groove",
+        "name": "523 lid gasket end groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9599,16 +9882,16 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 145,
-        "width": 3,
+        "length": 144,
+        "width": 3.5,
         "height": 2,
         "corner": [
-          -72.5,
-          -179.5,
+          -72,
+          -180,
           78.5
         ],
         "operation": "cut",
-        "name": "512 lid gasket end groove",
+        "name": "524 lid gasket end groove",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9626,7 +9909,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "513 P50 electronics service box M3 insert pilot",
+        "name": "525 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9644,7 +9927,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "514 P50 electronics service box M3 insert pilot",
+        "name": "526 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9662,7 +9945,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "515 P50 electronics service box M3 insert pilot",
+        "name": "527 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9680,7 +9963,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "516 P50 electronics service box M3 insert pilot",
+        "name": "528 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9698,7 +9981,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "517 P50 electronics service box M3 insert pilot",
+        "name": "529 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9716,7 +9999,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "518 P50 electronics service box M3 insert pilot",
+        "name": "530 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9734,7 +10017,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "519 P50 electronics service box M3 insert pilot",
+        "name": "531 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9752,7 +10035,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "520 P50 electronics service box M3 insert pilot",
+        "name": "532 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9770,7 +10053,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "521 P50 electronics service box M3 insert pilot",
+        "name": "533 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9788,7 +10071,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "522 P50 electronics service box M3 insert pilot",
+        "name": "534 P50 electronics service box M3 insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9806,7 +10089,7 @@
           3
         ],
         "operation": "cut",
-        "name": "523 heat spreader opening",
+        "name": "535 heat spreader opening",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9824,7 +10107,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "524 P50 electronics service box heat spreader clamp",
+        "name": "536 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9842,7 +10125,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "525 P50 electronics service box heat spreader clamp",
+        "name": "537 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9860,7 +10143,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "526 P50 electronics service box heat spreader clamp",
+        "name": "538 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9878,7 +10161,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "527 P50 electronics service box heat spreader clamp",
+        "name": "539 P50 electronics service box heat spreader clamp",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9896,7 +10179,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "528 tray post",
+        "name": "540 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9914,7 +10197,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "529 P50 electronics service box tray insert pilot",
+        "name": "541 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9932,7 +10215,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "530 tray post",
+        "name": "542 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9950,7 +10233,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "531 P50 electronics service box tray insert pilot",
+        "name": "543 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9968,7 +10251,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "532 tray post",
+        "name": "544 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -9986,7 +10269,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "533 P50 electronics service box tray insert pilot",
+        "name": "545 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -10004,7 +10287,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "534 tray post",
+        "name": "546 tray post",
         "targets": [
           "P50 electronics service box"
         ]
@@ -10022,7 +10305,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "535 P50 electronics service box tray insert pilot",
+        "name": "547 P50 electronics service box tray insert pilot",
         "targets": [
           "P50 electronics service box"
         ]
@@ -10040,7 +10323,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "536 P50 electronics service box M16 gland provision",
+        "name": "548 P50 electronics service box M16 gland provision",
         "targets": [
           "P50 electronics service box"
         ]
@@ -10058,7 +10341,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "537 P50 electronics service box M16 gland provision",
+        "name": "549 P50 electronics service box M16 gland provision",
         "targets": [
           "P50 electronics service box"
         ]
@@ -10076,7 +10359,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "538 P50 electronics service box M16 gland provision",
+        "name": "550 P50 electronics service box M16 gland provision",
         "targets": [
           "P50 electronics service box"
         ]
@@ -10094,10 +10377,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "539 P50 electronics service box bench fixing",
+        "name": "551 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "552 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "553 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -275.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "554 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -271,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "555 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "555 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "556 P50 electronics service box captive nut"
       }
     },
     {
@@ -10112,10 +10521,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "540 P50 electronics service box bench fixing",
+        "name": "557 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "558 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "559 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -181.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "560 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -177,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "561 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "561 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "562 P50 electronics service box captive nut"
       }
     },
     {
@@ -10130,10 +10665,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "541 P50 electronics service box bench fixing",
+        "name": "563 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "564 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -271,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "565 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -275.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "566 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -271,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "567 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "567 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "568 P50 electronics service box captive nut"
       }
     },
     {
@@ -10148,10 +10809,136 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "542 P50 electronics service box bench fixing",
+        "name": "569 P50 electronics service box bench fixing from below",
         "targets": [
           "P50 electronics service box"
         ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "570 bench anchor captive nut boss",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -177,
+          8
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "571 P50 electronics service box bench anchor seal and washer recess",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -181.7,
+          8
+        ],
+        "operation": "cut",
+        "name": "572 inward seal and washer loading slot",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -177,
+            10
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "573 P50 electronics service box nut pocket profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*-0.000000000000",
+            "(rt_anchor_nut_af)/sqrt(3)*-1.000000000000"
+          ],
+          [
+            "(rt_anchor_nut_af)/sqrt(3)*0.866025403784",
+            "(rt_anchor_nut_af)/sqrt(3)*-0.500000000000"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "573 P50 electronics service box nut pocket profile",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ],
+        "name": "574 P50 electronics service box captive nut"
       }
     },
     {
@@ -10166,7 +10953,7 @@
           8.75
         ],
         "operation": "new",
-        "name": "543 M30 driver heat spreader",
+        "name": "575 M30 driver heat spreader",
         "body_name": "M30 driver heat spreader"
       }
     },
@@ -10182,7 +10969,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "544 M30 driver heat spreader clearance hole",
+        "name": "576 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -10204,7 +10991,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "545 flush M3 heat spreader clamp"
+        "name": "577 flush M3 heat spreader clamp"
       }
     },
     {
@@ -10219,7 +11006,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "546 M30 driver heat spreader clearance hole",
+        "name": "578 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -10241,7 +11028,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "547 flush M3 heat spreader clamp"
+        "name": "579 flush M3 heat spreader clamp"
       }
     },
     {
@@ -10256,7 +11043,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "548 M30 driver heat spreader clearance hole",
+        "name": "580 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -10278,7 +11065,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "549 flush M3 heat spreader clamp"
+        "name": "581 flush M3 heat spreader clamp"
       }
     },
     {
@@ -10293,7 +11080,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "550 M30 driver heat spreader clearance hole",
+        "name": "582 M30 driver heat spreader clearance hole",
         "targets": [
           "M30 driver heat spreader"
         ]
@@ -10315,7 +11102,7 @@
         "targets": [
           "M30 driver heat spreader"
         ],
-        "name": "551 flush M3 heat spreader clamp"
+        "name": "583 flush M3 heat spreader clamp"
       }
     },
     {
@@ -10330,7 +11117,7 @@
           8
         ],
         "operation": "new",
-        "name": "552 B21 heat spreader gasket",
+        "name": "584 B21 heat spreader gasket",
         "body_name": "B21 heat spreader gasket"
       }
     },
@@ -10346,7 +11133,7 @@
           7.5
         ],
         "operation": "cut",
-        "name": "553 seal centre",
+        "name": "585 seal centre",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -10364,7 +11151,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "554 B21 heat spreader gasket compression shim corner relief",
+        "name": "586 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -10382,7 +11169,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "555 B21 heat spreader gasket compression shim corner relief",
+        "name": "587 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -10400,7 +11187,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "556 B21 heat spreader gasket compression shim corner relief",
+        "name": "588 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -10418,7 +11205,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "557 B21 heat spreader gasket compression shim corner relief",
+        "name": "589 B21 heat spreader gasket compression shim corner relief",
         "targets": [
           "B21 heat spreader gasket"
         ]
@@ -10436,7 +11223,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "558 M31 heat-spreader compression stop",
+        "name": "590 M31 heat-spreader compression stop",
         "body_name": "M31 heat-spreader compression stop"
       }
     },
@@ -10452,7 +11239,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "559 M31 heat-spreader compression stop bore",
+        "name": "591 M31 heat-spreader compression stop bore",
         "targets": [
           "M31 heat-spreader compression stop"
         ]
@@ -10470,7 +11257,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "560 M32 heat-spreader compression stop",
+        "name": "592 M32 heat-spreader compression stop",
         "body_name": "M32 heat-spreader compression stop"
       }
     },
@@ -10486,7 +11273,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "561 M32 heat-spreader compression stop bore",
+        "name": "593 M32 heat-spreader compression stop bore",
         "targets": [
           "M32 heat-spreader compression stop"
         ]
@@ -10504,7 +11291,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "562 M33 heat-spreader compression stop",
+        "name": "594 M33 heat-spreader compression stop",
         "body_name": "M33 heat-spreader compression stop"
       }
     },
@@ -10520,7 +11307,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "563 M33 heat-spreader compression stop bore",
+        "name": "595 M33 heat-spreader compression stop bore",
         "targets": [
           "M33 heat-spreader compression stop"
         ]
@@ -10538,7 +11325,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "564 M34 heat-spreader compression stop",
+        "name": "596 M34 heat-spreader compression stop",
         "body_name": "M34 heat-spreader compression stop"
       }
     },
@@ -10554,7 +11341,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "565 M34 heat-spreader compression stop bore",
+        "name": "597 M34 heat-spreader compression stop bore",
         "targets": [
           "M34 heat-spreader compression stop"
         ]
@@ -10572,7 +11359,7 @@
           12
         ],
         "operation": "new",
-        "name": "566 B22 driver packaging envelope",
+        "name": "598 B22 driver packaging envelope",
         "body_name": "B22 driver packaging envelope"
       }
     },
@@ -10601,7 +11388,7 @@
           55
         ],
         "operation": "new",
-        "name": "567 P51 removable controller tray",
+        "name": "599 P51 removable controller tray",
         "body_name": "P51 removable controller tray"
       }
     },
@@ -10617,7 +11404,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "568 P51 removable controller tray clearance hole",
+        "name": "600 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10635,7 +11422,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "569 P51 removable controller tray clearance hole",
+        "name": "601 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10653,7 +11440,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "570 P51 removable controller tray clearance hole",
+        "name": "602 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10671,7 +11458,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "571 P51 removable controller tray clearance hole",
+        "name": "603 P51 removable controller tray clearance hole",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10689,7 +11476,7 @@
           54
         ],
         "operation": "cut",
-        "name": "572 adjustment slot web",
+        "name": "604 adjustment slot web",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10707,7 +11494,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "573 P51 removable controller tray adjustment slot end",
+        "name": "605 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10725,7 +11512,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "574 P51 removable controller tray adjustment slot end",
+        "name": "606 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10743,7 +11530,7 @@
           54
         ],
         "operation": "cut",
-        "name": "575 adjustment slot web",
+        "name": "607 adjustment slot web",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10761,7 +11548,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "576 P51 removable controller tray adjustment slot end",
+        "name": "608 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10779,7 +11566,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "577 P51 removable controller tray adjustment slot end",
+        "name": "609 P51 removable controller tray adjustment slot end",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10797,7 +11584,7 @@
           54
         ],
         "operation": "cut",
-        "name": "578 cable passage",
+        "name": "610 cable passage",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10815,7 +11602,7 @@
           54
         ],
         "operation": "cut",
-        "name": "579 cable passage",
+        "name": "611 cable passage",
         "targets": [
           "P51 removable controller tray"
         ]
@@ -10833,7 +11620,7 @@
           58
         ],
         "operation": "new",
-        "name": "580 B23 controller packaging envelope",
+        "name": "612 B23 controller packaging envelope",
         "body_name": "B23 controller packaging envelope"
       }
     },
@@ -10862,7 +11649,7 @@
           80
         ],
         "operation": "new",
-        "name": "581 P52 electronics lid",
+        "name": "613 P52 electronics lid",
         "body_name": "P52 electronics lid"
       }
     },
@@ -10878,7 +11665,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "582 P52 electronics lid clearance hole",
+        "name": "614 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -10896,7 +11683,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "583 P52 electronics lid clearance hole",
+        "name": "615 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -10914,7 +11701,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "584 P52 electronics lid clearance hole",
+        "name": "616 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -10932,7 +11719,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "585 P52 electronics lid clearance hole",
+        "name": "617 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -10950,7 +11737,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "586 P52 electronics lid clearance hole",
+        "name": "618 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -10968,7 +11755,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "587 P52 electronics lid clearance hole",
+        "name": "619 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -10986,7 +11773,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "588 P52 electronics lid clearance hole",
+        "name": "620 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -11004,7 +11791,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "589 P52 electronics lid clearance hole",
+        "name": "621 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -11022,7 +11809,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "590 P52 electronics lid clearance hole",
+        "name": "622 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -11040,7 +11827,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "591 P52 electronics lid clearance hole",
+        "name": "623 P52 electronics lid clearance hole",
         "targets": [
           "P52 electronics lid"
         ]
@@ -11049,32 +11836,32 @@
     {
       "command": "solid.box",
       "params": {
-        "length": 151,
-        "width": 95,
+        "length": "147.5 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
+        "width": "91.5 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
         "height": 1.5,
         "corner": [
-          -75.5,
-          -271.5,
+          "-73.75 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
+          "-269.75 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
           78.5
         ],
         "operation": "new",
-        "name": "592 B24 lid gasket",
+        "name": "624 B24 lid gasket",
         "body_name": "B24 lid gasket"
       }
     },
     {
       "command": "solid.box",
       "params": {
-        "length": 145,
-        "width": 89,
+        "length": "147.5 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
+        "width": "91.5 mm-(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)",
         "height": 3,
         "corner": [
-          -72.5,
-          -268.5,
+          "-73.75 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
+          "-269.75 mm+(rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm)/2",
           78
         ],
         "operation": "cut",
-        "name": "593 gasket centre",
+        "name": "625 gasket centre",
         "targets": [
           "B24 lid gasket"
         ]
@@ -11098,7 +11885,7 @@
           5.25
         ],
         "operation": "new",
-        "name": "594 B26 external heatsink reference",
+        "name": "626 B26 external heatsink reference",
         "body_name": "B26 external heatsink reference"
       }
     },
@@ -11114,7 +11901,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "595 external heatsink fin",
+        "name": "627 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11132,7 +11919,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "596 external heatsink fin",
+        "name": "628 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11150,7 +11937,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "597 external heatsink fin",
+        "name": "629 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11168,7 +11955,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "598 external heatsink fin",
+        "name": "630 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11186,7 +11973,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "599 external heatsink fin",
+        "name": "631 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11204,7 +11991,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "600 external heatsink fin",
+        "name": "632 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11222,7 +12009,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "601 external heatsink fin",
+        "name": "633 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11240,7 +12027,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "602 external heatsink fin",
+        "name": "634 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11258,7 +12045,7 @@
           -9.75
         ],
         "operation": "join",
-        "name": "603 external heatsink fin",
+        "name": "635 external heatsink fin",
         "targets": [
           "B26 external heatsink reference"
         ]
@@ -11276,7 +12063,7 @@
           8.25
         ],
         "operation": "new",
-        "name": "604 B27 thermal interface pad",
+        "name": "636 B27 thermal interface pad",
         "body_name": "B27 thermal interface pad"
       }
     },
@@ -11305,7 +12092,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "605 P53 electronics foot 1",
+        "name": "637 P53 electronics foot 1",
         "body_name": "P53 electronics foot 1"
       }
     },
@@ -11321,7 +12108,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "606 P53 electronics foot 1 bore",
+        "name": "638 P53 electronics foot 1 bore",
         "targets": [
           "P53 electronics foot 1"
         ]
@@ -11339,7 +12126,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "607 P53 electronics foot 2",
+        "name": "639 P53 electronics foot 2",
         "body_name": "P53 electronics foot 2"
       }
     },
@@ -11355,7 +12142,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "608 P53 electronics foot 2 bore",
+        "name": "640 P53 electronics foot 2 bore",
         "targets": [
           "P53 electronics foot 2"
         ]
@@ -11373,7 +12160,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "609 P53 electronics foot 3",
+        "name": "641 P53 electronics foot 3",
         "body_name": "P53 electronics foot 3"
       }
     },
@@ -11389,7 +12176,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "610 P53 electronics foot 3 bore",
+        "name": "642 P53 electronics foot 3 bore",
         "targets": [
           "P53 electronics foot 3"
         ]
@@ -11407,7 +12194,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "611 P53 electronics foot 4",
+        "name": "643 P53 electronics foot 4",
         "body_name": "P53 electronics foot 4"
       }
     },
@@ -11423,7 +12210,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "612 P53 electronics foot 4 bore",
+        "name": "644 P53 electronics foot 4 bore",
         "targets": [
           "P53 electronics foot 4"
         ]
@@ -11490,7 +12277,7 @@
           0
         ],
         "operation": "new",
-        "name": "613 M40 stepped motor support",
+        "name": "645 M40 stepped motor support",
         "body_name": "M40 stepped motor support"
       }
     },
@@ -11516,7 +12303,7 @@
           2.5
         ],
         "operation": "cut",
-        "name": "614 sole core gasket clearance X",
+        "name": "646 sole core gasket clearance X",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11534,7 +12321,7 @@
           2.5
         ],
         "operation": "cut",
-        "name": "615 sole core gasket clearance Y",
+        "name": "647 sole core gasket clearance Y",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11552,7 +12339,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "616 M40 stepped motor support sole bench spacer relief",
+        "name": "648 M40 stepped motor support sole bench spacer relief",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11570,7 +12357,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "617 M40 stepped motor support M5 core coupling clearance",
+        "name": "649 M40 stepped motor support M5 core coupling clearance",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11592,7 +12379,7 @@
         "targets": [
           "M40 stepped motor support"
         ],
-        "name": "618 underside M5 flush countersink"
+        "name": "650 underside M5 flush countersink"
       }
     },
     {
@@ -11607,7 +12394,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "619 M40 stepped motor support M5 core coupling clearance",
+        "name": "651 M40 stepped motor support M5 core coupling clearance",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11629,7 +12416,7 @@
         "targets": [
           "M40 stepped motor support"
         ],
-        "name": "620 underside M5 flush countersink"
+        "name": "652 underside M5 flush countersink"
       }
     },
     {
@@ -11644,7 +12431,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "621 M40 stepped motor support M6 bench anchor",
+        "name": "653 M40 stepped motor support M6 bench anchor",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11662,7 +12449,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "622 M40 stepped motor support M6 bench anchor",
+        "name": "654 M40 stepped motor support M6 bench anchor",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11680,7 +12467,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "623 M40 stepped motor support M5 motor bracket through thread",
+        "name": "655 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11698,7 +12485,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "624 M40 stepped motor support M5 motor bracket through thread",
+        "name": "656 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11716,7 +12503,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "625 M40 stepped motor support M5 motor bracket through thread",
+        "name": "657 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11734,7 +12521,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "626 M40 stepped motor support M5 motor bracket through thread",
+        "name": "658 M40 stepped motor support M5 motor bracket through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11752,7 +12539,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "627 M40 stepped motor support M4 hood through thread",
+        "name": "659 M40 stepped motor support M4 hood through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11770,7 +12557,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "628 M40 stepped motor support M4 hood through thread",
+        "name": "660 M40 stepped motor support M4 hood through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11788,7 +12575,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "629 M40 stepped motor support M4 hood through thread",
+        "name": "661 M40 stepped motor support M4 hood through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11806,7 +12593,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "630 M40 stepped motor support M4 hood through thread",
+        "name": "662 M40 stepped motor support M4 hood through thread",
         "targets": [
           "M40 stepped motor support"
         ]
@@ -11824,7 +12611,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "631 B41 motor anchor washer",
+        "name": "663 B41 motor anchor washer",
         "body_name": "B41 motor anchor washer"
       }
     },
@@ -11840,7 +12627,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "632 B41 motor anchor washer bore",
+        "name": "664 B41 motor anchor washer bore",
         "targets": [
           "B41 motor anchor washer"
         ]
@@ -11858,7 +12645,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "633 B42 motor anchor washer",
+        "name": "665 B42 motor anchor washer",
         "body_name": "B42 motor anchor washer"
       }
     },
@@ -11874,7 +12661,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "634 B42 motor anchor washer bore",
+        "name": "666 B42 motor anchor washer bore",
         "targets": [
           "B42 motor anchor washer"
         ]
@@ -11905,14 +12692,14 @@
           144
         ],
         "operation": "new",
-        "name": "635 M50 SO100 arm mounting plate",
+        "name": "667 M50 SO100 arm mounting plate",
         "body_name": "M50 SO100 arm mounting plate"
       }
     },
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 4.5,
+        "diameter": 3.3,
         "height": 10,
         "base": [
           27.776497308103686,
@@ -11921,7 +12708,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "636 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "668 M50 SO100 arm mounting plate SO100 top-down M4x0.7 tap drill; finish through thread",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -11930,7 +12717,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 4.5,
+        "diameter": 3.3,
         "height": 10,
         "base": [
           31.75,
@@ -11939,7 +12726,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "637 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "669 M50 SO100 arm mounting plate SO100 top-down M4x0.7 tap drill; finish through thread",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -11948,7 +12735,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 4.5,
+        "diameter": 3.3,
         "height": 10,
         "base": [
           -27.77649730810371,
@@ -11957,7 +12744,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "638 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "670 M50 SO100 arm mounting plate SO100 top-down M4x0.7 tap drill; finish through thread",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -11966,7 +12753,7 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 4.5,
+        "diameter": 3.3,
         "height": 10,
         "base": [
           -31.75,
@@ -11975,7 +12762,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "639 M50 SO100 arm mounting plate SO100 existing mounting passage M4 clearance",
+        "name": "671 M50 SO100 arm mounting plate SO100 top-down M4x0.7 tap drill; finish through thread",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -11993,7 +12780,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "640 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "672 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12011,7 +12798,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "641 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "673 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12029,7 +12816,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "642 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "674 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12047,7 +12834,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "643 M50 SO100 arm mounting plate M6 bridge flange attachment",
+        "name": "675 M50 SO100 arm mounting plate M6 bridge flange attachment",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12065,7 +12852,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "644 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "676 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12083,7 +12870,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "645 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "677 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12101,7 +12888,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "646 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "678 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12119,7 +12906,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "647 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "679 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12137,7 +12924,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "648 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "680 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12155,7 +12942,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "649 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "681 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12173,7 +12960,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "650 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "682 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12191,7 +12978,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "651 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "683 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12209,7 +12996,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "652 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "684 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12227,7 +13014,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "653 M50 SO100 arm mounting plate lid screw tool access",
+        "name": "685 M50 SO100 arm mounting plate lid screw tool access",
         "targets": [
           "M50 SO100 arm mounting plate"
         ]
@@ -12245,7 +13032,7 @@
           0
         ],
         "operation": "new",
-        "name": "654 M51 steel side channel left",
+        "name": "686 M51 steel side channel left",
         "body_name": "M51 steel side channel left"
       }
     },
@@ -12261,7 +13048,7 @@
           0
         ],
         "operation": "join",
-        "name": "655 stand bottom flange",
+        "name": "687 stand bottom flange",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -12279,7 +13066,7 @@
           140
         ],
         "operation": "join",
-        "name": "656 stand top flange",
+        "name": "688 stand top flange",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -12297,7 +13084,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "657 M51 steel side channel left bench through bolt",
+        "name": "689 M51 steel side channel left bench through bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -12315,7 +13102,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "658 M51 steel side channel left top plate bolt",
+        "name": "690 M51 steel side channel left top plate bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -12333,7 +13120,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "659 M51 steel side channel left bench through bolt",
+        "name": "691 M51 steel side channel left bench through bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -12351,7 +13138,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "660 M51 steel side channel left top plate bolt",
+        "name": "692 M51 steel side channel left top plate bolt",
         "targets": [
           "M51 steel side channel left"
         ]
@@ -12369,7 +13156,7 @@
           0
         ],
         "operation": "new",
-        "name": "661 M51 steel side channel right",
+        "name": "693 M51 steel side channel right",
         "body_name": "M51 steel side channel right"
       }
     },
@@ -12385,7 +13172,7 @@
           0
         ],
         "operation": "join",
-        "name": "662 stand bottom flange",
+        "name": "694 stand bottom flange",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -12403,7 +13190,7 @@
           140
         ],
         "operation": "join",
-        "name": "663 stand top flange",
+        "name": "695 stand top flange",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -12421,7 +13208,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "664 M51 steel side channel right bench through bolt",
+        "name": "696 M51 steel side channel right bench through bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -12439,7 +13226,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "665 M51 steel side channel right top plate bolt",
+        "name": "697 M51 steel side channel right top plate bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -12457,7 +13244,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "666 M51 steel side channel right bench through bolt",
+        "name": "698 M51 steel side channel right bench through bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -12475,7 +13262,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "667 M51 steel side channel right top plate bolt",
+        "name": "699 M51 steel side channel right top plate bolt",
         "targets": [
           "M51 steel side channel right"
         ]
@@ -12493,7 +13280,7 @@
           4
         ],
         "operation": "new",
-        "name": "668 M52 steel front X brace",
+        "name": "700 M52 steel front X brace",
         "body_name": "M52 steel front X brace"
       }
     },
@@ -12517,7 +13304,7 @@
             1
           ]
         },
-        "name": "669 stand brace lightening window"
+        "name": "701 stand brace lightening window"
       }
     },
     {
@@ -12559,13 +13346,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "669 stand brace lightening window",
+        "sketch": "701 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "670 brace window cut"
+        "name": "702 brace window cut"
       }
     },
     {
@@ -12588,7 +13375,7 @@
             1
           ]
         },
-        "name": "671 stand brace lightening window"
+        "name": "703 stand brace lightening window"
       }
     },
     {
@@ -12630,13 +13417,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "671 stand brace lightening window",
+        "sketch": "703 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "672 brace window cut"
+        "name": "704 brace window cut"
       }
     },
     {
@@ -12659,7 +13446,7 @@
             1
           ]
         },
-        "name": "673 stand brace lightening window"
+        "name": "705 stand brace lightening window"
       }
     },
     {
@@ -12701,13 +13488,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "673 stand brace lightening window",
+        "sketch": "705 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "674 brace window cut"
+        "name": "706 brace window cut"
       }
     },
     {
@@ -12730,7 +13517,7 @@
             1
           ]
         },
-        "name": "675 stand brace lightening window"
+        "name": "707 stand brace lightening window"
       }
     },
     {
@@ -12772,13 +13559,13 @@
     {
       "command": "solid.extrude",
       "params": {
-        "sketch": "675 stand brace lightening window",
+        "sketch": "707 stand brace lightening window",
         "distance": -6,
         "operation": "cut",
         "targets": [
           "M52 steel front X brace"
         ],
-        "name": "676 brace window cut"
+        "name": "708 brace window cut"
       }
     },
     {
@@ -12793,7 +13580,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "677 B51 bridge anchor washer",
+        "name": "709 B51 bridge anchor washer",
         "body_name": "B51 bridge anchor washer"
       }
     },
@@ -12809,7 +13596,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "678 B51 bridge anchor washer bore",
+        "name": "710 B51 bridge anchor washer bore",
         "targets": [
           "B51 bridge anchor washer"
         ]
@@ -12827,7 +13614,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "679 B52 bridge anchor washer",
+        "name": "711 B52 bridge anchor washer",
         "body_name": "B52 bridge anchor washer"
       }
     },
@@ -12843,7 +13630,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "680 B52 bridge anchor washer bore",
+        "name": "712 B52 bridge anchor washer bore",
         "targets": [
           "B52 bridge anchor washer"
         ]
@@ -12861,7 +13648,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "681 B53 bridge anchor washer",
+        "name": "713 B53 bridge anchor washer",
         "body_name": "B53 bridge anchor washer"
       }
     },
@@ -12877,7 +13664,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "682 B53 bridge anchor washer bore",
+        "name": "714 B53 bridge anchor washer bore",
         "targets": [
           "B53 bridge anchor washer"
         ]
@@ -12895,7 +13682,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "683 B54 bridge anchor washer",
+        "name": "715 B54 bridge anchor washer",
         "body_name": "B54 bridge anchor washer"
       }
     },
@@ -12911,7 +13698,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "684 B54 bridge anchor washer bore",
+        "name": "716 B54 bridge anchor washer bore",
         "targets": [
           "B54 bridge anchor washer"
         ]

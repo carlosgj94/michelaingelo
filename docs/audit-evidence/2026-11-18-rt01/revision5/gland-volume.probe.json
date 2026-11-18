@@ -1,0 +1,55 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 151,
+        "width": 95,
+        "height": 1.5,
+        "corner": [
+          -75.5,
+          -271.5,
+          102.5
+        ],
+        "operation": "new",
+        "body_name": "REVIEW closed lid gland volume"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 144,
+        "width": 88,
+        "height": 3,
+        "corner": [
+          -72,
+          -268,
+          102
+        ],
+        "operation": "cut",
+        "targets": [
+          "REVIEW closed lid gland volume"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "REVIEW closed lid gland volume"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "P52 electronics lid"
+        ],
+        "nearest": 2
+      }
+    }
+  ]
+}

@@ -83,7 +83,7 @@
       ]
     }
   ],
-  "note": "Derived from four nominal 5 mm mounting passages in the pinned SO100 STEP. M4 adapter clearance; confirm physical revision and screw seating.",
+  "note": "Derived from four nominal 5 mm mounting passages in the pinned SO100 STEP. M50 uses four M4 × 0.7 tapped through holes with a 3.3 mm modeled tap drill. Verify the owned foot passages, each upper seat and installed screw length. No screw may project below M50.",
   "collision_body_names": [
     "Base_08q",
     "Base_08q (2)",

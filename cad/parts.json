@@ -1,10 +1,12 @@
 {
   "design": "RT-01",
+  "revision": 5,
   "units": "mm",
   "parts": [
     {
       "name": "M01 aluminium base plate",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Aluminium, machined datum",
       "print_rotation_deg": [
         0,
@@ -16,6 +18,7 @@
     {
       "name": "M03 metal bench spacer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal spacer",
       "print_rotation_deg": [
         0,
@@ -27,6 +30,7 @@
     {
       "name": "M04 metal bench spacer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal spacer",
       "print_rotation_deg": [
         0,
@@ -38,6 +42,7 @@
     {
       "name": "M05 metal bench spacer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal spacer",
       "print_rotation_deg": [
         0,
@@ -49,6 +54,7 @@
     {
       "name": "M06 metal bench spacer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal spacer",
       "print_rotation_deg": [
         0,
@@ -60,6 +66,7 @@
     {
       "name": "M11 steel locating column",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
@@ -71,6 +78,7 @@
     {
       "name": "P11 column sleeve",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -82,6 +90,7 @@
     {
       "name": "M12 steel locating column",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
@@ -93,6 +102,7 @@
     {
       "name": "P12 column sleeve",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -104,6 +114,7 @@
     {
       "name": "M13 steel locating column",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
@@ -115,6 +126,7 @@
     {
       "name": "P13 column sleeve",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -126,6 +138,7 @@
     {
       "name": "M14 steel locating column",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Turned steel column, matched ground ends",
       "print_rotation_deg": [
         0,
@@ -137,6 +150,7 @@
     {
       "name": "P14 column sleeve",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -148,6 +162,7 @@
     {
       "name": "M02 aluminium bearing seat",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Aluminium, machined datum",
       "print_rotation_deg": [
         0,
@@ -159,6 +174,7 @@
     {
       "name": "B01 bearing outer ring reference",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "RU85-size bearing envelope",
       "print_rotation_deg": [
         0,
@@ -170,6 +186,7 @@
     {
       "name": "M60 monolithic worm carrier",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "6061-T6 aluminium, machined in one setup",
       "print_rotation_deg": [
         0,
@@ -181,6 +198,7 @@
     {
       "name": "M61 worm bearing retainer left",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Machined aluminium retainer",
       "print_rotation_deg": [
         0,
@@ -192,6 +210,7 @@
     {
       "name": "M62 retainer shim left",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Steel shim, selected thickness; CAD 0.05 mm",
       "print_rotation_deg": [
         0,
@@ -203,6 +222,7 @@
     {
       "name": "B02 worm support bearing left",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "7202 bearing envelope",
       "print_rotation_deg": [
         0,
@@ -214,6 +234,7 @@
     {
       "name": "M61 worm bearing retainer right",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Machined aluminium retainer",
       "print_rotation_deg": [
         0,
@@ -225,6 +246,7 @@
     {
       "name": "M62 retainer shim right",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Steel shim, selected thickness; CAD 0.05 mm",
       "print_rotation_deg": [
         0,
@@ -236,6 +258,7 @@
     {
       "name": "B02 worm support bearing right",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "7202 bearing envelope",
       "print_rotation_deg": [
         0,
@@ -247,6 +270,7 @@
     {
       "name": "B03 worm shaft reference",
       "kind": "purchased",
+      "sourcing": "fabricate",
       "material": "Steel shaft machining reference",
       "print_rotation_deg": [
         0,
@@ -258,6 +282,7 @@
     {
       "name": "B04 duplex worm envelope",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "KHK KWGDL2-R1 reference",
       "print_rotation_deg": [
         0,
@@ -269,6 +294,7 @@
     {
       "name": "B05 clamp coupling reference",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal coupling 15/5 mm envelope",
       "print_rotation_deg": [
         0,
@@ -280,6 +306,7 @@
     {
       "name": "P24 NEMA17 motor bracket",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         90,
@@ -291,6 +318,7 @@
     {
       "name": "B06 NEMA17 motor and encoder envelope",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Matched closed-loop NEMA17, envelope",
       "print_rotation_deg": [
         0,
@@ -302,6 +330,7 @@
     {
       "name": "B08 axial home sensor reference",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "SICK IME08-02BPSZT0S mechanical reference",
       "print_rotation_deg": [
         0,
@@ -313,6 +342,7 @@
     {
       "name": "B13 sensor upper jam nut",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M8x1 sensor nut AF13, conservative 4 mm thickness",
       "print_rotation_deg": [
         0,
@@ -324,6 +354,7 @@
     {
       "name": "B13 sensor lower jam nut",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M8x1 sensor nut AF13, conservative 4 mm thickness",
       "print_rotation_deg": [
         0,
@@ -335,6 +366,7 @@
     {
       "name": "B09 sensor connector and cable reservation",
       "kind": "space",
+      "sourcing": "reservation",
       "material": "Connector and initial cable bend reservation",
       "print_rotation_deg": [
         0,
@@ -346,6 +378,7 @@
     {
       "name": "B07 output encoder reserved volume",
       "kind": "space",
+      "sourcing": "reservation",
       "material": "Output encoder keep-out",
       "print_rotation_deg": [
         0,
@@ -357,6 +390,7 @@
     {
       "name": "B10 bearing inner ring reference",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "RU85-size bearing envelope",
       "print_rotation_deg": [
         0,
@@ -368,6 +402,7 @@
     {
       "name": "B11 duplex wheel envelope",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "KHK AGDL2-40R1 reference",
       "print_rotation_deg": [
         0,
@@ -379,6 +414,7 @@
     {
       "name": "M20 registered output hub",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "6061-T6 aluminium, machined registered hub",
       "print_rotation_deg": [
         0,
@@ -390,6 +426,7 @@
     {
       "name": "M21 wheel drive pin",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Ground hardened-steel pin, nominal \u00d84 x 12",
       "print_rotation_deg": [
         0,
@@ -401,6 +438,7 @@
     {
       "name": "B12 retained steel home target",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Mild-steel target \u00d812 x 3 mm, M3 countersunk",
       "print_rotation_deg": [
         0,
@@ -412,6 +450,7 @@
     {
       "name": "P31 platter quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         180,
@@ -423,6 +462,7 @@
     {
       "name": "P32 platter quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         180,
@@ -434,6 +474,7 @@
     {
       "name": "P33 platter quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         180,
@@ -445,6 +486,7 @@
     {
       "name": "P34 platter quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         180,
@@ -456,6 +498,7 @@
     {
       "name": "P41 fixed housing quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -467,6 +510,7 @@
     {
       "name": "P42 fixed housing quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -478,6 +522,7 @@
     {
       "name": "P43 fixed housing quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -489,6 +534,7 @@
     {
       "name": "P44 fixed housing quadrant",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -500,6 +546,7 @@
     {
       "name": "P45 seam backing strip 1",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         90,
@@ -511,6 +558,7 @@
     {
       "name": "P45 seam backing strip 2",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         90,
@@ -522,6 +570,7 @@
     {
       "name": "P45 seam backing strip 3",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         90,
@@ -533,6 +582,7 @@
     {
       "name": "P45 seam backing strip 4",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         90,
@@ -544,17 +594,19 @@
     {
       "name": "P46 motor service hood",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         180,
         0,
         0
       ],
-      "notes": "Seal curved mating edge; remove hood independently."
+      "notes": "R4-05: release curved RTV joint and disconnect gland cables; withdraw +X 70 mm before lifting 30 mm. Replace disturbed gasket/RTV after service."
     },
     {
       "name": "B20 core static gasket",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "EPDM 2 mm, compressed 25%",
       "print_rotation_deg": [
         0,
@@ -566,6 +618,7 @@
     {
       "name": "B25 motor hood gasket",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "EPDM 2 mm compressed to 1.5 mm; RTV at curved transition",
       "print_rotation_deg": [
         0,
@@ -577,6 +630,7 @@
     {
       "name": "P50 electronics service box",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -588,6 +642,7 @@
     {
       "name": "M30 driver heat spreader",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Aluminium heat spreader, exposed underside",
       "print_rotation_deg": [
         0,
@@ -599,6 +654,7 @@
     {
       "name": "B21 heat spreader gasket",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Closed-cell gasket 1 mm compressed to 0.75 mm",
       "print_rotation_deg": [
         0,
@@ -610,6 +666,7 @@
     {
       "name": "M31 heat-spreader compression stop",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal shim washer 0.75 mm",
       "print_rotation_deg": [
         0,
@@ -621,6 +678,7 @@
     {
       "name": "M32 heat-spreader compression stop",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal shim washer 0.75 mm",
       "print_rotation_deg": [
         0,
@@ -632,6 +690,7 @@
     {
       "name": "M33 heat-spreader compression stop",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal shim washer 0.75 mm",
       "print_rotation_deg": [
         0,
@@ -643,6 +702,7 @@
     {
       "name": "M34 heat-spreader compression stop",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Metal shim washer 0.75 mm",
       "print_rotation_deg": [
         0,
@@ -654,6 +714,7 @@
     {
       "name": "B22 driver packaging envelope",
       "kind": "space",
+      "sourcing": "reservation",
       "material": "Motor driver keep-out",
       "print_rotation_deg": [
         0,
@@ -665,6 +726,7 @@
     {
       "name": "P51 removable controller tray",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -676,6 +738,7 @@
     {
       "name": "B23 controller packaging envelope",
       "kind": "space",
+      "sourcing": "reservation",
       "material": "Motion controller keep-out",
       "print_rotation_deg": [
         0,
@@ -687,6 +750,7 @@
     {
       "name": "P52 electronics lid",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -698,17 +762,19 @@
     {
       "name": "B24 lid gasket",
       "kind": "purchased",
-      "material": "EPDM 2 mm compressed to 1.5 mm",
+      "sourcing": "buy",
+      "material": "Solid EPDM stock 2 x 2 mm section, compressed to 1.5 mm",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "Stock cut ring baseline OD 149.5 x 93.5 / ID 145.5 x 89.5 mm; STEP shows volume-conserving compressed profile, not the cutting outline. Nominal gland fill 76.19%; compound, tolerance, swell and compression force require validation."
     },
     {
       "name": "B26 external heatsink reference",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Aluminium finned heatsink envelope",
       "print_rotation_deg": [
         0,
@@ -720,6 +786,7 @@
     {
       "name": "B27 thermal interface pad",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "Thermally conductive adhesive pad reference",
       "print_rotation_deg": [
         0,
@@ -731,6 +798,7 @@
     {
       "name": "P53 electronics foot 1",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -742,6 +810,7 @@
     {
       "name": "P53 electronics foot 2",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -753,6 +822,7 @@
     {
       "name": "P53 electronics foot 3",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -764,6 +834,7 @@
     {
       "name": "P53 electronics foot 4",
       "kind": "print",
+      "sourcing": "print",
       "material": "PETG",
       "print_rotation_deg": [
         0,
@@ -775,6 +846,7 @@
     {
       "name": "M40 stepped motor support",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Machined aluminium sole and integral riser",
       "print_rotation_deg": [
         0,
@@ -786,6 +858,7 @@
     {
       "name": "B41 motor anchor washer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
       "print_rotation_deg": [
         0,
@@ -797,6 +870,7 @@
     {
       "name": "B42 motor anchor washer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
       "print_rotation_deg": [
         0,
@@ -808,17 +882,19 @@
     {
       "name": "M50 SO100 arm mounting plate",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "Aluminium 8 mm, arm adapter with lid-tool access",
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "notes": ""
+      "notes": "F24: four M4x0.7-6H through threads from above; no arm nuts or washers below Z144. Match upper seats to the measured owned foot. Require >=6 mm effective full screw engagement and screw tips >=Z145; conditional screw length follows the measured grip."
     },
     {
       "name": "M51 steel side channel left",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "4 mm welded steel plate, web and two 28 mm flanges",
       "print_rotation_deg": [
         0,
@@ -830,6 +906,7 @@
     {
       "name": "M51 steel side channel right",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "4 mm welded steel plate, web and two 28 mm flanges",
       "print_rotation_deg": [
         0,
@@ -841,6 +918,7 @@
     {
       "name": "M52 steel front X brace",
       "kind": "metal",
+      "sourcing": "fabricate",
       "material": "4 mm steel, weld vertical edges to both side channels",
       "print_rotation_deg": [
         0,
@@ -852,6 +930,7 @@
     {
       "name": "B51 bridge anchor washer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
       "print_rotation_deg": [
         0,
@@ -863,6 +942,7 @@
     {
       "name": "B52 bridge anchor washer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
       "print_rotation_deg": [
         0,
@@ -874,6 +954,7 @@
     {
       "name": "B53 bridge anchor washer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
       "print_rotation_deg": [
         0,
@@ -885,6 +966,7 @@
     {
       "name": "B54 bridge anchor washer",
       "kind": "purchased",
+      "sourcing": "buy",
       "material": "M6 metal washer OD18 ID6.6 x 1.6 mm",
       "print_rotation_deg": [
         0,

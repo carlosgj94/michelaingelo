@@ -1,0 +1,8149 @@
+{
+  "audit": {
+    "date": "2026-11-18",
+    "native": "michelaingelo.sc",
+    "native_sha256": "ec2f769737bc460da0205142b2fdd3fcab7844b11034e9225c389dcfc5e7f18b",
+    "initial_native_sha256": "8c4ef60770b809b8318d6c5cebfa58cd35666d305c30c47a5adcab0679e5b103",
+    "solidcraft_cli": "0.44.1",
+    "solidcraft_commit": "e151d5ea6866fb055e011379153fb1cae0566f22",
+    "units": "mm, mm3, degrees unless stated",
+    "source_git_head_at_open": "d96035aed8aba8b90c9bb4c25e0642be86c16568",
+    "source_basis": "The at-open Git HEAD predates the uncommitted sourcing-group update. The native digest identifies the reviewed bytes.",
+    "previous_vs_current_bodies": {
+      "bodies": 100,
+      "max_volume_delta_mm3": 0.0,
+      "max_bound_delta_mm": 0.0
+    }
+  },
+  "health": {
+    "features": 705,
+    "feature_errors": [],
+    "feature_warnings": [
+      {
+        "name": "SO100 follower arm - unmounted reference",
+        "warning": "solid 'Body1': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 1.529e-2 mm); solid 'Body1': 1 edges lie off their faces' surfaces by more than 0.01 mm: their tolerances are the gaps they have (up to 5.038e-2 mm); solid 'Body1': 11 edges lie off their faces' surfaces by more than 0.0015374789496897911 mm: their tolerances are the gaps they have (up to 3.039e-3 mm) (+10 more)"
+      }
+    ],
+    "sketches": [
+      {
+        "name": "Sketch1",
+        "dof": 0,
+        "status": "solved"
+      },
+      {
+        "name": "207 B13 sensor upper jam nut profile",
+        "dof": 0,
+        "status": "solved"
+      },
+      {
+        "name": "210 B13 sensor lower jam nut profile",
+        "dof": 0,
+        "status": "solved"
+      },
+      {
+        "name": "669 stand brace lightening window",
+        "dof": 0,
+        "status": "solved"
+      },
+      {
+        "name": "671 stand brace lightening window",
+        "dof": 0,
+        "status": "solved"
+      },
+      {
+        "name": "673 stand brace lightening window",
+        "dof": 0,
+        "status": "solved"
+      },
+      {
+        "name": "675 stand brace lightening window",
+        "dof": 0,
+        "status": "solved"
+      }
+    ],
+    "world_bodies": 100,
+    "open_world_bodies": [
+      "SO_ARM100_08k_Mirror"
+    ],
+    "closed_table_bodies": 81,
+    "sourcing_groups_as_documented_on_reviewed_copy": {
+      "To Be Printed": 25,
+      "To Be Bought": 34,
+      "To Be Fabricated": 18,
+      "Space Reservations": 4,
+      "Existing Arm Reference": 19
+    },
+    "envelope_mm": {
+      "min": [
+        -163.99987804873518,
+        -305.6394363794043,
+        -1.5080907044704174e-14
+      ],
+      "max": [
+        236.00000000000003,
+        163.99987804873518,
+        318.3709516729071
+      ]
+    }
+  },
+  "baseline_replays": {
+    "rotation_and_carrier": {
+      "checks": 28,
+      "pairs_with_overlap": 0,
+      "unchecked": 0,
+      "truncated_checks": 0,
+      "budget_exceeded": 0
+    },
+    "registered_screws": 119,
+    "groups": {
+      "F01": 4,
+      "F02": 4,
+      "F03": 8,
+      "F07": 4,
+      "F09": 8,
+      "F10": 4,
+      "F11": 4,
+      "F13": 2,
+      "F14": 2,
+      "F15": 16,
+      "F16": 4,
+      "F17": 4,
+      "F18": 10,
+      "F19": 4,
+      "F20": 4,
+      "F21": 4,
+      "F22": 4,
+      "F23": 4,
+      "F24": 4,
+      "F04": 8,
+      "F05": 4,
+      "F06": 8,
+      "F25": 1
+    },
+    "angles_deg": [
+      0.0,
+      21.176470588235293,
+      42.35294117647059,
+      63.529411764705884,
+      84.70588235294117,
+      105.88235294117646,
+      127.05882352941177,
+      148.23529411764707,
+      169.41176470588235,
+      190.58823529411765,
+      211.76470588235293,
+      232.94117647058823,
+      254.11764705882354,
+      275.29411764705884,
+      296.47058823529414,
+      317.6470588235294,
+      338.8235294117647,
+      28.17255342332686,
+      45.0,
+      91.82744657667308,
+      135.0,
+      150.0,
+      225.0,
+      315.0,
+      330.0,
+      360.0
+    ],
+    "carrier_limits_mm": [
+      3,
+      -3
+    ],
+    "original_service": {
+      "checks": 13,
+      "pairs_with_overlap": 0,
+      "unchecked": 0,
+      "truncated_checks": 0,
+      "budget_exceeded": 0
+    },
+    "installed_service": {
+      "poses": 51,
+      "poses_with_overlaps": 12,
+      "unchecked": 0,
+      "truncated_poses": 0
+    },
+    "registered_exclusions_by_reason": {
+      "Specified thread engagement; length/depth checked separately": 36,
+      "M4 thread, 7.15 engagement in at least9 full thread": 8,
+      "Provisional motor screw thread engagement3.5; confirm SKU": 4,
+      "M5 tapped attachment; carrier has tip relief": 2,
+      "M3 target thread, 5.1 engagement": 1,
+      "Permitted M6 thread engagement9 from Z121; blind drill bottomZ108.5": 4,
+      "Intentional press fit4/3.99; finish to measured pin": 1,
+      "Purchased tooth envelopes; no tooth-contact simulation": 1,
+      "Unchanged imported arm self-contacts": 171
+    }
+  },
+  "source_native_and_export": {
+    "standalone_build": {
+      "bodies": 81,
+      "max_volume_delta_mm3": 0.0,
+      "max_bound_delta_mm": 0.0
+    },
+    "step_reimport": {
+      "bodies": 81,
+      "max_volume_delta_mm3": 1.8044374883174896e-09,
+      "max_bound_delta_mm": 1.8474111129762605e-13
+    },
+    "prior_evidence_digests_checked": 23,
+    "prior_evidence_digest_mismatches": [],
+    "existing_print_package": {
+      "files": 127,
+      "repo_files_compared": 126,
+      "different": [],
+      "generated": [
+        "README-FIRST.txt"
+      ],
+      "crc_error": null,
+      "sha256": "36ba13233896bb31993f4bb0d834e203baa39d8abe5650818e50182326575c4d"
+    },
+    "meshes": {
+      "exports/rotary-table/stl/p11-column-sleeve.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 11358,
+        "volume_mm3": 20619.94483,
+        "bed_area_mm2": 296.6899,
+        "min_z": 0.0,
+        "bounds_mm": [
+          21.9967,
+          21.9967,
+          69.5
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p12-column-sleeve.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 11346,
+        "volume_mm3": 20619.94483,
+        "bed_area_mm2": 296.6899,
+        "min_z": 0.0,
+        "bounds_mm": [
+          21.9967,
+          21.9967,
+          69.5
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p13-column-sleeve.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 11332,
+        "volume_mm3": 20619.94583,
+        "bed_area_mm2": 296.6899,
+        "min_z": 0.0,
+        "bounds_mm": [
+          21.9967,
+          21.9967,
+          69.5
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p14-column-sleeve.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 11348,
+        "volume_mm3": 20619.94583,
+        "bed_area_mm2": 296.6899,
+        "min_z": 0.0,
+        "bounds_mm": [
+          21.9967,
+          21.9967,
+          69.5
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p24-nema17-motor-bracket.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 4982,
+        "volume_mm3": 37744.64996,
+        "bed_area_mm2": 664.0,
+        "min_z": 0.0,
+        "bounds_mm": [
+          38.0,
+          68.0,
+          62.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p31-platter-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 4120,
+        "volume_mm3": 277038.53183,
+        "bed_area_mm2": 19834.2381,
+        "min_z": 0.0,
+        "bounds_mm": [
+          159.7999,
+          159.7999,
+          30.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p32-platter-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 4120,
+        "volume_mm3": 277038.5331,
+        "bed_area_mm2": 19834.2382,
+        "min_z": 0.0,
+        "bounds_mm": [
+          159.7999,
+          159.7999,
+          30.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p33-platter-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 4120,
+        "volume_mm3": 277038.53233,
+        "bed_area_mm2": 19834.2382,
+        "min_z": 0.0,
+        "bounds_mm": [
+          159.7999,
+          159.7999,
+          30.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p34-platter-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 4120,
+        "volume_mm3": 277038.53107,
+        "bed_area_mm2": 19834.2381,
+        "min_z": 0.0,
+        "bounds_mm": [
+          159.7999,
+          159.7999,
+          30.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p41-fixed-housing-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 20378,
+        "volume_mm3": 111430.97804,
+        "bed_area_mm2": 8712.3199,
+        "min_z": 0.0,
+        "bounds_mm": [
+          163.7999,
+          163.7999,
+          114.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p42-fixed-housing-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 28148,
+        "volume_mm3": 161902.11479,
+        "bed_area_mm2": 15288.1864,
+        "min_z": 0.0,
+        "bounds_mm": [
+          163.7999,
+          163.7999,
+          114.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p43-fixed-housing-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 24090,
+        "volume_mm3": 161901.89772,
+        "bed_area_mm2": 15288.1865,
+        "min_z": 0.0,
+        "bounds_mm": [
+          163.7999,
+          163.7999,
+          114.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p44-fixed-housing-quadrant.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 28154,
+        "volume_mm3": 161902.11404,
+        "bed_area_mm2": 15288.1864,
+        "min_z": 0.0,
+        "bounds_mm": [
+          163.7999,
+          163.7999,
+          114.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p45-seam-backing-strip-1.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 2158,
+        "volume_mm3": 15619.88431,
+        "bed_area_mm2": 1952.4855,
+        "min_z": 0.0,
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p45-seam-backing-strip-2.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 2158,
+        "volume_mm3": 15619.88431,
+        "bed_area_mm2": 1952.4855,
+        "min_z": 0.0,
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p45-seam-backing-strip-3.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 2158,
+        "volume_mm3": 15619.88431,
+        "bed_area_mm2": 1952.4855,
+        "min_z": 0.0,
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p45-seam-backing-strip-4.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 2158,
+        "volume_mm3": 15619.88431,
+        "bed_area_mm2": 1952.4855,
+        "min_z": 0.0,
+        "bounds_mm": [
+          24.0,
+          84.0,
+          8.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p46-motor-service-hood.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 16190,
+        "volume_mm3": 119915.6166,
+        "bed_area_mm2": 7678.1257,
+        "min_z": 0.0,
+        "bounds_mm": [
+          115.8736,
+          82.0,
+          82.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p50-electronics-service-box.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 14736,
+        "volume_mm3": 249917.24795,
+        "bed_area_mm2": 13116.5386,
+        "min_z": 0.0,
+        "bounds_mm": [
+          168.0,
+          112.0,
+          76.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p51-removable-controller-tray.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 2274,
+        "volume_mm3": 29306.38487,
+        "bed_area_mm2": 9768.795,
+        "min_z": 0.0,
+        "bounds_mm": [
+          138.0,
+          80.0,
+          3.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p52-electronics-lid.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 2628,
+        "volume_mm3": 74903.17483,
+        "bed_area_mm2": 18725.7937,
+        "min_z": 0.0,
+        "bounds_mm": [
+          168.0,
+          112.0,
+          4.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p53-electronics-foot-1.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 17120,
+        "volume_mm3": 8350.4302,
+        "bed_area_mm2": 298.2297,
+        "min_z": 0.0,
+        "bounds_mm": [
+          19.9993,
+          19.9993,
+          28.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p53-electronics-foot-2.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 17126,
+        "volume_mm3": 8350.42906,
+        "bed_area_mm2": 298.2296,
+        "min_z": 0.0,
+        "bounds_mm": [
+          19.9993,
+          19.9993,
+          28.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p53-electronics-foot-3.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 17152,
+        "volume_mm3": 8350.4302,
+        "bed_area_mm2": 298.2297,
+        "min_z": 0.0,
+        "bounds_mm": [
+          19.9993,
+          19.9993,
+          28.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/stl/p53-electronics-foot-4.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 17124,
+        "volume_mm3": 8350.42906,
+        "bed_area_mm2": 298.2296,
+        "min_z": 0.0,
+        "bounds_mm": [
+          19.9993,
+          19.9993,
+          28.0
+        ],
+        "digest_matches": true
+      },
+      "exports/rotary-table/fit-coupon.stl": {
+        "components": 1,
+        "paired_edges": true,
+        "opposite_winding": true,
+        "triangles": 12364,
+        "volume_mm3": 121328.94537,
+        "bed_area_mm2": 14658.6438,
+        "min_z": 0.0,
+        "bounds_mm": [
+          150.0,
+          100.0,
+          24.0
+        ],
+        "digest_matches": true
+      }
+    }
+  },
+  "parameter_checks": {
+    "combined_fit_change": {
+      "changed": {
+        "rt_column_bore": 10.4,
+        "rt_fixture_boss_bore": 16.5,
+        "rt_insert": 4.2,
+        "rt_m3": 3.5,
+        "rt_m3_h": 3.6,
+        "rt_m4": 4.6,
+        "rt_m4_h": 4.7,
+        "rt_m5": 5.6,
+        "rt_m5_h": 5.7,
+        "rt_m6": 6.7,
+        "rt_motor_pilot_h": 22.8
+      },
+      "recomputed": 214,
+      "errors": []
+    },
+    "declared_ranges": [
+      {
+        "changes": {
+          "changed": {
+            "rt_motor_l": 60.0,
+            "rt_seam": 0.3
+          },
+          "recomputed": 150,
+          "errors": []
+        },
+        "seam_first_hits": [
+          "M60 monolithic worm carrier",
+          "P31 platter quadrant",
+          "P31 platter quadrant",
+          "P31 platter quadrant"
+        ],
+        "ray_x_mm": [
+          0.14,
+          0.16,
+          0.29,
+          0.31
+        ],
+        "hood_to_motor_nearest": {
+          "P46 motor service hood": [
+            {
+              "other": "B06 NEMA17 motor and encoder envelope",
+              "mm": 8.35
+            }
+          ]
+        }
+      },
+      {
+        "changes": {
+          "changed": {
+            "rt_motor_l": 80.0,
+            "rt_seam": 0.6
+          },
+          "recomputed": 129,
+          "errors": []
+        },
+        "seam_first_hits": [
+          "M60 monolithic worm carrier",
+          "M60 monolithic worm carrier",
+          "M60 monolithic worm carrier",
+          "P31 platter quadrant"
+        ],
+        "ray_x_mm": [
+          0.14,
+          0.16,
+          0.29,
+          0.31
+        ],
+        "hood_to_motor_nearest": {
+          "P46 motor service hood": [
+            {
+              "other": "B06 NEMA17 motor and encoder envelope",
+              "mm": 8.35
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "all_body_as_placed": {
+    "nearest_two_mm": {
+      "B01 bearing outer ring reference": [
+        {
+          "other": "M02 aluminium bearing seat",
+          "mm": 0.0
+        },
+        {
+          "other": "B10 bearing inner ring reference",
+          "mm": 0.2
+        }
+      ],
+      "B02 worm support bearing left": [
+        {
+          "other": "M60 monolithic worm carrier",
+          "mm": 0.0
+        },
+        {
+          "other": "M61 worm bearing retainer left",
+          "mm": 0.0
+        }
+      ],
+      "B02 worm support bearing right": [
+        {
+          "other": "M60 monolithic worm carrier",
+          "mm": 0.0
+        },
+        {
+          "other": "M61 worm bearing retainer right",
+          "mm": 0.0
+        }
+      ],
+      "B03 worm shaft reference": [
+        {
+          "other": "B02 worm support bearing left",
+          "mm": 0.0
+        },
+        {
+          "other": "B02 worm support bearing right",
+          "mm": 0.0
+        }
+      ],
+      "B04 duplex worm envelope": [
+        {
+          "other": "B03 worm shaft reference",
+          "mm": 0.0
+        },
+        {
+          "other": "B11 duplex wheel envelope",
+          "mm": 0.0
+        }
+      ],
+      "B05 clamp coupling reference": [
+        {
+          "other": "B03 worm shaft reference",
+          "mm": 0.0
+        },
+        {
+          "other": "B06 NEMA17 motor and encoder envelope",
+          "mm": 0.0
+        }
+      ],
+      "B06 NEMA17 motor and encoder envelope": [
+        {
+          "other": "B05 clamp coupling reference",
+          "mm": 0.0
+        },
+        {
+          "other": "P24 NEMA17 motor bracket",
+          "mm": 0.0
+        }
+      ],
+      "B07 output encoder reserved volume": [
+        {
+          "other": "M60 monolithic worm carrier",
+          "mm": 2.0
+        },
+        {
+          "other": "B11 duplex wheel envelope",
+          "mm": 3.0
+        }
+      ],
+      "B08 axial home sensor reference": [
+        {
+          "other": "B09 sensor connector and cable reservation",
+          "mm": 0.0
+        },
+        {
+          "other": "B13 sensor lower jam nut",
+          "mm": 0.1
+        }
+      ],
+      "B09 sensor connector and cable reservation": [
+        {
+          "other": "B08 axial home sensor reference",
+          "mm": 0.0
+        },
+        {
+          "other": "P14 column sleeve",
+          "mm": 10.219854476
+        }
+      ],
+      "B10 bearing inner ring reference": [
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        },
+        {
+          "other": "B01 bearing outer ring reference",
+          "mm": 0.2
+        }
+      ],
+      "B11 duplex wheel envelope": [
+        {
+          "other": "B04 duplex worm envelope",
+          "mm": 0.0
+        },
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        }
+      ],
+      "B12 retained steel home target": [
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        },
+        {
+          "other": "B08 axial home sensor reference",
+          "mm": 1.2
+        }
+      ],
+      "B13 sensor lower jam nut": [
+        {
+          "other": "M02 aluminium bearing seat",
+          "mm": 0.0
+        },
+        {
+          "other": "B08 axial home sensor reference",
+          "mm": 0.1
+        }
+      ],
+      "B13 sensor upper jam nut": [
+        {
+          "other": "M02 aluminium bearing seat",
+          "mm": 0.0
+        },
+        {
+          "other": "B08 axial home sensor reference",
+          "mm": 0.1
+        }
+      ],
+      "B20 core static gasket": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "P41 fixed housing quadrant",
+          "mm": 0.0
+        }
+      ],
+      "B21 heat spreader gasket": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.0
+        }
+      ],
+      "B22 driver packaging envelope": [
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.25
+        },
+        {
+          "other": "P50 electronics service box",
+          "mm": 1.0
+        }
+      ],
+      "B23 controller packaging envelope": [
+        {
+          "other": "P51 removable controller tray",
+          "mm": 0.0
+        },
+        {
+          "other": "P52 electronics lid",
+          "mm": 2.0
+        }
+      ],
+      "B24 lid gasket": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "P52 electronics lid",
+          "mm": 0.0
+        }
+      ],
+      "B25 motor hood gasket": [
+        {
+          "other": "P46 motor service hood",
+          "mm": 0.0
+        },
+        {
+          "other": "M40 stepped motor support",
+          "mm": 0.0
+        }
+      ],
+      "B26 external heatsink reference": [
+        {
+          "other": "B27 thermal interface pad",
+          "mm": 0.0
+        },
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.5
+        }
+      ],
+      "B27 thermal interface pad": [
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.0
+        },
+        {
+          "other": "B26 external heatsink reference",
+          "mm": 0.0
+        }
+      ],
+      "B41 motor anchor washer": [
+        {
+          "other": "M40 stepped motor support",
+          "mm": 0.0
+        },
+        {
+          "other": "P46 motor service hood",
+          "mm": 0.866068747
+        }
+      ],
+      "B42 motor anchor washer": [
+        {
+          "other": "M40 stepped motor support",
+          "mm": 0.0
+        },
+        {
+          "other": "P46 motor service hood",
+          "mm": 0.866068747
+        }
+      ],
+      "B51 bridge anchor washer": [
+        {
+          "other": "M50 SO100 arm mounting plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel left",
+          "mm": 8.0
+        }
+      ],
+      "B52 bridge anchor washer": [
+        {
+          "other": "M50 SO100 arm mounting plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel left",
+          "mm": 8.0
+        }
+      ],
+      "B53 bridge anchor washer": [
+        {
+          "other": "M50 SO100 arm mounting plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel right",
+          "mm": 8.0
+        }
+      ],
+      "B54 bridge anchor washer": [
+        {
+          "other": "M50 SO100 arm mounting plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel right",
+          "mm": 8.0
+        }
+      ],
+      "Base_08q": [
+        {
+          "other": "Base_08q (2)",
+          "mm": 0.0
+        },
+        {
+          "other": "Passive_Horn_01",
+          "mm": 0.05
+        }
+      ],
+      "Base_08q (2)": [
+        {
+          "other": "M50 SO100 arm mounting plate",
+          "mm": 0.0
+        },
+        {
+          "other": "Base_08q",
+          "mm": 0.0
+        }
+      ],
+      "Base_08q (3)": [
+        {
+          "other": "Base_08q (2)",
+          "mm": 0.0
+        },
+        {
+          "other": "WaveShare_Mounting_Plate_01d",
+          "mm": 0.0
+        }
+      ],
+      "M01 aluminium base plate": [
+        {
+          "other": "M03 metal bench spacer",
+          "mm": 0.0
+        },
+        {
+          "other": "M04 metal bench spacer",
+          "mm": 0.0
+        }
+      ],
+      "M02 aluminium bearing seat": [
+        {
+          "other": "M11 steel locating column",
+          "mm": 0.0
+        },
+        {
+          "other": "M12 steel locating column",
+          "mm": 0.0
+        }
+      ],
+      "M03 metal bench spacer": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "P43 fixed housing quadrant",
+          "mm": 3.0
+        }
+      ],
+      "M04 metal bench spacer": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "P42 fixed housing quadrant",
+          "mm": 3.0
+        }
+      ],
+      "M05 metal bench spacer": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "P44 fixed housing quadrant",
+          "mm": 3.0
+        }
+      ],
+      "M06 metal bench spacer": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M40 stepped motor support",
+          "mm": 0.3
+        }
+      ],
+      "M11 steel locating column": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M02 aluminium bearing seat",
+          "mm": 0.0
+        }
+      ],
+      "M12 steel locating column": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M02 aluminium bearing seat",
+          "mm": 0.0
+        }
+      ],
+      "M13 steel locating column": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M02 aluminium bearing seat",
+          "mm": 0.0
+        }
+      ],
+      "M14 steel locating column": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M02 aluminium bearing seat",
+          "mm": 0.0
+        }
+      ],
+      "M20 registered output hub": [
+        {
+          "other": "B10 bearing inner ring reference",
+          "mm": 0.0
+        },
+        {
+          "other": "B11 duplex wheel envelope",
+          "mm": 0.0
+        }
+      ],
+      "M21 wheel drive pin": [
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        },
+        {
+          "other": "B11 duplex wheel envelope",
+          "mm": 0.005015188
+        }
+      ],
+      "M30 driver heat spreader": [
+        {
+          "other": "B21 heat spreader gasket",
+          "mm": 0.0
+        },
+        {
+          "other": "M31 heat-spreader compression stop",
+          "mm": 0.0
+        }
+      ],
+      "M31 heat-spreader compression stop": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.0
+        }
+      ],
+      "M32 heat-spreader compression stop": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.0
+        }
+      ],
+      "M33 heat-spreader compression stop": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.0
+        }
+      ],
+      "M34 heat-spreader compression stop": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M30 driver heat spreader",
+          "mm": 0.0
+        }
+      ],
+      "M40 stepped motor support": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "P24 NEMA17 motor bracket",
+          "mm": 0.0
+        }
+      ],
+      "M50 SO100 arm mounting plate": [
+        {
+          "other": "M51 steel side channel left",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel right",
+          "mm": 0.0
+        }
+      ],
+      "M51 steel side channel left": [
+        {
+          "other": "M50 SO100 arm mounting plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M52 steel front X brace",
+          "mm": 0.0
+        }
+      ],
+      "M51 steel side channel right": [
+        {
+          "other": "M50 SO100 arm mounting plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M52 steel front X brace",
+          "mm": 0.0
+        }
+      ],
+      "M52 steel front X brace": [
+        {
+          "other": "M51 steel side channel left",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel right",
+          "mm": 0.0
+        }
+      ],
+      "M60 monolithic worm carrier": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M62 retainer shim left",
+          "mm": 0.0
+        }
+      ],
+      "M61 worm bearing retainer left": [
+        {
+          "other": "M62 retainer shim left",
+          "mm": 0.0
+        },
+        {
+          "other": "B02 worm support bearing left",
+          "mm": 0.0
+        }
+      ],
+      "M61 worm bearing retainer right": [
+        {
+          "other": "M62 retainer shim right",
+          "mm": 0.0
+        },
+        {
+          "other": "B02 worm support bearing right",
+          "mm": 0.0
+        }
+      ],
+      "M62 retainer shim left": [
+        {
+          "other": "M60 monolithic worm carrier",
+          "mm": 0.0
+        },
+        {
+          "other": "M61 worm bearing retainer left",
+          "mm": 0.0
+        }
+      ],
+      "M62 retainer shim right": [
+        {
+          "other": "M60 monolithic worm carrier",
+          "mm": 0.0
+        },
+        {
+          "other": "M61 worm bearing retainer right",
+          "mm": 0.0
+        }
+      ],
+      "Moving_Jaw_08d": [
+        {
+          "other": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "mm": 0.0
+        },
+        {
+          "other": "Wrist_Roll_08c",
+          "mm": 0.507725425
+        }
+      ],
+      "P11 column sleeve": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M11 steel locating column",
+          "mm": 0.15
+        }
+      ],
+      "P12 column sleeve": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M12 steel locating column",
+          "mm": 0.15
+        }
+      ],
+      "P13 column sleeve": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M13 steel locating column",
+          "mm": 0.15
+        }
+      ],
+      "P14 column sleeve": [
+        {
+          "other": "M01 aluminium base plate",
+          "mm": 0.0
+        },
+        {
+          "other": "M14 steel locating column",
+          "mm": 0.15
+        }
+      ],
+      "P24 NEMA17 motor bracket": [
+        {
+          "other": "B06 NEMA17 motor and encoder envelope",
+          "mm": 0.0
+        },
+        {
+          "other": "M40 stepped motor support",
+          "mm": 0.0
+        }
+      ],
+      "P31 platter quadrant": [
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        },
+        {
+          "other": "P32 platter quadrant",
+          "mm": 0.4
+        }
+      ],
+      "P32 platter quadrant": [
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        },
+        {
+          "other": "P33 platter quadrant",
+          "mm": 0.4
+        }
+      ],
+      "P33 platter quadrant": [
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        },
+        {
+          "other": "P32 platter quadrant",
+          "mm": 0.4
+        }
+      ],
+      "P34 platter quadrant": [
+        {
+          "other": "M20 registered output hub",
+          "mm": 0.0
+        },
+        {
+          "other": "P33 platter quadrant",
+          "mm": 0.4
+        }
+      ],
+      "P41 fixed housing quadrant": [
+        {
+          "other": "P45 seam backing strip 1",
+          "mm": 0.0
+        },
+        {
+          "other": "P45 seam backing strip 4",
+          "mm": 0.0
+        }
+      ],
+      "P42 fixed housing quadrant": [
+        {
+          "other": "P45 seam backing strip 1",
+          "mm": 0.0
+        },
+        {
+          "other": "P45 seam backing strip 2",
+          "mm": 0.0
+        }
+      ],
+      "P43 fixed housing quadrant": [
+        {
+          "other": "P45 seam backing strip 2",
+          "mm": 0.0
+        },
+        {
+          "other": "P45 seam backing strip 3",
+          "mm": 0.0
+        }
+      ],
+      "P44 fixed housing quadrant": [
+        {
+          "other": "P45 seam backing strip 3",
+          "mm": 0.0
+        },
+        {
+          "other": "P45 seam backing strip 4",
+          "mm": 0.0
+        }
+      ],
+      "P45 seam backing strip 1": [
+        {
+          "other": "P41 fixed housing quadrant",
+          "mm": 0.0
+        },
+        {
+          "other": "P42 fixed housing quadrant",
+          "mm": 0.0
+        }
+      ],
+      "P45 seam backing strip 2": [
+        {
+          "other": "P42 fixed housing quadrant",
+          "mm": 0.0
+        },
+        {
+          "other": "P43 fixed housing quadrant",
+          "mm": 0.0
+        }
+      ],
+      "P45 seam backing strip 3": [
+        {
+          "other": "P43 fixed housing quadrant",
+          "mm": 0.0
+        },
+        {
+          "other": "P44 fixed housing quadrant",
+          "mm": 0.0
+        }
+      ],
+      "P45 seam backing strip 4": [
+        {
+          "other": "P41 fixed housing quadrant",
+          "mm": 0.0
+        },
+        {
+          "other": "P44 fixed housing quadrant",
+          "mm": 0.0
+        }
+      ],
+      "P46 motor service hood": [
+        {
+          "other": "B25 motor hood gasket",
+          "mm": 0.0
+        },
+        {
+          "other": "M40 stepped motor support",
+          "mm": 0.0
+        }
+      ],
+      "P50 electronics service box": [
+        {
+          "other": "B21 heat spreader gasket",
+          "mm": 0.0
+        },
+        {
+          "other": "M31 heat-spreader compression stop",
+          "mm": 0.0
+        }
+      ],
+      "P51 removable controller tray": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "B23 controller packaging envelope",
+          "mm": 0.0
+        }
+      ],
+      "P52 electronics lid": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "B24 lid gasket",
+          "mm": 0.0
+        }
+      ],
+      "P53 electronics foot 1": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel left",
+          "mm": 1.0
+        }
+      ],
+      "P53 electronics foot 2": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel left",
+          "mm": 1.0
+        }
+      ],
+      "P53 electronics foot 3": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel right",
+          "mm": 1.0
+        }
+      ],
+      "P53 electronics foot 4": [
+        {
+          "other": "P50 electronics service box",
+          "mm": 0.0
+        },
+        {
+          "other": "M51 steel side channel right",
+          "mm": 1.0
+        }
+      ],
+      "Passive_Horn_01": [
+        {
+          "other": "Rotation_Pitch_08i",
+          "mm": 0.05
+        },
+        {
+          "other": "Base_08q",
+          "mm": 0.05
+        }
+      ],
+      "Rotation_Pitch_08i": [
+        {
+          "other": "SO_ARM100_08k_Asym_Mirror_Clip",
+          "mm": 0.0
+        },
+        {
+          "other": "STS3215_03a",
+          "mm": 0.0
+        }
+      ],
+      "SO_ARM100_08k_116_Square": [
+        {
+          "other": "WaveShare_Mounting_Plate_01d",
+          "mm": 0.0
+        },
+        {
+          "other": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "mm": 0.0
+        }
+      ],
+      "SO_ARM100_08k_Asym_Mirror_Clip": [
+        {
+          "other": "Rotation_Pitch_08i",
+          "mm": 0.0
+        },
+        {
+          "other": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "mm": 0.0
+        }
+      ],
+      "SO_ARM100_08k_Mirror": [
+        {
+          "other": "SO_ARM100_08k_116_Square",
+          "mm": 0.0
+        },
+        {
+          "other": "SO_ARM100_08k_Mirror (2)",
+          "mm": 0.0
+        }
+      ],
+      "SO_ARM100_08k_Mirror (2)": [
+        {
+          "other": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+          "mm": 0.0
+        },
+        {
+          "other": "SO_ARM100_08k_116_Square",
+          "mm": 0.0
+        }
+      ],
+      "STS3215_03a": [
+        {
+          "other": "Base_08q (2)",
+          "mm": 0.0
+        },
+        {
+          "other": "Base_08q (3)",
+          "mm": 0.0
+        }
+      ],
+      "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)": [
+        {
+          "other": "Rotation_Pitch_08i",
+          "mm": 0.0
+        },
+        {
+          "other": "SO_ARM100_08k_Asym_Mirror_Clip",
+          "mm": 0.0
+        }
+      ],
+      "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)": [
+        {
+          "other": "SO_ARM100_08k_116_Square",
+          "mm": 0.0
+        },
+        {
+          "other": "SO_ARM100_08k_Mirror",
+          "mm": 0.0
+        }
+      ],
+      "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)": [
+        {
+          "other": "SO_ARM100_08k_Mirror",
+          "mm": 0.0
+        },
+        {
+          "other": "SO_ARM100_08k_Mirror (2)",
+          "mm": 0.0
+        }
+      ],
+      "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)": [
+        {
+          "other": "Wrist_Roll_08c",
+          "mm": 0.0
+        },
+        {
+          "other": "Moving_Jaw_08d",
+          "mm": 0.0
+        }
+      ],
+      "STS3215_03a_Wrist_Roll": [
+        {
+          "other": "Wrist_Roll_Pitch_08i",
+          "mm": 0.0
+        },
+        {
+          "other": "Wrist_Roll_08c",
+          "mm": 0.0
+        }
+      ],
+      "WaveShare_Mounting_Plate_01d": [
+        {
+          "other": "Base_08q (3)",
+          "mm": 0.0
+        },
+        {
+          "other": "SO_ARM100_08k_116_Square",
+          "mm": 0.0
+        }
+      ],
+      "Wrist_Roll_08c": [
+        {
+          "other": "SO_ARM100_08k_Asym_Mirror_Clip",
+          "mm": 0.0
+        },
+        {
+          "other": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+          "mm": 0.0
+        }
+      ],
+      "Wrist_Roll_Pitch_08i": [
+        {
+          "other": "SO_ARM100_08k_Asym_Mirror_Clip",
+          "mm": 0.0
+        },
+        {
+          "other": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+          "mm": 0.0
+        }
+      ]
+    },
+    "overlaps": [
+      {
+        "a": "B04 duplex worm envelope",
+        "b": "B11 duplex wheel envelope",
+        "volume_mm3": 1814.816692775252
+      },
+      {
+        "a": "M20 registered output hub",
+        "b": "M21 wheel drive pin",
+        "volume_mm3": 0.40789653616040433
+      },
+      {
+        "a": "Base_08q (2)",
+        "b": "STS3215_03a",
+        "volume_mm3": 24.349746555469928
+      },
+      {
+        "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+        "volume_mm3": 8.39380058856043
+      },
+      {
+        "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+        "b": "Wrist_Roll_Pitch_08i",
+        "volume_mm3": 3.2789512563474
+      },
+      {
+        "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+        "b": "SO_ARM100_08k_116_Square",
+        "volume_mm3": 19.18450011795991
+      },
+      {
+        "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+        "b": "SO_ARM100_08k_Mirror (2)",
+        "volume_mm3": 170.0191521170366
+      },
+      {
+        "a": "SO_ARM100_08k_116_Square",
+        "b": "SO_ARM100_08k_Mirror (2)",
+        "volume_mm3": 187.45369772877825
+      },
+      {
+        "a": "SO_ARM100_08k_Mirror (2)",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+        "volume_mm3": 8.39380058858239
+      },
+      {
+        "a": "Wrist_Roll_Pitch_08i",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+        "volume_mm3": 35.72119856536999
+      },
+      {
+        "a": "Wrist_Roll_Pitch_08i",
+        "b": "STS3215_03a_Wrist_Roll",
+        "volume_mm3": 8.704356399405615
+      },
+      {
+        "a": "Wrist_Roll_08c",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+        "volume_mm3": 10.676673136579897
+      }
+    ],
+    "unchecked": [
+      {
+        "a": "Base_08q (2)",
+        "b": "Base_08q (3)",
+        "reason": "the operation failed: SMLib boolean: operation: solidcore: SmApiBoolean: curve::simple_coincidence_checker (nearest): the curves are within tolerance but no nearest point was found"
+      },
+      {
+        "a": "SO_ARM100_08k_Mirror",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+        "reason": "the operation failed: SMLib boolean: export: SMLib export: not supported yet: wire and point shells from SMLib"
+      },
+      {
+        "a": "SO_ARM100_08k_Mirror",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+        "reason": "the operation failed: SMLib boolean: export: SMLib export: not supported yet: wire and point shells from SMLib"
+      }
+    ],
+    "truncated": false
+  },
+  "arm_self_interference": {
+    "overlaps": [
+      {
+        "a": "Base_08q (2)",
+        "b": "STS3215_03a",
+        "volume_mm3": 24.34974655547003
+      },
+      {
+        "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+        "volume_mm3": 8.393800588560035
+      },
+      {
+        "a": "SO_ARM100_08k_Asym_Mirror_Clip",
+        "b": "Wrist_Roll_Pitch_08i",
+        "volume_mm3": 3.2789512563472845
+      },
+      {
+        "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+        "b": "SO_ARM100_08k_116_Square",
+        "volume_mm3": 19.18450011795998
+      },
+      {
+        "a": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:2)",
+        "b": "SO_ARM100_08k_Mirror (2)",
+        "volume_mm3": 170.01915211703505
+      },
+      {
+        "a": "SO_ARM100_08k_116_Square",
+        "b": "SO_ARM100_08k_Mirror (2)",
+        "volume_mm3": 187.45369772877677
+      },
+      {
+        "a": "SO_ARM100_08k_Mirror (2)",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+        "volume_mm3": 8.393800588581948
+      },
+      {
+        "a": "Wrist_Roll_Pitch_08i",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+        "volume_mm3": 35.721198565370074
+      },
+      {
+        "a": "Wrist_Roll_Pitch_08i",
+        "b": "STS3215_03a_Wrist_Roll",
+        "volume_mm3": 8.704356399406178
+      },
+      {
+        "a": "Wrist_Roll_08c",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:5)",
+        "volume_mm3": 10.676673136579458
+      }
+    ],
+    "unchecked": [
+      {
+        "a": "Base_08q (2)",
+        "b": "Base_08q (3)",
+        "reason": "the operation failed: SMLib boolean: operation: solidcore: SmApiBoolean: curve::simple_coincidence_checker (nearest): the curves are within tolerance but no nearest point was found"
+      },
+      {
+        "a": "SO_ARM100_08k_Mirror",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:3)",
+        "reason": "the operation failed: SMLib boolean: export: SMLib export: not supported yet: wire and point shells from SMLib"
+      },
+      {
+        "a": "SO_ARM100_08k_Mirror",
+        "b": "STS3215_03a (SO100 follower arm - mounted reference:1/STS3215_03a:4)",
+        "reason": "the operation failed: SMLib boolean: export: SMLib export: not supported yet: wire and point shells from SMLib"
+      }
+    ],
+    "truncated": false,
+    "budget_exceeded": false,
+    "pairs_excluded": 0,
+    "pairs_intersected": 26,
+    "pairs_candidate": 44
+  },
+  "targeted_checks": [
+    {
+      "step": 1,
+      "check": "native joints",
+      "joint_types": {
+        "rigid": 17,
+        "revolute": 1
+      },
+      "floating": [],
+      "errors": [],
+      "conflicts": [],
+      "dof": [
+        {
+          "dof": 0,
+          "occurrence": 0
+        },
+        {
+          "dof": 0,
+          "occurrence": 47
+        },
+        {
+          "dof": 0,
+          "occurrence": 49
+        },
+        {
+          "dof": 0,
+          "occurrence": 51
+        },
+        {
+          "dof": 0,
+          "occurrence": 53
+        },
+        {
+          "dof": 0,
+          "occurrence": 55
+        },
+        {
+          "dof": 0,
+          "occurrence": 57
+        },
+        {
+          "dof": 0,
+          "occurrence": 59
+        },
+        {
+          "dof": 0,
+          "occurrence": 60
+        },
+        {
+          "dof": 0,
+          "occurrence": 62
+        },
+        {
+          "dof": 0,
+          "occurrence": 64
+        },
+        {
+          "dof": 0,
+          "occurrence": 66
+        },
+        {
+          "dof": 0,
+          "occurrence": 68
+        },
+        {
+          "dof": 0,
+          "occurrence": 70
+        },
+        {
+          "dof": 0,
+          "occurrence": 71
+        },
+        {
+          "dof": 0,
+          "occurrence": 72
+        },
+        {
+          "dof": 0,
+          "occurrence": 73
+        },
+        {
+          "dof": 0,
+          "occurrence": 75
+        },
+        {
+          "dof": 0,
+          "occurrence": 1569
+        },
+        {
+          "dof": 0,
+          "occurrence": 1677
+        },
+        {
+          "dof": 1,
+          "occurrence": 1794
+        },
+        {
+          "dof": 0,
+          "occurrence": 1938
+        },
+        {
+          "dof": 0,
+          "occurrence": 2090
+        },
+        {
+          "dof": 0,
+          "occurrence": 2163
+        },
+        {
+          "dof": 0,
+          "occurrence": 2179
+        },
+        {
+          "dof": 0,
+          "occurrence": 2205
+        },
+        {
+          "dof": 0,
+          "occurrence": 2215
+        },
+        {
+          "dof": 0,
+          "occurrence": 2240
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "check": "arm foot to adapter",
+      "overlaps": [],
+      "nearest": {
+        "Base_08q (2)": [
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 3,
+      "check": "driver to spreader",
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "M30 driver heat spreader",
+            "mm": 0.25
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 4,
+      "check": "controller to tray",
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "P51 removable controller tray",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 5,
+      "check": "sink to bottom thermal pad",
+      "overlaps": [],
+      "nearest": {
+        "B26 external heatsink reference": [
+          {
+            "other": "B27 thermal interface pad",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 6,
+      "check": "underside pad to spreader",
+      "overlaps": [],
+      "nearest": {
+        "B27 thermal interface pad": [
+          {
+            "other": "M30 driver heat spreader",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 7,
+      "check": "motor face to bracket",
+      "overlaps": [],
+      "nearest": {
+        "B06 NEMA17 motor and encoder envelope": [
+          {
+            "other": "P24 NEMA17 motor bracket",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 8,
+      "check": "bracket to metal sole",
+      "overlaps": [],
+      "nearest": {
+        "P24 NEMA17 motor bracket": [
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 9,
+      "check": "four quadrants to hub",
+      "overlaps": [],
+      "nearest": {
+        "P31 platter quadrant": [
+          {
+            "other": "M20 registered output hub",
+            "mm": 0.0
+          }
+        ],
+        "P32 platter quadrant": [
+          {
+            "other": "M20 registered output hub",
+            "mm": 0.0
+          }
+        ],
+        "P33 platter quadrant": [
+          {
+            "other": "M20 registered output hub",
+            "mm": 0.0
+          }
+        ],
+        "P34 platter quadrant": [
+          {
+            "other": "M20 registered output hub",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 10,
+      "check": "four sleeve tops to seat",
+      "overlaps": [],
+      "nearest": {
+        "P11 column sleeve": [
+          {
+            "other": "M02 aluminium bearing seat",
+            "mm": 0.5
+          }
+        ],
+        "P12 column sleeve": [
+          {
+            "other": "M02 aluminium bearing seat",
+            "mm": 0.5
+          }
+        ],
+        "P13 column sleeve": [
+          {
+            "other": "M02 aluminium bearing seat",
+            "mm": 0.5
+          }
+        ],
+        "P14 column sleeve": [
+          {
+            "other": "M02 aluminium bearing seat",
+            "mm": 0.5
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 11,
+      "check": "four sleeve bottoms to base",
+      "overlaps": [],
+      "nearest": {
+        "P11 column sleeve": [
+          {
+            "other": "M01 aluminium base plate",
+            "mm": 0.0
+          }
+        ],
+        "P12 column sleeve": [
+          {
+            "other": "M01 aluminium base plate",
+            "mm": 0.0
+          }
+        ],
+        "P13 column sleeve": [
+          {
+            "other": "M01 aluminium base plate",
+            "mm": 0.0
+          }
+        ],
+        "P14 column sleeve": [
+          {
+            "other": "M01 aluminium base plate",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 12,
+      "check": "column sleeve to steel column",
+      "overlaps": [],
+      "nearest": {
+        "P11 column sleeve": [
+          {
+            "other": "M11 steel locating column",
+            "mm": 0.15
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 13,
+      "check": "sensor to target",
+      "overlaps": [],
+      "nearest": {
+        "B08 axial home sensor reference": [
+          {
+            "other": "B12 retained steel home target",
+            "mm": 1.2
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 14,
+      "check": "hub to outer ring",
+      "overlaps": [],
+      "nearest": {
+        "M20 registered output hub": [
+          {
+            "other": "B01 bearing outer ring reference",
+            "mm": 1.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 15,
+      "check": "wheel slot to pin",
+      "overlaps": [],
+      "nearest": {
+        "M21 wheel drive pin": [
+          {
+            "other": "B11 duplex wheel envelope",
+            "mm": 0.005015188
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 16,
+      "check": "platter to fixed housing",
+      "overlaps": [],
+      "nearest": {
+        "P31 platter quadrant": [
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 2.0
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 136.707168795
+          }
+        ],
+        "P32 platter quadrant": [
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 2.0
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 136.707168795
+          }
+        ],
+        "P33 platter quadrant": [
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 2.0
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 136.707168795
+          }
+        ],
+        "P34 platter quadrant": [
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 2.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 2.039607805
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 136.707168795
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 17,
+      "check": "housing to steel stand",
+      "overlaps": [],
+      "nearest": {
+        "P41 fixed housing quadrant": [
+          {
+            "other": "M52 steel front X brace",
+            "mm": 162.206935733
+          }
+        ],
+        "P42 fixed housing quadrant": [
+          {
+            "other": "M52 steel front X brace",
+            "mm": 162.206935733
+          }
+        ],
+        "P43 fixed housing quadrant": [
+          {
+            "other": "M52 steel front X brace",
+            "mm": 1.5
+          }
+        ],
+        "P44 fixed housing quadrant": [
+          {
+            "other": "M52 steel front X brace",
+            "mm": 1.5
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 18,
+      "check": "hood/housing joint at rest",
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 0.540348514
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 19,
+      "check": "box gasket to lid",
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P52 electronics lid",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 20,
+      "check": "box gasket to box",
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 21,
+      "check": "shaft to worm",
+      "overlaps": [],
+      "nearest": {
+        "B03 worm shaft reference": [
+          {
+            "other": "B04 duplex worm envelope",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 22,
+      "check": "F24 site 1 seat samples; r3.4 and r4.4 in +X,-X,+Y,-Y order",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              31.176497,
+              -189.225009,
+              166.151947
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              31.176497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              31.176497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              31.176497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              31.176497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              31.176497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              31.176497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              24.376497,
+              -189.225009,
+              166.151947
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              24.376497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              24.376497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              24.376497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              24.376497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              24.376497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              24.376497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              27.776497,
+              -185.825009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              27.776497,
+              -185.825009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              27.776497,
+              -185.825009,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              27.776497,
+              -185.825009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              166.151947
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              27.776497,
+              -192.625009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              32.176497,
+              -189.225009,
+              167.431889
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              32.176497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              32.176497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              32.176497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              32.176497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              32.176497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              32.176497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              23.376497,
+              -189.225009,
+              167.431889
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              23.376497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              23.376497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              23.376497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              23.376497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              23.376497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              23.376497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              27.776497,
+              -184.825009,
+              165.74047
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              27.776497,
+              -184.825009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              27.776497,
+              -184.825009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              27.776497,
+              -184.825009,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              27.776497,
+              -184.825009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              167.431889
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              27.776497,
+              -193.625009,
+              32.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 23,
+      "check": "F24 site 2 seat samples; r3.4 and r4.4 in +X,-X,+Y,-Y order",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              35.15,
+              -259.0,
+              166.3593
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              35.15,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              35.15,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              35.15,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              35.15,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              35.15,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              35.15,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              28.35,
+              -259.0,
+              166.3593
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              28.35,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              28.35,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              28.35,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              28.35,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              28.35,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              28.35,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              31.75,
+              -255.6,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              31.75,
+              -255.6,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              31.75,
+              -255.6,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              31.75,
+              -255.6,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              31.75,
+              -255.6,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              31.75,
+              -255.6,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              31.75,
+              -255.6,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              31.75,
+              -262.4,
+              166.3593
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              31.75,
+              -262.4,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              31.75,
+              -262.4,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              31.75,
+              -262.4,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              31.75,
+              -262.4,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              36.15,
+              -259.0,
+              167.140586
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              36.15,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              36.15,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              36.15,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              36.15,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              36.15,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              36.15,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              27.35,
+              -259.0,
+              167.140586
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              27.35,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              27.35,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              27.35,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              27.35,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              27.35,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              27.35,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              31.75,
+              -254.6,
+              166.108131
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              31.75,
+              -254.6,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              31.75,
+              -254.6,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              31.75,
+              -254.6,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              31.75,
+              -254.6,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              31.75,
+              -254.6,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              31.75,
+              -254.6,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              31.75,
+              -254.6,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              31.75,
+              -263.4,
+              167.140586
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              31.75,
+              -263.4,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              31.75,
+              -263.4,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              31.75,
+              -263.4,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              31.75,
+              -263.4,
+              32.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 24,
+      "check": "F24 site 3 seat samples; r3.4 and r4.4 in +X,-X,+Y,-Y order",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -24.376497,
+              -189.225009,
+              166.151947
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -24.376497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -24.376497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -24.376497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -24.376497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -24.376497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -24.376497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -31.176497,
+              -189.225009,
+              166.151947
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -31.176497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -31.176497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -31.176497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -31.176497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -31.176497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -31.176497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -27.776497,
+              -185.825009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -27.776497,
+              -185.825009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -27.776497,
+              -185.825009,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -27.776497,
+              -185.825009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              166.151947
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -27.776497,
+              -192.625009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -23.376497,
+              -189.225009,
+              167.431889
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -23.376497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -23.376497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -23.376497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -23.376497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -23.376497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -23.376497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -32.176497,
+              -189.225009,
+              167.431889
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -32.176497,
+              -189.225009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -32.176497,
+              -189.225009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -32.176497,
+              -189.225009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -32.176497,
+              -189.225009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -32.176497,
+              -189.225009,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -32.176497,
+              -189.225009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -27.776497,
+              -184.825009,
+              165.74047
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -27.776497,
+              -184.825009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -27.776497,
+              -184.825009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -27.776497,
+              -184.825009,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -27.776497,
+              -184.825009,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              167.431889
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -27.776497,
+              -193.625009,
+              32.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 25,
+      "check": "F24 site 4 seat samples; r3.4 and r4.4 in +X,-X,+Y,-Y order",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -28.35,
+              -259.0,
+              166.3593
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -28.35,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -28.35,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -28.35,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -28.35,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -28.35,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -28.35,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -35.15,
+              -259.0,
+              166.3593
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -35.15,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -35.15,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -35.15,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -35.15,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -35.15,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -35.15,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -31.75,
+              -255.6,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -31.75,
+              -255.6,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -31.75,
+              -255.6,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -31.75,
+              -255.6,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -31.75,
+              -255.6,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              -31.75,
+              -255.6,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -31.75,
+              -255.6,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -31.75,
+              -262.4,
+              166.3593
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -31.75,
+              -262.4,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -31.75,
+              -262.4,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -31.75,
+              -262.4,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -31.75,
+              -262.4,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -27.35,
+              -259.0,
+              167.140586
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -27.35,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -27.35,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -27.35,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -27.35,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -27.35,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -27.35,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -36.15,
+              -259.0,
+              167.140586
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -36.15,
+              -259.0,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -36.15,
+              -259.0,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -36.15,
+              -259.0,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -36.15,
+              -259.0,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -36.15,
+              -259.0,
+              35.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -36.15,
+              -259.0,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              166.108131
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              82.0
+            ]
+          },
+          {
+            "body": "B22 driver packaging envelope",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              71.0
+            ]
+          },
+          {
+            "body": "M30 driver heat spreader",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              35.75
+            ]
+          },
+          {
+            "body": "B21 heat spreader gasket",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              32.75
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -31.75,
+              -254.6,
+              32.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "Base_08q (2)",
+            "point_mm": [
+              -31.75,
+              -263.4,
+              167.140586
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -31.75,
+              -263.4,
+              152.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -31.75,
+              -263.4,
+              108.0
+            ]
+          },
+          {
+            "body": "P51 removable controller tray",
+            "point_mm": [
+              -31.75,
+              -263.4,
+              82.0
+            ]
+          },
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -31.75,
+              -263.4,
+              32.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 26,
+      "check": "top dust paths; R85 seam, adjacent deck, R115 seam, R65 seam, R145 seam",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "M60 monolithic worm carrier",
+            "point_mm": [
+              0.05,
+              85.0,
+              20.0
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              0.05,
+              85.0,
+              12.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P31 platter quadrant",
+            "point_mm": [
+              0.25,
+              85.0,
+              128.0
+            ]
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "point_mm": [
+              0.25,
+              85.0,
+              20.0
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              0.25,
+              85.0,
+              12.0
+            ]
+          },
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              0.25,
+              85.0,
+              2.5
+            ]
+          }
+        ],
+        [],
+        [
+          {
+            "body": "M20 registered output hub",
+            "point_mm": [
+              0.05,
+              65.0,
+              116.0
+            ]
+          },
+          {
+            "body": "M02 aluminium bearing seat",
+            "point_mm": [
+              0.05,
+              65.0,
+              90.0
+            ]
+          },
+          {
+            "body": "B04 duplex worm envelope",
+            "point_mm": [
+              0.05,
+              65.0,
+              64.696938
+            ]
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "point_mm": [
+              0.05,
+              65.0,
+              20.0
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              0.05,
+              65.0,
+              12.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P45 seam backing strip 1",
+            "point_mm": [
+              0.05,
+              145.0,
+              96.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 27,
+      "check": "gutter floor at R155,158,161 and lip R163; 30 degrees",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              134.233938,
+              77.5,
+              100.0
+            ]
+          },
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              134.233938,
+              77.5,
+              95.5
+            ]
+          },
+          {
+            "body": "P24 NEMA17 motor bracket",
+            "point_mm": [
+              134.233938,
+              77.5,
+              20.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              134.233938,
+              77.5,
+              12.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              136.832014,
+              79.0,
+              100.0
+            ]
+          },
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              136.832014,
+              79.0,
+              95.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              139.43009,
+              80.5,
+              100.0
+            ]
+          },
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              139.43009,
+              80.5,
+              95.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              141.162141,
+              81.5,
+              102.0
+            ]
+          },
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              141.162141,
+              81.5,
+              95.5
+            ]
+          },
+          {
+            "body": "P24 NEMA17 motor bracket",
+            "point_mm": [
+              141.162141,
+              81.5,
+              20.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              141.162141,
+              81.5,
+              12.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 28,
+      "check": "four drain axes, from just above gutter, with neighboring solid-floor controls at +3 degrees",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              113.844192,
+              113.844192,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              107.730028,
+              119.646317,
+              100.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P42 fixed housing quadrant",
+            "point_mm": [
+              -113.844192,
+              113.844192,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P42 fixed housing quadrant",
+            "point_mm": [
+              -119.646317,
+              107.730028,
+              100.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P43 fixed housing quadrant",
+            "point_mm": [
+              -113.844192,
+              -113.844192,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P43 fixed housing quadrant",
+            "point_mm": [
+              -107.730028,
+              -119.646317,
+              100.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P44 fixed housing quadrant",
+            "point_mm": [
+              113.844192,
+              -113.844192,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P44 fixed housing quadrant",
+            "point_mm": [
+              119.646317,
+              -107.730028,
+              100.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 29,
+      "check": "rim around inner end of rib and outer wall; start below deck at Z115",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "M20 registered output hub",
+            "point_mm": [
+              74.0,
+              0.5,
+              106.0
+            ]
+          },
+          {
+            "body": "M02 aluminium bearing seat",
+            "point_mm": [
+              74.0,
+              0.5,
+              90.0
+            ]
+          },
+          {
+            "body": "P11 column sleeve",
+            "point_mm": [
+              74.0,
+              0.5,
+              81.5
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              74.0,
+              0.5,
+              12.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M02 aluminium bearing seat",
+            "point_mm": [
+              76.0,
+              0.5,
+              90.0
+            ]
+          },
+          {
+            "body": "P11 column sleeve",
+            "point_mm": [
+              76.0,
+              0.5,
+              81.5
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              76.0,
+              0.5,
+              12.0
+            ]
+          },
+          {
+            "body": "B20 core static gasket",
+            "point_mm": [
+              76.0,
+              0.5,
+              4.0
+            ]
+          },
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              76.0,
+              0.5,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              95.0,
+              0.5,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              145.0,
+              0.5,
+              96.0
+            ]
+          },
+          {
+            "body": "P45 seam backing strip 4",
+            "point_mm": [
+              145.0,
+              0.5,
+              96.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              151.0,
+              0.5,
+              114.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              155.0,
+              0.5,
+              100.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P31 platter quadrant",
+            "point_mm": [
+              157.0,
+              0.5,
+              103.0
+            ]
+          },
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              157.0,
+              0.5,
+              100.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 30,
+      "check": "cover/C-axis section through a rib; inner end and below deck",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "M20 registered output hub",
+            "point_mm": [
+              65.0,
+              36.0,
+              106.0
+            ]
+          },
+          {
+            "body": "M02 aluminium bearing seat",
+            "point_mm": [
+              65.0,
+              36.0,
+              90.0
+            ]
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "point_mm": [
+              65.0,
+              36.0,
+              80.0
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              65.0,
+              36.0,
+              12.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              65.0,
+              36.0,
+              4.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M02 aluminium bearing seat",
+            "point_mm": [
+              67.0,
+              36.0,
+              90.0
+            ]
+          },
+          {
+            "body": "M61 worm bearing retainer right",
+            "point_mm": [
+              67.0,
+              36.0,
+              77.0
+            ]
+          },
+          {
+            "body": "M60 monolithic worm carrier",
+            "point_mm": [
+              67.0,
+              36.0,
+              20.0
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              67.0,
+              36.0,
+              12.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              67.0,
+              36.0,
+              4.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              79.0,
+              36.0,
+              12.0
+            ]
+          },
+          {
+            "body": "B20 core static gasket",
+            "point_mm": [
+              79.0,
+              36.0,
+              4.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              79.0,
+              36.0,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P31 platter quadrant",
+            "point_mm": [
+              81.0,
+              36.0,
+              98.0
+            ]
+          },
+          {
+            "body": "M01 aluminium base plate",
+            "point_mm": [
+              81.0,
+              36.0,
+              12.0
+            ]
+          },
+          {
+            "body": "B20 core static gasket",
+            "point_mm": [
+              81.0,
+              36.0,
+              4.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              81.0,
+              36.0,
+              2.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P31 platter quadrant",
+            "point_mm": [
+              139.0,
+              36.0,
+              98.0
+            ]
+          },
+          {
+            "body": "B06 NEMA17 motor and encoder envelope",
+            "point_mm": [
+              139.0,
+              36.0,
+              71.15
+            ]
+          },
+          {
+            "body": "P24 NEMA17 motor bracket",
+            "point_mm": [
+              139.0,
+              36.0,
+              20.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              139.0,
+              36.0,
+              12.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "B06 NEMA17 motor and encoder envelope",
+            "point_mm": [
+              141.0,
+              36.0,
+              71.15
+            ]
+          },
+          {
+            "body": "P24 NEMA17 motor bracket",
+            "point_mm": [
+              141.0,
+              36.0,
+              20.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              141.0,
+              36.0,
+              12.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P41 fixed housing quadrant",
+            "point_mm": [
+              150.0,
+              36.0,
+              100.0
+            ]
+          },
+          {
+            "body": "B06 NEMA17 motor and encoder envelope",
+            "point_mm": [
+              150.0,
+              36.0,
+              71.15
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              150.0,
+              36.0,
+              12.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 31,
+      "check": "lid groove section at mid side away from screws; cover/lid above ray",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              72.4,
+              -209.0,
+              98.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              72.6,
+              -209.0,
+              102.5
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              72.6,
+              -209.0,
+              102.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              74.0,
+              -209.0,
+              102.5
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              74.0,
+              -209.0,
+              102.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              75.4,
+              -209.0,
+              102.5
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              75.4,
+              -209.0,
+              102.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              75.6,
+              -209.0,
+              98.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 32,
+      "check": "F02 above M60 before bearing installation; F07 top approaches",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "M60 monolithic worm carrier",
+            "point_mm": [
+              64.0,
+              64.0,
+              80.0
+            ]
+          },
+          {
+            "body": "B02 worm support bearing right",
+            "point_mm": [
+              64.0,
+              64.0,
+              65.297059
+            ]
+          }
+        ],
+        [
+          {
+            "body": "M60 monolithic worm carrier",
+            "point_mm": [
+              -64.0,
+              64.0,
+              80.0
+            ]
+          },
+          {
+            "body": "B02 worm support bearing left",
+            "point_mm": [
+              -64.0,
+              64.0,
+              65.297059
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P31 platter quadrant",
+            "point_mm": [
+              52.0,
+              18.0,
+              128.0
+            ]
+          },
+          {
+            "body": "M20 registered output hub",
+            "point_mm": [
+              52.0,
+              18.0,
+              116.0
+            ]
+          },
+          {
+            "body": "B01 bearing outer ring reference",
+            "point_mm": [
+              52.0,
+              18.0,
+              99.6
+            ]
+          },
+          {
+            "body": "M02 aluminium bearing seat",
+            "point_mm": [
+              52.0,
+              18.0,
+              90.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P32 platter quadrant",
+            "point_mm": [
+              -52.0,
+              18.0,
+              128.0
+            ]
+          },
+          {
+            "body": "M20 registered output hub",
+            "point_mm": [
+              -52.0,
+              18.0,
+              116.0
+            ]
+          },
+          {
+            "body": "B01 bearing outer ring reference",
+            "point_mm": [
+              -52.0,
+              18.0,
+              99.6
+            ]
+          },
+          {
+            "body": "M02 aluminium bearing seat",
+            "point_mm": [
+              -52.0,
+              18.0,
+              90.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P31 platter quadrant",
+            "point_mm": [
+              70.0,
+              92.0,
+              128.0
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              70.0,
+              92.0,
+              4.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P32 platter quadrant",
+            "point_mm": [
+              -70.0,
+              92.0,
+              128.0
+            ]
+          },
+          {
+            "body": "P42 fixed housing quadrant",
+            "point_mm": [
+              -70.0,
+              92.0,
+              2.5
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 33,
+      "check": "F21 bores and adjacent floor; upward from below box",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -75.0,
+              -271.0,
+              92.0
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              -75.0,
+              -271.0,
+              102.5
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -75.0,
+              -271.0,
+              104.0
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -75.0,
+              -271.0,
+              144.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -72.4,
+              -271.0,
+              28.0
+            ]
+          },
+          {
+            "body": "P53 electronics foot 1",
+            "point_mm": [
+              -72.4,
+              -271.0,
+              28.0
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              -72.4,
+              -271.0,
+              102.5
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -72.4,
+              -271.0,
+              104.0
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -72.4,
+              -271.0,
+              144.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -75.0,
+              -177.0,
+              92.0
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              -75.0,
+              -177.0,
+              102.5
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -75.0,
+              -177.0,
+              104.0
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -75.0,
+              -177.0,
+              144.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              -72.4,
+              -177.0,
+              28.0
+            ]
+          },
+          {
+            "body": "P53 electronics foot 2",
+            "point_mm": [
+              -72.4,
+              -177.0,
+              28.0
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              -72.4,
+              -177.0,
+              102.5
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              -72.4,
+              -177.0,
+              104.0
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              -72.4,
+              -177.0,
+              144.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              75.0,
+              -271.0,
+              92.0
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              75.0,
+              -271.0,
+              102.5
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              75.0,
+              -271.0,
+              104.0
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              75.0,
+              -271.0,
+              144.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              77.6,
+              -271.0,
+              28.0
+            ]
+          },
+          {
+            "body": "P53 electronics foot 3",
+            "point_mm": [
+              77.6,
+              -271.0,
+              28.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              77.6,
+              -271.0,
+              104.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              75.0,
+              -177.0,
+              92.0
+            ]
+          },
+          {
+            "body": "B24 lid gasket",
+            "point_mm": [
+              75.0,
+              -177.0,
+              102.5
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              75.0,
+              -177.0,
+              104.0
+            ]
+          },
+          {
+            "body": "M50 SO100 arm mounting plate",
+            "point_mm": [
+              75.0,
+              -177.0,
+              144.0
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P50 electronics service box",
+            "point_mm": [
+              77.6,
+              -177.0,
+              28.0
+            ]
+          },
+          {
+            "body": "P53 electronics foot 4",
+            "point_mm": [
+              77.6,
+              -177.0,
+              28.0
+            ]
+          },
+          {
+            "body": "P52 electronics lid",
+            "point_mm": [
+              77.6,
+              -177.0,
+              104.0
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 44,
+      "check": "F24 actual annular washer to arm at register height",
+      "overlaps": [],
+      "nearest": {
+        "AUD F24 upper washer 1": [
+          {
+            "other": "Base_08q (2)",
+            "mm": 0.270962919
+          }
+        ],
+        "AUD F24 upper washer 2": [
+          {
+            "other": "Base_08q (2)",
+            "mm": 0.615661475
+          }
+        ],
+        "AUD F24 upper washer 3": [
+          {
+            "other": "Base_08q (2)",
+            "mm": 0.270962919
+          }
+        ],
+        "AUD F24 upper washer 4": [
+          {
+            "other": "Base_08q (2)",
+            "mm": 0.615661475
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 59,
+      "check": "underbench M55 and F21 washer overlap",
+      "intersections": [
+        {
+          "a": "AUD M55 backing strip -1",
+          "b": "AUD F21 underbench washer -75 -271",
+          "volume_mm3": 22.11065457495741
+        },
+        {
+          "a": "AUD M55 backing strip -1",
+          "b": "AUD F21 underbench washer -75 -177",
+          "volume_mm3": 22.110654574957632
+        },
+        {
+          "a": "AUD M55 backing strip 1",
+          "b": "AUD F21 underbench washer 75 -271",
+          "volume_mm3": 22.110654574957437
+        },
+        {
+          "a": "AUD M55 backing strip 1",
+          "b": "AUD F21 underbench washer 75 -177",
+          "volume_mm3": 22.110654574957653
+        }
+      ],
+      "unchecked": [],
+      "truncated": false,
+      "budget_exceeded": false
+    },
+    {
+      "step": 64,
+      "check": "F02 straight key against bare carrier",
+      "intersections": [
+        {
+          "a": "M60 monolithic worm carrier",
+          "b": "AUD F02 straight key -64 64",
+          "volume_mm3": 553.4492661404155
+        },
+        {
+          "a": "M60 monolithic worm carrier",
+          "b": "AUD F02 straight key 64 64",
+          "volume_mm3": 553.4492661480936
+        }
+      ],
+      "unchecked": [],
+      "truncated": false,
+      "budget_exceeded": false
+    },
+    {
+      "step": 86,
+      "check": "lid lifted; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "TEST F24 3",
+            "mm": 23.054066886
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 23.054066886
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 23.128246106
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 23.128246106
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "TEST F24 2",
+            "mm": 17.8
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 17.8
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 17.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 17.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 88,
+      "check": "lid rear extraction -40 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "TEST F24 2",
+            "mm": 33.377614614
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 33.377614614
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 43.376145518
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 43.376145518
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "TEST F24 3",
+            "mm": 17.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 17.8
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 24.458951625
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 24.458951625
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 90,
+      "check": "lid rear extraction -40 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "TEST F24 3",
+            "mm": 21.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 21.8
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 68.446478632
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 68.446478632
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "TEST F24 3",
+            "mm": 17.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 17.8
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 59.064374004
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 59.064374004
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 92,
+      "check": "lid rear extraction -60 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "TEST F24 1",
+            "mm": 59.533657427
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 59.533657427
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 125.987876801
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 125.987876801
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "TEST F24 3",
+            "mm": 50.140911925
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 50.140911925
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 116.861563142
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 116.861563142
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 95,
+      "check": "tray lifted; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 2",
+            "mm": 7.132007248
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 7.132007248
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 7.3
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 7.3
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 97,
+      "check": "tray rear extraction -40 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 44.201571043
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 44.201571043
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 41.100365187
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 41.100365187
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 99,
+      "check": "tray rear extraction -40 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 16.22621336
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 16.22621336
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 83.740444181
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 83.740444181
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "TEST F24 1",
+            "mm": 24.980792622
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.980792622
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 76.523679473
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 76.523679473
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 101,
+      "check": "tray rear extraction -60 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 74.032413788
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 74.032413788
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 143.479399159
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 143.479399159
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "TEST F24 1",
+            "mm": 67.591305568
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 67.591305568
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 133.954836358
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 133.954836358
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 104,
+      "check": "driver lifted; installed F24",
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 0",
+          "volume_mm3": 191.3791347408689
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 188.13336791769854
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 2",
+          "volume_mm3": 191.3791347408689
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 188.1333679176977
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 0",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 105,
+      "check": "raised driver vs four F24 bolts (registered dimensions)",
+      "intersections": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 0",
+          "volume_mm3": 191.3791347408688
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 188.13336791769825
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 2",
+          "volume_mm3": 191.37913474086872
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 188.13336791769794
+        }
+      ],
+      "unchecked": [],
+      "truncated": false,
+      "budget_exceeded": false
+    },
+    {
+      "step": 107,
+      "check": "driver rear extraction -40 increment; installed F24",
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 198.9675347273534
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 198.96753472735293
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 32.349884509
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 32.349884509
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 109,
+      "check": "driver rear extraction -40 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 2.958548116
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 2.958548116
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 72.308466223
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 72.308466223
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 111,
+      "check": "driver rear extraction -60 increment; installed F24",
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 62.538708014
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 62.538708014
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 132.293284702
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 132.293284702
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 113,
+      "check": "hood up 8",
+      "overlaps": [
+        {
+          "a": "P31 platter quadrant",
+          "b": "P46 motor service hood",
+          "volume_mm3": 178.84172630272266
+        },
+        {
+          "a": "P41 fixed housing quadrant",
+          "b": "P46 motor service hood",
+          "volume_mm3": 535.0618810111795
+        }
+      ],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "P31 platter quadrant",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 8.0
+          },
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 8.0
+          },
+          {
+            "other": "B06 NEMA17 motor and encoder envelope",
+            "mm": 8.35
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 15.2
+          },
+          {
+            "other": "P34 platter quadrant",
+            "mm": 15.2
+          },
+          {
+            "other": "P32 platter quadrant",
+            "mm": 120.973966511
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 121.817283558
+          },
+          {
+            "other": "P33 platter quadrant",
+            "mm": 155.12304103
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 179.771710395
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 116,
+      "check": "hood outward 2",
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 1.5
+          },
+          {
+            "other": "P31 platter quadrant",
+            "mm": 7.5
+          },
+          {
+            "other": "B06 NEMA17 motor and encoder envelope",
+            "mm": 8.35
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 15.273833834
+          },
+          {
+            "other": "P34 platter quadrant",
+            "mm": 16.949631264
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 122.820015905
+          },
+          {
+            "other": "P32 platter quadrant",
+            "mm": 124.032279294
+          },
+          {
+            "other": "P33 platter quadrant",
+            "mm": 157.581237167
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 180.824075944
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 118,
+      "check": "hood outward 10",
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 1.5
+          },
+          {
+            "other": "P31 platter quadrant",
+            "mm": 7.845284396
+          },
+          {
+            "other": "B06 NEMA17 motor and encoder envelope",
+            "mm": 8.35
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 15.273833834
+          },
+          {
+            "other": "P34 platter quadrant",
+            "mm": 17.342353265
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 130.789828508
+          },
+          {
+            "other": "P32 platter quadrant",
+            "mm": 131.928879481
+          },
+          {
+            "other": "P33 platter quadrant",
+            "mm": 163.869061269
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 187.763843089
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 120,
+      "check": "hood outward 30",
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "B06 NEMA17 motor and encoder envelope",
+            "mm": 8.35
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 14.81322758
+          },
+          {
+            "other": "P31 platter quadrant",
+            "mm": 20.182378487
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 24.903609341
+          },
+          {
+            "other": "P34 platter quadrant",
+            "mm": 29.112678398
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 150.728353593
+          },
+          {
+            "other": "P32 platter quadrant",
+            "mm": 151.717785961
+          },
+          {
+            "other": "P33 platter quadrant",
+            "mm": 180.183591309
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 205.450837424
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 122,
+      "check": "hood outward 70",
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "B06 NEMA17 motor and encoder envelope",
+            "mm": 16.35
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 49.463749615
+          },
+          {
+            "other": "P31 platter quadrant",
+            "mm": 53.964715598
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 61.593596809
+          },
+          {
+            "other": "P34 platter quadrant",
+            "mm": 65.887249882
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 190.644043307
+          },
+          {
+            "other": "P32 platter quadrant",
+            "mm": 191.427274046
+          },
+          {
+            "other": "P33 platter quadrant",
+            "mm": 214.691036721
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 241.908284794
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 124,
+      "check": "hood then up 30",
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B06 NEMA17 motor and encoder envelope",
+            "mm": 16.35
+          },
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 30.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 30.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 49.441000455
+          },
+          {
+            "other": "P31 platter quadrant",
+            "mm": 53.441000455
+          },
+          {
+            "other": "P44 fixed housing quadrant",
+            "mm": 61.575329214
+          },
+          {
+            "other": "P34 platter quadrant",
+            "mm": 65.458992484
+          },
+          {
+            "other": "P32 platter quadrant",
+            "mm": 190.326433394
+          },
+          {
+            "other": "P42 fixed housing quadrant",
+            "mm": 194.692452983
+          },
+          {
+            "other": "P33 platter quadrant",
+            "mm": 213.710063517
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 245.111440475
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    {
+      "step": 126,
+      "check": "inner side of hood posts; post top below roof",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              171.0,
+              24.3,
+              89.5
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              171.0,
+              24.3,
+              13.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              171.0,
+              87.7,
+              89.5
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              171.0,
+              87.7,
+              13.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              225.0,
+              24.3,
+              89.5
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              225.0,
+              24.3,
+              13.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              225.0,
+              87.7,
+              89.5
+            ]
+          },
+          {
+            "body": "M40 stepped motor support",
+            "point_mm": [
+              225.0,
+              87.7,
+              13.5
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 127,
+      "check": "inner side of hood posts; roof underside",
+      "rays_in_input_order": [
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              171.0,
+              24.3,
+              92.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              171.0,
+              87.7,
+              92.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              225.0,
+              24.3,
+              92.5
+            ]
+          }
+        ],
+        [
+          {
+            "body": "P46 motor service hood",
+            "point_mm": [
+              225.0,
+              87.7,
+              92.5
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "step": 132,
+      "check": "F21 straight AF3 key core vs open bare box rim",
+      "intersections": [
+        {
+          "a": "P50 electronics service box",
+          "b": "AUD F21 straight key -75 -271",
+          "volume_mm3": 70.42950683263757
+        },
+        {
+          "a": "P50 electronics service box",
+          "b": "AUD F21 straight key -75 -177",
+          "volume_mm3": 70.42950683263798
+        },
+        {
+          "a": "P50 electronics service box",
+          "b": "AUD F21 straight key 75 -271",
+          "volume_mm3": 70.42950683263821
+        },
+        {
+          "a": "P50 electronics service box",
+          "b": "AUD F21 straight key 75 -177",
+          "volume_mm3": 70.42950683263783
+        }
+      ],
+      "unchecked": [],
+      "truncated": false,
+      "budget_exceeded": false
+    },
+    {
+      "step": 137,
+      "check": "F24 straight AF3 key core vs folded arm above screw heads",
+      "overlaps": [],
+      "nearest": {
+        "AUD F24 straight key 1": [
+          {
+            "other": "SO_ARM100_08k_Asym_Mirror_Clip",
+            "mm": 4.722626691
+          }
+        ],
+        "AUD F24 straight key 2": [
+          {
+            "other": "Base_08q (2)",
+            "mm": 6.245097519
+          }
+        ],
+        "AUD F24 straight key 3": [
+          {
+            "other": "SO_ARM100_08k_Asym_Mirror_Clip",
+            "mm": 4.807491364
+          }
+        ],
+        "AUD F24 straight key 4": [
+          {
+            "other": "Base_08q (2)",
+            "mm": 6.245097519
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    }
+  ],
+  "installed_service_poses": {
+    "hood seated": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 0.540348514
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood lifted 8": {
+      "overlaps": [
+        {
+          "a": "P31 platter quadrant",
+          "b": "P46 motor service hood",
+          "volume_mm3": 178.84172630272266
+        },
+        {
+          "a": "P41 fixed housing quadrant",
+          "b": "P46 motor service hood",
+          "volume_mm3": 535.0618810111795
+        }
+      ],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "P31 platter quadrant",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F15 3 -6 25",
+            "mm": 4.5
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 2": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 1.5
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 5": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 1.5
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 10": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "P41 fixed housing quadrant",
+            "mm": 1.5
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 20": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "P24 NEMA17 motor bracket",
+            "mm": 6.5
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 30": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "B42 motor anchor washer",
+            "mm": 7.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 50": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "B41 motor anchor washer",
+            "mm": 0.035670519
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 70": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B25 motor hood gasket",
+            "mm": 0.0
+          },
+          {
+            "other": "M40 stepped motor support",
+            "mm": 0.0
+          },
+          {
+            "other": "B42 motor anchor washer",
+            "mm": 7.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "hood outward 70 then up 30": {
+      "overlaps": [],
+      "nearest": {
+        "P46 motor service hood": [
+          {
+            "other": "B06 NEMA17 motor and encoder envelope",
+            "mm": 16.35
+          },
+          {
+            "other": "TEST F14 1",
+            "mm": 26.309884074
+          },
+          {
+            "other": "TEST F14 0",
+            "mm": 26.446162213
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid lift 8": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "M52 steel front X brace",
+            "mm": 10.5
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 15.116317303
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "M52 steel front X brace",
+            "mm": 2.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "P33 platter quadrant",
+            "mm": 8.000125
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 10": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 11.011357773
+          },
+          {
+            "other": "M52 steel front X brace",
+            "mm": 20.5
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "M52 steel front X brace",
+            "mm": 12.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 20": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 8.5
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 22.429122305
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 30": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 8.5
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 25.608787554
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 40": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 8.5
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 25.608787554
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 50": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 8.5
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 25.608787554
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 60": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 8.5
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 25.608787554
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 70": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 8.5
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 23.054066886
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 80": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 9.861541462
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 21.8
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "B23 controller packaging envelope",
+            "mm": 10.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 100": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.5
+          },
+          {
+            "other": "TEST F22 2",
+            "mm": 25.949691195
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 25.949691195
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 8.0
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 16.726027622
+          },
+          {
+            "other": "TEST F22 2",
+            "mm": 16.726027622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 120": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 17.734147851
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 33.234018716
+          },
+          {
+            "other": "M51 steel side channel right",
+            "mm": 33.234018716
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 11.313708499
+          },
+          {
+            "other": "TEST F22 2",
+            "mm": 22.185541468
+          },
+          {
+            "other": "TEST F22 0",
+            "mm": 22.185541468
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "lid rearward 140": {
+      "overlaps": [],
+      "nearest": {
+        "B24 lid gasket": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 37.074249824
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 45.656324863
+          },
+          {
+            "other": "M51 steel side channel right",
+            "mm": 45.656324863
+          }
+        ],
+        "P52 electronics lid": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 29.120439557
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 35.440090293
+          },
+          {
+            "other": "M51 steel side channel right",
+            "mm": 35.440090293
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray lift 27": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 2",
+            "mm": 7.132007248
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 7.132007248
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 7.3
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.236067977
+          },
+          {
+            "other": "M52 steel front X brace",
+            "mm": 18.0
+          },
+          {
+            "other": "P43 fixed housing quadrant",
+            "mm": 20.396197637
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 10": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 4.8
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.726812024
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 20": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 4.8
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 5.0
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 30": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 4.8
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 5.0
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 40": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 4.8
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 5.0
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 50": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 4.8
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 5.0
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 60": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 4.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 4.8
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 5.0
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 70": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 5.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 7.3
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 7.3
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 80": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 5.0
+          },
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 15.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 16.22621336
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 24.980792622
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 24.980792622
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 100": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 17.24093965
+          },
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 20.862646045
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 34.700352189
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 4.472135955
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 33.823660358
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 33.823660358
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 120": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 36.84087404
+          },
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 37.619808612
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 54.24441323
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 24.083189158
+          },
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 41.340053217
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 41.641325627
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "tray rearward 140": {
+      "overlaps": [],
+      "nearest": {
+        "B23 controller packaging envelope": [
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 56.526542438
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 56.72080747
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 72.161277705
+          }
+        ],
+        "P51 removable controller tray": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 44.045431091
+          },
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 54.671747731
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 54.899908925
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver lift 60": {
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 3",
+            "mm": 2.8
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 2.8
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 2.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver lift 62": {
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.8
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.8
+          },
+          {
+            "other": "TEST F24 0",
+            "mm": 0.8
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver lift 63": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 0",
+          "volume_mm3": 2.5132741228716795
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 2.5132741228716804
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 2",
+          "volume_mm3": 2.5132741228716795
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 2.5132741228716804
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 0",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver lift 65": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 0",
+          "volume_mm3": 27.6460153515899
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 27.64601535158991
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 2",
+          "volume_mm3": 27.646015351589906
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 27.64601535158991
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 0",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver lift 68": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 0",
+          "volume_mm3": 94.17406042823349
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 93.24669847875637
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 2",
+          "volume_mm3": 94.17406042823349
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 93.24669847875599
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 0",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver lift 70": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 0",
+          "volume_mm3": 191.3791347408689
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 188.13336791769854
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 2",
+          "volume_mm3": 191.3791347408689
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 188.1333679176977
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 0",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 2",
+            "mm": 0.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 10": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 198.96753472735355
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 198.96753472735293
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 20": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 198.96753472735344
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 198.96753472735287
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 30": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 198.9675347273534
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 198.96753472735298
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 40": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 198.9675347273534
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 198.96753472735293
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 50": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 198.96753472735344
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 198.9675347273528
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 60": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 198.96753472735338
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 198.96753472735298
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 70": {
+      "overlaps": [
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 1",
+          "volume_mm3": 188.13336791769825
+        },
+        {
+          "a": "B22 driver packaging envelope",
+          "b": "TEST F24 3",
+          "volume_mm3": 188.13336791769868
+        }
+      ],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "TEST F24 1",
+            "mm": 0.0
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 0.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 80": {
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "P50 electronics service box",
+            "mm": 2.0
+          },
+          {
+            "other": "TEST F24 1",
+            "mm": 2.958548116
+          },
+          {
+            "other": "TEST F24 3",
+            "mm": 2.958548116
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 100": {
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 5.0
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 6.32455532
+          },
+          {
+            "other": "Base_08q (2)",
+            "mm": 22.464975466
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 120": {
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 24.186773245
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 26.076809621
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 36.124783736
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    },
+    "driver rearward 140": {
+      "overlaps": [],
+      "nearest": {
+        "B22 driver packaging envelope": [
+          {
+            "other": "M50 SO100 arm mounting plate",
+            "mm": 44.102154142
+          },
+          {
+            "other": "P50 electronics service box",
+            "mm": 46.043457733
+          },
+          {
+            "other": "M51 steel side channel left",
+            "mm": 51.623637997
+          }
+        ]
+      },
+      "unchecked": [],
+      "truncated": false
+    }
+  },
+  "analytical_checks": {
+    "five_kg_at_plus_80_mm": {
+      "gravity_N": 49.05,
+      "column_rows_y_mm": [
+        0,
+        -58
+      ],
+      "moment_Nm": 3.924,
+      "rear_hold_down_delta_N": 67.65517241379311,
+      "front_upward_reaction_delta_N": 116.70517241379311
+    },
+    "rib_ranges_mm": {
+      "hub_radius": 75,
+      "min_rib_radius": 85.44003745317531,
+      "max_rib_radius": 146.1642911247477,
+      "skirt_inner_radius": 156
+    },
+    "gasket": {
+      "cut_area_mm2": 1440,
+      "stock_mm": 2,
+      "cavity_mm": 1.5,
+      "stock_volume_mm3": 2880,
+      "native_volume_mm3": 2160.0,
+      "solid_stock_divided_by_cavity": 1.3333333333333333
+    },
+    "driver_height_mm": {
+      "rim": 104,
+      "plate_underside": 144,
+      "F24_tip": 133.8,
+      "driver_top_at_70_lift": 141,
+      "headroom_over_rim": 29.8
+    },
+    "reversal_arc_at_R140_mm": 0.24434609527920614
+  },
+  "physically_unverified": [
+    "physical torque, deflection, vibration/FFT, wear, fatigue and creep measurements",
+    "actual articulated arm, installed spindle, clamps, workpiece and moving cable/hose workspace",
+    "actual bearings, finished shafts, electronics, seal stock and gland supplier acceptance",
+    "slicer/toolpath verification, physical print, ingress/silica exposure, guarding, electrical or thermal tests"
+  ],
+  "replay_input_sha256": {
+    "docs/audit-evidence/2026-11-18-rt01/audit.probe.json": "8b095221d37532e0d6fc7cd475f11f9a764e0b6630ea58854bab55385f13aac5",
+    "docs/audit-evidence/2026-11-18-rt01/whole-assembly.probe.json": "9897429760ed371917664cd7d3b35ba05424af29093a468f2474b11ef6540793",
+    "docs/audit-evidence/2026-11-18-rt01/parameter-limits.probe.json": "3c0be6ab457f99aed4ea28a2107e3d9be0da3d738a0cdf4ab43c5c21a9e233ff",
+    "docs/audit-evidence/2026-11-18-rt01/installed_service.py": "950ffb8e1d236033cc49bbd0bb4ec2dc2bd2a4ec09e72e857b50ddab2ab302b0",
+    "cad/fastener-clearance-checks.json": "91f90f26c579b050b1b6b8e9f1c39a694d3db6647622c73ed61ab18dc5f5719e",
+    "cad/hardware-assembly-check.json": "30bbd2fe09bce9b84941404286e5c1a60b92f33be5bc8ae336939b2c0c13d3ae",
+    "cad/support-access-checks.json": "7f7234202c7abcac7c74ff779bbfd44911128db3c6f04ee2d6a397af942230b4",
+    "docs/audit-evidence/2026-11-17-rt01/revision4/fit-parameters.probe.json": "1616591314cea2f93de92253da853b4f6901e36327943674f4ffbc285537209b"
+  }
+}

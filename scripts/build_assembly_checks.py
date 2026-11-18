@@ -2,9 +2,12 @@
 """Disposable hardware and service probes. Run without --save."""
 import json,math
 from collections import Counter
+from copy import deepcopy
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-parts=[p['name'] for p in json.loads((ROOT/'cad/parts.json').read_text())['parts']]
+part_register=json.loads((ROOT/'cad/parts.json').read_text())
+parts=[p['name'] for p in part_register['parts']]
+revision=part_register['revision']
 armdata=json.loads((ROOT/'cad/arm-mount-reference.json').read_text())
 arm=armdata['collision_body_names']
 rows=json.loads((ROOT/'cad/fasteners.json').read_text())['rows']
@@ -26,7 +29,14 @@ def screw(n,g,x,y,tip,seat,d,hd,hh,washer=None,ignore=()):
   od,t=washer;cyl(n,od,t,[x,y,seat-t],op='join')
  for body in ignore:exclude(n,body,'Specified thread engagement; length/depth checked separately')
 def collar(n,d,t,x,y,z):cyl(n,d,t,[x,y,z],op='join')
-cmd('component.activate',component='root');cmd('component.create',name='Disposable revision 4 hardware',grounded=True)
+def nut(n,af,height,x,y,z):
+ sketch=n+' hex'
+ radius=af/math.sqrt(3)
+ vertices=[[f'{radius*math.cos(math.radians(a)):.12f} mm',f'{radius*math.sin(math.radians(a)):.12f} mm'] for a in range(30,360,60)]
+ cmd('sketch.create',name=sketch,plane={'origin':[x,y,z],'x_dir':[1,0,0],'y_dir':[0,1,0]})
+ cmd('sketch.line',points=vertices,closed=True,connect=False);cmd('sketch.finish')
+ cmd('solid.extrude',sketch=sketch,distance=height,operation='join',targets=[n])
+cmd('component.activate',component='root');cmd('component.create',name=f'Disposable revision {revision} hardware',grounded=True)
 for i,(x,y) in enumerate([(66,0),(-66,0),(36,-58),(-36,-58)]):screw(f'TEST F01 {i}','F01',x,y,1.6,91.6,6,10,6,(11,1.6),('M01 aluminium base plate',))
 for i,(x,y) in enumerate([(x,y) for x in [-64,64] for y in [-64,64]]):screw(f'TEST F02 {i}','F02',x,y,0,13.6,6,10,6,(18,1.6))
 for i in range(8):
@@ -64,12 +74,18 @@ for i,(x,y) in enumerate([(x,y) for x in [-65,65] for y in [-258,-190]]):screw(f
 for i,(x,y) in enumerate([(x,y) for x in [-55.5,55.5] for y in [-258.5,-189.5]]):
  n=f'TEST F20 {i}';register(n,'F20');cyl(n,3,14.9,[x,y,19.55]);cmd('solid.cone',diameter=3.4,top_diameter=6,height=1.3,base=[x,y,34.25],operation='join',targets=[n])
  collar(n,7,1.25,x,y,26.75);collar(n,5.5/math.cos(math.pi/6),4,x,y,22.75)
-for i,(x,y) in enumerate([(x,y) for x in [-75,75] for y in [-271,-177]]):screw(f'TEST F21 {i}','F21',x,y,0,32.8,4,7,4,(9,.8))
+foot_points=[(x,y) for x in [-75,75] for y in [-271,-177]]
+for i,(x,y) in enumerate(foot_points):
+ n=f'TEST F21 {i}';register(n,'F21')
+ # Upward bolt. Allow just under 5 mm extra after rounding the minimum length.
+ cyl(n,4,44.95,[x,y,0]);collar(n,9,1.55,x,y,32);nut(n,7,5,x,y,33.55)
 for i,(x,y) in enumerate([(x,y) for x in [-98,98] for y in [-272,-176]]):
  n=f'TEST F22 {i}';screw(n,'F22',x,y,128.6,153.6,6,10,6);collar(n,18,1.6,x,y,138.4);collar(n,10/math.cos(math.pi/6),6,x,y,132.4)
  screw(f'TEST F23 {i}','F23',x,y,0,5.6,6,10,6,(18,1.6))
 for i,p in enumerate(armdata['adapter_holes']):
- x,y=p['plate_hole_center_mm'][:2];n=f'TEST F24 {i}';screw(n,'F24',x,y,133.8,168.8,4,7,4,(9,.8));collar(n,9,.8,x,y,143.2);collar(n,7/math.cos(math.pi/6),5,x,y,138.2)
+ x,y=p['plate_hole_center_mm'][:2];n=f'TEST F24 {i}'
+ # Longest permitted assembled penetration, with the provisional upper hardware envelope.
+ screw(n,'F24',x,y,145,168.8,4,7,4,(9,.8),('M50 SO100 arm mounting plate',))
 cmd('component.activate',component='RT01 - rotating table')
 for i in range(8):
  a=math.radians(45*i);screw(f'TEST F04 {i}','F04',32.5*math.cos(a),32.5*math.sin(a),90,110,5,8.5,5,ignore=('B10 bearing inner ring reference',))
@@ -98,21 +114,128 @@ for delta in [3,-6]:
  cmd('solid.move',bodies=moving,translate=[delta,0,0]);cmd('inspect.interference',bodies=allnames,exclude_pairs=exclusions,budget_s=60)
 (ROOT/'cad/fastener-clearance-checks.json').write_text(json.dumps(dict(commands=C),indent=2)+'\n')
 (ROOT/'cad/hardware-assembly-check.json').write_text(json.dumps(dict(commands=C[:population_end]+[dict(command='inspect.interference',params=dict(bodies=allnames,exclude_pairs=exclusions,budget_s=60))]),indent=2)+'\n')
-(ROOT/'cad/hardware-check-coverage.json').write_text(json.dumps(dict(revision=4,groups=dict(counts),retired=['F08','F12'],fixed_and_bench_screws=sum(counts.values()),fixture_tip_bounds=4,permanent_retention=['B13 sensor upper jam nut','B13 sensor lower jam nut','M21 wheel drive pin','M62 retainer shim left','M62 retainer shim right'],angles_deg=angles,cartridge_offsets_mm=[3,-3],exclusions=reasons,limits=['Bench bolts are checked above Z0; unknown bench/backing geometry below Z0 remains a release gate.','Heat-set insert retention inside its pilot requires first-article testing; boss geometry and complete screw stacks are checked.','Unselected board, coupling and shaft-retention fasteners remain explicit open interfaces.']),indent=2)+'\n')
-# A08: ordered service poses with lid and tray screws removed.
-C=[];cmd('component.activate',component='root');cmd('component.create',name='Disposable service tools',grounded=True)
+coverage=dict(revision=revision,groups=dict(counts),retired=['F08','F12'],fixed_and_bench_screws=sum(counts.values()),fixture_tip_bounds=4,permanent_retention=['B13 sensor upper jam nut','B13 sensor lower jam nut','M21 wheel drive pin','M62 retainer shim left','M62 retainer shim right'],angles_deg=angles,cartridge_offsets_mm=[3,-3],exclusions=reasons,limits=['Bench bolts in rotation are checked above Z0; below-bench seats are checked separately.','Heat-set insert retention inside its pilot requires first-article testing.','F24 upper seating, actual screw lengths and unselected board, coupling and shaft-retention fasteners remain open interfaces.'])
+
+# Build the same hardware population before testing service. Omit removed screw groups
+# per operation, including lid screws when checking the path that reaches their sockets.
+C=C[:population_end];cmd('component.activate',component='root');cmd('component.create',name='Disposable service tools',grounded=True)
+service_labels=[]
+def check(label, moving, removed=(), released=()):
+ absent=set(moving)|set(removed)
+ against=[n for n in allnames if n not in absent and not n.startswith(released)]
+ cmd('inspect.clearance',bodies=moving,against=against,nearest=3)
+ service_labels.append(label)
+
 toolnames=[]
 for i,(x,y) in enumerate(lidpoints):
  n=f'TEST lid tool {i}';toolnames.append(n);cyl(n,6,70,[x,y,110.2])
-cmd('inspect.clearance',bodies=toolnames,against=['M50 SO100 arm mounting plate','M51 steel side channel left','M51 steel side channel right','M52 steel front X brace']+arm,nearest=1)
-def check(moving,removed=()):cmd('inspect.clearance',bodies=moving,against=[n for n in parts+arm if n not in moving and n not in removed],nearest=2)
-lid=['P52 electronics lid','B24 lid gasket'];cmd('solid.move',bodies=lid,translate=[0,0,8]);check(lid)
-for dy in [-40,-40,-60]:cmd('solid.move',bodies=lid,translate=[0,dy,0]);check(lid)
-cmd('solid.move',bodies=lid,translate=[300,0,0])
-tray=['P51 removable controller tray','B23 controller packaging envelope'];cmd('solid.move',bodies=tray,translate=[0,0,27]);check(tray,lid)
-for dy in [-40,-40,-60]:cmd('solid.move',bodies=tray,translate=[0,dy,0]);check(tray,lid)
-cmd('solid.move',bodies=tray,translate=[300,0,0])
-driver=['B22 driver packaging envelope'];cmd('solid.move',bodies=driver,translate=[0,0,70]);check(driver,lid+tray)
-for dy in [-40,-40,-60]:cmd('solid.move',bodies=driver,translate=[0,dy,0]);check(driver,lid+tray)
+check('lid tool approach',toolnames,released=('TEST F18 ',))
+
+lid=['P52 electronics lid','B24 lid gasket']
+tray=['P51 removable controller tray','B23 controller packaging envelope']
+driver=['B22 driver packaging envelope']
+hood=['P46 motor service hood']
+released_lid=('TEST F18 ',)
+released_tray=released_lid+('TEST F19 ',)
+
+for label,moving,height,removed,released in [
+ ('lid',lid,8,[],released_lid),('tray',tray,27,lid,released_tray),
+ ('driver',driver,70.5,lid+tray,released_tray),
+]:
+ cmd('solid.move',bodies=moving,translate=[0,0,height]);check(f'{label} lift {height}',moving,removed,released)
+ previous=0
+ for distance in [10,20,30,40,50,60,70,80,100,120,140]:
+  cmd('solid.move',bodies=moving,translate=[0,previous-distance,0])
+  check(f'{label} rearward {distance}',moving,removed,released);previous=distance
+
+# A rectangular body swept along one axis has a rectangular swept volume.
+# Check both full segments, including the retained arm and its recessed F24 tips.
+for label,corner,size in [
+ ('driver complete lift sweep',[-59,-262,36],[118,76,105.5]),
+ ('driver complete withdrawal sweep',[-59,-402,106.5],[118,216,35]),
+]:
+ length,width,height=size
+ cmd('solid.box',body_name=f'TEST {label}',corner=corner,length=length,width=width,height=height,operation='new')
+ check(label,[f'TEST {label}'],lid+tray+driver,released_tray)
+
+previous=0
+for distance in [2,5,10,20,30,48,49,50,70]:
+ cmd('solid.move',bodies=hood,translate=[distance-previous,0,0])
+ check(f'hood outward {distance}',hood,lid+tray+driver,('TEST F17 ',));previous=distance
+ if distance==49:
+  cmd('inspect.clearance',bodies=hood,against=['B41 motor anchor washer','B42 motor anchor washer'],nearest=2)
+  service_labels.append('hood posts clear motor anchor washers at X+49')
+cmd('solid.move',bodies=hood,translate=[0,0,30])
+check('hood outward 70 and up 30',hood,lid+tray+driver,('TEST F17 ',))
+
+# F02 is torqued while the core is still exposed. The two covered heads are
+# below solid carrier blocks after assembly, so the carrier is removed for access.
+core_base=['M01 aluminium base plate','M40 stepped motor support']
+core_base.extend(n for n in parts if 'metal bench spacer' in n)
+for i,(x,y) in enumerate([(x,y) for x in [-64,64] for y in [-64,64]]):
+ n=f'TEST F02 straight key {i}';cyl(n,6,70,[x,y,16.6])
+ cmd('inspect.clearance',bodies=[n],against=core_base,nearest=1)
+ service_labels.append(f'F02 key before carrier {i}')
+
+# Short leg engages from the side with the housing open and retaining the hub,
+# bearing and wheel. B07 is optional and has no baseline installed hardware.
+for i,(x,sign) in enumerate([(-52,1),(52,-1)]):
+ n=f'TEST F07 side key {i}';cyl(n,5,15,[x,18,23])
+ cmd('solid.box',length=5,width=65,height=5,corner=[x-2.5,-47,33],operation='join',targets=[n])
+ against=[b for b in allnames if b!=f'TEST F07 {i}' and not b.startswith(('P4','B25 ','B07 ','TEST F15 ','TEST F16 ','TEST F17 '))]
+ previous=0
+ for step,yaw in enumerate([0,12,30,45,60,0]):
+  if yaw!=previous:cmd('solid.move',bodies=[n],axis=[0,0,1],origin=[x,18,23],angle=sign*(yaw-previous))
+  cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+  service_labels.append(f'F07 side key {i} step {step} at {yaw} degrees');previous=yaw
+ cmd('solid.move',bodies=[n],translate=[0,0,5])
+ cmd('inspect.clearance',bodies=[n],against=against,nearest=2)
+ service_labels.append(f'F07 side key {i} withdrawal')
+
+# Relative washer-to-strip distances are independent of the common bench thickness.
+# Reuse the actual production drawing at both locations. No bench material is modeled.
+T=30
+strip_commands=json.loads((ROOT/'cad/stand-backing-strip.json').read_text())['commands']
+strip_names=[]
+for side in [-1,1]:
+ strip=f'TEST M55 backing strip {side}';strip_names.append(strip)
+ for row in strip_commands:
+  if row['command'] not in ('solid.box','solid.cylinder'):continue
+  params=deepcopy(row['params'])
+  if 'body_name' in params:params['body_name']=strip
+  if 'targets' in params:params['targets']=[strip]
+  cmd(row['command'],**params)
+ if side<0:cmd('solid.move',bodies=[strip],origin=[0,0,0],axis=[0,0,1],angle=180)
+ cmd('solid.move',bodies=[strip],translate=[side*98,-224,-T-3])
+underbox=[]
+for i,(x,y) in enumerate(foot_points):
+ n=f'TEST F21 underside {i}';underbox.append(n)
+ cyl(n,7,4,[x,y,-T-5]);collar(n,12,1,x,y,-T-1)
+understand=[]
+for i,(x,y) in enumerate([(x,y) for x in [-98,98] for y in [-272,-176]]):
+ n=f'TEST F23 underside {i}';understand.append(n)
+ cyl(n,6,17,[x,y,-T-17]);collar(n,18,1.6,x,y,-T-4.6);nut(n,10,6,x,y,-T-10.6)
+cmd('inspect.clearance',bodies=underbox,against=strip_names+understand,nearest=3)
+service_labels.append('below-bench electronics and stand hardware')
+cmd('inspect.clearance',bodies=understand,against=strip_names,nearest=2)
+service_labels.append('below-bench stand washer contact')
+
+# A 0.10 mm annulus crossing each seat is an intentional positive intersection.
+# Half its volume must be supported at each nominal seat plane.
+seating_checks=[]
+for label,positions,plane,od,inner,against in [
+ ('F23 washer seats',[(x,y) for x in [-98,98] for y in [-272,-176]],-T-3,18,6.6,strip_names),
+ ('F21 seal lands',foot_points,32,9,4.5,['P50 electronics service box']),
+]:
+ gauges=[]
+ for i,(x,y) in enumerate(positions):
+  n=f'TEST {label} annulus {i}';gauges.append(n)
+  cyl(n,od,.1,[x,y,plane-.05]);cyl(n,inner,.3,[x,y,plane-.15],op='cut')
+ cmd('inspect.interference',bodies=gauges+against,budget_s=30)
+ seating_checks.append(dict(name=label,gauges=gauges,expected_overlap_mm3_per_gauge=.05*math.pi*(od**2-inner**2)/4))
+
+coverage['service_checks']=service_labels
+coverage['seating_checks']=seating_checks
+(ROOT/'cad/hardware-check-coverage.json').write_text(json.dumps(coverage,indent=2)+'\n')
 (ROOT/'cad/support-access-checks.json').write_text(json.dumps(dict(commands=C),indent=2)+'\n')
 print(json.dumps(dict(registered_screws=sum(counts.values()),groups=len(counts),rotation_checks=len(angles),cartridge_checks=2,service_checks=sum(c['command']=='inspect.clearance' for c in C))))

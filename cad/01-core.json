@@ -106,6 +106,15 @@
     {
       "command": "parameters.add",
       "params": {
+        "name": "rt_anchor_nut_af",
+        "expression": "7.4 mm",
+        "comment": "F21 captive M4 nyloc pocket across flats; calibrate actual nut fit and low-torque retention on a first article.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
         "name": "rt_m5_h",
         "expression": "5.6 mm",
         "comment": "Printed horizontal M5 hole; separate calibration from vertical holes.",
@@ -127,6 +136,24 @@
         "name": "rt_motor_l",
         "expression": "80 mm",
         "comment": "Motor plus encoder reserved length; range 60\u201380 mm.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_lid_gasket_stock_w",
+        "expression": "2 mm",
+        "comment": "Solid EPDM stock ring width, centred in the 3.5 mm groove; review gland fill and compression force before changing.",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "rt_lid_gasket_stock_t",
+        "expression": "2 mm",
+        "comment": "Solid EPDM uncompressed thickness; 1.5 mm hard-stop height. Stock volume must fit the gland with tolerance/swell allowance.",
         "favorite": true
       }
     },

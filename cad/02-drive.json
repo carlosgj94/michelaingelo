@@ -158,42 +158,6 @@
     {
       "command": "solid.cylinder",
       "params": {
-        "diameter": 25,
-        "height": 10,
-        "base": [
-          -64,
-          64,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "111 M60 monolithic worm carrier core bench bolt head access",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 25,
-        "height": 10,
-        "base": [
-          64,
-          64,
-          11
-        ],
-        "axis": "Z",
-        "operation": "cut",
-        "name": "112 M60 monolithic worm carrier core bench bolt head access",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
         "diameter": 30,
         "height": 10,
         "base": [
@@ -203,7 +167,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "113 M60 monolithic worm carrier column sleeve adjustment clearance",
+        "name": "111 M60 monolithic worm carrier column sleeve adjustment clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -221,7 +185,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "114 M60 monolithic worm carrier column sleeve adjustment clearance",
+        "name": "112 M60 monolithic worm carrier column sleeve adjustment clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -239,7 +203,7 @@
           11
         ],
         "operation": "cut",
-        "name": "115 adjustment slot web",
+        "name": "113 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -257,7 +221,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "116 M60 monolithic worm carrier adjustment slot end",
+        "name": "114 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -275,7 +239,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "117 M60 monolithic worm carrier adjustment slot end",
+        "name": "115 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -293,7 +257,7 @@
           11
         ],
         "operation": "cut",
-        "name": "118 adjustment slot web",
+        "name": "116 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -311,7 +275,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "119 M60 monolithic worm carrier adjustment slot end",
+        "name": "117 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -329,7 +293,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "120 M60 monolithic worm carrier adjustment slot end",
+        "name": "118 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -347,7 +311,7 @@
           11
         ],
         "operation": "cut",
-        "name": "121 adjustment slot web",
+        "name": "119 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -365,7 +329,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "122 M60 monolithic worm carrier adjustment slot end",
+        "name": "120 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -383,7 +347,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "123 M60 monolithic worm carrier adjustment slot end",
+        "name": "121 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -401,7 +365,7 @@
           11
         ],
         "operation": "cut",
-        "name": "124 adjustment slot web",
+        "name": "122 adjustment slot web",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -419,7 +383,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "125 M60 monolithic worm carrier adjustment slot end",
+        "name": "123 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -437,7 +401,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "126 M60 monolithic worm carrier adjustment slot end",
+        "name": "124 M60 monolithic worm carrier adjustment slot end",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -455,7 +419,7 @@
           19.8
         ],
         "operation": "join",
-        "name": "127 integral bearing support",
+        "name": "125 integral bearing support",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -473,7 +437,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "128 M60 monolithic worm carrier shaft clearance",
+        "name": "126 M60 monolithic worm carrier shaft clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -491,7 +455,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "129 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
+        "name": "127 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -505,6 +469,42 @@
         "base": [
           -67,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "128 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          -67,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "129 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          -67,
+          78.5,
           27
         ],
         "axis": "X",
@@ -522,48 +522,12 @@
         "height": 11,
         "base": [
           -67,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "131 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          -67,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "132 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          -67,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "133 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -581,7 +545,7 @@
           23
         ],
         "operation": "new",
-        "name": "134 M61 worm bearing retainer left",
+        "name": "132 M61 worm bearing retainer left",
         "body_name": "M61 worm bearing retainer left"
       }
     },
@@ -597,7 +561,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "135 outer-race retaining boss",
+        "name": "133 outer-race retaining boss",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -615,7 +579,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "136 M61 worm bearing retainer left clearance hole",
+        "name": "134 M61 worm bearing retainer left clearance hole",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -633,7 +597,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "137 M61 worm bearing retainer left inner-ring noncontact relief",
+        "name": "135 M61 worm bearing retainer left inner-ring noncontact relief",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -647,6 +611,42 @@
         "base": [
           -71.05,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "136 M61 worm bearing retainer left clearance hole",
+        "targets": [
+          "M61 worm bearing retainer left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          -71.05,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "137 M61 worm bearing retainer left clearance hole",
+        "targets": [
+          "M61 worm bearing retainer left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          -71.05,
+          78.5,
           27
         ],
         "axis": "X",
@@ -664,48 +664,12 @@
         "height": 6,
         "base": [
           -71.05,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "139 M61 worm bearing retainer left clearance hole",
-        "targets": [
-          "M61 worm bearing retainer left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          -71.05,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "140 M61 worm bearing retainer left clearance hole",
-        "targets": [
-          "M61 worm bearing retainer left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          -71.05,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "141 M61 worm bearing retainer left clearance hole",
         "targets": [
           "M61 worm bearing retainer left"
         ]
@@ -723,7 +687,7 @@
           23
         ],
         "operation": "new",
-        "name": "142 M62 retainer shim left",
+        "name": "140 M62 retainer shim left",
         "body_name": "M62 retainer shim left"
       }
     },
@@ -736,6 +700,42 @@
           -67,
           55.5,
           50
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "141 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "142 M62 retainer shim left clearance hole",
+        "targets": [
+          "M62 retainer shim left"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          -67,
+          32.5,
+          73
         ],
         "axis": "X",
         "operation": "cut",
@@ -752,7 +752,7 @@
         "height": 3,
         "base": [
           -67,
-          32.5,
+          78.5,
           27
         ],
         "axis": "X",
@@ -770,48 +770,12 @@
         "height": 3,
         "base": [
           -67,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "145 M62 retainer shim left clearance hole",
-        "targets": [
-          "M62 retainer shim left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          -67,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "146 M62 retainer shim left clearance hole",
-        "targets": [
-          "M62 retainer shim left"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          -67,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "147 M62 retainer shim left clearance hole",
         "targets": [
           "M62 retainer shim left"
         ]
@@ -829,7 +793,7 @@
         ],
         "axis": "X",
         "operation": "new",
-        "name": "148 B02 worm support bearing left",
+        "name": "146 B02 worm support bearing left",
         "body_name": "B02 worm support bearing left"
       }
     },
@@ -845,7 +809,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "149 B02 worm support bearing left bore",
+        "name": "147 B02 worm support bearing left bore",
         "targets": [
           "B02 worm support bearing left"
         ]
@@ -863,7 +827,7 @@
           19.8
         ],
         "operation": "join",
-        "name": "150 integral bearing support",
+        "name": "148 integral bearing support",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -881,7 +845,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "151 M60 monolithic worm carrier shaft clearance",
+        "name": "149 M60 monolithic worm carrier shaft clearance",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -899,7 +863,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "152 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
+        "name": "150 M60 monolithic worm carrier measured-fit bearing seat, depth 11.05",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -913,6 +877,42 @@
         "base": [
           56,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "151 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          56,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "152 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 11,
+        "base": [
+          56,
+          78.5,
           27
         ],
         "axis": "X",
@@ -930,48 +930,12 @@
         "height": 11,
         "base": [
           56,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "154 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          56,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "155 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
-        "targets": [
-          "M60 monolithic worm carrier"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 3.3,
-        "height": 11,
-        "base": [
-          56,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "156 M60 monolithic worm carrier M4 retainer tap drill; 9 mm full thread",
         "targets": [
           "M60 monolithic worm carrier"
         ]
@@ -989,7 +953,7 @@
           23
         ],
         "operation": "new",
-        "name": "157 M61 worm bearing retainer right",
+        "name": "155 M61 worm bearing retainer right",
         "body_name": "M61 worm bearing retainer right"
       }
     },
@@ -1005,7 +969,7 @@
         ],
         "axis": "X",
         "operation": "join",
-        "name": "158 outer-race retaining boss",
+        "name": "156 outer-race retaining boss",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -1023,7 +987,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "159 M61 worm bearing retainer right clearance hole",
+        "name": "157 M61 worm bearing retainer right clearance hole",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -1041,7 +1005,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "160 M61 worm bearing retainer right inner-ring noncontact relief",
+        "name": "158 M61 worm bearing retainer right inner-ring noncontact relief",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -1055,6 +1019,42 @@
         "base": [
           65.05,
           32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "159 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          65.05,
+          32.5,
+          73
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "160 M61 worm bearing retainer right clearance hole",
+        "targets": [
+          "M61 worm bearing retainer right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 6,
+        "base": [
+          65.05,
+          78.5,
           27
         ],
         "axis": "X",
@@ -1072,48 +1072,12 @@
         "height": 6,
         "base": [
           65.05,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "162 M61 worm bearing retainer right clearance hole",
-        "targets": [
-          "M61 worm bearing retainer right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          65.05,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "163 M61 worm bearing retainer right clearance hole",
-        "targets": [
-          "M61 worm bearing retainer right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 6,
-        "base": [
-          65.05,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "164 M61 worm bearing retainer right clearance hole",
         "targets": [
           "M61 worm bearing retainer right"
         ]
@@ -1131,7 +1095,7 @@
           23
         ],
         "operation": "new",
-        "name": "165 M62 retainer shim right",
+        "name": "163 M62 retainer shim right",
         "body_name": "M62 retainer shim right"
       }
     },
@@ -1144,6 +1108,42 @@
           65,
           55.5,
           50
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "164 M62 retainer shim right clearance hole",
+        "targets": [
+          "M62 retainer shim right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          65,
+          32.5,
+          27
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "165 M62 retainer shim right clearance hole",
+        "targets": [
+          "M62 retainer shim right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.5,
+        "height": 3,
+        "base": [
+          65,
+          32.5,
+          73
         ],
         "axis": "X",
         "operation": "cut",
@@ -1160,7 +1160,7 @@
         "height": 3,
         "base": [
           65,
-          32.5,
+          78.5,
           27
         ],
         "axis": "X",
@@ -1178,48 +1178,12 @@
         "height": 3,
         "base": [
           65,
-          32.5,
+          78.5,
           73
         ],
         "axis": "X",
         "operation": "cut",
         "name": "168 M62 retainer shim right clearance hole",
-        "targets": [
-          "M62 retainer shim right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          65,
-          78.5,
-          27
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "169 M62 retainer shim right clearance hole",
-        "targets": [
-          "M62 retainer shim right"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 4.5,
-        "height": 3,
-        "base": [
-          65,
-          78.5,
-          73
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "170 M62 retainer shim right clearance hole",
         "targets": [
           "M62 retainer shim right"
         ]
@@ -1237,7 +1201,7 @@
         ],
         "axis": "X",
         "operation": "new",
-        "name": "171 B02 worm support bearing right",
+        "name": "169 B02 worm support bearing right",
         "body_name": "B02 worm support bearing right"
       }
     },
@@ -1253,9 +1217,45 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "172 B02 worm support bearing right bore",
+        "name": "170 B02 worm support bearing right bore",
         "targets": [
           "B02 worm support bearing right"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 25,
+        "height": 10,
+        "base": [
+          -64,
+          64,
+          11
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "171 M60 monolithic worm carrier core bench bolt head relief; tighten before carrier installation",
+        "targets": [
+          "M60 monolithic worm carrier"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 25,
+        "height": 10,
+        "base": [
+          64,
+          64,
+          11
+        ],
+        "axis": "Z",
+        "operation": "cut",
+        "name": "172 M60 monolithic worm carrier core bench bolt head relief; tighten before carrier installation",
+        "targets": [
+          "M60 monolithic worm carrier"
         ]
       }
     },

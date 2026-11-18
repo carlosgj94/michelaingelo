@@ -4,11 +4,11 @@ Official SO100 geometry for designing Michelaingelo's future arm carrier and mou
 
 The follower assembly is included in [michelaingelo.sc](../../michelaingelo.sc). In SolidCraft, expand **SO100 follower arm - mounted reference → Base_08q**. Choose the named view **RT01 and arm reference** for the mounted overview.
 
-The current placement seats the measured base underside at **Z144**, with its footprint centred at **X0/Y−224**, facing +Y toward the platter. Source +X maps to project −X, source +Y to +Z, and source +Z to +Y. The imported geometry, scale and relative joint pose are unchanged. A rigid joint attaches the arm to the bench-supported metal bridge above the electronics box.
+The current placement seats the measured base underside at **Z152**, with its footprint centred at **X0/Y−224**, facing +Y toward the platter. M50 spans Z144–152. Source +X maps to project −X, source +Y to +Z, and source +Z to +Y. A rigid joint attaches the imported folded pose to the bench-supported metal bridge above the electronics box.
 
-The four nominal Ø5 mounting passages were measured directly from `Base_08q (2)` and transferred to M50 as M4 clearance holes. Their irregular coordinates, source face indices and the rigid transform are recorded in [arm-mount-reference.json](../../cad/arm-mount-reference.json). Confirm the owned hardware revision, screw seating and fastener lengths before drilling metal. The arm's full reach, payload and dynamic deflection are not validated by the displayed pose.
+The four nominal Ø5 mounting passages were measured directly from `Base_08q (2)`. M50 has Ø3.3 tap drills for four M4 × 0.7 through threads. Their irregular coordinates, source face indices and rigid transform are recorded in [arm-mount-reference.json](../../cad/arm-mount-reference.json). Measure all four seats on the owned foot and verify the fitted bearing surfaces and screw lengths before fabrication. The pose shows the mounted layout. Reach, payload and dynamic deflection require separate tests.
 
-The previous standalone placement is preserved in [the pre-mount archive](../../docs/archive/rt01-before-support-and-arm-mount.sc). Its earlier documentation described a Z0 seating plane; current exact face measurement found that imported base plane at Z86.1975 before relocation. The new placement explicitly uses that measured underside and seats it on the Z144 adapter.
+The previous standalone placement is preserved in [the pre-mount archive](../../docs/archive/rt01-before-support-and-arm-mount.sc). The imported base plane measured Z86.1975 before relocation. The current transform uses that measured underside to seat the arm on M50 at Z152.
 
 ![SO100 above the controller box](../../docs/rotary-table-with-arm.png)
 

@@ -5,6 +5,7 @@ Purchased parts are deliberately simplified envelopes; see the specification.
 import json, math
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+REVISION=5
 commands=[]; parts=[]; stages=[]; serial=0
 CARRIER='M60 monolithic worm carrier'
 HUB='M20 registered output hub'
@@ -65,8 +66,10 @@ def hexbody(body,af,h,center):
     cmd('sketch.finish')
     cmd('solid.extrude',sketch=nm,distance=h,operation='new',body_name=body,name=feature(body))
 
-def part(body,kind,material,orientation=(0,0,0),notes=''):
-    parts.append(dict(name=body,kind=kind,material=material,print_rotation_deg=list(orientation),notes=notes))
+def part(body,kind,material,orientation=(0,0,0),notes='',sourcing=None):
+    default_sourcing = {'print': 'print', 'metal': 'fabricate', 'purchased': 'buy', 'space': 'reservation'}
+    parts.append(dict(name=body,kind=kind,sourcing=sourcing or default_sourcing[kind],
+                      material=material,print_rotation_deg=list(orientation),notes=notes))
 
 def rotate(body,a):cmd('solid.move',bodies=[body],axis=[0,0,1],origin=[0,0,0],angle=f'{a} deg',name=feature(body+' quadrant placement'))
 
@@ -94,9 +97,12 @@ for n,v,comment in [
  ('rt_m6','6.6 mm','Printed M6 clearance; calibrate coupon.'),
  ('rt_m3_h','3.5 mm','Printed horizontal M3 hole; separate calibration from vertical holes.'),
  ('rt_m4_h','4.6 mm','Printed horizontal M4 hole; separate calibration from vertical holes.'),
+ ('rt_anchor_nut_af','7.4 mm','F21 captive M4 nyloc pocket across flats; calibrate actual nut fit and low-torque retention on a first article.'),
  ('rt_m5_h','5.6 mm','Printed horizontal M5 hole; separate calibration from vertical holes.'),
  ('rt_motor_pilot_h','22.6 mm','Horizontal printed NEMA17 pilot; first-article calibration.'),
  ('rt_motor_l','80 mm','Motor plus encoder reserved length; range 60–80 mm.'),
+ ('rt_lid_gasket_stock_w','2 mm','Solid EPDM stock ring width, centred in the 3.5 mm groove; review gland fill and compression force before changing.'),
+ ('rt_lid_gasket_stock_t','2 mm','Solid EPDM uncompressed thickness; 1.5 mm hard-stop height. Stock volume must fit the gland with tolerance/swell allowance.'),
  ('rt_insert','4.0 mm','RX-M3x5.7 nominal insert pilot; verify printed coupon before installing.')]:
     cmd('parameters.add',name=n,expression=v,comment=comment,favorite=True)
 b='M01 aluminium base plate';box(b,[164,184,8],[-82,-82,4]);part(b,'metal','Aluminium, machined datum')
@@ -143,7 +149,6 @@ group('RT01 - worm cartridge')
 b=CARRIER;box(b,[156,94,8],[-78,6.5,12]);part(b,'metal','6061-T6 aluminium, machined in one setup',notes='A01/A06: no separate block bolts; matched bearing seats and sliding guide.')
 box(b,[68,6.02,2.3],[-34,52.49,11.9],'cut','axial guide groove')
 for y in [20,48]:slot_x(b,72,y,11,12.6,6.6,2)
-for x in [-64,64]:hole(b,25,[x,64,11],10,label='core bench bolt head access')
 for x in [-66,66]:hole(b,30,[x,0,11],10,label='column sleeve adjustment clearance')
 for x,y in [(-52,18),(52,18),(-70,92),(70,92)]:slot_x(b,x,y,11,11.5,5.5,10)
 for side in [-1,1]:
@@ -167,7 +172,10 @@ for side in [-1,1]:
  for y in [32.5,78.5]:
   for z in [27,73]:hole(b,4.5,[-67 if side<0 else 65,y,z],3,'X')
  b=f'B02 worm support bearing {suffix}';ring(b,35,15,11,50,(-65.95 if side<0 else 54.95,55.5),'X');part(b,'purchased','7202 bearing envelope')
-b='B03 worm shaft reference';cyl(b,15,177,[-78,55.5,50],'X');part(b,'purchased','Steel shaft machining reference',notes='Key, shoulders, locknuts and preload stack require fabrication drawing.')
+# Apply head relief after the integral blocks are joined. These pockets clear
+# installed hardware to Z21; they do not provide a through-tool route.
+for x in [-64,64]:hole(CARRIER,25,[x,64,11],10,label='core bench bolt head relief; tighten before carrier installation')
+b='B03 worm shaft reference';cyl(b,15,177,[-78,55.5,50],'X');part(b,'purchased','Steel shaft machining reference',notes='Key, shoulders, locknuts and preload stack require fabrication drawing.',sourcing='fabricate')
 b='B04 duplex worm envelope';cyl(b,35,36,[-22,55.5,50],'X');cyl(b,25,14,[14,55.5,50],'X','join');hole(b,15,[-23,55.5,50],52,'X');part(b,'purchased','KHK KWGDL2-R1 reference',notes='Finish bore 15 mm proposed. Tooth envelope, not meshing tooth CAD.')
 b='B05 clamp coupling reference';ring(b,25,15,25,50,(78,55.5),'X');cyl(b,25,15,[103,55.5,50],'X','join');hole(b,5,[102,55.5,50],17,'X');part(b,'purchased','Metal coupling 15/5 mm envelope')
 b='tool motor support riser';box(b,[153.5,82,8],[82.5,15,4])
@@ -266,6 +274,11 @@ for q in range(4):
   hole(b,10,[6,'rt_r-7 mm',z],4,'Y','flat outer washer seat')
   hole(b,10,['rt_r-7 mm',6,z],4,'X','flat outer washer seat')
  hole(b,5,['(rt_r+1 mm)*cos(45 deg)','(rt_r+1 mm)*sin(45 deg)',96],8,label='external gutter drain')
+ # R4-10: leave the drain's drop path open through the lower flange to its rim.
+ # This avoids a second catch surface; collection below the table is still required.
+ t=f'tool drain floor relief {q}'
+ box(t,[12,8,5],['rt_r-4 mm',-4,-1]);rotate(t,45)
+ cmd('solid.combine',target=b,tools=[t],operation='cut')
  hole(b,'rt_m5',[88,108,-1],5,label='housing bench fixing with supported washer land')
  rotate(b,90*q)
  if q==0:
@@ -277,10 +290,13 @@ for q in range(4):
  for x in [-6,6]:
   for z in [25,90]:hole(b,'rt_m4',[x,'rt_r-24 mm',z],10,'Y')
  rotate(b,90*q);part(b,'print','PETG',(90,90*q,0),'Assembly rotation is cancelled; all four strips print broad face down.')
-b='P46 motor service hood';box(b,[126,82,82],[110,15,12]);box(b,[118,74,80],[114,19,11],'cut','motor cavity');hole(b,'2*rt_r-11.2 mm',[0,0,-1],100,label='curved housing mating edge');part(b,'print','PETG',(180,0,0),'Seal curved mating edge; remove hood independently.')
+b='P46 motor service hood';box(b,[126,82,82],[110,15,12]);box(b,[118,74,80],[114,19,11],'cut','motor cavity');hole(b,'2*rt_r-11.2 mm',[0,0,-1],100,label='curved housing mating edge');part(b,'print','PETG',(180,0,0),'R4-05: release curved RTV joint and disconnect gland cables; withdraw +X 70 mm before lifting 30 mm. Replace disturbed gasket/RTV after service.')
 for x in [171,225]:
  for y in [21,91]:
-  cyl(b,10,76,[x,y,12],op='join',label='hood screw column');hole(b,'rt_m4',[x,y,11],84)
+  # R4-05: overlap the roof by 1 mm, closing the former 3 mm inner-side gap.
+  # The lower 1 mm is OD8 so withdrawal clears the OD18 anchor washers.
+  cyl(b,10,79,[x,y,13],op='join',label='continuous roof-to-stop hood screw column')
+  cyl(b,8,2,[x,y,12],op='join',label='hood post foot clears anchor washer sweep');hole(b,'rt_m4',[x,y,11],84)
 # Core perimeter gasket reference, compressed 1.5 mm under the plate overlap.
 b='B20 core static gasket';box(b,[164,164,1.5],[-82,-82,2.5]);box(b,[152,152,3],[-76,-76,2],'cut','gasket opening');part(b,'purchased','EPDM 2 mm, compressed 25%')
 
@@ -307,9 +323,10 @@ b='P50 electronics service box';box(b,[168,112,76],[-84,cy-56,4]);box(b,[140,84,
 # Lid bosses provide full insert engagement below the top sealing land.
 for x,y in [(-78,-50),(78,-50),(-78,50),(78,50),(-42,-51),(42,-51),(-42,51),(42,51),(-79,0),(79,0)]:
  cyl(b,10,12,[x,cy+y,68],op='join',label='lid insert boss')
-# Continuous 3 mm gasket groove; compressed height is 1.5 mm.
-for x in [-75.5,72.5]:box(b,[3,95,2],[x,cy-47.5,78.5],'cut','lid gasket long groove')
-for y in [cy-47.5,cy+44.5]:box(b,[145,3,2],[-72.5,y,78.5],'cut','lid gasket end groove')
+# R4-11: widen inward only, preserving insert separation and a 2 mm inner land.
+# With the lid at Z80 the closed groove is 3.5 mm wide x 1.5 mm high.
+for x in [-75.5,72]:box(b,[3.5,95,2],[x,cy-47.5,78.5],'cut','lid gasket long groove')
+for y in [cy-47.5,cy+44]:box(b,[144,3.5,2],[-72,y,78.5],'cut','lid gasket end groove')
 lidpoints=[(x,cy+y) for x,y in [(-78,-50),(78,-50),(-78,50),(78,50),(-42,-51),(42,-51),(-42,51),(42,51),(-79,0),(79,0)]]
 for x,y in lidpoints:hole(b,'rt_insert',[x,y,73],8,label='M3 insert pilot')
 # Driver heat spreader is exposed through the floor and sealed around its perimeter.
@@ -323,7 +340,15 @@ for x in [-65,65]:
 for x in [-48,0,48]:hole(b,16.5,[x,cy-57,65],6,'Y','M16 gland provision')
 # Dry box mounting holes sit in the corner bosses.
 for x in [-75,75]:
- for y in [cy-47,cy+47]:hole(b,'rt_m4',[x,y,3],7,label='bench fixing')
+ for y in [cy-47,cy+47]:
+  hole(b,'rt_m4',[x,y,3],7,label='bench fixing from below')
+  # The rim blocks a straight key from above. Capture a DIN985 M4 nut
+  # above the unchanged floor; tighten the reversed bolt from below the bench.
+  # Insert the seal/washer through the inward side opening before the nut.
+  cyl(b,14,8,[x,y,8],op='join',label='bench anchor captive nut boss')
+  hole(b,9.4,[x,y,8],2,label='bench anchor seal and washer recess')
+  box(b,[9,9.4,2],[x if x<0 else x-9,y-4.7,8],'cut','inward seal and washer loading slot')
+  hexcut(b,'rt_anchor_nut_af',6.5,[x,y,10])
 b='M30 driver heat spreader';box(b,[118,76,3],[-59,cy-38,8.75]);part(b,'metal','Aluminium heat spreader, exposed underside')
 for x in [-55.5,55.5]:
  for y in [cy-34.5,cy+34.5]:
@@ -348,7 +373,12 @@ b='B23 controller packaging envelope';box(b,[80,55,20],[-40,cy-27.5,58]);part(b,
 group('RT01 - electronics lid')
 b='P52 electronics lid';box(b,[168,112,4],[-84,cy-56,80]);part(b,'print','PETG')
 for x,y in lidpoints:hole(b,'rt_m3',[x,y,79],6)
-b='B24 lid gasket';box(b,[151,95,1.5],[-75.5,cy-47.5,78.5]);box(b,[145,89,3],[-72.5,cy-44.5,78],'cut','gasket centre');part(b,'purchased','EPDM 2 mm compressed to 1.5 mm')
+# R4-11: stock ring is 149.5 x 93.5 outside / 145.5 x 89.5 inside.
+# Preserve its volume when showing compression to the 1.5 mm hard stop:
+# 2 mm stock width x 2 mm stock thickness -> 8/3 mm installed width.
+# The 3.5 x 1.5 mm gland is 2509.5 mm3; stock/installed ring is 1912 mm3 (76.19%).
+gw='rt_lid_gasket_stock_w*rt_lid_gasket_stock_t/1.5 mm'
+b='B24 lid gasket';box(b,[f'147.5 mm+({gw})',f'91.5 mm+({gw})',1.5],[f'-73.75 mm-({gw})/2',f'{cy-45.75} mm-({gw})/2',78.5]);box(b,[f'147.5 mm-({gw})',f'91.5 mm-({gw})',3],[f'-73.75 mm+({gw})/2',f'{cy-45.75} mm+({gw})/2',78],'cut','gasket centre');part(b,'purchased','Solid EPDM stock 2 x 2 mm section, compressed to 1.5 mm',notes='Stock cut ring baseline OD 149.5 x 93.5 / ID 145.5 x 89.5 mm; STEP shows volume-conserving compressed profile, not the cutting outline. Nominal gland fill 76.19%; compound, tolerance, swell and compression force require validation.')
 
 
 # Raise the sealed service box for a separately purchased external heat sink.
@@ -382,9 +412,9 @@ for i,y in enumerate([35,77],1):
  b=f'B4{i} motor anchor washer';ring(b,18,6.6,1.6,12,(220,y));part(b,'purchased','M6 metal washer OD18 ID6.6 x 1.6 mm')
 
 group('RT01 - arm support bridge')
-b='M50 SO100 arm mounting plate';box(b,[228,116,8],[-114,-282,144]);part(b,'metal','Aluminium 8 mm, arm adapter with lid-tool access')
+b='M50 SO100 arm mounting plate';box(b,[228,116,8],[-114,-282,144]);part(b,'metal','Aluminium 8 mm, arm adapter with lid-tool access',notes='F24: four M4x0.7-6H through threads from above; no arm nuts or washers below Z144. Match upper seats to the measured owned foot. Require >=6 mm effective full screw engagement and screw tips >=Z145; conditional screw length follows the measured grip.')
 arm_holes=[(27.776497308103686,-189.2250092524069),(31.75,-259.0),(-27.77649730810371,-189.2250092524069),(-31.75,-259.0)]
-for x,y in arm_holes:hole(b,4.5,[x,y,143],10,label='SO100 existing mounting passage M4 clearance')
+for x,y in arm_holes:hole(b,3.3,[x,y,143],10,label='SO100 top-down M4x0.7 tap drill; finish through thread')
 for x in [-98,98]:
  for y in [-272,-176]:hole(b,6.6,[x,y,143],10,label='M6 bridge flange attachment')
 for x,y in lidpoints:hole(b,8,[x,y,143],10,label='lid screw tool access')
@@ -437,5 +467,5 @@ cmd('view.apply',view='RT01 and arm reference')
 for i,(name,start) in enumerate(stages):
  end=stages[i+1][1] if i+1<len(stages) else len(commands)
  (ROOT/f'cad/{name}.json').write_text(json.dumps({'commands':commands[start:end]},indent=2)+'\n')
-(ROOT/'cad/parts.json').write_text(json.dumps({'design':'RT-01','units':'mm','parts':parts},indent=2)+'\n')
+(ROOT/'cad/parts.json').write_text(json.dumps({'design':'RT-01','revision':REVISION,'units':'mm','parts':parts},indent=2)+'\n')
 print(json.dumps({'commands':len(commands),'parts':len(parts),'printed_parts':sum(p['kind']=='print' for p in parts),'stages':[(n,(stages[i+1][1] if i+1<len(stages) else len(commands))-s) for i,(n,s) in enumerate(stages)]},indent=2))

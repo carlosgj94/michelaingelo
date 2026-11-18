@@ -380,6 +380,52 @@
       }
     },
     {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "372 tool drain floor relief 0",
+        "body_name": "tool drain floor relief 0"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 0"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "373 tool drain floor relief 0 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P41 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 0"
+        ],
+        "operation": "cut"
+      }
+    },
+    {
       "command": "solid.cylinder",
       "params": {
         "diameter": "rt_m5",
@@ -391,7 +437,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "372 P41 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "374 P41 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P41 fixed housing quadrant"
         ]
@@ -414,7 +460,7 @@
           0
         ],
         "angle": "0 deg",
-        "name": "373 P41 fixed housing quadrant quadrant placement"
+        "name": "375 P41 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -429,7 +475,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "374 motor enclosure passage",
+        "name": "376 motor enclosure passage",
         "targets": [
           "P41 fixed housing quadrant"
         ]
@@ -447,7 +493,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "375 motor foundation passage",
+        "name": "377 motor foundation passage",
         "targets": [
           "P41 fixed housing quadrant"
         ]
@@ -465,7 +511,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "376 P42 fixed housing quadrant",
+        "name": "378 P42 fixed housing quadrant",
         "body_name": "P42 fixed housing quadrant"
       }
     },
@@ -481,7 +527,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "377 floor perimeter",
+        "name": "379 floor perimeter",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -499,7 +545,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "378 outer drainage gutter",
+        "name": "380 outer drainage gutter",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -517,7 +563,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "379 tool gutter lip 1",
+        "name": "381 tool gutter lip 1",
         "body_name": "tool gutter lip 1"
       }
     },
@@ -533,7 +579,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "380 tool gutter lip 1 bore",
+        "name": "382 tool gutter lip 1 bore",
         "targets": [
           "tool gutter lip 1"
         ]
@@ -561,7 +607,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "381 P42 fixed housing quadrant drive cavity",
+        "name": "383 P42 fixed housing quadrant drive cavity",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -579,7 +625,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "382 metal core opening",
+        "name": "384 metal core opening",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -597,7 +643,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "383 quadrant X seam",
+        "name": "385 quadrant X seam",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -615,7 +661,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "384 quadrant Y seam",
+        "name": "386 quadrant Y seam",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -633,7 +679,7 @@
           12
         ],
         "operation": "join",
-        "name": "385 seam flange Y",
+        "name": "387 seam flange Y",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -651,7 +697,7 @@
           12
         ],
         "operation": "join",
-        "name": "386 seam flange X",
+        "name": "388 seam flange X",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -669,7 +715,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "387 P42 fixed housing quadrant horizontal seam screw",
+        "name": "389 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -687,7 +733,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "388 P42 fixed housing quadrant horizontal seam screw",
+        "name": "390 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -705,7 +751,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "389 P42 fixed housing quadrant flat outer washer seat",
+        "name": "391 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -723,7 +769,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "390 P42 fixed housing quadrant flat outer washer seat",
+        "name": "392 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -741,7 +787,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "391 P42 fixed housing quadrant horizontal seam screw",
+        "name": "393 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -759,7 +805,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "392 P42 fixed housing quadrant horizontal seam screw",
+        "name": "394 P42 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -777,7 +823,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "393 P42 fixed housing quadrant flat outer washer seat",
+        "name": "395 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -795,7 +841,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "394 P42 fixed housing quadrant flat outer washer seat",
+        "name": "396 P42 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -813,10 +859,56 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "395 P42 fixed housing quadrant external gutter drain",
+        "name": "397 P42 fixed housing quadrant external gutter drain",
         "targets": [
           "P42 fixed housing quadrant"
         ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "398 tool drain floor relief 1",
+        "body_name": "tool drain floor relief 1"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 1"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "399 tool drain floor relief 1 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P42 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 1"
+        ],
+        "operation": "cut"
       }
     },
     {
@@ -831,7 +923,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "396 P42 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "400 P42 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P42 fixed housing quadrant"
         ]
@@ -854,7 +946,7 @@
           0
         ],
         "angle": "90 deg",
-        "name": "397 P42 fixed housing quadrant quadrant placement"
+        "name": "401 P42 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -869,7 +961,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "398 P43 fixed housing quadrant",
+        "name": "402 P43 fixed housing quadrant",
         "body_name": "P43 fixed housing quadrant"
       }
     },
@@ -885,7 +977,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "399 floor perimeter",
+        "name": "403 floor perimeter",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -903,7 +995,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "400 outer drainage gutter",
+        "name": "404 outer drainage gutter",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -921,7 +1013,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "401 tool gutter lip 2",
+        "name": "405 tool gutter lip 2",
         "body_name": "tool gutter lip 2"
       }
     },
@@ -937,7 +1029,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "402 tool gutter lip 2 bore",
+        "name": "406 tool gutter lip 2 bore",
         "targets": [
           "tool gutter lip 2"
         ]
@@ -965,7 +1057,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "403 P43 fixed housing quadrant drive cavity",
+        "name": "407 P43 fixed housing quadrant drive cavity",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -983,7 +1075,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "404 metal core opening",
+        "name": "408 metal core opening",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -1001,7 +1093,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "405 quadrant X seam",
+        "name": "409 quadrant X seam",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -1019,7 +1111,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "406 quadrant Y seam",
+        "name": "410 quadrant Y seam",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -1037,7 +1129,7 @@
           12
         ],
         "operation": "join",
-        "name": "407 seam flange Y",
+        "name": "411 seam flange Y",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -1055,7 +1147,7 @@
           12
         ],
         "operation": "join",
-        "name": "408 seam flange X",
+        "name": "412 seam flange X",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -1070,78 +1162,6 @@
           6,
           "rt_r-16 mm",
           25
-        ],
-        "axis": "Y",
-        "operation": "cut",
-        "name": "409 P43 fixed housing quadrant horizontal seam screw",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m4_h",
-        "height": 12,
-        "base": [
-          "rt_r-16 mm",
-          6,
-          25
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "410 P43 fixed housing quadrant horizontal seam screw",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 10,
-        "height": 4,
-        "base": [
-          6,
-          "rt_r-7 mm",
-          25
-        ],
-        "axis": "Y",
-        "operation": "cut",
-        "name": "411 P43 fixed housing quadrant flat outer washer seat",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": 10,
-        "height": 4,
-        "base": [
-          "rt_r-7 mm",
-          6,
-          25
-        ],
-        "axis": "X",
-        "operation": "cut",
-        "name": "412 P43 fixed housing quadrant flat outer washer seat",
-        "targets": [
-          "P43 fixed housing quadrant"
-        ]
-      }
-    },
-    {
-      "command": "solid.cylinder",
-      "params": {
-        "diameter": "rt_m4_h",
-        "height": 12,
-        "base": [
-          6,
-          "rt_r-16 mm",
-          90
         ],
         "axis": "Y",
         "operation": "cut",
@@ -1159,7 +1179,7 @@
         "base": [
           "rt_r-16 mm",
           6,
-          90
+          25
         ],
         "axis": "X",
         "operation": "cut",
@@ -1177,7 +1197,7 @@
         "base": [
           6,
           "rt_r-7 mm",
-          90
+          25
         ],
         "axis": "Y",
         "operation": "cut",
@@ -1195,11 +1215,83 @@
         "base": [
           "rt_r-7 mm",
           6,
-          90
+          25
         ],
         "axis": "X",
         "operation": "cut",
         "name": "416 P43 fixed housing quadrant flat outer washer seat",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m4_h",
+        "height": 12,
+        "base": [
+          6,
+          "rt_r-16 mm",
+          90
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "name": "417 P43 fixed housing quadrant horizontal seam screw",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": "rt_m4_h",
+        "height": 12,
+        "base": [
+          "rt_r-16 mm",
+          6,
+          90
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "418 P43 fixed housing quadrant horizontal seam screw",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 4,
+        "base": [
+          6,
+          "rt_r-7 mm",
+          90
+        ],
+        "axis": "Y",
+        "operation": "cut",
+        "name": "419 P43 fixed housing quadrant flat outer washer seat",
+        "targets": [
+          "P43 fixed housing quadrant"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 10,
+        "height": 4,
+        "base": [
+          "rt_r-7 mm",
+          6,
+          90
+        ],
+        "axis": "X",
+        "operation": "cut",
+        "name": "420 P43 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -1217,10 +1309,56 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "417 P43 fixed housing quadrant external gutter drain",
+        "name": "421 P43 fixed housing quadrant external gutter drain",
         "targets": [
           "P43 fixed housing quadrant"
         ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "422 tool drain floor relief 2",
+        "body_name": "tool drain floor relief 2"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 2"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "423 tool drain floor relief 2 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P43 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 2"
+        ],
+        "operation": "cut"
       }
     },
     {
@@ -1235,7 +1373,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "418 P43 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "424 P43 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P43 fixed housing quadrant"
         ]
@@ -1258,7 +1396,7 @@
           0
         ],
         "angle": "180 deg",
-        "name": "419 P43 fixed housing quadrant quadrant placement"
+        "name": "425 P43 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -1273,7 +1411,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "420 P44 fixed housing quadrant",
+        "name": "426 P44 fixed housing quadrant",
         "body_name": "P44 fixed housing quadrant"
       }
     },
@@ -1289,7 +1427,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "421 floor perimeter",
+        "name": "427 floor perimeter",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1307,7 +1445,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "422 outer drainage gutter",
+        "name": "428 outer drainage gutter",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1325,7 +1463,7 @@
         ],
         "axis": "Z",
         "operation": "new",
-        "name": "423 tool gutter lip 3",
+        "name": "429 tool gutter lip 3",
         "body_name": "tool gutter lip 3"
       }
     },
@@ -1341,7 +1479,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "424 tool gutter lip 3 bore",
+        "name": "430 tool gutter lip 3 bore",
         "targets": [
           "tool gutter lip 3"
         ]
@@ -1369,7 +1507,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "425 P44 fixed housing quadrant drive cavity",
+        "name": "431 P44 fixed housing quadrant drive cavity",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1387,7 +1525,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "426 metal core opening",
+        "name": "432 metal core opening",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1405,7 +1543,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "427 quadrant X seam",
+        "name": "433 quadrant X seam",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1423,7 +1561,7 @@
           -1
         ],
         "operation": "cut",
-        "name": "428 quadrant Y seam",
+        "name": "434 quadrant Y seam",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1441,7 +1579,7 @@
           12
         ],
         "operation": "join",
-        "name": "429 seam flange Y",
+        "name": "435 seam flange Y",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1459,7 +1597,7 @@
           12
         ],
         "operation": "join",
-        "name": "430 seam flange X",
+        "name": "436 seam flange X",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1477,7 +1615,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "431 P44 fixed housing quadrant horizontal seam screw",
+        "name": "437 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1495,7 +1633,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "432 P44 fixed housing quadrant horizontal seam screw",
+        "name": "438 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1513,7 +1651,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "433 P44 fixed housing quadrant flat outer washer seat",
+        "name": "439 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1531,7 +1669,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "434 P44 fixed housing quadrant flat outer washer seat",
+        "name": "440 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1549,7 +1687,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "435 P44 fixed housing quadrant horizontal seam screw",
+        "name": "441 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1567,7 +1705,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "436 P44 fixed housing quadrant horizontal seam screw",
+        "name": "442 P44 fixed housing quadrant horizontal seam screw",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1585,7 +1723,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "437 P44 fixed housing quadrant flat outer washer seat",
+        "name": "443 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1603,7 +1741,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "438 P44 fixed housing quadrant flat outer washer seat",
+        "name": "444 P44 fixed housing quadrant flat outer washer seat",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1621,10 +1759,56 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "439 P44 fixed housing quadrant external gutter drain",
+        "name": "445 P44 fixed housing quadrant external gutter drain",
         "targets": [
           "P44 fixed housing quadrant"
         ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "corner": [
+          "rt_r-4 mm",
+          -4,
+          -1
+        ],
+        "operation": "new",
+        "name": "446 tool drain floor relief 3",
+        "body_name": "tool drain floor relief 3"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "tool drain floor relief 3"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "angle": "45 deg",
+        "name": "447 tool drain floor relief 3 quadrant placement"
+      }
+    },
+    {
+      "command": "solid.combine",
+      "params": {
+        "target": "P44 fixed housing quadrant",
+        "tools": [
+          "tool drain floor relief 3"
+        ],
+        "operation": "cut"
       }
     },
     {
@@ -1639,7 +1823,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "440 P44 fixed housing quadrant housing bench fixing with supported washer land",
+        "name": "448 P44 fixed housing quadrant housing bench fixing with supported washer land",
         "targets": [
           "P44 fixed housing quadrant"
         ]
@@ -1662,7 +1846,7 @@
           0
         ],
         "angle": "270 deg",
-        "name": "441 P44 fixed housing quadrant quadrant placement"
+        "name": "449 P44 fixed housing quadrant quadrant placement"
       }
     },
     {
@@ -1677,7 +1861,7 @@
           12
         ],
         "operation": "new",
-        "name": "442 P45 seam backing strip 1",
+        "name": "450 P45 seam backing strip 1",
         "body_name": "P45 seam backing strip 1"
       }
     },
@@ -1693,7 +1877,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "443 P45 seam backing strip 1 clearance hole",
+        "name": "451 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -1711,7 +1895,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "444 P45 seam backing strip 1 clearance hole",
+        "name": "452 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -1729,7 +1913,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "445 P45 seam backing strip 1 clearance hole",
+        "name": "453 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -1747,7 +1931,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "446 P45 seam backing strip 1 clearance hole",
+        "name": "454 P45 seam backing strip 1 clearance hole",
         "targets": [
           "P45 seam backing strip 1"
         ]
@@ -1770,7 +1954,7 @@
           0
         ],
         "angle": "0 deg",
-        "name": "447 P45 seam backing strip 1 quadrant placement"
+        "name": "455 P45 seam backing strip 1 quadrant placement"
       }
     },
     {
@@ -1785,7 +1969,7 @@
           12
         ],
         "operation": "new",
-        "name": "448 P45 seam backing strip 2",
+        "name": "456 P45 seam backing strip 2",
         "body_name": "P45 seam backing strip 2"
       }
     },
@@ -1801,7 +1985,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "449 P45 seam backing strip 2 clearance hole",
+        "name": "457 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -1819,7 +2003,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "450 P45 seam backing strip 2 clearance hole",
+        "name": "458 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -1837,7 +2021,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "451 P45 seam backing strip 2 clearance hole",
+        "name": "459 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -1855,7 +2039,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "452 P45 seam backing strip 2 clearance hole",
+        "name": "460 P45 seam backing strip 2 clearance hole",
         "targets": [
           "P45 seam backing strip 2"
         ]
@@ -1878,7 +2062,7 @@
           0
         ],
         "angle": "90 deg",
-        "name": "453 P45 seam backing strip 2 quadrant placement"
+        "name": "461 P45 seam backing strip 2 quadrant placement"
       }
     },
     {
@@ -1893,7 +2077,7 @@
           12
         ],
         "operation": "new",
-        "name": "454 P45 seam backing strip 3",
+        "name": "462 P45 seam backing strip 3",
         "body_name": "P45 seam backing strip 3"
       }
     },
@@ -1909,7 +2093,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "455 P45 seam backing strip 3 clearance hole",
+        "name": "463 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -1927,7 +2111,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "456 P45 seam backing strip 3 clearance hole",
+        "name": "464 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -1945,7 +2129,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "457 P45 seam backing strip 3 clearance hole",
+        "name": "465 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -1963,7 +2147,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "458 P45 seam backing strip 3 clearance hole",
+        "name": "466 P45 seam backing strip 3 clearance hole",
         "targets": [
           "P45 seam backing strip 3"
         ]
@@ -1986,7 +2170,7 @@
           0
         ],
         "angle": "180 deg",
-        "name": "459 P45 seam backing strip 3 quadrant placement"
+        "name": "467 P45 seam backing strip 3 quadrant placement"
       }
     },
     {
@@ -2001,7 +2185,7 @@
           12
         ],
         "operation": "new",
-        "name": "460 P45 seam backing strip 4",
+        "name": "468 P45 seam backing strip 4",
         "body_name": "P45 seam backing strip 4"
       }
     },
@@ -2017,7 +2201,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "461 P45 seam backing strip 4 clearance hole",
+        "name": "469 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -2035,7 +2219,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "462 P45 seam backing strip 4 clearance hole",
+        "name": "470 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -2053,7 +2237,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "463 P45 seam backing strip 4 clearance hole",
+        "name": "471 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -2071,7 +2255,7 @@
         ],
         "axis": "Y",
         "operation": "cut",
-        "name": "464 P45 seam backing strip 4 clearance hole",
+        "name": "472 P45 seam backing strip 4 clearance hole",
         "targets": [
           "P45 seam backing strip 4"
         ]
@@ -2094,7 +2278,7 @@
           0
         ],
         "angle": "270 deg",
-        "name": "465 P45 seam backing strip 4 quadrant placement"
+        "name": "473 P45 seam backing strip 4 quadrant placement"
       }
     },
     {
@@ -2109,7 +2293,7 @@
           12
         ],
         "operation": "new",
-        "name": "466 P46 motor service hood",
+        "name": "474 P46 motor service hood",
         "body_name": "P46 motor service hood"
       }
     },
@@ -2125,7 +2309,7 @@
           11
         ],
         "operation": "cut",
-        "name": "467 motor cavity",
+        "name": "475 motor cavity",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2143,7 +2327,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "468 P46 motor service hood curved housing mating edge",
+        "name": "476 P46 motor service hood curved housing mating edge",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2153,7 +2337,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          171,
+          21,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "477 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           171,
           21,
@@ -2161,7 +2363,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "469 hood screw column",
+        "name": "478 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2179,7 +2381,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "470 P46 motor service hood clearance hole",
+        "name": "479 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2189,7 +2391,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          171,
+          91,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "480 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           171,
           91,
@@ -2197,7 +2417,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "471 hood screw column",
+        "name": "481 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2215,7 +2435,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "472 P46 motor service hood clearance hole",
+        "name": "482 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2225,7 +2445,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          225,
+          21,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "483 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           225,
           21,
@@ -2233,7 +2471,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "473 hood screw column",
+        "name": "484 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2251,7 +2489,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "474 P46 motor service hood clearance hole",
+        "name": "485 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2261,7 +2499,25 @@
       "command": "solid.cylinder",
       "params": {
         "diameter": 10,
-        "height": 76,
+        "height": 79,
+        "base": [
+          225,
+          91,
+          13
+        ],
+        "axis": "Z",
+        "operation": "join",
+        "name": "486 continuous roof-to-stop hood screw column",
+        "targets": [
+          "P46 motor service hood"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 8,
+        "height": 2,
         "base": [
           225,
           91,
@@ -2269,7 +2525,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "475 hood screw column",
+        "name": "487 hood post foot clears anchor washer sweep",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2287,7 +2543,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "476 P46 motor service hood clearance hole",
+        "name": "488 P46 motor service hood clearance hole",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2305,7 +2561,7 @@
           2.5
         ],
         "operation": "new",
-        "name": "477 B20 core static gasket",
+        "name": "489 B20 core static gasket",
         "body_name": "B20 core static gasket"
       }
     },
@@ -2321,7 +2577,7 @@
           2
         ],
         "operation": "cut",
-        "name": "478 gasket opening",
+        "name": "490 gasket opening",
         "targets": [
           "B20 core static gasket"
         ]
@@ -2345,7 +2601,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "479 motor hood gasket hard stop",
+        "name": "491 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -2363,7 +2619,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "480 tool motor support riser M4 hard stop thread",
+        "name": "492 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -2381,7 +2637,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "481 motor hood gasket hard stop",
+        "name": "493 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -2399,7 +2655,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "482 tool motor support riser M4 hard stop thread",
+        "name": "494 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -2417,7 +2673,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "483 motor hood gasket hard stop",
+        "name": "495 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -2435,7 +2691,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "484 tool motor support riser M4 hard stop thread",
+        "name": "496 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -2453,7 +2709,7 @@
         ],
         "axis": "Z",
         "operation": "join",
-        "name": "485 motor hood gasket hard stop",
+        "name": "497 motor hood gasket hard stop",
         "targets": [
           "tool motor support riser"
         ]
@@ -2471,7 +2727,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "486 tool motor support riser M4 hard stop thread",
+        "name": "498 tool motor support riser M4 hard stop thread",
         "targets": [
           "tool motor support riser"
         ]
@@ -2509,7 +2765,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "487 P46 motor service hood motor cable gland provision",
+        "name": "499 P46 motor service hood motor cable gland provision",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2527,7 +2783,7 @@
         ],
         "axis": "X",
         "operation": "cut",
-        "name": "488 P46 motor service hood motor cable gland provision",
+        "name": "500 P46 motor service hood motor cable gland provision",
         "targets": [
           "P46 motor service hood"
         ]
@@ -2545,7 +2801,7 @@
           12
         ],
         "operation": "new",
-        "name": "489 B25 motor hood gasket",
+        "name": "501 B25 motor hood gasket",
         "body_name": "B25 motor hood gasket"
       }
     },
@@ -2561,7 +2817,7 @@
           11.5
         ],
         "operation": "cut",
-        "name": "490 motor seal centre",
+        "name": "502 motor seal centre",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -2579,7 +2835,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "491 B25 motor hood gasket curved seal edge",
+        "name": "503 B25 motor hood gasket curved seal edge",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -2597,7 +2853,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "492 B25 motor hood gasket sealed hood screw clearance",
+        "name": "504 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -2615,7 +2871,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "493 B25 motor hood gasket sealed hood screw clearance",
+        "name": "505 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -2633,7 +2889,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "494 B25 motor hood gasket sealed hood screw clearance",
+        "name": "506 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]
@@ -2651,7 +2907,7 @@
         ],
         "axis": "Z",
         "operation": "cut",
-        "name": "495 B25 motor hood gasket sealed hood screw clearance",
+        "name": "507 B25 motor hood gasket sealed hood screw clearance",
         "targets": [
           "B25 motor hood gasket"
         ]

@@ -1,8 +1,8 @@
 {
   "design": "RT-01",
-  "revision": 4,
+  "revision": 5,
   "units": "mm",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "status": "Prototype register; not a complete order release",
   "bench_thickness_symbol": "T",
   "excludes": "All purchased-arm internal screws; includes four arm base attachments",
@@ -35,7 +35,7 @@
         "M6 fender washer ID6.6 OD24 x 2": 1,
         "M6 DIN 985 nyloc nut h6": 1
       },
-      "stack_and_assembly": "L >= T + 23.6; round up to next available 5 mm. Includes core/spacer 12, washers 3.6, nut 6, two pitches 2. M60 has \u00d825 head access openings over Y+64; tighten these before the shaft/bearings are fitted. Nominal head top 19.6 is 0.4 below blocks.",
+      "stack_and_assembly": "L >= T + 23.6; round up to next available 5 mm. Includes core/spacer 12, washers 3.6, nut 6, two pitches 2. Tighten all four anchors BEFORE installing M60: its integral blocks obstruct the two Y+64 key paths even with shaft/bearings removed. Retorque requires removing M60 and the upper core/drivetrain parts that obstruct its removal, then rechecking carrier alignment and backlash after refitting. The \u00d825 pockets are cut after the blocks are joined to a Z21 ceiling, leaving 1.4 mm nominal clearance above the Z19.6 heads; they are head reliefs, not through-tool openings. Verify actual head/washer thickness and datum tolerances before assembly.",
       "location": "X +/-64, Y +/-64",
       "status": "Bench thickness required"
     },
@@ -292,9 +292,10 @@
       "hardware_per_joint": {
         "M4 washer ID4.3 OD9 x 0.8": 1,
         "M4 fender washer ID4.3 OD12 x 1": 1,
-        "M4 DIN 985 nyloc nut h5": 1
+        "M4 DIN 985 nyloc nut h5": 1,
+        "EPDM seal washer OD9 ID3.8 x 1 (0.75 compressed)": 1
       },
-      "stack_and_assembly": "L >= T + 40.2 (feet 28 + floor 4 + washers 1.8 + nut 5 + two pitches 1.4). Install before electronics; avoid compressing PETG.",
+      "stack_and_assembly": "REVERSED: head and OD12 fender washer BELOW the bench; M4 nyloc nut captured above the box floor. L >= T +40.95 (feet 28 + floor 4 + underside washer 1 + seal 0.75 + top washer 0.8 + nut 5 + two pitches 1.4), rounded to the next suitable length. Floor stays 4 thick. Slide the uncompressed seal and OD9 washer inward-to-outward through the 2 mm-high loading slot, then drop an AF7 x5 nut into the AF7.4 pocket from inside the open box. Installed seal Z32-32.75, washer 32.75-33.55, nut 33.55-38.55. Insert bolt upward and tighten/retorque from below; no straight tool approach through the rim is assumed. Validate seal imprint and low clamp torque on PETG; do not use steel-joint torque.",
       "location": "X +/-75, Y-271/-177",
       "status": "Bench thickness required"
     },
@@ -326,25 +327,24 @@
         "M6 washer ID6.6 OD18 x 1.6": 2,
         "M6 DIN 985 nyloc nut h6": 1
       },
-      "stack_and_assembly": "L >= T + 18.2 (flange 4, washers 3.2, backing strip 3, nut 6, two pitches 2). Two shared steel strips 40x136x3 under bench, holes 96 apart.",
+      "stack_and_assembly": "L >= T + 18.2 (flange 4, washers 3.2, backing strip 3, nut 6, two pitches 2). Two shared steel strips 40x136x3 under bench, holes 96 apart. Each strip has two \u00d816 scallops centred 23 mm inboard of its hole line and at Y +/-47 relative to the strip centre. Install scalloped edges toward the electronics box; rotate the second identical strip 180 deg about Z. Scallops clear all four reversed F21 OD12 underside washers by 2 mm while retaining complete F23 OD18 washer seats.",
       "location": "X +/-98, Y-272/-176",
       "status": "Bench thickness required"
     },
     {
       "id": "F24",
-      "joint": "SO100 base to M50",
+      "joint": "SO100 base to M50 top-down tapped threads",
       "quantity": 4,
       "thread": "M4",
       "pitch_mm": 0.7,
-      "length_mm": 35,
+      "length_mm": 23.5,
       "head": "ISO 4762 socket cap",
       "hardware_per_joint": {
-        "M4 washer ID4.3 OD9 x 0.8": 2,
-        "M4 DIN 985 nyloc nut h5": 1
+        "M4 washer ID4.3 OD9 x 0.8": 1
       },
-      "stack_and_assembly": "Imported foot 16 + plate 8 + washers 1.6 + nut 5; projection 4.4. Head seat 168.8,tip 133.8. Arm bottom is nowZ152. Verify physical foot and washer seating; internal arm screws excluded.",
+      "stack_and_assembly": "CONDITIONAL cut-length example only: nominal head seat 168.8 and screw 23.5 give tip 145.3 and 6.7 mm penetration into M50 from Z152. Cut/deburr a25 mm screw only after measuring the owned foot and matched upper seating detail. Let G be measured grip from M50 top to head seat: require L-G=6.5-7.0 mm penetration, at least 6.0 mm effective full thread after entry/tip runout, and tip at or above Z145 (at least 1 mm recessed from underside 144). M50 has four M4x0.7-6H through threads. No lower washer or nut; do not reinstall the old 35 mm screws. Upper OD9 washer has no validated seat on the imported foot: each site needs a matched supported seating detail from physical measurement, witness contact and preload-retention tests before release. The nominal head/washer envelope is packaging evidence only, not proof of contact. Keep arm bottomZ152; internal arm screws excluded.",
       "location": "Nonrectangular pattern in arm-mount-reference.json",
-      "status": "Verify physical arm foot"
+      "status": "Measure owned foot seats and screw length"
     },
     {
       "id": "F25",

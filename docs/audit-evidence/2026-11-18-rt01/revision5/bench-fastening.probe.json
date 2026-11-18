@@ -1,0 +1,3150 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "ANCHOR AUDIT revised fastening",
+        "grounded": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -271,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -271,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -275.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -271,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile5"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile5",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -177,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -177,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -181.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -177,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile12"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile12",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -271,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -271,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -275.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -271,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile19"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile19",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -177,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -177,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -181.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -177,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile26"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile26",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          -65,
+          -271,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR washer loading 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          -65,
+          -271,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR washer loading 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -65,
+          -271,
+          33
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR metal washer loading 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          -65,
+          -271,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR metal washer loading 0"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -65,
+            -271,
+            41
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR nut loading 0 profile34"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR nut loading 0 profile34",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "ANCHOR nut loading 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          -65,
+          -271,
+          40
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR nut loading 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          -65,
+          -177,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR washer loading 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          -65,
+          -177,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR washer loading 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -65,
+          -177,
+          33
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR metal washer loading 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          -65,
+          -177,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR metal washer loading 1"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -65,
+            -177,
+            41
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR nut loading 1 profile43"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR nut loading 1 profile43",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "ANCHOR nut loading 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          -65,
+          -177,
+          40
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR nut loading 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          65,
+          -271,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR washer loading 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          65,
+          -271,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR washer loading 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          65,
+          -271,
+          33
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR metal washer loading 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          65,
+          -271,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR metal washer loading 2"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            65,
+            -271,
+            41
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR nut loading 2 profile52"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR nut loading 2 profile52",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "ANCHOR nut loading 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          65,
+          -271,
+          40
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR nut loading 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          65,
+          -177,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR washer loading 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          65,
+          -177,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR washer loading 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          65,
+          -177,
+          33
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR metal washer loading 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          65,
+          -177,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR metal washer loading 3"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            65,
+            -177,
+            41
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR nut loading 3 profile61"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR nut loading 3 profile61",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "ANCHOR nut loading 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          65,
+          -177,
+          40
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR nut loading 3"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR nut loading 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR nut loading 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR nut loading 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR nut loading 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR nut loading 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR nut loading 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR nut loading 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR nut loading 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR nut loading 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR nut loading 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR nut loading 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR nut loading 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR nut loading 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR nut loading 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR nut loading 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3",
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -2
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -2
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -2
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -1.2
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0",
+          "ANCHOR nut loading 1",
+          "ANCHOR nut loading 2",
+          "ANCHOR nut loading 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "browser.visibility",
+      "params": {
+        "items": [
+          "ANCHOR washer loading 0",
+          "ANCHOR metal washer loading 0",
+          "ANCHOR washer loading 1",
+          "ANCHOR metal washer loading 1",
+          "ANCHOR washer loading 2",
+          "ANCHOR metal washer loading 2",
+          "ANCHOR washer loading 3",
+          "ANCHOR metal washer loading 3"
+        ],
+        "visible": false
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.75,
+        "base": [
+          -75,
+          -271,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 seal 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 2.75,
+        "base": [
+          -75,
+          -271,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 seal 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -75,
+          -271,
+          32.75
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 top washer 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          -75,
+          -271,
+          31.75
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 top washer 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 0"
+        ],
+        "translate": [
+          0,
+          0,
+          -0.25
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.75,
+        "base": [
+          -75,
+          -177,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 seal 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 2.75,
+        "base": [
+          -75,
+          -177,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 seal 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -75,
+          -177,
+          32.75
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 top washer 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          -75,
+          -177,
+          31.75
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 top washer 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 1"
+        ],
+        "translate": [
+          0,
+          0,
+          -0.25
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.75,
+        "base": [
+          75,
+          -271,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 seal 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 2.75,
+        "base": [
+          75,
+          -271,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 seal 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          75,
+          -271,
+          32.75
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 top washer 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          75,
+          -271,
+          31.75
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 top washer 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 2"
+        ],
+        "translate": [
+          0,
+          0,
+          -0.25
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.75,
+        "base": [
+          75,
+          -177,
+          32
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 seal 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 2.75,
+        "base": [
+          75,
+          -177,
+          31
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 seal 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          75,
+          -177,
+          32.75
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 top washer 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          75,
+          -177,
+          31.75
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 top washer 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "ANCHOR nut loading 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -0.25
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 40,
+        "width": 136,
+        "height": 3,
+        "corner": [
+          -118,
+          -292,
+          -33
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR M55 strip -1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5,
+        "base": [
+          -98,
+          -272,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip -1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5,
+        "base": [
+          -98,
+          -176,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip -1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16,
+        "height": 5,
+        "base": [
+          -75,
+          -271,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip -1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16,
+        "height": 5,
+        "base": [
+          -75,
+          -177,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip -1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -98,
+          -272,
+          -34.6
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F23 underside washer -1 -272"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 3.6,
+        "base": [
+          -98,
+          -272,
+          -35.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 underside washer -1 -272"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -98,
+            -272,
+            -40.6
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR F23 nut -1 -272 profile128"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.000000000000 mm",
+            "10/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.000000000000 mm",
+            "10/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR F23 nut -1 -272 profile128",
+        "distance": 6,
+        "operation": "new",
+        "body_name": "ANCHOR F23 nut -1 -272"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 8,
+        "base": [
+          -98,
+          -272,
+          -41.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 nut -1 -272"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          -98,
+          -176,
+          -34.6
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F23 underside washer -1 -176"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 3.6,
+        "base": [
+          -98,
+          -176,
+          -35.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 underside washer -1 -176"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -98,
+            -176,
+            -40.6
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR F23 nut -1 -176 profile135"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.000000000000 mm",
+            "10/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.000000000000 mm",
+            "10/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR F23 nut -1 -176 profile135",
+        "distance": 6,
+        "operation": "new",
+        "body_name": "ANCHOR F23 nut -1 -176"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 8,
+        "base": [
+          -98,
+          -176,
+          -41.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 nut -1 -176"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 40,
+        "width": 136,
+        "height": 3,
+        "corner": [
+          78,
+          -292,
+          -33
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR M55 strip 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5,
+        "base": [
+          98,
+          -272,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 5,
+        "base": [
+          98,
+          -176,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16,
+        "height": 5,
+        "base": [
+          75,
+          -271,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 16,
+        "height": 5,
+        "base": [
+          75,
+          -177,
+          -34
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR M55 strip 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          98,
+          -272,
+          -34.6
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F23 underside washer 1 -272"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 3.6,
+        "base": [
+          98,
+          -272,
+          -35.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 underside washer 1 -272"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            98,
+            -272,
+            -40.6
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR F23 nut 1 -272 profile147"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.000000000000 mm",
+            "10/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.000000000000 mm",
+            "10/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR F23 nut 1 -272 profile147",
+        "distance": 6,
+        "operation": "new",
+        "body_name": "ANCHOR F23 nut 1 -272"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 8,
+        "base": [
+          98,
+          -272,
+          -41.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 nut 1 -272"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 18,
+        "height": 1.6,
+        "base": [
+          98,
+          -176,
+          -34.6
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F23 underside washer 1 -176"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 6.6,
+        "height": 3.6,
+        "base": [
+          98,
+          -176,
+          -35.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 underside washer 1 -176"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            98,
+            -176,
+            -40.6
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "ANCHOR F23 nut 1 -176 profile154"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.000000000000 mm",
+            "10/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*-0.000000000000 mm",
+            "10/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "10/sqrt(3)*0.866025403784 mm",
+            "10/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "ANCHOR F23 nut 1 -176 profile154",
+        "distance": 6,
+        "operation": "new",
+        "body_name": "ANCHOR F23 nut 1 -176"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 5,
+        "height": 8,
+        "base": [
+          98,
+          -176,
+          -41.6
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F23 nut 1 -176"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -75,
+          -271,
+          -35
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 bolt 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 75,
+        "base": [
+          -75,
+          -271,
+          -31
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 bolt 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 12,
+        "height": 1,
+        "base": [
+          -75,
+          -271,
+          -31
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 underside washer 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 3,
+        "base": [
+          -75,
+          -271,
+          -32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 underside washer 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.5,
+        "height": 40,
+        "base": [
+          -75,
+          -271,
+          -73
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 tool 0"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 60,
+        "width": 3.5,
+        "height": 3.5,
+        "corner": [
+          -105,
+          -272.75,
+          -74.75
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 tool 0"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR F21 tool 0"
+        ],
+        "against": [
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "ANCHOR M55 strip -1",
+          "ANCHOR F23 underside washer -1 -272",
+          "ANCHOR F23 nut -1 -272",
+          "ANCHOR F23 underside washer -1 -176",
+          "ANCHOR F23 nut -1 -176",
+          "ANCHOR M55 strip 1",
+          "ANCHOR F23 underside washer 1 -272",
+          "ANCHOR F23 nut 1 -272",
+          "ANCHOR F23 underside washer 1 -176",
+          "ANCHOR F23 nut 1 -176"
+        ],
+        "clearance": 1
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          -75,
+          -177,
+          -35
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 bolt 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 75,
+        "base": [
+          -75,
+          -177,
+          -31
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 bolt 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 12,
+        "height": 1,
+        "base": [
+          -75,
+          -177,
+          -31
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 underside washer 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 3,
+        "base": [
+          -75,
+          -177,
+          -32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 underside washer 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.5,
+        "height": 40,
+        "base": [
+          -75,
+          -177,
+          -73
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 tool 1"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 60,
+        "width": 3.5,
+        "height": 3.5,
+        "corner": [
+          -105,
+          -178.75,
+          -74.75
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 tool 1"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR F21 tool 1"
+        ],
+        "against": [
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "ANCHOR M55 strip -1",
+          "ANCHOR F23 underside washer -1 -272",
+          "ANCHOR F23 nut -1 -272",
+          "ANCHOR F23 underside washer -1 -176",
+          "ANCHOR F23 nut -1 -176",
+          "ANCHOR M55 strip 1",
+          "ANCHOR F23 underside washer 1 -272",
+          "ANCHOR F23 nut 1 -272",
+          "ANCHOR F23 underside washer 1 -176",
+          "ANCHOR F23 nut 1 -176"
+        ],
+        "clearance": 1
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          75,
+          -271,
+          -35
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 bolt 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 75,
+        "base": [
+          75,
+          -271,
+          -31
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 bolt 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 12,
+        "height": 1,
+        "base": [
+          75,
+          -271,
+          -31
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 underside washer 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 3,
+        "base": [
+          75,
+          -271,
+          -32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 underside washer 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.5,
+        "height": 40,
+        "base": [
+          75,
+          -271,
+          -73
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 tool 2"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 60,
+        "width": 3.5,
+        "height": 3.5,
+        "corner": [
+          45,
+          -272.75,
+          -74.75
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 tool 2"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR F21 tool 2"
+        ],
+        "against": [
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "ANCHOR M55 strip -1",
+          "ANCHOR F23 underside washer -1 -272",
+          "ANCHOR F23 nut -1 -272",
+          "ANCHOR F23 underside washer -1 -176",
+          "ANCHOR F23 nut -1 -176",
+          "ANCHOR M55 strip 1",
+          "ANCHOR F23 underside washer 1 -272",
+          "ANCHOR F23 nut 1 -272",
+          "ANCHOR F23 underside washer 1 -176",
+          "ANCHOR F23 nut 1 -176"
+        ],
+        "clearance": 1
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 7,
+        "height": 4,
+        "base": [
+          75,
+          -177,
+          -35
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 bolt 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4,
+        "height": 75,
+        "base": [
+          75,
+          -177,
+          -31
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 bolt 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 12,
+        "height": 1,
+        "base": [
+          75,
+          -177,
+          -31
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 underside washer 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 3,
+        "base": [
+          75,
+          -177,
+          -32
+        ],
+        "operation": "cut",
+        "targets": [
+          "ANCHOR F21 underside washer 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.5,
+        "height": 40,
+        "base": [
+          75,
+          -177,
+          -73
+        ],
+        "operation": "new",
+        "body_name": "ANCHOR F21 tool 3"
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 60,
+        "width": 3.5,
+        "height": 3.5,
+        "corner": [
+          45,
+          -178.75,
+          -74.75
+        ],
+        "operation": "join",
+        "targets": [
+          "ANCHOR F21 tool 3"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "ANCHOR F21 tool 3"
+        ],
+        "against": [
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "ANCHOR M55 strip -1",
+          "ANCHOR F23 underside washer -1 -272",
+          "ANCHOR F23 nut -1 -272",
+          "ANCHOR F23 underside washer -1 -176",
+          "ANCHOR F23 nut -1 -176",
+          "ANCHOR M55 strip 1",
+          "ANCHOR F23 underside washer 1 -272",
+          "ANCHOR F23 nut 1 -272",
+          "ANCHOR F23 underside washer 1 -176",
+          "ANCHOR F23 nut 1 -176"
+        ],
+        "clearance": 1
+      }
+    },
+    {
+      "command": "inspect.interference",
+      "params": {
+        "bodies": [
+          "ANCHOR F21 seal 0",
+          "ANCHOR F21 top washer 0",
+          "ANCHOR nut loading 0",
+          "ANCHOR F21 seal 1",
+          "ANCHOR F21 top washer 1",
+          "ANCHOR nut loading 1",
+          "ANCHOR F21 seal 2",
+          "ANCHOR F21 top washer 2",
+          "ANCHOR nut loading 2",
+          "ANCHOR F21 seal 3",
+          "ANCHOR F21 top washer 3",
+          "ANCHOR nut loading 3",
+          "ANCHOR M55 strip -1",
+          "ANCHOR F23 underside washer -1 -272",
+          "ANCHOR F23 nut -1 -272",
+          "ANCHOR F23 underside washer -1 -176",
+          "ANCHOR F23 nut -1 -176",
+          "ANCHOR M55 strip 1",
+          "ANCHOR F23 underside washer 1 -272",
+          "ANCHOR F23 nut 1 -272",
+          "ANCHOR F23 underside washer 1 -176",
+          "ANCHOR F23 nut 1 -176",
+          "ANCHOR F21 bolt 0",
+          "ANCHOR F21 underside washer 0",
+          "ANCHOR F21 bolt 1",
+          "ANCHOR F21 underside washer 1",
+          "ANCHOR F21 bolt 2",
+          "ANCHOR F21 underside washer 2",
+          "ANCHOR F21 bolt 3",
+          "ANCHOR F21 underside washer 3",
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "P53 electronics foot 1",
+          "P53 electronics foot 2",
+          "P53 electronics foot 3",
+          "P53 electronics foot 4"
+        ],
+        "exclude_pairs": [
+          [
+            "ANCHOR F21 bolt 0",
+            "ANCHOR nut loading 0"
+          ],
+          [
+            "ANCHOR F21 bolt 0",
+            "ANCHOR F21 seal 0"
+          ],
+          [
+            "ANCHOR F21 bolt 1",
+            "ANCHOR nut loading 1"
+          ],
+          [
+            "ANCHOR F21 bolt 1",
+            "ANCHOR F21 seal 1"
+          ],
+          [
+            "ANCHOR F21 bolt 2",
+            "ANCHOR nut loading 2"
+          ],
+          [
+            "ANCHOR F21 bolt 2",
+            "ANCHOR F21 seal 2"
+          ],
+          [
+            "ANCHOR F21 bolt 3",
+            "ANCHOR nut loading 3"
+          ],
+          [
+            "ANCHOR F21 bolt 3",
+            "ANCHOR F21 seal 3"
+          ]
+        ],
+        "budget_s": 60
+      }
+    },
+    {
+      "command": "inspect.measure",
+      "params": {
+        "bodies": [
+          "P50 electronics service box"
+        ]
+      }
+    }
+  ]
+}

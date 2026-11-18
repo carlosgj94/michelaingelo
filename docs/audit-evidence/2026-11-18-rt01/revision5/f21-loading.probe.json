@@ -1,0 +1,2046 @@
+{
+  "commands": [
+    {
+      "command": "component.activate",
+      "params": {
+        "component": "root"
+      }
+    },
+    {
+      "command": "component.create",
+      "params": {
+        "name": "ANCHOR AUDIT revised fastening",
+        "grounded": true
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -271,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -271,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -275.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -271,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile5"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile5",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          -75,
+          -177,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          -75,
+          -177,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          -75,
+          -181.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -75,
+            -177,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile12"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile12",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -271,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -271,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -275.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -271,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile19"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile19",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 14,
+        "height": 8,
+        "base": [
+          75,
+          -177,
+          32
+        ],
+        "operation": "join",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9.4,
+        "height": 2,
+        "base": [
+          75,
+          -177,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.box",
+      "params": {
+        "length": 9,
+        "width": 9.4,
+        "height": 2,
+        "corner": [
+          66,
+          -181.7,
+          32
+        ],
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            75,
+            -177,
+            34
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "P50 electronics service box profile26"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.000000000000 mm",
+            "7.4/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*-0.000000000000 mm",
+            "7.4/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7.4/sqrt(3)*0.866025403784 mm",
+            "7.4/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "P50 electronics service box profile26",
+        "distance": 6.5,
+        "operation": "cut",
+        "targets": [
+          "P50 electronics service box"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          -65,
+          -244,
+          106
+        ],
+        "body_name": "PORTAL uncompressed EPDM 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          -65,
+          -244,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL uncompressed EPDM 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -65,
+          -244,
+          107
+        ],
+        "body_name": "PORTAL top washer 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          -65,
+          -244,
+          106
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL top washer 0"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -65,
+            -244,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "PORTAL M4 nyloc 0 profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "PORTAL M4 nyloc 0 profile",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "PORTAL M4 nyloc 0"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          -65,
+          -244,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL M4 nyloc 0"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          -65,
+          -204,
+          106
+        ],
+        "body_name": "PORTAL uncompressed EPDM 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          -65,
+          -204,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL uncompressed EPDM 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          -65,
+          -204,
+          107
+        ],
+        "body_name": "PORTAL top washer 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          -65,
+          -204,
+          106
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL top washer 1"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            -65,
+            -204,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "PORTAL M4 nyloc 1 profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "PORTAL M4 nyloc 1 profile",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "PORTAL M4 nyloc 1"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          -65,
+          -204,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL M4 nyloc 1"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          65,
+          -244,
+          106
+        ],
+        "body_name": "PORTAL uncompressed EPDM 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          65,
+          -244,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL uncompressed EPDM 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          65,
+          -244,
+          107
+        ],
+        "body_name": "PORTAL top washer 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          65,
+          -244,
+          106
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL top washer 2"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            65,
+            -244,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "PORTAL M4 nyloc 2 profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "PORTAL M4 nyloc 2 profile",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "PORTAL M4 nyloc 2"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          65,
+          -244,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL M4 nyloc 2"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 1,
+        "base": [
+          65,
+          -204,
+          106
+        ],
+        "body_name": "PORTAL uncompressed EPDM 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.8,
+        "height": 3,
+        "base": [
+          65,
+          -204,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL uncompressed EPDM 3"
+        ]
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 9,
+        "height": 0.8,
+        "base": [
+          65,
+          -204,
+          107
+        ],
+        "body_name": "PORTAL top washer 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 4.3,
+        "height": 2.8,
+        "base": [
+          65,
+          -204,
+          106
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL top washer 3"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": {
+          "origin": [
+            65,
+            -204,
+            106
+          ],
+          "x_dir": [
+            1,
+            0,
+            0
+          ],
+          "y_dir": [
+            0,
+            1,
+            0
+          ]
+        },
+        "name": "PORTAL M4 nyloc 3 profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.000000000000 mm",
+            "7/sqrt(3)*1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*-0.000000000000 mm",
+            "7/sqrt(3)*-1.000000000000 mm"
+          ],
+          [
+            "7/sqrt(3)*0.866025403784 mm",
+            "7/sqrt(3)*-0.500000000000 mm"
+          ]
+        ],
+        "closed": true,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "sketch": "PORTAL M4 nyloc 3 profile",
+        "distance": 5,
+        "operation": "new",
+        "body_name": "PORTAL M4 nyloc 3"
+      }
+    },
+    {
+      "command": "solid.cylinder",
+      "params": {
+        "diameter": 3.3,
+        "height": 7,
+        "base": [
+          65,
+          -204,
+          105
+        ],
+        "operation": "cut",
+        "targets": [
+          "PORTAL M4 nyloc 3"
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3",
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3",
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -21
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3",
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL M4 nyloc 0"
+        ],
+        "translate": [
+          0,
+          -27,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL M4 nyloc 1"
+        ],
+        "translate": [
+          0,
+          27,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL M4 nyloc 2"
+        ],
+        "translate": [
+          0,
+          -27,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3",
+          "PORTAL M4 nyloc 3"
+        ],
+        "translate": [
+          0,
+          27,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3",
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0"
+        ],
+        "translate": [
+          -10,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 1"
+        ],
+        "translate": [
+          -10,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 2"
+        ],
+        "translate": [
+          10,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 3"
+        ],
+        "translate": [
+          10,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -6.2
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL M4 nyloc 0",
+          "PORTAL M4 nyloc 1",
+          "PORTAL M4 nyloc 2",
+          "PORTAL M4 nyloc 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          0,
+          0,
+          -8
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1"
+        ],
+        "translate": [
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "translate": [
+          2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "command": "inspect.clearance",
+      "params": {
+        "bodies": [
+          "PORTAL uncompressed EPDM 0",
+          "PORTAL top washer 0",
+          "PORTAL uncompressed EPDM 1",
+          "PORTAL top washer 1",
+          "PORTAL uncompressed EPDM 2",
+          "PORTAL top washer 2",
+          "PORTAL uncompressed EPDM 3",
+          "PORTAL top washer 3"
+        ],
+        "against": [
+          "P50 electronics service box",
+          "M30 driver heat spreader",
+          "B22 driver packaging envelope",
+          "M50 SO100 arm mounting plate",
+          "M51 steel side channel left",
+          "M51 steel side channel right",
+          "M52 steel front X brace"
+        ],
+        "clearance": 0.19
+      }
+    }
+  ]
+}

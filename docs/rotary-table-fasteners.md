@@ -1,10 +1,10 @@
-# RT-01 assembly fastener register — revision 4
+# RT-01 assembly fastener register — revision 5
 
-Updated 2026-11-17. **This replaces the earlier incomplete fastener notes.** It covers every currently designed assembly joint, including the arm-to-stand bolts, and excludes the arm’s internal screws. Unfinished component interfaces are listed at the end: the whole machine is not yet an order-ready screw kit.
+Updated 2026-11-18. Includes the four arm mounting screws. The arm’s internal screws are outside the RT-01 order. Final selections and fit measurements are listed below.
 
 All dimensions are mm. Coarse threads: M3×0.5, M4×0.7, M5×0.8, M6×1. Length is under-head except countersunk screws, where it includes the head. Use exact head styles: a cap head cannot replace a recessed platter button head. Countersinks are for DIN7991 heads (M3 <=Ø6; M5 <=Ø10); do not substitute larger ISO10642 heads without revising the recess. Nominal fits are checked in CAD; printed tolerances require the coupon.
 
-Prototype baseline: corrosion-protected class 8.8 steel bolts / compatible nuts for metal frame and datum joints; A2-70 stainless for cover/electronics fasteners. Bearing screws must follow the selected bearing supplier’s class and torque. Keep coatings out of bearing seats; select corrosion protection compatible with aluminium and the wet environment. Do not use metal-joint torque tables on PETG, heat-set inserts or the printed arm. Final preload/torque requires supplier data and coupon/assembly checks. Use a validated anti-loosening method for metal joints, compatible with nearby PETG and seals. The former printed captive-nut joints have been removed.
+Prototype hardware uses corrosion-protected class 8.8 steel bolts and compatible nuts for metal frame and datum joints, with A2-70 stainless for covers and electronics. Bearing screws follow the selected supplier’s class and torque. Determine clamp load for PETG, heat-set inserts, the F21 nut traps and the arm foot by testing their actual assemblies. Verify the locking method is compatible with nearby PETG and seals.
 
 ## Installed quantities by joint
 
@@ -28,10 +28,10 @@ Prototype baseline: corrosion-protected class 8.8 steel bolts / compatible nuts 
 | F18 | Electronics lid | 10 | M3 × 10, ISO 7380-1 button | 1 × M3 washer ID3.2 OD7 x 0.5; 1 × ruthex RX-M3x5.7 heat-set insert | Defined geometry |
 | F19 | Controller tray | 4 | M3 × 10, ISO 7380-1 button | 1 × M3 washer ID3.2 OD7 x 0.5; 1 × ruthex RX-M3x5.7 heat-set insert | Defined geometry |
 | F20 | Heat spreader to box floor | 4 | M3 × 16, DIN 7991 90-degree countersunk | 1 × M3 washer ID3.2 OD7 x 0.5; 1 × M3 DIN 985 nyloc nut h4; 1 × EPDM seal washer OD7 ID3.2 x 1 (0.75 compressed); 1 × Metal compression shim OD6.5 ID3.4 x 0.75 | Defined geometry |
-| F21 | Electronics feet and box to bench | 4 | M4 × L(T), ISO 4762 socket cap | 1 × M4 washer ID4.3 OD9 x 0.8; 1 × M4 fender washer ID4.3 OD12 x 1; 1 × M4 DIN 985 nyloc nut h5 | Bench thickness required |
+| F21 | Electronics feet and box to bench | 4 | M4 × L(T), ISO 4762 socket cap | 1 × M4 washer ID4.3 OD9 x 0.8; 1 × M4 fender washer ID4.3 OD12 x 1; 1 × M4 DIN 985 nyloc nut h5; 1 × EPDM seal washer OD9 ID3.8 x 1 (0.75 compressed) | Bench thickness required |
 | F22 | M50 to steel stand top flanges | 4 | M6 × 25, ISO 4762 socket cap | 2 × M6 washer ID6.6 OD18 x 1.6; 1 × M6 DIN 985 nyloc nut h6 | Defined geometry |
 | F23 | Steel stand bottom flanges to bench | 4 | M6 × L(T), ISO 4762 socket cap | 2 × M6 washer ID6.6 OD18 x 1.6; 1 × M6 DIN 985 nyloc nut h6 | Bench thickness required |
-| F24 | SO100 base to M50 | 4 | M4 × 35, ISO 4762 socket cap | 2 × M4 washer ID4.3 OD9 x 0.8; 1 × M4 DIN 985 nyloc nut h5 | Verify physical arm foot |
+| F24 | SO100 base to M50 top-down tapped threads | 4 | M4 × L(G), ISO 4762 socket cap | 1 × M4 washer ID4.3 OD9 x 0.8 | Measure owned foot seats and screw length |
 | F25 | Steel home target to M20 | 1 | M3 × 8, DIN 7991 90-degree countersunk | Tapped metal; no washer | Defined geometry |
 
 F08 (separate block bolts) and F12 (printed sensor bracket bolts) are deleted in revision 4; IDs are not reused.
@@ -46,7 +46,7 @@ F08 (separate block bolts) and F12 (printed sensor bracket bolts) are deleted in
 
 **F01 — Core columns: M02 / locating columns / M01.** Head seat 91.6; tip 1.6. Columns72 locate 1 into each plate; visible span 70. Local M01 bosses provide 9 mm full M6 engagement below the locating recess. Clamp the matched metal columns, not the 69.5 mm printed sleeves. Location: (66,0), (-66,0), (36,-58), (-36,-58).
 
-**F02 — Core to bench.** L >= T + 23.6; round up to next available 5 mm. Includes core/spacer 12, washers 3.6, nut 6, two pitches 2. M60 has Ø25 head access openings over Y+64; tighten these before the shaft/bearings are fitted. Nominal head top 19.6 is 0.4 below blocks. Location: X +/-64, Y +/-64.
+**F02 — Core to bench.** L >= T + 23.6; round up to next available 5 mm. Includes core/spacer 12, washers 3.6, nut 6, two pitches 2. Tighten all four anchors BEFORE installing M60: its integral blocks obstruct the two Y+64 key paths even with shaft/bearings removed. Retorque requires removing M60 and the upper core/drivetrain parts that obstruct its removal, then rechecking carrier alignment and backlash after refitting. The Ø25 pockets are cut after the blocks are joined to a Z21 ceiling, leaving 1.4 mm nominal clearance above the Z19.6 heads; they are head reliefs, not through-tool openings. Verify actual head/washer thickness and datum tolerances before assembly. Location: X +/-64, Y +/-64.
 
 **F03 — Outer bearing to M02.** Head seat Z99.6; tip 74.6; underside washer 81-82, nut 77-81. 2.4 mm projection. No washer in bearing head counterbore. Fit nuts before enclosing the core. Location: PCD105, phase 22.5 deg.
 
@@ -80,13 +80,13 @@ F08 (separate block bolts) and F12 (printed sensor bracket bolts) are deleted in
 
 **F20 — Heat spreader to box floor.** Head diameter <=6, recessed ~0.2 below spreader top 35.75. Tip~19.55, nut 22.75-26.75. Seal washer and metal washer below floor 28; shim above floor 32. Shim M31-34 counted here. Keep screw flush below driver envelope. Location: X +/-55.5, Y-258.5/-189.5.
 
-**F21 — Electronics feet and box to bench.** L >= T + 40.2 (feet 28 + floor 4 + washers 1.8 + nut 5 + two pitches 1.4). Install before electronics; avoid compressing PETG. Location: X +/-75, Y-271/-177.
+**F21 — Electronics feet and box to bench.** REVERSED: head and OD12 fender washer BELOW the bench; M4 nyloc nut captured above the box floor. L >= T +40.95 (feet 28 + floor 4 + underside washer 1 + seal 0.75 + top washer 0.8 + nut 5 + two pitches 1.4), rounded to the next suitable length. Floor stays 4 thick. Slide the uncompressed seal and OD9 washer inward-to-outward through the 2 mm-high loading slot, then drop an AF7 x5 nut into the AF7.4 pocket from inside the open box. Installed seal Z32-32.75, washer 32.75-33.55, nut 33.55-38.55. Insert bolt upward and tighten/retorque from below; no straight tool approach through the rim is assumed. Validate seal imprint and low clamp torque on PETG; do not use steel-joint torque. Location: X +/-75, Y-271/-177.
 
 **F22 — M50 to steel stand top flanges.** Plate8 + flange 4 + washers 3.2 + nut 6; projection 3.8. Head seat 153.6, tip 128.6. Existing B51-54 top washers counted here once. Location: X +/-98,Y-272/-176.
 
-**F23 — Steel stand bottom flanges to bench.** L >= T + 18.2 (flange 4, washers 3.2, backing strip 3, nut 6, two pitches 2). Two shared steel strips 40x136x3 under bench, holes 96 apart. Location: X +/-98, Y-272/-176.
+**F23 — Steel stand bottom flanges to bench.** L >= T + 18.2 (flange 4, washers 3.2, backing strip 3, nut 6, two pitches 2). Two shared steel strips 40x136x3 under bench, holes 96 apart. Each strip has two Ø16 scallops centred 23 mm inboard of its hole line and at Y +/-47 relative to the strip centre. Install scalloped edges toward the electronics box; rotate the second identical strip 180 deg about Z. Scallops clear all four reversed F21 OD12 underside washers by 2 mm while retaining complete F23 OD18 washer seats. Location: X +/-98, Y-272/-176.
 
-**F24 — SO100 base to M50.** Imported foot 16 + plate 8 + washers 1.6 + nut 5; projection 4.4. Head seat 168.8,tip 133.8. Arm bottom is nowZ152. Verify physical foot and washer seating; internal arm screws excluded. Location: Nonrectangular pattern in arm-mount-reference.json.
+**F24 — SO100 base to M50 top-down tapped threads.** CONDITIONAL cut-length example only: nominal head seat 168.8 and screw 23.5 give tip 145.3 and 6.7 mm penetration into M50 from Z152. Cut/deburr a25 mm screw only after measuring the owned foot and matched upper seating detail. Let G be measured grip from M50 top to head seat: require L-G=6.5-7.0 mm penetration, at least 6.0 mm effective full thread after entry/tip runout, and tip at or above Z145 (at least 1 mm recessed from underside 144). M50 has four M4x0.7-6H through threads. No lower washer or nut; do not reinstall the old 35 mm screws. Upper OD9 washer has no validated seat on the imported foot: each site needs a matched supported seating detail from physical measurement, witness contact and preload-retention tests before release. The nominal head/washer envelope is packaging evidence only, not proof of contact. Keep arm bottomZ152; internal arm screws excluded. Location: Nonrectangular pattern in arm-mount-reference.json.
 
 **F25 — Steel home target to M20.** Upward screw, head recessed 0.1 atZ99.8; tip 107.8. Target3 mm leaves 5.1 mm engagement into hub boss fromZ102.7. Head diameter <=6. Do not use stainless target material without rechecking sensing range. Location: Radius73, angle 210 deg.
 
@@ -99,10 +99,10 @@ T is the measured solid bench-top thickness at each hole. Round each minimum up 
 | Core F02 | 4 M6 | T+23.6 | 55 |
 | Motor pod F14 | 2 M6 | T+23.6 | 55 |
 | Housing F16 | 4 M5 | T+11.5 | 45 |
-| Box F21 | 4 M4 | T+40.2 | 75 |
+| Box F21 | 4 M4 | T+40.95 | 75 |
 | Arm stand F23 | 4 M6 | T+18.2 | 50 |
 
-Two 40 × 136 × 3 steel backing strips go below the stand flanges. Each has two Ø6.6 holes on its centreline, 96 apart and 20 from the ends. The separate STEP is at a manufacturing origin, not positioned under an assumed bench. Add suitable backing under other anchors if the chosen top needs it and add that thickness to their formula.
+Install two 40 × 136 × 3 M55 backing strips below the stand flanges. Each has two Ø6.6 holes 96 apart and two Ø16 clearance scallops on its inward edge. Use the F21 and F23 coordinates to lay out the actual bench and inspect the bearing seats. Add any extra bench backing thickness to the applicable bolt formula.
 
 ## Still to finish before ordering all hardware
 
