@@ -1,0 +1,41 @@
+{
+  "reviewed_commit": "14c768eef8456dc81a201afde1e191adfa99aac0",
+  "assembly_sha256": "6fa96aa3e4a9380bfe4d64823aa8246d0498cd365a7af2194f9eef73170a3f9f",
+  "units": "mm unless otherwise indicated",
+  "f07_method": "At each front screw, enclose the 5 x 65 handle through the 60 degree swing and 5 mm lift. Take the convex hull of its corners every 3 degrees, padded by 0.025 mm per axis (maximum chord sag below 0.023 mm), and extrude from Z30 to Z40. Check the diameter 5 stem travel and full 80 mm rear entry and exit separately against the retained bodies in the F07 service check.",
+  "f07_clearances": [
+    {"screw_x": -52, "carrier_x": -3, "handle_swing_and_lift": 0.475, "nearest_sleeve": "P12", "axial_stem": 3.010399, "entry_handle": 0.5, "entry_stem": 0.5},
+    {"screw_x": 52, "carrier_x": -3, "handle_swing_and_lift": 0.475, "nearest_sleeve": "P11", "axial_stem": 3.010399, "entry_handle": 0.5, "entry_stem": 0.5},
+    {"screw_x": -52, "carrier_x": 0, "handle_swing_and_lift": 0.475, "nearest_sleeve": "P12", "axial_stem": 3.010399, "entry_handle": 0.5, "entry_stem": 0.5},
+    {"screw_x": 52, "carrier_x": 0, "handle_swing_and_lift": 0.475, "nearest_sleeve": "P11", "axial_stem": 3.010399, "entry_handle": 0.5, "entry_stem": 0.5},
+    {"screw_x": -52, "carrier_x": 3, "handle_swing_and_lift": 0.475, "nearest_sleeve": "P12", "axial_stem": 3.010399, "entry_handle": 0.5, "entry_stem": 0.5},
+    {"screw_x": 52, "carrier_x": 3, "handle_swing_and_lift": 0.475, "nearest_sleeve": "P11", "axial_stem": 3.010399, "entry_handle": 0.5, "entry_stem": 0.5}
+  ],
+  "p54_route_method": "Replay the production 20 mm outward and 30 mm lift envelopes for each cup against the installed assembly, other three cups and registered fastener envelopes.",
+  "p54_route_clearances": [
+    {"cup": 1, "sweep": "outward", "nearest_body": "P41 fixed housing quadrant", "clearance_mm": 1.448712},
+    {"cup": 1, "sweep": "lift", "nearest_body": "P41 fixed housing quadrant", "clearance_mm": 12.048788},
+    {"cup": 2, "sweep": "outward", "nearest_body": "P42 fixed housing quadrant", "clearance_mm": 1.448712},
+    {"cup": 2, "sweep": "lift", "nearest_body": "P42 fixed housing quadrant", "clearance_mm": 12.048788},
+    {"cup": 3, "sweep": "outward", "nearest_body": "P43 fixed housing quadrant", "clearance_mm": 1.448712},
+    {"cup": 3, "sweep": "lift", "nearest_body": "P43 fixed housing quadrant", "clearance_mm": 12.048788},
+    {"cup": 4, "sweep": "outward", "nearest_body": "P44 fixed housing quadrant", "clearance_mm": 1.448712},
+    {"cup": 4, "sweep": "lift", "nearest_body": "P44 fixed housing quadrant", "clearance_mm": 12.048788}
+  ],
+  "p54_projection_method": "Cast vertical rays from Z95.9 at each drain centre and at radius 2.49 every 30 degrees. Move only the cup radially outward between trials. Classify the first hit on the level bench assembly. Counts describe geometry, not liquid volume.",
+  "p54_first_hits": [
+    {"cup": 1, "outward_offset_mm": 0, "floor": 13, "rim": 0, "bench": 0},
+    {"cup": 1, "outward_offset_mm": 1, "floor": 10, "rim": 3, "bench": 0},
+    {"cup": 1, "outward_offset_mm": 3, "floor": 5, "rim": 5, "bench": 3},
+    {"cup": 2, "outward_offset_mm": 0, "floor": 13, "rim": 0, "bench": 0},
+    {"cup": 2, "outward_offset_mm": 1, "floor": 10, "rim": 3, "bench": 0},
+    {"cup": 2, "outward_offset_mm": 3, "floor": 5, "rim": 5, "bench": 3},
+    {"cup": 3, "outward_offset_mm": 0, "floor": 13, "rim": 0, "bench": 0},
+    {"cup": 3, "outward_offset_mm": 1, "floor": 10, "rim": 3, "bench": 0},
+    {"cup": 3, "outward_offset_mm": 3, "floor": 5, "rim": 5, "bench": 3},
+    {"cup": 4, "outward_offset_mm": 0, "floor": 13, "rim": 0, "bench": 0},
+    {"cup": 4, "outward_offset_mm": 1, "floor": 10, "rim": 3, "bench": 0},
+    {"cup": 4, "outward_offset_mm": 3, "floor": 5, "rim": 5, "bench": 3}
+  ],
+  "p54_mesh_capacity_cross_check": {"stl_sha256": "b40b77dda44dbd0688878e945c1e626f0bf26d18896c3dc1e5a645fa91bc54e8", "connected_watertight_shell": true, "triangles": 802, "fill_mark_ml": 19.873963, "pour_notch_ml": 26.297563, "method": "Integrate the interior cross section of the released STL through Z17 or Z20, splitting the integration intervals at each distinct mesh vertex height."}
+}

@@ -1,0 +1,28 @@
+{
+  "commands": [
+    {"command": "sketch.create", "params": {"name": "REVIEW capacity to pour notch main volume", "plane": {"origin": [0, "(dc_width-2*dc_wall)/2", 0], "x_dir": [1, 0, 0], "y_dir": [0, 0, 1]}}},
+    {"command": "sketch.line", "params": {"points": [["dc_body_front+dc_wall", "dc_inlet_floor-(dc_inlet_floor-dc_sump_floor)*((dc_body_front+dc_wall)-dc_inlet_start)/(dc_body_end-dc_wall-dc_inlet_start)"], ["dc_body_end-dc_wall", "dc_sump_floor"], ["dc_body_end-dc_wall", 20], ["dc_body_front+dc_wall", 20]], "closed": true, "connect": false}},
+    {"command": "sketch.constraint.fix", "params": {"entities": ["l1", "l2", "l3", "l4"], "fixed": true}},
+    {"command": "sketch.finish", "params": {}},
+    {"command": "solid.extrude", "params": {"sketch": "REVIEW capacity to pour notch main volume", "distance": "dc_width-2*dc_wall", "operation": "new", "name": "REVIEW capacity to pour notch main volume extrusion", "body_name": "REVIEW capacity to pour notch"}},
+    {"command": "sketch.create", "params": {"name": "REVIEW capacity to pour notch inlet volume", "plane": {"origin": [0, "(dc_inlet_width-2*dc_wall)/2", 0], "x_dir": [1, 0, 0], "y_dir": [0, 0, 1]}}},
+    {"command": "sketch.line", "params": {"points": [["dc_inlet_start+dc_wall", "dc_inlet_floor-(dc_inlet_floor-dc_sump_floor)*((dc_inlet_start+dc_wall)-dc_inlet_start)/(dc_body_end-dc_wall-dc_inlet_start)"], ["dc_body_front+dc_wall+0.1 mm", "dc_inlet_floor-(dc_inlet_floor-dc_sump_floor)*((dc_body_front+dc_wall+0.1 mm)-dc_inlet_start)/(dc_body_end-dc_wall-dc_inlet_start)"], ["dc_body_front+dc_wall+0.1 mm", 20], ["dc_inlet_start+dc_wall", 20]], "closed": true, "connect": false}},
+    {"command": "sketch.constraint.fix", "params": {"entities": ["l1", "l2", "l3", "l4"], "fixed": true}},
+    {"command": "sketch.finish", "params": {}},
+    {"command": "solid.extrude", "params": {"sketch": "REVIEW capacity to pour notch inlet volume", "distance": "dc_inlet_width-2*dc_wall", "operation": "join", "name": "REVIEW capacity to pour notch inlet volume extrusion", "targets": ["REVIEW capacity to pour notch"]}},
+    {"command": "solid.box", "params": {"length": 8, "width": 1, "height": 0.6, "corner": [40, 17.5, 17], "operation": "cut", "targets": ["REVIEW capacity to pour notch"], "name": "REVIEW capacity to pour notch mark displacement"}},
+    {"command": "sketch.create", "params": {"name": "REVIEW capacity to fill mark main volume", "plane": {"origin": [0, "(dc_width-2*dc_wall)/2", 0], "x_dir": [1, 0, 0], "y_dir": [0, 0, 1]}}},
+    {"command": "sketch.line", "params": {"points": [["dc_body_front+dc_wall", "dc_inlet_floor-(dc_inlet_floor-dc_sump_floor)*((dc_body_front+dc_wall)-dc_inlet_start)/(dc_body_end-dc_wall-dc_inlet_start)"], ["dc_body_end-dc_wall", "dc_sump_floor"], ["dc_body_end-dc_wall", 17], ["dc_body_front+dc_wall", 17]], "closed": true, "connect": false}},
+    {"command": "sketch.constraint.fix", "params": {"entities": ["l1", "l2", "l3", "l4"], "fixed": true}},
+    {"command": "sketch.finish", "params": {}},
+    {"command": "solid.extrude", "params": {"sketch": "REVIEW capacity to fill mark main volume", "distance": "dc_width-2*dc_wall", "operation": "new", "name": "REVIEW capacity to fill mark main volume extrusion", "body_name": "REVIEW capacity to fill mark"}},
+    {"command": "sketch.create", "params": {"name": "REVIEW capacity to fill mark inlet volume", "plane": {"origin": [0, "(dc_inlet_width-2*dc_wall)/2", 0], "x_dir": [1, 0, 0], "y_dir": [0, 0, 1]}}},
+    {"command": "sketch.line", "params": {"points": [["dc_inlet_start+dc_wall", "dc_inlet_floor-(dc_inlet_floor-dc_sump_floor)*((dc_inlet_start+dc_wall)-dc_inlet_start)/(dc_body_end-dc_wall-dc_inlet_start)"], ["dc_body_front+dc_wall+0.1 mm", "dc_inlet_floor-(dc_inlet_floor-dc_sump_floor)*((dc_body_front+dc_wall+0.1 mm)-dc_inlet_start)/(dc_body_end-dc_wall-dc_inlet_start)"], ["dc_body_front+dc_wall+0.1 mm", 17], ["dc_inlet_start+dc_wall", 17]], "closed": true, "connect": false}},
+    {"command": "sketch.constraint.fix", "params": {"entities": ["l1", "l2", "l3", "l4"], "fixed": true}},
+    {"command": "sketch.finish", "params": {}},
+    {"command": "solid.extrude", "params": {"sketch": "REVIEW capacity to fill mark inlet volume", "distance": "dc_inlet_width-2*dc_wall", "operation": "join", "name": "REVIEW capacity to fill mark inlet volume extrusion", "targets": ["REVIEW capacity to fill mark"]}},
+    {"command": "solid.box", "params": {"length": 8, "width": 1, "height": 0.6, "corner": [40, 17.5, 17], "operation": "cut", "targets": ["REVIEW capacity to fill mark"], "name": "REVIEW capacity to fill mark mark displacement"}},
+    {"command": "inspect.interference", "params": {"bodies": ["P54 removable drain catch", "REVIEW capacity to fill mark"], "budget_s": 30}},
+    {"command": "inspect.interference", "params": {"bodies": ["P54 removable drain catch", "REVIEW capacity to pour notch"], "budget_s": 30}}
+  ]
+}

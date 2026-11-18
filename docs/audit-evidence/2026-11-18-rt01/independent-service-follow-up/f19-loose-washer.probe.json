@@ -1,0 +1,30 @@
+{
+  "commands": [
+    {"command": "component.activate", "params": {"component": "root"}},
+    {"command": "component.create", "params": {"name": "Independent F19 washer review", "grounded": true}},
+    {"command": "solid.cylinder", "params": {"diameter": 7, "height": 0.5, "base": [-65, -258, 82], "operation": "new", "body_name": "Review F19 loose washer 0"}},
+    {"command": "solid.cylinder", "params": {"diameter": 3.2, "height": 1.5, "base": [-65, -258, 81.5], "operation": "cut", "targets": ["Review F19 loose washer 0"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 3, "height": 10.0, "base": [-65, -258, 79.5], "operation": "new", "body_name": "Review F19 backed-out screw 0"}},
+    {"command": "solid.cylinder", "params": {"diameter": 5.7, "height": 1.65, "base": [-65, -258, 89.5], "operation": "join", "targets": ["Review F19 backed-out screw 0"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 8, "height": 14.4, "base": [-65, -258, 88.75], "operation": "new", "body_name": "Review F19 pickup 0"}},
+    {"command": "inspect.clearance", "params": {"bodies": ["Review F19 loose washer 0"], "against": ["P51 removable controller tray", "Review F19 backed-out screw 0", "Review F19 pickup 0"], "nearest": 3}},
+    {"command": "solid.cylinder", "params": {"diameter": 7, "height": 0.5, "base": [-65, -190, 82], "operation": "new", "body_name": "Review F19 loose washer 1"}},
+    {"command": "solid.cylinder", "params": {"diameter": 3.2, "height": 1.5, "base": [-65, -190, 81.5], "operation": "cut", "targets": ["Review F19 loose washer 1"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 3, "height": 10.0, "base": [-65, -190, 79.5], "operation": "new", "body_name": "Review F19 backed-out screw 1"}},
+    {"command": "solid.cylinder", "params": {"diameter": 5.7, "height": 1.65, "base": [-65, -190, 89.5], "operation": "join", "targets": ["Review F19 backed-out screw 1"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 8, "height": 14.4, "base": [-65, -190, 88.75], "operation": "new", "body_name": "Review F19 pickup 1"}},
+    {"command": "inspect.clearance", "params": {"bodies": ["Review F19 loose washer 1"], "against": ["P51 removable controller tray", "Review F19 backed-out screw 1", "Review F19 pickup 1"], "nearest": 3}},
+    {"command": "solid.cylinder", "params": {"diameter": 7, "height": 0.5, "base": [65, -258, 82], "operation": "new", "body_name": "Review F19 loose washer 2"}},
+    {"command": "solid.cylinder", "params": {"diameter": 3.2, "height": 1.5, "base": [65, -258, 81.5], "operation": "cut", "targets": ["Review F19 loose washer 2"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 3, "height": 10.0, "base": [65, -258, 79.5], "operation": "new", "body_name": "Review F19 backed-out screw 2"}},
+    {"command": "solid.cylinder", "params": {"diameter": 5.7, "height": 1.65, "base": [65, -258, 89.5], "operation": "join", "targets": ["Review F19 backed-out screw 2"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 8, "height": 14.4, "base": [65, -258, 88.75], "operation": "new", "body_name": "Review F19 pickup 2"}},
+    {"command": "inspect.clearance", "params": {"bodies": ["Review F19 loose washer 2"], "against": ["P51 removable controller tray", "Review F19 backed-out screw 2", "Review F19 pickup 2"], "nearest": 3}},
+    {"command": "solid.cylinder", "params": {"diameter": 7, "height": 0.5, "base": [65, -190, 82], "operation": "new", "body_name": "Review F19 loose washer 3"}},
+    {"command": "solid.cylinder", "params": {"diameter": 3.2, "height": 1.5, "base": [65, -190, 81.5], "operation": "cut", "targets": ["Review F19 loose washer 3"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 3, "height": 10.0, "base": [65, -190, 79.5], "operation": "new", "body_name": "Review F19 backed-out screw 3"}},
+    {"command": "solid.cylinder", "params": {"diameter": 5.7, "height": 1.65, "base": [65, -190, 89.5], "operation": "join", "targets": ["Review F19 backed-out screw 3"]}},
+    {"command": "solid.cylinder", "params": {"diameter": 8, "height": 14.4, "base": [65, -190, 88.75], "operation": "new", "body_name": "Review F19 pickup 3"}},
+    {"command": "inspect.clearance", "params": {"bodies": ["Review F19 loose washer 3"], "against": ["P51 removable controller tray", "Review F19 backed-out screw 3", "Review F19 pickup 3"], "nearest": 3}}
+  ]
+}
